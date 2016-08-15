@@ -33,7 +33,7 @@ EMS is a complete, integrated suite for enterprise mobility inclusive of product
 
 Intune helps you manage mobile devices and mobile apps. It integrates closely with Azure Active Directory (Azure AD) for identity and access control, and Azure Rights Management (Azure RMS) for data protection.  
 
-Common business problems that Intune helps solve include:
+Intune helps solve the following common business problems:
 
 * Securing your on-premises email and collaboration infrastructure so that it can be accessed by mobile devices and apps on the Internet.
 * Securing your Office 365 infrastructure so that it can be safely accessed by mobile devices and apps on the Internet.
