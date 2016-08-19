@@ -30,6 +30,7 @@ After you deploy Microsoft Intune you may encounter problems with your configura
 
 > [!NOTE]
 > To create a support request, or to view an existing request, [visit the Office 365 admin center](https://portal.office.com/admin/default.aspx). For more information about support options, see [How to get support for Microsoft Intune](how-to-get-support-for-microsoft-intune.md).
+
 ## Define the problem
 
 -   What is the behavior?
