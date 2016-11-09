@@ -1,4 +1,27 @@
----
+
+
+​
+29
+# Restrict access to company resource based on device, network, and application risk
+30
+You can control access from mobile devices to corporate resources, based on risk assessment conducted by Lookout, a device threat protection solution that is integrated with Microsoft Intune. The risk is based on telemetry that the Lookout service collects from devices for operating system (OS) vulnerabilities, installed malicious apps, and malicious network profiles. 
+31
+Based on Lookout's reported risk assessment enabled through Intune compliance policies, you can  configure conditional access policies in Intune and allow or block devices that have been determined to be noncompliant due to threats detected on those devices. 
+
+You can control access from mobile devices to corporate resources, based on risk assessment conducted by Lookout, a device threat protection solution that is integrated with Microsoft Intune. The risk is based on telemetry that the Lookout service collects from devices for operating system (OS) vulnerabilities, installed malicious apps, and malicious network profiles. 
+31
+Based on Lookout's reported risk assessment enabled through Intune compliance policies, you can  configure conditional access policies in Intune and allow or block devices that have been determined to be noncompliant due to threats detected on those devices. 
+
+You can control access from mobile devices to corporate resources, based on risk assessment conducted by Lookout, a device threat protection solution that is integrated with Microsoft Intune. The risk is based on telemetry that the Lookout service collects from devices for operating system (OS) vulnerabilities, installed malicious apps, and malicious network profiles. 
+31
+Based on Lookout's reported risk assessment enabled through Intune compliance policies, you can  configure conditional access policies in Intune and allow or block devices that have been determined to be noncompliant due to threats detected on those devices. 
+​
+29
+# Restrict access to company resource based on device, network, and application risk
+30
+You can control access from mobile devices to corporate resources, based on risk assessment conducted by Lookout, a device threat protection solution that is integrated with Microsoft Intune. The risk is based on telemetry that the Lookout service collects from devices for operating system (OS) vulnerabilities, installed malicious apps, and malicious network profiles. 
+31
+Based on Lookout's reported risk assessment enabled through Intune compliance policies, you can  configure conditional access policies in Intune and allow or block devices that have been determined to be noncompliant due to threats detected on those devices. ---
 # required metadata
 
 title: Restrict access using device threat protection | Microsoft Intune
@@ -30,6 +53,13 @@ ms.suite: ems
 You can control access from mobile devices to corporate resources, based on risk assessment conducted by Lookout, a device threat protection solution that is integrated with Microsoft Intune. The risk is based on telemetry that the Lookout service collects from devices for operating system (OS) vulnerabilities, installed malicious apps, and malicious network profiles. 
 Based on Lookout's reported risk assessment enabled through Intune compliance policies, you can  configure conditional access policies in Intune and allow or block devices that have been determined to be noncompliant due to threats detected on those devices.  
 
+​
+29
+# Restrict access to company resource based on device, network, and application risk
+30
+You can control access from mobile devices to corporate resources, based on risk assessment conducted by Lookout, a device threat protection solution that is integrated with Microsoft Intune. The risk is based on telemetry that the Lookout service collects from devices for operating system (OS) vulnerabilities, installed malicious apps, and malicious network profiles. 
+31
+Based on Lookout's reported risk assessment enabled through Intune compliance policies, you can  configure conditional access policies in Intune and allow or block devices that have been determined to be noncompliant due to threats detected on those devices. 
 ## What problem does this solve?
 Companies and organizations need to protect sensitive data from emerging threats that include physical, app-based, and network-based threats, as well as OS vulnerabilities.
 
