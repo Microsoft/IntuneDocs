@@ -27,7 +27,7 @@ ms.suite: ems
 ---
 
 # What is Intune?
-Intune is a cloud-based enterprise mobility management (EMM) service that helps enable your workforce to be productive while keeping your corporate data protected. With Intune, you can:
+Microsoft Intune is a cloud-based enterprise mobility management (EMM) service that helps enable your workforce to be productive while keeping your corporate data protected. With Intune, you can:
 * Manage the mobile devices your workforce uses to access company data.
 * Manage the mobile apps your workforce uses.
 * Protect your company information by helping to control the way your workforce accesses and shares it.
