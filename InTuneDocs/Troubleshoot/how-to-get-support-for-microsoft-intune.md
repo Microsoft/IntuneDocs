@@ -5,7 +5,8 @@
 title: How to get support | Microsoft Docs
 description: Support is available both online and by telephone for paid and trial subscriptions.
 keywords:
-author: arob98ms.author: angrobe
+author: arob98
+ms.author: angrobe
 manager: angrobe
 ms.date: 01/27/2016
 ms.topic: article
@@ -40,7 +41,7 @@ Before creating a support ticket, check out the following resources for answers 
 
 ### Microsoft Intune TechNet forums
 
-Ask a question or start a discussion with Microsoft technical experts! We provide answers and insights on the searchable [Microsoft Intune TechNet Forum](https://social.technet.microsoft.com/Forums/home).
+Ask a question or start a discussion with Microsoft technical experts! We provide answers and insights on the searchable [Microsoft Intune TechNet Forum](https://social.technet.microsoft.com/Forums/home?forum=microsoftintuneprod).
 
 ![Microsoft Intune TechNet Forum](./media/technet-forum-for-support.png)
 
