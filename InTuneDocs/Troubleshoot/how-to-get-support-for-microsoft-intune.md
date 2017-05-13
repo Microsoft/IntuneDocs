@@ -44,7 +44,7 @@ Before creating a support ticket, check out the following resources for answers 
 
 ### Microsoft Intune TechNet forums
 
-Ask a question or start a discussion with Microsoft technical experts! We provide answers and insights on the searchable [Microsoft Intune TechNet Forum](https://social.technet.microsoft.com/Forums/home).
+Ask a question or start a discussion with Microsoft technical experts! We provide answers and insights on the searchable [Microsoft Intune TechNet Forum](https://social.technet.microsoft.com/Forums/home?forum=microsoftintuneprod).
 
 ![Microsoft Intune TechNet Forum](./media/technet-forum-for-support.png)
 
