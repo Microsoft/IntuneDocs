@@ -612,8 +612,8 @@
 		"source_path": "InTuneDocs/understand-explore/use-multi-identity.md",
 		"redirect_url": "https://docs.microsoft.com/enterprise-mobility/solutions/fasttrack-how-to-use-apps-with-multi-identity-support",
 		"redirect_document_id": true
-	}
-  ,
+	},
+  
   {
     "source_path": "InTuneDocs/get-started/windows-pc-management-capabilities-in-microsoft-intune",
     "redirect_url": "https://docs.microsoft.com/intune/deploy-use/manage-windows-pcs-with-microsoft-intune",
