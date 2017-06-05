@@ -60,13 +60,13 @@ Pulse Secure|Yes  |Yes |Yes   |Yes  |Yes| Yes|
 F5 Edge Client|Yes |Yes |Yes |Yes  |   Yes |  Yes|   
 Dell SonicWALL Mobile Connect|Yes |Yes |Yes |Yes |Yes |Yes|         
 CheckPoint Mobile VPN|Yes |Yes |Yes |Yes|Yes|Yes|
-Microsoft SSL (SSTP)|No |No |No |No|No|VPNv1 OMA-URI*|
+Microsoft SSL (SSTP)|No |No |No |No|No|VPNv1 OMA-URI|
 Microsoft Automatic|No |No |No |No|Yes (OMA-URI)|Yes|
 IKEv2|iOS custom profile|No |No |No|Yes (OMA-URI)|Yes|
 PPTP|iOS custom profile|No |No |No|No|Yes|
 L2TP|iOS custom profile|No |No |No|Yes (OMA-URI)|Yes|
 
-\* Without additional settings that are otherwise available for Windows 10.
+Without additional settings that are otherwise available for Windows 10.
 
 > [!IMPORTANT]
 > Before you can use VPN profiles deployed to a device, you must install the applicable VPN app for the profile. You can use the information in the [Deploy apps in Microsoft Intune](deploy-apps-in-microsoft-intune.md) topic to help you deploy the applicable app by using Intune.  
