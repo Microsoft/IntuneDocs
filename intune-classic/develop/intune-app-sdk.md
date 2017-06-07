@@ -6,7 +6,7 @@ description: The Intune App SDK is available for both the iOS and Android platfo
 keywords:
 author: mtillman
 manager: angrobe
-ms.date: 12/15/2016
+ms.date: 06/05/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -65,6 +65,11 @@ For example, many users configure both corporate and personal email accounts in 
 
 The multi-identity feature helps solve the data protection problem that organizations face with store apps that support both personal and work accounts.
 
+### On-demand application VPN connections with Citrix mVPN 
+You can now manage devices and apps with a combination of Citrix XenMobile MDX and Microsoft Intune. This allows you to manage apps with Intune app protection policy while using Citrix’s mVPN technology. The integration with Citrix is available for with the Intune App SDK for iOS and Android, and with the Intune App Wrapping Tool (with the -citrix flag).
+
+To learn more about Citrix MDX, see [About the MDX Toolkit](http://docs.citrix.com/en-us/mdx-toolkit/10/about-mdx-toolkit.html).
+To learn more about how to enable Microsoft Intune's on-demand application VPN connections capabilities, see [Citrix Instructions](link-here).
 
 ### App protection without device enrollment
 
