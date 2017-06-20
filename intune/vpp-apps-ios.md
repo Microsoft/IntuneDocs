@@ -92,6 +92,8 @@ When you assign the app as a **Required** installation, each user who installs t
 
 To reclaim a license, you must change the assignment action to **Uninstall**. The license will be reclaimed after the app is uninstalled.
 
-When a user with an eligible device first tries to install a VPP app, they will be asked to join the Apple Volume Purchase program. They must do this before the app installation proceeds. The invitation to join the Apple Volume Purchase program requires that the user can use the iTunes app on the iOS device. If you have set a custom configuration policy to disable the iTunes Store app, user-based licensing for VPP apps does not work. The solution is to either allow the iTunes app by removing the policy, or use device-based licensing.
+When a user with an eligible device first tries to install a VPP app, they will be asked to join the Apple Volume Purchase program. They must do this before the app installation proceeds. The invitation to join the Apple Volume Purchase program requires that the user can use the iTunes app on the iOS device. **Do not reuse** the same Apple ID on multiple devices. If you rather not have each user have their own Apple ID to get a volume-purchased app, consider using device-based licensing.
+
+If you have set a custom configuration policy to disable the iTunes Store app, user-based licensing for VPP apps does not work. The solution is to either allow the iTunes app by removing the policy, or use device-based licensing.
 
 When you assign a VPP app as Available, the app content and license are assigned directly from the app store.
