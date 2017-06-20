@@ -74,6 +74,7 @@ You can synchronize the data held by Apple with Intune at any time by choosing *
 
 > [!NOTE]
 > Microsoft Intune will only sync information of Apps which are publicly available through the iTunes Store. **Custom B2B Apps for iOS** are not yet supported. If your scenario targets such apps, the app information will not be synchronized.
+> The list of apps get displayed per token, so if you have an App which is associated with multiple VPP tokens, you will notice the same app being displayed multiple times, since it is associated with a different token.
 
 ## To assign a volume-purchased app
 
