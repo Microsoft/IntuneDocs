@@ -50,6 +50,7 @@ Before you start, you'll need to get a VPP token from Apple and upload this to y
 * If you previously used a VPP token with a different product, you must generate a new one to use with Intune.
 * Each token is valid for one year.
 * By default, Intune syncs with the Apple VPP service twice a day. You can start a manual sync at any time.
+* Intune only syncs VPP app information from the VPP store with the country code associated with the Intune account. In other words, you will only be able to see and deploy VPP apps for the country code your Intune account is configured for. 
 * After you have imported the VPP token to Intune, do not import the same token to any other device management solution. Doing so might result in the loss of license assignment and user records.
 * Before you start to use iOS VPP with Intune, remove any existing VPP user accounts created with other mobile device management (MDM) vendors. Intune will not synchronize those user accounts into Intune as a security measure. Intune will only synchronize data from the Apple VPP service that Intune created.
 * Intune supports adding up to 256 VPP tokens.
