@@ -86,6 +86,9 @@ You must choose an assignment action of **Required**. Additionally, assignments 
 
 See [How to monitor apps](apps-monitor.md) for information to help you monitor app assignments.
 
+> [!NOTE]
+> In case you are targeting a volume-purchased app for DEP device enrolled through Device Enrollment Profile or Apple Configurator, only apps which are targeted for Device Licensing will work. In other words, you cannot target User Licensing for a volume-purchased app for a DEP device which does not have any user affinity.
+
 ## Further information
 
 When you assign the app as a **Required** installation, each user who installs the app uses a license.
