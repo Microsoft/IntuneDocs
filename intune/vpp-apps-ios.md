@@ -48,6 +48,7 @@ Before you start, you'll need to get a VPP token from Apple and upload this to y
 
 * You can associate multiple volume-purchase program tokens with your Intune account.
 * If you previously used a VPP token with a different product, you must generate a new one to use with Intune.
+* A given VPP token is only supported for use on one Intune account at a given time. Do not reuse the same VPP token for multiple Intune tenants.
 * Each token is valid for one year.
 * By default, Intune syncs with the Apple VPP service twice a day. You can start a manual sync at any time.
 * After you have imported the VPP token to Intune, do not import the same token to any other device management solution. Doing so might result in the loss of license assignment and user records.
