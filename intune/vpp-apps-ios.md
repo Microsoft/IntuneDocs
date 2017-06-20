@@ -65,7 +65,8 @@ Before you start, you'll need to get a VPP token from Apple and upload this to y
 	- **VPP token file** - If you haven't already, sign up for the Volume Purchase Program for Business or the Volume Purchase Program for Education. After you sign up, download the Apple VPP token for your account and select it here.
 	- **Apple ID** - Enter the Apple ID of the account associated with the volume-purchase program.
 	- **Type of VPP account** - Choose from **Business** or **Education**.
-4. When you are done, click **Upload**.
+4. When you are done, click **Upload**. 
+5. Please do not click the **Upload** button multiple times for the same VPP token. Doing that will result in duplicate VPP tokens and end up syncing duplicate VPP apps for the same VPP token. 
 
 The token is displayed in the list of tokens blade.
 
