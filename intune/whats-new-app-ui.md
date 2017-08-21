@@ -34,7 +34,7 @@ Learn what updates we've made to the UI for apps that your end users will see in
 
 The Company Portal app for Windows 10 is moving the __Category__ tag from below the title to a property on the __Device Details__ page.
 
-[!The Company Portal app for Windows' "Device Details" screen, which now shows the "Categories" field as a property rather than directly below the title of that screen.](./media/cp_win10_category_tag_move_after_1708.png)
+![The Company Portal app for Windows' "Device Details" screen, which now shows the "Categories" field as a property rather than directly below the title of that screen.](./media/cp_win10_category_tag_move_after_1708.png)
 
 ## Week of July 31, 2017
 
