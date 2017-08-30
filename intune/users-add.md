@@ -93,7 +93,7 @@ After you've added users to your Intune subscription, we recommend that you gran
 6. Choose **Save**.
 
 ### Give admin permissions in the Intune portal
-1. Sign in to the [Intune portal](https://www.office.com/signin) with a global administrator account.
+1. Sign in to the [Intune portal](https://portal.azure.com/#blade/Microsoft_Intune_DeviceSettings/ExtensionLandingBlade/overview) with a global administrator account.
 2. In the Intune portal, choose **User**, and then choose the user you want to give admin permissions.
 3. Select **Directory role**, and then select the permission.
   ![Screenshot](./media/add-intune-directory-role.png)
