@@ -145,11 +145,7 @@ The following list of Samsung device models do not support KNOX and are enrolled
 
 | **Device Name** | **Device Model Numbers** |
 | --- | --- |
-| Galaxy A3 | SM-A300G<br>SM-A310Y<br>SM-A320FL |
-| Galaxy A5 | SM-A500G |
-| Galaxy Alpha | SM-G850M |
 | Galaxy Avant | SM-G386T |
-| Galaxy C9/C9 Pro | SM-C900F |
 | Galaxy Core 2/Core 2 Duos | SM-G355H<br>SM-G355M |
 | Galaxy Core Lite | SM-G3588V |
 | Galaxy Core Prime | SM-G360H |
@@ -157,38 +153,27 @@ The following list of Samsung device models do not support KNOX and are enrolled
 | Galaxy Grand | GT-I9082L<br>GT-I9082<br>GT-I9080L |
 | Galaxy Grand 3 | SM-G7200 |
 | Galaxy Grand Neo | GT-I9060I |
-| Galaxy Grand Prime | SM-G530M |
 | Galaxy Grand Prime Value Edition | SM-G531H |
 | Galaxy J Max | SM-T285YD |
 | Galaxy J1 | SM-J100H<br>SM-J100M<br>SM-J100ML |
 | Galaxy J1 Ace | SM-J110F<br>SM-J110H |
 | Galaxy J1 Mini | SM-J105M |
 | Galaxy J2/J2 Pro | SM-J200H<br>SM-J210F |
-| Galaxy J3 | SM-J320F<br>SM-J320FN<br>SM-J320H<br>SM-J320M<br>SM-J320W8 |
-| Galaxy J5 | SM-J500G |
-| Galaxy J7 | SM-J710F |
-| Galaxy J7 Prime | SM-J727T1 |
+| Galaxy J3 | SM-J320F<br>SM-J320FN<br>SM-J320H<br>SM-J320M |
 | Galaxy K Zoom | SM-C115 |
 | Galaxy Light | SGH-T399N |
 | Galaxy Note 3 | SM-N9002<br>SM-N9009 |
-| Galaxy Note 5 | SM-N920G<br>SM-N920I<br>SM-N920W8 |
 | Galaxy Note 7/Note 7 Duos | SM-N930S<br>SM-N9300<br>SM-N930F<br>SM-N930T<br>SM-N9300<br>SM-N930F<br>SM-N930S<br>SM-N930T |
 | Galaxy Note 10.1 3G | SM-P602 |
-| Galaxy NotePRO 12.2&quot; | SM-P902 |
-| Galaxy On5 | SM-G570MSM-G570Y |
-| Galaxy On7 | SM-G600FY<br>SM-G610M<br>SM-G610Y |
 | Galaxy S2 Plus | GT-I9105P |
 | Galaxy S3 Mini | SM-G730A<br>SM-G730V |
 | Galaxy S3 Neo | GT-I9300<br>GT-I9300I |
 | Galaxy S4 | SM-S975L |
-| Galaxy S4 Active | GT-I9295 |
 | Galaxy S4 Neo | SM-G318ML |
-| Galaxy S5 | SM-G9006W<br>SM-G900M |
-| Galaxy S5 Neo | SM-G903M |
-| Galaxy S6 Edge | 404SCSM-G925I<br>SM-G928G |
-| Galaxy Tab A 7.0&quot; | SM-T280SM-T285 |
-| Galaxy Tab A 9.7&quot; | SM-P555M |
-| Galaxy Tab 3 7&quot;/Tab 3 Lite 7&quot; | SM-T116SM-T210SM-T211 |
+| Galaxy S5 | SM-G9006W |
+| Galaxy S6 Edge | 404SC |
+| Galaxy Tab A 7.0&quot; | SM-T280<br>SM-T285 |
+| Galaxy Tab 3 7&quot;/Tab 3 Lite 7&quot; | SM-T116<br>SM-T210<br>SM-T211 |
 | Galaxy Tab 3 8.0&quot; | SM-T311 |
 | Galaxy Tab 3 10.1&quot; | GT-P5200<br>GT-P5210<br>GT-P5220 |
 | Galaxy Trend 2 Lite | SM-G318H |
