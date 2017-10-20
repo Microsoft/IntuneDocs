@@ -74,3 +74,5 @@ The multi-identity feature helps solve the data protection problem that organiza
 Many users with personal devices want to access corporate data without enrolling their personal device with a Mobile Device Management (MDM) provider. Since MDM enrollment requires global control of the device, users are often hesitant to give control of their personal device over to their company.
 
 App protection without device enrollment allows the Microsoft Intune service to deploy app protection policy to an app directly, without relying on a device management channel to deploy the policy.
+
+
