@@ -6,7 +6,7 @@ keywords:
 author: NathBarn
 ms.author: NathBarn
 manager: angrobe
-ms.date: 06/18/2017
+ms.date: 10/20/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -29,7 +29,7 @@ ms.custom: intune-azure
 
 As an administrator, you can join large numbers of new Windows devices to Azure Active Directory and Intune. To bulk enroll devices for your Azure AD tenant, you create a provisioning package with the Windows Configuration Designer (WCD) app. Applying the provisioning package to corporate-owned devices joins the devices to your Azure AD tenant and enrolls them for Intune management. Once the package is applied, it's ready for your Azure AD users to log on.
 
-Azure AD users are standard users on these devices and receive assigned Intune policies and required apps. Self-service and Company Portal scenarios are not supported at this time.
+Azure AD users are standard users on these devices and receive assigned Intune policies and required apps. Self-service and Company Portal scenarios are not supported at this time. 
 
 ## Prerequisites for Windows devices bulk enrollment
 
@@ -96,6 +96,9 @@ Provisioning is intended to be used on new Windows devices. Provisioning failure
 
 ### Problems with bulk enrollment and Company Portal
 If a user tries to enroll a previously bulk-enrolled device using the Company Portal, they will receive a warning that their device needs further actions, either setup or enrollment. The device is enrolled, but the enrollment is not recognized by the Company Portal app or website.
+
+### Bulk enrollment with Wi-Fi
+Bulk enrolled devices are unable to use to user-targeted certificates and Wi-Fi deployment. If you are using certificates to manage your devices' Wi-Fi, use *some other enrollment method*.
 
 ### Conditional access
 Conditional access is not available for Windows devices enrolled using bulk enrollment.
