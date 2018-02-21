@@ -114,7 +114,6 @@ Microsoft Intune collects data on usage statistics for your app.
 
 	* If end users choose not to send this data, they must turn off telemetry under Settings on the Company Portal app. To learn more, see [Turn off Microsoft usage data collection](https://docs.microsoft.com/intune-user-help/turn-off-microsoft-usage-data-collection-android). 
 
-
  iOS and Android line-of-business app version number is visible <!-- 1380712 -->
 
 ## Line-of-business app version numbers
@@ -147,7 +146,7 @@ Build number|CFBundleVersion|PackageVersionCode |This number is used to indicate
 #### iOS
 
 - **CFBundleShortVersionString**  
-    Specifies the release version number of the bundle. This number identifies a released version of the app. The number is used by end users to reference the app.​
+    Specifies the release version number of the bundle. This number identifies a released version of the app. The number is used by end users to reference the app.
  - **CFBundleVersion**  
     The build version of the bundle, which identifies an iteration of the bundle. The number may be identify a release or unreleased bundle. The number is used for app detection.
 
