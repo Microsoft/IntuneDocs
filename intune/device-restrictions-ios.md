@@ -221,8 +221,8 @@ You can also click **Import** to populate the list from a csv file in the format
 - 	**Join Wi-Fi networks only using configuration profiles (supervised only)** - Only allow the device to join Wi-Fi networks that have been configured with an Intune Wi-Fi profile.
 
 - **Cellular usage rules (managed apps only)** - Lets you define the data types that managed apps can use when on cellular networks. Choose from:
-	- **Block use of cellular data** - You can block use of cellular data for ** All managed apps** or **Choose specific apps**.
-	- **Block use of cellular data when roaming** - You can block use of cellular data when roaming for ** All managed apps** or **Choose specific apps**.
+	- **Block use of cellular data** - You can block use of cellular data for **All managed apps** or **Choose specific apps**.
+	- **Block use of cellular data when roaming** - You can block use of cellular data when roaming for **All managed apps** or **Choose specific apps**.
 
 ## Connected Devices
 
