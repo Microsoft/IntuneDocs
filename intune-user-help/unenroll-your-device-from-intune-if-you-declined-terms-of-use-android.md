@@ -49,7 +49,7 @@ To remove your device from Intune and uninstall the Company Portal app:
 
     You can now uninstall the Company Portal app.
 
-## Removing your personal information after removing the Company Portal
+## Removing data collected by the Company Portal app
 
 To remove all data that the Company Portal app for Android stores on your device:
 
