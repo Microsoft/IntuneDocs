@@ -43,7 +43,7 @@ When a push certificate expires, you must renew it. When renewing, make sure to 
 
 
 ## Steps to get your certificate
-In the [Azure portal](https://portal.azure.com), choose **Device enrollment** > **Apple Enrollment** > **Apple MDM Push Certificate**, and then follow these steps in the [Azure portal](https://portal.azure.com).
+In the [Azure portal](https://portal.azure.com), choose **Device enrollment** > **Apple Enrollment**  **On the Apple MDM Push Certificate tile, Click to setuop**, and then follow these steps in the [Azure portal](https://portal.azure.com).
 
 ### Step 1. Grant Microsoft permission to send user and device information to Apple
 Select **I agree.** to give Microsoft permission to send data to Apple.
