@@ -49,7 +49,7 @@ The Intune management extension has the following prerequisites:
 4. On the **Device configuration** pane, choose **Manage** > **PowerShell scripts**.
 5. On the **PowerShell scripts** pane, choose **Add**.
 6. On the **Add PowerShell Script** pane, enter a **Name** and **Description** for the PowerShell script.
-7. For **Script location**, browse for the PowerShell script. The script must be less than 10 KB (ASCII) or 5 KB (Unicode).
+7. For **Script location**, browse for the PowerShell script. The script must be less than 200 KB.
 8. Choose **Configure**, and then choose whether to run the script with the user's credentials on the device (**Yes**) or system context(**No**). By default, the script runs in the system context. Select **Yes** unless the script is required to run in the system context. 
   ![Add PowerShell script pane](./media/mgmt-extension-add-script.png)
 9. Choose whether the script must be signed by a trusted publisher (**Yes**). By default, there is no requirement for the script to be signed. 
