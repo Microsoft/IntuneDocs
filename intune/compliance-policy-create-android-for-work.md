@@ -97,16 +97,16 @@ If your enterprise uses Android work profiles, you can enable **Threat scan on a
 
 - **Require a password to unlock mobile devices**: **Require** users to enter a password before they can access their device.
 - **Minimum password length**: Enter the minimum number of digits or characters that the user's password must have.
-- **Required password type**: Choose if a password should have only numeric characters, or if there should be a mix of numbers and other characters. Choose from:
+- **Required password type**: Choose whether a password should have only numeric characters there should be a mix of numbers and other characters. Choose from:
   - **Device Default**
   - **Low security biometric**
   - **At least numeric**
-  - **Numeric complex**
+  - **Numeric complex**: Repeated or consecutive numerals (such as "1111" or "1234") are not allowed.
   - **At least alphabetic**
   - **At least alphanumeric**
   - **At least alphanumeric with symbols**
 - **Maximum minutes of inactivity before password is required**: Enter the idle time before the user must reenter their password.
-- **Password expiration (days)**: Select the number of days before the password expires, and they must create a new one.
+- **Password expiration (days)**: Select the number of days before the password expires and the user must create a new password.
 - **Number of previous passwords to prevent reuse**: Enter the number of recent passwords that can't be reused. Use this setting to restrict the user from creating previously used passwords.
 
 ### Encryption
