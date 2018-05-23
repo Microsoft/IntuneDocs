@@ -45,6 +45,18 @@ Learn what’s new each week in Microsoft Intune. You can also find out about [u
 
 -->   
 
+## <a name="week-of-may-7-2018"> </a> Week of May 7, 2018
+
+### Application Management
+
+#### Samsung Knox mobile registration support <! - 1112863 ->
+
+When using Intune with Samsung Knox Mobile Enrollment (KME), you can register a large number of Android devices belonging to the company. Users connected to the Wi-Fi or cellular network can sign up with a few clicks when they start their device for the first time. When using the Knox deployment application, devices can be registered via Bluetooth or NFC. For more information, see the documentation for setting up Intune with Samsung KME [android-samsung-knox-mobile-enroll.md].
+
+#### Apply for support via the company portal for Windows 10 <! - 1874137 ->
+
+The Enterprise Portal for Windows 10 now sends application logs directly to Microsoft when the user initiates the process for help with a problem. This will help troubleshoot and resolve problems reported to Microsoft.
+
 ## Week of May 14, 2018
 
 ### App management
