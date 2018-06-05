@@ -35,7 +35,7 @@ The endpoint protection profile lets you control security features on Windows 10
 Use the information in this article to create endpoint protection profiles. To configure Windows Defender Antivirus, see [Windows 10 Device Restrictions](device-restrictions-windows-10.md#windows-defender-antivirus). 
 
 > [!NOTE]
-> These settings are not supported on the Home and Professional editions of Windows 10.
+> These settings are not supported on the Home edition of Windows 10.
 
 ## Windows Defender Application Guard
 
