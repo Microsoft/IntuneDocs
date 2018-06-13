@@ -122,7 +122,7 @@ The following steps explain how to enroll iOS devices on "day 0" by using Apple 
        - **Send diagnostic data to Apple** - If enabled, Setup Assistant prompts for this service during activation
    - **Enable additional Apple Configurator management** - Set to **Disallow** to prevent syncing files with iTunes or management via Apple Configurator. It's a good idea to choose **Disallow**, export further configurations from Apple Configurator, and then deploy as a Custom iOS configuration profile via Intune instead of using this setting to allow manual deployment with or without a certificate.
       - **Disallow** - Prevents the device from communicating via USB (disables pairing)
-      - **Allow** - Allows a device to communicate via USB connection for any PC or Mac
+      - **Allow** - Allows a device to communicate via USB connection for any Mac, and to use Apple Configurator to add or remove additional restrictions per device
       - **Require certificate** - Allows pairing with a Mac with a certificate imported to the enrollment profile
 
 ### Assign the profile to devices
