@@ -55,8 +55,7 @@ The profile is created and appears on the profiles list pane.
 ## Example
 In the following screenshot, the setting **Connectivity/AllowVPNOverCellular** has been enabled. This lets a Windows 10 device open a VPN connection when on a cellular network.
 
-> ![Example of a custom policy containing VPN settings](./media/custom-policy-example.png)
-
+> ![Example of a custom policy containing VPN settings](https://github.com/JankeSkanke/JankeStuff/blob/master/OMAURI1.PNG) 
 
 ## How to find the policies you can configure
 
