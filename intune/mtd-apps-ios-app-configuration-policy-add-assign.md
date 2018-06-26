@@ -60,6 +60,7 @@ Choose the section that corresponds to your MTD provider:
   - [Symantec Endpoint Protection Mobile (SEP Mobile)](#configure-symantec-endpoint-protection-mobile-apps)
   - [Check Point SandBlast Mobile](#configure-check-point-sandblast-mobile-apps)
   - [Zimperium](#configure-zimperium-apps)
+  - [Pradeo](#configure-pradeo-apps)
 
 ### Configure Lookout for Work apps
 
@@ -122,6 +123,16 @@ Choose the section that corresponds to your MTD provider:
  - **iOS**
 
     - See the instructions for [adding iOS store apps to Microsoft Intune](store-apps-ios.md). Use this [Zimperium app store URL](https://itunes.apple.com/us/app/zimperium-zips/id1030924459?mt=8) in **step 12** under the **Configure app information** section.
+    
+### Configure Pradeo apps
+
+ - **Android**
+
+    - See the instructions for [adding Android store apps to Microsoft Intune](store-apps-android.md). Use this [Pradeo app store URL](https://play.google.com/store/apps/details?id=net.pradeo.service&hl=en_US) on **step 7**.
+
+ - **iOS**
+
+    - See the instructions for [adding iOS store apps to Microsoft Intune](store-apps-ios.md). Use this [Pradeo app store URL](https://itunes.apple.com/us/app/pradeo-agent/id547979360?mt=8) in **step 12** under the **Configure app information** section.
 
 ## Configure your MTD apps with an iOS app configuration policy
 
