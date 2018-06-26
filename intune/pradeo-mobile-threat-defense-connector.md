@@ -53,37 +53,14 @@ When malicious apps such as malware are detected on devices, you can block devic
 
 -   Accessing company apps
 
-**Block when malicious apps are detected:**
-
-![Malicious apps detected](./media/Maliciousapps_blocked_Pradeo.png)
-
-**Access granted on remediation:**
-
-![Malicious apps detected access granted](./media/maliciousapps_unblocked_Pradeo.png)
-
 ### Control access based on threat to network
 
 Detect threats like **Man-in-the-middle** in network, and protect access to Wi-Fi networks based on the device risk.
-
-**Block network access through Wi-Fi:**
-
-![Block network access through Wi-Fi](./media/network_wifi_blocked_Pradeo.png)
-
-**Access granted on remediation:**
-
-![Access granted on remediation](./media/network_wifi_unblocked_Pradeo.png)
 
 ### Control access to SharePoint Online based on threat to network
 
 Detect threats like **Man-in-the-middle** in network, and prevent synchronization of corporate files based on the device risk.
 
-**Block SharePoint Online when network threats are detected:**
-
-![Block SharePoint Online when network threats are detected](./media/network_spo_blocked_Pradeo.png)
-
-**Access granted on remediation:**
-
-![Access granted on remediation for Sharepoint example](./media/network_spo_unblocked_Pradeo.png)
 
 ## Supported platforms
 
