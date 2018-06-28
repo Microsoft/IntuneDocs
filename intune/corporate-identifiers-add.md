@@ -73,6 +73,7 @@ This .csv file when viewed in a text editor appears as:
 >Also note:
 >Android Serial numbers are not guaranteed to be unique or present. Check with your device supplier to understand if serial number is a reliable device ID.
 >Serial numbers reported by the device to Intune might not match the displayed ID in the Android Settings/About menus on the device. Verify the type of serial number reported by the device manufacturer.
+>Attempting to upload a file with serial numbers containing dots (.) will cause the upload to fail. Serial numbers with dots are not supported.
 
 ### Add a .csv list of corporate identifiers
 

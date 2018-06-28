@@ -45,6 +45,12 @@ Learn what’s new each week in Microsoft Intune. You can also find out about [u
 
 -->   
 
+## Week of June 18, 2018
+
+### Edge mobile support for Intune app protection policies <!-- 1817882 -->
+
+The Microsoft Edge browser for mobile devices now supports app protection policies defined in Intune.
+
 ## Week of June 11, 2018
 
 ### Use FIPS mode with the NDES Certificate connector <!-- 1333688 -->
@@ -94,7 +100,7 @@ With this update, the graphical user chart is back, and shown in the Azure porta
 ### Device enrollment
 
 #### Support for Windows Autopilot enrollment without user authentication <!-- 1165118 wnready -->
-Intune now supports Windows Autopilot enrollment without user authentication. This is a new option in the Windows Autopilot deployment profile "Autopilot Deployment mode" set to "Self-Deploying".  The device must be running Windows 10 build 1803 or later and possess a TPM 2.0 to authorize this type of enrollment. Since no user authentication is required, you should only assign this option to devices that you have physical control over.
+Intune now supports Windows Autopilot enrollment without user authentication. This is a new option in the Windows Autopilot deployment profile "Autopilot Deployment mode" set to "Self-Deploying".  The device must be running Windows 10 Insider Preview Build 17672 or later and possess a TPM 2.0 chip to successfully complete this type of enrollment. Since no user authentication is required, you should only assign this option to devices that you have physical control over.
 
 #### New language/region setting when configuring OOBE for Autopilot <!-- 1821766 eeready -->
 A new configuration setting is available to set the language and region for Autopilot profiles during the Out of Box Experience. To see the new setting, choose **Device enrollment** > **Windows enrollment** > **Deployment profiles** > **Create profile** > **Deployment mode** = **Self-deploying** > **Defaults configured**.

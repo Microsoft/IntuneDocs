@@ -7,7 +7,7 @@ keywords:
 author: Erikre
 manager: dougeby
 ms.author: erikre
-ms.date: 05/18/2018
+ms.date: 06/22/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -158,6 +158,9 @@ To enable the Intune App SDK, follow these steps:
    |- o |  (Optional) `<Path to the output plist>` |
 
 If the '-o' parameter is not specified, the input file will be modified in-place. The tool is idempotent, and should be rerun whenever changes to the app's Info.plist or entitlements have been made. You should also download and run the latest version of the tool when updating the Intune SDK, in case Info.plist config requirements have changed in the latest release.
+
+> [!NOTE]
+> If your app does not use FaceID already, ensure the `NSFaceIDUsageDescription` info.plist key is configured with a default message. This is required so iOS can let the user know how the app intends to use FaceID. An Intune app protection policy setting allows for FaceID to be used as a method for app access when configured by the IT admin.
 
 ## Configure Azure Active Directory Authentication Library (ADAL)
 

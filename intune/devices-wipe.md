@@ -154,7 +154,7 @@ If the device is on and connected, the **Remove company data** action propagates
 
 If you want to remove devices from the Intune portal, you can delete them from the specific device pane. The next time the device checks in, any company data on it will be removed.
 
-1. Sign in to the [Intune in the Azure portal](https://aka.ms/intuneportal).
+1. Sign in to [Intune in the Azure portal](https://aka.ms/intuneportal).
 2. Choose **Devices** > **All devices** > choose the devices you want to delete > **Delete**.
 
 ## Delete devices from the Azure Active Directory portal

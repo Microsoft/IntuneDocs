@@ -1165,7 +1165,7 @@
 		},
 		{
 			"source_path": "intune-azure/introduction/contact-assisted-phone-support-for-microsoft-intune.md",
-			"redirect_url": "/intune/introduction/contact-assisted-phone-support-for-microsoft-intune",
+			"redirect_url": "/intune/get-support",
 			"redirect_document_id": false
 		},
 		{
@@ -1840,13 +1840,13 @@
 		},
 		{
 			"source_path": "intune/introduction/contact-assisted-phone-support-for-microsoft-intune.md",
-			"redirect_url": "/intune/phone-support-contact",
-			"redirect_document_id": true
+			"redirect_url": "/intune/get-support",
+			"redirect_document_id": false
 		},
 		{
 			"source_path": "intune/introduction/how-to-get-support-for-microsoft-intune.md",
 			"redirect_url": "/intune/get-support",
-			"redirect_document_id": true
+			"redirect_document_id": false
 		},
 		{
 			"source_path": "intune/introduction/known-issues-in-the-intune-preview.md",
@@ -2061,7 +2061,7 @@
 		{
 			"source_path": "intune/manage-users/help-desk.md",
 			"redirect_url": "/intune/help-desk-operators",
-			"redirect_document_id": true
+			"redirect_document_id": false
 		},
 		{
 			"source_path": "intune/manage-users/what-is.md",
@@ -2108,11 +2108,16 @@
 			"redirect_url": "/intune/device-compliance",
 			"redirect_document_id": true
 		},
-			{
+		{
 			"source_path": "intune/accessibility-features-of-microsoft-intune.md",
-			"redirect_url": "/intune-classic/accessibility-features-of-microsoft-intune",
-			"redirect_document_id": true
+			"redirect_url": "https://docs.microsoft.com/azure/azure-portal/azure-portal-keyboard-shortcuts",
+			"redirect_document_id": false
 		},
+		{
+			"source_path": "intune-classic/accessibility-features-of-microsoft-intune.md",
+			"redirect_url": "https://docs.microsoft.com/azure/azure-portal/azure-portal-keyboard-shortcuts",
+			"redirect_document_id": true
+		},		
 		{
 			"source_path": "intune/accessibility-for-people-with-disabilities.md",
 			"redirect_url": "https://www.microsoft.com/accessibility",
@@ -2590,14 +2595,24 @@
 		},		
 		{
 			"source_path": "intune/deploy-use/enroll-corporate-owned-ios-devices-in-microsoft-intune.md",
-			"redirect_url": "/intune-classic/deploy-use/enroll-corporate-owned-ios-devices-in-microsoft-intune",
-			"redirect_document_id": true
+			"redirect_url": "/intune/ios-enroll",
+			"redirect_document_id": false
 		},
 		{
-			"source_path": "intune/deploy-use/enroll-devices-in-microsoft-intune.md",
-			"redirect_url": "/intune-classic/deploy-use/enroll-devices-in-microsoft-intune",
+			"source_path": "intune-classic/deploy-use/enroll-corporate-owned-ios-devices-in-microsoft-intune.md",
+			"redirect_url": "/intune/ios-enroll",
 			"redirect_document_id": true
+		},		
+		{
+			"source_path": "intune/deploy-use/enroll-devices-in-microsoft-intune.md",
+			"redirect_url": "/intune/device-enrollment",
+			"redirect_document_id": false
 		},
+		{
+			"source_path": "intune-classic/deploy-use/enroll-devices-in-microsoft-intune.md",
+			"redirect_url": "/intune/device-enrollment",
+			"redirect_document_id": true
+		},		
 		{
 			"source_path": "intune/deploy-use/exchange-access-rules-for-mobile-devices.md",
 			"redirect_url": "/intune/exchange-connector-install",
@@ -3035,9 +3050,14 @@
 		},		
 		{
 			"source_path": "intune/deploy-use/multi-factor-authentication-azure-active-directory.md",
-			"redirect_url": "/intune-classic/deploy-use/multi-factor-authentication-azure-active-directory",
-			"redirect_document_id": true
+			"redirect_url": "/intune/multi-factor-authentication",
+			"redirect_document_id": false
 		},
+		{
+			"source_path": "intune-classic/deploy-use/multi-factor-authentication-azure-active-directory.md",
+			"redirect_url": "/intune/multi-factor-authentication",
+			"redirect_document_id": true
+		},		
 		{
 			"source_path": "intune/deploy-use/overview-of-app-lifecycle-in-microsoft-intune.md",
 			"redirect_url": "/intune/device-lifecycle",
@@ -3190,9 +3210,14 @@
 		},		
 		{
 			"source_path": "intune/deploy-use/restrict-access-to-dynamics-crm-online-with-microsoft-intune.md",
-			"redirect_url": "/intune-classic/deploy-use/restrict-access-to-dynamics-crm-online-with-microsoft-intune",
-			"redirect_document_id": true
+			"redirect_url": "/intune/app-based-conditional-access-intune",
+			"redirect_document_id": false
 		},
+		{
+			"source_path": "intune-classic/deploy-use/restrict-access-to-dynamics-crm-online-with-microsoft-intune.md",
+			"redirect_url": "/intune/app-based-conditional-access-intune",
+			"redirect_document_id": true
+		},		
 		{
 			"source_path": "intune/deploy-use/restrict-access-to-email-and-o365-services-with-microsoft-intune.md",
 			"redirect_url": "/intune/app-based-conditional-access-intune",
@@ -3245,9 +3270,14 @@
 		},		
 		{
 			"source_path": "intune/deploy-use/restrict-access-to-skype-for-business-online-with-microsoft-intune.md",
-			"redirect_url": "/intune-classic/deploy-use/restrict-access-to-skype-for-business-online-with-microsoft-intune",
-			"redirect_document_id": true
+			"redirect_url": "/intune/app-based-conditional-access-intune",
+			"redirect_document_id": false
 		},
+		{
+			"source_path": "intune-classic/deploy-use/restrict-access-to-skype-for-business-online-with-microsoft-intune.md",
+			"redirect_url": "/intune/app-based-conditional-access-intune",
+			"redirect_document_id": true
+		},		
 		{
 			"source_path": "intune/deploy-use/restrict-email-access-example-scenarios.md",
 			"redirect_url": "/intune/common-scenarios",
@@ -4175,14 +4205,24 @@
 		},
 		{
 			"source_path": "intune/Troubleshoot/collect-device-logs.md",
-			"redirect_url": "/intune-classic/Troubleshoot/collect-device-logs",
-			"redirect_document_id": true
+			"redirect_url": "/intune/help-desk-operators",
+			"redirect_document_id": false
 		},
 		{
-			"source_path": "intune/Troubleshoot/contact-assisted-phone-support-for-microsoft-intune.md",
-			"redirect_url": "/intune-classic/Troubleshoot/contact-assisted-phone-support-for-microsoft-intune",
+			"source_path": "intune-classic/Troubleshoot/collect-device-logs.md",
+			"redirect_url": "/intune/help-desk-operators",
 			"redirect_document_id": true
+		},		
+		{
+			"source_path": "intune/Troubleshoot/contact-assisted-phone-support-for-microsoft-intune.md",
+			"redirect_url": "/intune/get-support",
+			"redirect_document_id": false
 		},
+		{
+			"source_path": "intune-classic/Troubleshoot/contact-assisted-phone-support-for-microsoft-intune.md",
+			"redirect_url": "/intune/get-support",
+			"redirect_document_id": false
+		},		
 		{
 			"source_path": "intune/Troubleshoot/device-threat-protection-troubleshooting.md",
 			"redirect_url": "/intune/lookout-mtd-connector-integration",
@@ -4195,19 +4235,29 @@
 		},		
 		{
 			"source_path": "intune/Troubleshoot/general-troubleshooting-tips-for-microsoft-intune.md",
-			"redirect_url": "/intune-classic/Troubleshoot/general-troubleshooting-tips-for-microsoft-intune",
-			"redirect_document_id": true
+			"redirect_url": "/intune/help-desk-operators",
+			"redirect_document_id": false
 		},
 		{
-			"source_path": "intune/Troubleshoot/how-to-get-support-for-microsoft-intune.md",
-			"redirect_url": "/intune-classic/Troubleshoot/how-to-get-support-for-microsoft-intune",
+			"source_path": "intune-classic/Troubleshoot/general-troubleshooting-tips-for-microsoft-intune.md",
+			"redirect_url": "/intune/help-desk-operators",
 			"redirect_document_id": true
+		},		
+		{
+			"source_path": "intune/Troubleshoot/how-to-get-support-for-microsoft-intune.md",
+			"redirect_url": "/intune/get-support",
+			"redirect_document_id": false
 		},
 		{
 			"source_path": "intune/Troubleshoot/troubleshoot-app-deployment-problems-in-microsoft-intune.md",
-			"redirect_url": "/intune-classic/Troubleshoot/troubleshoot-app-deployment-problems-in-microsoft-intune",
-			"redirect_document_id": true
+			"redirect_url": "/intune/help-desk-operators",
+			"redirect_document_id": false
 		},
+		{
+			"source_path": "intune-classic/Troubleshoot/troubleshoot-app-deployment-problems-in-microsoft-intune.md",
+			"redirect_url": "/intune/help-desk-operators",
+			"redirect_document_id": true
+		},		
 		{
 			"source_path": "intune/Troubleshoot/troubleshoot-client-setup-in-microsoft-intune.md",
 			"redirect_url": "/intune/device-enrollment",
@@ -4275,9 +4325,14 @@
 		},		
 		{
 			"source_path": "intune/Troubleshoot/troubleshoot-mam.md",
-			"redirect_url": "/intune-classic/Troubleshoot/troubleshoot-mam",
-			"redirect_document_id": true
+			"redirect_url": "/intune/help-desk-operators",
+			"redirect_document_id": false
 		},
+		{
+			"source_path": "intune-classic/Troubleshoot/troubleshoot-mam.md",
+			"redirect_url": "/intune/help-desk-operators",
+			"redirect_document_id": true
+		},		
 		{
 			"source_path": "intune/Troubleshoot/troubleshoot-policies-in-microsoft-intune.md",
 			"redirect_url": "/intune/troubleshoot-policies-in-microsoft-intune",
@@ -4335,9 +4390,14 @@
 		},
 		{
 			"source_path": "intune/understand-explore/intune-glossary.md",
-			"redirect_url": "/intune-classic/understand-explore/intune-glossary",
-			"redirect_document_id": true
+			"redirect_url": "/intune/intune-glossary",
+			"redirect_document_id": false
 		},
+		{
+			"source_path": "intune-classic/understand-explore/intune-glossary.md",
+			"redirect_url": "/intune/intune-glossary",
+			"redirect_document_id": true
+		},		
 		{
 			"source_path": "intune/understand-explore/mam-faq.md",
 			"redirect_url": "/intune/mam-faq",
@@ -4693,6 +4753,11 @@
 			"redirect_url": "/intune/get-support",
 			"redirect_document_id": true
 		},
+		{
+			"source_path": "intune-classic/deploy-use/get-notified-by-alerts.md",
+			"redirect_url": "/intune/apps-monitor",
+			"redirect_document_id": true
+		},		
 		{
 			"source_path": "intune/apple-configurator-setup-assistant-enroll-ios.md",
 			"redirect_url": "/intune/apple-configurator-enroll-ios",

@@ -237,6 +237,15 @@ An app protection policy is available to mobile apps that integrate with EMS tec
 | Policies    | The type of device ownership. This can be **Company**, **Personal**, and **Unknown**. |
 | Last sync   | The timestamp of the last time the device synchronized with Intune.                   |
 
+## Collect available data from mobile device
+
+Use the following resources to help collect device data when troubleshooting user's device issues:
+  - [Send iOS enrollment errors to your IT administrator](/intune-user-help/send-errors-to-your-it-admin-ios)
+  - [Help your company support fix device issues with verbose logging](/intune-user-help/use-verbose-logging-to-help-your-it-administrator-fix-device-issues-android)
+  - [Send Android logs to your company support using a USB cable](/intune-user-help/send-diagnostic-data-logs-to-your-it-administrator-using-a-usb-cable-android)
+  - [Send Android diagnostic data logs to your IT administrator using email](/intune-user-help/send-logs-to-your-it-admin-by-email-android)
+  - [Send Android enrollment errors to your IT administrator](/intune-user-help/send-enrollment-errors-to-your-it-administrator-android)
+
 ## Next steps
 
 You can learn more about Role-based administration control (RBAC) to define roles in your organizational device, mobile application management, data protection tasks. For more information, see [Role-based administration control (RBAC) with Intune](/intune/role-based-access-control).

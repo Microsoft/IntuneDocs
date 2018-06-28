@@ -126,6 +126,8 @@ Still need help? Check out the complete [Knox Mobile Enrollment User Guide](http
 
 - **"Password" field is ignored:** If the **password** field is populated in **Device details** in the Knox Portal, it is ignored by the Intune Company Portal app. The end user must enter a password on the device to complete device enrollment.
 
+- **"Android Enterprise Enrollment** KME does not support Android Enterprise Enrollment.
+
 ## Getting support
 Learn more about [how to get support for Samsung KME](https://docs.samsungknox.com/KME-Getting-Started/Content/to-get-kme-support.htm).
 

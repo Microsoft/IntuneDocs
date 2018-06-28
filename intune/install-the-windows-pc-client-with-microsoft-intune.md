@@ -27,6 +27,8 @@ ms.custom: intune
 
 # Install the Intune software client on Windows PCs
 
+[!INCLUDE [classic-portal](includes/classic-portal.md)]
+
 > [!NOTE]
 > You can use Microsoft Intune to manage Windows PCs either [as mobile devices with mobile device management (MDM)](windows-enroll.md) or as computers with the Intune software client as described below. However, Microsoft recommends that customers [use the MDM management solution](windows-enroll.md) whenever possible.
 
