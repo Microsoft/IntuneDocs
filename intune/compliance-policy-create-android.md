@@ -126,7 +126,7 @@ The following table describes how noncompliant settings are managed when a compl
   > Side-loading applications require that the **Block apps from unknown sources** setting is enabled. Enforce this compliance policy only if you are not side-loading Android apps on devices.
 
 - **Company portal app runtime integrity**: Checks if the Company Portal app has the default runtime environment installed, is properly signed, is not in debug-mode, and is installed from a known source.
-- **Block USB debugging on device** (Android 4.2 or later): Choose to prevent deviceS from using the USB debugging feature.
+- **Block USB debugging on device** (Android 4.2 or later): Choose to prevent devices from using the USB debugging feature.
 - **Minimum security patch level** (Android 6.0 or later): Select the oldest security patch level a device can have. Devices that are not at least at this patch level are noncompliant. The date must be entered in the `YYYY-MM-DD` format.
 
 ## Locations
