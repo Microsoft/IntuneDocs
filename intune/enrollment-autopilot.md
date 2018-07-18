@@ -38,6 +38,9 @@ You can add Windows AutoPilot devices by importing a CSV file with their informa
 
 3. Choose **Import** to start importing the device information. Importing can take several minutes.
 
+>[!NOTE] 
+> After import completes you will need to Synchronize Devices before they appear in the inventory.
+
 ## Synchronize devices
 Synchronize your registered devices into Intune so that you can configure them.
 
