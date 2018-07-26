@@ -58,11 +58,11 @@ Depending on the settings you choose, not all the following values are configura
 
 ## Android work profile device VPN settings
 
-**Connection name** - Enter a name for this connection. End users see this name when they browse their device for the list of available VPN connections.
+- **Connection name** - Enter a name for this connection. End users see this name when they browse their device for the list of available VPN connections.
 - **IP address or FQDN** - Provide the IP address or fully qualified domain name of the VPN server that devices connect to. Examples: **192.168.1.1**, **vpn.contoso.com**.
-- **Authentication method** - Choose how devices authenticate to the VPN server from:
-	- **Certificates** - Select a SCEP or PKCS certificate profile you previously created to authenticate the connection. For more details about certificate profiles, see [How to configure certificates](certificates-configure.md).
-	- **Username and password** - End users must supply a user name and password to log into the VPN server.
+	- **Authentication method** - Choose how devices authenticate to the VPN server from:
+		- **Certificates** - Select a SCEP or PKCS certificate profile you previously created to authenticate the connection. For more details about certificate profiles, see [How to configure certificates](certificates-configure.md).
+		- **Username and password** - End users must supply a user name and password to log into the VPN server.
 - **Connection type** - Select the VPN connection type from the following list of vendors:
 	- **Check Point Capsule VPN**
 	- **Cisco AnyConnect**
