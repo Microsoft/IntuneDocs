@@ -187,8 +187,8 @@ You can also click **Import** to populate the list from a csv file in the format
 
 In the show or hide apps list, you can configure one of the following lists (requires supervised devices running iOS 9.3 or later).
 
-A **Hidden apps** list - Specify a list of apps that is hidden from users. Users cannot view, or launch these apps.
-A **Visible apps** list - Specify a list of apps that users can view and launch. No other apps can be viewed or launched.
+- A **Hidden apps** list - Specify a list of apps that is hidden from users. Users cannot view, or launch these apps.
+- A **Visible apps** list - Specify a list of apps that users can view and launch. No other apps can be viewed or launched.
 
 To configure the list, click **Add**, then specify a name of your choice, optionally the app publisher, and the URL to the app in the app store.
 
