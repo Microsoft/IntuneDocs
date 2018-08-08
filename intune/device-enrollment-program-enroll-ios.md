@@ -122,7 +122,7 @@ Now that you've installed your token, you can create an enrollment profile for D
     ![Profile name and description.](./media/device-enrollment-program-enroll-ios/image05.png)
 
 4. For **User Affinity**, choose whether devices with this profile must enroll with or without an assigned user.
-    - **Enroll with User Affinity** - Choose this option for devices that belong to users and that want to use the company portal for services like installing apps. This option also lets users authenticate their devices by using the company portal. If using ADFS, user affinity requires [WS-Trust 1.3 Username/Mixed endpoint](https://technet.microsoft.com/library/adfs2-help-endpoints). [Learn more](https://technet.microsoft.com/itpro/powershell/windows/adfs/get-adfsendpoint).
+    - **Enroll with User Affinity** - Choose this option for devices that belong to users and that want to use the company portal for services like installing apps. This option also lets users authenticate their devices by using the company portal. I
 
     - **Enroll without User Affinity** - Choose this option for device unaffiliated with a single user. Use this for devices that perform tasks without accessing local user data. Apps like the Company Portal app don’t work.
 
@@ -131,7 +131,7 @@ Now that you've installed your token, you can create an enrollment profile for D
     ![Authenticate with Company Portal.](./media/device-enrollment-program-enroll-ios/authenticatewithcompanyportal.png)
 
     > [!NOTE]
-    > Multifactor authentication doesn’t work during DEP enrollment if you have profile properties set to **Enroll with User Affinity** and **Authenticate with Company Portal instead of Apple Setup Assistant** set to **No**. After enrollment, MFA works as expected on devices. Devices can't prompt users who need to change their password when they first sign in. Additionally, users with expired passwords aren't prompted to reset their password during enrollment. Users must use a different device to reset the password.
+    > Multifactor authentication doesn’t work during DEP enrollment if you have profile properties set to **Enroll with User Affinity** and **Authenticate with Company Portal instead of Apple Setup Assistant** set to **No**. This is because Apple Setup Assistant requires the device to authenticate directly to Intune, using username/password authentication directly in Apple Setup Assistant itself. If using ADFS, this requires enabling the [WS-Trust 1.3 Username/Mixed endpoint](https://technet.microsoft.com/library/adfs2-help-endpoints). [Learn more](https://technet.microsoft.com/itpro/powershell/windows/adfs/get-adfsendpoint). After enrollment, MFA works as expected on devices. Devices can't prompt users who need to change their password when they first sign in. Additionally, users with expired passwords aren't prompted to reset their password during enrollment. Users must use a different device to reset the password.
 
 6. Choose **Device Management Settings** and select whether or not you want devices using this profile to be supervised.
 
