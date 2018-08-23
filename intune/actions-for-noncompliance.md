@@ -76,7 +76,7 @@ Once you're done adding the information, choose **Create**. The Notification mes
 
 ## Add actions for noncompliance
 
-By default, Intune automatically creates an action for noncompliance. When a device isn't meeting your compliance policy, this action marks the device as not compliant. You can customize how long the device is marked as not compliant. This action can't be removed.
+By default, Intune automatically creates an action for noncompliance. When a device is not meeting your compliance policy, this action marks the device as not compliant. You can customize how long the device is marked as not compliant. This action can't be removed.
 
 You can add an action when you create a new compliance policy, or update an existing compliance policy. 
 
