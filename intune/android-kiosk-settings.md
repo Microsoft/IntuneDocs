@@ -7,7 +7,7 @@ keywords:
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 7/5/2018
+ms.date: 9/13/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -30,9 +30,9 @@ You can configure a device into single or multi-app kiosk mode by using device c
 
 ## Restrict an Android kiosk device to a single app
 
-If a kiosk device's restriction profile is set to **Kiosk mode** = **single app kiosk**, users can only access a single app. When a device configured in this mode starts up, the specific app starts. Users are restricted from opening new apps or changing the running app.
+If a kiosk device's restriction profile is set to **Kiosk mode** = **single app kiosk**, users can only access a single app. When a device configured in this mode starts up, the specific app starts. Users are restricted from opening new apps or from changing the running app.
 
-1. Make sure the app you want to be used on the kiosk device has been [deployed to the device](apps-deploy.md) and that you've assigned the app to the device group you created for your kiosk devices.
+1. Make sure the app you want on the kiosk device is [deployed to the device](apps-deploy.md), and that you assigned the app to the device group you created for your kiosk devices.
 2. Go to the [Intune portal](https://portal.azure.com) and choose **Device configuration** > **Profiles** > **Create profile**.
 3. In the **Create profile** blade, set the following fields:
      - **Name**
@@ -56,7 +56,7 @@ To set an Android kiosk device for multiple apps, follow these main steps:
 2. [Add and assign apps that can be used in kiosk mode](#add-and-assign-apps-that-can-be-used-in-kiosk-mode)
 3. (Optional) [Add web links that can be used in kiosk mode](#add-web-links-that-can-be-used-in-kiosk-mode)
 
-### Import and deply the Managed Home Screen app
+### Import and deploy the Managed Home Screen app
 
 1. Browse to the [Managed Home Screen page on Google Play](https://play.google.com/work/apps/details?id=com.microsoft.launcher.enterprise) and sign in with the same account you use for other managed Google Play apps.
 2. Choose **Approve**.
@@ -64,6 +64,9 @@ To set an Android kiosk device for multiple apps, follow these main steps:
 4. Choose **Apps** > **Managed Home Screen** > **Assignments** > **Add group**.
 5. Under **Assignment type**, choose **Required**.
 6. Choose **Included groups** > **Select groups to include** > choose the device group that you created for your kiosk devices > **Select** > **OK** > **OK** > **Save**.
+
+> [!NOTE]
+> When you add the Managed Home Screen app to the multi-app kiosk profile, an icon is added. But, nothing happens when you select the icon. As a result, you don't have to add the Managed Home Screen app to the multi-app kiosk profile.
 
 ### Add and assign apps that can be used in kiosk mode
 
