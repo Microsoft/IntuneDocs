@@ -50,9 +50,9 @@ Android kiosk profiles support the following configuration settings. When creati
 - **Allow installation from unknown sources**: Choose **Allow** to let users install from unknown sources.
 - **System update**: Choose an option to define how the device handles over the air updates:
     - **Device Default**: Use the device's default setting.
-    - **Automatic**: Updates are automatically installed.
-    - **Postponed**: Updates are postponed until a later date.
-    - **Maintenance window**: Users are prompted by a maintenance window to approve the update.
+    - **Automatic**: Updates are automatically installed without user interaction. Setting this policy immediately installs any pending updates.
+    - **Postponed**: Updates are postponed for 30 days. At the end of the 30 days, the user is prompted by Android to install the update. It is possible for device manufacterers or carriers to exempt important security updates from postponement. An exempted update will result in a system notification to the user on the device. 
+    - **Maintenance window**: Installs updates automatically during a daily maintenance window, defined in the Intune console when this option is selected. Installation is attempted daily for 30 days but may fail due to insufficient space or battery levels. After 30 days, the user is prompted by Android to install. This window is also used to install updates for Play apps. This option is recommended for dedicated devices (i.e. kiosks) as single-app kiosk foreground apps can be updated. 
 
 ## Kiosk settings
 
