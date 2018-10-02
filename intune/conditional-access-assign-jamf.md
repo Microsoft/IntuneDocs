@@ -77,9 +77,9 @@ End users need to launch the Company Portal app through Jamf Self Service to reg
 
 ## Removing a Jamf-managed device from Intune
 
-You can't remove a Jamf-managed device from Intune. You have to remove Jamf-managed devices from Jamf Pro, which will then remove it from Intune. 
+You can remove a Jamf-managed device from the Intune console, by selecting "Delete" in the "All devices" view. Bulk device deletion can be enabled by selecting multiple devices and clicking "Delete."
 
-Learn how to [remove a Jamf-managed device in the Jamf Pro docs](https://www.jamf.com/jamf-nation/articles/80/unmanaging-computers-while-preserving-their-inventory-information). You can also file a support ticket with [Jamf support](https://www.jamf.com/support/) for additional help. 
+For information on how to [remove a Jamf-managed device in the Jamf Pro docs](https://www.jamf.com/jamf-nation/articles/80/unmanaging-computers-while-preserving-their-inventory-information). You can also file a support ticket with [Jamf support](https://www.jamf.com/support/) for additional help. 
 
 ## Next steps
 
