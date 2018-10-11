@@ -123,8 +123,6 @@ Windows 8.1 PCs return a version of **3**. If the OS version rule is set to Wind
 
 See [Health Attestation CSP](https://docs.microsoft.com/windows/client-management/mdm/healthattestation-csp) for details about how the HAS service works.
 
-To set up Windows Defender ATP (Advanced Threat Protection) as your defense threat service, see [Enable Windows Defender ATP with conditional access](advanced-threat-protection.md).
-
 ### Device properties
 
 - **Minimum OS version**: Enter the minimum allowed version in the **major.minor.build.CU number** format. To get the correct value, open a command prompt, and type `ver`. The `ver` command returns the version in the following format:
@@ -187,6 +185,8 @@ To set up Windows Defender ATP (Advanced Threat Protection) as your defense thre
   - **Low**: The device is evaluated as compliant if only low-level threats are present. Anything higher puts the device in a noncompliant status.
   - **Medium**: The device is evaluated as compliant if existing threats on the device are low or medium level. If the device is detected to have high-level threats, it is determined to be noncompliant.
   - **High**: This option is the least secure, and allows all threat levels. It may be useful if you're using this solution only for reporting purposes.
+  
+To set up Windows Defender ATP (Advanced Threat Protection) as your defense threat service, see [Enable Windows Defender ATP with conditional access](advanced-threat-protection.md).
 
 ## Windows Holographic for Business
 
