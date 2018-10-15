@@ -67,6 +67,9 @@ Android kiosk profiles support the following configuration settings. When creati
 - **Minimum password length**: Define the minimum password length required for the device.
 - **Number of sign-in failures before wiping device**: Define the number of failed sign-ins that must occur before the device is wiped.
 
+> [!Note] 
+> If these settings are made, users are not prompted for a password on devices that are enrolled without user affinity. If a user enters a password or passcode directly on the device in the Security Lock screen settings of the device, the password or passcode must meet the parameters that are defined by the Intune Device Restriction Profile.
+
 ## Power settings
 
 - **Time to lock screen**: Set the amount of idle time required before the device locks.
