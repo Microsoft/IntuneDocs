@@ -122,6 +122,9 @@ To authenticate with VPN, WiFi, or other resources, a root, or intermediate CA c
 
 ![ConnectorDownload][ConnectorDownload]
 
+ > [!NOTE]
+ > Microsoft Intune Certificate Connector MUST be installed on a separate Windows server. It can NOT be installed on the issuing CA.
+
 1. Sign in to the [Azure portal](https://portal.azure.com).
 2. Select **All services**, filter on **Intune**, and select **Microsoft Intune**.
 3. Select **Device configuration**, and then select **Certification Authority**.
