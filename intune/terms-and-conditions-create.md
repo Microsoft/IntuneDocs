@@ -34,6 +34,9 @@ As an Intune admin, you can require that users accept your company's terms and c
 
 You can create multiple sets of terms and assign them to different groups, such as to support different languages.
 
+>[!NOTE]
+>Alternatively [Azure Active Directory Terms of use](https://docs.microsoft.com/en-us/azure/active-directory/governance/active-directory-tou) can be used to present terms and conditions to users. Azure Active Directory Terms of use requires Azure AD Premium P1 or P2 subscription.
+
 ## Create terms and conditions
 Complete these steps to create terms and conditions. The display name and description are for administrative use while terms properties are displayed to users in the Company Portal.
 
