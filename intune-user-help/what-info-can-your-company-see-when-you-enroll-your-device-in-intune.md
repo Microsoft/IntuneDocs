@@ -40,20 +40,24 @@ Your company cannot see your personal information when you enroll a device with 
 - Calendar
 -	Passwords
 - Pictures, including what's in the photos app or camera roll
+- Files
 
 **What your company can always see:**
 
 - Device model, like Google Pixel
-- Manufacturer, like Microsoft
-- Operating system, like iOS
-- App names, like Microsoft Word
+- Device manufacturer, like Microsoft
+- Operating system and version, like iOS 12.0.1
+- App names (business apps only), like Microsoft Word
 - Device owner
 - Device name
-- Serial number
+- Device serial number
+- IMEI
 
 **What your company might be able to see:**
 
 -  Phone number: for **Corporate**-owned devices, your full phone number can be seen. For **Personal**-owned devices, just the last four digits of your phone number are visible to your company. You can see the **Ownership Type** for each individual device  by opening that device's **Device Details** page.
+- Network carrier name
+- Device storage space
 -  Location: your company can never see your device's location, except if you have an iOS device that is supervised and has gotten lost. [How do I know?](https://go.microsoft.com/fwlink/?linkid=853816)
 - App inventory: if your company uses Mobile Threat Defense, they will be able to view what more details about the apps that are on your iOS device. Find out more about [Mobile Threat Defense](you-are-prompted-to-install-mtd-ios.md).
 - Network information: some information about network connections for Android devices may be available to your company support. For example, if your company requires devices to remain within a certain building, your device would identify the network where it is connected. 
