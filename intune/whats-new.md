@@ -152,6 +152,10 @@ For more information, see [Help and Support pilot](get-support.md#help-and-suppo
 ### PowerShell module for Intune – Preview available <!-- wnready 951068 -->
 A new PowerShell module, which provides support for the Intune API through Microsoft Graph, is now available for preview on [GitHub]( https://aka.ms/intunepowershell). For details about how to use this module, see the README in that location. 
 
+### Software updates
+
+#### Windows 10 Update Rings
+Intune now supports configuring restart user approval, auto-restart reminders and [engaged restart](https://docs.microsoft.com/en-us/windows/deployment/update/waas-restart#engaged-restart) in the Windows 10 update ring settings.
 
 ## Week of October 15, 2018
 
