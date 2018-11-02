@@ -69,6 +69,7 @@ The following table lists the various options for assigning apps to users and de
 
      > [!NOTE]
      > **For iOS apps only**: If you have created an iOS VPN profile that contains per-app VPN settings, you can select the VPN profile under **VPN**. When the app is run, the VPN connection is opened. For more information, see [VPN settings for iOS devices](vpn-settings-ios.md).
+     > **For Android apps only**: If you deploy an Android line of business (LOB) app as **Available with or without enrollment**, reporting status will only be available on enrolled devices. This information will not be available for devices not enrolled in Intune.
 
 9. To select the groups of users that are affected by this app assignment, select **Included Groups**.
 10. After you have selected one or more groups to include, select **Select**.
