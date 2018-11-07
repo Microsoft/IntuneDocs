@@ -7,7 +7,7 @@ keywords:
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 05/18/2018
+ms.date: 011/06/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -28,11 +28,11 @@ ms.suite: ems
 
 ---
 
-# What information can my company see when I enroll my device?
+# What information can my organization see when I enroll my device?
 
-Your company cannot see your personal information when you enroll a device with Microsoft Intune. When you enroll a device, you give your company permission to view certain pieces of information on your device, such as device model and serial number. Your company uses this information to help protect the corporate data on the device.
+Your organization cannot see your personal information when you enroll a device with Microsoft Intune. When you enroll a device, you give your organization permission to view certain pieces of information on your device, such as device model and serial number. Your organization uses this information to help protect the corporate data on the device.
 
-**What your company can never see:**
+**What your organization can never see:**
 
 - Calling and web browsing history
 - Email and text messages
@@ -42,22 +42,21 @@ Your company cannot see your personal information when you enroll a device with 
 - Pictures, including what's in the photos app or camera roll
 - Files
 
-**What your company can always see:**
+**What your organization can always see:**
 
 - Device model, like Google Pixel
 - Device manufacturer, like Microsoft
 - Operating system and version, like iOS 12.0.1
-- App names (business apps only), like Microsoft Word
+- App names, like Microsoft Word: On personal devices, your organization can only see your managed app inventory. On corporate-owned devices, you organization can see all of your app inventory.
 - Device owner
 - Device name
 - Device serial number
 - IMEI
 
-**What your company might be able to see:**
+**What your organization might be able to see:**
 
--  Phone number: for **Corporate**-owned devices, your full phone number can be seen. For **Personal**-owned devices, just the last four digits of your phone number are visible to your company. You can see the **Ownership Type** for each individual device  by opening that device's **Device Details** page.
-- Network carrier name
-- Device storage space
--  Location: your company can never see your device's location, except if you have an iOS device that is supervised and has gotten lost. [How do I know?](https://go.microsoft.com/fwlink/?linkid=853816)
-- App inventory: if your company uses Mobile Threat Defense, they will be able to view what more details about the apps that are on your iOS device. Find out more about [Mobile Threat Defense](you-are-prompted-to-install-mtd-ios.md).
-- Network information: some information about network connections for Android devices may be available to your company support. For example, if your company requires devices to remain within a certain building, your device would identify the network where it is connected. 
+-  Phone number: For **corporate**-owned devices, your full phone number can be seen. For **personal**-owned devices, just the last four digits of your phone number are visible to your organization. You can see the **Ownership Type** for each individual device  by opening that device's **Device Details** page.
+- Device storage space: If you can't install a required app, your organization might look at your device's stoage space to figure out if space is too low.  
+-  Location: Your organization can never see your device's location, except if you have an iOS device that is supervised and has gotten lost. [How do I know?](https://go.microsoft.com/fwlink/?linkid=853816)
+- App inventory: If your organization uses Mobile Threat Defense, they will be able to view what more details about the apps that are on your iOS device. Find out more about [Mobile Threat Defense](you-are-prompted-to-install-mtd-ios.md).
+- Network information: Swome information about network connections for Android devices may be available to your organization support. For example, if your organization requires devices to remain within a certain building, your device would identify the network where it is connected. 
