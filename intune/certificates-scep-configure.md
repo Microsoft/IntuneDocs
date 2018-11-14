@@ -368,6 +368,7 @@ To validate that the service is running, open a browser, and enter the following
      - iOS
      - Windows 8.1 and later
      - Windows 10 and later
+     - Android Enterprise
 
    - **Subject name format**: Select how Intune automatically creates the subject name in the certificate request. The options change if you choose a **User** certificate type or **Device** certificate type. 
 
