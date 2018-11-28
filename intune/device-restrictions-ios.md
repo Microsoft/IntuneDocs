@@ -276,7 +276,7 @@ After you specify each app name and bundle ID, choose **Add** to append it to th
     -   **Auto lock** - Enable or disable automatic locking of the device.
     -   **Ringer switch** - Enable or disable the ringer (mute) switch on the device.
     -   **Screen rotation** - Enable or disable changing the screen orientation when the user rotates the device.
-    -   **Screen sleep button** - Enable or disable the screen sleep wake button on the device.
+    -   **Screen sleep button** - Enable or disable the screen sleep wake button on the device. This is a policy that can disable the Sleep/Wake button, so in the Intune policy, “Not Configured” means the button is enabled while “Allow" means the button will be disabled.
     -   **Touch** - Enable or disable the touchscreen on the device.
     -   **Volume buttons** - Enable or disable the use of the volume buttons on the device.
     -   **Assistive touch control** - Enable or disable assistive touch adjustments, which let the user adjust the assistive touch function.
