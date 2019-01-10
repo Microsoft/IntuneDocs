@@ -140,5 +140,13 @@ If you want to change the profile to a less secure value, then reset security po
 
 Other MDM devices, such as Android, Windows Phone 8.1 and later, and iOS, and Windows 10, may need to be retired, and re-enrolled back into the service to apply a less restrictive profile.
 
+## Some settings in my Windows 10 profile are returning "Not Applicable"
+When Windows 10 settings return "Not Applicable", it means that specific setting is not supported on that particular version/edition of Windows. This can occur for two reasons:
+
+	- The setting is only available for newer versions of Windows than the current OS on the client
+	- The setting is only available for specific Windows Editions/SKUs (Home, Pro, Enterprise, Education)
+
+To understand a settings version and SKU requirements, visit the Configuration Service Provider (CSP) reference https://docs.microsoft.com/en-us/windows/client-management/mdm/configuration-service-provider-reference 
+
 ## Next steps
 Need extra help? See [How to get support for Microsoft Intune](get-support.md).
