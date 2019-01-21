@@ -29,7 +29,7 @@ Intune standalone will allow greater Win32 app management capabilities. While it
 - Windows 10 client needs to be: 
     - joined to Azure Active Directory (AAD) or Hybrid Azure Active Directory, and
     - enrolled in Intune (MDM-managed)
-- Windows application size is capped at 8 GB per app in the public preview 
+- Windows application size is capped at 2 GB per app in the public preview 
 
 ## Prepare the Win32 app content for upload
 
