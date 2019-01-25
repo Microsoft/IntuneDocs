@@ -127,7 +127,7 @@ Supported on the following Windows 10 editions with Microsoft Edge installed:
 
 Supported on the following Windows 10 editions:
 
-- Professional
+- Professional (starting in 1809)
 - Business
 - Enterprise
 - Education
