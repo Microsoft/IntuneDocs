@@ -36,9 +36,9 @@ In an on-premises Exchange Server environment, Intune conditional access can be 
 
 To set up a connection that enables Microsoft Intune to communicate with the on-premises Exchange Server, here are the general steps:
 
-1.  Download the Intune on-premises Exchange connector from the Azure portal.
-2.  Install and configure the Exchange connector on a computer in the on-premises Exchange organization.
-3.  Validate the Exchange connection.
+1. Download the Intune on-premises Exchange connector from the Azure portal.
+2. Install and configure the Exchange connector on a computer in the on-premises Exchange organization.
+3. Validate the Exchange connection.
 4. Repeat these steps for each Exchange organization you want to connect to Intune.
 
 ## Intune on-premises Exchange connector requirements
@@ -54,6 +54,8 @@ The following table lists the requirements for the computer on which you install
 |  Active Directory synchronization  |                                                                                      Before you can use the connector to connect Intune to your Exchange Server, you must [set up Active Directory synchronization](users-add.md) so that your local users and security groups are synchronized with your instance of Azure Active Directory.                                                                                      |
 |        Additional software         |                                                                                                                                           A full installation of Microsoft .NET Framework 4.5 and Windows PowerShell 2.0 must be installed on the computer that hosts the connector.                                                                                                                                           |
 |              Network               | The computer on which you install the connector must be in a domain that has a trust relationship to the domain that hosts your Exchange Server.<br /><br />The computer requires configurations to enable it to access the Intune service through firewalls and proxy servers over Ports 80 and 443. Domains that are used by Intune include manage.microsoft.com, &#42;manage.microsoft.com, and &#42;.manage.microsoft.com. |
+
+The account used to connect to Intune must have an assigned Intune license, e.g. EMS E3 or E5. 
 
 ### Exchange cmdlet requirements
 
