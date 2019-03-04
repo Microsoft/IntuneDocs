@@ -49,7 +49,7 @@ While using Microsoft Edge, Windows Defender Application Guard protects your env
 
 Application Guard is only available for Windows 10 (64-bit) devices. Using this profile installs a Win32 component to activate Application Guard.
 
-- **Application Guard**: **Enable** to turn on this feature, which opens unapproved sites in a Hyper-V virtualized browsing container. **Not configured** (default) means that any site (approved and unapproved) opens on the device.
+- **Application Guard**: **Enabled for Edge** to turn on this feature, which opens untrusted sites in a Hyper-V virtualized browsing container. **Not configured** (default) means that any site (trusted and untrusted) opens on the device.
 - **Clipboard behavior**: Choose what copy/paste actions are allowed between the local PC and the Application Guard virtual browser.
 - **External content on enterprise sites**: **Block** content from unapproved websites from loading. **Not configured** (default) means that non-enterprise sites can open on the device.
 - **Print from virtual browser**: Choose **Allow** so PDF, XPS, local, and network printers can print content from the virtual browser. **Not configured** (default) disables all print features.
@@ -312,7 +312,7 @@ Help protect valuable data from malicious apps and threats, such as ransomware.
 
 ### Network filtering
 
-Block outbound connections from any app to low reputation IP/domains.
+- **Network protection**: Block outbound connections from any app to low reputation IP/domains. This can be set either to block or only to audit the connection. 
 
 ### Exploit protection
 
