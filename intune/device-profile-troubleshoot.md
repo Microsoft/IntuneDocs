@@ -52,7 +52,7 @@ Some additional recommendations:
 
 ## How long does it take for mobile devices to get a policy or apps after they have been assigned?
 
-When a policy or an app is assigned, Intune immediately begins notifying the device to check in with the Intune service. The notification typically takes less than five minutes.
+When a policy or an app is assigned, updated, or deleted, Intune immediately begins notifying the device to check in with the Intune service. Additionally, any change in the assignment of the policy or app (such as a user or device moving in or out of the assigned group) has the same effect. The notification typically takes less than five minutes.
 
 If a device doesn't check in to get the policy after the first notification, Intune makes three more attempts. An offline device, such as turned off, or not connected to a network, may not receive the notifications. In this case, the device gets the policy on its next scheduled check-in with the Intune service, which is:
 
@@ -81,9 +81,14 @@ For devices without user affinity, the sync frequency immediately following enro
 
 ## What actions cause Intune to immediately send a notification to a device?
 
-Devices check in with Intune when they receive a notification to check in, or during the scheduled check-in. When you target a device or user with an action, such as lock, passcode reset, app assignment, profile or policy assignment, then Intune immediately notifies the device to check in to receive these updates.
+The following actions cause Intune to immediately send a notification to a device to check in:
 
-Other changes, such as revising the contact information in the company portal, don't cause an immediate notification to devices.
+1. When a change has been made to a device's assigned policies or apps. This includes assigning new policies or apps, updating currently assigned policies or apps, and deleting existing policies or apps
+2. When a change has been made to a device's group membership (and thus its assigned policies or apps)
+3. When it is time for the device's [scheduled check-in](https://docs.microsoft.com/en-us/intune/device-profile-troubleshoot#how-long-does-it-take-for-mobile-devices-to-get-a-policy-or-apps-after-they-have-been-assigned)
+4. When a remote [device action](https://docs.microsoft.com/en-us/intune/device-management#available-device-actions) has been sent to the device
+
+Other changes, such as revising the contact information in the Company Portal, don't cause an immediate notification to devices.
 
 ## If multiple policies are assigned to the same user or device, how do I know which settings gets applied?
 
