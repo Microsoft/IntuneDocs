@@ -189,6 +189,8 @@ Apps in this mode are available on the start menu. These apps are the only apps 
 
 - **Windows Taskbar**: Choose to **Show** or **hide** the taskbar. By default, the taskbar isn't shown. Icons, such as the Wi-Fi icon, are shown, but the settings can't be changed by end users.
 
+- **Allow Access to Downloads Folder**: Choose **Yes** to allow users to access the Downloads folder in Windows Explorer.  By default, access to the Downloads folder is disabled. This feature is commonly used for end users to access items downloaded from a browser.
+
 Select **OK** to save your changes.
 
 ## Next steps
