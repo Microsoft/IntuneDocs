@@ -460,6 +460,14 @@ build plugin/tool. For Gradle builds, this can be done by including
 `androidx.*` in the `includeExternalLibraries` field of the plugin
 config. Invocations of the command-lines tool must list all jar files
 explicitly.
+
+### Pre-AndroidX Architecture Components
+Many Android architecture components including Room, ViewModel, and WorkManager 
+were repackaged with AndroidX. If your app uses the pre-AndroidX variants of these 
+libraries, ensure rewrites apply by including `android.arch.*` in the 
+`includeExternalLibraries` field of the plugin config. Alternatively, update the 
+libraries to their AndroidX equivalents.
+
 ## SDK permissions
 
 The Intune App SDK requires three [Android system permissions](https://developer.android.com/guide/topics/security/permissions.html) on apps that integrate it:
