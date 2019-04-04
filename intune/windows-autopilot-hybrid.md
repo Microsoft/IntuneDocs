@@ -126,7 +126,7 @@ The Intune Connector for Active Directory must be installed on a computer that's
 
 ### Configure web proxy settings
 
-If you have a web proxy in your networking environment, ensure that the Intune Connector for Active Directory works properly by referring to [Work with existing on-premises proxy servers](https://docs.microsoft.com/azure/active-directory/manage-apps/application-proxy-configure-connectors-with-proxy-servers).
+If you have a web proxy in your networking environment, ensure that the Intune Connector for Active Directory works properly by referring to [Work with existing on-premises proxy servers](https://docs.microsoft.com/en-us/intune/windows-autopilot-hybrid-connector-proxy).
 
 
 ## Create a device group
