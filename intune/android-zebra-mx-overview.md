@@ -99,7 +99,7 @@ Continue to publish the profile, and consume it with the StageNow app on the dev
 
 After completing the first two steps, the Company Portal app is installed on the device. The device is ready to be enrolled in to Intune.
 
-[Enroll Android devices](android-enroll.md) lists the steps. If you have many Zebra devices, you may want to use a [device enrollment manager account](device-enrollment-manager-enroll.md).
+[Enroll Android devices](android-enroll.md) lists the steps. If you have many Zebra devices, you may want to use a [device enrollment manager (DEM) account](device-enrollment-manager-enroll.md). Using a DEM account also prevents end users from unenrolling the devices.
 
 ## Step 4: Create a device management profile in StageNow
 
