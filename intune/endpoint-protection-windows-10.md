@@ -193,6 +193,7 @@ These settings apply specifically to operating system data drives.
     - **Backup recovery passwords and key packages**
     - **Backup recovery passwords only**
   - **Store recovery information in AD DS before enabling BitLocker**: **Require** this setting to stop users from turning on BitLocker unless the BitLocker recovery information is successfully stored in Azure Active Directory (AD). **Not configured** (default) allows users to turn on BitLocker, even if recovery information isn't successfully stored in Azure AD.
+
 - **Pre-boot recovery message and URL**: **Enable** this setting to configure the message and URL that are displayed on the pre-boot key recovery screen. **Not configured** (default) disables this feature.
   - **Pre-boot recovery message**: Configure how the pre-boot recovery message displays to users. Choose from:
     - **Use default recovery message and URL**
@@ -223,6 +224,9 @@ Supported on the following Windows 10 editions:
     - **Backup recovery passwords and key packages**
     - **Backup recovery passwords only**
   - **Store recovery information in Azure Active Directory before enabling BitLocker**: **Require** this setting to stop users from turning on BitLocker unless the BitLocker recovery information is successfully stored in Azure AD. **Not configured** (default) allows users to turn on BitLocker, even if recovery information is not successfully stored in Azure AD.
+  
+    > [!NOTE]
+    > When applied to a Hybrid Azure AD Joined Windows 10 device, even if **Save BitLocker recovery information to Azure Active Directory** and **BitLocker recovery Information stored to Azure Active Directory before enabling BitLocker** are enabled, the recovery key is not backed up to the cloud and instead is stored in the Azure profile of the hybrid device.​
 
 ### BitLocker removable data-drive settings
 
