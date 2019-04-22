@@ -124,7 +124,15 @@ Use these settings to configure a kiosk-style experience on your dedicated devic
     - **Leave kiosk mode code**: Enter a 4-6 digit numeric PIN. The administrator uses this PIN to temporarily pause kiosk mode.
 
   - **Set custom URL background**: Enter a URL to customize the background screen on the dedicated device.
-
+  
+  > [!NOTE]
+  > For most cases, we recommend starting with images of at least the following sizes: 
+  >    -Phone:  1080x1920 px.
+  >    -Tablet: 1920x1080 px. 
+  >    
+  >   For the best experience and crisp details, it’s suggested that per device image assets be created to the display specifications. 
+  >   Modern displays have higher pixel densities and can display equivalent 2K/4K definition images.
+      
   - **Wi-Fi configuration**: Choose **Enable** to allow end users to connect the device to different WiFi networks. Enabling this feature also turns on device location. **Not configured** (default) prevents users from connecting to WiFi networks while in the Managed Home Screen (lock task mode).
 
     More on [lock task mode](https://developer.android.com/work/dpc/dedicated-devices/lock-task-mode) (opens Android's web site).
