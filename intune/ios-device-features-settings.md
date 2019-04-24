@@ -339,6 +339,7 @@ The following list shows the bundle ID of some common built-in iOS apps. To find
 | com.apple.Keynote           | Keynote      | Apple     |
 | com.apple.mobilemail        | Mail         | Apple     |
 | com.apple.Maps              | Maps         | Apple     |
+| com.apple.measure	      | Measure      | Apple     |
 | com.apple.MobileSMS         | Messages     | Apple     |
 | com.apple.Music             | Music        | Apple     |
 | com.apple.news              | News         | Apple     |
