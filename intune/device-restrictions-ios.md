@@ -119,8 +119,8 @@ These settings are added to a device configuration profile in Intune, and then a
     - **Alphanumeric**
   - **Number of non-alphanumeric characters in password**: Enter the number of symbol characters, such as `#` or `@`, that must be included in the password.
   - **Minimum password length**: Enter the minimum length a user must enter (between 4 and 14 characters).
-  - **Number of sign-in failures before wiping device**: Enter the number of failed sign-ins to allow before the device is wiped (between 1-11).
-  - **Maximum minutes after screen lock before password is required**<sup>1</sup>: Enter how long the device stays idle before the user must reenter their password. If the time you enter is longer than what's currently set on the device, then the device ignores the time you enter. Supported on iOS 8.0 and newer devices.
+  - **Number of sign-in failures before wiping device**<sup>1</sup>: Enter the number of failed sign-ins to allow before the device is wiped (between 1-11).
+  - **Maximum minutes after screen lock before password is required**<sup>2</sup>: Enter how long the device stays idle before the user must reenter their password. If the time you enter is longer than what's currently set on the device, then the device ignores the time you enter. Supported on iOS 8.0 and newer devices.
   - **Maximum minutes of inactivity until screen locks**<sup>1</sup>: Enter the maximum number of minutes of inactivity allowed on the device until the screen locks. If the time you enter is longer than what's currently set on the device, then the device ignores the time you enter.
   - **Password expiration (days)**: Enter the number of days before the device password must be changed.
   - **Prevent reuse of previous passwords**: Enter the number of new passwords that must be used until an old one can be reused.
@@ -143,7 +143,10 @@ These settings are added to a device configuration profile in Intune, and then a
   This feature applies to:  
   - iOS 11.0 and later
 
-<sup>1</sup>When you configure the **Maximum minutes of inactivity until screen locks** and **Maximum minutes after screen lock before password is required** settings, they're applied in sequence. For example, if you set the value for both settings to **5** minutes, the screen turns off automatically after five minutes, and the device is locked after an additional five minutes. However, if the user turns off the screen manually, the second setting is immediately applied. In the same example, after the user turns off the screen, the device locks five minutes later.
+<sup>1</sup>Please be aware that the iOS has a built-in security that considers the same passcode attempt as one and there is, as well, attempt delay to trigger the policy depending of the number of sign-in failures: 1–4 attempts: none;  5 attempt: 1 minute 6 attempt: 5 minutes, 7–8 attempt 15 minutes and 9 attempt: 1 hour (Source iOS Security Guide, May 2019).
+
+
+<sup>2</sup>When you configure the **Maximum minutes of inactivity until screen locks** and **Maximum minutes after screen lock before password is required** settings, they're applied in sequence. For example, if you set the value for both settings to **5** minutes, the screen turns off automatically after five minutes, and the device is locked after an additional five minutes. However, if the user turns off the screen manually, the second setting is immediately applied. In the same example, after the user turns off the screen, the device locks five minutes later.
 
 ## Locked Screen Experience
 
