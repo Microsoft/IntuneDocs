@@ -33,6 +33,9 @@ ms.collection: M365-identity-device-management
 
 This article show you how to install and configure Intune Certificate Connector to issue PKCS Certificates from a DigiCert PKI Manager Web Service to Intune managed devices.
 
+> [!TIP]  
+> DigiCert PKI replaces Symantec PKI. For more information about this change, see [https://support.symantec.com/en_US/article.INFO4722.html](https://support.symantec.com/en_US/article.INFO4722.html).  
+
 The DigiCert PKI Manager Web Service is referred as DigiCert CA throughout this article. If you already configured Intune Certificate Connector to issue PKCS Certificates and SCEP Certificates from Microsoft Certification Authority (CA), the same Connector can be used to configure and issue PKCS Certificates from a DigiCert CA. In this case, Intune Certificate Connector can issue the following cetificates:
 
 * PKCS Certificates from a Microsoft CA
