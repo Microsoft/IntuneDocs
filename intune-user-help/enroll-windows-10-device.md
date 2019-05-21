@@ -69,8 +69,6 @@ These steps describe how to enroll a device that runs on Windows 10, version 160
 
 	![Validate that the connection was set up correctly](./media/w10-enroll-rs1-validate-successful-enrollment.png)  
 
-Still can't access your work or school email, files, or other data? Learn how to [troubleshoot account problems](troubleshoot-your-windows-10-device-windows.md#troubleshooting-steps-to-follow-if-you-see-access-work-or-school).  
-
 ## Enroll Windows 10 version 1511 and earlier device  
 These steps describe how to enroll a device that runs on Windows 10, version 1511 and earlier.  
 
@@ -93,12 +91,14 @@ These steps describe how to enroll a device that runs on Windows 10, version 151
 
 	![Sign in](./media/W10-enroll-4-sign-in.png)  
 
-Still can't access your work or school email, files, or other data? Learn how to [troubleshoot account problems](troubleshoot-your-windows-10-device-windows.md#troubleshooting-steps-to-follow-if-you-see-your-account).   
+
+## Troubleshooting resources  
+Still can't access your work or school email, files, or other data? Learn how to [troubleshoot account-related problems](troubleshoot-your-windows-10-device-windows.md#troubleshooting-steps-to-follow-if-you-see-your-account) during enrollment.
+
+If you're an IT administrator and run in to problems while enrolling devices, see [Troubleshooting Windows device enrollment problems in Microsoft Intune](https://support.microsoft.com/help/4469913).
 
 ## Next steps  
+To get help with Company Portal and enrollment, contact your organization's IT support team. You'll find their contact information on the [Company Portal website](https://go.microsoft.com/fwlink/?linkid=2010980). Sign in to the site with your work or school account.  
 
-To get help, contact your company support. You can find your organization's IT information on the [Company Portal website](https://go.microsoft.com/fwlink/?linkid=2010980). Sign in to the site with your work or school account.  
 
-## See also
 
-[Troubleshooting Windows device enrollment problems in Microsoft Intune](https://support.microsoft.com/help/4469913)
