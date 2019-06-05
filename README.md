@@ -15,7 +15,7 @@ We **want and encourage contributions** from our community (users, customers, pa
 * **Use your browser**: There are two options: 
 
     **Option 1: Edit directly from docs.microsoft.com**  
-    1. Go to the topic, such as [https://docs.microsoft.com/intune/troubleshoot-policies-in-microsoft-intune](https://docs.microsoft.com/ntune/troubleshoot-policies-in-microsoft-intune). 
+    1. Go to the topic, such as [https://docs.microsoft.com/intune/troubleshoot-policies-in-microsoft-intune](https://docs.microsoft.com/intune/troubleshoot-policies-in-microsoft-intune). 
     2. Select **Edit** (top right). This shows the markdown file in the GitHub repository.
     3. Select the pencil icon. When you hover over the pencil icon, you'll see the **Edit this file** tooltip. 
     4. Make your changes, and then **commit** your changes. 
