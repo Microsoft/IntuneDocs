@@ -59,7 +59,7 @@ The Intune management extension has the following prerequisites. Once these are 
   
   - Devices manually enrolled in Intune, which is when:
   
-    - User signs in to the device using a local user account, and then manually joins the device to Azure AD (and auto-enrollment to Intune is enabled in Azure AD).
+    - User signs in to the device using a local user account, manually joins the device to Azure AD (with auto-enrollment to Intune enabled in Azure AD), and then signs into the device using the Azure AD account.
     
     Or
     
