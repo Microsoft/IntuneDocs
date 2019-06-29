@@ -131,7 +131,7 @@ Applies to: iOS
 #### Windows Autopilot reset removes the device's primary user <!-- 4156123 -->
 When Autopilot reset is used on a device, the device's primary user will be removed. The next user who signs in after the reset will be set as the primary user.
 
-#### Windows Autopilot supoprt for Hybrid Azure AD Join <!-- 4809146-->
+#### Windows Autopilot support for Hybrid Azure AD Join <!-- 4809146-->
 Windows Autopilot for existing devices now supports Hybrid Azure AD Join (in addition to the existing Azure AD Join support). Applies to Windows 10 version 1809 and above devices. For more information, see [
 Windows Autopilot for existing devices](https://docs.microsoft.com/windows/deployment/windows-autopilot/existing-devices).
 
