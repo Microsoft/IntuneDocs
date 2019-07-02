@@ -16,3 +16,7 @@ _themes/
 .openpublishing.build.mdproj
 .openpublishing.buildcore.ps1
 packages.config
+
+# Folder config file
+[Dd]esktop.ini
+.DS_Store
