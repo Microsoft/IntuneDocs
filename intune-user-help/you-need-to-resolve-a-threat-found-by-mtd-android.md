@@ -48,5 +48,3 @@ Below are the Android-specific Mobile Threat Defense services that your organiza
 * [Zimperium zIPS](you-need-to-resolve-a-threat-found-by-zips-android.md)  
 
   Still need help? Contact your company support. For contact information, check the [Company Portal website](https://go.microsoft.com/fwlink/?linkid=2010980)  
-
-

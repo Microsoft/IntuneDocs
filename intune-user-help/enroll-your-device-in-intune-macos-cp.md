@@ -105,5 +105,3 @@ Updating the Company Portal app is done the same way as any other Office app, th
 
 ## Next Steps  
 Need additional help? Check in with your company support. You can find their contact information on the [Company Portal website](https://go.microsoft.com/fwlink/?linkid=2010980).  
-
-

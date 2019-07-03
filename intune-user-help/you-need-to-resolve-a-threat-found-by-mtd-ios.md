@@ -51,4 +51,3 @@ Below are the iOS-specific Mobile Threat Defense services that your organization
 * [Zimperium zIPS](you-need-to-resolve-a-threat-found-by-zips-ios.md)
 
 Still need help? Check in with your company support. You can find their contact information on the [Company Portal website](https://go.microsoft.com/fwlink/?linkid=2010980).  
-

@@ -63,4 +63,3 @@ Complete the following step to remove a device through the [context menu](https:
      ![Example screenshot of the Company Portal app for Windows, Home page. Rename popup field appears over device where user can type in new name and click Rename or Cancel.](./media/1808_RenameApp_Popup.png)  
 
 Still need help? Contact your company support. For contact information, check the [Company Portal website](https://go.microsoft.com/fwlink/?linkid=2010980).
-

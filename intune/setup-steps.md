@@ -56,4 +56,3 @@ If you're currently using Microsoft System Center Configuration Manager to manag
 |   9   |       [Customize Company Portal](company-portal-app.md) - Customize the Intune Company Portal that users use to enroll devices and install apps. These settings appear in both the Company Portal app and the Intune Company Portal website.       |
 |  10   |                                [Enable device enrollment](mdm-authority-set.md) - Enable Intune management of iOS, Windows, Android, and Mac devices by setting the MDM authority and enabling specific platforms.                                 |
 |  11   |                                                        [Configure app policies](app-protection-policy.md) - Supply specific settings based on app protection policies in Microsoft Intune.                                                         |
-

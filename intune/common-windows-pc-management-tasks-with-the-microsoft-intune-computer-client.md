@@ -43,5 +43,3 @@ This topic lists tasks you can do to manage desktops that you manage as PCs by i
 - [Manage user-device linking for Windows PCs](manage-user-device-linking-for-windows-pcs-with-microsoft-intune.md) - Explains when and how you need to link a user to a PC before you deploy software to the user.
 
 - [Request and provide remote assistance for Windows PCs](request-and-provide-remote-assistance-for-windows-pcs-in-microsoft-intune.md) - Explains how Intune PC users get remote assistance help from you and describes prerequisites and TeamViewer setup.
-
-

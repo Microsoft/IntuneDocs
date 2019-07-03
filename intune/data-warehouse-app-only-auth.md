@@ -168,4 +168,3 @@ Using Visual Studio, create a Console App (.NET Framework) project that supports
 
 ## Next Steps
 Learn more about Azure Key Vault by reviewing [What is Azure Key Vault?](https://docs.microsoft.com/azure/key-vault/key-vault-whatis)
-

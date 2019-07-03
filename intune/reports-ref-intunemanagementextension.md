@@ -64,4 +64,3 @@ The data is retained for the last 60 days.
 |      DeviceKey      |              Unique identifier of the Device.               |   789   |
 | ExtensionVersionKey | Unique identifier of the IntuneManagementExtension version. |    1    |
 |  ExtensionStateKey  |             Unique identifier of health state.              |    2    |
-

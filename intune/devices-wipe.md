@@ -202,4 +202,3 @@ Applicable for Windows 10 devices. Read more about [Fresh Start](https://docs.mi
 ## Next steps
 
 If you want to reenroll a deleted device, see [Enrollment options](enrollment-options.md).
-

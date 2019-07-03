@@ -128,6 +128,3 @@ The **MobileAppInstallState** entity represents the install state for a mobile a
 | AppInstallStateKey | The unique ID of the app install state for your account. |
 | AppInstallState | Enum value of the app install state. |
 | AppInstallStateName | Name of the app install state. |
-
-
-

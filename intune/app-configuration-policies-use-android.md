@@ -134,4 +134,3 @@ You can also preconfigure permission for apps to access Android device features.
 ## Next steps
 
 Continue to [assign](apps-deploy.md) and [monitor](apps-monitor.md) the app.
-

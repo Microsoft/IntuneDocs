@@ -213,4 +213,3 @@ SCEP certificates *stay* on the device (certificates aren't revoked or removed) 
 #### PKCS certificates
 
 PKCS certificates are not supported on macOS.
-

@@ -137,5 +137,3 @@ Still need help? Check out the complete [Knox Mobile Enrollment User Guide](http
 
 ## Getting support
 Learn more about [how to get support for Samsung KME](https://docs.samsungknox.com/KME-Getting-Started/Content/to-get-kme-support.htm).
-
-

@@ -168,4 +168,3 @@ The following table lists the number of users in the succeeded, pending, failed,
 | Succeeded |                         Number of unique Devices in success state.                          |         12          |
 | PolicyKey |                Policy Key, can be joined with Policy to get the policyName.                 | Windows 10 baseline |
 |   Error   |                          Number of unique Devices in error state.                           |         10          |
-

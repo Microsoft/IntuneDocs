@@ -101,6 +101,3 @@ If you're an IT administrator and run in to problems while enrolling devices, se
 
 ## Next steps  
 If you need help with Company Portal or enrollment, contact your organization's IT support team. You'll find their contact information on the [Company Portal website](https://go.microsoft.com/fwlink/?linkid=2010980). Sign in to the site with your work or school account.  
-
- 
-

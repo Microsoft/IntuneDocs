@@ -87,9 +87,3 @@ Choose an assignment action of **Available**, or **Required**.
 ## Next steps
 
 See [How to monitor apps](apps-monitor.md) for information to help you monitor book assignments.
-
-
-
-
-
-

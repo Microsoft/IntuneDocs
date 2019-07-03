@@ -343,4 +343,3 @@ Intune Certificate Connector service logs are available in **%ProgramFiles%\Micr
 ## Next steps
 
 Use the information in this article in addition to the information in [What are Microsoft Intune device profiles?](device-profiles.md) to manage your organization's devices and the certificates on them.
-

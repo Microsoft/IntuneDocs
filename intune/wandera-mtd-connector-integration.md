@@ -130,4 +130,3 @@ Repeat the following procedure for the Wandera app you created for iOS and for A
 
 ## Next Steps  
 Now that you have configured the Integration, you can start configuring policies, set up advanced conditional access, and view reports in the Wandera admin console. To learn more about managing and configuring Wandera, see the [Support Center Getting Started Guide](https://radar.wandera.com/?return_to=https://wandera.force.com/Customer/s/getting-started) in the Wandera documentation.  
- 

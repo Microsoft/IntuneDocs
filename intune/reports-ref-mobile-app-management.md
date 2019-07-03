@@ -141,4 +141,3 @@ The **MamPlatform** entity lists platform names and types on which a Mobile Appl
 |          Platform          | Unique identifier of the platform - similar to PlatformKey, but is a natural key. |                           123                           |
 |        PlatformName        |                                   Platform name                                   | Not Available <br>None <br>Windows <br>IOS <br>Android. |
 | RowLastModifiedDateTimeUtc | Date and time in UTC when this platform was last modified in the data warehouse.  |                 11/23/2016 12:00:00 AM                  |
-

@@ -281,5 +281,3 @@ The *PFX Certificates Connector for Microsoft Intune* [supports automatic update
 The profile is created, but it's not doing anything yet. Next, [assign the profile](device-profile-assign.md) and [monitor its status](device-profile-monitor.md).
 
 [Use SCEP certificates](certificates-scep-configure.md), or [issue PKCS certificates from a Digicert PKI manager web service](certificates-digicert-configure.md).
-
-

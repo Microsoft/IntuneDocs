@@ -112,4 +112,3 @@ When the script has finished running, it outputs the signed version of the Windo
 ## Next steps
 
 - [Assign apps to groups](apps-deploy.md)
-

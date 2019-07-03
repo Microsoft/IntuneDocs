@@ -294,4 +294,3 @@ The **ApplicationInventory** entity lists the apps found on the device at the ti
 |  ApplicationName   | ? (copied from ExchangeDeviceService\DeviceApplication). |
 | ApplicationVersion | ? (copied from ExchangeDeviceService\DeviceApplication). |
 |     BundleSize     | ? (copied from ExchangeDeviceService\DeviceApplication). |
-

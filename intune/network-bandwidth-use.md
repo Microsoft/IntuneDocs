@@ -113,4 +113,3 @@ If you use BranchCache, work with other administrators in your organization to m
 ## Next steps
 
 [Review endpoints for Intune](intune-endpoints.md)
-

@@ -98,4 +98,3 @@ To use Google's Zero Touch system, the device must support it and be affiliated 
 ## Next steps
 - [Deploy Android apps](apps-deploy.md)
 - [Add Android configuration policies](device-profiles.md)
-

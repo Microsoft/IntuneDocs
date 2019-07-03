@@ -130,5 +130,3 @@ You can find more information about other options available for Windows Autopilo
 
 > [!div class="nextstepaction"]
 > [In-depth Autopilot enrollment article](enrollment-autopilot.md)
-
-

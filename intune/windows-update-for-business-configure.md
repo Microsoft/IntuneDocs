@@ -173,4 +173,3 @@ The Azure classic portal also has a limited number of other Windows 10 updates s
 [Intune compliance reports for updates](windows-update-compliance-reports.md)
 
 [Troubleshooting Windows 10 update rings](https://techcommunity.microsoft.com/t5/Intune-Customer-Success/Support-Tip-Troubleshooting-Windows-10-Update-Ring-Policies/ba-p/714046)
-

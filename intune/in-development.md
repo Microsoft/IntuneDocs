@@ -132,5 +132,3 @@ We’re adding the capability to export and import security baselines so you can
 
 ## See also
 See [What’s New in Microsoft Intune](whats-new.md) for details on recent developments.
-
-

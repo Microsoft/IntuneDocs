@@ -107,5 +107,3 @@ Get the help starting with enrollment, that's specific to your device's platform
 - [Using your macOS device](using-your-macos-device-with-intune.md)
 - [Using your Windows device](using-your-windows-device-with-intune.md)
 - [Using the Company Portal website](using-the-intune-company-portal-website.md)
-
-

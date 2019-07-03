@@ -50,5 +50,3 @@ The following table lists the data that Microsoft Intune sends to Google when de
 
 
 To stop using Android enterprise device management with Microsoft Intune and delete the data, you must both disable the Microsoft Intune Android enterprise device management and also delete your Google account. Refer to Google account how to perform account management.
-
-

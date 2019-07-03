@@ -68,4 +68,3 @@ For example, you can use the following values in **Add or edit OMA-URI Setting**
 
 ## Next steps
 [Manage software updates in Intune](windows-update-for-business-configure.md)
-

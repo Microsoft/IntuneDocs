@@ -53,4 +53,3 @@ Intune isn't included in licenses not in this list.
 A proper license is required if a user benefits directly or indirectly from any feature covered by that license.
 
 For information about how user and device licenses affect access to services, as well as how to assign a license to a user, see the [Assign Intune licenses to your user accounts article](licenses-assign.md).
-

@@ -68,5 +68,3 @@ Activation Lock is a feature that help protect users' devices. The feature requi
 ## Next steps
 
 Learn about [mobile threat defense](mobile-threat-defense.md)
-
-

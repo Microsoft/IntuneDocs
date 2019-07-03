@@ -110,5 +110,3 @@ The following table lists the data that an Apple device sends to Intune. [Intune
 
 
 To stop using Apple services with Microsoft Intune and delete the data, you must both disable the Microsoft Intune Apple token and also delete your Apple account. Refer to Apple account how to perform account management.
-
-

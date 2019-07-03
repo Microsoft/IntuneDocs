@@ -734,4 +734,3 @@ The **vppProgramType** entity lists possible VPP program types for an app.
 ## Next steps
 
 For more about the Intune Data Warehouse, see [Data Warehouse data model](https://docs.microsoft.com/intune/reports-ref-data-model).
-

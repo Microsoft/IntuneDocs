@@ -621,4 +621,3 @@ For more information, see [PassportForWork CSP](https://docs.microsoft.com/windo
 
 - **Require uppercase letters in PIN** - *TenantId/Policies/PINComplexity/UppercaseLetters*   
   **Default**: Allowed  
-
