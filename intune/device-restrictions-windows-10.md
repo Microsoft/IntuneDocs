@@ -745,7 +745,7 @@ These settings use the [defender policy CSP](https://docs.microsoft.com/windows/
 - **Scan removable drives during a full scan**: **Enable** prevents full scans of removable drives. **Not configured** (default) lets Defender scan removable drives, such as USB sticks.
 - **Scan mapped network drives during a full scan**: **Enable** lets Defender scan files on mapped network drives. **Not configured** (default) prevents the full scan. If the files on the drive are read-only, Defender can't remove any malware found in them.
 - **Scan files opened from network folders**: **Not configured** (default) lets Defender scan files on shared network drives, such as files accessed from a UNC path. **Enable** prevents this scanning. If the files on the drive are read-only, Defender can't remove any malware found in them.
-- **Cloud protection**: **Not configured** (default) allows the Microsoft Active Protection Service to receive information about malware activity from devices that you manage. **Enable** blocks this feature.
+- **Cloud protection**: **Enable** allows the Microsoft Active Protection Service to receive information about malware activity from devices that you manage. **Not configured** (default) blocks this feature.
 - **Prompt users before sample submission**: Controls whether potentially malicious files that might require further analysis are automatically sent to Microsoft. Your options:
   - **Not configured**
   - **Always prompt**
