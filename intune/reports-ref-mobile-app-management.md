@@ -126,7 +126,7 @@ The **MamGlobalApplication** entity lists store apps that are managed through Mo
 |          Property          |                                               Description                                               |           Example            |
 |----------------------------|---------------------------------------------------------------------------------------------------------|------------------------------|
 |       ApplicationKey       |          Unique identifier of the store app in the data warehouse, known as the surrogate key.          |             123              |
-|       ApplicationId        | Unique identifier of the store app. The identifier is similar to ApplicationKey, but is a natural key.  | com.microsoft.skydrive.<ios> |
+|       ApplicationId        | Unique identifier of the store app. The identifier is similar to ApplicationKey, but is a natural key.  | com.microsoft.skydrive.\<ios> |
 |      ApplicationName       |                                      MAM Global Application Name.                                       |           Skydrive           |
 | RowLastModifiedDateTimeUtc | Date and time in UTC when this specific MAM Global Application was last modified in the data warehouse. |    11/23/2016 12:00:00 AM    |
 

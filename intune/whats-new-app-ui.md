@@ -467,21 +467,16 @@ If users have used their work or school account to sign in to other Microsoft ap
 ### New icons for the Managed Browser and the Company Portal <!--918433, 918431-->
 
 The Managed Browser is receiving updated icons for both the Android and iOS versions of the app. The new icon will contain the updated Intune badge to make it more consistent with other apps in Enterprise Mobility + Security (EM+S).
-
-<html>
-<body>
-   <table id="wrapper">
-      <tr>
+<table id="wrapper">
+   <tr>
+      <td>
+         <img src="media/cp_manbro_before_042017.png" alt="The previous version of the Managed Browser app icon." width="200" height="366" align="center">
+         </td>
          <td>
-            <img src="/intune/media/cp_manbro_before_042017.png" alt="The previous version of the Managed Browser app icon." width="200" height="366" align="center">
-          </td>
-          <td>
-             <img src="/intune/media/cp_manbro_after_042017.png" alt="The updated version of the Managed Browser app icon." width="200" height="366" align="center">
-           </td>
-      </tr>
-   </table>
-</body>
-</html>
+            <img src="media/cp_manbro_after_042017.png" alt="The updated version of the Managed Browser app icon." width="200" height="366" align="center">
+         </td>
+   </tr>
+</table>
 
 The Company Portal is also receiving updated icons for the Android, iOS, and Windows versions of the app to improve consistency with other apps in EM+S. These icons will be gradually released across platforms from April to late May.
 
@@ -489,23 +484,19 @@ The Company Portal is also receiving updated icons for the Android, iOS, and Win
 
 An update to the Android Company Portal app shows a sign-in progress indicator when the user launches or resumes the app. The indicator progresses through new statuses, beginning with "Connecting...", then "Signing in...", then "Checking for security requirements..." before allowing the user to access the app.
 
-<html>
-<body>
-   <table id="wrapper">
-      <tr>
+<table id="wrapper">
+   <tr>
+      <td>
+         <img src="media/cp_android_connecting_042017.png" alt="The Company Portal app for Android sign-in screen that shows a partially filled loading bar with the phrase 'Connecting' underneath it." width="200" height="366" align="center">
+         </td>
          <td>
-            <img src="/intune/media/cp_android_connecting_042017.png" alt="The Company Portal app for Android sign-in screen that shows a partially filled loading bar with the phrase 'Connecting' underneath it." width="200" height="366" align="center">
-          </td>
-          <td>
-             <img src="/intune/media/cp_android_signing_in_042017.png" alt="The Company Portal app for Android sign-in screen that shows a partially filled loading bar with the phrase 'Signing in' underneath it." width="200" height="366" align="center">
-           </td>
-           <td>
-              <img src="/intune/media/cp_android_checking_security_reqs_042017.png" alt="The Company Portal app for Android sign-in screen that shows a partially filled loading bar with the phrase 'Checking for security requirements' underneath it." width="200" height="366" align="center">
-           </td>
-      </tr>
-   </table>
-</body>
-</html>
+            <img src="media/cp_android_signing_in_042017.png" alt="The Company Portal app for Android sign-in screen that shows a partially filled loading bar with the phrase 'Signing in' underneath it." width="200" height="366" align="center">
+         </td>
+         <td>
+            <img src="media/cp_android_checking_security_reqs_042017.png" alt="The Company Portal app for Android sign-in screen that shows a partially filled loading bar with the phrase 'Checking for security requirements' underneath it." width="200" height="366" align="center">
+         </td>
+   </tr>
+</table>
 
 ### Improved app install status for the Windows 10 Company Portal app <!--676495-->
 The Windows 10 Company Portal app now provides an install progress bar on the app details page. This is supported for modern apps on devices running the Windows 10 Anniversary Update and up.
@@ -531,17 +522,14 @@ Beginning in March, the Company Portal app for Android will follow [material des
 
 * __Navigation__: All Apps shows a tabbed view of __Featured__, __All__ and __Categories__ for easier navigation. __Contact IT__ has been streamlined for improved readability.
 
-<html>
-<body>
-   <table id="wrapper">
-      <tr>
-         <td>
-            <img src="/intune/media/cp_android_contactit_after.png" alt="The Company Portal app for Android displaying an updated version of the Contact IT tab. The tab shows available contact information for IT, including phone number, email address, IT website, and IT contact information." width="200" height="366" align="center">
-          </td>
-      </tr>
-   </table>
-</body>
-</html>
+<table id="wrapper">
+   <tr>
+      <td>
+         <img src="/intune/media/cp_android_contactit_after.png" alt="The Company Portal app for Android displaying an updated version of the Contact IT tab. The tab shows available contact information for IT, including phone number, email address, IT website, and IT contact information." width="200" height="366" align="center">
+         </td>
+   </tr>
+</table>
+
 
 ## January 2017
 

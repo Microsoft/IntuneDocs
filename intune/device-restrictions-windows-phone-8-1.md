@@ -83,7 +83,7 @@ Example: Search the store for the Skype app. The URL you use is `http://www.wind
 
 ### Additional options
 
-You can also click **Import** to populate the list from a csv file in the format <*app url*>, <*app name*>, <app publisher>, or click **Export** to create a csv file containing the contents of the restricted apps list in the same format.
+You can also click **Import** to populate the list from a csv file in the format <*app url*>, <*app name*>, \<app publisher>, or click **Export** to create a csv file containing the contents of the restricted apps list in the same format.
 
 
 ## Browser

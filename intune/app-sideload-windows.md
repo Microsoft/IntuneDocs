@@ -37,9 +37,9 @@ Windows 8.1 Desktop requires either an enterprise policy to enable sideloading o
 
 In Windows 10, sideloading is different than in earlier versions of Windows:
 
-  >You can unlock a device for sideloading using an enterprise policy. Intune provides a device config policy called "Trusted app installation". Setting this to <allow> is all that is needed for devices that already trust the certificate used to sign the appx app.
+  >You can unlock a device for sideloading using an enterprise policy. Intune provides a device config policy called "Trusted app installation". Setting this to `<allow>` is all that is needed for devices that already trust the certificate used to sign the appx app.
 
-  >Symantec Phone certificates and Sideloading License keys are not required. However if an on-premise certificate authority is not available then you may need to obtain a code signing certificate from a public certification authrity. See [Introduction to Code Signing](https://docs.microsoft.com/windows/desktop/SecCrypto/cryptography-tools#introduction-to-code-signing)
+  >Symantec Phone certificates and Sideloading License keys are not required. However if an on-premise certificate authority is not available then you may need to obtain a code signing certificate from a public certification authority. See [Introduction to Code Signing](https://docs.microsoft.com/windows/desktop/SecCrypto/cryptography-tools#introduction-to-code-signing)
 
 
 ### Code sign your app

@@ -50,9 +50,9 @@ Check the [Intune on-premises Exchange connector setup](exchange-connector-insta
 
 
 ## Using Powershell to get more data on Exchange Connector issues
-- To get a list of all mobile devices for a mailbox, use Get-ActiveSyncDeviceStatistics -mailbox mbx
-- To get a list of SMTP addresses for a mailbox, use Get-Mailbox -Identity user | select emailaddresses | fl
-- To get detailed information about a device's access state, use Get-CASMailbox <upn> | fl
+- To get a list of all mobile devices for a mailbox, use `Get-ActiveSyncDeviceStatistics -mailbox mbx`
+- To get a list of SMTP addresses for a mailbox, use `Get-Mailbox -Identity user | select emailaddresses | fl`
+- To get detailed information about a device's access state, use `Get-CASMailbox <upn> | fl`
 
 ### Next steps
 If this information doesn't help you, you can also [get support for Microsoft Intune](get-support.md).

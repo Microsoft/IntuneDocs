@@ -52,7 +52,7 @@ If a design component does not exist in at least one test criteria that aligns t
 
 You may need design changes to accommodate unforeseen difficulties. In addition, all design changes should be fully documented with the reason for each change. Here's an example to illustrate what a change could be:
 
-<blockquote>You realize that you don’t meet the requirements of Network Device Enrollment Service (NDES), and you also learn that the VPN and Wi-Fi profiles can be configured with a root CA satisfying the same requirements without an NDES implementation.</blockquote>
+> You realize that you don’t meet the requirements of Network Device Enrollment Service (NDES), and you also learn that the VPN and Wi-Fi profiles can be configured with a root CA satisfying the same requirements without an NDES implementation.
 
 You might experience challenges or issues that require technical guidance or specialized troubleshooting during the testing and validation process. We recommend that you seek assistance through the Microsoft support channels.
 

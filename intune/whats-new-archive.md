@@ -1109,8 +1109,8 @@ You can target compliance policies to users in user groups. With this update, yo
 
 #### New Management name column <!-- 1333586 -->
  A new column named **Management name** is available on the devices blade. This is an auto-generated, non-editable name assigned per device, based on the following formula:
-- Default name for all devices: <username><em><devicetype></em><enrollmenttimestamp>
-- For bulk added devices: <PackageId/ProfileId><em><DeviceType></em><EnrollmentTime>
+- Default name for all devices: \<username>*\<devicetype>*\<enrollmenttimestamp>
+- For bulk added devices: \<PackageId/ProfileId>*\<DeviceType>*\<EnrollmentTime>
 
 This is an optional column in the devices blade. It isn't available by default and you can only access it by using the column selector. The device name is not affected by this new column.
 

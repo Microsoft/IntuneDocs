@@ -54,12 +54,12 @@ You can also set the priority order for each profile to account for conflicting 
 <tr><td>Show app and profile installation progress<td>The enrollment status page is displayed.<td>The enrollment status page is not displayed.
 <tr><td>Block device use until all apps and profiles are installed<td>The settings in this table are made available to customize behavior of the enrollment status page, so that the user can address potential installation issues.
 <td>The enrollment status page is displayed with no additional options to address installation failures.
-<tr><td>Allow users to reset device if installation error occurs<td>A <b>Reset device</b> button is displayed if there is an installation failure.<td>The <b>Reset device</b> button is not displayed if there is an installation failure.
-<tr><td>Allow users to use device if installation error occurs<td>A <b>Continue anyway</b> button is displayed if there is an installation failure.<td>The <b>Continue anyway</b> button is not displayed if there is an installation failure.
+<tr><td>Allow users to reset device if installation error occurs<td>A <strong>Reset device</strong> button is displayed if there is an installation failure.<td>The <strong>Reset device</strong> button is not displayed if there is an installation failure.
+<tr><td>Allow users to use device if installation error occurs<td>A <strong>Continue anyway</strong> button is displayed if there is an installation failure.<td>The <strong>Continue anyway</strong> button is not displayed if there is an installation failure.
 <tr><td>Show timeout error when installation takes longer than specified number of minutes<td colspan="2">Specify the number of minutes to wait for installation to complete. A default value of 60 minutes is entered.
-<tr><td>Show custom message when an error occurs<td>A text box is provided where you can specify a custom message to display in case of an installation error.<td>The default message is displayed: <br><b>Installation exceeded the time limit set by your organization. Please try again or contact your IT support person for help.<b>
-<tr><td>Allow users to collect logs about installation errors<td>If there is an installation error, a <b>Collect logs</b> button is displayed. <br>If the user clicks this button they are asked to choose a location to save the log file <b>MDMDiagReport.cab</b><td>The <b>Collect logs</b> button is not displayed if there is an installation error.
-<tr><td>Block device use until these required apps are installed if they are assigned to the user/device<td colspan="2">Choose <b>All</b> or <b>Selected</b>. <br><br>If <b>Selected</b> is chosen, a <b>Select apps</b> button is displayed that enables you to choose which apps must be installed prior to enabling device use.
+<tr><td>Show custom message when an error occurs<td>A text box is provided where you can specify a custom message to display in case of an installation error.<td>The default message is displayed: <br><strong>Installation exceeded the time limit set by your organization. Please try again or contact your IT support person for help.<strong>
+<tr><td>Allow users to collect logs about installation errors<td>If there is an installation error, a <strong>Collect logs</strong> button is displayed. <br>If the user clicks this button they are asked to choose a location to save the log file <strong>MDMDiagReport.cab</strong><td>The <strong>Collect logs</strong> button is not displayed if there is an installation error.
+<tr><td>Block device use until these required apps are installed if they are assigned to the user/device<td colspan="2">Choose <strong>All</strong> or <strong>Selected</strong>. <br><br>If <strong>Selected</strong> is chosen, a <strong>Select apps</strong> button is displayed that enables you to choose which apps must be installed prior to enabling device use.
 </table>
 
 ## Turn on default Enrollment Status Page for all users
@@ -160,8 +160,11 @@ Top questions for troubleshooting.
 
 - How can I collect log files?
   - There are two ways Enrollment Status Page log files can be collected.  The first method, enable the ability for users to collect logs in the ESP policy, when a timeout occurs in the ESP the end user can choose option to "Collect logs", by inserting a USB drive the log files can be copied to the drive. The second method, open a command prompt by entering Shift-F10 key sequence, then enter the following commandline to generate the log files: 
-       mdmdiagnosticstool.exe -area Autopilot -cab <pathToOutputCabFile>.cab 
-    
+
+    ```
+    mdmdiagnosticstool.exe -area Autopilot -cab <pathToOutputCabFile>.cab 
+    ```
+
 ### Known issues
 Below are known issues. 
 - Disabling the ESP profile does not remove ESP policy from devices and users still get ESP when they login to device for first time. ESP policy is not removed when the ESP profile is disabled, you must deploy OMA-URI to disable the ESP, see above for instructions on how to disable ESP using OMA-URI. 
