@@ -56,7 +56,6 @@ The report displays the **Device name** for your Windows 10 devices and high-lev
 
 - **Encryption status** – Whether the OS drive is encrypted. 
 
-
 ### Device encryption status
 When you select a device, Intune displays the **Device encryption status** pane.
 

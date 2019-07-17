@@ -28,7 +28,6 @@ ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
 ---
 
-
 # Remove your device from management if you declined "Terms of Use"
 
 If you declined the terms of use while trying to sign in to the Company Portal app, you are prevented from signing in to the Company Portal app on future tries, so you need to use these "workaround" instructions to remove your device from Intune.
@@ -55,6 +54,5 @@ To remove all data that the Company Portal app for Android stores on your device
 
 - Clear app data in Applications -> Click on app -> button "Clear data"
 - Delete the folder '\storage\internal storage\Android\data\com.microsoft.windowsintune.companyportal'
-
 
 Still need help? Contact your company support (check the [Company Portal website](https://go.microsoft.com/fwlink/?linkid=2010980) for contact information), or write the <a href="mailto:wintunedroidfbk@microsoft.com?subject=I'm having unenrolling my Android device&body=Describe the issue you're experiencing here.">Microsoft Android team</a>.

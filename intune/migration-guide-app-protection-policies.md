@@ -30,7 +30,6 @@ ms.collection: M365-identity-device-management
 
 # Configure app protection policies (optional)
 
-
 App protection policies allow you to:
 * Encrypt apps
 * Define a PIN when the app is accessed
@@ -58,7 +57,6 @@ As you disable Conditional Access in the old MDM provider, users can still be pr
 
 1. [Create an app protection policy](app-protection-policies.md#create-an-app-protection-policy)
 2. [Deploy a policy](app-protection-policies.md#deploy-a-policy-to-users)
-
 
 ## Next steps
 

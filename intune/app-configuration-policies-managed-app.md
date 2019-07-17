@@ -67,7 +67,6 @@ Intune supports the following token types in the configuration settings. Other c
 - \{\{username\}\}—for example, John Doe
 - \{\{PrimarySMTPAddress\}\}—for example, testuser@ad.domain.com
 
-
 > [!Note]  
 > The \{\{ and \}\} characters are used by token types only and must not be used for other purposes.
 

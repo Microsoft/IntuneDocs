@@ -1,5 +1,3 @@
-
-
 ### Apple
 - Apple iOS 10.0 and later
 - Mac OS X 10.12 and later
@@ -8,7 +6,6 @@
 - Android 4.4 and later (including Samsung Knox Standard 4.4 and higher)
 
   A full list of verified Samsung Knox Standard devices is available in the [Android and Samsung Knox Standard policy settings](/intune/supported-devices-browsers#supported-samsung-knox-standard-devices).
-
 
 - Android enterprise [requirements](https://support.google.com/work/android/answer/6174145?hl=en).
 
@@ -29,5 +26,3 @@
 > Intune cannot be used to manage Windows Server operating systems. Home SKU does not support all Intune features
 
 Customers with Enterprise Management + Security  (EMS) can also use [Azure Active Directory (Azure AD) to register Windows 10 devices](/intune/windows-enroll).
-
-

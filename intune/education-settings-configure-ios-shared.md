@@ -28,7 +28,6 @@ ms.custom: intune-azure
 ms.collection: M365-identity-device-management
 ---
 
-
 # Configure Intune education settings for shared iPad devices
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
@@ -66,7 +65,6 @@ You can import information into SDS by using one of the following methods:
 - [Find out more about the full experience of syncing on-premises school data to Azure AD](https://docs.microsoft.com/azure/active-directory/connect/active-directory-aadconnect)
 - [Find out more about Microsoft School Data Sync](https://sds.microsoft.com/)
 - [Find out more about licensing in Azure Active Directory](https://docs.microsoft.com/azure/active-directory/active-directory-licensing-whatis-azure-portal)
-
 
 ## Step 2 - Create and assign an iOS Education profile in Intune
 

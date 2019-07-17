@@ -16,7 +16,6 @@ ms.assetid: c002bcb2-ae37-478d-acf3-2bf51faae490
 searchScope:
  - User help
 
-
 # optional metadata
 
 ROBOTS:  
@@ -65,6 +64,5 @@ Complete the following steps if you prefer to manually update the app, or if **A
 1. Open Microsoft Store.
 2. In the search bar, type **Company Portal**.
 3. Click the app to install the latest version on your device. 
-
 
 Still need help? Contact your company support. For contact information, check the [Company Portal website](https://go.microsoft.com/fwlink/?linkid=2010980).

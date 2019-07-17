@@ -32,7 +32,6 @@ ms.collection: M365-identity-device-management
 
 This article provides suggestions for troubleshooting [device enrollment](device-enrollment.md) issues. If this information doesn't solve your problem, see [How to get support for Microsoft Intune](get-support.md) to find more ways to get help.
 
-
 ## Initial troubleshooting steps
 
 Before you begin troubleshooting, check to make sure that you've configured Intune properly to enable enrollment. You can read about those configuration requirements in:
@@ -52,7 +51,6 @@ Your managed device users can collect enrollment and diagnostic logs for you to 
 
 - [Send Android enrollment errors to your IT admin](https://docs.microsoft.com/intune-user-help/send-enrollment-errors-to-your-it-admin-android)
 - [Send iOS errors to your IT admin](https://docs.microsoft.com/intune-user-help/send-errors-to-your-it-admin-ios)
-
 
 ## General enrollment issues
 These issues may occur on all device platforms.
@@ -142,14 +140,11 @@ To avoid hitting device caps, be sure to remove stale device records.
 ### Unable to sign in or enroll devices when you have multiple verified domains
 **Issue:** This problem may occur when you add a second verified domain to your ADFS. Users with the user principal name (UPN) suffix of the second domain may not be able to log into the portals or enroll devices.
 
-
 <strong>Resolution:</strong> Microsoft Office 365 Customers are required to deploy a separate instance of the AD FS 2.0 Federation Service for each suffix if they:
 - use single sign-on (SSO) through AD FS 2.0, and
 - have multiple top-level domains for users' UPN suffixes within their organization (for example, @contoso.com or @fabrikam.com).
 
-
 A [rollup for AD FS 2.0](http://support.microsoft.com/kb/2607496) works in conjunction with the <strong>SupportMultipleDomain</strong> switch to enable the AD FS server to support this scenario without requiring additional AD FS 2.0 servers. For more information, see [this blog](https://blogs.technet.microsoft.com/abizerh/2013/02/05/supportmultipledomain-switch-when-managing-sso-to-office-365/).
-
 
 ## Android issues
 
@@ -161,7 +156,6 @@ The following table lists errors that end users might see while enrolling Androi
 |---|---|---|
 |**IT admin needs to assign license for access**<br>Your IT admin hasn't given you access to use this app. Get help from your IT admin or try again later.|The device can't be enrolled because the user's account doesn't have the necessary license.|Before users can enroll their devices, they must have been assigned the necessary license. This message means that they have the wrong license type for the mobile device management authority. For example, they'll see this error if both of the following are true:<ol><li>Intune has been set as the mobile device management authority</li><li>They're using a System Center 2012 R2 Configuration Manager license.</li></ol>For more information, see [Assign Intune licenses to your user accounts](/intune/licenses-assign).|
 |**IT admin needs to set MDM authority**<br>Looks like your IT admin hasn't set an MDM authority. Get help from your IT admin or try again later.|The mobile device management authority hasn't been defined.|The mobile device management authority hasn't been set in Intune. See information about how to [set the mobile device management authority](/intune/mdm-authority-set).|
-
 
 ### Devices fail to check in with the Intune service and display as "Unhealthy" in the Intune admin console
 **Issue:** Some Samsung devices that are running Android versions 4.4.x and 5.x might stop checking in with the Intune service. If devices don't check in:
@@ -210,7 +204,6 @@ If Resolution #2 doesn't work, have your users follow these steps to make Smart 
 6. Under **App power saving** or **App optimization**, confirm that Company Portal is turned off.
 
    ![Verify that Company Portal is turned off](./media/troubleshoot-device-enrollment-in-intune/smart-manager-verify-comp-portal-turned-off.png)
-
 
 ### Profile installation failed
 **Issue:** A user receives a **Profile installation failed** error on an Android device.
@@ -264,7 +257,6 @@ The follow steps describe just one of many methods and tools that you can use to
 2. Enter your AD FS server’s fully qualified domain name (for example, sts.contoso.com) and select **CHECK SERVER**.
 
 If the Server certificate is installed correctly, you see all check marks in the results. If the problem above exists, you see a red X in the "Certificate Name Matches" and the “SSL Certificate is correctly Installed” sections of the report.
-
 
 ## iOS issues
 
@@ -321,7 +313,6 @@ For more information, see [Best practices for securing Active Directory Federati
 - contact Microsoft Support if you use ADFS
 - contact your third party identity vendor.
 
-
 ### Profile installation failed
 **Issue:** A user receives a **Profile installation failed** error on an iOS device.
 
@@ -344,7 +335,6 @@ For more information, see [Best practices for securing Active Directory Federati
 - Either the Data Discovery Manager (ddm) component or the State Manager (statmgr) component isn't processing messages from the Intune service.
 - You may have downloaded the MDM certificate from one account and used it on another account.
 
-
 **Resolution:** Review the following log files for possible errors:
 
 - dmpdownloader.log
@@ -352,7 +342,6 @@ For more information, see [Best practices for securing Active Directory Federati
 - statmgr.log
 
 Examples will be added soon about what to look for in these log files.
-
 
 ### User’s iOS device is stuck on an enrollment screen for more than 10 minutes
 
@@ -455,8 +444,6 @@ A list of iOS enrollment errors is provided in our documentation, in [Troublesho
 |---|---|---|
 |**IT admin needs to assign license for access**<br>Your IT admin hasn't given you access to use this app. Get help from your IT admin or try again later.|The device can't be enrolled because the user's account doesn't have the necessary license.|Before users can enroll their devices, they must have been assigned the necessary license. This message means that they have the wrong license type for the mobile device management authority. For example, they'll see this error if both of the following are true: <ol><li>Intune has been set as the mobile device management authority</li><li>They're using a System Center 2012 R2 Configuration Manager license.</li></ol>See information about [how to assign Intune licenses to your user accounts](https://docs.microsoft.com/intune/licenses-assign).|
 
-
-
 ### The machine is already enrolled - Error hr 0x8007064c
 **Issue:** Enrollment fails with the error **The machine is already enrolled**. The enrollment log shows error **hr 0x8007064c**.
 
@@ -501,9 +488,6 @@ The account certificate of the previous account is still present on the computer
 |0x8004300B, 0x80CF300B|The client software installation package can't run because the version of Windows that is running on the client isn't supported.|Intune doesn't support the version of Windows that is running on the client computer.|
 |0xAB2|The Windows Installer couldn't access VBScript run time for a custom action.|This error is caused by a custom action that is based on Dynamic-Link Libraries (DLLs). When troubleshooting the DLL, you might have to use the tools that are described in [Microsoft Support KB198038: Useful Tools for Package and Deployment Issues](https://support.microsoft.com/kb/198038).|
 |0x80cf0440|The connection to the service endpoint terminated.|Trial or paid account is suspended. Create a new trial or paid account and re-enroll.|
-
-
-
 
 ### Next steps
 If this troubleshooting information didn't help you, contact Microsoft Support as described in [How to get support for Microsoft Intune](get-support.md).

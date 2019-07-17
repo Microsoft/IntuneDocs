@@ -39,7 +39,6 @@ New accounts can be created with and without pre-generated data. To create a new
 4. [Create groups](https://docs.microsoft.com/intune/groups-add).
 5. [Assign licenses](https://docs.microsoft.com/intune/licenses-assign) as appropriate for your testing.
 
-
 ## Azure portal policy configuration
 [Create and assign app protection policies](https://docs.microsoft.com/intune/app-protection-policies) in the [Azure portal's Intune blade](https://portal.azure.com/?feature.customportal=false#blade/Microsoft_Intune_Apps/MainMenu/14/selectedMenuItem/Overview). Your [app configuration policy](https://docs.microsoft.com/intune/app-configuration-policies-overview) can also be created and assigned in the Intune blade.
 

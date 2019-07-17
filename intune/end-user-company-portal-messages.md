@@ -100,7 +100,6 @@ If users deny access, they can still send data logs via email, but the logs won'
 
 The second time that users sign in to the Company Portal app after denying access, the message displays a **Never ask again** check box that users can select so that the message never shows again. If users allow, but then later deny access, the message appears the next time users try to send logs. However, if users later decide to allow access, they can go to **Settings** > **Apps** > **Company Portal** > **Permissions** > **Storage**, and then turn on the permission.
 
-
 ### How to explain this to your users
 Send your users to [Send logs to your IT admin by email](/intune-user-help/send-logs-to-your-it-admin-by-email-android). 
 
@@ -142,7 +141,6 @@ When you install such apps using the Company Portal and launch the app, follow t
    ![iOS device UI - Trust app message](./media/end-user-company-portal-messages/end-user-company-portal-messages-03.png)
 
     You should be able to launch and use the company app.
-
 
 ### See also
 [What to tell your end users about using Intune](end-user-educate.md)

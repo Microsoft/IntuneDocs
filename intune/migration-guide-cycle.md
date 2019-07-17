@@ -64,7 +64,6 @@ Track how many users have enrolled devices after each phase so that you can:
 
 - Estimate the impact of enforcing Conditional Access.
 
-
 ## Post-migration
 
 Retire the previous MDM provider and unsubscribe from the service after migrating to Intune. Additionally, remove any unneeded infrastructure requirements by following the MDM provider’s instructions.

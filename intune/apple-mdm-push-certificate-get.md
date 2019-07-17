@@ -43,7 +43,6 @@ For more information about enrollment options, see [Choose how to enroll iOS dev
 
 When a push certificate expires, you must renew it. When renewing, make sure to use the same Apple ID that you used when you first created the push certificate.
 
-
 ## Steps to get your certificate
 Sign in to [Intune](https://go.microsoft.com/fwlink/?linkid=2090973), choose **Device enrollment** > **Apple Enrollment** > **Apple MDM Push Certificate**, and then follow these steps in [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
 

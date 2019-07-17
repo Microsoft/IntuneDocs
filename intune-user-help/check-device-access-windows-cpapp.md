@@ -96,5 +96,4 @@ Complete the steps in this article to check access from the Company Portal app f
 
     ![Example screenshot of the Company Portal app for Windows, Device details page, highlighting the Check access action.](./media/1809_CheckAccess_Device_details_button.png) 
 
-
 Need more help? Find your company support's contact information on the [Company Portal website](https://go.microsoft.com/fwlink/?linkid=2010980).

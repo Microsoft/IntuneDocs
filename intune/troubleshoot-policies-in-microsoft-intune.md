@@ -176,7 +176,6 @@ Occurs if the time on the local system is out of sync by five minutes or more. I
 
 To resolve this issue, set the local system time as close as possible to Internet time. Or, set it to the time on the domain controllers on the network.
 
-
 ## Next steps
 
 [Common issues and resolutions with email profiles](troubleshoot-email-profiles-in-microsoft-intune.md)

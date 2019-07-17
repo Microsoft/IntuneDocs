@@ -62,7 +62,6 @@ From the menu, select **Installed Apps** to view a list of all apps installed on
 
    ![Screenshot of Company Portal website, Installed Apps page.](./media/intune-installed-apps-1907.png)  
 
-
 This page lists the following details about each app:  
 
 * Name: The name of the app, with a link to the app's details page.
@@ -88,7 +87,6 @@ Need additional help? Contact your company support. For contact information, che
 ### Available and required apps
 Apps are assigned to you by your organization, and labeled as either available or required. The **Installed apps** page shows which apps you have under the **Assignment Type** column. 
 
-
 * Available apps: These apps are selected by your organization, and are appropriate and useful for work or school. They are optional to install, and are the only apps you'll find in the Company Portal to install. 
 
 * Required apps: Your organization might deploy necessary work and school apps directly to your device. These apps are automatically installed for you without intervention. 
@@ -97,7 +95,6 @@ Apps are also made available to you based on your device type. For example, if y
 
 ## View app details  
 Select an app on the **Apps** or **Installed apps** page to view its details. You'll be taken to **App details**, where you'll find the app's description and requirements. If an app isn't already installed on your device, you can install it from this page. 
-
 
    ![Screenshot of Company Portal website, App details page.](./media/intune-app-details-1907.png)  
 

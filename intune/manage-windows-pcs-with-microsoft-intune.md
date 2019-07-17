@@ -39,7 +39,6 @@ The Intune software client is best suited for Windows PCs running legacy operati
 
 Intune supports management of Windows PCs as computers using the software client for up to 7,000 PCs. For larger deployments, manage Windows 10 PCs as mobile devices. Each release of Intune and update of Windows 10 includes management features based on the mobile device management architecture. We strongly recommend that you move your organization to Windows 10 managed as mobile devices.
 
-
 > [!NOTE]
 > You can manage Windows 8.1 and later devices either as PCs by using the Intune client software or as mobile devices. You cannot use both methods on the same device. Carefully consider before deciding to manage PCs with the Intune client software. This topic applies only to managing devices as PCs by running the Intune client software.
 

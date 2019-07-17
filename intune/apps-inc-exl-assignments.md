@@ -45,7 +45,6 @@ Intune doesn't consider user-to-device association when it excludes groups. Incl
 >
 > Android enterprise supports including and excluding groups. You can leverage the built-in **All Users** and **All Devices** groups for Android enterprise app assignment. 
 
-
 ## Include and exclude groups when assigning apps 
 To assign an app to groups by using the include and exclude assignment:
 1. Sign in to [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).

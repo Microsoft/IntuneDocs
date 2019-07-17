@@ -77,7 +77,6 @@ You must download an external tool to pre-process your *.pkg* files before you c
 2. On the **App package file** pane, choose the browse button, and select an macOS installation file with the extension *.intunemac*.
 3. When you are finished, choose **OK**.
 
-
 ## Step 3 - Configure app information
 
 1. On the **Add app** pane, choose **App information**.

@@ -28,7 +28,6 @@ ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
 ---
 
-
 # Upload and email logs using a USB cable
 
 Email company support about a problem you experienced in the Company Portal app. Error details are recorded and stored on your device in a special document called a _diagnostic log_. This article describes how to upload the logs from your device to your computer. You'll need a USB cable to complete these steps.   

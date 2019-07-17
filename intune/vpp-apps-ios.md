@@ -30,7 +30,6 @@ ms.collection: M365-identity-device-management
 
 # How to manage iOS apps purchased through a volume-purchase program with Microsoft Intune
 
-
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 The iOS app store lets you purchase multiple licenses for an app that you want to run in your company. Purchasing multiple copies helps you to efficiently manage apps in your company.
@@ -116,7 +115,6 @@ You can synchronize the data held by Apple with Intune at any time by choosing *
     - **Type** - Choose whether the app will be **Available** (end users can install the app from the Company Portal), or **Required** (end user devices will automatically get the app installed).
     - **License type** - Choose from **User licensing**, or **Device licensing**.
 6. Once you are done, choose **Save**.
-
 
 >[!NOTE]
 >The list of apps displayed is associated with a token. If you have an app that is associated with multiple VPP tokens, you see the same app being displayed multiple times; once for each token.

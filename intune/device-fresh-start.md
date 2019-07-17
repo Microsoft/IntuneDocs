@@ -29,7 +29,6 @@ ms.collection: M365-identity-device-management
 
 # Use Fresh Start to reset Windows 10 devices with Intune
 
-
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 The **Fresh Start** device action removes any apps that are installed on a PC running Windows 10, version 1703 or later. Fresh Start helps remove pre-installed (OEM) apps that are typically installed with a new PC. 

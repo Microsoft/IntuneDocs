@@ -229,7 +229,6 @@ Devices managed by Intune or by users managed by Intune or Azure AD.
 | OS version         | The Operating System version number of the device.                                                                                  |
 | Last check-in      | The name of the type of device.                                                                                                     |
 
-
 ### App protection policies
 
 An app protection policy is available to mobile apps that integrate with EMS technologies. These policies give a baseline of protection for your corporate data when it is downloaded to mobile apps, including the Office mobile apps. 

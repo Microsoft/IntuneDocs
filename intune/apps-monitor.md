@@ -89,7 +89,6 @@ A device status list is shown when you select **Device install status** in the *
 | **Status details**   | The details of the status.                                                                                                                                                                                                                                     |
 | **Last check-in**    | The date of the device's last sync with Intune.                                                                                                                                                                                                                  |
 
-
 ### User install status
 
 A user status list is shown when you select **User install status** in the **Monitor** section of the menu. The details table includes the following columns:
@@ -101,7 +100,6 @@ A user status list is shown when you select **User install status** in the **Mon
 | **Installations**   | The number of apps installed by the user. |
 | **Failures**        | The number of failed app installations for the user.     |
 | **Not installed**   | The number of apps not installed by the user. |
-
 
 ## Next steps
 

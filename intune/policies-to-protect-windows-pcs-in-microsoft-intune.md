@@ -33,7 +33,6 @@ ms.collection: M365-identity-device-management
 
 Microsoft Intune offers three policies that you can use to help ensure the security of Windows PCs that the [Intune client software](manage-windows-pcs-with-microsoft-intune.md) manages.
 
-
 ## Software updates
 
 Intune makes it easy for you to [keep Windows PCs that you manage up-to-date](keep-windows-pcs-up-to-date-with-software-updates-in-microsoft-intune.md) by informing you when important software updates from Microsoft and other companies are available. You can then approve or decline these updates. Approved updates will automatically be installed on all applicable PCs.

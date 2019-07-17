@@ -28,11 +28,9 @@ ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
 ---
 
-
 # What happens if you unenroll your Windows device from Intune?
 
 Use the links at the right side of this page, under **In this article**, to find information about the type of device you're using.
-
 
 ## Windows 10, Windows 8.1, Windows 8, Windows 7, Windows Vista
 

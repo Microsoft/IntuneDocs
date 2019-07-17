@@ -11,7 +11,6 @@ ms.service: microsoft-intune
 ms.localizationpriority: high
 ms.technology:
 
-
 # optional metadata
 
 #ROBOTS:
@@ -120,7 +119,6 @@ In this step, you:
      > [!NOTE]
      > To revoke certificates, the NDES service account needs *Issue and Manage Certificates* rights on the certification authority. To delegate this permission, open the Certificate Authority management console and right-click on the Certificate Authority name. Then, on the Security tab, add or select the account and then select the checkbox for **Issue and Manage Certificates**.
 
-
 3. Review the **Validity period** on the **General** tab of the template. By default, Intune uses the value configured in the template. However, you can configure the CA to allow the requester to enter a different value, which you can then set from within the Intune Administrator console. If you want to always use the value in the template, skip the rest of this step.
 
    > [!IMPORTANT]
@@ -227,7 +225,6 @@ In this step, you:
 
 3. The NDES server receives long URLs (queries), which require you to add two registry entries:
 
-
    |                        Location                        |      Value      | Type  |      Data       |
    |--------------------------------------------------------|-----------------|-------|-----------------|
    | HKLM\SYSTEM\CurrentControlSet\Services\HTTP\Parameters | MaxFieldLength  | DWORD | 65534 (decimal) |
@@ -307,7 +304,6 @@ In this step, you:
 
    ![ConnectorDownload](./media/certificates-scep-configure/download-certificates-connector.png)
 
-
 4. After the download completes, go to the NDES server that hosts your Network Device Enrollment Service (NDES). Then:
 
     1. Be sure .NET 4.5 Framework is installed, as it's required by the NDES Certificate connector. .NET 4.5 Framework is automatically included with Windows Server 2012 R2 and newer versions.
@@ -375,7 +371,6 @@ To validate that the service is running, open a browser, and enter the following
      - Windows 8.1 and later
      - Windows 10 and later
 
-
    - **Subject name format**: Select how Intune automatically creates the subject name in the certificate request. The options change if you choose a **User** certificate type or **Device** certificate type. 
 
         **User certificate type**  
@@ -434,7 +429,6 @@ To validate that the service is running, open a browser, and enter the following
         >  - `{{FullyQualifiedDomainName}}` only works for Windows and domain-joined devices. 
         >  - When use device properties such as IMEI, Serial Number, and Fully Qualified Domain Name in the subject or SAN for a device certificate, be aware that these properties could be spoofed by a person with access to the device.
         >  - Profile will not install on device if the device variables specified are not supported. For example, if {{IMEI}} is used in the subject name of the SCEP profile assigned to a device that does not have an IMEI number, the profile installation will fail. 
-
 
    - **Subject alternative name**: Enter how Intune automatically creates the values for the subject alternative name (SAN) in the certificate request. The options change if you choose a **User** certificate type or **Device** certificate type. 
 

@@ -175,5 +175,3 @@ To get running quickly on Microsoft Intune, step through the Intune Quickstarts 
 
 > [!div class="nextstepaction"]
 > [Quickstart: Try Microsoft Intune for free](free-trial-sign-up.md)
-
-

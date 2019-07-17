@@ -53,7 +53,6 @@ Use the information in this article to help you add an iOS line-of-business (LOB
 2. In the **App package file** pane, select the browse button. Then select an iOS installation file with the extension **.ipa**.
 3. When you're finished, select **OK**.
 
-
 ## Step 3: Configure app information
 
 1. In the **Add app** pane, select **App information**.

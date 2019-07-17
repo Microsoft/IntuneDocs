@@ -211,14 +211,12 @@ You can now use the v1.0 version of the Intune Data Warehouse by setting the que
 
 The new `Enrollment Activities` collection is released to beta. You can use this collection to understand how your enrollment is proceeding by viewing the most common failures. 
 
-
 ## 1805
 _Released May 2018_
 
 ### Correction to device count in **Devices** collection 
 
 A fix has been made to the **Devices** collection which may lower total device counts that filter by the attribute `isDeleted`. This drop is a result of the correction and is not an error. For more information regarding the **Devices** collection, see [Reference for device entities](reports-ref-devices.md). 
-
 
 ## 1801
 _Released January 2018_

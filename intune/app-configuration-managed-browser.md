@@ -64,7 +64,6 @@ Earlier versions of Android and iOS will be able to continue using the Managed B
 >[!NOTE]
 >The Managed Browser does not support the Secure Sockets Layer version 3 (SSLv3) cryptographic protocol.
 
-
 ## Application protection policies for protected browsers
 
 Because Microsoft Edge and Managed Browser have integration with the Intune SDK, you can also apply app protection policies to them, including:
@@ -84,7 +83,6 @@ You can apply these settings to:
 >If users install the Managed Browser from the app store and Intune does not manage it, it can be used as a basic web browser, with support for Single Sign-On through the Microsoft MyApps site. Users are taken directly to the MyApps site, where they can see all of their provisioned SaaS applications.
 While Managed Browser or Microsoft Edge are not managed by Intune, they cannot access data from other Intune-managed applications. 
 
-
 ## Conditional Access for protected browsers
 
 The Managed Browser is now an approved client app for Conditional Access. This means that you can restrict mobile browser access to Azure AD-connected web apps where users can only use the Managed Browser, blocking access from any other unprotected browsers such as Safari or Chrome. This protection can be applied to Azure resources like Exchange Online and SharePoint Online, the Microsoft 365 admin center, and even on-premises sites that you have exposed to external users via the [Azure AD Application Proxy](https://docs.microsoft.com/azure/active-directory/active-directory-application-proxy-get-started). 
@@ -93,7 +91,6 @@ To restrict Azure AD-connected web apps to use the Intune Managed Browser on mob
 
 > [!TIP]  
 > Conditional Access is an Azure Active Directory (Azure AD) technology. The Conditional Access node accessed from *Intune* is the same node as accessed from *Azure AD*.  
-
 
 1. In the Intune portal, select **Conditional Access** > **New policy**. 
 2. Next, select **Grant** from the **Access controls** section of the blade. 
@@ -148,7 +145,6 @@ SSO requires your device to be registered by the Microsoft Authenticator app on 
 11. On the **Add configuration policy** blade, choose **Add**.
 12. The new configuration is created, and displayed on the **App configuration** blade.
 
-
 ## Assign the configuration settings you created
 
 You assign the settings to Azure AD groups of users. If that user has the targeted protected browser app installed, then the app is managed by the settings you specified.
@@ -201,7 +197,6 @@ Microsoft Edge and the Intune Managed Browser and [Azure AD Application Proxy]( 
 
     > [!NOTE]
     > Updated Application Proxy redirection data can take up to 24 hours to take effect in the Managed Browser and Microsoft Edge.
-
 
 #### Step 1: Enable automatic redirection to a protected browser from Outlook
 Outlook must be configured with an app protection policy that enables the setting **Restrict web content to display in the Managed Browser**.

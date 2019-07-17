@@ -53,4 +53,3 @@ If SEP Mobile finds a security threat on your device, you will see instructions 
 Sometimes installations can fail due to technical issues beyond your control. If this happens, try installing SEP Mobile [manually from the App Store](https://itunes.apple.com/app/sep-mobile/id695620821).
 
 Still need help? Contact your company support. For contact information, check the [Company Portal website](https://go.microsoft.com/fwlink/?linkid=2010980).
-

@@ -154,8 +154,6 @@ This feature has been delayed and will be released in an upcoming sprint.
 Windows Autopilot for existing devices now supports Hybrid Azure AD Join (in addition to the existing Azure AD Join support). Applies to Windows 10 version 1809 and above devices. For more information, see [
 Windows Autopilot for existing devices](https://docs.microsoft.com/windows/deployment/windows-autopilot/existing-devices).
 
-
-
 ### Device management
 
 #### See the security patch level for Android devices <!-- 4461911 -->
@@ -327,7 +325,6 @@ We've added a security baseline Preview for [Microsoft Defender Advanced Threat 
 #### Windows Enrollment Status Page (ESP) is now generally available <!-- 3605348 -->
 The Enrollment Status Page is now out of preview. For more information, see [Set up an enrollment status page](windows-enrollment-status.md).
 
-
 #### Intune user interface update - Autopilot enrollment profile creation  <!-- 4593669 -->
 The user interface for creating an Autopilot enrollment profile has been updated to align with Azure user interface styles. For more information, see [Create an Autopilot enrollment profile](https://docs.microsoft.com/intune/enrollment-autopilot#create-an-autopilot-deployment-profile). Moving forward, additional Intune scenarios will be updated to this new UI style.
 
@@ -347,7 +344,6 @@ This only applies to devices running Windows 10 version 1903 and above. For more
 
 #### Reset and wipe devices in bulk by using the Graph API <!-- 3295288 -->
 You can now reset and wipe up to 100 devices in bulk using the Graph API.
-
 
 ### Monitor and troubleshoot
 
@@ -440,7 +436,6 @@ To see all the settings you can configure, go to [Android Enterprise device sett
 
 Applies to: Android Enterprise dedicated devices running in multi-app kiosk mode
 
-
 #### Configure Bluetooth and pairing on Android Enterprise, Device Owner dedicated devices running in multi-app kiosk mode <!-- 3041941  -->
 You can enable settings on Android Enterprise, Device Owner when running as a dedicated device in multi-app kiosk mode. In this update, you can allow end users to enable Bluetooth, and pair devices over Bluetooth (**Intune** > **Device configuration** > **Profiles** > **Create profile** > **Android Enterprise** for platform > **Device owner only, Device restrictions** for profile type > **Dedicated devices** > **Kiosk mode**: **Multi-app** > **Bluetooth configuration**). 
 
@@ -495,7 +490,6 @@ To set up Android fully managed devices, go to **Device enrollment** > **Android
 
 To learn more about this preview, see our blog, [Microsoft Intune - Preview 2 for Android Enterprise Fully Managed devices](https://aka.ms/preview2_AE_fullymanaged).
 
-
 ### Device enrollment
 
 #### Configure profile to skip some screens during Setup Assistant <!-- 2276470  wnstaged-->
@@ -517,7 +511,6 @@ We've updated the default timeout message users see when the Enrollment Status P
 #### Retire noncompliant devices  <!-- 1827291   -->
 This feature has been delayed and is planned for a future release.
 
-
 ### Monitor and troubleshoot
 
 #### Intune Data Warehouse V1.0 changes reflecting back to beta <!-- 4403765 -->
@@ -530,12 +523,6 @@ We've added a [per-category view](security-baselines-monitor.md#per-category-vie
 
 #### Scope tags for Apple VPP tokens <!--2371886  -->
 You can now add scope tags to Apple VPP tokens. Only users assigned with the same scope tag will have access to the Apple VPP token with that tag. VPP apps and ebooks purchased with that token inherit its scope tags. For more information about scope tags, see [Use RBAC and scope tags](scope-tags.md).
-
-
-
-
-
-
 
 ## Week of April 1, 2019
 
@@ -682,7 +669,6 @@ The Intune PowerShell module, which provides support for the Intune API through 
 #### Improved support for delivery optimization  <!--3183757  -->
 We've expanded the support in Intune for configuring delivery optimization. You can now configure an expanded list of [Delivery Optimization settings](delivery-optimization-settings.md) and target it to your devices right from Intune console.
 
-
 ## Week of February 18, 2019
 
 ### App management
@@ -709,7 +695,6 @@ A new screen called **App categories** has been added to improve the app browsin
 
 #### Power BI Compliance app <!-- 1455231 doc-work-item -->
 Access your Intune Data Warehouse in Power BI Online using the [Intune Compliance (Data Warehouse)](https://aka.ms/intune/datawarehouseapi/getpowerbiapp) app. With this Power BI app, you can now access and share pre-created reports without any setup and without leaving your web browser. For additional information, see [Change log - Power BI Compliance app](reports-changelog.md#power-bi-compliance-app).
-
 
 ### Device configuration
 
@@ -811,7 +796,6 @@ For a list of the settings, see [iOS device restrictions](device-restrictions-io
 Applies to: 
 - iOS
 
-
 ### Device management
 
 #### Rename an enrolled Windows device <!-- 1911112  -->
@@ -827,7 +811,6 @@ The **Failed enrollments** report has been moved to the **Monitor** section of t
 
 #### Company Portal abandonment report renamed to Incomplete user enrollments <!--3815076 eemiss -->
 The **Company Portal abandonment** report has been renamed to **Incomplete user enrollments**.
-
 
 <!-- ########################## -->
 ## Week of February 4, 2019
@@ -962,10 +945,8 @@ Intune now supports fully managed Android devices, a corporate-owned "device own
 #### Intune app PIN <!-- 2298397 -->
 As the IT admin, you can now configure the number of days an end user can wait until their Intune app PIN must be changed. The new setting is *PIN reset after number of days* and is available in the Azure portal by selecting **Intune** > **Client apps** > **App protection policies** > **Create Policy** > **Settings** > **Access requirements**. Available for [iOS](app-protection-policy-settings-ios.md) and [Android](app-protection-policy-settings-android.md) devices, this feature supports a positive integer value.
 
-
 #### Intune device reporting fields <!-- 2748738 -->
 Intune provides additional device reporting fields, including App Registration ID, Android manufacturer, model, and security patch version, as well as iOS model. In Intune, these fields are available by selecting **Client apps** > **App protection status** and choosing **App Protection Report: iOS, Android**. In addition, these parameters will help you configure the **Allow** list for device manufacturer (Android), the **Allow** list for device model (Android and iOS), and the minimum Android security patch version setting. 
-
 
 ### Device configuration
 
@@ -1053,7 +1034,6 @@ To see the settings, go to [Android Enterprise device restriction settings](devi
 This update includes a new setting to end processes using Task Manager on Windows 10 devices. Using a device configuration profile (**Device configuration** > **Profiles** > **Create profile** > In **Platform**, choose **Windows 10** > In **Profile type**, choose **Device restrictions** > **General** settings), you choose to allow or prevent this setting.
 To see these settings, go to [Windows 10 device restriction settings](device-restrictions-windows-10.md).
 Applies to: Windows 10 and later
-
 
 ### Device enrollment
 

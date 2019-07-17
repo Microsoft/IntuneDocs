@@ -47,8 +47,6 @@ The goal of using security baselines is to have an end-to-end secure workflow wh
 - If you're new to Intune, and not sure where to start, then security baselines gives you an advantage. You can quickly create and deploy a secure profile, knowing that you're helping protect your organization's resources and data.
 - If you currently use group policy, migrating to Intune for management is much easier with these baselines. These baselines are natively built in to Intune, and include a modern management experience.
 
-
-
 [Windows security baselines](https://docs.microsoft.com/windows/security/threat-protection/windows-security-baselines) is a great resource to learn more about this feature. [Mobile device management](https://docs.microsoft.com/windows/client-management/mdm/) (MDM) is a great resource about MDM, and what you can do on Windows devices.
 
 ## Security baseline versions and instances
@@ -95,7 +93,6 @@ When using co-managed devices, you must switch the **Device configuration** work
 
 1. Sign in to [Intune](https://go.microsoft.com/fwlink/?linkid=2090973) and then select **Device security** > **Security baselines** to view the list of available baselines.
 
-
     ![Select a security baseline to configure](./media/security-baselines/available-baselines.png)
 
 2. Select the baseline you'd like to use, and then select **Create profile**.  
@@ -131,7 +128,6 @@ When using co-managed devices, you must switch the **Device configuration** work
 
    ![Review the baseline](./media/security-baselines/review.png) 
 
-  
 8. After you create a profile, edit it by going to **Device security** > **Security baselines**, select the baseline type that you configured, and then select **Profiles**.  Select the profile from the list of available profiles, and then select **Properties**. You can edit settings from all the available configuration tabs, and select **Review + save** to commit your changes.  
 
 ## Change the baseline instance for a profile
@@ -174,10 +170,6 @@ Upon saving, after the conversion is complete, the baseline is immediately redep
 When a security baseline setting no longer applies to a device, or settings in a baseline are set to *Not configured*, those settings on a device don’t revert to a pre-managed configuration. Instead, the previously managed settings on the device keep their last configurations as received from the baseline until some other process updates those settings on the device.  
 
 Other processes that might later change settings on the device include a different or new security baseline, device configuration profile, Group Policy configurations, or manual edit of the setting on the device.  
-
-
-
-
 
 ## Q & A
 

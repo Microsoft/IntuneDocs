@@ -89,7 +89,6 @@ You assign apps from the store in the same way you assign any other Intune app. 
 Offline apps can be targeted to user groups, device groups, or groups with users and devices.
 Offline apps can be installed for a specific user on a device or for all users on a device. 
 
-
 When you assign a Microsoft Store for Business app, a license is used by each user who installs the app. If you use all of the available licenses for an assigned app, you cannot assign any more copies. Take one of the following actions:
 * Uninstall the app from some devices.
 * Reduce the scope of the current assignment, targeting only the users you have sufficient licenses for.

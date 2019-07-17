@@ -31,9 +31,7 @@ ms.collection: M365-identity-device-management
 
 # Install Mobile Threat Defense on your iOS device
 
-
 Before you can access your work, your company needs you to install the Mobile Threat Defense app, which helps to protect your device by finding potential security threats. You might see different prompts on your device, depending on how your IT admin set it up.
-
 
 * [Lookout for Work](you-are-prompted-to-install-lookout-for-work-ios.md)
 * [Symantec Endpoint Protection Mobile](you-are-prompted-to-install-skycure-ios.md)

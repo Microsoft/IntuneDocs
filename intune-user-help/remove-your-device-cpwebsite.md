@@ -42,7 +42,6 @@ To remove your device:
 3. Select **Remove**. If the remove option isn't visible at the top of your page, select **More (…)** > **Remove**.  
 
    ![Device details page for a selected device on the Company Portal website, with a list of links at the top showing Rename, Remove, Reset Device, Reset Passcode, and Remote Lock. ](./media/rename-reset-device-1808.png)  
-  
 
     ![Zoomed in view of the More icon, highlighted with a red arrow.](./media/rename-reset-device-step3-more-1808.png)   
 

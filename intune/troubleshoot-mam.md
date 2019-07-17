@@ -72,7 +72,6 @@ Android | Android has more restrictions than iOS on what "native" apps can acces
 Android | Azure Information Protection (AIP) can Save as PDF when Save As is prevented | AIP honors the MAM policy for 'Disable printing' when Save as PDF is used.
 iOS | Opening PDF attachments in Outlook app fails with "Action Not Allowed | This can occur if the user has not authenticated to Acrobat Reader for Intune, or has used thumbprint to authenticate to their organization. Open Acrobat Reader beforehand and authenticate using UPN credentials.
 
-
 ### Normal usage dialogs
 
 Platform | Message or dialog | Explanation |

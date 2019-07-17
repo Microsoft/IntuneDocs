@@ -30,7 +30,6 @@ ms.collection: M365-identity-device-management
 
 # Bypass Activation Lock on Supervised iOS devices with Intune
 
-
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 Microsoft Intune can help you manage iOS Activation Lock, a feature of the Find My iPhone app for iOS 8.0 and later devices. Activation Lock is enabled automatically when a user opens the Find My iPhone app on a device. After it is enabled, the user's Apple ID and password must be entered before anyone can:
@@ -69,7 +68,6 @@ Before you can bypass Activation Lock on devices, you must enable it by followin
 2. In the [device restriction settings for iOS](device-restrictions-ios.md), under the **General** settings, enable the option **Activation Lock**.
 3. Save the profile, and then [assign it](device-profile-assign.md) to the devices on which you want to manage Activation Lock bypass.
 
-
 ## How to use Activation Lock bypass
 
 >[!IMPORTANT]
@@ -88,7 +86,6 @@ The Intune **Bypass Activation Lock** remote device action removes the Activatio
 
 7. Go to the **Overview** blade for the device, and then select **Wipe**.
 8. After the device is reset, you are prompted for the *Apple ID* and *password*. Leave the *ID* field blank, and then enter the **bypass code** for the *password*. This removes the account from the device. 
-
 
 ## Next steps
 

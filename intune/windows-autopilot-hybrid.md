@@ -27,7 +27,6 @@ search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
 ---
- 
 
 # Deploy hybrid Azure AD-joined devices by using Intune and Windows Autopilot
 You can use Intune and Windows Autopilot to set up hybrid Azure Active Directory (Azure AD)-joined devices. To do so, follow the steps in this article.
@@ -131,7 +130,6 @@ By default Windows Server has Internet Explorer Enhanced Security Configuration 
 
 If you have a web proxy in your networking environment, ensure that the Intune Connector for Active Directory works properly by referring to [Work with existing on-premises proxy servers](autopilot-hybrid-connector-proxy.md).
 
-
 ## Create a device group
 1. In [Intune](https://aka.ms/intuneportal), select **Groups** > **New group**.
 
@@ -183,7 +181,6 @@ After your Autopilot devices are *enrolled*, they're displayed in four places:
 - The **All Devices** pane in the Intune in the Azure portal. Select **Devices** > **All Devices**.
 
 After your Autopilot devices are enrolled, their names become the hostname of the device. By default, the hostname begins with *DESKTOP-*.
-
 
 ## Create and assign an Autopilot deployment profile
 Autopilot deployment profiles are used to configure the Autopilot devices.

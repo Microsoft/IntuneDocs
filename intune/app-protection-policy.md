@@ -30,7 +30,6 @@ ms.collection: M365-identity-device-management
 
 # What are app protection policies?
 
-
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 Microsoft Intune app protection policies help protect your company data and prevent data loss.
@@ -69,7 +68,6 @@ There are additional benefits to using MDM with App protection policies, and com
   - Control the sharing of data between apps 
   - Prevent the saving of company app data to a personal storage location
 
-
 ### Supported platforms for app protection policies
 Intune app protection policies platform support aligns with Office mobile application platform support for Android and iOS devices. For details, see the **Mobile apps** section of [Office System Requirements](https://products.office.com/office-system-requirements#coreui-contentrichblock-9r05pwg).
 
@@ -84,11 +82,9 @@ Intune app protection policies platform support aligns with Office mobile applic
 
 When apps are used without restrictions, company and personal data can get intermingled. Company data can end up in locations like personal storage or transferred to apps beyond your purview and result in data loss. The arrows in the preceding diagram show unrestricted data movement between both corporate and personal apps, and to storage locations.
 
-
 ### Data protection with app protection policies
 
 ![Conceptual image that shows company data being protected by policies](./media/apps-with-protection-policies.png)
-
 
 You can use App protection policies to prevent company data from saving to the local storage of the device. You can also restrict data movement to other apps that aren't protected by App protection policies. App protection policy settings include:
 - Data relocation policies like
@@ -119,7 +115,6 @@ The MDM solution:
 
 - Wipe company data from apps without removing those apps from the device
 
-
 ### Data protection with app protection policies for devices without enrollment
 
 ![Image that shows how App protection policies work on managed devices](./media/app-protection-policies-without-mdm.png)
@@ -146,7 +141,6 @@ Once enabled, the OneDrive and SharePoint apps for iOS and Android are protected
 By default, there can only be one **Global** policy per tenant. However, you can use [Intune Graph APIs](intune-graph-apis.md) to create extra global policies per tenant, but doing so isn't recommended. Creating extra global policies isn’t recommended because troubleshooting the implementation of such a policy can become complicated.
 
 While the **Global** policy applies to all users in your tenant, any standard Intune app protection policy will override these settings.
-
 
 ## Multi-identity
 

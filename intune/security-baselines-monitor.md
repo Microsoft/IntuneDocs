@@ -50,7 +50,6 @@ Each device is represented by one of the following statuses, which are used in b
 - **Misconfigured** - At least one setting isn't properly configured. This status means the setting is in a conflict, error, or a pending state.
 - **Not applicable** - At least one setting isn't applicable, and isn't applied.
 
-
 ### Device view
 The Overview pane displays a chart-based summary of how many devices have a specific status for the baseline; **Security baseline posture for assigned Windows 10 devices**.  
 
@@ -82,7 +81,6 @@ The Overview pane displays a per-category chart for the baseline; **Security bas
 Status for **Matches baseline** does not display until 100% of devices report that status for the category.   
 
 You can sort the by-category view by each column, by selecting up-down arrow icon at the top of the column.  
-
 
 ## Monitor the profile
 

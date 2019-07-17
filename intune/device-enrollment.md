@@ -55,7 +55,6 @@ By default, devices for all platforms are allowed to enroll in Intune. However, 
 |**[DEM](#device-enrollment-manager)**| No |No |No  | [More information](./device-enrollment-manager-enroll.md)|
 |**[DEP](#apple-device-enrollment-program)**| Yes | Optional | Optional|[More information](./device-enrollment-program-enroll-macos.md)|
 
-
 ## Windows enrollment methods
 
 | **Method** | **Reset Required** | **User Affinity** | **Locked** | **Details**|
@@ -68,14 +67,12 @@ By default, devices for all platforms are allowed to enroll in Intune. However, 
 |**Co-management** |No |Yes |No | [More information](https://docs.microsoft.com/sccm/core/clients/manage/co-management-overview)
 |**GPO** |No |Yes |No | [More information](https://docs.microsoft.com/windows/client-management/mdm/enroll-a-windows-10-device-automatically-using-group-policy)
 
-
 ## Android enrollment methods
 
 | **Personal** | **Enrollment Methods** | **Reset Required** | **User Affinity** | **Locked** | **Details**|
 |:---:|:---:|:---:|:---:|:---:|:---:|
 |**Android Device Admin**|**User initiated via Company Portal** | No | Yes | No | [More information](https://docs.microsoft.com/intune-user-help/enroll-device-android-company-portal)|
 |**Android Enterprise Work Profile**|**User initiated via Company Portal**| No | Yes | No | [More information](./android-work-profile-enroll.md)|
-
 
 | **Corporate** | **Enrollment Methods** | **Reset Required** | **User Affinity** | **Locked** | **Details**|
 |:---:|:---:|:---:|:---:|:---:|:---:|
@@ -84,7 +81,6 @@ By default, devices for all platforms are allowed to enroll in Intune. However, 
 |**Android Device Admin with Zebra Mobility Extensions**|**User or [DEM](#device-enrollment-manager) initiated via Company Portal**| No | Yes if user initiated, No if [DEM](#device-enrollment-manager) initiated | No | [More information](./android-zebra-mx-overview.md)|
 |**Android Enterprise Dedicated**|**NFC, Token, QR code, Zero Touch**| Yes | No | Configurable via policy | [More information](./android-kiosk-enroll.md)|
 |**Android Enterprise Fully Managed (Preview)**|**NFC, Token, QR code, Zero Touch**| Yes | Yes | Configurable via policy | [More information](./android-dedicated-devices-fully-managed-enroll.md)|
-
 
 ## Bring your own device
 Bring your own devices (BYOD) include personal phones, tables, and PCs. Users install and run the Company Portal app to enroll BYODs. This program lets users access company resources like email.

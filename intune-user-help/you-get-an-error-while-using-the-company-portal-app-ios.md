@@ -28,7 +28,6 @@ ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
 ---
 
-
 # You get an error while using the Company Portal app
 
 If you get an error while you’re using the Company Portal app on your iOS device, you can help your company support troubleshoot the problem by sending them information. You can send error information in different ways:

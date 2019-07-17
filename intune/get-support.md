@@ -1,7 +1,6 @@
 ---
 # required metadata
 
-
 title: How to get support for Microsoft Intune
 titleSuffix: Microsoft Intune
 description: Get online and telephone support for Microsoft Intune paid and trial subscriptions.
@@ -59,7 +58,6 @@ The Help and support experience for Intune is available from the [Microsoft 365 
 
 ![Intune blades](./media/get-support/intune-blades.png)
 
-
 The *Help and support* experience is similar to the experience seen in the [Microsoft 365 admin center](https://admin.microsoft.com/), and replaces the previous *Help + support*, which remains in place for other services in Azure. 
 
 To access Help and support, use the following options:  
@@ -79,7 +77,6 @@ To access Help and support, use the following options:
 > [!NOTE]  
 > If your instance of Intune is hosted on the Government Compute Cloud (GCC), also known as a sovereign cloud like Azure Government, see Intune support for Government Compute Cloud, later in this article. The Intune *Help and support* experience won’t be available on the GCC until later this year. 
 
-
 When you open *Help and support*, the portal displays a view that depends on whether or not you have active support incidents, and when you have Premier Support, some additional elements and options:
 - **No active support incidents**: You'll see the **Need help?** page, as seen in the following image from the Device Management dashboard.  
 - **Active support incidents**: You’ll see the [Support tickets](#view-support-cases) page, which displays the list of your active incidents.  
@@ -87,7 +84,6 @@ When you open *Help and support*, the portal displays a view that depends on whe
   - After the page title **Need Help?**, you’ll see the Premier Support banner:  
     ![Premier support banner](./media/get-support/premier-banner.png)
   - In the **Get support** section of the page, you can set the initial **Severity** level when you create a service request by phone.
-
 
 ![Device Management dashboard and the Need Help? page](./media/get-support/help-support-dashboard.png)
 
@@ -128,15 +124,12 @@ On the **Need help?** page, select the option you want to use.
   
 - For a phone request, provide your phone number. Optionally, you can include your email address and add attachments to your submission. Select Call me to submit the request.  
 
-
-
    ![Phone request](./media/get-support/phone-support.png)
 
 **Premier support**:  
 If you have a Premier support contract, you have the same options to create a phone support incident. You can also specify the **Severity** for the support call-back, and choose to create the support ticket against your Mission Critical contract.  
 
 ![Premier support options](./media/get-support/premier-phone-support-options.png)
-
 
 ### View support cases  
 
@@ -151,7 +144,6 @@ Select the history button to view the support incidents that you've created.
     1. Sign in to  Azure (<https://portal.azure.com>) with your Intune admin credentials, select the *?* icon in the upper-right corner of the portal, and then select *Help + support* to go to the [Azure Help + support](https://ms.portal.azure.com/#blade/Microsoft_Azure_Support/HelpAndSupportBlade/overview) page.
 
     2. On the **Help + support** page you can view the list of **Recent support requests**, and select them to view additional details.
- 
 
 ## Azure Help + support experience 
 
@@ -161,11 +153,9 @@ Beginning in April of 2019, you can't access the Azure *Help + support* experien
 
 If your instance of Intune doesn't run on GCC, navigating through Azure *Help + support* redirects you to the Intune *Help and support* experience to create and manage support incidents.  
 
-
 ## Intune support for Government Compute Cloud  
 
 When your Intune subscription hosted on the Government Compute Cloud (GCC), which is also known as a sovereign cloud like Azure Government, you don’t yet have access to the newer Intune Help and support experience.  Instead, use the following information go get support for Intune. 
-
 
 ### Create an online support ticket 
 
@@ -175,7 +165,6 @@ When your Intune subscription hosted on the Government Compute Cloud (GCC), whic
 > Support personal work and communicate from the 8-digit support case, and only use the 8-digit support case to log communications and track incident progress. Therefore, you’ll receive email updates from that 8-digit support case that serve as your case-work track record. No details are logged into the 15-digit support incident. When support concludes and the 8-digit support case closes, that status is reflected in by the 15-digit support case that you can view from within the azure portal.  No other updates or status changes should be expected for the 15-digit support case.  
 > 
 > When transitions between support tools completes later this year, the support experience Intune hosted on the government cloud will resemble the default *Help and support* experience that’s currently available for Intune subscriptions hosted on the public cloud.  
-
 
 1. Sign in to the Azure portal (<https://portal.azure.com>) with your Intune admin credentials, select the **?** icon in the upper-right corner of the portal, and then select **Help + support** to go to the [Azure Help + support](https://portal.azure.com/#blade/Microsoft_Azure_Support/HelpAndSupportBlade/overview) page.
 

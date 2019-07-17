@@ -65,8 +65,6 @@ When you create groups, consider how you will apply [policies](device-compliance
 
 You'll probably also want to create a default policy that applies to all groups and devices, to establish the basic compliance requirements of your organization. Then, you can create more specific policies for the broadest categories of users and devices. For example, you might create email policies for each of the device operating systems.
 
-
-
 ## See also
 - [Manage access to resources with Azure Active Directory groups](https://docs.microsoft.com/azure/active-directory/active-directory-manage-groups)
 - [Intune classic groups in the Azure portal](groups-get-started.md)

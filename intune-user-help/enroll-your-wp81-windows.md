@@ -28,7 +28,6 @@ ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
 ---
 
-
 # Enroll your Windows Phone 8.1 device in Intune  
 
 Enroll your devices to get access to work or school email, files, and other resources. When you enroll your devices, your organization can keep corporate data secure. To learn more about enrollment, see [What happens if you install the Company Portal app and enroll your device in Intune?](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-windows.md) and [What your company support can and can't see on your device](what-info-can-your-company-see-when-you-enroll-your-device-in-intune.md).  
@@ -44,11 +43,9 @@ Follow these steps if you can install the Company Portal app from the Microsoft 
 
 3. In the list of results, tap **Company Portal**.  
 
-
     ![Company portal search results](./media/WP81-1-CP-search-store-v2.png)  
 
 4. Tap **Company Portal**  &gt; **Install**.  
-
 
     ![Install company portal](./media/WP81-2-CP-install-v2.png)  
 
@@ -56,28 +53,23 @@ Enroll your device:
 
 1. On the device, open the **Microsoft Intune Company Portal** app.  
 
-
 2. Provide your credentials. You may be asked to accept your company’s Terms and Conditions, if applicable.  
 
 3. Swipe to **My Devices**.  
 
 4. Select **Tap to enroll or identify this device**.  
 
-
     ![Tap to enroll or identify this device screen](./media/WP81-enroll-1-swipe-my-devices.png)  
 
 5. Tap **Enroll this device**.  
-
 
     ![Enroll this device screen](./media/WP81-enroll-2-enroll-this-device.png)  
 
 6. Tap **Add account**.  
 
-
     ![Workplace settings screen](./media/WP81-enroll-3-workplace-add-acct.png)  
 
 7. Enter more information as requested, and then tap **sign in** to finish the enrollment. You should now see your workplace account listed on the **Settings** &gt; **Workplace** page.  
-
 
     ![Account added screen](./media/WP81-enroll-4-account-added.png)  
 

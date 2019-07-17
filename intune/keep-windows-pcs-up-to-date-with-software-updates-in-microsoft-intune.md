@@ -122,7 +122,6 @@ The new rule is shown in the **Automatic Approval Rules** section of the **Servi
 > [!NOTE]
 > When you create an automatic approval rule, it only approves future updates, and does not automatically approve previously existing updates that already exist in Intune. To approve these updates you need to run the automatic approval rule.
 
-
 ### To edit, run, or delete an automatically approved update rule
 
 1. In the [Microsoft Intune administration console](https://manage.microsoft.com/), choose **Admin** &gt; **Updates**.
@@ -261,7 +260,6 @@ When you select an update from the list, further commands are available that let
     > Unless the action **Do Not Install**, **Required Install**, or **Uninstall** was explicitly configured for a child group, an action configured for a parent group is inherited by all its children.
 
 6. You can check the details pane at the bottom of the **All Updates** page for reminder messages about the update.
-
 
 ### See also
 [Policies to protect Windows PCs](policies-to-protect-windows-pcs-in-microsoft-intune.md)

@@ -78,7 +78,6 @@ To connect Intune with Jamf Pro you:
 
    The app registration process in Azure AD is complete.
 
-
     > [!NOTE]
     > If the client secret expires, you must create a new client secret in Azure and then update the Conditional Access data in Jamf Pro. Azure allows you to have both the old secret and new key active to prevent service disruptions.
 
@@ -103,8 +102,6 @@ To connect Intune with Jamf Pro you:
 ## Set up compliance policies and register devices
 
 After you configure integration between Intune and Jamf, you need to [apply compliance policies to Jamf-managed devices](conditional-access-assign-jamf.md).
-
-
 
 ## Next steps
 

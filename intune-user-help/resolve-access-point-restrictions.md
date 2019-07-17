@@ -16,7 +16,6 @@ ms.assetid:
 searchScope:
  - User help
 
-
 # optional metadata
 
 ROBOTS:  

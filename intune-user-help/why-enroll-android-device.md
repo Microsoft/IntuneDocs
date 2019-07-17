@@ -64,7 +64,6 @@ The Company Portal or Microsoft Intune app will automatically check in, or sync,
 
 When your device is out-of-sync or no longer meets the requirements, its status appears as *Not compliant*. Your access to work and school-related resources might be revoked until your device meets the requirements again. The Company Portal app notifies you of these problems and the steps you need to take to fix them.  
 
-
 ## Permits company support access to your device
 When you enroll your device, your company support or IT admin is given access to the device for limited and meaningful reasons. 
 They can:  

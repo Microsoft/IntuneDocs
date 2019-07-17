@@ -27,7 +27,6 @@ ms.custom: intune-classic; get-started
 ms.collection: M365-identity-device-management
 ---
 
-
 # Set up Intune
 
 [!INCLUDE [both-portals](./includes/note-for-both-portals.md)]
@@ -40,8 +39,6 @@ If you're currently using Microsoft System Center Configuration Manager to manag
 
 >[!TIP]
 >If you purchase at least 150 licenses for Intune in an eligible plan, you can use the *FastTrack Center Benefit*. With this service, Microsoft specialists work with you to get your environment ready for Intune. See [FastTrack Center Benefit for Enterprise Mobility + Security (EMS)](https://docs.microsoft.com/enterprise-mobility-security/Solutions/enterprise-mobility-fasttrack-program).
-
-
 
 | Steps |                                                                                                                       Status                                                                                                                       |
 |-------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -56,4 +53,3 @@ If you're currently using Microsoft System Center Configuration Manager to manag
 |   9   |       [Customize Company Portal](company-portal-app.md) - Customize the Intune Company Portal that users use to enroll devices and install apps. These settings appear in both the Company Portal app and the Intune Company Portal website.       |
 |  10   |                                [Enable device enrollment](mdm-authority-set.md) - Enable Intune management of iOS, Windows, Android, and Mac devices by setting the MDM authority and enabling specific platforms.                                 |
 |  11   |                                                        [Configure app policies](app-protection-policy.md) - Supply specific settings based on app protection policies in Microsoft Intune.                                                         |
-

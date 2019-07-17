@@ -175,7 +175,6 @@ For more information, see [Policy CSP - CredentialsDelegation](https://docs.micr
 - **Remote host delegation of non-exportable credentials**  
   Remote host allows delegation of non-exportable credentials. When using credential delegation, devices provide an exportable version of credentials to the remote host, which exposes users to the risk of credential theft from attackers on the remote host. If you enable this policy setting, the host supports Restricted Admin or Remote Credential Guard mode. If you disable or don't configure this policy setting, Restricted Administration and Remote Credential Guard mode aren't supported. User will always need to pass their credentials to the host.  
 
-  
   **Default**: Enabled  
 
 ### Credentials UI  
@@ -185,7 +184,6 @@ For more information, see [Policy CSP - CredentialsUI](https://docs.microsoft.co
 - **Enumerate administrators** 
   This policy setting controls whether administrator accounts display when a user attempts to elevate a running application. By default, administrator accounts aren't displayed when the user attempts to elevate a running application. If you enable this policy setting, all local administrator accounts on the PC display so the user can choose one and enter the correct password. If you disable this policy setting, users will always be required to type a user name and password to elevate.  
 
-  
   **Default**: Disabled  
 
 ### Data Protection  
@@ -195,8 +193,7 @@ For more information, see [Policy CSP - DataProtection](https://docs.microsoft.c
 
 - **Block direct memory access**  
   This policy setting allows you to block direct memory access (DMA) for all hot pluggable PCI downstream ports until a user logs into Windows. Once a user logs in, Windows will enumerate the PCI devices connected to the host plug PCI ports. Every time the user locks the machine, DMA is blocked on hot plug PCI ports with no children devices until the user logs in again. Devices that were already enumerated when the machine was unlocked will continue to function until unplugged. This policy setting is only enforced when BitLocker or device encryption is enabled.
-  
-  
+
   **Default**: Yes  
 
 ### Device Guard  
@@ -356,7 +353,6 @@ For more information, see [Policy CSP - Experience](https://docs.microsoft.com/w
     
     **Default**: Yes  
 
-
 ### Exploit Guard  
 
 For more information, see [Policy CSP - ExploitGuard](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-exploitguard) in the Windows documentation.  
@@ -379,7 +375,6 @@ For more information, see [Policy CSP - FileExplorer](https://docs.microsoft.com
   Disabling heap termination on corruption can allow certain legacy plug-in applications to function without terminating Explorer immediately, although Explorer may still terminate unexpectedly later.
   
   **Default**: Disabled  
-    
 
 ### Internet Explorer  
 
@@ -494,7 +489,6 @@ For more information, see [Policy CSP - InternetExplorer](https://docs.microsoft
   This policy setting allows you to manage permissions for Java applets. If you enable this policy setting, you can choose options from the drop-down box. Custom, to control permissions settings individually. Low Safety enables applets to perform all operations. Medium Safety enables applets to run in their sandbox (an area in memory outside of which the program can't make calls), plus capabilities like scratch space (a safe and secure storage area on the client computer) and user-controlled file I/O. High Safety enables applets to run in their sandbox. Disable Java to prevent any applets from running. If you disable this policy setting, Java applets can't run. If you don't configure this policy setting, Java applets are disabled.
   
   **Default**: Disable java  
-    
   
 - **Internet Explorer Active X controls in protected mode**  
   This policy setting prevents ActiveX controls from running in Protected Mode when Enhanced Protected Mode is enabled. When a user has an ActiveX control installed that isn't compatible with Enhanced Protected Mode and a website attempts to load the control, Internet Explorer notifies the user and gives the option to run the website in regular Protected Mode. This policy setting disables this notification and forces all websites to run in Enhanced Protected Mode. Enhanced Protected Mode provides additional protection against malicious websites by using 64-bit processes on 64-bit versions of Windows. For computers running at least Windows 8, Enhanced Protected Mode also limits the locations Internet Explorer can read from in the registry and the file system. When Enhanced Protected Mode is enabled, and a user comes across a website that attempts to load an ActiveX control that isn't compatible with Enhanced Protected Mode, Internet Explorer notifies the user and gives the option to disable Enhanced Protected Mode for that particular website. If you enable this policy setting, Internet Explorer won't give the user the option to disable Enhanced Protected Mode. All Protected Mode websites will run in Enhanced Protected Mode. If you disable or don't configure this policy setting, Internet Explorer notifies users and provides an option to run websites with incompatible ActiveX controls in regular Protected Mode.  
@@ -1230,7 +1224,6 @@ For more information, see [Policy CSP - RemoteManagement](https://docs.microsoft
   This policy setting allows you to manage whether the Windows Remote Management (WinRM) client uses Basic authentication. If you enable this policy setting, the WinRM client uses Basic authentication. If WinRM is configured to use HTTP transport, the user name and password are sent over the network as clear text. If you disable or don't configure this policy setting, the WinRM client doesn't use Basic authentication.
   
   **Default**: Disabled
-  
 
 ### Remote Procedure Call  
 
@@ -1288,7 +1281,6 @@ For more information, see [Policy CSP - System](https://docs.microsoft.com/windo
   If you enable this policy setting, you can choose which boot-start drivers to initialize the next time the computer is started. If you disable or don't configure this policy setting, the boot start drivers determined to be Good, Unknown, or Bad but Boot Critical are initialized and the initialization of drivers determined to be Bad is skipped. If your malware detection application doesn't include an Early Launch Antimalware boot-start driver or if your Early Launch Antimalware boot-start driver has been disabled, this setting has no effect and all boot-start drivers are initialized.  
   
   **Default**: Good unknown and bad critical
-
 
 ### Wi-Fi  
 

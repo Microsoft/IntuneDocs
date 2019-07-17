@@ -28,7 +28,6 @@ ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
 ---
 
-
 # Enroll your corporate device with the Microsoft Intune app
 
 Enroll your corporate-owned Android device to get secure access to company email, apps, and other data that your organization makes available. The Microsoft Intune app supports corporate-owned devices running Android 6.0 and later. It will be automatically installed on new and factory-reset devices during enrollment. 
@@ -98,7 +97,6 @@ Complete these steps to set up and enroll your device.
 
        ![Example image of Microsoft Intune app, Set up access screen, showing completed tasks.](./media/fully-managed-intune-app-16.png)   
 
-
 ## QR code enrollment  
 In this section, you'll scan your company-provided QR code.  When you're done, we'll redirect you back to the device enrollment steps.     
   
@@ -133,8 +131,6 @@ In this section, you'll enter your company-provided token. When you're done, we'
    ![Example image of Scan or enter code screen, highlighting Next button.](./media/token-intune-app-04.png)  
 
 6. Return to [Enroll device](#enroll-device), step 4 to continue setup.  
-
-
 
 ## Next steps   
 Still need help? Contact your company support (check the [Company Portal website](https://go.microsoft.com/fwlink/?linkid=2010980) for contact information), or write the <a href="mailto:wintunedroidfbk@microsoft.com?subject=I'm having trouble with enrolling my Android device&body=Describe the issue you're experiencing here.">Microsoft Android team</a>.  

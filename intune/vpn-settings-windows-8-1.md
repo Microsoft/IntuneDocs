@@ -36,7 +36,6 @@ Depending on the settings you choose, not all values in the following list are c
 
 ## Base VPN settings
 
-
 - **Apply all settings to Windows 8.1 only** - This is a setting you can configure in the Intune classic portal. In the Azure portal, this setting cannot be changed. If this is set to **Configured**, any settings are only applied to Windows 8.1 devices. If set to **Not Configured**, these settings also apply to Windows 10 devices.
 - **Connection name** - Enter a name for this connection. Users see this name when they browse their device for the list of available VPN connections.
 - **Servers** - Add one or more VPN servers that devices connect to.
@@ -60,7 +59,6 @@ Depending on the settings you choose, not all values in the following list are c
 - **Role** (Pulse Secure only) - Specify the name of the user role that has access to this connection. A user role defines personal settings and options, and it enables or disables certain access features.
 
 - **Realm** (Pulse Secure only) - Specify the name of the authentication realm that you want to use. An authentication realm is a grouping of authentication resources that the Pulse Secure connection type uses.
-
 
 - **Custom XML** - Specify any custom XML commands that configure the VPN connection.
 
@@ -89,7 +87,6 @@ Depending on the settings you choose, not all values in the following list are c
 ```
 
 For more information, refer to each manufacturer's VPN documentation about how to write custom XML commands.
-
 
 ## Proxy settings
 

@@ -230,8 +230,6 @@ By default, Intune Certificate Connector is installed in **%ProgramFiles%\Micros
    
    ![NDES Connector interface with "Successfully enrolled" message](./media/certificates-digicert-configure/certificates-digicert-configure-connector-configure.png)
 
-
-
 ## Create a trusted certificate profile
 
 The PKCS certificates you'll deploy for Intune managed devices must be chained with a trusted root certificate. To establish this chain, create an Intune trusted certificate profile with the root certificate from the DigiCert CA.
@@ -268,7 +266,6 @@ The PKCS certificates you'll deploy for Intune managed devices must be chained w
    h. When you're done, select **OK**, go back to the **Create profile** pane, and select **Create**.  
  
 The profile appears in the list of profiles in the **Device configuration – Profiles** pane, with a profile type of **Trusted certificate**.  Be sure to assign this profile to devices that will receive certificates. To assign the profile to groups, see [Assign device profiles](device-profile-assign.md).
-
 
 ## Get the certificate profile OID  
 
@@ -343,4 +340,3 @@ Intune Certificate Connector service logs are available in **%ProgramFiles%\Micr
 ## Next steps
 
 Use the information in this article in addition to the information in [What are Microsoft Intune device profiles?](device-profiles.md) to manage your organization's devices and the certificates on them.
-

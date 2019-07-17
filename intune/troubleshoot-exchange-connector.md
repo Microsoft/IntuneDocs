@@ -48,7 +48,6 @@ Check the [Intune on-premises Exchange connector setup](exchange-connector-insta
 - If you have both Exchange 2010 and Exchange 2013 mailbox servers in your environment, we recommend pointing the Exchange connector to an Exchange 2013 CAS. Otherwise, if the Exchange connector is set up to communicate with an Exchange 2010 CAS, the Exchange connector will not discover any Exchange 2013 users’ devices. 
 - For Exchange Online Dedicated environments, you must point the Exchange connector to an Exchange 2013 CAS (not an Exchange 2010 CAS) in the dedicated environment during the initial setup, as the connector will only communicate with this CAS when executing Powershell cmdlets.
 
-
 ## Using Powershell to get more data on Exchange Connector issues
 - To get a list of all mobile devices for a mailbox, use Get-ActiveSyncDeviceStatistics -mailbox mbx
 - To get a list of SMTP addresses for a mailbox, use Get-Mailbox -Identity user | select emailaddresses | fl

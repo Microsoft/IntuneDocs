@@ -91,8 +91,6 @@ You will need one of the following developer guides to help you integrate the In
 
 * **[Intune App SDK Xamarin Bindings guide](app-sdk-xamarin.md)**: This document will help you build iOS and Android apps using Xamarin for Intune app protection policies.
 
-
-
 ## Enable your iOS or Android app for app based Conditional Access
 
 In addition to enabling your app for app protection policy, the following is required for your app to properly function with Azure ActiveDirectory (AAD) app based Conditional Access:

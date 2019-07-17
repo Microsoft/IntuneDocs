@@ -34,7 +34,6 @@ Troubleshoot your app problems in the Company Portal app for Windows 10. If you 
 
 When you request help, a prepopulated email opens where you can describe the problem in detail. It also includes a diagnostic log ID. If your support team can't resolve the problem based on your description, they'll contact Microsoft for help. Microsoft will need the diagnostic ID to reference the app's logs.   
 
-
 > [!Note]
 > After you click **Get help**, the Company Portal will automatically send your logs to Microsoft's support team. This step is a proactive one that makes it easier to troubleshoot and resolve problems that are escalated to Microsoft support. As mentioned above, Microsoft's support team can pull up logs using the diagnostic ID in your email.  
 
@@ -55,7 +54,6 @@ Events and errors that occur in the Company Portal app are saved on your device 
 3. When the **Share** screen appears, select **Mail**. The **Mail** app will create an email message for you. Type in a description of the problem you experienced so that the support team has an idea of what to look for.  
 
    ![Screenshot of the Share screen, highlighting the Mail app icon.](./media/1811_Mail_Logs_Windows_CPapp.png)  
-
 
    ![Screenshot of the prepopulated email that opens in the Mail app.](./media/1811_Get_Help_Email_Windows_CPapp.png)  
 

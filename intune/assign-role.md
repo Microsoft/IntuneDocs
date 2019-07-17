@@ -59,7 +59,6 @@ For a full list of the permissions for each built-in role, see the [Intune RBAC 
 
 11. When you're done, choose **OK**. The new assignment is displayed in the list of assignments.
 
-
 ## Next steps
 - [Learn more about role-based access control in Intune](role-based-access-control.md)
 - [Create a custom role](create-custom-role.md)

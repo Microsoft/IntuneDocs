@@ -36,7 +36,6 @@ You can set up an application using Azure Active Directory (Azure AD) and authen
 
 Azure Active Directory (Azure AD) uses OAuth 2.0 to enable you to authorize access to web applications and web APIs in your Azure AD tenant. This guide shows you how to authenticate your application using C#. The OAuth 2.0 authorization code flow is described in section 4.1 of the OAuth 2.0 specification. For more information, see [Authorize access to web applications using OAuth 2.0 and Azure Active Directory](https://docs.microsoft.com/azure/active-directory/develop/active-directory-protocols-oauth-code).
 
-
 ## Azure KeyVault
 
 The following process uses a private method to process and convert an app key. This private method has been named SecureString. As an alternative, you could use Azure KeyVault to store the app key. For more information, see [Key Vault](https://azure.microsoft.com/services/key-vault/).
@@ -168,4 +167,3 @@ Using Visual Studio, create a Console App (.NET Framework) project that supports
 
 ## Next Steps
 Learn more about Azure Key Vault by reviewing [What is Azure Key Vault?](https://docs.microsoft.com/azure/key-vault/key-vault-whatis)
-

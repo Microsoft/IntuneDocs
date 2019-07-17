@@ -28,7 +28,6 @@ ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
 ---
 
-
 # What happens if you reset your Android device using the Company Portal?
 
 When you use the Company Portal to reset your Android device, all apps, settings, and personal data on your device are deleted. This reset sets your device back to its factory default settings.

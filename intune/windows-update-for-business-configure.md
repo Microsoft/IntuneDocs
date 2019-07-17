@@ -34,7 +34,6 @@ Use Intune to define update rings that specify how and when Windows as a Service
 
 With Windows 10, new Feature Updates and Quality Updates include the contents of all previous updates. As long as you've installed the latest update, you know your Windows 10 devices are up-to-date. Unlike with previous versions of Windows, you now must install the entire update instead of part of an update.
 
-
 By using Windows Update for Business, you simplify the update management experience. You don’t need to approve individual updates for groups of devices. You can manage risk in your environments by configuring an update rollout strategy. Intune provides the ability to [configure update settings](windows-update-settings.md) on devices and gives you the ability to defer update installation. Intune doesn’t store the updates, but only the update policy assignment. Devices access Windows Update directly for the updates. This collection of settings that configures when Windows 10 updates get installed is called a *Windows 10 update ring*.
 
 Windows 10 update rings support [scope tags](scope-tags.md). You can use scope tags with update rings to help you filter and manage sets of configurations that you use.
@@ -66,7 +65,6 @@ The following prerequisites must be met to use Windows updates for Windows 10 de
   For more information about device profiles, see [configure device restriction settings](device-restrictions-configure.md).  
 
 - If you use the Azure classic portal, [migrate your settings to the Azure portal](#migrate-update-settings-to-the-azure-portal).  
-
 
 ## Create and assign update rings
 
@@ -175,4 +173,3 @@ The Azure classic portal also has a limited number of other Windows 10 updates s
 [Intune compliance reports for updates](windows-update-compliance-reports.md)
 
 [Troubleshooting Windows 10 update rings](https://techcommunity.microsoft.com/t5/Intune-Customer-Success/Support-Tip-Troubleshooting-Windows-10-Update-Ring-Policies/ba-p/714046)
-

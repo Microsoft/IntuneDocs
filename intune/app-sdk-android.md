@@ -27,14 +27,12 @@ ms.custom: intune-classic
 ms.collection: M365-identity-device-management
 ---
 
-
 # Microsoft Intune App SDK for Android developer guide
 
 > [!NOTE]
 > You might want to first read the [Intune App SDK overview](app-sdk.md), which covers the current features of the SDK and describes how to prepare for integration on each supported platform.
 
 The Microsoft Intune App SDK for Android lets you incorporate Intune app protection policies (also known as **APP** or MAM policies) into your native Android app. An Intune-managed application is one that is integrated with the Intune App SDK. Intune administrators can easily deploy app protection policies to your Intune-managed app when Intune actively manages the app.
-
 
 ## What's in the SDK
 
@@ -308,7 +306,6 @@ This would have the following effects:
 > system does not already extract `classes.jar` when dealing with aar files, you
 > will need to do so before invoking the build tool.
 
-
 ## Class and method replacements
 
 Android base classes must be replaced with their respective MAM
@@ -326,8 +323,6 @@ deriving (e.g. `MediaPlayer`) also have required MAM equivalents, and
 
 All of the replacements detailed in this section can be performed
 automatically by the SDK [build tooling](#build-tooling). 
-
-
 
 | Android base class | Intune App SDK replacement |
 |--|--|
@@ -506,8 +501,6 @@ public interface MAMLogHandlerWrapper {
 }
 ```
 
-
-
 ## Enable features that require app participation
 
 There are several app protection policies the SDK cannot implement on its own. The app can control its behavior to achieve these features by using several APIs that you can find in the following `AppPolicy` interface. To retrieve an `AppPolicy` instance, use `MAMPolicyManager.getPolicy`.
@@ -653,7 +646,6 @@ SaveLocation service, String username);
 
 The `service` parameter must be one of the following `SaveLocation` values:
 
-
 - `SaveLocation.ONEDRIVE_FOR_BUSINESS`
 - `SaveLocation.SHAREPOINT`
 - `SaveLocation.LOCAL`
@@ -673,7 +665,6 @@ MAMPolicyManager.getPolicy(currentActivity).getIsSaveToLocationAllowed(SaveLocat
 
 >[!NOTE]
 > Use `SaveLocation.OTHER` if the location in question is not listed in the **SaveLocations** enum.
-
 
 ## Register for notifications from the SDK
 
@@ -842,7 +833,6 @@ You must register your app with Azure AD and give your app access to the app pro
 
 Also see the requirements for [Conditional Access](#conditional-access) below.
 
-
 #### 3. App integrates ADAL but does not support brokered authentication/device-wide SSO
 
 |Required ADAL parameter| Value |
@@ -891,7 +881,6 @@ The app is required to provide a callback to acquire the appropriate access toke
 
 When the app removes an account completely, it should unregister that account to indicate that the app should no longer apply policy for that user. If the user was enrolled in the MAM service, the user will be unenrolled and the app will be wiped.
 
-
 ### Overview of app requirements
 
 To implement APP-WE integration, your app must register the user account with the MAM SDK:
@@ -904,7 +893,6 @@ To implement APP-WE integration, your app must register the user account with th
 
     > [!NOTE]
     > If a user signs out of the app temporarily, the app does not need to call `unregisterAccountForMAM()`. The call may initiate a wipe to completely remove corporate data for the user.
-
 
 ### MAMEnrollmentManager
 
@@ -981,7 +969,6 @@ void updateToken(String upn, String aadId, String resourceId, String token);
 
     > [!NOTE]
     > The SDK will call `acquireToken()` periodically to get the token, so calling `updateToken()` is not strictly required. However, it is strongly recommended as it can help enrollments and app protection policy check-ins complete in a timely manner.
-
 
 ### Account Registration
 
@@ -1067,7 +1054,6 @@ When an account is first registered, it begins in the `PENDING` state, indicatin
 | UNENROLLMENT_FAILED | The unenrollment request failed.  Further details can be found in the device logs. |
 | PENDING | The initial enrollment attempt for the user is in progress.  The app can block access to corporate data until the enrollment result is known, but is not required to do so. |
 | COMPANY_PORTAL_REQUIRED | The user is licensed for Intune, but the app cannot be enrolled until the Company Portal app is installed on the device. The Intune App SDK will attempt to block access to the app for the given user and direct them to install the Company Portal app (see below for details). |
-
 
 ### Company Portal requirement prompt override (optional)
 
@@ -1242,7 +1228,6 @@ Intune allows you to utilize all the [Auto Backup features](https://developer.an
     android:backupAgent="com.microsoft.intune.mam.client.app.backup.MAMDefaultBackupAgent"
     ```
 
-
 2. **[Optional]** If you implemented an optional custom BackupAgent, you need to make sure to use MAMBackupAgent or MAMBackupAgentHelper. See the following sections. Consider switching to using Intune's **MAMDefaultFullBackupAgent** (described in step 1) which provides easy back-up on Android M and above.
 
 3. When you decide which type of full backup your app should receive (unfiltered, filtered, or none), you'll need to set the attribute `android:fullBackupContent`  to true, false, or an XML resource in your app.
@@ -1272,7 +1257,6 @@ Intune allows you to utilize all the [Auto Backup features](https://developer.an
     ...
     <meta-data android:name="com.microsoft.intune.mam.FullBackupContent" android:resource="@xml/my_scheme" />  
     ```
-
 
 ### Key/Value Backup
 
@@ -1420,7 +1404,6 @@ The following methods in `MAMPolicyManager` may be used to set the identity and 
    */
   public static AppPolicy getPolicy(final Context context);
 
-
   public static AppPolicy getPolicyForIdentity(final String identity);
 
   public static boolean getIsIdentityManaged(final String identity);
@@ -1448,7 +1431,6 @@ app, however we reserve the right to add failure conditions. The UI
 identity switch may fail for invalid arguments, if it would conflict
 with the thread identity, or if the user cancels out of conditional
 launch requirements (for example, presses the back button on the PIN screen).
-
 
 In the case of setting a Context identity, the result is reported asynchronously. If the Context is an Activity, the SDK doesn't know if the identity change succeeded until after conditional launch is performed -- which may require the user to enter a PIN or corporate credentials. The app is expected to implement a `MAMSetUIIdentityCallback` to receive this result, you can pass null for this parameter.
 
@@ -1479,7 +1461,6 @@ identity switch.
 >[!NOTE]
 > Switching the identity may require recreating the activity. In this case, the `onSwitchMAMIdentityComplete` callback will be delivered to the new instance of the activity.
 
-
 ### Implicit Identity Changes
 
 In addition to the app's ability to set the identity, a thread, or a context's identity may change based on data ingress from another Intune-managed app that has app protection policy.
@@ -1491,7 +1472,6 @@ In addition to the app's ability to set the identity, a thread, or a context's i
 2. For services, the thread identity will be set similarly for the duration of an `onStart` or `onBind` call. Calls into the `Binder` returned from `onBind` will also temporarily set the thread identity.
 
 3. Calls into a `ContentProvider` will similarly set the thread identity for their duration.
-
 
     In addition, user interaction with an activity may cause an implicit identity switch.
 
@@ -1513,7 +1493,6 @@ In addition to the app's ability to set the identity, a thread, or a context's i
     ```
 
     * The `AppIdentitySwitchReason` captures the source of the implicit switch, and can accept the values `CREATE`, `RESUME_CANCELLED`, and `NEW_INTENT`.  The `RESUME_CANCELLED` reason is used when activity resume causes PIN, authentication, or other compliance UI to be displayed and the user attempts to cancel out of that UI, generally though use of the back button.
-
 
     * The `AppIdentitySwitchResultCallback` is as follows:
 
@@ -1734,7 +1713,6 @@ Apps that make use of `MAMDataProtectionManager` should implement a receiver for
 is also safe to call protect during this notification if it is desired to preserve identity
 information -- encryption is guaranteed to be disabled during the notification.
 
-
 ```java
 
 public final class MAMDataProtectionManager {
@@ -1862,7 +1840,6 @@ The default selective wipe will close the app gracefully, finishing activities a
 process. If your app overrides the default selective wipe, you may want to consider closing your
 app manually to prevent the user from accessing in-memory data after a wipe occurs.
 
-
 ## Enabling MAM targeted configuration for your Android applications (optional)
 Application-specific key-value pairs may be configured in the Intune
 console for [MAM-WE](https://docs.microsoft.com/intune/app-configuration-policies-managed-app)
@@ -1910,7 +1887,6 @@ For more information about how to create a MAM targeted app configuration policy
 ## Style Customization (optional)
 
 Views generated by the MAM SDK can be visually customized to more closely match the app in which it is integrated. You can customize primary, secondary, and background colors, as well as the size of the app logo. This style customization is optional and defaults will be used if no custom style is configured.
-
 
 ### How to customize
 In order to have style changes apply to the Intune MAM views, you must first create a style override XML file. This file should be placed in the “/res/xml” directory of your app and you may name it whatever you like. Below is an example of the format this file needs to follow.
@@ -1977,7 +1953,6 @@ Enable default enrollment with the following steps:
 
    > [!NOTE] 
    > This forces the user to download the Company Portal on the device and complete the default enrollment flow before use.
-
 
 ## Limitations
 

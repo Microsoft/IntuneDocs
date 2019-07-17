@@ -53,7 +53,6 @@ A line-of-business (LOB) app is an app that you add to Intune from an app instal
 2. In the **App package file** pane, select the browse button. Then select an Android installation file with the extension **.apk**.
 3. When you're finished, select **OK**.
 
-
 ## Step 3: Configure app information
 
 1. In the **Add app** pane, select **App information**.

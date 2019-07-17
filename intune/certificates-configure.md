@@ -38,7 +38,6 @@ You can use Intune to assign these certificates to devices you manage. Intune su
 
 Each of these certificate types has its own prerequisites and infrastructure requirements.
 
-
 ## Overview
 
 1. Be sure the correct certificate infrastructure is set up. You can use [SCEP certificates](certificates-scep-configure.md), and [PKCS certificates](certficates-pfx-configure.md).
@@ -76,14 +75,12 @@ Each of these certificate types has its own prerequisites and infrastructure req
 - If you use SCEP profiles, configure a Network Device Enrollment Service (NDES) server
 - Whether you plan to use SCEP or PKCS profiles, download and configure the Microsoft Intune Certificate Connector
 
-
 ## Step 1: Configure your certificate infrastructure
 
 See one of the following articles for help with configuring the infrastructure for each type of certificate profile:
 
 - [Configure and manage SCEP certificates with Intune](certificates-scep-configure.md)
 - [Configure and manage PKCS certificates with Intune](certficates-pfx-configure.md)
-
 
 ## Step 2: Export your trusted root CA certificate
 

@@ -39,7 +39,6 @@ If the device is **not enrolled in Intune**, the user is asked to restart the ap
 
 <!--- The following screenshot from the Skype app illustrates this restart request: --->
 
-
 <!---  ![Screenshot of the iOS device showing PIN prompt](../media/appmanagement/iOS_AppPINPrompt.png) --->
 
 For devices that are **enrolled for management in Intune**, the user sees a message that their app is now managed.

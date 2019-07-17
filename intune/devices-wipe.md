@@ -69,7 +69,6 @@ A wipe is useful for resetting a device before you give the device to a new user
     |User data outside of the user profile||
     |User autologon|| 
     
-         
 7. To confirm the wipe, select **Yes**.
 
 If the device is on and connected, the **Wipe** action propagates across all device types in less than 15 minutes.
@@ -117,7 +116,6 @@ Removing company data from an Android work profile device removes all data, apps
 ### Android enterprise kiosk devices
 
 You can only wipe kiosk devices. You can't retire Android kiosk devices.
-
 
 ### macOS
 
@@ -167,8 +165,6 @@ You can configure Intune to automatically delete devices that appear to be inact
 3. In the **Delete devices that haven’t checked in for this many days** box, enter a number between 90 and 270.
 4. Choose **Save**.
 
-
-
 ## Delete devices from the Azure Active Directory portal
 
 You might need to delete devices from Azure AD due to communication issues or missing devices. You can use the **Delete** action to remove device records from the Azure portal for devices that you know are unreachable and unlikely to communicate with Azure again. The **Delete** action doesn't remove a device from management.
@@ -202,4 +198,3 @@ Applicable for Windows 10 devices. Read more about [Fresh Start](https://docs.mi
 ## Next steps
 
 If you want to reenroll a deleted device, see [Enrollment options](enrollment-options.md).
-

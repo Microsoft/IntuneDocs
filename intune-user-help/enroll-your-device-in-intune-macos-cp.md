@@ -51,13 +51,11 @@ To learn more about enrollment, see [What happens when I install the Company Por
 ## Get your device managed  
 Use the following steps to enroll macOS devices running OS X El Capitan 10.11 and later.   
 
-
 1. To access the Company Portal website, open a new window in __Safari__, and go to https://portal.manage.microsoft.com.  
 
 2. Sign in to the Company Portal website with your work or school account.
 
    [!INCLUDE [wit_nextref](includes/end-user-password-guidance.md)]
-
 
 3. Go to the top left-corner of the page and click **Menu** > **Devices**.  
 
@@ -105,5 +103,3 @@ Updating the Company Portal app is done the same way as any other Office app, th
 
 ## Next Steps  
 Need additional help? Check in with your company support. You can find their contact information on the [Company Portal website](https://go.microsoft.com/fwlink/?linkid=2010980).  
-
-

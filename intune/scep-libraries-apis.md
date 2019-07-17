@@ -58,7 +58,6 @@ Intune encrypts this information, signs the encrypted blob, and then packages th
 
 Devices contacting the SCEP server to request a certificate then give this SCEP challenge password. The SCEP server sends the CSR and encrypted SCEP challenge password to Intune for validation.  This challenge password and CSR must pass validation for the SCEP server to issue a certificate to the device. When an SCEP challenge is validated, the following checks happen:
 
-
 - Validates the signature of the encrypted blob
 - Validates that the challenge hasn't expired
 - Validates that the profile is still targeted to the device

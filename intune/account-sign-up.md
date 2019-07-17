@@ -27,7 +27,6 @@ ms.custom: intune-classic
 ms.collection: M365-identity-device-management
 ---
 
-
 # Sign up or sign in to Microsoft Intune
 
 [!INCLUDE [both-portals](./includes/note-for-both-portals.md)]

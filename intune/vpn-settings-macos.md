@@ -59,7 +59,6 @@ If you selected **Custom VPN**, configure these further settings:
 - **VPN identifier** This is an identifier for the VPN app you are using, and is supplied by your VPN provider.
 - **Enter key and value pairs for the custom VPN attributes** Add or import **Keys** and **Values** that customize your VPN connection. Again, these values are typically supplied by your VPN provider.
 
-
 ## Proxy settings
 
 - **Automatic configuration script** - Use a file to configure the proxy server. Enter the **Proxy server URL** that contains the configuration file. For example, enter `http://proxy.contoso.com`.

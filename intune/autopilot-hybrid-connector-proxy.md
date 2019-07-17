@@ -98,7 +98,6 @@ Once the configuration files have been modified, you will need to restart the In
 
 ![Screenshot of service restart](media/autopilot-hybrid-connector-proxy/service-restart.png)
 
-
 ## Next steps
 
 [Manage your devices](device-management.md)

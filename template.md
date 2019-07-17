@@ -32,7 +32,6 @@ This docs.ms template contains examples of markdown syntax, as well as guidance 
 
 When creating a markdown file you shluld copy the template to a new file, fill out the metadata as specified below, set the H1 heading above to the title of the article, and delete the content. 
 
-
 ## Metadata 
 
 The full metadata block is above, divided into required fields and optional fields; see the [OPS metadata cheatsheet](https://ppe.msdn.microsoft.com/en-us/ce-csi-docs/ops/ops-onboarding/managing-content/content-meta-data) for more details. Some key notes:
@@ -73,8 +72,6 @@ Second-level headings will generate the on-page TOC that appears in the "In this
 
 ~~Strikethrough~~
 
-
-
 ## Links
 
 To link to a markdown file in the same repo, use [relative links](https://www.w3.org/TR/WD-html40-970917/htmlweb.html#h-5.1.2). 
@@ -107,7 +104,6 @@ If a URL appears in a markdown file, it will be transformed into a clickable lin
 1. Ordered
 1. List  
 
-
 #### Ordered list with an embedded list
 
 1. Here
@@ -119,7 +115,6 @@ If a URL appears in a markdown file, it will be transformed into a clickable lin
 1. ordered
 1. list
 
-
 ### Unordered Lists
 
 - This
@@ -127,7 +122,6 @@ If a URL appears in a markdown file, it will be transformed into a clickable lin
 - a
 - bulleted
 - list
-
 
 ##### Unordered list with an embedded lists
 
@@ -142,7 +136,6 @@ If a URL appears in a markdown file, it will be transformed into a clickable lin
     1. Mrs. White
 - lists
 
-
 ## Horizontal rule
 
 ---
@@ -154,7 +147,6 @@ If a URL appears in a markdown file, it will be transformed into a clickable lin
 | col 3 is      | right-aligned | $1600 |
 | col 2 is      | centered      |   $12 |
 | col 1 is default | left-aligned     |    $1 |
-
 
 ## Code
 
@@ -215,7 +207,6 @@ This is an example of `in-line code`.
 ### Channel 9
 
 <iframe src="http://channel9.msdn.com/Series/Azure-Active-Directory-Videos-Demos/Azure-Active-Directory-Connect-Express-Settings/player" width="960" height="540" allowFullScreen frameBorder="0"></iframe>
-
 
 ### Youtube
 

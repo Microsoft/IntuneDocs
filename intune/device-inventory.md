@@ -106,7 +106,5 @@ Depending on the carrier used by the devices, not all details might be collected
 |Supervised|If **Yes**, administrators have enhanced control over the device.|Windows, iOS, Android|
 |Encrypted|If **Yes**, the data stored on the device is encrypted.|Windows, iOS, Android|
 
-
-
 ## Next steps
 See what else you can do to [manage your devices](device-management.md) with Intune.

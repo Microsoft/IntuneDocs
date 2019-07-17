@@ -28,7 +28,6 @@ ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
 ---
 
-
 # How to turn off Microsoft data collection
 
 Microsoft automatically collects certain data about our products and services. We do this to improve the reliability and performance of our products, including the Company Portal app. Even though this data is anonymized, some users may not feel comfortable with this collection. Your company support does not have control over the collection of this data, and they cannot change your selection for the setting.

@@ -102,7 +102,6 @@ Note the folder to which you installed the tool. The default location is: C:\Pro
 |**-UseMinAPILevelForNativeMultiDex**| (Optional) Use this flag to increase the source Android app’s minimum API level to 21. This flag will prompt for confirmation as it will limit who may install this app. Users can skip the confirmation dialog by appending the parameter “-Confirm:$false” to their PowerShell command. The flag should only be used by customers on apps with min API < 21 that fail to wrap successfully due to DEX overflow errors. | |
 | **&lt;CommonParameters&gt;** | (Optional) The command supports common PowerShell parameters like verbose and debug. |
 
-
 - For a list of common parameters, see the [Microsoft Script Center](https://technet.microsoft.com/library/hh847884.aspx).
 
 - To see detailed usage information for the tool, enter the command:

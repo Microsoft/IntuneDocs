@@ -48,13 +48,11 @@ There are three categories of policy settings: data protection settings, access 
 | <ul><ui>**Cut and copy character limit for any app** | Specify the number of characters that may be cut or copied from Org data and accounts.  This will allow sharing of the specified number of characters to any application, regardless of the "Restrict cut, copy, and paste with other apps" setting.<p>Default Value = 0<p>**Note**: Requires Intune Company Portal version 5.0.4364.0 or later.  | **0** |
 | **Screen capture and Google Assistant** | Select **Disable** to block screen capture and the **Google Assistant** capabilities of the device when using this app. Choosing **Disable** will also blur the App-switcher preview image when using this app with a work or school account.| **Enable** |
 
-  
 ### Encryption
 | Setting | How to use | Default value |
 |------|------|------|
 | **Encrypt Org data** | Choose **Require** to enable encryption of work or school data in this app. Intune uses an OpenSSL, 256-bit AES encryption scheme along with the Android Keystore system to securely encrypt app data. Data is encrypted synchronously during file I/O tasks. Content on the device storage is always encrypted. New files will be encrypted with 256-bit keys. Existing 128-bit encrypted files will undergo a migration attempt to 256-bit keys, but the process is not guaranteed. Files encrypted with 128-bit keys will remain readable. <br><br> The encryption method is FIPS 140-2 compliant.     |  **Require**|  
 | <ul><ui>**Encrypt Org data on enrolled devices** | Select **Require** to enforce encrypting Org data with Intune app layer encryption on all devices. Select **Not required** to not enforce encrypting Org data with Intune app layer encryption on enrolled devices.| **Require** |
-
 
 ### Functionality
 | Setting | How to use | Default value |
@@ -64,7 +62,6 @@ There are three categories of policy settings: data protection settings, access 
 |**Share web content with policy managed browsers** | Specify how web content (http/https links) are opened from policy-managed applications. Choose from:<ul><li>**Require**: Allow web content to open only in policy-managed browsers.</li><li>**Unmanaged browser**: Allow web content to open only in the unmanaged browser defined by the **Unmanaged browser ID** setting. The web content will be unmanaged in the target browser.<br>**Note**: Requires Intune Company Portal version 5.0.4415.0 or later.</li><li>**Not configured**: Allow web links in any app </li></ul><br><br> If you're using Intune to manage your devices, see [Manage Internet access using managed browser policies with Microsoft Intune](app-configuration-managed-browser.md).<br><br>**Policy-managed browsers**<br>If you deploy multiple policy-managed browsers, only one will be launched.  The launch order will be Intune Managed Browser and then Microsoft Edge.  On Android, your end users can choose from other policy-managed apps that support http/https links if neither Intune Managed Browser nor Microsoft Edge are installed.<p>If a policy-managed browser is required but not installed, your end users will be prompted to install the Intune Managed Browser.<p>If a policy-managed browser is required, Android App Links are managed by the **Allow app to transfer data to other apps** policy setting.<p>**Intune device enrollment**<br>If you are using Intune to manage your devices, see Manage Internet access using managed browser policies with Microsoft Intune. <p>**Policy-managed Microsoft Edge**<br>The Microsoft Edge browser for mobile devices (iOS and Android) supports Intune app protection policies. Users who sign in with their corporate Azure AD accounts in the Microsoft Edge browser application will be protected by Intune. The Microsoft Edge browser integrates the MAM SDK and supports all of its data protection policies, with the exception of preventing:<br><ul><li>**Save-as**: The Microsoft Edge browser does not allow a user to add direct, in-app connections to cloud storage providers (such as OneDrive).</li><li>**Contact sync**: The Microsoft Edge browser does not save to native contact lists.</li></ul><br>**Note:** *The APP SDK cannot determine if a target app is a browser. On Android devices, other managed browser apps that support the http/https intent are allowed.* | **Not configured** |
 |<ul><ui>**Unmanaged Browser ID** | Enter the application ID for a single browser. Web content (http/https links) from policy managed applications will open in the specified browser.  The web content will be unmanaged in the target browser. | **Blank** |
 |<ul><ui>**Unmanaged Browser Name** | Enter the application name for browser associated with the **Unmanaged Browser ID**. This name will be displayed to users if the specified browser is not installed.  | **Blank** |
-
 
 ## Data transfer exemptions
 
@@ -110,7 +107,6 @@ For more information, see [Data transfer policy exceptions for apps](app-protect
 
 > [!NOTE]  
 > To learn more about how multiple Intune app protection settings configured in the Access section to the same set of apps and users work on Android, see [Intune MAM frequently asked questions](mam-faq.md) and [Selectively wipe data using app protection policy access actions in Intune](app-protection-policies-access-actions.md).
-
 
 ## Conditional launch
 Configure conditional launch settings to set sign-in security requirements for your access protection policy. 

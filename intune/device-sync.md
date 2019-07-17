@@ -29,7 +29,6 @@ ms.collection: M365-identity-device-management
 
 # Sync devices to get the latest policies and actions with Intune
 
-
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 The **Sync** device action forces the selected device to immediately check in with Intune. When a device checks in, it immediately receives any pending actions or policies that have been assigned to it. This feature can help you immediately validate and troubleshoot policies you’ve assigned, without waiting for the next scheduled check-in.
@@ -57,7 +56,6 @@ You can find standard Intune policy check-in frequencies in the [Refresh cycle t
 
 When an administrator runs the **Sync** device action, iOS and Android apps that failed and raised a retryable error code are still available to the device. However, apps that raised a nonretryable error code must wait seven days before they're available to the device.
 
-
 | Error code  | Suggested description | Retryable |
 |---|---|---|
 | 2016330898 | An unknown error occurred. | No |
@@ -75,4 +73,3 @@ When an administrator runs the **Sync** device action, iOS and Android apps that
 ## Next steps
 
 You can [check the details](device-inventory.md) of the device.
- 

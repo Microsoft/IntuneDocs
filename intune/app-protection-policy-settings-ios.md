@@ -49,12 +49,10 @@ There are three categories of policy settings: *Data relocation*, *Access requir
 | **Restrict cut, copy and paste between other apps** | Specify when cut, copy, and paste actions can be used with this app. Select from: <ul><li>**Blocked**:  Don't allow cut, copy, and paste actions between this app and any other app.</li><li>**Policy managed apps**: Allow cut, copy, and paste actions between this app and other policy-managed apps.</li><li>**Policy managed with paste in**: Allow cut or copy between this app and other policy-managed apps. Allow data from any app to be pasted into this app.</li><li>**Any app**: No restrictions for cut, copy, and paste to and from this app.</ul> | **Any app**   |
 | <ul><ui>**Cut and copy character limit for any app** | Specify the number of characters that may be cut or copied from Org data and accounts.  This will allow sharing of the specified number of characters to any application, regardless of the **Restrict cut, copy, and paste with other apps** setting.<p>Default Value = 0<p>**Note**: Requires app to have Intune SDK version 9.0.14 or later.  | **0**   |
 
-
 ### Encryption
 | Setting | How to use | Default value |
 |------|----------|-------|
 | **Encrypt Org data** | Choose Require to enable encryption of work or school data in this app.  Intune enforces iOS device encryption to protect app data  while the device is locked.  Applications may optionally encrypt app data using Intune APP SDK encryption.  Intune APP SDK uses iOS cryptography methods to apply 128-bit AES encryption to app data. <br><br> When you enable this setting, the user may be required to set up and use a PIN to access their device. If there's no device PIN and encryption is required, the user is prompted to set a PIN with the message "Your organization has required you to first enable a device PIN to access this app." <br><br> Go to the [official Apple documentation](https://support.apple.com/en-us/HT202739) to see which iOS encryption modules are FIPS 140-2 certified or pending FIPS 140-2 certification. | **Require**  |
-
 
 ### Functionality
 | Setting | How to use | Default value |
@@ -78,7 +76,6 @@ There are some exempt apps and platform services that Intune app protection poli
 | <code>app-settings</code> | Device settings |
 | <code>itms; itmss; itms-apps; itms-appss; itms-services</code> | App Store |
 | <code>calshow</code> | Native Calendar |
-
 
 ## Access requirements
 
@@ -116,8 +113,6 @@ By default, several settings are provided with pre-configured values and actions
 | **Min SDK version** | Specify a minimum value for the Intune SDK version. *Actions* include: <br><ul><li>**Block access** - The user is blocked from access if the app’s Intune app protection policy SDK version doesn't meet the requirement. <br> <br> To learn more about the Intune app protection policy SDK, see [Intune App SDK overview](app-sdk.md).</li></ul> <ul><li>**Wipe data** - The user account that is associated with the application is wiped from the device. </li></ul>  </li></ul> As apps often have distinct versioning schemes between them, create a policy with one minimum app version targeting one app (for example, *Outlook version policy*). <br><br> This entry can appear multiple times, with each instance supporting a different action.|
 | **Device model(s)** | Specify a device model that is required to use this app. *Actions* include: <br><ul><li>**Allow specified (Block non-specified)** - Only devices that match the specified device model can use the app. All other device models are blocked. </li></ul> <ul><li>**Allow specified (Wipe non-specified)** - The user account that is associated with the application is wiped from the device.</li></ul> |
 
-
-
 ## Add-ins for Outlook app
 
 Outlook recently brought add-ins to Outlook for iOS, which let you integrate popular apps with the email client. Add-ins for Outlook are available on the web, Windows, Mac, and Outlook for iOS. The Intune SDK and Intune app protection policies do not include support for managing add-ins for Outlook, but there are other ways to limit their use. Since add-ins are managed via Microsoft Exchange, users will be able to share data and messages across Outlook and unmanaged add-in applications unless add-ins are turned off for the user by their Exchange.
@@ -152,7 +147,6 @@ If LinkedIn integration is enabled for your tenant, when users in your organizat
 
 If a user consents to sharing data between accounts, as with Office add-ins, LinkedIn integration uses existing Microsoft Graph APIs. LinkedIn integration uses only a subset of the APIs available to Office add-ins and supports various exclusions.
 
-
 |Microsoft Graph permissions  |Description  |
 |---------|---------|
 |Read permissions for [People](https://developer.microsoft.com/graph/docs/concepts/permissions_reference#people-permissions)     |Allows the app to read a scored list of people relevant to the signed-in user. The list can include local contacts, contacts from social networking or your organization's directory, and people from recent communications (such as email and Skype).         |
@@ -167,4 +161,3 @@ If a user consents to sharing data between accounts, as with Office add-ins, Lin
 - Learn about LinkedIn account connections release on the [Office 365 Roadmap page](https://products.office.com/en-US/business/office-365-roadmap?filters=%26freeformsearch=linkedin#abc). 
 - Learn about [Configuring LinkedIn account connections](https://docs.microsoft.com/azure/active-directory/linkedin-integration).
 - For more information about data that is shared between users’ LinkedIn and Microsoft work or school accounts, see [LinkedIn in Microsoft applications at your work or school](https://www.linkedin.com/help/linkedin/answer/84077).
-

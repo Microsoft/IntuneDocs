@@ -65,7 +65,6 @@ Configuring the user UPN setting is **required** for devices that are managed by
 
 4. Deploy the **Open in management** policy using Intune or your third-party MDM provider to enrolled devices.
 
-
 ### Example 1: Admin experience in Intune or third-party MDM console
 
 1. Go to the admin console of Intune or your third-party MDM provider. Go to the section of the console in which you deploy application configuration settings to enrolled iOS devices.
@@ -86,7 +85,6 @@ Configuring the user UPN setting is **required** for devices that are managed by
 
 > [!NOTE]  
 > For Outlook App in iOS if you deploy an App Configuration Policy with the option "Using configuration designer" the configuration key IntuneMAMUPN is configured automatically behind the scenes for the policy. More details about see FAQ section from [New Outlook for iOS and Android App Configuration Policy Experience – General App Configuration](https://techcommunity.microsoft.com/t5/Intune-Customer-Success/New-Outlook-for-iOS-and-Android-App-Configuration-Policy/ba-p/370481). 
-
 
 ### Example 2: End-user experience
 
@@ -112,7 +110,6 @@ After configuring the user UPN setting, validate the iOS app's ability to receiv
 For example, the **Require app PIN** policy setting is easy to test. When the policy setting equals **Yes**, the user should see a prompt to set or enter a PIN before they can access company data.
 
 First,  [create and assign an app protection policy](app-protection-policies.md) to the iOS app. For more information on how to test app protection policy, See [Validate app protection policies](app-protection-policies-validate.md).
-
 
 ### See also
 [What is Intune app protection policy](app-protection-policy.md)

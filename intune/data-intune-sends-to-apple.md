@@ -15,8 +15,6 @@ ms.localizationpriority: high
 ms.technology:
 ms.assetid: b204a956-18ec-11e8-accf-0ed5f89f718b
 
-
-
 # optional metadata
 
 #ROBOTS:
@@ -76,5 +74,3 @@ The following table lists the data that Microsoft Intune sends from a device to 
 | VPP | Serial Number | Serial number of the managed device. |
 
 To stop using Apple services with Microsoft Intune and delete the data, you must both disable the Microsoft Intune Apple token and also delete your Apple account. Refer to Apple account how to perform account management.
-
-

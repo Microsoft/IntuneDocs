@@ -57,7 +57,6 @@ If you're planning to use certificate-based authentication for VPN, Wi-Fi, or e-
 
 - [How to configure the certificate infrastructure for PFX](/intune/certficates-pfx-configure).
 
-
 ## Task list for an Intune setup
 
 ### Task 1: Intune subscription

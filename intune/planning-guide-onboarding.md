@@ -73,11 +73,8 @@ This step is optional. You need an Office 365 subscription if you plan to use Ex
 
 You may need to add users or security groups in Active Directory or Azure Active Directory based on your Intune deployment use-case scenarios and requirements. Review your current users and security groups in Active Directory or Azure Active Directory and determine if they fully meet your needs. When adding new users and security groups, we recommend adding them in Active Directory and synchronizing with Azure Active Directory using Azure AD Connect.
 
-
 - Learn more about [how to add users/groups in Intune](users-permissions-add.md).
 <!---why not send them to the AAD connect topic? Question out to Andre: https://docs.microsoft.com/azure/active-directory/connect/active-directory-aadconnect--->
-
-
 
 ### Task 4: Assign Intune and Office 365 user licenses
 
@@ -139,10 +136,8 @@ Intune supports iOS, Mac OS, Android, Windows desktop, and Windows mobile device
 
 - Learn more about [how to enroll devices](device-enrollment.md).
 
-
 ## Next steps
 
 Check out this [Microsoft Virtual Academy Intune session module](https://mva.microsoft.com/en-US/training-courses/deploying-microsoft-enterprise-mobility-suite-16408) for more information on the Intune implementation process.
-
 
 See guidance on [testing and validating your Intune deployment](planning-guide-test-validation.md).

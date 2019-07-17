@@ -29,16 +29,13 @@ ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
 ---
 
-
 # Remove your iOS device from Intune
 
 When you remove your iOS device from Intune, your device will no longer be able to access company resources and will no longer be managed by Intune.
 
-
 ## Removing the device from My Devices
 
 To remove your device from Intune, use these steps or watch this video:
-
 
 1. In the Company Portal app, tap **Devices.** and select the device you want to unenroll. If you only have one device, when you tap **Devices**, you will go directly to the device details screen.
 
@@ -47,7 +44,6 @@ To remove your device from Intune, use these steps or watch this video:
     |![Screenshot of the Company Portal app Devices screen, showing options after user has clicked Remove. Shows "Remove Device" button, "Factory Reset" button, and "Cancel" button.](/intune-user-help/media/cp_ios_unenroll_after_1804_001.png)|
 
     |![Screenshot of the Company Portal app Devices screen, showing options after user has clicked Remove Device button. Shows red highlighted "Remove" button, and blue highlighted "Learn More" button and "Cancel" button.](/intune-user-help/media/cp_ios_unenroll_after_1804_002.png)|
-
 
     When you unenroll your device from Intune, here's what happens:
 
@@ -78,6 +74,5 @@ There are three places the Company Portal stores local data on your device.
 - **Apple analytics**: standard app crash activity data that Apple collects. This information can only be removed by resetting your device back to factory settings. This will erase all personal information on your device. To do this, open **Settings** > **General** > **Reset** > **Erase All Content and Settings**.
 
 - **Keychain**: your device stores your passwords and other information used for sign-ins in your Keychain. Microsoft apps share your sign-in information across any Microsoft-developed apps that you have on your device, including Microsoft Outlook and Microsoft Authenticator. Like Apple analytics, this information can only be removed by resetting your device back to factory settings. This will erase all personal information on your device. To do this, open **Settings** > **General** > **Reset** > **Erase All Content and Settings**.
-
 
 Still need help? Contact your company support. For contact information, check the [Company Portal website](https://go.microsoft.com/fwlink/?linkid=2010980).

@@ -60,7 +60,6 @@ The following files are relevant to apps/extensions that contain Swift code, and
 
 * **IntuneMAMSwiftStub.framework**: The Intune App SDK Swift Stub framework. This is a required dependency of IntuneMAMSwift.framework which apps/extensions must link.
 
-
 The following files are relevant to all apps/extentions:
 
 * **IntuneMAMConfigurator**: A tool used to configure the app or extension's Info.plist with the minimum required changes for Intune management. Depending on the functionality of your app or extension, you may need to make additional manual changes to the Info.plist.
@@ -88,11 +87,9 @@ The following header files include the APIs, data types, and protocols which the
 
 Developers can make the contents of all the previous headers available by just importing IntuneMAM.h
 
-
 ## How the Intune App SDK works
 
 The objective of the Intune App SDK for iOS is to add management capabilities to iOS applications with minimal code changes. The fewer the code changes the less time to market, but without affecting the consistency and stability of your mobile application.
-
 
 ## Build the SDK into your mobile app
 
@@ -642,7 +639,6 @@ At any time, every thread has an effective identity for UI tasks and file tasks.
 ### Thread queues
 
 Apps often dispatch asynchronous and synchronous tasks to thread queues. The SDK intercepts Grand Central Dispatch (GCD) calls and associates the current thread identity with the dispatched tasks. When the tasks are finished, the SDK temporarily changes the thread identity to the identity associated with the tasks, finishes the tasks, then restores the original thread identity.
-
 
 Because `NSOperationQueue` is built on top of GCD, `NSOperations` will run on the identity of the thread at the time the tasks are added to `NSOperationQueue`. `NSOperations` or functions dispatched directly through GCD can also change the current thread identity as they are running. This identity will override the identity inherited from the dispatching thread.
 

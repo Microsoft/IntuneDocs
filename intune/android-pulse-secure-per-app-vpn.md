@@ -40,9 +40,7 @@ After you assign the policy to your Android device or user groups, users should 
 >
 > Only the Pulse Secure and Citrix connection types are supported for this profile.
 
-
 ## Step 1: Create a VPN profile
-
 
 1. Sign in to [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
 3. On the **Intune** pane, choose **Device configuration**.
@@ -81,8 +79,6 @@ Take note of the **Connection Name** value you specify when creating the VPN pro
   3. For **OMA-URI**, use this string: **./Vendor/MSFT/VPN/Profile/*Name*/Mode**, where *Name* is the VPN profile name you noted in Step 1. In our example, the string would be **./Vendor/MSFT/VPN/Profile/MyAppVpnProfile/Mode**.
   4. For **Data type**, specify **String**.
   5. For **Value**, enter **BLACKLIST** or **WHITELIST**.
-
-
 
 ## Step 3: Assign both policies
 

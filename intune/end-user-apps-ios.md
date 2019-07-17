@@ -27,7 +27,6 @@ ms.custom: intune-classic
 ms.collection: M365-identity-device-management
 ---
 
-
 # How your iOS users get their apps
 
 [!INCLUDE [both-portals](./includes/note-for-both-portals.md)]
@@ -51,7 +50,6 @@ Enrolled users get their apps by tapping on the following tiles on the Apps scre
 - **Featured Apps** take users to the FEATURED tab of the Company Portal website.
 
 - **Categories** points to the CATEGORIES tab of the Company Portal website.
-
 
 ![iOS Company Portal apps screen](./media/ios-cp-app-main-apps-screen.png)
 

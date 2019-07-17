@@ -54,5 +54,3 @@ Review the privacy and compliance statements of apps and compare them to the com
 ## Next steps
 
 To learn more about deploying and assigning apps, see [Assign apps to groups with Microsoft Intune](apps-deploy.md).
-
- 

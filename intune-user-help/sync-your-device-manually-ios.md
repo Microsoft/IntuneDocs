@@ -28,7 +28,6 @@ ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
 ---
 
-
 # Sync your iOS device manually
 
 Sometimes an app may take too long to download from the Company Portal. When this occurs, try to manually sync your device. This will attempt to get the information your device was unable to download.
@@ -46,4 +45,3 @@ Sometimes an app may take too long to download from the Company Portal. When thi
    ![Screenshot of the Device details showing the loading bar after the user clicked Check Settings.](/intune-user-help/media/ios_sync_3_CP-after_1804.png)
 
 Still need help? Contact your company support. For contact information, check the [Company Portal website](https://go.microsoft.com/fwlink/?linkid=2010980).
-

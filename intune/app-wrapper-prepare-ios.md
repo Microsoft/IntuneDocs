@@ -37,8 +37,6 @@ The tool is a macOS command-line application that creates a wrapper around an ap
 
 To download the tool, see [Microsoft Intune App Wrapping Tool for iOS](https://github.com/msintuneappsdk/intune-app-wrapping-tool-ios) on GitHub.
 
-
-
 ## General prerequisites for the App Wrapping Tool
 
 Before you run the App Wrapping Tool, you need to fulfill some general prerequisites:
@@ -72,7 +70,6 @@ You will need the following to distribute apps wrapped by Intune:
 * In-house and ad-hoc distribution signing certificate with valid Team Identifier.
 
   * You will need the SHA1 hash of the signing certificate as a parameter to the Intune App Wrapping Tool.
-
 
 * In-house distribution provisioning profile.
 
@@ -148,8 +145,6 @@ You will need the following to distribute apps wrapped by Intune:
 
     ![iPhone information - Fingerprints SHA1 string](./media/iOS-signing-cert-9.png)
 
-
-
 ### Steps to create an In-House Distribution Provisioning profile
 
 1. Go back to the [Apple Developer account portal](https://developer.apple.com/account/) and **sign in** with your organizational Apple ID.
@@ -167,8 +162,6 @@ You will need the following to distribute apps wrapped by Intune:
 6. Follow the steps to download your profile (with extension .mobileprovision) to your macOS computer.
 
 7. Save the file in a memorable location. This file will be used for the -p parameter while using the App Wrapping Tool.
-
-
 
 ## Download the App Wrapping Tool
 
@@ -230,7 +223,6 @@ In the IntuneMAMPackager/Contents/MacOS folder, open `Parameters.plist` (a blank
 | Prevent Default Build |false | Equivalent to using -b without arguments|
 |Build String Override | empty| The custom CFBundleVersion of the wrapped output app |
 |Extension Provisioning Profile Paths | empty| An array of extension provisioning profiles for the app.
-
 
 Run the IntuneMAMPackager with the plist as the sole argument:
 
@@ -305,7 +297,6 @@ Apps that have been wrapped by using the App Wrapping Tool generate logs that ar
 
     Wrapped apps will also present users the option to send logs directly from the device via email after the app crashes. Users can send the logs to you to examine and forward to Microsoft if necessary.
 
-
 ### Certificate, provisioning profile, and authentication requirements
 
 The App Wrapping Tool for iOS has some requirements that must be met in order to guarantee full functionality.
@@ -315,7 +306,6 @@ The App Wrapping Tool for iOS has some requirements that must be met in order to
 |iOS provisioning profile|Make sure that the provisioning profile is valid before you include it. The App Wrapping Tool does not check whether the provisioning profile is expired when processing an iOS app. If an expired provisioning profile is specified, the app wrapping tool will include the expired provisioning profile, and you will not know there is a problem until the app fails to install on an iOS device.|
 |iOS signing certificate|Make sure that the signing certificate is valid before you specify it. The tool does not check whether a certificate is expired when processing iOS apps. If the hash for an expired certificate is provided, the tool will process and sign the app, but it will fail to install on devices.<br /><br />Make sure that the certificate provided for signing the wrapped app has a match in the provisioning profile. The tool does not validate if the provisioning profile has a match for the certificate provided for signing the wrapped application.|
 |Authentication|A device must have a PIN for encryption to work. On devices to which you have deployed a wrapped app, touching the status bar on the device will require the user to sign in again with a work or school account. The default policy in a wrapped app is *authentication on re-launch*. iOS handles any external notification (like a phone call) by exiting the app and then re-launching it.
-
 
 ## Setting app entitlements
 Before wrapping your app, you can grant *entitlements* to give the app additional permissions and capabilities that exceed what an app can typically do. An *entitlement file* is used during code signing to specify special permissions within your app (for example, access to a shared keychain). Specific app services called *capabilities* are enabled within Xcode during app development. Once enabled, the capabilities are reflected in your entitlements file. For more information about entitlements and capabilities, see [Adding Capabilities](https://developer.apple.com/library/ios/documentation/IDEs/Conceptual/AppDistributionGuide/AddingCapabilities/AddingCapabilities.html) in the iOS Developer Library. For a complete list of supported capabilities, see [Supported capabilities](https://developer.apple.com/library/ios/documentation/IDEs/Conceptual/AppDistributionGuide/SupportedCapabilities/SupportedCapabilities.html).

@@ -40,7 +40,6 @@ For example, let’s say that a Seattle regional office admin is assigned the Po
 3. Add the Seattle scope tag to policies and profiles that you want admins in Members (Groups) to be able to access.
 4. Add the Seattle scope tag to devices that you want visible to admins in the Members (Groups). 
 
-
 ## To create a scope tag
 
 1. In Intune, choose **Roles** > **Scope (Tags)** > **Create**.
@@ -97,7 +96,6 @@ For devices with **Device enrollment type** set to **Managed devices**:
 For devices with **Device enrollment type** set to **Managed apps**:
 1. Choose **Client apps** > **App configuration policies** > choose an app configuration policy.
 2. Choose **Scope (Tags)** > choose the tags you want to assign to the policy.
-
 
 ## To assign a scope tag to an iOS app provisioning profile
 1. In Intune, choose **Client apps** > **iOS app provisioning profiles** > choose a profile.

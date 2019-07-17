@@ -50,7 +50,6 @@ Here's a list of table templates for each section.
 | | Compliance policy | |
 | | Conditional Access policy|-|
 
-
 ## Further reading
 
 Check out these resources for additional information that may be helpful during the Intune deployment planning, design, and implementation process.

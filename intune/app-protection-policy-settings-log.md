@@ -37,7 +37,6 @@ The process to enable and collect logs varies by platform:
 - **iOS devices** - Use a Managed Browser, or *Microsoft Edge* to collect logs. For details, see the Intune support team blog [New Intune Diagnostic Console for Log Submission in the Intune Managed Browser](https://techcommunity.microsoft.com/t5/Intune-Customer-Success/Support-Tip-New-Intune-Diagnostic-Console-for-Log-Submission-in/ba-p/280021). 
 - **Windows 10 devices** - Use *MDMDiag* and event logs. See, [Diagnose MDM failures in Windows 10](https://docs.microsoft.com/windows/client-management/mdm/diagnose-mdm-failures-in-windows-10) in the Windows client management content, and the blog [Troubleshooting Windows 10 Intune Policy Failures](http://configmgrdogsarchive.com/2018/08/09/troubleshooting-windows-10-intune-policy-failures)
 
-
 The following table lists the name and an explanation of the settings recorded in the log.
 
 ## App protection policy settings

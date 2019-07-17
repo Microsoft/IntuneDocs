@@ -111,7 +111,6 @@ Complete these steps to manually sync your Microsoft HoloLens, Windows 10 deskto
 
     ![Choosing the Sync button](./media/win10pc-sync-5-tap-sync.png)  
 
-
 ### Windows 10 Mobile
 
    1. On your device, go to **All apps** > **Settings** > **Accounts**.

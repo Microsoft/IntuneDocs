@@ -151,7 +151,6 @@ The following settings are useful for devices running Windows Holographic for Bu
 > |----|---|
 > |./Vendor/MSFT/AccountManagement/UserProfileManagement/ProfileInactivityThreshold|Integer<br/>Default value is 30.|
 
-
 ### [StorageCapacityStartDeletion](https://docs.microsoft.com/windows/client-management/mdm/accountmanagement-csp)
 
 > [!div class="mx-tableFixed"]

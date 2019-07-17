@@ -54,7 +54,6 @@ If an Intune device has no primary user assigned, then the Company Portal app de
 
 To appear in the Company Portal on shared devices, available apps must be assigned to a user group. They'll be installed in the system context or user context, depending on how the app was configured by the IT administrator. For more information about app context, see [Installing apps on Windows 10 devices](apps-windows-10-app-deploy.md#installing-apps-on-windows-10-devices). Company Portal version 10.3.4651.0 or later is required to use this feature.
 
-
 ## Who is assigned as the primary user?
 Intune automatically adds primary user to devices during or soon after enrollment. The enrollment method determines when the primary user is added to a device.
 

@@ -62,7 +62,6 @@ In the [Intune in the Azure portal](https://aka.ms/intuneportal), choose **Devic
 
 The sound will continue to play until the user disables the sound on the device or the device is removed from lost mode.
 
-
 ## Security and privacy information for lost mode and locate device actions
 - No device location information is sent to Intune until you turn on this action.
 - When you use the locate device action, the latitude and longitude coordinates of the device can be retrieved by using the Graph API.

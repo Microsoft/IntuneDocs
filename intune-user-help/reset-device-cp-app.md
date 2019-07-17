@@ -28,7 +28,6 @@ ms.custom: intune-enduser; intune-azure
 ms.collection: M365-identity-device-management
 ---
 
-
 # Reset device from the Company Portal app  
 
 Reset a used, lost, or stolen device to its factory settings from the Company Portal app.  

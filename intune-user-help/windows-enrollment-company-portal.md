@@ -54,11 +54,9 @@ Enrollment steps differ for different versions of Windows 10 devices. The follow
 
 2. In the search bar, type the phrase "about your PC." Select __About your PC__ from the results.  
 
-
    ![search settings for about your pc](media/searching_for_about_your_pc.png)  
 
 3. Scroll down to **Windows specifications** to find the **Version** of Windows 10 that's installed on your PC.  
-
 
    ![Windows 10 Desktop About Your PC](media/settings_about_pc.png)  
 

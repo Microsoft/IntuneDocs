@@ -14,7 +14,6 @@ ms.service: microsoft-intune
 ms.localizationpriority: medium
 ms.technology:
 
-
 # optional metadata
 
 #ROBOTS:

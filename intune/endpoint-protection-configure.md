@@ -56,7 +56,6 @@ Before you create a profile, review the following articles that detail the endpo
 
    The profile is created and appears on the profiles list page. To assign this profile to groups, see [assign device profiles](device-profile-assign.md).
 
-
 ## Next steps  
 
 To assign a profile to groups, see [assign device profiles](device-profile-assign.md).

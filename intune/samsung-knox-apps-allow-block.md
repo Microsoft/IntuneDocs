@@ -71,5 +71,4 @@ These settings can only be used by devices that run Samsung Knox Standard.
 
 The next time each targeted device checks in, the app settings will be applied.
 
-
 <!---## Assign the custom profile--->

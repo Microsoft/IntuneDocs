@@ -28,7 +28,6 @@ ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
 ---
 
-
 # What happens if you unenroll your iOS or macOS device from Intune?
 
 When you unenroll your iOS or macOS device from Intune:

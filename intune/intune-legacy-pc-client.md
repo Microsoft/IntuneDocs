@@ -50,7 +50,6 @@ Because of the switch to Azure AD Groups, “group-based” filtering in the Sil
 
    ![](media/intune-legacy-pc-client/image01.png)
 
-
 ## Continue to manage Windows 7 by using Intune PC Client
 
 For Windows 7, which can’t be managed by using MDM, we will continue to support existing Intune PC Client capabilities in the Silverlight console only. Consider migrating to MDM management when you upgrade to Windows 10.
@@ -69,5 +68,3 @@ To switch from managing Windows 10 devices with the Intune PC Client to managing
 
 ## Next steps
 [Enroll Windows devices](https://docs.microsoft.com/intune/windows-enroll)
-
- 

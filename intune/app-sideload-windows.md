@@ -41,7 +41,6 @@ In Windows 10, sideloading is different than in earlier versions of Windows:
 
   >Symantec Phone certificates and Sideloading License keys are not required. However if an on-premise certificate authority is not available then you may need to obtain a code signing certificate from a public certification authrity. See [Introduction to Code Signing](https://docs.microsoft.com/windows/desktop/SecCrypto/cryptography-tools#introduction-to-code-signing)
 
-
 ### Code sign your app
 
 First step is to code sign your appx package, See [sign app package using signtool](https://docs.microsoft.com/windows/uwp/packaging/sign-app-package-using-signtool)

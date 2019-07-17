@@ -95,7 +95,6 @@ Detect threats to your network such as Man-in-the-middle attacks, and prevent sy
 
 ![Conceptual image of blocking access to SharePoint Online](./media/network-spo-blocked.png)
 
-
 **Access granted on remediation:**
 
 ![Conceptual image of allowing access after the network threat is remediated](./media/network-spo-unblocked.png)

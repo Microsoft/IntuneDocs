@@ -46,7 +46,6 @@ Microsoft Intune is a cloud-based service in the enterprise mobility management 
 * [Enable your employees to securely access Office 365 from an unmanaged public kiosk](common-scenarios.md#enable-your-employees-to-securely-access-office-365-from-an-unmanaged-public-kiosk)
 * [Issue limited-use shared tablets to your task workers](common-scenarios.md#issue-limited-use-shared-tablets-to-your-employees)
 
-
 ## How does Intune work?
 Intune is the component of Microsoft's Enterprise Mobility + Security (EMS) suite that manages mobile devices and apps. It integrates closely with other EMS components like Azure Active Directory (Azure AD) for identity and access control and Azure Information Protection for data protection. When you use it with Office 365, you can enable your workforce to be productive on all their devices, while keeping your organization's information protected.
 

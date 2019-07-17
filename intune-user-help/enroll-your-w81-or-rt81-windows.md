@@ -32,7 +32,6 @@ ms.collection: M365-identity-device-management
 
 If your company or school uses Microsoft Intune, you can enroll your devices to get access to company email, files, and other resources. When you enroll your devices, your organization can keep corporate data secure. To learn more about enrollment, see [What happens if you install the Company Portal app and enroll your device in Intune?](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-windows.md) and [What your company support can and can't see on your device](what-info-can-your-company-see-when-you-enroll-your-device-in-intune.md).  
 
-
 To enroll your Windows 8.1 or Windows RT 8.1 device:  
 
 1. On the device, tap **Settings** &gt; **PC Settings** &gt; **Network** &gt; **Workplace**.  
@@ -43,21 +42,17 @@ To enroll your Windows 8.1 or Windows RT 8.1 device:
 
 3. Enter the password for your work or school email.  
 
-
     ![type-password](./media/W81-2-workplacesettings_signin.png)  
 
 4. Under **Turn on device management**, tap **Turn on**.  
-
 
     ![turn-on-device-management](./media/W81-3-dev-mgt-turn-on.png)  
 
 5. In the **Allow apps and services from company support** dialog box, check the  **I agree** box, and then tap **Turn on**.  
 
-
     ![turn-on-allow-apps-services](./media/W81-4-agree-allow-apps-services.png)  
 
     When you have successfully enrolled, you'll see the following screen.  
-
 
     ![enrollment-complete](./media/W81-5-enrolled-done.png)
 

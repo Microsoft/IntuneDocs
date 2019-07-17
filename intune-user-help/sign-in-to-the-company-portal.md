@@ -36,15 +36,12 @@ There are three ways to sign in to the Company Portal app:
 * Sign in with certificate-based authentication.  
 * Sign in from another device.    
 
-
 ## Sign in with your email address and password
 The following steps show screenshots from the Company Portal for iOS.  
 
 1. Open the app on your device and tap **Sign In**.  
 
    ![The Company Portal sign in page, with an icon of a person in front of a graphical representation of a website. Below that is the text "Get access to company resources and keep them secure," and the "Sign in" button. A link at the bottom leads to Microsoft Privacy and Cookies information.](/intune-user-help/media/cp_ios_aad_signin_after_1804_001.png)
-
-
 
 2. Enter your **Work or school account** and tap **Next**.
 

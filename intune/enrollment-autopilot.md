@@ -32,7 +32,6 @@ ms.collection: M365-identity-device-management
 # Enroll Windows devices in Intune by using the Windows Autopilot  
 The Windows Autopilot simplifies enrolling devices in Intune. Building and maintaining customized operating system images is a time-consuming process. You might also spend time applying these custom operating system images to new devices to prepare them for use before giving them to your end users. With Microsoft Intune and Autopilot, you can give new devices to your end users without the need to build, maintain, and apply custom operating system images to the devices. When you use Intune to manage Autopilot devices, you can manage policies, profiles, apps, and more after they're enrolled. For an overview of benefits, scenarios, and prerequisites, see [Overview of Windows Autopilot](https://docs.microsoft.com/windows/deployment/windows-autopilot/windows-10-autopilot).
 
-
 ## Prerequisites
 - [Intune subscription](licenses.md)
 - [Windows automatic enrollment enabled](windows-enroll.md#enable-windows-10-automatic-enrollment)
@@ -143,9 +142,7 @@ After you've created an Autopilot deployment profile, you can edit certain parts
 
 Alerts will show how many Autopilot program devices don't have Autopilot deployment profiles. Use the information in the alert to create profiles and assign them to the unassigned devices. When you click the alert, you see a full list of Windows Autopilot devices and detailed information about them.
 
-
 To see alerts for unassigned devices, in [Intune in the Azure portal](https://aka.ms/intuneportal), choose **Device enrollment** > **Overview** > **Unassigned devices**.  
-
 
 ## Assign a user to a specific Autopilot device
 
@@ -166,7 +163,6 @@ Prerequisites: Azure Active Directory Company Portal has been configured and Win
     ![Screenshot of friendly name](media/enrollment-autopilot/friendly-name.png)
 
 4. Choose **Ok**.
-
 
 ## Delete Autopilot devices
 

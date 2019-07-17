@@ -89,7 +89,6 @@ You can assign terms and conditions to groups of user who must accept them befor
 3. Choose **Select groups to include** > choose the groups you want to assign the terms > **Select**. 
 4. In the **Assigned Groups** pane, choose **Save**.  The terms and conditions are now assigned to users in the selected groups. Users will be prompted to accept terms the next time they access the company portal. The terms and conditions need to be accepted only once. Users with multiple devices don't have to accept on each device.
 
-
 ## Monitor terms and conditions
 
 1. Sign in to [Intune](https://go.microsoft.com/fwlink/?linkid=2090973). 

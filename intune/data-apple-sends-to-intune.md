@@ -15,8 +15,6 @@ ms.localizationpriority: high
 ms.technology:
 ms.assetid: cf27fdb8-f408-425c-9a7c-146de1534425
 
-
-
 # optional metadata
 
 #ROBOTS:
@@ -108,7 +106,4 @@ The following table lists the data that an Apple device sends to Intune. [Intune
 | [VPP](https://developer.apple.com/library/content/documentation/Miscellaneous/Reference/MobileDeviceManagementProtocolRef/5-Web_Service_Protocol_VPP/webservice.html#//apple_ref/doc/uid/TP40017387-CH8-SW1) | Apple VPP Token | url | The iTunes store URL of an app.|
 | [VPP](https://developer.apple.com/library/content/documentation/Miscellaneous/Reference/MobileDeviceManagementProtocolRef/5-Web_Service_Protocol_VPP/webservice.html#//apple_ref/doc/uid/TP40017387-CH8-SW1) | Apple VPP Token | User Status | The user status in apple VPP programs. |
 
-
 To stop using Apple services with Microsoft Intune and delete the data, you must both disable the Microsoft Intune Apple token and also delete your Apple account. Refer to Apple account how to perform account management.
-
-

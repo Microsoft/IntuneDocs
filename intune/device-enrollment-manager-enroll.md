@@ -45,8 +45,6 @@ DEM user accounts and devices that are enrolled with a DEM user account have the
 - Devices are blocked for Conditional Access with the exception of Windows 10 1803+
 - Every device enrolled with DEM accounts needs to be properly licensed to be managed by Intune. The license could be an Intune user license or an Intune device license.
 
-
-
 ## Add a device enrollment manager
 
 1. In [Intune in the Azure portal](https://aka.ms/intuneportal), choose **Device enrollment** > **Device enrollment managers**.
@@ -63,7 +61,6 @@ Global Administrator or Intune Service Administrator Azure AD roles are required
 
 If a user doesn't have the Global Administrator or Intune Service Administrator role assigned to them, but has read permissions enabled for the Device Enrollment Managers role assigned to them, they can see only the DEM users they've created.
 
-
 ## Remove device enrollment manager permissions
 
 Removing a device enrollment manager doesn't affect enrolled devices.
@@ -72,4 +69,3 @@ Removing a device enrollment manager doesn't affect enrolled devices.
 
 1. In [Intune in the Azure portal](https://aka.ms/intuneportal), choose **Device enrollment**, and then choose **Device enrollment managers**.
 2. On the **Device enrollment managers** blade, select the DEM user, and select **Delete**.
-

@@ -92,7 +92,6 @@ The following list of Samsung device models do not support Knox. They are enroll
 | Galaxy V Plus | SM-G318HZ |
 | Galaxy Young 2 Duos | SM-G130BU |
 
-
 ### Windows PC software client
 
 An [Intune software client](manage-windows-pcs-with-microsoft-intune.md) can be deployed and installed on Windows PCs as an alternate enrollment method. This functionality is only available using the Intune classic portal. You can use the Intune software client to manage Windows 7 and later PCs with the exception of Windows 10 Home edition.
@@ -114,9 +113,6 @@ The following browsers are supported for these portals:
 - Safari (latest version, Mac only)
 - Chrome (latest version)
 - Firefox (latest version)
-
-
-
 
 ### Intune classic portal
 

@@ -29,7 +29,6 @@ ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
 ---
 
-
 # Your macOS device's operating system version isn't yet supported
 
 With the rapid pace of development of technology, sometimes your device could actually be ahead of what your company support has had the opportunity to test. It's possible that being on the newest version of macOS may not work with some of your company's other tools.

@@ -32,7 +32,6 @@ ms.collection: M365-identity-device-management
 
 This article shows you the Microsoft Intune device restrictions settings that you can configure for devices running Windows 8.1 and later.
 
-
 ## General
 
 - **Diagnostic data submission** - Enables the device to submit diagnostic information to Microsoft.
@@ -51,8 +50,6 @@ This article shows you the Microsoft Intune device restrictions settings that yo
 If you enable this setting for Windows 8.1 devices, all users of the device must have a Microsoft account.
 For encryption to work, the device must meet the [Microsoft InstantGo](https://blogs.windows.com/windowsexperience/2014/06/19/instantgo-a-better-way-to-sleep/#IBHULcTfI4PokO8X.97) hardware certification requirements.
 When you enforce encryption on a device, the recovery key is only accessible from the user's Microsoft account, which is accessed from their OneDrive account. You cannot recover this key on behalf of a user. 
-
-
 
 ## Browser
 - **Autofill** - Enables users to change autocomplete settings in the browser.

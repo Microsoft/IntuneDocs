@@ -49,7 +49,6 @@ The Company Portal app for Windows now lists all managed apps (both required and
 
 ![Example screenshot of the Company Portal app for Windows 10, Installed apps page. ](/intune-user-help/media/installed-apps-cp-1906.png)  
 
-
 ## Week of June 17, 2019  
 
 #### New features in Microsoft Intune app
@@ -81,7 +80,6 @@ Example screenshot of the **Help** screen:
 
 ![Screenshot of Microsoft Intune app, Help screen.](./media/1904-intune-app-help.png)   
 
-
 ## Week of April 1, 2019  
 
 ### Changes to Company Portal enrollment for iOS 12 device users <!--3448635 -->  
@@ -101,7 +99,6 @@ The home page of the Company Portal app for iOS devices has been redesigned. Wit
 A new screen called **App categories** has been added to improve the app browsing and selection experience in Company Portal for Windows 10. Users will now see their apps sorted under categories such as **Featured**, **Education**, and **Productivity**. This change appears in Company Portal versions 10.3.3451.0 and later. For more information about installing apps in Company Portal, see [Install and share apps on your device](/intune-user-help/install-apps-cpapp-windows).  
 
 ![Screenshot of Company Portal for Windows 10, App categories screen.](./media/1902_CP_app_categories.png)   
-
 
 ## Week of November 12, 2018
 
@@ -160,7 +157,6 @@ The Intune Company Portal app for Windows 10 has been updated with the [Fluent D
 
 ![Screenshot of the Company Portal app dashboard showing the Fluent Design navigation view](./media/1804_WindowsCP_Fluent_01.png)
 
-
 ## Week of April 2, 2018
 
 ### User experience update for the Company Portal app for iOS <!-- 1412866 -->
@@ -202,7 +198,6 @@ We've updated the Company Portal app for Android to follow Android's [Material D
 |![06](./media/android_profile_before_1803.png)|![06](./media/android_profile_after_1803.png)|
 |![07](./media/androidCP_Setup01_before_1803.png)|![07](./media/androidCP_Setup01_after_1803.png)|
 
-
 ## Week of November 27, 2017
 
 ### New "Device Categories" step in guided setup for the Company Portal app for Windows 10 <!-- 1335292 -->
@@ -230,7 +225,6 @@ We've improved the device setup workflow in the Company Portal app for iOS. The 
 |![06](./media/ios_cp_enroll_06_before_1711.png)|![06](./media/ios_cp_enroll_06_after_1711.png)|
 |![07](./media/ios_cp_enroll_07_before_1711.png)|![07](./media/ios_cp_enroll_07_after_1711.png)|
 
-
 ## Week of November 6, 2017
 
 ### Updates to the Company Portal app for Windows 10 <!--1299474-->
@@ -239,7 +233,6 @@ The Settings page in the Company Portal app for Windows 10 has been updated to m
 |Before|After|
 |---|---|
 |![01](./media/w10-share-logs.png)|![02](./media/w10-share-logs-after-1711.png)|
-
 
 ### Search improvements to the Company Portal apps and website <!-- 1418189 -->
 The Company Portal apps now use searches across app categories, names, and descriptions. The results are sorted in decreasing order of relevance. These updates are also available on the [Company Portal website](https://portal.manage.microsoft.com).
@@ -255,10 +248,8 @@ iOS users will also receive this change, as the Company Portal website is also u
 
 We're still fine-tuning the way relevance is tracked, so please let us know how it's working using the "Feedback" link at the bottom of the Company Portal website.
 
-
 ### iOS Company Portal displays large icons <!-- 1454593 -->
 This release fixes a known issue with how the iOS Company Portal displays icons in the app tile. If you upload app icons of 120x120 pixels or larger, they now display in the [Company Portal website](https://portal.manage.microsoft.com) and the iOS Company Portal's apps pages at the full size of the app tile.
-
 
 ## Week of October 2, 2017
 
@@ -282,7 +273,6 @@ Additional steps have been improved on Android work profile devices.
 |![07](./media/android_work_cp_enroll_04_before_1710.png)|![07](./media/android_work_cp_enroll_04_after_1710.png)|
 |![08](./media/android_work_cp_enroll_05_before_1710.png)| *Combined with previous step* |
 
-
 We've also updated the Conditional Access email activation screen.
 
 |Before|After|
@@ -302,7 +292,6 @@ The enrollment process for the Company Portal app for Android has been simplifie
 |![03](./media/android_cp_enroll_03_before_1709.png)|![03](./media/android_cp_enroll_03_post_1709.png)|
 |![04](./media/android_cp_enroll_04_before_1709.png)|![04](./media/android_cp_enroll_04_post_1709.png)|
 |![05](./media/android_cp_enroll_05_before_1709.png)|![05](./media/android_cp_enroll_05_post_1709.png)|
-
 
 ## August 2017
 
@@ -324,8 +313,6 @@ Conditional Access with Intune supports more secure authentication on iOS device
 
 ![User is prompted to enroll from Company Portal website.](./media/ios-11-ca-email-after-1708-07.png)
 
-
-
 ### Intune Mobile Application Management (MAM) dialog boxes will have a modern interface <!-- 1199015 -->
 
 Intune Mobile Application Management (MAM) dialog boxes will be updated to a modern look and feel. The dialog boxes will function in the same way as the previous style.
@@ -337,7 +324,6 @@ Intune Mobile Application Management (MAM) dialog boxes will be updated to a mod
 **Modern experience**
 
 ![modern interface](./media/NewUI_Modern_AttachFileHandler.jpg)
-
 
 ### Updates to the "Device Details" page on the Company Portal app for Windows 10 <!-- 1287448 -->
 
@@ -555,7 +541,6 @@ These are the plans for ways we will be improving the user experience by updatin
 
 > [!Note]
 > The images below may be previews, and the announced product may differ from the presented versions.  
-
 
 ### See also
 * [Microsoft Intune Blog](http://go.microsoft.com/fwlink/?LinkID=273882)

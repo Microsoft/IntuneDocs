@@ -60,5 +60,4 @@ When you select **Report problem to Microsoft**, you'll go to the **Send feedbac
 * Send a suggestion or idea you have for the app  
 * Leave a review for the app in Microsoft Store   
 
-
 Still need help? Contact your company support. For contact information, check the [Company Portal website](https://go.microsoft.com/fwlink/?linkid=2010980).

@@ -31,7 +31,6 @@ Intune supports the use of private and public key pair (PKCS) certificates. This
 
 Microsoft Intune includes built-in settings to use PKCS certificates for access and authentication to your organizations resources. Certificates authenticate and secure access to your corporate resources like a VPN or a WiFi network. You deploy these settings to devices using device configuration profiles in Intune.
 
-
 ## Requirements
 
 To use PKCS certificates with Intune, you'll need the following infrastructure:
@@ -71,7 +70,6 @@ To use PKCS certificates with Intune, you'll need the following infrastructure:
   - Install the Imported PFX Certificate Connector for Microsoft Intune on your server.
   - To automatically receive important updates, ensure firewalls are open that allow the connector to contact **autoupdate.msappproxy.net** on port **443**.  
 
-
 - **Windows Server**:  
   You use a Windows Server to host:
 
@@ -90,8 +88,6 @@ To authenticate a device with VPN, WiFi, or other resources, a device needs a ro
 2. Go to **Start** > **Run**, and then enter **Cmd** to open command prompt. 
     
 3. Specify **certutil  -ca.cert ca_name.cer** to export the Root certificate as a file named *ca_name.cer*.
-
-
 
 ## Configure certificate templates on the CA
 
@@ -143,7 +139,6 @@ To authenticate a device with VPN, WiFi, or other resources, a device needs a ro
 3. Download and save the connector file to a location you can access from the server where you're going to install the connector.
 
     ![NDES connector download](media/certificates-pfx-configure/download-ndes-connector.png)
- 
 
 4. After the download completes, sign in to the server. Then:
 
@@ -275,11 +270,8 @@ The *PFX Certificates Connector for Microsoft Intune* [supports automatic update
   Changes in this release:  
   - Fixed an issue where the connector might fail to enroll to Intune after signing in to the connector with a global administrator account.  
 
-
 ## Next steps
 
 The profile is created, but it's not doing anything yet. Next, [assign the profile](device-profile-assign.md) and [monitor its status](device-profile-monitor.md).
 
 [Use SCEP certificates](certificates-scep-configure.md), or [issue PKCS certificates from a Digicert PKI manager web service](certificates-digicert-configure.md).
-
-

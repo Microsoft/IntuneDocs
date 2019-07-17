@@ -28,7 +28,6 @@ search.appverid: MET150
 ms.collection: M365-identity-device-management
 ---
 
-
 # Wandera Mobile Threat Defense connector with Intune  
 
 Control mobile device access to corporate resources using conditional access based on risk assessment conducted by Wandera. Wandera is a Mobile Threat Defense (MTD) solution that integrates with Microsoft Intune.  Risk is assessed based on telemetry collected from devices by the Wandera service, including:
@@ -38,7 +37,6 @@ Control mobile device access to corporate resources using conditional access bas
 - Cryptojacking
 
 You can configure *conditional access* policies that are based on Wandera's risk assessment, enabled through Intune device compliance policies. Risk assessment policy can allow or block noncompliant devices from accessing corporate resources based on detected threats.  
-
 
 ## How do Intune and Wandera Mobile Threat Defense help protect your company resources?  
 
@@ -84,7 +82,6 @@ When malicious apps such as malware are detected on devices, you can block devic
 
 ![Conceptual image of access granted after remediation](./media/wandera-mtd-connector/wandera-malicious-apps-unblocked.png)
 
-
 ### Control access based on threat to network  
 
 Detect threats to your network such as man-in-the-middle attacks and protect access to Wi-Fi networks based on the device risk.  
@@ -104,7 +101,6 @@ Detect threats to your network such as Man-in-the-middle attacks, and prevent sy
 **Block SharePoint Online when network threats are detected**:  
 
 ![Block SharePoint Online when network threats are detected](./media/wandera-mtd-connector/wandera-network-spo-blocked.png)  
-
 
 **Access granted on remediation**:  
 

@@ -29,7 +29,6 @@ ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
 ---
 
-
 # Unable to get macOS device managed
 
 If you receive either of the following messages while trying to get your macOS device managed, contact your company support.

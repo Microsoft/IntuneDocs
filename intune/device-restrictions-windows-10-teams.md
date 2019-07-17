@@ -32,7 +32,6 @@ ms.collection: M365-identity-device-management
 
 This article shows you the Microsoft Intune device restrictions settings that you can configure for devices running Windows 10 Team.
 
-
 ## Apps and experience
 
 - **Wake screen when someone in room** - Allows the device to wake automatically when its sensor detects someone in the room.
@@ -55,7 +54,6 @@ To connect to Azure Operational insights, you must specify a **Workspace ID** an
 - **PIN for wireless projection** - Specifies whether you must enter a PIN before you can use the wireless projection capabilities of the device.
 - **Miracast wireless projection** - If you want to let the Windows 10 Team device use Miracast enabled devices to project, select this option.
 - **Miracast wireless projection channel** - Choose the Miracast channel that is used to establish the connection.
-
 
 ## Next steps
 

@@ -45,6 +45,4 @@ Go to **Settings** > **About** > **Software updates**. Install the update and yo
 
 Go to **Settings** > **System updates** > **Check for new system update**. Install the update and your Samsung Knox device should have the correct security patch installed.
 
-
-
 Still need help? Contact your company support. For contact information, check the [Company Portal website](https://go.microsoft.com/fwlink/?linkid=2010980).

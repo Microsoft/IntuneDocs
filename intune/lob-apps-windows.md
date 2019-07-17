@@ -52,7 +52,6 @@ A line-of-business (LOB) app is one that you add from an app installation file. 
 
 1. When you're finished, select **OK**.
 
-
 ## Step 3: Configure app information
 
 1. In the **Add app** pane, select **App information**.

@@ -29,7 +29,6 @@ ms.custom: intune-enduser; seodec18
 ms.collection: M365-identity-device-management
 ---
 
-
 # Your device is missing a required certificate
 
 ## What's a certificate?
@@ -50,4 +49,3 @@ Still need help? Contact your company support. For contact information, check th
 
 ## Next steps  
 Still need help? Contact your company support. For contact information, check the [Company Portal website](https://go.microsoft.com/fwlink/?linkid=2010980).  
-

@@ -28,7 +28,6 @@ ms.custom: intune-azure
 ms.collection: M365-identity-device-management
 ---
 
-
 # MDM security baseline settings for Intune  
 
 View the MDM security baseline settings that are supported by Microsoft Intune for devices that run Windows 10 or later. The default values for settings in this baseline represent the recommended configuration for applicable devices, and might not match baseline defaults from other security baselines.  
@@ -42,8 +41,6 @@ To learn about what's changed in the latest version of this baseline from the pr
   
 To learn about using security baselines with Intune, see [Use security baselines](security-baselines.md).  
 
-
-   
 ## Above Lock  
 For more information, see [Policy CSP - AboveLock](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-abovelock) in the Windows documentation.  
 
@@ -124,7 +121,6 @@ For more information, see [Policy CSP - Bitlocker](https://docs.microsoft.com/wi
 
   - **Require encryption for write access**  
     **Default**: Yes  
-  
 
 ## Browser  
 For more information, see [Policy CSP - Browser](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-browser) in the Windows documentation.  
@@ -191,7 +187,6 @@ For more information, see [Policy CSP - CredentialsUI](https://docs.microsoft.co
   This policy setting controls whether administrator accounts display when a user attempts to elevate a running application. By default, administrator accounts aren't displayed when the user attempts to elevate a running application. If you enable this policy setting, all local administrator accounts on the PC display so the user can choose one and enter the correct password. If you disable this policy setting, users will always be required to type a user name and password to elevate.  
   [Learn more](https://go.microsoft.com/fwlink/?linkid=2067021)
 
-  
   **Default**: Disabled  
 
 ## Data Protection  
@@ -219,7 +214,6 @@ For more information, see [Policy CSP - DeviceGuard](https://docs.microsoft.com/
   [Learn more](https://go.microsoft.com/fwlink/?linkid=2067066)  
   
   **Default**: Yes  
-
 
 - **Launch system guard**    
   **Default**: Enabled  
@@ -409,7 +403,6 @@ For more information, see [Policy CSP - FileExplorer](https://docs.microsoft.com
   [Learn more](https://go.microsoft.com/fwlink/?linkid=2067107)  
   
   **Default**: Disabled  
-    
 
 ## Internet Explorer  
 For more information, see [Policy CSP - InternetExplorer](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-internetexplorer) in the Windows documentation.  
@@ -434,7 +427,6 @@ For more information, see [Policy CSP - InternetExplorer](https://docs.microsoft
   [Learn more](https://go.microsoft.com/fwlink/?linkid=2067077)
 
   **Default**: Disable
-
 
 - **Internet Explorer local machine zone do not run antimalware against Active X controls**  
   This policy setting determines whether Internet Explorer runs antimalware programs against ActiveX controls, to check if they're safe to load on pages. If you enable this policy setting, Internet Explorer won't check with your antimalware program to see if it's safe to create an instance of the ActiveX control. If you disable this policy setting, Internet Explorer always checks with your antimalware program to see if it's safe to create an instance of the ActiveX control. If you don't configure this policy setting, Internet Explorer won't check with your antimalware program to see if it's safe to create an instance of the ActiveX control. Users can turn this behavior on or off, using Internet Explorer Security settings.  
@@ -580,7 +572,6 @@ For more information, see [Policy CSP - InternetExplorer](https://docs.microsoft
   [Learn more](https://go.microsoft.com/fwlink/?linkid=2067132)  
   
   **Default**: Disable java  
-    
   
 - **Internet Explorer Active X controls in protected mode**  
   This policy setting prevents ActiveX controls from running in Protected Mode when Enhanced Protected Mode is enabled. When a user has an ActiveX control installed that isn't compatible with Enhanced Protected Mode and a website attempts to load the control, Internet Explorer notifies the user and gives the option to run the website in regular Protected Mode. This policy setting disables this notification and forces all websites to run in Enhanced Protected Mode. Enhanced Protected Mode provides additional protection against malicious websites by using 64-bit processes on 64-bit versions of Windows. For computers running at least Windows 8, Enhanced Protected Mode also limits the locations Internet Explorer can read from in the registry and the file system. When Enhanced Protected Mode is enabled, and a user comes across a website that attempts to load an ActiveX control that isn't compatible with Enhanced Protected Mode, Internet Explorer notifies the user and gives the option to disable Enhanced Protected Mode for that particular website. If you enable this policy setting, Internet Explorer won't give the user the option to disable Enhanced Protected Mode. All Protected Mode websites will run in Enhanced Protected Mode. If you disable or don't configure this policy setting, Internet Explorer notifies users and provides an option to run websites with incompatible ActiveX controls in regular Protected Mode.  
@@ -769,7 +760,6 @@ For more information, see [Policy CSP - InternetExplorer](https://docs.microsoft
 - **Internet Explorer locked down trusted zone java permissions**  
   This policy setting allows you to manage permissions for Java applets. If you enable this policy setting, you can choose options from the drop-down box. Custom, to control permissions settings individually. Low Safety enables applets to perform all operations. Medium Safety enables applets to run in their sandbox (an area in memory outside of which the program can't make calls), plus capabilities like scratch space (a safe and secure storage area on the client computer) and user-controlled file I/O. High Safety enables applets to run in their sandbox. Disable Java to prevent any applets from running. If you disable this policy setting, Java applets can't run. If you don't configure this policy setting, Java applets are disabled.  
   [Learn more](https://go.microsoft.com/fwlink/?linkid=2067142)  
-  
   
   **Default**: Disable java 
   
@@ -1418,7 +1408,6 @@ For more information, see [Policy CSP - Power](https://docs.microsoft.com/window
   - **E-Mail invitation method**  
     **Default**: Simple MAPI
 
-  
 ## Remote Desktop Services  
 For more information, see [Policy CSP - RemoteDesktopServices](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-remotedesktopservices) in the Windows documentation.  
 
@@ -1550,7 +1539,6 @@ For more information, see [Policy CSP - System](https://docs.microsoft.com/windo
   [Learn more](https://go.microsoft.com/fwlink/?linkid=2067307)   
   
   **Default**: Good unknown and bad critical
-
 
 ## Wi-Fi  
 For more information, see [Policy CSP - Wifi](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-wifi) in the Windows documentation.  
@@ -1854,7 +1842,6 @@ The following settings are either:
 *[New]* [**Device Guard**](#device-guard):
 - **Virtualization based security**
 
-
 *[New]* [**DMA Guard**](#dma-guard):
 - **Enumeration of external devices incompatible with Kernel DMA Protection**  
 
@@ -1874,7 +1861,6 @@ The following settings are either:
   - **Maximum ticket time value**  
   - **Maximum ticket time period**  
   - **E-Mail invitation method**
-
 
 *[New]* [**WIndows Defender**](#windows-defender):
 - **Adobe Reader Launch in a child process**  
@@ -1906,8 +1892,6 @@ The following settings are either:
 - **Require special characters in PIN** 
 - **Minimum PIN length**  
 - **Require uppercase letters in PIN** 
-
-
 
 <!-- The following settings were available in the Preview Baseline.   
 
@@ -2068,7 +2052,6 @@ For more information, see [Policy CSP - DeviceGuard](https://docs.microsoft.com/
   
   **Default**: Yes  
 
-
 - **Launch system guard**    
   **Default**: Enabled  
 
@@ -2207,7 +2190,6 @@ For more information, see [Policy CSP - Experience](https://docs.microsoft.com/w
       
      **Default**: Yes  
 
-
 ## Exploit Guard  
 For more information, see [Policy CSP - ExploitGuard](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-exploitguard) in the Windows documentation.  
 
@@ -2232,7 +2214,6 @@ For more information, see [Policy CSP - FileExplorer](https://docs.microsoft.com
 
 ## Internet Explorer  
 For more information, see [Policy CSP - InternetExplorer](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-internetexplorer) in the Windows documentation.  
-
 
 - **Internet Explorer internet zone access to data sources**  
   This policy setting allows you to manage whether Internet Explorer can access data from another security zone using the Microsoft XML Parser (MSXML) or ActiveX Data Objects (ADO). If you enable this policy setting, users can load a page in the zone that uses MSXML or ADO to access data from another site in the zone. If you select Prompt in the drop-down box, users are queried to choose whether to allow a page to load in the zone that uses MSXML or ADO to access data from another site in the zone. If you disable this policy setting, users can't load a page in the zone that uses MSXML or ADO to access data from another site in the zone. If you don't configure this policy setting, users can't load a page in the zone that uses MSXML or ADO to access data from another site in the zone.
@@ -3123,7 +3104,6 @@ For more information, see [Policy CSP - System](https://docs.microsoft.com/windo
   If you enable this policy setting, you can choose which boot-start drivers to initialize the next time the computer is started. If you disable or don't configure this policy setting, the boot start drivers determined to be Good, Unknown, or Bad but Boot Critical are initialized and the initialization of drivers determined to be Bad is skipped. If your malware detection application doesn't include an Early Launch Antimalware boot-start driver or if your Early Launch Antimalware boot-start driver has been disabled, this setting has no effect and all boot-start drivers are initialized.  
   
   **Default**: Good unknown and bad critical
-
 
 ## Wi-Fi  
 For more information, see [Policy CSP - Wifi](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-wifi) in the Windows documentation.  

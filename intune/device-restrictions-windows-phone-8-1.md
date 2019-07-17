@@ -32,7 +32,6 @@ ms.collection: M365-identity-device-management
 
 This article shows you the Microsoft Intune device restrictions settings that you can configure for devices running Windows Phone 8.1.
 
-
 ## General
 
 - **Camera** - Enables or blocks the device's camera.
@@ -79,12 +78,9 @@ Open the app’s page, and copy the URL to the clipboard. You can now use this a
 
 Example: Search the store for the Skype app. The URL you use is `http://www.windowsphone.com/store/app/skype/c3f8e570-68b3-4d6a-bdbb-c0a3f4360a51`.
 
-
-
 ### Additional options
 
 You can also click **Import** to populate the list from a csv file in the format <*app url*>, <*app name*>, <app publisher>, or click **Export** to create a csv file containing the contents of the restricted apps list in the same format.
-
 
 ## Browser
 

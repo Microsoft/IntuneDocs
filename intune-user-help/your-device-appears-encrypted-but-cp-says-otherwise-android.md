@@ -28,7 +28,6 @@ ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
 ---
 
-
 # Device encrypted but apps say otherwise
 
 If Company Portal or the Microsoft Intune app say that your device isn't encrypted, but you're sure that it is, try the steps in this article.  

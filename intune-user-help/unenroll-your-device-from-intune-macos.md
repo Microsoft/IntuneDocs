@@ -28,7 +28,6 @@ ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
 ---
 
-
 # Unenroll your macOS device from Company Portal
 
 When you unenroll your macOS device from Intune, your device can no longer access company resources.

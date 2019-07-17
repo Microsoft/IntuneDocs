@@ -28,7 +28,6 @@ ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
 ---
 
-
 # Encrypting your Android device
 
 Device encryption protects your files and folders from unauthorized access if your device is lost or stolen. After you turn on device encryption, only individuals with the correct password or pin will be able to sign in to your device. 

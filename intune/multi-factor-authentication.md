@@ -67,8 +67,6 @@ To require MFA when a device is enrolled, follow these steps:
 12. In **Grant**, choose **Grant access**, and then select **Require multi-factor authentication**. Do not select **Require device to be marked as compliant** because a device cannot be evaluated for compliance until it is enrolled. Then choose **Select**.
 13. In **New policy**, choose **Enable policy** > **On**, and then choose **Create**.
 
-
-
 ## Next steps
 
 When end users enroll their device, they now must authenticate with a second form of identification, like a PIN, a phone, or biometrics.

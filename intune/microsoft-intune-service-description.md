@@ -55,7 +55,6 @@ For more about System Center Configuration Manager, see [Documentation  for Syst
 ## Intune Onboarding benefit
 Microsoft offers the Intune Onboarding benefit for eligible services in eligible plans. The Onboarding benefit lets you work remotely with Microsoft specialists to get your Intune environment ready for use. For more about the Onboarding benefit, see [Microsoft Intune Onboarding Benefit Description](http://go.microsoft.com/fwlink/?LinkId=619281).
 
-
 ## Learn how Intune service updates affect you
 
 Because the mobile device management ecosystem changes frequently with operating system updates and mobile app releases, Microsoft updates Intune regularly. There are three ways you can learn about changes in the Intune service:
@@ -96,7 +95,6 @@ To help you plan for service changes, we notify you at least 7-90 days prior to 
 - In the event of Intune service retirement, you would be notified 12 months in advance.
 
 Finally, in the rare event there’s any post-incident action needed to get your service back to normal or a large change that we deem potentially disruptive based on customer feedback, we will email the service administrators based on how your [Office 365 communication preferences](https://support.office.com/article/Change-your-contact-preferences-for-communications-from-Microsoft-6f70de1b-a64d-4498-bfbd-be8c83a9c0fc) are set and whether you include a valid (and preferably work) email address.  
-
 
 <!--- ## Choose the management solution that’s right for you
 You can set up Intune in several ways to manage and help protect your company's mobile devices and computers (referred to as **devices** in this article).

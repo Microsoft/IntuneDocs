@@ -34,9 +34,6 @@ View the Microsoft Defender Advanced Threat Protection (formerly Windows Defende
 
   The Microsoft Defender Advanced Threat Protection baseline is available when your environment meets the prerequisites for using [Microsoft Defender Advanced Threat Protection](advanced-threat-protection.md#prerequisites)).
 
-
-
-
 > [!NOTE]  
 > The ATP baseline settings are in **Preview**. While in Preview, the list of available settings, and order in which this content presents those settings, might not match what is available in the portal.  
 >
@@ -241,7 +238,6 @@ For more information, [BitLocker Group Policy settings](https://docs.microsoft.c
   This policy setting is only enforced when BitLocker or device encryption is enabled.  
 
   **Default**: Yes
-
 
 - **Hardware device installation by setup classes**  
   [DeviceInstallation/AllowInstallationOfMatchingDeviceSetupClasses](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-deviceinstallation#deviceinstallation-allowinstallationofmatchingdevicesetupclasses) - With this policy you can specify a list of device setup class globally unique identifiers (GUIDs) for device drivers that Windows is prevented from installing. This policy setting takes precedence over any other policy setting that allows Windows to install a device. If you enable this policy setting (set to *Block hardware device installation*), Windows is prevented from installing or updating device drivers whose device setup class GUIDs appear in the list you create. If you enable this policy setting on a remote desktop server, the policy setting affects redirection of the specified devices from a remote desktop client to the remote desktop server. If you disable or don't configure this policy setting (set to *Allow hardware device installation*), Windows can install and update devices as allowed or prevented by other policy settings.  
@@ -621,4 +617,3 @@ For more information, see [PassportForWork CSP](https://docs.microsoft.com/windo
 
 - **Require uppercase letters in PIN** - *TenantId/Policies/PINComplexity/UppercaseLetters*   
   **Default**: Allowed  
-

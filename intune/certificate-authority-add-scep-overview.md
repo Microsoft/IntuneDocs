@@ -101,10 +101,6 @@ Be sure you have the required permissions to register an Azure AD app. See [Requ
    
    The app registration process in Azure AD is complete.
 
-
-
-
-
 ### Configure and deploy a SCEP certificate profile
 As the administrator, create a SCEP certificate profile to target to users or devices. Then, assign the profile.
 

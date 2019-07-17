@@ -29,8 +29,6 @@ ms.custom: seodec18
 ms.collection: M365-identity-device-management
 ---
 
-
- 
 # Set up an Enrollment Status Page
  
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]

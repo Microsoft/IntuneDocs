@@ -61,7 +61,6 @@ To assist in your readiness and planning, this page lists Intune UI updates and 
 <!-- ***********************************************-->
 ## App management
 
-
 ### Customized notifications for users and groups    <!-- 16766574   -->
 You'll soon be able to send custom ad-hoc push notifications from the Company Portal application to users on iOS and Android devices you manage with Intune. These custom notifications are not tied to particular Intune features and can be used for any purpose you require, including general notifications you want to send to some or all your employees.  
 
@@ -73,7 +72,6 @@ For available app installs on Android work profile devices, you can view app ins
 
 <!-- ***********************************************-->
 ## Device configuration
-
 
 ### Support for IKEv2 VPN profiles for iOS <!-- 1943438 -->
 You'll be able to create VPN profiles for the iOS native VPN client using the IKEv2 protocol. IKEv2 is a new connection type in **Device configuration** > **Profiles** > **Create profile** > **iOS** for platform > **VPN** for profile type > **Settings**.
@@ -103,7 +101,6 @@ To see the current settings, go to [Use and manage Android Enterprise devices wi
 
 Applies to: Android Enterprise
 
-
 <!-- ***********************************************-->
 ## Device management
 
@@ -113,14 +110,11 @@ You'll be able to zoom in to the exact coordinates of a device using the **Locat
 ### Configure automatic device clean-up time limit down to 30 days <!--4231059  -->
 You'll be able to set the automatic device clean-up time limit as short as 30 days (instead of current limit of 90 days) after the last sign-in. To do so, go to **Intune** > **Devices** > **Setup** > **Device Clean Up Rules**.
 
-
 <!-- ***********************************************-->
 ## Security
 
 ### Import and export security baselines    <!--3408610          -->  
 We’re adding the capability to export and import security baselines so you can take your customizations with you and share them between Intune environments.
-
-
 
 <!-- ***********************************************-->
 ## Notices
@@ -129,5 +123,3 @@ We’re adding the capability to export and import security baselines so you can
 
 ## See also
 See [What’s New in Microsoft Intune](whats-new.md) for details on recent developments.
-
-

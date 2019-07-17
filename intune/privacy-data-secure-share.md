@@ -29,7 +29,6 @@ ms.collection: M365-identity-device-management
 
 # Data security and sharing in Intune
 
-
 ## Data security
 
 Microsoft Intune is a key component of the Microsoft Enterprise Mobility and Security Suite cloud service offering. To support the [data governance strategy](https://www.microsoft.com/en-us/TrustCenter/Security/default.aspx), all Microsoft cloud services are developed with [Microsoft Privacy](https://www.microsoft.com/en-us/trustcenter/privacy) and [Microsoft Security](https://www.microsoft.com/en-us/trustcenter/security/) methodologies.  
@@ -75,7 +74,6 @@ For information about data shared with certain third parties, see the following 
 Microsoft Intune does not share any data with the System Center Configuration Manager. System Center Configuration Manager is an on-premise product deployed, managed, and operated directly by the customer. The diagnostics and usage data that is collected by Configuration Manager are only to improve the installation experience, quality, and security of future releases.
 
 To learn more, see [Diagnostics and usage data for SCCM](https://docs.microsoft.com/sccm/core/plan-design/diagnostics/diagnostics-and-usage-data). 
-
 
 ## Next steps
 

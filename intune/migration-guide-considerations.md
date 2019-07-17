@@ -38,7 +38,6 @@ The Apple Device Enrollment Program (DEP) sets device configurations that cannot
 
 To continue using DEP to manage the devices in Intune, [set up iOS device enrollment with Device Enrollment Program](device-enrollment-program-enroll-ios.md).
 
-
 ## Next steps
 
 [Phase 2: Migration campaign](migration-guide-campaign.md)

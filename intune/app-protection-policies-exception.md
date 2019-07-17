@@ -50,7 +50,6 @@ For a policy targeting iOS, you can configure data transfer exceptions by URL pr
 ## Android data transfer exceptions
 For a policy targeting Android, you can configure data transfer exceptions by app package name. You can check the **Google Play** store page for the app you would like to add an exception for to find the app package name. For more information about Android data transfer exceptions, see [Android app protection policy settings - Data transfer exemptions](app-protection-policy-settings-android.md#data-transfer-exemptions).
 
-
 >[!TIP]
 > You can find the package ID of an app by browsing to the app on the Google Play store. The package ID is contained in the URL of the app's page. For example, the package ID of the Microsoft Word app is **com.microsoft.office.word**.
 

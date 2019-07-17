@@ -28,7 +28,6 @@ ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
 ---
 
-
 # Upload and email logs  
 
 If you experience a problem in the Company Portal or Microsoft Intune app, you can email the details of the problem to your company support person. These details will provide them with additional context about the problem.  
@@ -50,7 +49,6 @@ The actual error details are kept on your device in a special document called a 
 3. Tap **Send Email & Upload Logs**.  
 4. After the upload is complete, tap your email app. 
 5. An email message will open with the incident ID pre-populated in the subject field. In the body of the email, describe the problem that you came across.    
-
 
 ## Upload and email logs from Microsoft Intune app   
 

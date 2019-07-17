@@ -127,7 +127,6 @@ After you configure Lookout MES, you must set up a connection to Lookout in Intu
 
 6. Select **Save** to complete the configuration.  Intune and Lookout MES are now integrated and ready for use.
 
-
 ## Additional settings in the Lookout MES Console
 The following are additional settings you can configure in the Lookout MES Console.  
 
@@ -148,8 +147,6 @@ To receive email alerts for threats, sign in to the [Lookout MES Console](https:
 - If you no longer want to receive email notifications, set the notifications to **OFF** and save your changes.
 
   ![screenshot of the preferences page with the user account displayed](./media/lookout-mtd-connector-integration/lookout-mtp-email-notifications.png)
-
-
 
 ## Configure threat classifications  
 Lookout Mobile Endpoint Security  classifies mobile threats of various types. The Lookout threat classifications have default risk levels associated with them. The risk levels can be changed at any time to suit your company requirements.

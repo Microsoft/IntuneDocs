@@ -28,7 +28,6 @@ ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
 ---
 
-
 # How to set the amount of time before your device is locked
 
 To keep the data on your Android device more secure, your company support can set a policy that requires you to set the amount of time that your device can be idle before it is automatically locked. Follow these steps to set the amount of time before your device will be locked.

@@ -48,7 +48,6 @@ This article shows you how to:
 - Create a message notification template
 - Create an action for noncompliance, such as send an email or remotely lock a device
 
-
 ## Before you begin
 
 - To set up actions for non-compliance, you need at least one device compliance policy. To create a device compliance policy, see the following platforms:

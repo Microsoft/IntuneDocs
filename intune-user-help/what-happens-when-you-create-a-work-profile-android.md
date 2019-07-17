@@ -28,7 +28,6 @@ ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
 ---
 
-
 # What happens when you create a work profile
 
 A work profile is something that you set up on your device to keep your work or school email, apps, and data separate from your personal data.

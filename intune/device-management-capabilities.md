@@ -36,8 +36,6 @@ Management, inventory, app deployment, provisioning, and retirement are all hand
 
 Users gain access to the company portal, which enables them to install apps, enroll and remove devices, and contact their IT department or helpdesk.
 
-
-
 ## Device security and configuration
 
 |Capability|Details|More information|

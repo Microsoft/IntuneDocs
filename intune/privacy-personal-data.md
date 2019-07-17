@@ -27,7 +27,6 @@ ms.custom: intune-azure
 ms.collection: M365-identity-device-management
 ---
 
-
 # Privacy and personal data in Intune
 
 End users can receive, transmit, and store data on devices managed by Intune. They trust that the data’s privacy is protected and used only in a way that is consistent with their expectations. To help Intune admins set such expectations, the articles in this section provide information on how Intune collects, stores, retains, processes, secures, shares, audits, and exports personal data. You'll also learn how to view, correct, and delete personal data.

@@ -67,7 +67,6 @@ The Zimperium app authorization process follows:
 
 For more information about consent and Azure Active Directory applications, see [Request the permissions from a directory admin](https://docs.microsoft.com/azure/active-directory/develop/v2-permissions-and-consent#request-the-permissions-from-a-directory-admin) in the Azure Active Directory article *Permissions and consent in the Azure Active Directory v2.0 endpoint*.
 
-
 ## To set up Zimperium integration
 
 1. Go to [Zimperium MTD console](https://www.zimperium.com/platform) and sign in with your credentials. To perform the Zimperium integration setup process, you must sign in with an Azure Active Directory user who has the Global Administrator role. This one-time setup operation uses the Global Administrator rights to grant permission in your organization for the Zimperium apps to communicate with Intune. 

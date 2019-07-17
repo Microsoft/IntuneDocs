@@ -30,7 +30,6 @@ ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
 ---
 
-
 # You need to identify your device when you're trying to enroll
 
 If you are trying to enroll your macOS device in Intune, and you see a screen that asks you to identify your device, at least one of your devices has already been enrolled and assigned to your account using a method other than the Company Portal app. For the Company Portal app to work correctly, you must identify if the device you're using has already been enrolled in Intune.

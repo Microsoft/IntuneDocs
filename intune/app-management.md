@@ -30,7 +30,6 @@ ms.collection: M365-identity-device-management
 
 # What is Microsoft Intune app management?
 
-
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 As an IT admin, you can use Microsoft Intune to manage the client apps that your company's workforce uses. This functionality is in addition to managing devices and protecting data. One of an admin's priorities is to ensure that end users have access to the apps they need to do their work. This goal can be a challenge because:
@@ -65,7 +64,6 @@ Intune offers a range of capabilities to help you get the apps you need on the d
 <sup>2</sup> Applies to devices managed by Intune only.<br>
 <sup>3</sup> Intune supports available apps from Managed Google Play store on Android Enterprise devices.<br>
 <sup>4</sup> Intune does not provide installing a shortcut to an app as a web link on standard Android Enterprise devices. However, Web link support is provided for [multi-app dedicated Android Enterprise devices](device-restrictions-android-for-work.md#dedicated-device-settings). 
-
 
 ## Get started
 

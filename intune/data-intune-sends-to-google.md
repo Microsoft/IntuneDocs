@@ -15,7 +15,6 @@ ms.localizationpriority: high
 ms.technology:
 ms.assetid: a5c3bec4-18ed-11e8-accf-0ed5f89f718b
 
-
 # optional metadata
 
 #ROBOTS:
@@ -37,7 +36,6 @@ When Android enterprise device management is enabled on a device, Microsoft Intu
 
 The following table lists the data that Microsoft Intune sends to Google when device management is enabled on a device:
 
-
 | Data sent to Google | Details | Used for | Example |
 |:---:|:---:|:---:|:---:|
 | EnterpriseId | Originated in Google upon binding your Gmail account to Intune. | Primary identifier used to communicate between Intune and Google.  This communication includes setting policies, managing devices, and binding/unbinding of Android enterprise with Intune. | Unique identifier, Example format: LC04eik8a6 |
@@ -48,7 +46,4 @@ The following table lists the data that Microsoft Intune sends to Google when de
 | Application Data | Originated in Intune when saving application policy. |  | Application Name string. Example: app:com.microsoft.windowsintune.companyportal |
 | Enterprise Service Account | Originated in Google upon Intune request. | Used for authentication between Intune and Google for transactions involving this customer. | There are several parts:<br> **Enterprise Id**: documented previously.<br>**UPN**: generated UPN used in authentication on behalf of customer.<br>Example: w49d77900526190e26708c31c9e8a0@pfwp-commicrosoftonedfmdm2.google.com.iam.gserviceaccount.com<br>**Key**: Base64 encoded blob used in auth requests, stored encrypted in the service, but this is what the blob looks like:<br> Unique Identifier to represent the customer’s key<br>Example: a70d4d53eefbd781ce7ad6a6495c65eb15e74f1f |
 
-
 To stop using Android enterprise device management with Microsoft Intune and delete the data, you must both disable the Microsoft Intune Android enterprise device management and also delete your Google account. Refer to Google account how to perform account management.
-
-

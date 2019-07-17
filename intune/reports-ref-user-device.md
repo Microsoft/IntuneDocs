@@ -31,7 +31,6 @@ The **UserDeviceAssociation** entity contains user device associations in your o
 
 ## UserDeviceAssociation
 
-
 |        Name        |                                           Description                                            |        Example         |
 |--------------------|--------------------------------------------------------------------------------------------------|------------------------|
 |      UserKey       |              Unique identifier of the user in the data warehouse. (Surrogate key).               |          123           |

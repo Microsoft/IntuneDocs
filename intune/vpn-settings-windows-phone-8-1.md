@@ -32,7 +32,6 @@ ms.collection: M365-identity-device-management
 
 This article shows you the Intune settings you can use to configure VPN connections on devices running Windows Phone 8.1.
 
-
 Depending on the settings you choose, not all values in the following list are configurable.
 
 ## Base VPN settings
@@ -94,9 +93,6 @@ Depending on the settings you choose, not all values in the following list are c
 Refer to each manufacturer's VPN documentation for more information about how to write custom XML commands.
 
 - **Split tunneling** - **Enable** or **Disable** this option that lets devices decide which connection to use depending on the traffic. For example, a user in a hotel uses the VPN connection to access work files, but use the hotel's standard network for regular web browsing.
-
-
-
 
 ## Proxy settings
 

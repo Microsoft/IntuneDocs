@@ -15,7 +15,6 @@ ms.localizationpriority: high
 ms.technology:
 ms.assetid: d0b6f3fe-2bd4-4518-a6fe-b9fd115ed5e0
 
-
 # optional metadata
 
 #ROBOTS:
@@ -134,4 +133,3 @@ You can also preconfigure permission for apps to access Android device features.
 ## Next steps
 
 Continue to [assign](apps-deploy.md) and [monitor](apps-monitor.md) the app.
-

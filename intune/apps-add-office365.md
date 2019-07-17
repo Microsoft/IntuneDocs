@@ -172,7 +172,6 @@ The following tables list common error codes you might encounter and their meani
 | 17002 | - | Failed to complete the scenario (install). Possible reasons:Installation canceled by userInstallation canceled by another installationOut of disk space during installationUnknown language ID |
 | 17004 | - | Unknown SKUs |
 
-
 ### Office Deployment Tool error codes
 
 | Scenario | Return code | UI | Note |

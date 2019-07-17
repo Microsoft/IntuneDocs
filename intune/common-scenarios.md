@@ -47,7 +47,6 @@ Following are short introductions to the six most common scenarios that rely on 
 ## Protecting your on-premises email and data so it can be safely accessed by mobile devices
 Most enterprise mobility strategies begin with a plan to enable secure access to email for employees with mobile devices that connect to the Internet. Many organizations still have on-premises data and application servers, such as Microsoft Exchange, that are hosted on their corporate network.
 
-
 Intune and Microsoft Enterprise Mobility + Security (EMS) provide a uniquely integrated [Conditional Access solution](conditional-access.md) for Exchange Server, which ensures that no mobile app can access email until that device is enrolled with Intune. You can implement this type of email access without deploying another gateway machine to the edge of your corporate network.
 
 Intune also supports enabling access to mobile apps that require secure access to on-premises data, such as line-of-business app servers. This type of access is typically done using [Intune-managed certificates](certificates-configure.md) for access control, combined with a standard VPN gateway or proxy in the perimeter such as Microsoft Azure Active Directory Application Proxy. 
@@ -56,26 +55,20 @@ In these cases, the only way to access corporate data is to enroll the device in
 
 <!-- Learn more about how to plan and deploy Intune to help secure on-premises email and data. -->
 
-
 ## Protecting your Office 365 email and data so it can be safely accessed by mobile devices
 Protecting corporate data in Office 365 (email, documents, instant messages, contacts) could not be easier for you or more seamless for your users.
 
 Intune and Microsoft Enterprise Mobility + Security provide a uniquely integrated Conditional Access solution that ensures no users, apps, or devices can access Office 365 data unless they meet your company’s compliance requirements (performed [multi-factor authentication](multi-factor-authentication.md), enrolled with Intune, using managed app, supported OS version, device pin, low user risk profile, etc.).
 
-
 The Office mobile apps in their respective app stores are ready to go with data containment policies that you can configure via Intune. This enables you to prevent data from being shared with apps (for example, with native email apps) and storage locations (for example, Dropbox) that aren’t managed by IT. All this functionality is built into Office 365 and EMS. You don't have to deploy additional infrastructure to get this value.
 
 A common Office 365 deployment practice is to require devices to enroll into management if they need to be fully set up with corporate apps, certs, Wi-Fi, or VPN configurations, a common scenario for corporate-owned devices.  
 
-
 However, if your user simply needs to access corporate email and documents, which is often the case for personally owned devices, then you can require the user to use the Office mobile apps (to which you have applied [app protection policies](app-protection-policies.md) and skip enrolling the device altogether.  
-
-
 
 Either way, the Office 365 data will be secured by policies you’ve defined.
 
 <!-- Learn more about how to plan and deploy Intune to help secure Office 365 email and data. -->
-
 
 ## Offer a bring your own device program to all employees
 Bring your own device (BYOD) continues to grow in popularity among organizations as a means to reduce hardware expenditures or increase mobile productivity choices for employees. Just about everyone has a personal phone these days so why put another one in their pocket? The main challenge has always been to convince employees to enroll their personal device into management, as they are fearful of what their IT department will be able to see and do with their device.  

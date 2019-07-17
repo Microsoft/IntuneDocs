@@ -28,7 +28,6 @@ ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
 ---
 
-
 # Enroll your organization-provided iOS device in management
 
 Learn how to get your new iOS device managed in Intune.  

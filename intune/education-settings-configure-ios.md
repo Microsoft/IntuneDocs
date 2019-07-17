@@ -28,7 +28,6 @@ ms.custom: intune-azure
 ms.collection: M365-identity-device-management
 ---
 
-
 # How to configure Intune settings for the iOS Classroom app
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
@@ -57,7 +56,6 @@ Consider the following before you begin to configure these settings:
 - Teacher and student iPads must be on the same Wi-Fi network, and also have Bluetooth enabled.
 - The Classroom app runs on supervised iPads running iOS 9.3 or later.
 - In this release, Intune supports managing a 1:1 scenario where each student has their own dedicated iPad.
-
 
 ## Step 1 - Import your school data into Azure Active Directory
 
@@ -90,7 +88,6 @@ You can import information into SDS by using one of the following methods:
 7. From the **Platform** drop-down list, choose **iOS**.
 8. From the **Profile type** drop-down list, choose **Education**.
 9. Choose **Settings** > **Configure**.
-
 
 In the next section, you'll create certificates to establish a trust relationship between teacher and student iPads. Certificates are used to seamlessly and silently authenticate connections between devices without having to enter user names and passwords.
 

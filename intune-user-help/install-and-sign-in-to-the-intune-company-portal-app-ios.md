@@ -28,7 +28,6 @@ ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
 ---
 
-
 # Install and sign in to the Company Portal app
 
 Install the Company Portal app on your iOS device to get access to your work and school apps, email, and network. Use the app to enroll your device in Microsoft Intune and secure its access to your work or school's resources. For more information, see [What happens if you install the Company Portal app and enroll your device in Intune?](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-ios.md).

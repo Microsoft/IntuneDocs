@@ -75,7 +75,6 @@ The line graph shows the daily incomplete enrollments for each of the four core 
 
 The following tables show the list of user actions that qualify as prompting an incomplete enrollment. To see examples of enrollment screens, you can watch the [iOS](https://channel9.msdn.com/Series/IntuneEnrollment/iOS-Enrollment) and [Android](https://channel9.msdn.com/Series/IntuneEnrollment/Android-Enrollment) enrollment videos. 
 
-
 #### Setup checklist section
 
 | Action name | Screen or flow | Platform | Action |

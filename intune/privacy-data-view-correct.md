@@ -33,7 +33,6 @@ Intune admins can view some personal data based on their access permissions, but
 
 [!INCLUDE [GDPR-related guidance](./includes/gdpr-dsr-and-stp-note.md)]
 
-
 ## View personal data
 
 Admins can see end user personal information in various blades in the Intune UI. The following articles explain what information admins do and don’t have access to:
@@ -52,7 +51,6 @@ You can learn more about Microsoft data practices by reading the Online Services
 ## Correct end user personal data
 
 Admins can’t update device or app specific information. If an end user wants to correct any personal data (like the device name), they must do so directly on their device. Such changes are synchronized the next time they connect to Intune.
-
 
 ## Next steps
 

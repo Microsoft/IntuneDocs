@@ -47,11 +47,9 @@ Complete the following steps to lock your device from the Company app.
 
 2. On the **Device details** page, select the **Remote lock** icon.  
 
-
    ![Screenshot of Company Portal app, Device details page, highlighting Remote lock icon.](./media/1804_remote_lock_Windows_CPapp_05.png)  
 
 3. Select **Lock** to confirm that you want to lock the device. The app will try to lock your device and redirect you to the **Home** page.  
-
 
    ![Screenshot of Company Portal app, Device details page, Remote lock confirmation prompt.](./media/1804_remote_lock_Windows_CPapp_06.png)  
 

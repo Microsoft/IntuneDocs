@@ -61,7 +61,6 @@ The following table lists the requirements for the computer on which you install
 
 Create an Active Directory user account that will be used by the on-premises Exchange connector. The account must have permission to run the following required Windows PowerShell Exchange cmdlets:
 
-
 - Get-ActiveSyncOrganizationSettings, Set-ActiveSyncOrganizationSettings
 - Get-CasMailbox, Set-CasMailbox
 - Get-ActiveSyncMailboxPolicy, Set-ActiveSyncMailboxPolicy, New-ActiveSyncMailboxPolicy, Remove-ActiveSyncMailboxPolicy
@@ -141,8 +140,6 @@ After the Exchange connector sets up the connection, mobile devices that are ass
 > [!NOTE]
 > If you have installed the on-premises Exchange connector, and if at some point you delete the Exchange connection, you must uninstall the on-premises Exchange connector from the computer onto which it was installed.
 
-
-
 ## Install connectors for multiple Exchange organizations
 Intune supports multiple on-premises Exchange connectors per subscription. For a tenant with multiple Exchange organizations, you can set up a connector for each Exchange organization, but only a single connector for any single organization. 
 
@@ -157,7 +154,6 @@ To accomplish failover, after the connector creates a successful connection to E
 1. On the server where the Exchange connector is installed, go to %*ProgramData*%\Microsoft\Windows Intune Exchange Connector. 
 2. Using a text editor, open **OnPremisesExchangeConnectorServiceConfiguration.xml**.
 3. Change &lt;IsCasFailoverEnabled&gt;**true**&lt;/IsCasFailoverEnabled&gt; to &lt;IsCasFailoverEnabled&gt;**false**&lt;/IsCasFailoverEnabled&gt; to disable the feature.    
- 
 
 ## Reinstall the on-premises Exchange connector
 You might need to reinstall an Exchange connector. Because a single connector is supported to connect to each Exchange organization, if you install a second connector for an organization, the new connector you install replaces the original connector.
@@ -169,7 +165,6 @@ You might need to reinstall an Exchange connector. Because a single connector is
 3. Continue using the steps form the previous procedure, and log into Intune again.
 4. When presented with the final screen, select **Close** to complete the install.  
    ![Complete setup](./media/exchange-connector-install/successful-reinstall.png)
- 
 
 ## Monitor the Exchange connector activity
 
@@ -191,7 +186,6 @@ An on-premises Exchange connector automatically synchronizes EAS and Intune devi
 - **Quick sync** occurs regularly, several times a day. A quick sync retrieves device information for Intune-licensed and on-premises Exchange Conditional Access-targeted users that have changed since the last sync.
 
 - **Full sync** occurs once per day by default. A full sync retrieves device information for all Intune-licensed and on-premises Exchange Conditional Access-targeted users. A full sync also retrieves Exchange server information and ensures that the configuration specified by Intune in the Azure portal is updated on the Exchange server. 
-
 
 You can force a connector to run a sync by using the **Quick Sync** or **Full Sync** options on the Intune dashboard with the following steps:
 

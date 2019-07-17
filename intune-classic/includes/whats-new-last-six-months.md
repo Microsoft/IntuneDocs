@@ -91,7 +91,6 @@ If you are a partner administrator, you will no longer be able to view and take 
 
 Both the [Microsoft Partner Center](https://partnercenter.microsoft.com/) and the [Microsoft 365 admin center](https://admin.microsoft.com/) will allow you to sign in to the customer accounts you manage. Moving forward as a partner, please use one of these sites to manage your customers.
 
-
 #### Apple to require updates for Application Transport Security <!--748318-->
 
 Apple has announced that they will enforce specific requirements for Application Transport Security (ATS). ATS is used to enforce stricter security on all app communications over HTTPS. This change impacts Intune customers using the iOS Company Portal apps.
@@ -133,7 +132,6 @@ As part of the design changes on the Company Portal website, iOS and Android use
 
 If you need to download and sideload the Windows 10 Company Portal app, you can now use a script to simplify and streamline the app-signing process for your organization.   To download the script and the instructions for using it, see  [Microsoft Intune Signing Script for Windows 10 Company Portal](https://aka.ms/win10cpscript) on TechNet Gallery. For more details about this announcement, see [Updating your Windows 10 Company Portal app](https://blogs.technet.microsoft.com/intunesupport/2017/03/13/updating-your-windows-10-company-portal-app/) on the Intune Support Team Blog.
 
-
 ### Notices
 
 #### Support for iOS 10.3
@@ -164,7 +162,6 @@ Microsoft is continuously improving Intune by adding new functions to both the c
 #### Microsoft Teams is now enabled for MAM on iOS and Android
 
 Microsoft has announced the general availability of Microsoft Teams. The updated Microsoft Teams apps for iOS and Android are now enabled with Intune mobile app management (MAM) capabilities, so you can empower your teams to work freely across devices, while ensuring that conversations and corporate data is protected at every turn. For more details, see [the Microsoft Teams announcement](https://blogs.technet.microsoft.com/enterprisemobility/2017/03/14/microsoft-teams-is-now-generally-available-and-mam-enabled-on-ios-and-android/) on the Enterprise Mobility and Security blog.
-
 
 ## February 2017
 

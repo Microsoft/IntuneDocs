@@ -44,7 +44,6 @@ Intune MAM supports two configurations:
 
 - **MAM without device enrollment**: MAM without device enrollment, or MAM-WE, allows IT administrators to manage apps using MAM and app protection policies on devices not enrolled with Intune MDM. This means apps can be managed by Intune on devices enrolled with third-party EMM providers. To manage apps using MAM-WE, customers should use the Intune console in the Azure portal at https://portal.azure.com. Also, apps can be managed by Intune on devices enrolled with third-party Enterprise Mobility Management (EMM) providers or not enrolled with an MDM at all.
 
-
 ## App protection policies
 
 **What are app protection policies?**<br></br>
@@ -173,8 +172,6 @@ Intune app protection depends on the identity of the user to be consistent betwe
 **Is there a secure way to open web links from managed apps?**<br></br>
 Yes! The IT administrator can deploy and set app protection policy for the [Intune Managed Browser app](app-configuration-managed-browser.md), a web browser developed by Microsoft Intune that can be managed easily with Intune. The IT administrator can require all web links in Intune-managed apps to be opened using the Managed Browser app.
 
-
-
 ## App experience on Android
 
 **Why is the Company Portal app needed for Intune app protection to work on Android devices?**<br></br>
@@ -219,7 +216,6 @@ Intune app protection policy cannot control the iOS share extension without mana
 Intune app protection policies for access will be applied in a specific order on end user devices as they try to access a targeted app from their corporate account. In general, a wipe would take precedence, followed by a block, then a dismissible warning. For example, if applicable to the specific user/app, a minimum iOS operating system setting that warns a user to update their iOS version will be applied after the minimum iOS operating system setting that blocks the user from access. So, in the scenario where the IT admin configures the min iOS operating system to 11.0.0.0 and the min iOS operating system (Warning only) to 11.1.0.0, while the device trying to access the app was on iOS 10, the end user would be blocked based on the more restrictive setting for min iOS operating system version that results in blocked access.
 
 When dealing with different types of settings, an Intune App SDK version requirement would take precedence, then an app version requirement, followed by the iOS operating system version requirement. Then, any warnings for all types of settings in the same order are checked. We recommend the Intune App SDK version requirement be configured only upon guidance from the Intune product team for essential blocking scenarios.
-
 
 ## See also
 - [Implement your Intune plan](planning-guide-onboarding.md)

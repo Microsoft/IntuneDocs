@@ -78,9 +78,6 @@ How you purchased Intune determines your subscription information:
 - If you purchased Intune through a Cloud Solution Provider, check with your reseller.
 - If you purchased Intune with a CC# or Invoice, then your licenses will be user-based.
 
-
-
-
 ## Use PowerShell to selectively manage EMS user licenses
 Organizations that use Microsoft Enterprise Mobility + Security (formerly Enterprise Mobility Suite) might have users who only require Azure Active Directory Premium or Intune services in the EMS package. You can assign one or a subset of services using [Azure Active Directory PowerShell cmdlets](https://msdn.microsoft.com/library/jj151815.aspx).
 
@@ -101,7 +98,6 @@ Create a new user on the command line and assign an EMS license without enabling
 
     $CustomEMS = New-MsolLicenseOptions -AccountSkuId "<TenantName>:EMS" -DisabledPlans INTUNE_A
     Set-MsolUserLicense -UserPrincipalName user@<TenantName>.onmicrosoft.com -AddLicenses <TenantName>:EMS -LicenseOptions $CustomEMS
-
 
 Verify with:
 

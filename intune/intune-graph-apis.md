@@ -334,7 +334,6 @@ If this happens, verify that:
 
 - Your code is similar to the displayed samples.
 
-
 ### Authenticate Azure AD in C\#
 
 This example shows how to use C# to retrieve a list of devices associated with your Intune account.

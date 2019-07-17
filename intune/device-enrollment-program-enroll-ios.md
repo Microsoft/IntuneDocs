@@ -83,7 +83,6 @@ You use the Apple DEP portal to create a DEP token. You also use the DEP portal 
 
 3. Choose **Download your public key** to download and save the encryption key (.pem) file locally. The .pem file is used to request a trust-relationship certificate from the Apple Device Enrollment Program portal.
 
-
 ### Step 2. Use your key to download a token from Apple.
 
 1. Choose **Create a token for Apple's Device Enrollment Program** to open Apple's Deployment Program portal, and sign in with your company Apple ID. You can use this Apple ID to renew your DEP token.
@@ -126,7 +125,6 @@ Now that you've installed your token, you can create an enrollment profile for D
 
 > [!NOTE]
 > Devices will be blocked if there are not enough Company Portal licenses for a VPP token, or if the token has expired. Intune will display an alert when a token is about to expire or licenses are running low.
- 
 
 1. In Intune in the Azure portal, choose **Device enrollment** > **Apple Enrollment** > **Enrollment program tokens**.
 2. Select a token, choose **Profiles**, and then choose **Create profile**.
@@ -195,7 +193,6 @@ Now that you've installed your token, you can create an enrollment profile for D
 15. Choose **Setup Assistant customization** to configure the following profile settings:
     ![Setup Assistant Customization.](./media/device-enrollment-program-enroll-ios/setupassistantcustom.png)
 
-
     | Department settings | Description |
     |---|---|
     | <strong>Department Name</strong> | Appears when users tap <strong>About Configuration</strong> during activation. |
@@ -204,7 +201,6 @@ Now that you've installed your token, you can create an enrollment profile for D
     You can choose to hide Setup Assistant screens on the device during user setup.
     - If you choose **Hide**, the screen won't be displayed during setup. After setting up the device, the user can still go in to the **Settings** menu to set up the feature.
     - If you choose **Show**, the screen will be displayed during setup. The user can sometimes skip the screen without taking action. But they can then later go into the device's **Settings** menu to set up the feature. 
-
 
     | Setup Assistant screen settings | If you choose **Show**, during setup the device will... |
     |------------------------------------------|------------------------------------------|
@@ -241,7 +237,6 @@ Now that Intune has permission to manage your devices, you can synchronize Intun
    To follow Apple’s terms for acceptable enrollment program traffic, Intune imposes the following restrictions:
    - A full sync can run no more than once every seven days. During a full sync, Intune fetches the complete updated list of serial numbers assigned to the Apple MDM server connected to Intune. If a DEP device is deleted from the Intune portal, it should be unassigned from the Apple MDM server in the DEP portal. If it's not unassigned, it won't be reimported to Intune until the full sync is run.   
    - A sync is run automatically every 24 hours. You can also sync by clicking the **Sync** button (no more than once every 15 minutes). All sync requests are given 15 minutes to finish. The **Sync** button is disabled until a sync is completed. This sync will refresh existing device status and import new devices assigned to the Apple MDM server.   
-
 
 ## Assign an enrollment profile to devices
 You must assign an enrollment program profile to devices before they can enroll.

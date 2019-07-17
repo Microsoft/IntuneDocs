@@ -41,7 +41,6 @@ For devices that are not enrolled in Intune, the Company Portal app must be inst
 
 The Company Portal app is a way for Intune to share data in a secure location. Therefore, the Company Portal app is a requirement for all apps that are associated with app protection policies, even if the device is not enrolled in Intune.
 
-
 ## Use apps with multi-identity support
 
 App protection polices are only applied in the work context. Therefore, the app might behave differently depending on whether the context is work or personal.
@@ -76,7 +75,6 @@ The following file types are supported:
 * **Video:** H.263, H.264 AVC, MPEG-4 SP, VP8
 * **Image:** .jpg, .pjpg, .png, .ppng, .bmp, .pbmp, .gif, .pgif, .jpeg, .pjpeg
 * **Documents:** PDF, PPDF
-
 
 |**pfile**|
 |----|

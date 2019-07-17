@@ -30,7 +30,6 @@ ms.collection: M365-identity-device-management
 
 # Turn on iOS supervised mode
 
-
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 Apple iOS supervised mode gives administrators more options when managing Apple devices, making it useful for corporate-owned devices deployed at scale. For example, you can restrict AirDrop or prevent users from changing the name of the device. For a list of settings which require supervised mode, see [iOS device restriction settings in Intune](device-restrictions-ios.md).

@@ -27,7 +27,6 @@ ms.custom: intune-classic
 ms.collection: M365-identity-device-management
 ---
 
-
 # How your Android users get their apps
 
 [!INCLUDE [both-portals](./includes/note-for-both-portals.md)]
@@ -47,7 +46,6 @@ Your end users need to allow installation from unknown sources in order to insta
 * **Android 8.0 and above**: **Settings** > **Apps & notifications** > **Special app access** > **Install unknown apps** > **Company Portal** > **Allow from this source**
 
 If this occurs, the Company Portal app will inform and directly guide the end user to the appropriate setting. 
-
 
 ## Samsung Knox Standard Android devices
 

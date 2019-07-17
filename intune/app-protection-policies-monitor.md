@@ -107,7 +107,6 @@ Additional reports are available to help you with the MAM policy compliance stat
 
 The **Reports** blade provides several reports based on user and app, including the following:
 
-
 - **User report**: This report outlines the same information you can find at the **User status** report under the [Detailed view](app-protection-policies-monitor.md#detailed-view) section above.
 
 - **App report**: In addition to selecting the platform and app, this report provides two different app protection statuses that you can select before generating the report. The statuses can be **Protected** or **Unprotected**.

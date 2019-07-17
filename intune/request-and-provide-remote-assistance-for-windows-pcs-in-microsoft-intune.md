@@ -35,7 +35,6 @@ The information in this topic applies only to Windows desktops that you are mana
 
 Intune can use the [TeamViewer](https://www.teamviewer.com) software, purchased separately, to enable you to give remote assistance to your users who are running the Intune software client. When a user requests help from the Microsoft Intune Center, you are informed by an alert, can accept the request, and then provide assistance. This functionality replaces the existing Windows Remote Assistance functionality in Intune.
 
-
 ## Before you start
 
 Before you begin to establish and to respond to remote assistance requests, ensure that the following prerequisites are in place:
@@ -53,7 +52,6 @@ Before you begin to establish and to respond to remote assistance requests, ensu
 5. After the TeamViewer browser window opens, sign into the site with your TeamViewer credentials.
 6. On the TeamViewer site, read, then accept the options to allow Intune to connect with TeamViewer.
 7. In the Intune console, verify that the **TeamViewer Connector** item shows as **Enabled**.
-
 
 ## Open a remote assistance request (end user)
 

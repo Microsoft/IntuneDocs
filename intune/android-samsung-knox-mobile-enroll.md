@@ -41,9 +41,7 @@ To enable Intune enrollment using Samsung KME, you use both the Intune and Samsu
 2. In the Knox portal, [configure end user sign in](#configure-how-end-users-sign-in).
 3. [Distribute the devices](#distribute-devices).
 
-
 A list of device identifiers (serial numbers and IMEIs) are automatically added to the Knox Portal when purchasing devices from authorized resellers participating in the Knox Deployment Program.
-
 
 ## Prerequisites
 
@@ -134,8 +132,5 @@ Still need help? Check out the complete [Knox Mobile Enrollment User Guide](http
 
 - **"Password" field is ignored:** If the **password** field is populated in **Device details** in the Knox Portal, it is ignored by the Intune Company Portal app during Android enrollment. The end user must enter a password on the device to complete device enrollment.
 
-
 ## Getting support
 Learn more about [how to get support for Samsung KME](https://docs.samsungknox.com/KME-Getting-Started/Content/to-get-kme-support.htm).
-
-

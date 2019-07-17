@@ -44,10 +44,8 @@ To get Company Portal:
 
 If you're required to use the Microsoft Intune app, your organization will install it for you.  
 
-
 ## What information can my company see when I enroll?
 After your device is enrolled, your organization's support people can only see information that's relevant to work. They cannot see your personal information. If you're enrolling a personal device for use at work, [learn exactly what can and can't be seen](what-info-can-your-company-see-when-you-enroll-your-device-in-intune.md).  
-
 
 ## What's the difference between the apps and the website?
 The Company Portal app is available for Windows 10, iOS, macOS, and Android devices. It integrates seamlessly with your device's respective platform. The website version is accessible from any device and gives you the same, universal experience no matter what device you're using. 
@@ -107,5 +105,3 @@ Get the help starting with enrollment, that's specific to your device's platform
 - [Using your macOS device](using-your-macos-device-with-intune.md)
 - [Using your Windows device](using-your-windows-device-with-intune.md)
 - [Using the Company Portal website](using-the-intune-company-portal-website.md)
-
-

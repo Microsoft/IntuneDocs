@@ -77,7 +77,6 @@ Now you need to identify the organizational groups that are associated with each
 | BYOD | Information worker | Marketing, Sales |            
 | BYOD | Executive | Marketing, Sales |
 
-
 ## Mobile device platforms for your scenarios
 
 The next step is to identify the mobile device platforms associated with each use-case scenario. There may be more than one.

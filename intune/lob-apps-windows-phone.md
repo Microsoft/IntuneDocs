@@ -48,7 +48,6 @@ Use the information in this article to add a Windows Phone line-of-business (LOB
 2. In the **App package file** pane, select the browse button. Then select a Windows Phone installation file with the extension **.xap**.
 3. When you're finished, select **OK**.
 
-
 ## Step 3: Configure app information
 
 1. In the **Add app** pane, select **App information**.

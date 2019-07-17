@@ -79,7 +79,6 @@ This preview supports the following features for Android Enterprise fully manage
 - Device configuration for user groups
 - App distribution and configuration for user groups
 
-
 When using these preview features, keep the following in mind:
 - Features in preview aren't recommended for mission-critical or production deployments. 
 - Preview features are implemented to Microsoft Intune production standards. However, not all Intune features are available for use with Android Enterprise fully managed user devices. Preview features are clearly labeled with “(preview)” in the Intune console. 
@@ -93,4 +92,3 @@ When using these preview features, keep the following in mind:
 ## Next steps
 - [Add Android Enterprise fully managed device configuration policies](device-restrictions-android-for-work.md#device-owner-only)
 - [Configure app configuration policies for Android Enterprise fully managed devices](app-configuration-policies-use-android.md)
-

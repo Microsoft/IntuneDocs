@@ -48,7 +48,6 @@ Here are a few examples of an organization’s use-case requirements showing dif
 
 You can [download a template of the above table](https://gallery.technet.microsoft.com/Intune-deployment-planning-fae156c2?redir=0) to enter your organization’s use-case and sub-use-case requirements.
 
-
 ## Examples of requirements
 
 Here are a few more examples that can be used in the "Requirements" column:

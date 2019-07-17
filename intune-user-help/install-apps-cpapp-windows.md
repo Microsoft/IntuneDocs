@@ -98,7 +98,6 @@ To get to this page, go to the navigation menu and select **Installed apps**.
 
   ![Example screenshot of the Company Portal app for Windows 10, Installed apps page. ](./media/installed-apps-cp-1906.png)  
 
-
 Use **Sort by** to rearrange the apps assignment type, publisher, alphabetically by name, or chronologically by publish date. Use **Filter by** to limit the apps you see by installation status.  If no apps are available, you'll see a message that no company apps were installed.  
 
 Need additional help? Contact your company support. For contact information, check the [Company Portal website](https://go.microsoft.com/fwlink/?linkid=2010980).  

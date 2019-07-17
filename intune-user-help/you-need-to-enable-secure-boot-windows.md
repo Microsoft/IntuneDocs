@@ -28,7 +28,6 @@ ms.custom: intune-enduser; seodec18
 ms.collection: M365-identity-device-management
 ---
 
-
 # You need to enable Secure Boot
 
 Your organization requires that you enable Windows Secure Boot, which is a security feature that helps to protect your device.

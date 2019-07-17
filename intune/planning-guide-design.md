@@ -107,7 +107,6 @@ Make sure to note any projects or any other plans in place that could affect you
 | **System Management** | System Center Configuration Manager CB 1606 | Would like to investigate Intune hybrid solution |
 | **VPN solution** | Cisco AnyConnect |  |
 
-
 You can [download a template of the above table](https://gallery.technet.microsoft.com/Intune-deployment-planning-fae156c2?redir=0) to develop your Intune design plan.
 
 ## Choose an Intune deployment option
@@ -116,7 +115,6 @@ Intune offers two deployment options: standalone and hybrid. Standalone refers t
 
 > [!Important]
 >Onboarding of new hybrid MDM customers has been deprecated. For more information, see the [Move from Hybrid Mobile Device Management to Intune on Azure](https://techcommunity.microsoft.com/t5/Intune-Customer-Success/Move-from-Hybrid-Mobile-Device-Management-to-Intune-on-Azure/ba-p/280150) blog post.
-
 
 ## Intune tenant location
 
@@ -180,9 +178,6 @@ Learn more about:
 
 - [How to configure the certificate infrastructure for PFX](certficates-pfx-configure.md)
 
-
-
-
 ## Device platform considerations
 
 Take a closer look at the following aspects of your devices to understand how to manage them correctly.
@@ -213,7 +208,6 @@ Intune manages mobile devices to secure corporate data and allow end users to wo
 | iOS - iPad | 10.0+ |               
 | Android – Samsung Knox Standard | 4.0+ |
 | Windows 10 tablet | 10+ |
-
 
 You can [download a template of the above table](https://gallery.technet.microsoft.com/Intune-deployment-planning-fae156c2?redir=0) to develop your list of devices.
 ### Device ownership
@@ -255,7 +249,6 @@ You need to determine if terms and condition policies are needed. If so, who wil
 | Corporate T&C | Corporate | Corporate users |                 
 | BYOD T&C | BYOD | BYOD users |                
 
-
 You can [download a template of the above table](https://gallery.technet.microsoft.com/Intune-deployment-planning-fae156c2?redir=0) to map your terms and conditions to your user groups.
 
 ### Configuration policies
@@ -270,7 +263,6 @@ You should create at least one configuration policy per platform. You can create
 | Corporate - Android | Android | PIN is required, Length: 6, Restrict Cloud Backup | Corporate Devices |                                                           
 | BYOD – iOS  | iOS | PIN is required, Length: 4 | BYOD devices |
 | BYOD – Android  | Android | PIN is required, Length: 4 | BYOD devices |
-
 
 You can [download a template of the above table](https://gallery.technet.microsoft.com/Intune-deployment-planning-fae156c2?redir=0) to identify your configuration policy needs.
 
@@ -310,7 +302,6 @@ Here’s an example how you can document the certificates during the design:
 | Root CA | Corporate Root CA | Android, iOS, Windows mobile | Corporate, BYOD  |                                                           
 | SCEP | User Certificate | Android, iOS, Windows mobile | Corporate, BYOD |                                                           
 
-
 You can [download a template of the above table](https://gallery.technet.microsoft.com/Intune-deployment-planning-fae156c2?redir=0) to identify your certificate profile needs.
 
 #### Wi-Fi profile
@@ -323,7 +314,6 @@ Below is an example of a design for a Wi-Fi profile:
 |:---:|:---:|:---:|:---:|
 | Wi-Fi | Asia Wi-Fi profile | Android | Corporate, BYOD Asia region|                                                           
 | Wi-Fi | North America Wi-Fi profile | Android, iOS, Windows 10 Mobile | Corporate, BYOD North America region |                                                           
-
 
 You can [download a template of the above table](https://gallery.technet.microsoft.com/Intune-deployment-planning-fae156c2?redir=0) to identify your Wi-Fi profile needs.
 
@@ -338,7 +328,6 @@ Below is an example of documenting the design of a VPN profile.
 | VPN | VPN Cisco any connect Profile | Android, iOS, Windows 10 Mobile | Corporate, BYOD North America and Germany|                                                           
 | VPN | Pulse Secure | Android | Corporate, BYOD Asia region |                                                           
 
-
 You can [download a template of the above table](https://gallery.technet.microsoft.com/Intune-deployment-planning-fae156c2?redir=0) to identify your VPN profile needs.
 #### Email profile
 
@@ -350,7 +339,6 @@ Below is an example of documenting the design of email profiles:
 |:---:|:---:|:---:|:---:|
 | Email profile | iOS email profile | iOS | Corporate – Information worker BYOD |                                                           
 | Email profile | Android Knox email profile | Android Knox | BYOD |
-
 
 You can [download a template of the above table](https://gallery.technet.microsoft.com/Intune-deployment-planning-fae156c2?redir=0) to identify your email profile needs.
 ### Apps
@@ -379,7 +367,6 @@ Since apps can be deployed to users and devices, we recommend that you decide wh
 
 - Are the apps publicly available in an app store, or are they custom line-of-business (LOB) apps?
 
-
 #### App protection policies
 
 App protection policies minimize data loss by defining how the application manages the corporate data. Intune supports app protection policies for any application built to function with mobile app management. When you design the app protection policy, you need to decide what restrictions you want to place on corporate data in a given app. We recommend that you review how [app protection policies](app-protection-policy.md) work. Below is an example of how to document the existing applications and what protection is needed.
@@ -388,7 +375,6 @@ App protection policies minimize data loss by defining how the application manag
 |:---:|:---:|:---:|:---:|:---:|
 | Outlook mobile  | Available | iOS | Corporate - Executives | Cannot be jail broken, encrypt files |                                                         
 | Word | Available | iOS, Android - Samsung Knox, non-Knox, Windows 10 mobile | Corporate, BYOD | Cannot be jail broken, encrypt files |                                                         
-
 
 You can [download a template of the above table](https://gallery.technet.microsoft.com/Intune-deployment-planning-fae156c2?redir=0) to identify your app protection policy needs.
 #### Compliance policies
@@ -402,7 +388,6 @@ Below is an example of how to design a compliance policy:
 | **Policy name** | **Device platform** | **Settings** | **Target group** |   
 |:---:|:---:|:---:|:---:|
 | Compliance policy | iOS, Android - Samsung Knox, non-Knox, Windows 10 mobile | PIN - required, cannot be jail broken | Corporate, BYOD |
-
 
 You can [download a template of the above table](https://gallery.technet.microsoft.com/Intune-deployment-planning-fae156c2?redir=0) to identify your compliance policy needs.
 #### Conditional Access policies

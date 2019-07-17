@@ -62,7 +62,6 @@ To create a new work profile passcode, use the Reset Passcode action. This actio
 
 ## Reset a passcode
 
-
 1. Sign in to the [Azure portal](https://portal.azure.com) with any of the following roles: Azure Active Directory Global Admin, Azure Active Directory Intune Service Admin, Helpdesk Operator, or Role Administrator. For a full list of roles and permissions, see the [Intune RBAC Table](https://gallery.technet.microsoft.com/Intune-RBAC-table-2e3c9a1a).
 2. Select **All services**, filter on **Intune**, and then select **Microsoft Intune**.
 3. Select **Devices**, and then select **All devices**.
@@ -73,7 +72,6 @@ To create a new work profile passcode, use the Reset Passcode action. This actio
 Supported Android Enterprise devices enrolled with a work profile receive a new managed profile unlock password or a managed profile challenge for the end user.
 
 For Android Enterprise devices running version 8.x or later and enrolled with a work profile, end users get notified to activate their reset passcode right after enrollment is completed. The notification is displayed if a work profile password is required and set. Once their passcode is entered, the notification is dismissed.
-
 
 ## Remove iOS passcodes
 

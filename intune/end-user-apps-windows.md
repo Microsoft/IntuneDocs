@@ -27,7 +27,6 @@ ms.custom: intune-classic
 ms.collection: M365-identity-device-management
 ---
 
-
 # How your Windows users get their apps
 
 [!INCLUDE [both-portals](./includes/note-for-both-portals.md)]

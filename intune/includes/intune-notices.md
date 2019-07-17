@@ -23,7 +23,6 @@ Ask end users of Android devices that have not updated to update the company por
 #### Additional information
 https://firebase.google.com/docs/cloud-messaging/
 
-
 ### New Fullscreen experience coming to Intune <!--4593669-->
 We’re rolling out updated create and edit UI experiences to Intune in the Azure portal. This new experience will simplify the existing workflows by using a wizard style format condensed within one blade. This update will do away with “blade sprawl” or any create and edit flows that require you to drill down into deep blade journeys. The create workflows will also be updated to include Assignments (except for App assignment).
 

@@ -47,7 +47,6 @@ The **User** entity collection contains user data. These records include user st
 | IsDeleted                  | Indicates whether all of the user's licenses have expired   and whether the user was therefore removed from Intune. For a single record,   this flag does not change. Instead, a new record is created for a new user   state. | True/False                           |
 | RowLastModifiedDateTimeUTC | Date and time in UTC when the record was last modified in   the data warehouse                                                                                                                                                 | 11/23/2016 0:00                      |
 
-
 ## Next steps
 - You can use the **Current User** entity collection to limit the user data to users who are currently active. For more information, see [Reference for current user entity](reports-ref-current-user.md).
 - To learn more about how the data warehouse tracks a user's lifetime in Intune, see [User lifetime representation in the Intune Data Warehouse](reports-ref-user-timeline.md).

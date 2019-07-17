@@ -45,7 +45,6 @@ For more information about configuration service providers (CSPs), see [Configur
 
  [WindowsDefenderApplicationGuard CSP](https://docs.microsoft.com/windows/client-management/mdm/windowsdefenderapplicationguard-csp)  
 
-
 While using Microsoft Edge, Windows Defender Application Guard protects your environment from sites that aren't trusted by your organization. When users visit sites that aren’t listed in your isolated network boundary, the sites open in a Hyper-V virtual browsing session. Trusted sites are defined by a network boundary, which are configured in Device Configuration.
 
 Application Guard is only available for Windows 10 (64-bit) devices. Using this profile installs a Win32 component to activate Application Guard.
@@ -98,13 +97,11 @@ These settings are applicable to specific network types, including **Domain (wor
 - **Windows Defender Firewall rules from the local store**: Choose **Enable** to apply firewall rules in the local store to be recognized and enforced. When **Not configured** (default), the firewall rules from the local store are ignored and not enforced.
 - **IPsec rules from the local store**: Choose **Enable** to apply connection security rules from the local store, regardless of schema or connection security rule versions. When **Not configured** (default), the connection security rules from the local store are ignored and not enforced, regardless of the schema version and connection security rule version.
 
-
 ## Windows Defender SmartScreen settings
 
 [Policy CSP - SmartScreen](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-smartscreen)  
 
 Microsoft Edge must be installed on the device. 
-
 
 **Settings**:
 
@@ -290,7 +287,6 @@ Once enabled, Application Control can only be disabled by changing the mode from
 
 [Policy CSP - DeviceGuard](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-deviceguard)
 
-
 Windows Defender Credential Guard protects against credential theft attacks. It isolates secrets so that only privileged system software can access them.
 
 The **Credential Guard** settings include:
@@ -337,7 +333,6 @@ Provide IT contact information to appear in the Windows Defender Security Center
 ## Local device security options
 
 [Policy CSP - LocalPoliciesSecurityOptions](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-localpoliciessecurityoptions)  
-
 
 Use these options to configure the local security settings on Windows 10 devices.
 

@@ -75,8 +75,6 @@ These policy settings enable Windows Firewall on managed computers that are:
 
 The default value for each of these settings is **Yes**, which is the most secure value.
 
-
-
 ### Block all incoming connections, including those in the list of allowed programs
 
 These policy settings configure Windows Firewall to block incoming network traffic on managed computers that are:
@@ -97,7 +95,6 @@ These policy settings determine whether Windows Firewall notifies a PC user when
 - Connected to an untrusted public network (such as a coffee shop)
 
 The default value for each of these settings is **Yes**.
-
 
 ### Configure predefined exceptions
 

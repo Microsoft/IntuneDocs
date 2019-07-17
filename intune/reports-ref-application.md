@@ -86,7 +86,6 @@ The **AppTypes** entity lists the installation source of an app.
 | 11 |Windows Mobile MSI | An MSI line-of-business app. |
 | 12 |Windows Phone LOB app | A Windows phone line-of-business app. |
 
-
 ## VppProgramTypes
 
 The **VppProgramTypes** entity lists possible VPP program types for an app.
@@ -104,8 +103,6 @@ The **VppProgramTypes** entity lists possible VPP program types for an app.
 | 3DDA2474-470B-4503-9830-2665C21C1945 | Microsoft | Microsoft's VPP program. |
 | 00000000-0000-0000-0000-000000000000 | Not Yet Available | Default value, No VPP. |
 | B54814E0-68EA-4BA4-8088-B5AAB58E737B | Apple | Apple's VPP program. |
-
-
 
 ## ApplicationInventory
 
@@ -128,6 +125,3 @@ The **MobileAppInstallState** entity represents the install state for a mobile a
 | AppInstallStateKey | The unique ID of the app install state for your account. |
 | AppInstallState | Enum value of the app install state. |
 | AppInstallStateName | Name of the app install state. |
-
-
-

@@ -54,7 +54,6 @@ The Wandera Mobile Threat Defense app authorization process:
 - Allow the Wandera RADAR admin portal to use Azure AD Single Sign On (SSO).  
 - Allow the Wandera Mobile Threat Defense app to sign in using Azure AD SSO.  
 
-
 ## Set up Wandera Mobile Threat Defense integration  
 Setup of *EMM Connect* for Wandera requires a one-time configuration process that you complete in both the Intune and Wandera consoles. The configuration process takes about 15 minutes. You can complete the configuration without coordination with your Wandera technical account or support representative.  
 
@@ -99,7 +98,6 @@ Create client apps in Intune to deploy the Wandera app to Android and iOS device
 
 After you create the apps, return here to create the synchronization group and assign the apps.  
 
-
 ### Create the synchronization group and assign the apps
 
 1. Get the name of the **SyncOnly** group that appears below **EMM Label** from within the Wandera RADAR console. You might have saved this name during step 7 while [enabling support for Wandera in Intune](#enable-support-for-wandera-in-intune). Use this name as the name of the group in Intune for Wandera synchronization.  
@@ -126,8 +124,6 @@ Repeat the following procedure for the Wandera app you created for iOS and for A
 3. On the *Add group* pane, for *Assignment type* select **Required**.
 
 4. Select **Included groups**, and then **Select groups to include**. Specify the group you created for Wandera synchronization, and then click **Select** > **OK** > **OK**. Select **Save** to complete the group assignment.  
- 
 
 ## Next Steps  
 Now that you have configured the Integration, you can start configuring policies, set up advanced conditional access, and view reports in the Wandera admin console. To learn more about managing and configuring Wandera, see the [Support Center Getting Started Guide](https://radar.wandera.com/?return_to=https://wandera.force.com/Customer/s/getting-started) in the Wandera documentation.  
- 

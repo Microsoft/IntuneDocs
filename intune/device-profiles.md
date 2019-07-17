@@ -196,7 +196,6 @@ This feature supports:
 
 [PowerShell scripts on Windows 10 devices](intune-management-extension.md) uses the Intune Management Extension to upload your PowerShell scripts in Intune, and then run these scripts on your devices. Also see what's required to use the extension, how to add them to Intune, and other important information.
 
-
 This feature supports:
 
 - Windows 10 and later

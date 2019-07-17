@@ -277,9 +277,6 @@ To add apps to these lists, you can:
 > - With the following URL, the app isn't *visible* or *hidden* on the device (doesn't work): 
 >   - https://**apps**.apple.com/de/app/microsoft-word/id586447913  
 
- 
-
-
 ## Wireless
 
 - **Data roaming**: Choose **Block** to prevent data roaming over the cellular network. **Not configured** (default) allows data roaming when the device is on a cellular network.

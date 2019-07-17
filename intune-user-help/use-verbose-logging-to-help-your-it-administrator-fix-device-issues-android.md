@@ -28,7 +28,6 @@ ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
 ---
 
-
 # Configure logging settings
 
 Configure your logging settings to let the Company Portal app, Microsoft Intune app, and Intune-managed apps record app actions. If you ever experience a problem in the app, and then report it, your support team will review these logs for more details. 

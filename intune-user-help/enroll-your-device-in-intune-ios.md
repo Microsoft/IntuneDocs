@@ -28,7 +28,6 @@ ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
 ---
 
-
 # Set up iOS device access to your company resources  
 
 Enroll your iOS device with the Intune Company Portal app to gain secure access to your organization's email, files, and apps.
@@ -104,7 +103,6 @@ Pausing for more than a few minutes during enrollment might cause the app to clo
 10. Enter your device password. Then tap **Install**.    
 
     ![Example screenshot of the Settings app, Installing Profile screen, with a cursor on the **Install** button.](./media/ios-10-cp-enroll-1904.PNG)  
-
 
 11. The next screen is a standard system warning for device management. To continue with installation, tap **Install**. If prompted to trust remote management, tap **Trust**.  
 

@@ -30,7 +30,6 @@ ms.collection: M365-identity-device-management
 
 # Logout the current user on Intune-managed iOS devices
 
-
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 The **Logout current user** action logs out the current user on a shared iPad device. 

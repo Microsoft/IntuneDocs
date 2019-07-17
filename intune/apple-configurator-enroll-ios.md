@@ -76,7 +76,6 @@ A device enrollment profile defines the settings applied during enrollment. Thes
     >
     > These are not supported when authenticating with Apple Setup Assistant.
 
-
 6. Choose **Create** to save the profile.
 
 ## Setup Assistant enrollment
@@ -170,8 +169,3 @@ Apps requiring user affiliation, including the Company Portal app used for insta
 6. On the iOS device, open **Settings** and go to **General** > **Device Management** > **Management Profile**. Confirm that the profile installation is listed, and check the iOS policy restrictions and installed apps. Policy restrictions and apps might take up to 10 minutes to appear on the device.
 
 7. Distribute devices. The iOS device is now enrolled in Intune and managed.
-
-
-
-
-

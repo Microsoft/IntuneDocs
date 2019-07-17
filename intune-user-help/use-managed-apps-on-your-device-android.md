@@ -28,7 +28,6 @@ ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
 ---
 
-
 # Use managed apps on your Android device
 Managed apps are configured to meet your organization's security requirements, and protect work and school data. These apps are made available to you on your device to install or use automatically. 
 

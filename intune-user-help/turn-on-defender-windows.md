@@ -28,7 +28,6 @@ ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
 ---
 
-
 # Turn on Windows Defender to access company resources
 
 Your work or school wants to ensure that devices accessing their resources are secured. There are a few ways that they can use [Windows Defender](https://www.microsoft.com/safety/pc-security/windows-defender.aspx), Windows' built-in protection for malicious software.

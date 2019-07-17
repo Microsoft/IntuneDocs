@@ -103,7 +103,6 @@ The Compliance Policy API Reference contains entities that provide status inform
 
 The following table summarizes the assignment status of compliance policies to devices. It lists the count of devices found in each compliance state.
 
-
 |Property     |Description  |Example  |
 |---------|---------|---------|
 |DateKey  |Date key when the summary was created for the compliance policy.|20161204 |
@@ -117,8 +116,6 @@ The following table summarizes the assignment status of compliance policies to d
 ### CompliancePolicyStatusDevicePerPolicyActivities 
 
 The following table summarizes the assignment status of compliance policies to devices on a per policy and a per policy type basis. It lists the count of devices found in each compliance state for each assigned compliance policy.
-
-
 
 |Property  |Description  |Example  |
 |---------|---------|---------|
@@ -135,7 +132,6 @@ The following table summarizes the assignment status of compliance policies to d
 ### PolicyPlatformTypes
 
 The following table contains the platform types of all assigned policies. Policies platform types that have never been assigned to any devices are not present in this table.
-
 
 |Property  |Description  |Example  |
 |---------|---------|---------|
@@ -160,7 +156,6 @@ PolicyKey|Policy Key, can be joined with Policy to get the policyName.|Windows 1
 
 The following table lists the number of users in the succeeded, pending, failed, or error state per day. The number reflects the data per Policy Type profiles. For example, if a user is in the succeeded state for all their assigned policies, it moves up the succeeded counter by one for that day. If a user has two profiles assigned to them, one in the succeeded state and the other is in an error state, the user in the error state is counted. The PolicyUserActivity entity lists how many users are in which state on a given day over the last 30 days.
 
-
 | Property  |                                         Description                                         |       Example       |
 |-----------|---------------------------------------------------------------------------------------------|---------------------|
 |  DateKey  | Date Key when the Device Configuration Profile check-in was recorded in the data warehouse. |      20160703       |
@@ -168,4 +163,3 @@ The following table lists the number of users in the succeeded, pending, failed,
 | Succeeded |                         Number of unique Devices in success state.                          |         12          |
 | PolicyKey |                Policy Key, can be joined with Policy to get the policyName.                 | Windows 10 baseline |
 |   Error   |                          Number of unique Devices in error state.                           |         10          |
-

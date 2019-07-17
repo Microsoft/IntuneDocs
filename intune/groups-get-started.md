@@ -58,7 +58,6 @@ Some of the Intune groups capabilities you previously might have used are not av
 - Ensure that admins who need to create groups are added to the **Intune Service Administrator** Azure AD role. The Azure AD Service Admin role does not have **Manage Group** permissions.
 - If your Intune groups used the **Exclude specific members**  option, decide whether you can redesign these groups without exclusions, or if you need advanced rules to meet business needs.
 
-
 ## What happened to Intune groups?
 When groups are migrated from the Azure portal to Intune in the Azure portal, the following rules are applied:
 

@@ -66,4 +66,3 @@ Here are the actions to take based on the user status:
 - [Assign licenses to users so they can enroll devices in Intune](licenses-assign.md)
 - [How to validate your app protection policy setup](app-protection-policies-validate.md)
 - [How to monitor app protection policies](app-protection-policies-monitor.md)
-

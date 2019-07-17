@@ -61,4 +61,3 @@ There are several methods to enroll your workforce’s devices in Intune. Each m
 ## Next steps
 
 [Set up enrollment for Windows](windows-enroll.md)
-

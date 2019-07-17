@@ -43,7 +43,6 @@ Before starting the process of integrating Sophos Mobile with Intune, make sure 
   - Send device information to Intune  
 - Admin credentials to access the Sophos Mobile admin console.  
 
-
 ### Sophos Mobile app authorization  
   
 The Sophos Mobile app authorization process follows:  
@@ -51,7 +50,6 @@ The Sophos Mobile app authorization process follows:
 - Sophos Mobile syncs with Azure AD Enrollment Group membership to populate its device's database.  
 - Allow the Sophos Mobile admin console to use Azure AD Single Sign On (SSO).  
 - Allow the Sophos Mobile app to sign in using Azure AD SSO.  
-
 
 ## To set up Sophos Mobile integration  
 
@@ -72,7 +70,6 @@ The Sophos Mobile app authorization process follows:
 
 1. When the message **Successful Integration** appears, integration is complete.  
 1. In the Intune console, Sophos is now available.  
-
 
 ## Next Steps  
 [Configure Sophos client apps](mtd-apps-ios-app-configuration-policy-add-assign.md)

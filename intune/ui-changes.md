@@ -45,7 +45,6 @@ We took the opportunity to organize some tasks more logically as we moved Intune
 | Terms and Conditions | Policy > Terms and Conditions | Device enrollment > Terms and Conditions |
 Company Portal settings|Admin > Company Portal|**Manage** > Mobile apps<br> **Setup** > Company Portal branding
 
-
 ## Where do I manage groups?
 Intune in the Azure portal uses [Azure Active Directory (AD)](https://docs.microsoft.com/azure/active-directory/active-directory-groups-create-azure-portal) to manage groups.
 

@@ -54,7 +54,6 @@ Here is a typical approach to enhancing a migration campaign with Conditional Ac
 
 - Users of previous solution could potentially access resources using unmanaged devices until Conditional Access is enabled for those users.
 
-
 This is one approach among many. You may choose a simpler process that defers all Conditional Access until after every phase has been instructed to enroll, or a stricter process that enforces Conditional Access from the very beginning and requires full compliance for all access.
 
 - Learn more about [Conditional Access](conditional-access.md).

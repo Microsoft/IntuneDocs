@@ -41,7 +41,6 @@ To manage devices behind firewalls and proxy servers, you must enable communicat
 
 You can modify proxy server settings on individual client computers. You can also use Group Policy settings to change settings for all client computers located behind a specified proxy server.
 
-
 <!--
 > [!NOTE] If Windows 8.1 devices haven't cached proxy server credentials, enrollment might fail because the request doesn't prompt for credentials. Enrollment fails without warning as the request wait for a connection. If users might experience this issue, instruct them to open their browser settings and save proxy server settings to enable a connection.   -->
 
@@ -83,7 +82,6 @@ The following tables list the ports and services that the Intune client accesses
 |Admin.manage.microsoft.com|52.224.221.227<br>52.161.162.117<br>52.178.44.195<br>52.138.206.56<br>52.230.21.208<br>13.75.125.10|
 |wip.mam.manage.microsoft.com|52.187.76.84<br>13.76.5.121<br>52.165.160.237<br>40.86.82.163<br>52.233.168.142<br>168.63.101.57|
 |mam.manage.microsoft.com|104.40.69.125<br>13.90.192.78<br>40.85.174.177<br>40.85.77.31<br>137.116.229.43<br>52.163.215.232<br>52.174.102.180|
-
 
 ### Network requirements for Powershell scripts and Win32 apps
 If you're using Intune to deploy Powershell scripts or Win32 apps, you'll also need to grant access to endpoints in which your tenant currently resides.
@@ -134,7 +132,6 @@ For Delivery Optimization metadata:
 - *.emdl.ws.microsoft.com
 
 ### Apple device network information
-
 
 |Used for|Hostname (IP address/subnet)|Protocol|Port|
 |-----|--------|------|-------|

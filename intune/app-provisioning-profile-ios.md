@@ -39,7 +39,6 @@ Apple iOS line-of-business apps that are assigned to iPhones and iPads are built
 - **Installation file integrity** - iOS compares the app's details with the enterprise signing certificate's public key. If they differ, the app's content might have changed, and the app is not allowed to run.
 - **Capabilities enforcement** - iOS attempts to enforce the app's capabilities from the enterprise provisioning profile (not individual developer provisioning profiles) that are in the app installation (.ipa) file.
 
-
 The enterprise signing certificate that you use to sign apps typically lasts for three years. However, the provisioning profile expires after a year. While the certificate is still valid, Intune gives you the tools to proactively assign a new provisioning profile to devices that have apps that are nearing expiry.
 After the certificate expires, you must sign the app again with a new certificate and embed a new provisioning profile with the key of the new certificate.
 

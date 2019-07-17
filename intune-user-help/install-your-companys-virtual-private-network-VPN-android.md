@@ -28,7 +28,6 @@ ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
 ---
 
-
 # How to install your company's Virtual Private Network (VPN)
 
 If your company support has configured a VPN application to enable you to  connect to your company's resources, you'll see a notification on your Android device indicating that you need to install a VPN app. Follow these steps to install the VPN app:
@@ -38,6 +37,5 @@ If your company support has configured a VPN application to enable you to  conne
 2. In the **Play Store**, click **INSTALL** and follow the prompts to install the app.
 
 3. Tap **Install corporate VPN profile** and follow the prompts. The installation steps may be slightly different, depending on which VPN provider your company is using.
-
 
 Still need help? Contact your company support. For contact information, check the [Company Portal website](https://go.microsoft.com/fwlink/?linkid=2010980).

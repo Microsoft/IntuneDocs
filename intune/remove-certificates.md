@@ -45,7 +45,6 @@ Manual deletion of a certificate is a scenario that applies across platforms and
 
 In this scenario, after the certificate is deleted, the next time the device checks in with Intune it's found to be out of compliance as it is missing the expected certificate. Intune then issues a new certificate to restore the device to compliance. No additional action is needed to restore the certificate.  
 
-
 ## Windows devices
 
 #### SCEP certificates
@@ -90,7 +89,6 @@ PKCS certificates *stay* on the device (certificates aren't revoked or removed) 
 - An administrator removes the user or group from Azure AD.
 - An administrator changes or updates the PKCS profile.
 - A certificate profile is removed from the group assignment.
-
 
 ## iOS devices
 
@@ -183,8 +181,7 @@ PKCS certificates *stay* on the device (certificates aren't revoked or removed) 
 - An administrator removes the user or group from Azure AD.
 - An administrator changes or updates the PKCS profile.
 - A certificate profile is removed from the group assignment.
-  
-  
+
 > [!NOTE]
 > Android for Work devices are not validated for the preceding scenarios. 
 > Android legacy devices (any non-Samsung, non-work profile devices) are not enabled for certificate removal. 
@@ -213,4 +210,3 @@ SCEP certificates *stay* on the device (certificates aren't revoked or removed) 
 #### PKCS certificates
 
 PKCS certificates are not supported on macOS.
-

@@ -28,7 +28,6 @@ ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
 ---
 
-
 # What happens if you install the Company Portal app and enroll your Windows device in Intune?
 
 When you install the Company Portal app and then use it to enroll a Windows or Windows Phone device, you are letting your company support manage your device to help keep company or school data secure. This topic describes what happens for devices earlier than Windows 10. For Windows 10 devices, see the [related topic](about-cp-app-for-windows-10.md).  

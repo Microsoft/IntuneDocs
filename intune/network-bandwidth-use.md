@@ -65,7 +65,6 @@ A caching proxy server that receives content requests from clients can retrieve 
 
 The following are typical settings to use for a proxy server that caches content for Intune clients.
 
-
 |          Setting           |           Recommended value           |                                                                                                  Details                                                                                                  |
 |----------------------------|---------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 |         Cache size         |             5 GB to 30 GB             | The value varies based on the number of client computers in your network and the configurations you use. To prevent files from being deleted too soon, adjust the size of the cache for your environment. |
@@ -91,7 +90,6 @@ To see the full list of Windows 10 versions and content types supported by Deliv
 
 You can [set up Delivery Optimization](delivery-optimization-settings.md) as part of your device configuration profiles.
 
-
 ### Use BranchCache on computers
 Intune clients can use BranchCache to reduce wide area network (WAN) traffic. The following operating systems support BranchCache:
 
@@ -109,8 +107,6 @@ If you use BranchCache, work with other administrators in your organization to m
 > [!NOTE]
 > You can use Microsoft Intune to manage Windows PCs either [as mobile devices with mobile device management (MDM)](windows-enroll.md) or as computers with the Intune software client. Microsoft recommends that customers [use the MDM management solution](windows-enroll.md) whenever possible. When managed this way, BranchCache is not supported. For more information, see [Compare managing Windows PCs as computers or mobile devices](pc-management-comparison.md).
 
-
 ## Next steps
 
 [Review endpoints for Intune](intune-endpoints.md)
-

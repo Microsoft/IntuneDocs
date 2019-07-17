@@ -1720,7 +1720,6 @@ To see the Windows 10 versions the following APIs apply, use the Windows 10 [con
 **CSP**: ./Device/Vendor/MSFT/Policy  
 **Offset URI**: /Config/InternetExplorer/InternetZoneJavaPermissions
 
-
 #### Windows10GeneralConfiguration.InternetExplorerInternetZoneLaunchApplicationsAndFilesInAnIFrame 
 **CSP**: ./Device/Vendor/MSFT/Policy  
 **Offset URI**: /Config/InternetExplorer/InternetZoneLaunchingApplicationsAndFilesInIFRAME
@@ -3000,7 +2999,6 @@ To see the Windows 10 versions the following APIs apply, use the Windows 10 [con
 #### WindowsUpdateForBusinessConfiguration.UserPauseAccess 
 **CSP**: ./Device/Vendor/MSFT/Policy  
 **Offset URI**: /Config/Update/SetDisablePauseUXAccess
-
 
 ## Next steps
 

@@ -252,7 +252,6 @@ The **device** entity lists all enrolled devices under management and their corr
 | CellularTechnology         | Cellular technology of the   device                                                                                                                                                    |
 | WiFiMacAddress             | Wi-Fi MAC                                                                                                                                                                              |
 
-
 ## deviceTypes
 The **deviceType** entity represents the device type referenced by other data warehouse entities. The device type typically describes either the device model, manufacturer, or a combination of both.
 
@@ -443,11 +442,9 @@ The **MamApplication** entity lists Line-of-Business (LOB) apps that are managed
 | DeletedDateUTC |Date and time in UTC when IsDeleted changed to True. |11/23/2016 12:00:00 AM |
 | RowLastModifiedDateTimeUTC |Date and time in UTC when this MAM app was last modified in the data warehouse. |11/23/2016 12:00:00 AM |
 
-
 ## MamApplicationInstances
 
 The **MamApplicationInstance** entity lists managed Mobile Application Management (MAM) apps as singular instances per user per device. All users and devices listed with in the entity are protected, as in, they have at least one MAM Policy assigned to them.
-
 
 |          Property          |                                                                                                  Description                                                                                                  |               Example                |
 |----------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------|
@@ -499,7 +496,6 @@ The **MamDeviceHealth** entity represents devices that have Mobile Application M
 ## MamPlatforms
 
 The **MamPlatform** entity lists platform names and types on which a Mobile Application Management (MAM) app was installed.
-
 
 |          Property          |                                    Description                                    |                         Example                         |
 |----------------------------|-----------------------------------------------------------------------------------|---------------------------------------------------------|
@@ -734,4 +730,3 @@ The **vppProgramType** entity lists possible VPP program types for an app.
 ## Next steps
 
 For more about the Intune Data Warehouse, see [Data Warehouse data model](https://docs.microsoft.com/intune/reports-ref-data-model).
-

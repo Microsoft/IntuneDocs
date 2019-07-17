@@ -28,7 +28,6 @@ ms.reviewer: shpate
 
 # Integrate Windows Hello for Business with Microsoft Intune
 
-
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 You can integrate Windows Hello for Business (formerly Microsoft Passport for Work) with Microsoft Intune.
@@ -53,8 +52,6 @@ Use this article to create a default Windows Hello for Business policy that targ
 > Any Intune configuration policies you set to control the device PIN, and additionally, any Windows Hello for Business policies you configured, now both set this new PIN value.
 > If you have set both policy types to control the PIN, the Windows Hello for Business policy is applied on both Windows 10 desktop and mobile devices.
 > To ensure policy conflicts are resolved and that the PIN policy is applied correctly, update your Windows Hello for Business Policy to match the settings in your configuration policy, and ask your users to sync their devices in the Company Portal app.
-
-
 
 ## Create a Windows Hello for Business policy
 

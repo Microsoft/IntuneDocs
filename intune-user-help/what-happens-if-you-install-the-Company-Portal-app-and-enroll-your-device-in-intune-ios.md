@@ -29,7 +29,6 @@ ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
 ---
 
-
 # What happens if you install the Company Portal app and enroll your iOS device in Intune?
 
 When you install the Company Portal app and enroll your iOS device in Intune, you can use the Company Portal app to:

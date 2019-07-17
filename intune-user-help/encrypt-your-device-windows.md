@@ -28,7 +28,6 @@ ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
 ---
 
-
 # How to protect your Windows device using encryption
 
 When you encrypt a device, you are wrapping the information on it in a layer of protective code that prevents unauthorized people from accessing it. As a step towards making sure your information is secured, your organization is requiring you to encrypt your Windows device to protect company or school data. 
@@ -37,7 +36,6 @@ If you have a Windows phone and have enrolled it, your device will be encrypted 
 
 > [!Note]
 > Encryption is not supported on Windows 10 Home. Learn how to upgrade from [Windows 10 Home to Windows 10 Pro](https://support.microsoft.com/help/12384/windows-10-upgrading-home-to-pro).
-
 
 If you have a desktop device, the following instructions describe how to encrypt it.
 

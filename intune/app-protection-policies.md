@@ -113,7 +113,6 @@ To see the effect of the changes immediately, the end user must sign out of the 
 
 ### To change the list of user groups
 
-
 1. In  the **App protection policies** pane, select the policy you want to change.
 
 2. In the *Intune App Protection* pane, select **Assignments** to open the **Intune App Protection - Assignments** pane that shows the list of current user groups who have this policy.
@@ -158,7 +157,6 @@ For iOS, additional app configuration settings are required to target app protec
 
 > [!NOTE]
 > For specific iOS support information about app protection policies based on device management state, see [MAM protection policies targeted based on management state](whats-new-archive.md#mam-protection-policies-targeted-based-on-management-state-).
-
 
 ## Policy settings
 To see a full list of the policy settings for iOS and Android, select one of the following links:

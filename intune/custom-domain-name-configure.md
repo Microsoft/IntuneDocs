@@ -28,7 +28,6 @@ ms.custom: intune-classic; get-started
 ms.collection: M365-identity-device-management
 ---
 
-
 # Configure a custom domain name
 
 [!INCLUDE [both-portals](./includes/note-for-both-portals.md)]

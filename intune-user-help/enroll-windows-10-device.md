@@ -45,16 +45,13 @@ These steps describe how to enroll a device that runs on Windows 10, version 160
 
 3. Select **Accounts** > **Access work or school** > **Connect**.  
 
-
     ![Select Access work school account](./media/w10-enroll-rs1-connect-to-work-or-school.png)  
 
 4. Enter your work or school email address, and then select **Next**.  
 
-
    ![Enter your work or school-account](./media/w10-enroll-rs1-set-up-work-or-school-account.png)  
 
 5. Sign in to Intune with your work or school account.  
-
 
     ![Add a work or school account](./media/w10-enroll-rs1-enter-your-credentials.png)  
 
@@ -65,7 +62,6 @@ These steps describe how to enroll a device that runs on Windows 10, version 160
 7. On the **You’re all set!** screen, select **Done**. Your device is now enrolled.  
 
 8. To double-check your connection, go back to **Settings** > **Accounts** > **Access work or school**.  Your account should now be listed.  
-
 
     ![Validate that the connection was set up correctly](./media/w10-enroll-rs1-validate-successful-enrollment.png)  
 
@@ -80,16 +76,13 @@ These steps describe how to enroll a device that runs on Windows 10, version 151
 
 3. Select **Accounts** > **Your account**.  
 
-
     ![Select your account](./media/W10-enroll-2-accounts-your-account.png)  
 
 5. Select **Add a work or school account**.  
 
-
     ![Select add a work or school account](./media/w10-enroll-3-add-work-school-acct.png)  
 
 6. Sign in with your work or school credentials.  
-
 
     ![Sign in](./media/W10-enroll-4-sign-in.png)  
 
@@ -101,6 +94,3 @@ If you're an IT administrator and run in to problems while enrolling devices, se
 
 ## Next steps  
 If you need help with Company Portal or enrollment, contact your organization's IT support team. You'll find their contact information on the [Company Portal website](https://go.microsoft.com/fwlink/?linkid=2010980). Sign in to the site with your work or school account.  
-
- 
-

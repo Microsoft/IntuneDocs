@@ -108,7 +108,6 @@ You now have a visual that shows the distribution of manufacturers of devices wi
 
 You can add a filter to your treemap so that you can answer additional questions using your app.
 
-
 1. To add a filter, select the report canvas, and then select the **Slicer icon** (![Treemap with data model and supported relationships](media/reports-create-slicer.png)) under **Visualizations**.
 2. Find the **ownerTypes** table and drag the **ownerTypeName** data field under the **Filters** section in the **Visualizations** panel.  
 

@@ -42,7 +42,6 @@ To set up Android Enterprise work profile management, follow these steps:
     - **Allow**: All devices that support Android Enterprise work profiles are enrolled as Android Enterprise work profile devices. Any Android device that does not support Android Enterprise work profiles is enrolled as a conventional Android device.
 3. [Tell your users how to enroll their devices](/intune-user-help/create-a-work-profile-and-enroll-your-device-in-intune-android).  
 
-
 If you want to enroll devices using Android Enterprise work profiles, but those devices were already enrolled as regular Android devices, those devices must first unenroll and then re-enroll.
 
 If you're enrolling Android Enterprise work profile devices by using a [Device Enrollment Manager](device-enrollment-manager-enroll.md) account, there is a limit of 10 devices that can be enrolled per account.
