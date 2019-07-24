@@ -5,7 +5,7 @@ title: Remove SCEP or PKCS certificates in Microsoft Intune - Azure | Microsoft 
 titleSuffix:
 description: Administrators can use the wipe or retire action to remove certificates from Microsoft Intune. There are some scenarios where the certificates are automatically removed, such as unenrolling a device or removing a compliance policy. There are some scenarios where certificates automatically remain on the device, such as when the Intune license is lost or removed. See the different ways for Android, Android Enterprise, iOS, macOS, and Windows devices.
 keywords:
-author: brenduns 
+author: brenduns
 ms.author: brenduns
 manager: dougeby
 ms.date: 06/27/2019
@@ -29,7 +29,7 @@ ms.reviewer: lacranda
 
 # Remove SCEP and PKCS certificates in Microsoft Intune
 
-In Microsoft Intune, you can use Simple Certificate Enrollment Protocol (SCEP) and Public Key Cryptography Standards (PKCS) certificate profiles to add certificates to devices. 
+In Microsoft Intune, you can use Simple Certificate Enrollment Protocol (SCEP) and Public Key Cryptography Standards (PKCS) certificate profiles to add certificates to devices.
 
 These certificates can be removed when you [wipe](devices-wipe.md#wipe) or [retire](devices-wipe.md#retire) the device. There are also scenarios where certificates are automatically removed, and scenarios where certificates stay on the device. This article lists some common scenarios, and the impact on PKCS and SCEP certificates.
 
@@ -39,16 +39,15 @@ These certificates can be removed when you [wipe](devices-wipe.md#wipe) or [reti
 > 1. Wipe or retire the user's device.
 > 2. Remove the user from on-premises Active Directory or Azure AD.
 
-## Manually deleted certificates  
+## Manually deleted certificates
 
-Manual deletion of a certificate is a scenario that applies across platforms and certificates provisioned by SCEP or PKCS certificate profiles. For example, a user might delete a certificate from a device, when the device remains targeted by a certificate policy.  
+Manual deletion of a certificate is a scenario that applies across platforms and certificates provisioned by SCEP or PKCS certificate profiles. For example, a user might delete a certificate from a device, when the device remains targeted by a certificate policy.
 
-In this scenario, after the certificate is deleted, the next time the device checks in with Intune it's found to be out of compliance as it is missing the expected certificate. Intune then issues a new certificate to restore the device to compliance. No additional action is needed to restore the certificate.  
-
+In this scenario, after the certificate is deleted, the next time the device checks in with Intune it's found to be out of compliance as it is missing the expected certificate. Intune then issues a new certificate to restore the device to compliance. No additional action is needed to restore the certificate.
 
 ## Windows devices
 
-#### SCEP certificates
+### SCEP certificates
 
 A SCEP certificate is revoked *and* removed when:
 
@@ -71,7 +70,7 @@ SCEP certificates *stay* on the device (certificates aren't revoked or removed) 
 - An administrator withdraws the Intune license.
 - An administrator removes the user or group from Azure AD.
 
-#### PKCS certificates
+### PKCS certificates
 
 A PKCS certificate is revoked *and* removed when:
 
@@ -94,7 +93,7 @@ PKCS certificates *stay* on the device (certificates aren't revoked or removed) 
 
 ## iOS devices
 
-#### SCEP certificates
+### SCEP certificates
 
 A SCEP certificate is revoked *and* removed when:
 
@@ -117,7 +116,7 @@ SCEP certificates *stay* on the device (certificates aren't revoked or removed) 
 - An administrator withdraws the Intune license.
 - An administrator removes the user or group from Azure AD.
 
-#### PKCS certificates
+### PKCS certificates
 
 A PKCS certificate is revoked *and* removed when:
 
@@ -127,7 +126,7 @@ A PKCS certificate is revoked *and* removed when:
 
 A PKCS certificate is removed when:
 - A certificate profile is removed from the group assignment.
-  
+
 A root certificate is removed when:
 - A user unenrolls.
 - An administrator runs the [wipe](devices-wipe.md#wipe) action.
@@ -141,7 +140,7 @@ PKCS certificates *stay* on the device (certificates aren't revoked or removed) 
 
 ## Android KNOX devices
 
-#### SCEP certificates
+### SCEP certificates
 
 A SCEP certificate is revoked *and* removed when:
 - A user unenrolls.
@@ -164,7 +163,7 @@ SCEP certificates *stay* on the device (certificates aren't revoked or removed) 
 - An administrator withdraws the Intune license.
 - An administrator removes the user or group from Azure AD.
 
-#### PKCS certificates
+### PKCS certificates
 
 A PKCS certificate is revoked *and* removed when:
 
@@ -183,15 +182,15 @@ PKCS certificates *stay* on the device (certificates aren't revoked or removed) 
 - An administrator removes the user or group from Azure AD.
 - An administrator changes or updates the PKCS profile.
 - A certificate profile is removed from the group assignment.
-  
-  
+
+
 > [!NOTE]
-> Android for Work devices are not validated for the preceding scenarios. 
-> Android legacy devices (any non-Samsung, non-work profile devices) are not enabled for certificate removal. 
+> Android for Work devices are not validated for the preceding scenarios.
+> Android legacy devices (any non-Samsung, non-work profile devices) are not enabled for certificate removal.
 
 ## macOS certificates
 
-#### SCEP certificates
+### SCEP certificates
 
 A SCEP certificate is revoked *and* removed when:
 - A user unenrolls.
@@ -210,7 +209,7 @@ SCEP certificates *stay* on the device (certificates aren't revoked or removed) 
 > [!NOTE]
 > Using the [wipe](devices-wipe.md#wipe) action to factory reset macOS devices is not supported.
 
-#### PKCS certificates
+### PKCS certificates
 
-PKCS certificates are not supported on macOS.
+PKCS certificates aren't supported on macOS.
 

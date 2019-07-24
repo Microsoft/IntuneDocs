@@ -170,7 +170,8 @@
   - name: Enroll devices
     items:
     - name: What is device enrollment?
-      href: device-enrollment.md    
+      href: device-enrollment.md
+      displayName: COD; BYOD; DEM; DEP; USB-SA; USB-Direct; co-management; GPO
     - name: Device management capabilities
       href: device-management-capabilities.md
     - name: Enrollment options
@@ -184,6 +185,7 @@
         href: apple-mdm-push-certificate-get.md
       - name: Corporate identifiers
         href: corporate-identifiers-add.md
+        displayName: COD
       - name: Multi-factor authentication
         href: multi-factor-authentication.md
       - name: Device enrollment manager
@@ -273,6 +275,8 @@
       href: device-remove-user.md
     - name: Find primary user
       href: find-primary-user.md
+    - name: Send notifications
+      href: custom-notifications.md
     - name: Erase macOS device
       href: device-erase.md
     - name: Remote control mobile devices
@@ -382,6 +386,8 @@
         href: privacy-data-view-correct.md
       - name: Audit, export, delete
         href: privacy-data-audit-export-delete.md
+    - name: Encrypt devices
+      href: encrypt-devices.md
     - name: Conditional Access
       href: conditional-access.md
       items:
@@ -557,20 +563,27 @@
         href: apps-add-built-in.md      
       - name: PowerShell scripts
         href: intune-management-extension.md          
-    - name: Deploy apps
-      href: apps-deploy.md
+    - name: Assign apps
       items:
+      - name: Assign apps to groups
+        href: apps-deploy.md
+        displayName: app assignment; assignment   
       - name: Include and exclude apps
-        href: apps-inc-exl-assignments.md      
+        href: apps-inc-exl-assignments.md  
+        displayName: app assignment               
       - name: Deploy Windows 10 apps
         href: apps-windows-10-app-deploy.md      
       - name: Deploy apps to Government environments
         href: apps-deploy-gcc-dod.md                    
     - name: Monitor apps
       href: apps-monitor.md
+    - name: Discovered apps
+      href: app-discovered-apps.md      
     - name: Configure apps
-      href: app-configuration-policies-overview.md
       items:
+      - name: App configuration policies
+        href: app-configuration-policies-overview.md  
+        displayName: App configuration policy; configuration policy            
       - name: iOS managed devices
         href: app-configuration-policies-use-ios.md
       - name: Android managed devices
@@ -997,4 +1010,6 @@
     - name: Prevent unauthorized access
       href: data-outside-protect.md
     - name: Prevent data leaks on non-managed devices
-      href: data-leak-prevention.md
+      href: data-leak-prevention.md  
+  - name: Intune end user documentation  
+    href: /intune-user-help/use-managed-devices-to-get-work-done  

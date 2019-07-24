@@ -54,21 +54,21 @@ You can [download a template of the above table](https://gallery.technet.microso
 Here are a few more examples that can be used in the "Requirements" column:
 
 - **Secure e-mail**
-    - Conditional Access for Exchange Online / on-premises
-    - Outlook app protection policies
+  - Conditional Access for Exchange Online / on-premises
+  - Outlook app protection policies
 
 - **Device settings**
-    - PIN setting with four, six characters
-    - Restrict cloud backup
+  - PIN setting with four, six characters
+  - Restrict cloud backup
 
 - **Profiles**
-    - Wi-Fi
-    - VPN
-    - Email (Windows 10 mobile)
+  - Wi-Fi
+  - VPN
+  - Email (Windows 10 mobile)
 
 - **Apps**
-    - Office 365 with app protection policies
-    - Line of business (LOB) with app protection policies
+  - Office 365 with app protection policies
+  - Line of business (LOB) with app protection policies
 
 ## Next steps
 

@@ -8,7 +8,7 @@ keywords:
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 04/15/2019
+ms.date: 07/15/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -32,7 +32,7 @@ ms.collection: M365-identity-device-management
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
-Use the information in this article to help you add an iOS line-of-business (LOB) app to Microsoft Intune.
+Use the information in this article to help you add an iOS line-of-business (LOB) app to Microsoft Intune. A line-of-business (LOB) app is an app that you add to Intune from an IPA app installation file. This kind of app is typically written in-house. You will first need to join the iOS Developer Enterprise Program. For more information about how to do this see [Apple's website](https://developer.apple.com/programs/ios/enterprise/).
 
 >[!NOTE]
 >Users of iOS devices can remove some of the built-in iOS apps, like Stocks and Maps. You cannot use Intune to redeploy these apps. If users delete these apps, they must go to the app store and manually reinstall them.

@@ -7,7 +7,7 @@ keywords: Intune Data Warehouse
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 03/19/2019
+ms.date: 07/09/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.localizationpriority: medium
@@ -30,43 +30,43 @@ ms.collection: M365-identity-device-management
 
 The **Application** category contains entities for mobile devices that track information such as:
 
-  - Versions of an app
-  - Installation source of an app
-  - Type of developers who created an app
-  - Managed software types for an app, for example **sidecar** or **desktop**
-  - Volume Purchasing Program (VPP) state of an app
+- Versions of an app
+- Installation source of an app
+- Type of developers who created an app
+- Managed software types for an app, for example **sidecar** or **desktop**
+- Volume Purchasing Program (VPP) state of an app
 
-## AppRevision
+## appRevisions
 
-The **AppRevision** entity lists all the versions of apps.
+The **appRevision** entity lists all the versions of apps.
 
 | Property  | Description | Example |
 |---------|------------|--------|
-| AppKey |Unique identifier of the App. |123 |
-| ApplicationId |Unique identifier of the App - similar to AppKey, but this key is a natural. |b66bc706-ffff-7437-0340-032819502773 |
-| Revision |The version as mentioned by admin during uploading of the binary. |2 |
-| Title |Title of the app. |Excel |
-| Publisher |Publisher of the app. |Microsoft |
-| UploadState |Upload state of the app. |1 |
-| AppTypeKey |Reference to AppType described in the following section. | |
-| VppProgramTypeKey |Reference to VppProgramType described below. | |
-| CreationTime |The time when this revision was created. |11/23/2016 12:00:00 AM |
-| ModifiedTime |Last time anything related to this revision was changed. |11/23/2016 12:00:00 AM |
-| Size |Size of the binary. | |
-| StartDateInclusiveUTC |Date and time in UTC when this App revision was created in the data warehouse. |11/23/2016 12:00:00 AM |
-| EndDateExclusiveUTC |Date and time in UTC when this app revision became obsolete. |11/23/2016 12:00:00 AM |
-| IsCurrent |Indicates whether this App version is current or not in the data warehouse. |True/False |
-| RowLastModifiedDateTimeUTC |Date and time in UTC when this app version was last modified in the data warehouse. |11/23/2016 12:00:00 AM |
+| appKey |Unique identifier of the App. |123 |
+| applicationId |Unique identifier of the App - similar to AppKey, but this key is a natural. |b66bc706-ffff-7437-0340-032819502773 |
+| revision |The version as mentioned by admin during uploading of the binary. |2 |
+| title |Title of the app. |Excel |
+| publisher |Publisher of the app. |Microsoft |
+| uploadState |Upload state of the app. |1 |
+| appTypeKey |Reference to AppType described in the following section. | |
+| vppProgramTypeKey |Reference to VppProgramType described below. | |
+| creationTime |The time when this revision was created. |11/23/2016 12:00:00 AM |
+| modifiedTime |Last time anything related to this revision was changed. |11/23/2016 12:00:00 AM |
+| size |Size of the binary. | |
+| startDateInclusiveUTC |Date and time in UTC when this App revision was created in the data warehouse. |11/23/2016 12:00:00 AM |
+| endDateExclusiveUTC |Date and time in UTC when this app revision became obsolete. |11/23/2016 12:00:00 AM |
+| isCurrent |Indicates whether this App version is current or not in the data warehouse. |True/False |
+| rowLastModifiedDateTimeUTC |Date and time in UTC when this app version was last modified in the data warehouse. |11/23/2016 12:00:00 AM |
 
-## AppTypes
+## appTypes
 
-The **AppTypes** entity lists the installation source of an app.
+The **appType** entity lists the installation source of an app.
 
 | Property  | Description |
 |---------|------------|
-| AppTypeID |ID for the type |
-| AppTypeKey |Surrogate key for the key |
-| AppTypeName |App type |
+| appTypeID |ID for the type |
+| appTypeKey |Surrogate key for the key |
+| appTypeName |App type |
 
 ### Example
 
@@ -87,15 +87,15 @@ The **AppTypes** entity lists the installation source of an app.
 | 12 |Windows Phone LOB app | A Windows phone line-of-business app. |
 
 
-## VppProgramTypes
+## vppProgramTypes
 
-The **VppProgramTypes** entity lists possible VPP program types for an app.
+The **vppProgramType** entity lists possible VPP program types for an app.
 
 | Property  | Description |
 |---------|------------|
-| VppProgramTypeID | ID for the type. |
-| VppProgramTypeKey | Surrogate key for the key. |
-| VppProgramTypeName | VPP Program type. |
+| vppProgramTypeID | ID for the type. |
+| vppProgramTypeKey | Surrogate key for the key. |
+| vppProgramTypeName | VPP Program type. |
 
 ### Example
 
@@ -107,27 +107,27 @@ The **VppProgramTypes** entity lists possible VPP program types for an app.
 
 
 
-## ApplicationInventory
+## applicationInventories
 
-The **ApplicationInventory** entity lists the applications found on the device at the time of inventory collection.
+The **applicationInventory** entity lists the applications found on the device at the time of inventory collection.
 
 | Property  | Description |
 |---------|------------|
-| DeviceKey | This is a reference to the Device table which contains the Intune device ID. |
-| DateKey | Reference to date table indicating the day of inventory. |
-| ApplicationName | The application name. |
-| ApplicationVersion | Version of the application. |
-| BundleSize | The size of the app in bytes. |
+| deviceKey | This is a reference to the Device table which contains the Intune device ID. |
+| dateKey | Reference to date table indicating the day of inventory. |
+| applicationName | The application name. |
+| applicationVersion | Version of the application. |
+| bundleSize | The size of the app in bytes. |
 
-## MobileAppInstallState
+## mobileAppInstallStates
 
-The **MobileAppInstallState** entity represents the install state for a mobile application after it has been assigned to a group containing devices, users or both.
+The **mobileAppInstallState** entity represents the install state for a mobile application after it has been assigned to a group containing devices, users or both.
 
 | Property | Description |
 |---|---|
-| AppInstallStateKey | The unique ID of the app install state for your account. |
-| AppInstallState | Enum value of the app install state. |
-| AppInstallStateName | Name of the app install state. |
+| appInstallStateKey | The unique ID of the app install state for your account. |
+| appInstallState | Enum value of the app install state. |
+| appInstallStateName | Name of the app install state. |
 
 
 

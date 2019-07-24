@@ -38,27 +38,27 @@ Deployment goals are the long-term achievements you intend to gain by deploying 
 
 - **Integrate with Office 365 and support the use of Office mobile apps**
 
-    - **Description:** Provide tight integration with Office 365 and the use of Office mobile apps with app protection.
+  - **Description:** Provide tight integration with Office 365 and the use of Office mobile apps with app protection.
 
-    - **Business value:** Secure and improved user experience by allowing users to use apps they are familiar with and prefer.
+  - **Business value:** Secure and improved user experience by allowing users to use apps they are familiar with and prefer.
 
 - **Enable access to internal corporate services on mobile devices**
 
-    - **Description:** Enable employees to be productive wherever they need to work from, and with whichever device is most appropriate for them. This project should look to enable mobile productivity and access to corporate data in a safe manner.
+  - **Description:** Enable employees to be productive wherever they need to work from, and with whichever device is most appropriate for them. This project should look to enable mobile productivity and access to corporate data in a safe manner.
 
-    - **Business value:** Enabling employees to be agile and work from where they need allows the business to be more competitive and to provide a more rewarding working environment.
+  - **Business value:** Enabling employees to be agile and work from where they need allows the business to be more competitive and to provide a more rewarding working environment.
 
 - **Provide data protection on mobile devices**
 
-    - **Description:** When data is stored on a mobile device, it should be protected from malicious and accidental loss or sharing.
+  - **Description:** When data is stored on a mobile device, it should be protected from malicious and accidental loss or sharing.
 
-    - **Business value:** Data protection is vital to ensure that we remain competitive, and that we treat our clients and their data with the utmost diligence.
+  - **Business value:** Data protection is vital to ensure that we remain competitive, and that we treat our clients and their data with the utmost diligence.
 
 - **Reduce costs**
 
-    - **Description:** When possible, the project reduces deployment and operating costs.
+  - **Description:** When possible, the project reduces deployment and operating costs.
 
-    - **Business value:** The efficient use of resources enables the business to invest in other areas, compete more effectively, and provide better service to clients.
+  - **Business value:** The efficient use of resources enables the business to invest in other areas, compete more effectively, and provide better service to clients.
 
 ## Deployment objectives
 
@@ -66,19 +66,19 @@ Deployment objectives are the actions your organization can take to reach its In
 
 - **Reduce the number of device management solutions**
 
-    - **Implementation:** Consolidate to a single mobile device management solution: Microsoft Intune for corporate data protection of apps and devices.
+  - **Implementation:** Consolidate to a single mobile device management solution: Microsoft Intune for corporate data protection of apps and devices.
 
 - **Provide secure access to Exchange and SharePoint Online**
 
-    - **Implementation:** Apply Conditional Access for Exchange and SharePoint Online.
+  - **Implementation:** Apply Conditional Access for Exchange and SharePoint Online.
 
 - **Prevent corporate data from being stored or forwarded to non-corporate services on the mobile device**
 
-    - **Implementation:** Apply Intune app protection policies for Microsoft Office and line-of-business apps.
+  - **Implementation:** Apply Intune app protection policies for Microsoft Office and line-of-business apps.
 
 - **Provide capability to wipe corporate data from the device**
 
-    - **Implementation:** Enroll devices into Intune. This gives you the capability to perform a remote wipe of corporate data and resources when appropriate.
+  - **Implementation:** Enroll devices into Intune. This gives you the capability to perform a remote wipe of corporate data and resources when appropriate.
 
 ## Deployment challenges
 
@@ -86,15 +86,15 @@ Deployment challenges are issues that are top of mind for an organization and th
 
 - Support readiness and end-user experience are not included in an initial project scope. This leads to poor end-user adoption and challenges for your support organization.
 
-    - **Mitigation:** Incorporate support training. Validate the end-user experience with success metrics in your deployment plan.
+  - **Mitigation:** Incorporate support training. Validate the end-user experience with success metrics in your deployment plan.
 
 - Lack of clearly defined goals and success metrics leads to intangible results. It may also shift your organization into reactive mode when issues arise.
 
-    - **Mitigation:** Define your goals and success metrics early in your project scope, and use these data points to flesh out your other rollout phases. Make sure goals are SMART (Specific, Measurable, Attainable, Realistic, and Timely). Plan to measure against your goals at each phase and to ensure your rollout project stays on track.
+  - **Mitigation:** Define your goals and success metrics early in your project scope, and use these data points to flesh out your other rollout phases. Make sure goals are SMART (Specific, Measurable, Attainable, Realistic, and Timely). Plan to measure against your goals at each phase and to ensure your rollout project stays on track.
 
 - You neglect to create, validate, and aggressively share a clear value proposition that resonates for your organization. This often leads to limited adoption and a lack of return on investment (ROI).
 
-    - **Mitigation:** While you may be excited to jump into your project, ensure you have clearly-defined your goals and objectives. Include these in all awareness and training activities to help ensure users understand why your organization selected Intune.
+  - **Mitigation:** While you may be excited to jump into your project, ensure you have clearly-defined your goals and objectives. Include these in all awareness and training activities to help ensure users understand why your organization selected Intune.
 
 ## Next steps
 

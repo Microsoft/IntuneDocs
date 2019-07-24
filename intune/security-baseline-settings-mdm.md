@@ -122,8 +122,8 @@ For more information, see [Policy CSP - Bitlocker](https://docs.microsoft.com/wi
 
   For Bit locker removable drive policy, configure the following setting:
 
-    - **Require encryption for write access**  
-      **Default**: Yes  
+  - **Require encryption for write access**  
+    **Default**: Yes  
   
 
 ## Browser  
@@ -233,17 +233,17 @@ For more information, see [Policy CSP - DeviceInstallation](https://docs.microso
   
   **Default**: Block hardware device installation  
 
-    When *Block hardware device installation* is selected, the following settings are available.
-  
-    - **Remove matching hardware devices**   
+  When *Block hardware device installation* is selected, the following settings are available.
+
+  - **Remove matching hardware devices**   
     This setting is available only when *Hardware device installation by device identifiers* is set to *Block hardware device installation*.
-      
-      **Default**: Yes
-  
-    - **Hardware device identifiers that are blocked**  
-       This setting is available only when *Hardware device installation by device identifiers* is set to *Block hardware device installation*.
-      
-      **Default**: Yes  
+    
+    **Default**: Yes
+
+  - **Hardware device identifiers that are blocked**  
+    This setting is available only when *Hardware device installation by device identifiers* is set to *Block hardware device installation*.
+    
+    **Default**: Yes  
   
 - **Hardware device installation by setup classes**  
   This policy setting allows you to specify a list of device setup class globally unique identifiers (GUIDs) for device drivers that Windows is prevented from installing. This policy setting takes precedence over any other policy setting that allows Windows to install a device. If you enable this policy setting, Windows is prevented from installing or updating device drivers whose device setup class GUIDs appear in the list you create. If you enable this policy setting on a remote desktop server, the policy setting affects redirection of the specified devices from a remote desktop client to the remote desktop server. If you disable or don't configure this policy setting, Windows can install and update devices as allowed or prevented by other policy settings.  
@@ -251,16 +251,16 @@ For more information, see [Policy CSP - DeviceInstallation](https://docs.microso
   
   **Default**: Block hardware device installation  
 
-    When *Block hardware device installation* is selected, the following settings are available.
-    - **Remove matching hardware devices**    
+  When *Block hardware device installation* is selected, the following settings are available.
+  - **Remove matching hardware devices**    
     This setting is available only when *Hardware device installation by setup classes* is set to *Block hardware device installation*.  
 
-      **Default**: *No default configuration*  
-  
-    - **Hardware device identifiers that are blocked**  
-      This setting is available only when *Hardware device installation by setup classes* is set to *Block hardware device installation*.
-      
-      **Default**: *No default configuration*  
+    **Default**: *No default configuration*  
+
+  - **Hardware device identifiers that are blocked**  
+    This setting is available only when *Hardware device installation by setup classes* is set to *Block hardware device installation*.
+    
+    **Default**: *No default configuration*  
 
 ## Device Lock  
 For more information, see [Policy CSP - DeviceLock](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-devicelock) in the Windows documentation.  
@@ -277,44 +277,44 @@ For more information, see [Policy CSP - DeviceLock](https://docs.microsoft.com/w
   
   **Default**: Yes  
   
-    When *Require password* is set to *Yes*, the following settings are available.
+  When *Require password* is set to *Yes*, the following settings are available.
 
-    - **Password minimum character set count**  
-      The number of complex element types (uppercase and lowercase letters, numbers, and punctuation) required for a strong PIN or password. PIN enforces the following behavior for desktop and mobile devices: 1 - Digits only 2 - Digits and lowercase letters are required 3 - Digits, lowercase letters, and uppercase letters are required. Not supported in desktop Microsoft accounts and domain accounts. 4 - Digits, lowercase letters, uppercase letters, and special characters are required. Not supported in desktop. The default value is 1.  
-      [Learn more](https://go.microsoft.com/fwlink/?linkid=2067055)  
+  - **Password minimum character set count**  
+    The number of complex element types (uppercase and lowercase letters, numbers, and punctuation) required for a strong PIN or password. PIN enforces the following behavior for desktop and mobile devices: 1 - Digits only 2 - Digits and lowercase letters are required 3 - Digits, lowercase letters, and uppercase letters are required. Not supported in desktop Microsoft accounts and domain accounts. 4 - Digits, lowercase letters, uppercase letters, and special characters are required. Not supported in desktop. The default value is 1.  
+    [Learn more](https://go.microsoft.com/fwlink/?linkid=2067055)  
+    
+    **Default**: 3  
+
+  - **Number of sign-in failures before wiping device**  
+    The number of authentication failures allowed before the device is wiped. A value of 0 disables device wipe functionality.  
+    [Learn more](https://go.microsoft.com/fwlink/?linkid=2067030)  
       
-      **Default**: 3  
-  
-    - **Number of sign-in failures before wiping device**  
-      The number of authentication failures allowed before the device is wiped. A value of 0 disables device wipe functionality.  
-      [Learn more](https://go.microsoft.com/fwlink/?linkid=2067030)  
-        
-      **Default**: 10  
-  
-    - **Password expiration (days)**  
-      The Maximum password age policy setting determines the how long (in days) that a password can be used before the system requires the user to change it. You can set passwords to expire after a number of days between 1 and 999, or you can specify that passwords never expire by setting the number of days to 0. If Maximum password age is between 1 and 999 days, the minimum password age must be less than the maximum password age. If Maximum password age is set to 0, Minimum password age can be any value between 0 and 998 days.  
-      [Learn more](https://go.microsoft.com/fwlink/?linkid=2067028)  
-      
-      **Default**: 60  
-  
-    - **Required password type**  
-      Determines the type of PIN or password required.  
-      [Learn more](https://go.microsoft.com/fwlink/?linkid=2067027)  
-      
-      **Default**: Alphanumeric  
-  
-    - **Minimum password length**  
-      The Minimum password length policy setting determines the least number of characters that can make up a password for a user account. You can set a value of between 1 and 14 characters, or you can establish that no password is required by setting the number of characters to 0.  
-      [Learn more](https://go.microsoft.com/fwlink/?linkid=2067024)  
-      
-      **Default**: 8  
-  
-    - **Block simple passwords**  
-      Specifies whether PINs or passwords such as "1111" or "1234" are allowed. For the desktop, it also controls the use of picture passwords.  
-      [Learn more](https://go.microsoft.com/fwlink/?linkid=2067127) 
-      
-      **Default**: Yes  
-        *A setting of Yes prevents use of simple passwords.* 
+    **Default**: 10  
+
+  - **Password expiration (days)**  
+    The Maximum password age policy setting determines the how long (in days) that a password can be used before the system requires the user to change it. You can set passwords to expire after a number of days between 1 and 999, or you can specify that passwords never expire by setting the number of days to 0. If Maximum password age is between 1 and 999 days, the minimum password age must be less than the maximum password age. If Maximum password age is set to 0, Minimum password age can be any value between 0 and 998 days.  
+    [Learn more](https://go.microsoft.com/fwlink/?linkid=2067028)  
+    
+    **Default**: 60  
+
+  - **Required password type**  
+    Determines the type of PIN or password required.  
+    [Learn more](https://go.microsoft.com/fwlink/?linkid=2067027)  
+    
+    **Default**: Alphanumeric  
+
+  - **Minimum password length**  
+    The Minimum password length policy setting determines the least number of characters that can make up a password for a user account. You can set a value of between 1 and 14 characters, or you can establish that no password is required by setting the number of characters to 0.  
+    [Learn more](https://go.microsoft.com/fwlink/?linkid=2067024)  
+    
+    **Default**: 8  
+
+  - **Block simple passwords**  
+    Specifies whether PINs or passwords such as "1111" or "1234" are allowed. For the desktop, it also controls the use of picture passwords.  
+    [Learn more](https://go.microsoft.com/fwlink/?linkid=2067127) 
+    
+    **Default**: Yes  
+      *A setting of Yes prevents use of simple passwords.* 
 
   - **Prevent reuse of previous passwords**  
     Specifies how many passwords can be stored in the history that can’t be used. The value includes the user's current password. For example, with a setting of *1* the user can't reuse their current password when choosing a new password. A setting of *5* means that a user can't set their new password to their current password or any of their previous four passwords.  
@@ -1194,12 +1194,12 @@ For more information, see [Policy CSP - LocalPoliciesSecurityOptions](https://do
   
 - **Administrator elevation prompt behavior**  
   This policy setting controls the behavior of the elevation prompt for administrators. The options are: 
-    - *Elevate without prompting* - Allows privileged accounts to perform an operation that requires elevation without requiring consent or credentials. Note: Use this option only in the most constrained environments. 
-    - *Prompt for credentials on the secure desktop* - When an operation requires elevation of privilege, the user is prompted on the secure desktop to enter a privileged user name and password. If the user enters valid credentials, the operation continues with the user's highest available privilege. 
-    - *Prompt for consent on the secure desktop* - When an operation requires elevation of privilege, the user is prompted on the secure desktop to select either Permit or Deny. If the user selects Permit, the operation continues with the user's highest available privilege. 
-    - *Prompt for credentials* - When an operation requires elevation of privilege, the user is prompted to enter an administrative user name and password. If the user enters valid credentials, the operation continues with the applicable privilege. 
-    - *Prompt for consent* - When an operation requires elevation of privilege, the user is prompted to select either Permit or Deny. If the user selects Permit, the operation continues with the user's highest available privilege.  
-    - *Prompt for consent for non-Windows binaries* - When an operation for a non-Microsoft application requires elevation of privilege, the user is prompted on the secure desktop to select either Permit or Deny. If the user selects Permit, the operation continues with the user's highest available privilege. 
+  - *Elevate without prompting* - Allows privileged accounts to perform an operation that requires elevation without requiring consent or credentials. Note: Use this option only in the most constrained environments. 
+  - *Prompt for credentials on the secure desktop* - When an operation requires elevation of privilege, the user is prompted on the secure desktop to enter a privileged user name and password. If the user enters valid credentials, the operation continues with the user's highest available privilege. 
+  - *Prompt for consent on the secure desktop* - When an operation requires elevation of privilege, the user is prompted on the secure desktop to select either Permit or Deny. If the user selects Permit, the operation continues with the user's highest available privilege. 
+  - *Prompt for credentials* - When an operation requires elevation of privilege, the user is prompted to enter an administrative user name and password. If the user enters valid credentials, the operation continues with the applicable privilege. 
+  - *Prompt for consent* - When an operation requires elevation of privilege, the user is prompted to select either Permit or Deny. If the user selects Permit, the operation continues with the user's highest available privilege.  
+  - *Prompt for consent for non-Windows binaries* - When an operation for a non-Microsoft application requires elevation of privilege, the user is prompted on the secure desktop to select either Permit or Deny. If the user selects Permit, the operation continues with the user's highest available privilege. 
   
   [Learn more](https://go.microsoft.com/fwlink/?linkid=2067215)   
   
@@ -1216,11 +1216,11 @@ For more information, see [Policy CSP - LocalPoliciesSecurityOptions](https://do
   **Default**: Require NTLM V2 128 encryption
   
 - **Smart card removal behavior**  
-    This security setting determines what happens when the smart card for a logged-on user is removed from the smart card reader. The options are:
-     - *No action*. 
-     - *Lock Workstation* - The workstation is locked when the smart card is removed, allowing users to leave the area, take their smart card with them, and still maintain a protected session.
-     - *Force Logoff* - the user is automatically logged off when the smart card is removed.
-     - *Disconnect Remote Desktop session* - Removal of the smart card disconnects the session without logging the user off. This allows the user to insert the smart card and resume the session later, or at another smart card reader-equipped computer, without having to log on again. If the session is local, this policy functions identically to Lock Workstation.
+  This security setting determines what happens when the smart card for a logged-on user is removed from the smart card reader. The options are:
+  - *No action*. 
+  - *Lock Workstation* - The workstation is locked when the smart card is removed, allowing users to leave the area, take their smart card with them, and still maintain a protected session.
+  - *Force Logoff* - the user is automatically logged off when the smart card is removed.
+  - *Disconnect Remote Desktop session* - Removal of the smart card disconnects the session without logging the user off. This allows the user to insert the smart card and resume the session later, or at another smart card reader-equipped computer, without having to log on again. If the session is local, this policy functions identically to Lock Workstation.
   
   [Learn more](https://go.microsoft.com/fwlink/?linkid=2067331) 
     
@@ -1761,7 +1761,7 @@ For more information, see [2.2.2 FW_PROFILE_TYPOE]( https://docs.microsoft.com/o
   Specifies the profiles to which the rule belongs: Domain, Private, Public. This value represents the profile for private networks.  
   [Learn more](https://go.microsoft.com/fwlink/?linkid=2067041)  
 
-   - **Inbound connections blocked**  
+  - **Inbound connections blocked**  
     **Default**: Yes
 
   - **Outbound connections required**  

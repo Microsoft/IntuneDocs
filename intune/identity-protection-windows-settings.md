@@ -51,42 +51,42 @@ To learn more about Windows Hello for Business profiles in Intune, see [configur
 
   When set to *Enabled*, the following settings are available:
 
-    - **Minimum PIN length**  
-     Specify a minimum PIN length for devices, to help secure sign-in. Windows device defaults are six characters, but this setting can enforce a minimum of four to 127 characters. 
-  
-      **Default**: *Not configured*
+  - **Minimum PIN length**  
+    Specify a minimum PIN length for devices, to help secure sign-in. Windows device defaults are six characters, but this setting can enforce a minimum of four to 127 characters. 
 
-    - **Maximum PIN length**  
-    Specify a maximum PIN length for devices, to help secure sign-in. Windows device defaults are six characters, but this setting can enforce a minimum of four to 127 characters.  
+    **Default**: *Not configured*
 
-      **Default**: *Not configured*  
+  - **Maximum PIN length**  
+  Specify a maximum PIN length for devices, to help secure sign-in. Windows device defaults are six characters, but this setting can enforce a minimum of four to 127 characters.  
 
-    - **Lowercase letters in PIN**  
-      You can enforce a stronger PIN by requiring end users include lowercase letters. Your options:
+    **Default**: *Not configured*  
 
-      - **Not allowed** - Block users from using lowercase letters in the PIN. This behavior also occurs if the setting isn't configured.
-      - **Allowed** - Allow users to use lowercase letters in the PIN, but it's not required.
-      - **Required** - Users must include at least one lowercase letter in the PIN. For example, it's common practice to require at least one uppercase letter and one special character.
+  - **Lowercase letters in PIN**  
+    You can enforce a stronger PIN by requiring end users include lowercase letters. Your options:
 
-    - **Uppercase letters in PIN**  
+    - **Not allowed** - Block users from using lowercase letters in the PIN. This behavior also occurs if the setting isn't configured.
+    - **Allowed** - Allow users to use lowercase letters in the PIN, but it's not required.
+    - **Required** - Users must include at least one lowercase letter in the PIN. For example, it's common practice to require at least one uppercase letter and one special character.
+
+  - **Uppercase letters in PIN**  
     You can enforce a stronger PIN by requiring end users include uppercase letters. Your options:
 
-      - **Not allowed** - Block users from using uppercase letters in the PIN. This behavior also occurs if the setting isn't configured.
-      - **Allowed** - Allow users to use uppercase letters in the PIN, but it's not required.
-      - **Required** - Users must include at least one uppercase letter in the PIN. For example, it's common practice to require at least one uppercase letter and one special character.
+    - **Not allowed** - Block users from using uppercase letters in the PIN. This behavior also occurs if the setting isn't configured.
+    - **Allowed** - Allow users to use uppercase letters in the PIN, but it's not required.
+    - **Required** - Users must include at least one uppercase letter in the PIN. For example, it's common practice to require at least one uppercase letter and one special character.
 
-    - **Special characters in PIN**  
+  - **Special characters in PIN**  
     You can enforce a stronger PIN by requiring end users include special characters. Special characters include: `! " # $ % &amp; ' ( ) &#42; + , - . / : ; &lt; = &gt; ? @ [ \ ] ^ _ &#96; { &#124; } ~`  
- 
-      Your options:
-      - **Not allowed** - Block users from using special characters in the PIN. This behavior also occurs if the setting isn't configured.
-      - **Allowed** - Allow users to use uppercase letters in the PIN, but it's not required.
-      - **Required** - Users must include at least one uppercase letter in the PIN. For example, it's common practice to require at least one uppercase letter and one special character.
 
-      **Default**: Not allowed
+    Your options:
+    - **Not allowed** - Block users from using special characters in the PIN. This behavior also occurs if the setting isn't configured.
+    - **Allowed** - Allow users to use uppercase letters in the PIN, but it's not required.
+    - **Required** - Users must include at least one uppercase letter in the PIN. For example, it's common practice to require at least one uppercase letter and one special character.
+
+    **Default**: Not allowed
 
   - **PIN expiration (days)**  
-      It's a good practice to specify an expiration period for a PIN, after which users must change it. Windows device defaults are 41 days.
+    It's a good practice to specify an expiration period for a PIN, after which users must change it. Windows device defaults are 41 days.
 
     **Default**: Not Configured
 

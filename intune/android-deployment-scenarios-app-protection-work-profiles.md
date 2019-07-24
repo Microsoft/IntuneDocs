@@ -64,7 +64,7 @@ To see a list of apps enabled with APP, see [managed apps with a rich set of mob
 
 This section describes the important characteristics of the APP-WE and Android Enterprise work profile deployment scenarios.
 
-#### APP-WE
+### APP-WE
 
 An APP-WE (app protection policies without enrollment) deployment defines policies on apps, not devices. In this scenario, devices typically aren't enrolled or managed by an MDM authority, such as Intune. To protect apps and access to organizational data, administrators use APP-manageable apps, and apply data protection policies to these apps.
 
@@ -77,7 +77,7 @@ This feature applies to:
 
 APP-WE scenarios are for end users who want a small organizational footprint on their devices, and don't want to enroll in MDM. As an administrator, you still need to protect your data. These devices aren't managed. So common MDM tasks and features, such as WiFi, device VPN, and certificate management, aren't part of this deployment scenario.
 
-#### Android Enterprise work profiles
+### Android Enterprise work profiles
 
 Work profiles are the core Android Enterprise deployment scenario and the only scenario targeted at BYOD use cases. The work profile is a separate partition created at the Android OS level that can be managed by Intune.
 
@@ -101,7 +101,7 @@ Work profiles and APP complement each other’s settings by providing additional
 
 ### Suppress APP policy for work profiles
 
-You may need to support individual users who have multiple devices - unmanaged devices in an APP-WE scenario, and managed devices with work profiles. 
+You may need to support individual users who have multiple devices - unmanaged devices in an APP-WE scenario, and managed devices with work profiles.
 
 For example, you require end users to enter a PIN when opening a work app. Depending on the device, the PIN features are handled by APP or by the work profile. For the APP-WE devices, the PIN-to-launch behavior is enforced by APP. For work profile devices, you can use a device or work profile PIN enforced by the OS. To accomplish this scenario, configure APP settings so that they don't apply *when* an app is deployed into a work profile. If you don’t configure it this way, the end user gets prompted for a PIN by the device, and again at the APP layer.
 
@@ -117,13 +117,13 @@ For more information, see [deploy Outlook for iOS and Android app configuration 
 
 There are several enterprise mobility scenarios where using Intune APP is the best recommendation.
 
-#### Older devices running Android 4.4-5.1 are being used
+### Older devices running Android 4.4-5.1 are being used
 
 Officially, any Android device 5.0 or above with Google Mobile Services supports work profiles, and is eligible to be managed in that way. However, some Android 5.0 and 5.1 devices from some OEMs don't support work profiles.
 
 If using versions that don't support work profiles, and to ensure DLP for organization data on devices, you must use Intune APP features.
 
-#### No MDM, no enrollment, Google services are unavailable
+### No MDM, no enrollment, Google services are unavailable
 
 Some customers don't want any form of device management, including work profile management, for different reasons:
 

@@ -123,29 +123,29 @@ Select **OK** > **Create** to save your changes. The profile is created and is s
     > [!NOTE]
     > Currently, only SCEP certificate profiles are supported when using an EAP type. PKCS certificate profiles are not supported. Anytime a user is asked to enter a certificate, be sure to choose an SCEP certificate.
 
-      - **Server Trust**  
+    - **Server Trust**  
 
-        **Certificate server names**: Use with **EAP-TLS**, **EAP-TTLS**, or **PEAP** EAP types. Enter one or more common names used in the certificates issued by your trusted certificate authority (CA). If you enter this information, you can bypass the dynamic trust dialog shown on user devices when they connect to this Wi-Fi network.  
+      **Certificate server names**: Use with **EAP-TLS**, **EAP-TTLS**, or **PEAP** EAP types. Enter one or more common names used in the certificates issued by your trusted certificate authority (CA). If you enter this information, you can bypass the dynamic trust dialog shown on user devices when they connect to this Wi-Fi network.  
 
-        **Root certificate for server validation**: Use with **EAP-TLS**, **EAP-TTLS**, or **PEAP** EAP types. Choose the trusted root certificate profile used to authenticate the connection.  
+      **Root certificate for server validation**: Use with **EAP-TLS**, **EAP-TTLS**, or **PEAP** EAP types. Choose the trusted root certificate profile used to authenticate the connection.  
 
-        **Identity privacy (outer identity)**: Use with **PEAP** EAP type. Enter the text sent in response to an EAP identity request. This text can be any value. During authentication, this anonymous identity is initially sent, and then followed by the real identification sent in a secure tunnel.  
+      **Identity privacy (outer identity)**: Use with **PEAP** EAP type. Enter the text sent in response to an EAP identity request. This text can be any value. During authentication, this anonymous identity is initially sent, and then followed by the real identification sent in a secure tunnel.  
 
-      - **Client Authentication**
+    - **Client Authentication**
 
-        **Client certificate for client authentication (Identity certificate)**: Use with **EAP-TLS** EAP type. Choose the certificate profile used to authenticate the connection.
+      **Client certificate for client authentication (Identity certificate)**: Use with **EAP-TLS** EAP type. Choose the certificate profile used to authenticate the connection.
 
-        **Authentication method**: Use with **EAP-TTLS** EAP type. Select the authentication method for the connection:  
+      **Authentication method**: Use with **EAP-TTLS** EAP type. Select the authentication method for the connection:  
 
-          - **Certificates**: Select the client certificate that is the identity certificate presented to the server.
-          - **Username and Password**: Enter a **Non-EAP method (inner identity)** method for authentication. Your options:
+      - **Certificates**: Select the client certificate that is the identity certificate presented to the server.
+      - **Username and Password**: Enter a **Non-EAP method (inner identity)** method for authentication. Your options:
 
-            - **Unencrypted password (PAP)**
-            - **Challenge Handshake (CHAP)**
-            - **Microsoft CHAP (MS-CHAP)**
-            - **Microsoft CHAP Version 2 (MS-CHAP v2)**
+        - **Unencrypted password (PAP)**
+        - **Challenge Handshake (CHAP)**
+        - **Microsoft CHAP (MS-CHAP)**
+        - **Microsoft CHAP Version 2 (MS-CHAP v2)**
 
-        **Identity privacy (outer identity)**: Use with **EAP-TTLS** EAP type. Enter the text sent in response to an EAP identity request. This text can be any value. During authentication, this anonymous identity is initially sent, and then followed by the real identification sent in a secure tunnel.
+      **Identity privacy (outer identity)**: Use with **EAP-TTLS** EAP type. Enter the text sent in response to an EAP identity request. This text can be any value. During authentication, this anonymous identity is initially sent, and then followed by the real identification sent in a secure tunnel.
 
 - **Company Proxy settings**: Choose to use the proxy settings within your organization. Your options:
   - **None**: No proxy settings are configured.

@@ -112,12 +112,12 @@ The **Reports** blade provides several reports based on user and app, including 
 
 - **App report**: In addition to selecting the platform and app, this report provides two different app protection statuses that you can select before generating the report. The statuses can be **Protected** or **Unprotected**.
 
-    - User status for managed MAM activity (**Protected**): This report outlines the activity of each managed MAM app, on a per user basis. It shows all apps targeted by MAM policies for each user, and break down the status of each app as checked in with MAM policies, or that was targeted with a MAM policy but the app was never checked in.
-    - User status for unmanaged MAM activity (**Unprotected**): This report outlines the activity of MAM-enabled apps that are currently unmanaged, on a per user basis. This might happen according to the following reasons:
-        - These apps are either being used by a user or an app that is not currently targeted by a MAM policy.
-        - All apps are checked in, but aren't getting any MAM policies.
+  - User status for managed MAM activity (**Protected**): This report outlines the activity of each managed MAM app, on a per user basis. It shows all apps targeted by MAM policies for each user, and break down the status of each app as checked in with MAM policies, or that was targeted with a MAM policy but the app was never checked in.
+  - User status for unmanaged MAM activity (**Unprotected**): This report outlines the activity of MAM-enabled apps that are currently unmanaged, on a per user basis. This might happen according to the following reasons:
+    - These apps are either being used by a user or an app that is not currently targeted by a MAM policy.
+    - All apps are checked in, but aren't getting any MAM policies.
 
-        ![Screenshot of a user's App reporting blade with details for 3 apps](./media/MAM-reporting-4.png)
+    ![Screenshot of a user's App reporting blade with details for 3 apps](./media/MAM-reporting-4.png)
 
 - **User configuration report**: Based on a selected user, this report provides details about any app configurations the user has received.
 - **App configuration report**: Base on the selected platform and app, this report provides details about which users have received configurations for the selected app.

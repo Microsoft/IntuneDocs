@@ -45,7 +45,7 @@ With both Intune and Intune for Education, you can:
 * Protect your organizational information by helping to control the way your users access and share it.
 * Ensure devices and apps are compliant with security requirements.
 
-### Next steps
+## Next steps
 * Get familiar with the product [with a 90 day free trial of Intune](https://signup.microsoft.com/Signup?OfferId=5eec053c-cc40-4cd5-a06a-ea8d75cf2686&ali=1). If you already have access, head to (https://intuneeducation.portal.azure.com) to get started.
 * Read about the quickest way to [start using Intune for Education](/intune-education/what-is-express-configuration).
 * Dive into the [technical requirements and capabilities](/intune/supported-devices-browsers) of Intune.

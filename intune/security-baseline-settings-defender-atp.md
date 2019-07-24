@@ -32,9 +32,9 @@ ms.collection: M365-identity-device-management
 
 View the Microsoft Defender Advanced Threat Protection (formerly Windows Defender Advanced Threat Protection) baseline settings that are supported by Microsoft Intune. The Advanced Threat Protection (ATP) baseline defaults represent the recommended configuration for ATP, and might not match baseline defaults for other security baselines.  
 
-  The Microsoft Defender Advanced Threat Protection baseline is available when your environment meets the prerequisites for using [Microsoft Defender Advanced Threat Protection](advanced-threat-protection.md#prerequisites)).
+The Microsoft Defender Advanced Threat Protection baseline is available when your environment meets the prerequisites for using [Microsoft Defender Advanced Threat Protection](advanced-threat-protection.md#prerequisites). 
 
-
+This baseline is optimized for physical devices and is currently not recommended for use on virtual machines (VMs) or VDI endpoints. Certain baseline settings can impact remote interactive sessions on virtualized environments. For more information, see [Increase compliance to the Microsoft Defender ATP security baseline](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/configure-machines-security-baseline) in the Windows documentation.
 
 
 > [!NOTE]  
@@ -169,22 +169,22 @@ For more information, [BitLocker Group Policy settings](https://docs.microsoft.c
 
   For Bit locker removable drive policy, configure the following settings:
 
-    - **Require encryption for write access**  
-      **Default**: Yes
+  - **Require encryption for write access**  
+    **Default**: Yes
 
-    - **Encryption method**  
-      **Default**: AES 128bit CBC
+  - **Encryption method**  
+    **Default**: AES 128bit CBC
 
 - **Bit locker fixed drive policy**  
   The values for this policy determine the strength of the cipher that BitLocker uses for encryption of fixed drives. Enterprises can control the encryption level for increased security (AES-256 is stronger than AES-128). If you enable this setting, you can configure an encryption algorithm and key cipher strength for fixed data drives, operating system drives, and removable data drives individually. For fixed and operating system drives, we recommend that you use the XTS-AES algorithm. For removable drives, you should use AES-CBC 128-bit or AES-CBC 256-bit if the drive is used in other devices that aren't running Windows 10, version 1511 or later. Changing the encryption method has no effect if the drive is already encrypted or if encryption is in progress. In these cases, this policy setting is ignored.
 
   For Bit locker fixed drive policy, configure the following settings:
 
-    - **Require encryption for write access**  
-      **Default**: Yes
+  - **Require encryption for write access**  
+    **Default**: Yes
 
-    - **Encryption method**  
-      **Default**: AES 128bit XTS
+  - **Encryption method**  
+    **Default**: AES 128bit XTS
 
 - **Bit locker system drive policy**  
   The values for this policy determine the strength of the cipher that BitLocker uses for encryption of the system drive. Enterprises may want to control the encryption level for increased security (AES-256 is stronger than AES-128). If you enable this setting, you can configure an encryption algorithm and key cipher strength for fixed data drives, operating system drives, and removable data drives individually. For fixed and operating system drives, we recommend that you use the XTS-AES algorithm. For removable drives, you should use AES-CBC 128-bit or AES-CBC 256-bit if the drive is used in other devices that aren't running Windows 10, version 1511 or later. Changing the encryption method has no effect if the drive is already encrypted or if encryption is in progress. In these cases, this policy setting is ignored.  
@@ -298,7 +298,7 @@ For more information, see [WindowsAdvancedThreatProtection CSP](https://docs.mic
 
   **Default**: Audit mode
 
-## Web Network Protection  
+## Web & Network Protection  
 
 - **Network protection type**  
   [Defender/EnableNetworkProtection](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-enablenetworkprotection)  - This policy allows you to turn network protection on or off in Windows Defender Exploit Guard. Network protection is a feature of Windows Defender Exploit Guard that protects employees using any app from accessing phishing scams, exploit-hosting sites, and malicious content on the Internet. This includes preventing third-party browsers from connecting to dangerous sites.  

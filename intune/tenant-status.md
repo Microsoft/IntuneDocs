@@ -51,14 +51,14 @@ When there's more than a single connector of any one type, the status is a summa
 
 **Connector status:**
 - **Unhealthy:**
-    - The certificate or credential has expired
-    - The last synchronization was three or more days ago
+  - The certificate or credential has expired
+  - The last synchronization was three or more days ago
 - **Warning:**
-    - The certificate or credential will expire within seven days
-    - The last synchronization was more than one day ago
+  - The certificate or credential will expire within seven days
+  - The last synchronization was more than one day ago
 - **Healthy:**
-    - The certificate or credential won't expire within the next seven days
-    - The last synchronization was less than one day ago  
+  - The certificate or credential won't expire within the next seven days
+  - The last synchronization was less than one day ago  
 
 When you select a connector from the list, the portal presents the portal page that is relevant to creating or configuring that connector.  For example, when you select the **VPP Expiry Date** connector, the **iOS Volume-Purchased Program Tokens** page opens where you can view more details about that connector. You can then create a new configuration or edit and fix issues with an existing one.  
 

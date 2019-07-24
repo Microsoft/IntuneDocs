@@ -100,7 +100,7 @@ Detect threats to your network like **Man-in-the-middle** attacks, and prevent s
 
 - Better Mobile Threat Defense subscription
 
-    - For more information, see the [Better Mobile website](https://www.better.mobi/).
+  - For more information, see the [Better Mobile website](https://www.better.mobi/).
 
 ## Next steps
 

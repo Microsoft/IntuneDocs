@@ -51,14 +51,14 @@ This service is opt-in; no app inventory information is shared by default. An In
 **App inventory**  
 If you enable App Sync for iOS devices, inventories from both corporate and personally owned iOS devices are sent to your MTD service provider. Data in the app inventory includes:
 
- - App ID
- - App Version
- - App Short Version
- - App Name
- - App Bundle Size
- - App Dynamic Size
- - Whether the app is validated or not
- - Whether the app is managed or not
+- App ID
+- App Version
+- App Short Version
+- App Name
+- App Bundle Size
+- App Dynamic Size
+- Whether the app is validated or not
+- Whether the app is managed or not
 
 ## Sample scenarios
 

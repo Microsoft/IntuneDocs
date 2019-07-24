@@ -61,9 +61,9 @@ After the confirmation, the Company Portal attempts to lock your device. A “Re
 
 The Remote Lock status displays in three places:
 
-   * The notifications area of the website.
-   * The **Details** page for the device.
-   * The tile that shows the device name on the **Devices** section of the page.  
+* The notifications area of the website.
+* The **Details** page for the device.
+* The tile that shows the device name on the **Devices** section of the page.  
 
 > [!Note]
 > If you see a notification that the remote lock failed, wait a few minutes. Then try to lock your device again. The status will change back to “Remote lock pending." If the retry doesn't work, contact your company support for help.

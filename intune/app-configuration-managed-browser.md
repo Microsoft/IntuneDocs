@@ -122,7 +122,7 @@ Once the above policy is configured, users will be forced to use the Intune Mana
 
 The Managed Browser does not support classic Conditional Access policies. For more information, see [Migrate classic policies in the Azure portal](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-migration).
 
-##  Single Sign-on to Azure AD-connected web apps in policy-protected browsers
+## Single Sign-on to Azure AD-connected web apps in policy-protected browsers
 
 Microsoft Edge and Intune Managed Browser on iOS and Android can take advantage of SSO to all web apps (SaaS and on-prem) that are Azure AD-connected. When the Microsoft Authenticator app is present on iOS or the Intune Company Portal app on Android, users of a policy-protected browser will be able to access Azure AD-connected web apps without having to re-enter their credentials.
 
@@ -194,8 +194,8 @@ Microsoft Edge and the Intune Managed Browser and [Azure AD Application Proxy]( 
 ### Before you start
 
 - Set up your internal applications through the Azure AD Application Proxy.
-    - To configure Application Proxy and publish applications, see the [setup documentation](https://docs.microsoft.com/azure/active-directory/manage-apps/application-proxy). 
-    - [Users must be assigned](https://docs.microsoft.com/azure/active-directory/manage-apps/application-proxy-add-on-premises-application#add-a-user-for-testing) to the Enterprise Application for which the redirection is to occur. This must be done even if the application is set to Passthrough mode for Pre-Authentication, and if the user assignment requirement has been turned off in the Application Proxy settings.
+  - To configure Application Proxy and publish applications, see the [setup documentation](https://docs.microsoft.com/azure/active-directory/manage-apps/application-proxy). 
+  - [Users must be assigned](https://docs.microsoft.com/azure/active-directory/manage-apps/application-proxy-add-on-premises-application#add-a-user-for-testing) to the Enterprise Application for which the redirection is to occur. This must be done even if the application is set to Passthrough mode for Pre-Authentication, and if the user assignment requirement has been turned off in the Application Proxy settings.
 - You must be using minimum version 1.2.0 of the Managed Browser app.
 - Users of the Managed Browser or Microsoft Edge app have an [Intune app protection policy](app-protection-policy.md) assigned to the app.
 

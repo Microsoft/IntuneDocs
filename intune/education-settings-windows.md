@@ -39,7 +39,7 @@ These settings are added to a device configuration profile, and then assigned or
 
 [Create a device configuration profile](education-settings-configure.md#create-a-device-profile).
 
-## Take a test settings
+## Take a test settings  
 
 - **Account type**: Choose how users sign in to the test. Your options:
   - Azure AD account

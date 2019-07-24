@@ -34,13 +34,13 @@ Access to the Intune APIs in Microsoft Graph requires:
 
 - An application ID with:
 
-    - Permission to call Azure AD and the Microsoft Graph APIs.
-    - Permission scopes relevant to the specific application tasks.
+  - Permission to call Azure AD and the Microsoft Graph APIs.
+  - Permission scopes relevant to the specific application tasks.
 
 - User credentials with:
 
-    - Permission to access the Azure AD tenant associated with the application.
-    - Role permissions required to support the application permission scopes.
+  - Permission to access the Azure AD tenant associated with the application.
+  - Role permissions required to support the application permission scopes.
 
 - The end user to grant permission to the app to perform applications tasks for their Azure tenant.
 
@@ -169,10 +169,10 @@ At this time, all Intune permission scopes require administrator access.  This m
 - **Enable Access** setting: __Read Microsoft Intune apps__
 
 - Permits read access to the following entity properties and status:
-    - Client Apps
-    - Mobile App Categories
-    - App Protection Policies
-    - App Configurations
+  - Client Apps
+  - Mobile App Categories
+  - App Protection Policies
+  - App Configurations
 
 ### <a name="app-rw"></a>DeviceManagementApps.ReadWrite.All
 
@@ -182,19 +182,19 @@ At this time, all Intune permission scopes require administrator access.  This m
 
 - Also permits changes to the following entities:
 
-    - Client Apps
-    - Mobile App Categories
-    - App Protection Policies
-    - App Configurations
+  - Client Apps
+  - Mobile App Categories
+  - App Protection Policies
+  - App Configurations
 
 ### <a name="cfg-ro"></a>DeviceManagementConfiguration.Read.All
 
 - **Enable Access** setting: __Read Microsoft Intune device configuration and policies__
 
 - Permits read access to the following entity properties and status:
-    - Device Configuration
-    - Device Compliance Policy
-    - Notification Messages
+  - Device Configuration
+  - Device Compliance Policy
+  - Notification Messages
 
 ### <a name="cfg-ra"></a>DeviceManagementConfiguration.ReadWrite.All
 
@@ -203,34 +203,34 @@ At this time, all Intune permission scopes require administrator access.  This m
 - Allows the same operations as __DeviceManagementConfiguration.Read.All__
 
 - Apps can also create, assign, delete, and change the following entities:
-    - Device Configuration
-    - Device Compliance Policy
-    - Notification Messages
+  - Device Configuration
+  - Device Compliance Policy
+  - Notification Messages
 
 ### <a name="mgd-po"></a>DeviceManagementManagedDevices.PrivilegedOperations.All
 
 - **Enable Access** setting: __Perform user-impacting remote actions on Microsoft Intune devices__
 
 - Permits the following remote actions on a managed device:
-    - Retire
-    - Wipe
-    - Reset/Recover Passcode
-    - Remote Lock
-    - Enable/Disable Lost Mode
-    - Clean PC
-    - Reboot
-    - Delete User from Shared Device
+  - Retire
+  - Wipe
+  - Reset/Recover Passcode
+  - Remote Lock
+  - Enable/Disable Lost Mode
+  - Clean PC
+  - Reboot
+  - Delete User from Shared Device
 
 ### <a name="mgd-ro"></a>DeviceManagementManagedDevices.Read.All
 
 - **Enable Access** setting: __Read Microsoft Intune devices__
 
 - Permits read access to the following entity properties and status:
-    - Managed Device
-    - Device Category
-    - Detected App
-    - Remote actions
-    - Malware information
+  - Managed Device
+  - Device Category
+  - Detected App
+  - Remote actions
+  - Malware information
 
 ### <a name="mgd-rw"></a>DeviceManagementManagedDevices.ReadWrite.All
 
@@ -239,22 +239,22 @@ At this time, all Intune permission scopes require administrator access.  This m
 - Allows the same operations as __DeviceManagementManagedDevices.Read.All__
 
 - Apps can also create, delete, and change the following entities:
-    - Managed Device
-    - Device Category
+  - Managed Device
+  - Device Category
 
 - The following remote actions are also allowed:
-    - Locate devices
-    - Bypass activation lock
-    - Request remote assistance
+  - Locate devices
+  - Bypass activation lock
+  - Request remote assistance
 
 ### <a name="rac-ro"></a>DeviceManagementRBAC.Read.All
 
 - **Enable Access** setting: __Read Microsoft Intune RBAC settings__
 
 - Permits read access to the following entity properties and status:
-    - Role Assignments
-    - Role Definitions
-    - Resource Operations
+  - Role Assignments
+  - Role Definitions
+  - Resource Operations
 
 ### <a name="rac-rw"></a>DeviceManagementRBAC.ReadWrite.All
 
@@ -263,24 +263,24 @@ At this time, all Intune permission scopes require administrator access.  This m
 - Allows the same operations as __DeviceManagementRBAC.Read.All__
 
 - Apps can also create, assign, delete, and change the following entities:
-    - Role Assignments
-    - Role Definitions
+  - Role Assignments
+  - Role Definitions
 
 ### <a name="svc-ro"></a>DeviceManagementServiceConfig.Read.All
 
 - **Enable Access** setting: __Read Microsoft Intune configuration__
 
 - Permits read access to the following entity properties and status:
-    - Device Enrollment
-    - Apple Push Notification Certificate
-    - Apple Device Enrollment Program
-    - Apple Volume Purchase Program
-    - Exchange Connector
-    - Terms and Conditions
-    - Telecoms Expense Management
-    - Cloud PKI
-    - Branding
-    - Mobile Threat Defense
+  - Device Enrollment
+  - Apple Push Notification Certificate
+  - Apple Device Enrollment Program
+  - Apple Volume Purchase Program
+  - Exchange Connector
+  - Terms and Conditions
+  - Telecoms Expense Management
+  - Cloud PKI
+  - Branding
+  - Mobile Threat Defense
 
 ### <a name="svc-rw"></a>DeviceManagementServiceConfig.ReadWrite.All
 
@@ -289,16 +289,16 @@ At this time, all Intune permission scopes require administrator access.  This m
 - Allows the same operations as DeviceManagementServiceConfig.Read.All_
 
 - Apps can also configure the following Intune features:
-    - Device Enrollment
-    - Apple Push Notification Certificate
-    - Apple Device Enrollment Program
-    - Apple Volume Purchase Program
-    - Exchange Connector
-    - Terms and Conditions
-    - Telecoms Expense Management
-    - Cloud PKI
-    - Branding
-    - Mobile Threat Defense
+  - Device Enrollment
+  - Apple Push Notification Certificate
+  - Apple Device Enrollment Program
+  - Apple Volume Purchase Program
+  - Exchange Connector
+  - Terms and Conditions
+  - Telecoms Expense Management
+  - Cloud PKI
+  - Branding
+  - Mobile Threat Defense
 
 ## Azure AD authentication examples
 

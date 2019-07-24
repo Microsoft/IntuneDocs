@@ -39,8 +39,8 @@ The **Fresh Start** device action removes any apps that are installed on a PC ru
 3. Click **Fresh Start**. 
 4. Select **Retain user data on this device** to:
    * Keep the device Azure AD joined
-    * Device is enrolled into mobile device management again when an Azure Active Directory enabled user signs into the device.
-    * Keep the contents of the device user's Home folder, and remove apps and settings
+   * Device is enrolled into mobile device management again when an Azure Active Directory enabled user signs into the device.
+   * Keep the contents of the device user's Home folder, and remove apps and settings
 
   > [!IMPORTANT]
  > If you do not retain user data, the device will be restored to the default OOBE (out-of-box experience) completed state retaining the built in administrator account.

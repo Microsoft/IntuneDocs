@@ -54,6 +54,6 @@ This article shows you the email profile settings you can configure for your dev
 ## Content sync settings
 
 - **Content type to sync** - Select the content types that you want to synchronize to devices from:
-    - **Contacts**
-    - **Calendar**
-    - **Tasks**
+  - **Contacts**
+  - **Calendar**
+  - **Tasks**

@@ -1,6 +1,11 @@
 {
 	"redirections": [
 		{
+			"source_path": "intune-user-help/create-a-work-profile-and-enroll-your-device-in-intune-android.md", 
+			"redirect_url": "/intune-user-help/enroll-device-android-work-profile",
+			"redirect_document_id": true  
+		},
+		{
 			"source_path": "intune-user-help/send-enrollment-errors-to-your-it-admin-android.md", 
 			"redirect_url": "/intune-user-help/send-logs-to-your-it-admin-by-email-android",
 			"redirect_document_id": true  

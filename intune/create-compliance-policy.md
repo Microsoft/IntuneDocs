@@ -72,7 +72,7 @@ To use device compliance policies, be sure you:
     - **Overview**: Shows a summary and number of devices that are compliant, not evaluated, and so on. It also lists the policies and individual settings in your policies. [Monitor Intune device compliance policies](compliance-policy-monitor.md) provides some good information.
     - **Manage**: Create device policies, send [notifications](quickstart-send-notification.md) to non-compliant devices, and enable [network fencing](use-network-locations.md).
     - **Monitor**: Check the compliance status of your devices, and at the setting and policy level. [Monitor Intune device compliance policies](compliance-policy-monitor.md) is a good resource. Also view logs and check the threat agent status of your devices.
-    - **Setup**: Use the [built-in compliance policies](device-compliance-get-started.md#ways-to-deploy-device-compliance-policies), enable [Windows Defender advanced threat protection (ATP)](advanced-threat-protection.md), add a [mobile threat defense connector](mobile-threat-defense.md), and use [Jamf](conditional-access-integrate-jamf.md).
+    - **Setup**: Use the [built-in compliance policies](device-compliance-get-started.md#ways-to-deploy-device-compliance-policies), enable [Microsoft Defender advanced threat protection (ATP)](advanced-threat-protection.md), add a [mobile threat defense connector](mobile-threat-defense.md), and use [Jamf](conditional-access-integrate-jamf.md).
 
 3. Select **Policies** > **Create Policy**. Enter the following properties:
 

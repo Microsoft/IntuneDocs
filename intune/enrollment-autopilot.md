@@ -32,6 +32,8 @@ ms.collection: M365-identity-device-management
 # Enroll Windows devices in Intune by using the Windows Autopilot  
 The Windows Autopilot simplifies enrolling devices in Intune. Building and maintaining customized operating system images is a time-consuming process. You might also spend time applying these custom operating system images to new devices to prepare them for use before giving them to your end users. With Microsoft Intune and Autopilot, you can give new devices to your end users without the need to build, maintain, and apply custom operating system images to the devices. When you use Intune to manage Autopilot devices, you can manage policies, profiles, apps, and more after they're enrolled. For an overview of benefits, scenarios, and prerequisites, see [Overview of Windows Autopilot](https://docs.microsoft.com/windows/deployment/windows-autopilot/windows-10-autopilot).
 
+There are four types of Autopilot deployment: [Self Deploying Mode](https://docs.microsoft.com/en-us/windows/deployment/windows-autopilot/self-deploying) for kiosks, digital signage, or a shared device, [White Glove](https://docs.microsoft.com/windows/deployment/windows-autopilot/white-glove) enables partners or IT staff to pre-provision a Windows 10 PC so that it is fully configured and business-ready, [Autopilot for existing devices](https://docs.microsoft.com/windows/deployment/windows-autopilot/existing-devices) enables you to easily deploy the latest version of Windows 10 to your existing devices, and [User Driven Mode](https://docs.microsoft.com/en-us/windows/deployment/windows-autopilot/user-driven) for traditional users. 
+
 
 ## Prerequisites
 - [Intune subscription](licenses.md)

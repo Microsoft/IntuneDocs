@@ -39,15 +39,15 @@ Depending on the settings you choose, not all values in the following list are c
 **Connection name** - Enter a name for this connection. End users see this name when they browse their device for the list of available VPN connections.
 - **IP address or FQDN** - Provide the IP address or fully qualified domain name of the VPN server that devices connect to. Examples: **192.168.1.1**, **vpn.contoso.com**.
 - **Authentication method** - Choose how devices authenticate to the VPN server from:
-    - **Certificates** - Under **Authentication certificate**, Choose a SCEP or PKCS certificate profile you previously created to authenticate the connection. For more details about certificate profiles, see [How to configure certificates](certificates-configure.md).
-    - **Username and password** - End users must supply a username and password to log into the VPN server.
+  - **Certificates** - Under **Authentication certificate**, Choose a SCEP or PKCS certificate profile you previously created to authenticate the connection. For more details about certificate profiles, see [How to configure certificates](certificates-configure.md).
+  - **Username and password** - End users must supply a username and password to log into the VPN server.
 - **Connection type** - Select the VPN connection type from the following list of vendors:
-    - **Check Point Capsule VPN**
-    - **Cisco AnyConnect**
-    - **SonicWall Mobile Connect**
-    - **F5 Edge Client**
-    - **Pulse Secure**
-    - **Custom VPN**
+  - **Check Point Capsule VPN**
+  - **Cisco AnyConnect**
+  - **SonicWall Mobile Connect**
+  - **F5 Edge Client**
+  - **Pulse Secure**
+  - **Custom VPN**
 - **Split tunneling** - **Enable** or **Disable** this option that lets devices decide which connection to use depending on the traffic. For example, a user in a hotel uses the VPN connection to access work files, but use the hotel's standard network for regular web browsing.
 
 <!--- **Per-app VPN** - Select this option if you want to associate this VPN connection with an iOS or macOS app so that the connection will be opened when the app is run. You can associate the VPN profile with an app when you assign the software. For more information, see [How to assign and monitor apps](apps-deploy.md). --->

@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Manage web access by using Microsoft Edge with Microsoft Intune 
+title: Manage Microsoft Edge for iOS and Android with Intune 
 titleSuffix: 
 description: Use Intune app protection policies with Microsoft Edge to ensure corporate websites are always accessed with safeguards in place. 
 keywords:
@@ -162,7 +162,7 @@ These are some examples of the scenarios Azure AD Application Proxy enable:
 ### Before you start
 
 - Set up your internal applications through Azure AD Application Proxy.
-    - To configure Application Proxy and publish applications, see the [setup documentation](https://docs.microsoft.com/azure/active-directory/manage-apps/application-proxy).
+  - To configure Application Proxy and publish applications, see the [setup documentation](https://docs.microsoft.com/azure/active-directory/manage-apps/application-proxy).
 - The Microsoft Edge app must have [Intune app protection policy](app-protection-policy.md) assigned.
 
 > [!NOTE]
@@ -233,34 +233,34 @@ You can use various URL formats to build your allowed/blocked sites lists. These
 - You can use the wildcard symbol (\*) according to the rules in the following permitted patterns list.
 - A wildcard can only match an entire component of the hostname (separated by periods) or entire parts of the path (separated by forward slashes). For example, `http://*contoso.com` is **not** supported.
 - You can specify port numbers in the address. If you do not specify a port number, the values used are:
-    - Port 80 for http
-    - Port 443 for https
+  - Port 80 for http
+  - Port 443 for https
 - Using wildcards for the port number is **not** supported. For example, `http://www.contoso.com:*` and `http://www.contoso.com:*/` are not supported. 
 
     |    URL    |    Details    |    Matches    |    Does not match    |
     |-------------------------------------------|--------------------------------------------------------|-------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------|
     |    `http://www.contoso.com`    |    Matches a single page    |    `www.contoso.com`    |    `host.contoso.com`<br>`www.contoso.com/images`<br>`contoso.com/`    |
     |    `http://contoso.com`    |    Matches a single page    |    `contoso.com/`    |    `host.contoso.com`<br>`www.contoso.com/images`<br>`www.contoso.com`    |
-    |    `http://www.contoso.com/&#42;`   |    Matches all URLs that begin with `www.contoso.com`    |    `www.contoso.com`<br>`www.contoso.com/images`<br>`www.contoso.com/videos/tvshows`    |    `host.contoso.com`<br>`host.contoso.com/images`    |
-    |    `http://*.contoso.com/*`    |    Matches all subdomains under `contoso.com`    |    `developer.contoso.com/resources`<br>`news.contoso.com/images`<br>`news.contoso.com/videos`    |    `contoso.host.com`    |
-    |    `http://www.contoso.com/images`    |    Matches a single folder    |    `www.contoso.com/images`    |    `www.contoso.com/images/dogs`    |
+    |    `http://www.contoso.com/*;`   |    Matches all URLs that begin with `www.contoso.com`    |    `www.contoso.com`<br>`www.contoso.com/images`<br>`www.contoso.com/videos/tvshows`    |    `host.contoso.com`<br>`host.contoso.com/images`    |
+    |    `http://*.contoso.com/*`    |    Matches all subdomains under `contoso.com`    |    `developer.contoso.com/resources`<br>`news.contoso.com/images`<br>`news.contoso.com/videos`    |    `contoso.host.com`    |    `http://*contoso.com/*`    |    Matches all subdomains ending with `contoso.com/`    |    `http://news-contoso.com`<br>`http://news-contoso.com.com/daily`    |    `http://news-contoso.host.com`    |
+    `http://www.contoso.com/images`    |    Matches a single folder    |    `www.contoso.com/images`    |    `www.contoso.com/images/dogs`    |
     |    `http://www.contoso.com:80`    |    Matches a single page, by using a port   number    |    `http://www.contoso.com:80`    |         |
     |    `https://www.contoso.com`    |    Matches a single, secure page    |    `https://www.contoso.com`    |    `http://www.contoso.com`    |
     |    `http://www.contoso.com/images/*`    |    Matches a single folder and all subfolders    |    `www.contoso.com/images/dogs`<br>`www.contoso.com/images/cats`    |    `www.contoso.com/videos`    |
   
 - The following are examples of some of the inputs that you can't specify:
-    - `*.com`
-    - `*.contoso/*`
-    - `www.contoso.com/*images`
-    - `www.contoso.com/*images*pigs`
-    - `www.contoso.com/page*`
-    - IP addresses
-    - `https://*`
-    - `http://*`
-    - `https://*contoso.com`
-    - `http://www.contoso.com:*`
-    - `http://www.contoso.com: /*`
-  
+  - `*.com`
+  - `*.contoso/*`
+  - `www.contoso.com/*images`
+  - `www.contoso.com/*images*pigs`
+  - `www.contoso.com/page*`
+  - IP addresses
+  - `https://*`
+  - `http://*`
+  - `https://*contoso.com`
+  - `http://www.contoso.com:*`
+  - `http://www.contoso.com: /*`
+
 ## Define behavior when users try to access a blocked site
 
 With the dual-identity model built into Microsoft Edge, you can enable a more flexible experience for your end users than was possible with the Intune Managed Browser. When users hit a blocked site in Microsoft Edge, you can prompt them to open the link in their personal context instead of their work context. This enables them to stay protected, while keeping corporate resources safe. For example, if a user is sent a link to a news article through Outlook, they can open the link in their personal context or in an InPrivate tab. Their work context doesn't allow news websites. By default, these transitions are allowed.

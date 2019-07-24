@@ -43,13 +43,13 @@ Before starting the process of integrating Pradeo with Intune, make sure you hav
 
 - Azure Active Directory admin credentials to grant the following permissions:
 
-    - Sign in and read user profile
+  - Sign in and read user profile
 
-    - Access the directory as the signed-in user
+  - Access the directory as the signed-in user
 
-    - Read directory data
+  - Read directory data
 
-    - Send device information to Intune
+  - Send device information to Intune
 
 - Admin credentials to access Pradeo Security console.
 

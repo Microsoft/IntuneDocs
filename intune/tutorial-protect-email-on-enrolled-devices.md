@@ -39,10 +39,10 @@ In this tutorial, you'll learn how to:
 If you don’t have an Intune subscription, [sign up for a free trial account](free-trial-sign-up.md).
 
 ## Prerequisites
-  - You'll need a test tenant with the following subscriptions for this tutorial:
-    - Azure Active Directory Premium ([free trial](https://azure.microsoft.com/free/?WT.mc_id=A261C142F))
-    - Office 365 Business subscription that includes Exchange ([free trial](https://go.microsoft.com/fwlink/p/?LinkID=510938))
-  - Before you begin, create a test device profile for iOS devices by following the steps in [Quickstart: Create an email device profile for iOS](quickstart-email-profile.md).
+- You'll need a test tenant with the following subscriptions for this tutorial:
+  - Azure Active Directory Premium ([free trial](https://azure.microsoft.com/free/?WT.mc_id=A261C142F))
+  - Office 365 Business subscription that includes Exchange ([free trial](https://go.microsoft.com/fwlink/p/?LinkID=510938))
+- Before you begin, create a test device profile for iOS devices by following the steps in [Quickstart: Create an email device profile for iOS](quickstart-email-profile.md).
 
 ## Sign in to Intune
 

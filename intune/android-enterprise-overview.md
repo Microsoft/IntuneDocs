@@ -75,9 +75,9 @@ VPN support is similar to Android VPN profiles. The same VPN providers and basic
 - **Work profile-scoped VPN** – VPN connections are limited to just the apps deployed to the work profile. Only Android Enterpise-managed apps can use the VPN connection. Personal apps on the device cannot use a managed VPN connection. For more information, see [Android Enterprise VPN settings](vpn-settings-android.md#android-enterprise-vpn-settings).
 
 - **App-specific VPN** – App-specific VPN can be configured in Intune if the VPN provider supports:
-    - configuration for app-specific VPN
-    - the capability to configure per-app VPN via the Android Enterprise app configuration profile.
-    For more information, see [Use a Microsoft Intune custom profile to create a per-app VPN profile for Android devices](android-pulse-secure-per-app-vpn.md).
+  - configuration for app-specific VPN
+  - the capability to configure per-app VPN via the Android Enterprise app configuration profile.
+  For more information, see [Use a Microsoft Intune custom profile to create a per-app VPN profile for Android devices](android-pulse-secure-per-app-vpn.md).
 
 ## Certificate profiles
 

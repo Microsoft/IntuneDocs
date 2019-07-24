@@ -37,7 +37,7 @@ Review event logs and error codes to [troubleshoot issues with Windows Defender 
 
 ## Common Intune errors and possible resolutions
 
-#### Endpoint Protection engine unavailable
+### Endpoint Protection engine unavailable
 
 **Potential cause**: The Intune endpoint protection engine was corrupted or deleted.
 
@@ -48,7 +48,7 @@ Review event logs and error codes to [troubleshoot issues with Windows Defender 
 - In Control Panel > Programs, select **Microsoft Intune Endpoint Protection Agent**. Uninstall the application.
 - During the next update synchronization, the Microsoft Online Management Update Manager detects the missing program and reinstalls it at the scheduled installation time.
 
-#### Features are disabled
+### Features are disabled
 
 You may get a message that some features are disabled. These messages can happen if Intune endpoint protection or Windows Defender is disabled by an administrator using a configuration profile. Or, it's disabled by an end user on the device. Possible messages:
 
@@ -66,19 +66,19 @@ You may get a message that some features are disabled. These messages can happen
 - [Windows Defender Antivirus](device-restrictions-windows-10.md#windows-defender-antivirus)
 - [End users: Turn on real-time protection to access company resources](/intune-user-help/turn-on-defender-windows)
 
-#### Malware definitions out of date
+### Malware definitions out of date
 
 This status shows when the malware definitions on the device are out of date by 14 days or more. For example, the message may show if the device is disconnected from the Internet, or the malware definitions are outdated.
 
 **Possible solutions**: If malware definitions are out of date, update the definitions using [Windows Defender Antivirus](device-restrictions-windows-10.md#windows-defender-antivirus).
 
-#### Full scan overdue or Quick scan overdue
+### Full scan overdue or Quick scan overdue
 
 A full scan or quick scan hasn't completed for 14 days. This scenario can happen if the device restarts during a full scan.
 
 **Possible solutions**: If a scan is overdue, you can run a one-time scan or schedule recurring scans. See [Windows Defender Antivirus](device-restrictions-windows-10.md#windows-defender-antivirus).
 
-#### Another endpoint protection application running
+### Another endpoint protection application running
 
 Another endpoint protection application is running, and the device is healthy.
 

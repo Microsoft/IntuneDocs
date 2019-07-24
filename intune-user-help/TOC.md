@@ -12,7 +12,7 @@
 ### [Why enroll your Android device](why-enroll-android-device.md)
 ### Enroll your device
 #### [Enroll your Android device](enroll-device-android-company-portal.md)  
-#### [Enroll with Android work profile](create-a-work-profile-and-enroll-your-device-in-intune-android.md)
+#### [Enroll with Android work profile](enroll-device-android-work-profile.md)
 #### [Enroll with Microsoft Intune app](enroll-device-android-microsoft-intune-app.md)
 ### [Use managed apps on your device](use-managed-apps-on-your-device-android.md)
 ### [Encrypt your device](encrypt-your-device-android.md)

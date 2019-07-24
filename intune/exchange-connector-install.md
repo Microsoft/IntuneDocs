@@ -62,18 +62,18 @@ The following table lists the requirements for the computer on which you install
 Create an Active Directory user account that will be used by the on-premises Exchange connector. The account must have permission to run the following required Windows PowerShell Exchange cmdlets:
 
 
- - Get-ActiveSyncOrganizationSettings, Set-ActiveSyncOrganizationSettings
- - Get-CasMailbox, Set-CasMailbox
- - Get-ActiveSyncMailboxPolicy, Set-ActiveSyncMailboxPolicy, New-ActiveSyncMailboxPolicy, Remove-ActiveSyncMailboxPolicy
- - Get-ActiveSyncDeviceAccessRule, Set-ActiveSyncDeviceAccessRule, New-ActiveSyncDeviceAccessRule, Remove-ActiveSyncDeviceAccessRule
- - Get-ActiveSyncDeviceStatistics
- - Get-ActiveSyncDevice
- - Get-ExchangeServer
- - Get-ActiveSyncDeviceClass
- - Get-Recipient
- - Clear-ActiveSyncDevice, Remove-ActiveSyncDevice
- - Set-ADServerSettings
- - Get-Command
+- Get-ActiveSyncOrganizationSettings, Set-ActiveSyncOrganizationSettings
+- Get-CasMailbox, Set-CasMailbox
+- Get-ActiveSyncMailboxPolicy, Set-ActiveSyncMailboxPolicy, New-ActiveSyncMailboxPolicy, Remove-ActiveSyncMailboxPolicy
+- Get-ActiveSyncDeviceAccessRule, Set-ActiveSyncDeviceAccessRule, New-ActiveSyncDeviceAccessRule, Remove-ActiveSyncDeviceAccessRule
+- Get-ActiveSyncDeviceStatistics
+- Get-ActiveSyncDevice
+- Get-ExchangeServer
+- Get-ActiveSyncDeviceClass
+- Get-Recipient
+- Clear-ActiveSyncDevice, Remove-ActiveSyncDevice
+- Set-ADServerSettings
+- Get-Command
 
 ## Download the on-premises Exchange connector software installation package
 
@@ -156,8 +156,22 @@ High availability for the on-premises Exchange connector means that should the E
 To accomplish failover, after the connector creates a successful connection to Exchange using the specified CAS, the connector discovers additional CASs for that Exchange organization. Knowledge of additional CASs enables the connector to failover to another CAS if one is available, until the primary CAS becomes available. By default, discovery of additional CASs is enabled. You can turn off failover by using the following procedure:  
 1. On the server where the Exchange connector is installed, go to %*ProgramData*%\Microsoft\Windows Intune Exchange Connector. 
 2. Using a text editor, open **OnPremisesExchangeConnectorServiceConfiguration.xml**.
-3. Change &lt;IsCasFailoverEnabled&gt;**true**&lt;/IsCasFailoverEnabled&gt; to &lt;IsCasFailoverEnabled&gt;**false**&lt;/IsCasFailoverEnabled&gt; to disable the feature.    
+3. Change &lt;IsCasFailoverEnabled&gt;**true**&lt;/IsCasFailoverEnabled&gt; to &lt;IsCasFailoverEnabled&gt;**false**&lt;/IsCasFailoverEnabled&gt; to disable the feature.  
  
+## Optional Performance tuning for the Exchange connector  
+
+When you support 5,000 or more devices with Exchange ActiveSync, you can configure an optional setting to improve the performance of the connector. Increased performance is achieved by enabling Exchange to use multiple instances of a PowerShell command run-space. 
+
+Before you make this change, ensure the account you use to run the Exchange connector isn't used for other Exchange management purposes. This is because Exchange has a limit of 18 run-spaces per account, most of which will be used by the connector. 
+
+This performance change isn't suitable for connectors that run on older or slower hardware.  
+
+1. On the server where the connector installed, open the connectors installation directory.  The default location is *C:\ProgramData\Microsoft\Windows Intune Exchange Connector*. 
+2. Edit the file *OnPremisesExchangeConnectorServiceConfiguration.xml*.
+3. Locate **EnableParallelCommandSupport** and set the value to **true**:  
+     
+   \<EnableParallelCommandSupport>true\</EnableParallelCommandSupport>
+4. Save the file, and then restart the Microsoft Intune Exchange connector service.
 
 ## Reinstall the on-premises Exchange connector
 You might need to reinstall an Exchange connector. Because a single connector is supported to connect to each Exchange organization, if you install a second connector for an organization, the new connector you install replaces the original connector.
@@ -188,9 +202,9 @@ Beginning with the Intune 1710 release, you can use the [Operations Manager mana
 ## Manually force a quick sync or full sync
 An on-premises Exchange connector automatically synchronizes EAS and Intune device records regularly. If the compliance status of a device changes, the automatic sync process regularly updates records so that device access can be blocked or allowed.
 
-   - **Quick sync** occurs regularly, several times a day. A quick sync retrieves device information for Intune-licensed and on-premises Exchange Conditional Access-targeted users that have changed since the last sync.
+- **Quick sync** occurs regularly, several times a day. A quick sync retrieves device information for Intune-licensed and on-premises Exchange Conditional Access-targeted users that have changed since the last sync.
 
-   - **Full sync** occurs once per day by default. A full sync retrieves device information for all Intune-licensed and on-premises Exchange Conditional Access-targeted users. A full sync also retrieves Exchange server information and ensures that the configuration specified by Intune in the Azure portal is updated on the Exchange server. 
+- **Full sync** occurs once per day by default. A full sync retrieves device information for all Intune-licensed and on-premises Exchange Conditional Access-targeted users. A full sync also retrieves Exchange server information and ensures that the configuration specified by Intune in the Azure portal is updated on the Exchange server. 
 
 
 You can force a connector to run a sync by using the **Quick Sync** or **Full Sync** options on the Intune dashboard with the following steps:

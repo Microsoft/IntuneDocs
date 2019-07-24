@@ -53,17 +53,17 @@ Ways to use Conditional Access with Intune:
 
 - **Device-based Conditional Access**
 
-    - Conditional Access for Exchange on-premises
+  - Conditional Access for Exchange on-premises
 
-    - Conditional Access based on network access control
+  - Conditional Access based on network access control
 
-    - Conditional Access based on device risk
+  - Conditional Access based on device risk
 
-    - Conditional Access for Windows PCs
+  - Conditional Access for Windows PCs
 
-        - Corporate-owned
+    - Corporate-owned
 
-        - Bring your own device (BYOD)
+    - Bring your own device (BYOD)
 
 - **App-based Conditional Access**
 

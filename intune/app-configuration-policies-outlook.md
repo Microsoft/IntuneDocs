@@ -30,13 +30,17 @@ ms.collection: M365-identity-device-management
 
 Use a configuration policy to set Microsoft Outlook settings running on iOS and Android devices. 
 
-To create an app configuration policy for managed iOS devices, see [Add app configuration policies for managed iOS devices](app-configuration-policies-use-ios.md). To create an app configuration policy for managed Android devices, see [Add app configuration policies for managed Android devices](app-configuration-policies-use-android.md). 
+For enrolled devices:
+- To create an app configuration policy for managed iOS devices, see [Add app configuration policies for managed iOS devices](app-configuration-policies-use-ios.md). 
+- To create an app configuration policy for managed Android devices, see [Add app configuration policies for managed Android devices](app-configuration-policies-use-android.md). 
+
+For unenrolled devices, see [Add app configuration policies for managed apps without device enrollment](https://docs.microsoft.com/intune/app-configuration-policies-managed-app) to create an app configuration policy for Outlook for iOS and Android.
 
 ## Configuration settings
 
-When adding a configuration policy in Intune, you can specify settings to configure Microsoft Outlook on iOS and Android. In the Configuration settings pane, you can specify the email account configuration and configure app-specific settings. In addition, you can configure these settings and/or use name/value pairs.
+When adding a configuration policy in Intune, you can specify settings to configure Microsoft Outlook for iOS and Android. In the Configuration settings pane, you can specify the email account configuration and configure app-specific settings.
 
-For Outlook account setup information and procedural steps for iOS and Android devices in Microsoft Intune, see [Deploying Outlook for iOS and Android app configuration settings](https://docs.microsoft.com/exchange/clients-and-mobile-in-exchange-online/outlook-for-ios-and-android/outlook-for-ios-and-android-configuration-with-microsoft-intune).
+For specific procedural steps and detailed documentation on the app configuration settings Outlook for iOS and Android supports, see [Deploying Outlook for iOS and Android app configuration settings](https://docs.microsoft.com/exchange/clients-and-mobile-in-exchange-online/outlook-for-ios-and-android/outlook-for-ios-and-android-configuration-with-microsoft-intune).
 
 ## Next steps
 

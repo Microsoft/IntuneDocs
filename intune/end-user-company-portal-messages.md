@@ -144,5 +144,5 @@ When you install such apps using the Company Portal and launch the app, follow t
     You should be able to launch and use the company app.
 
 
-### See also
+## See also
 [What to tell your end users about using Intune](end-user-educate.md)

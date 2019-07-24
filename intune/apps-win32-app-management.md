@@ -33,9 +33,9 @@ To use Win32 app management, be sure you meet the following criteria:
 
 - Windows 10 version 1607 or later (Enterprise, Pro, and Education versions)
 - Windows 10 client needs to be: 
-    - Devices must be joined to Azure AD and auto-enrolled. The Intune management extension supports Azure AD joined, hybrid domain joined, group policy enrolled devices are supported. 
-    > [!NOTE]
-    > For the group policy enrolled scenario - The end user uses the local user account to AAD join their Windows 10 device. The user must log onto the device using their AAD user account and enroll into Intune. Intune will install the Intune Management extension on the device if a PowerShell script or a Win32 app is targeted to the user or device.
+  - Devices must be joined to Azure AD and auto-enrolled. The Intune management extension supports Azure AD joined, hybrid domain joined, group policy enrolled devices are supported. 
+  > [!NOTE]
+  > For the group policy enrolled scenario - The end user uses the local user account to AAD join their Windows 10 device. The user must log onto the device using their AAD user account and enroll into Intune. Intune will install the Intune Management extension on the device if a PowerShell script or a Win32 app is targeted to the user or device.
 - Windows application size is capped at 8 GB per app.
 
 ## Prepare the Win32 app content for upload
@@ -359,8 +359,8 @@ else
 #Exit with non-zero failure code
 exit 1
 }
-
 ```
+
 In the above PowerShell command, replace the `<path to binary file>` string with the path to your Win32 app file. An example path would be similar to the following:<br>
 `C:\Program Files (x86)\Microsoft SQL Server Management Studio 18\Common7\IDE\ssms.exe`
 

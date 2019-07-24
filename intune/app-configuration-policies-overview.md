@@ -48,8 +48,8 @@ App configuration policies can help you eliminate app setup up problems by letti
 The configuration settings are used whenever the app checks for them. Typically, an app checks for configuration settings the first time the app is run by the user.
 
 You have two options for how to use app configurations with Intune:
- - **Managed devices** - The device is managed by Intune as the mobile device management (MDM) provider.
- - **Managed apps** - An app is managed without device enrollment.
+- **Managed devices** - The device is managed by Intune as the mobile device management (MDM) provider.
+- **Managed apps** - An app is managed without device enrollment.
 
 > [!NOTE]
 > As the Microsoft Intune admin, you can control which user accounts are added to Microsoft Office applications on managed devices. You can limit access to only allowed organization user accounts and block personal accounts on enrolled devices. The supporting applications process the app configuration and remove and block unapproved accounts.
@@ -70,9 +70,9 @@ Additionally, you can use Graph API to accomplish app configuration tasks. For d
 
 ### Managed devices
 
- - Learn how to use app configuration with your iOS devices.  See [Add app configuration policies for managed iOS devices](app-configuration-policies-use-ios.md).
- - Learn how to use app configuration with your Android devices.  See [Add app configuration policies for managed Android devices](app-configuration-policies-use-android.md).
+- Learn how to use app configuration with your iOS devices.  See [Add app configuration policies for managed iOS devices](app-configuration-policies-use-ios.md).
+- Learn how to use app configuration with your Android devices.  See [Add app configuration policies for managed Android devices](app-configuration-policies-use-android.md).
 
 ### Managed apps
 
- - Learn how to use app configuration with managed apps. See [Add app configuration policies for managed apps without device enrollment](app-configuration-policies-managed-app.md).
+- Learn how to use app configuration with managed apps. See [Add app configuration policies for managed apps without device enrollment](app-configuration-policies-managed-app.md).

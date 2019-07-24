@@ -143,5 +143,5 @@ You can configure exceptions that allow specific types of network traffic throug
 |**Windows Virtual PC**<br>(Windows 7 or later)|Lets virtual machines communicate with other computers.|
 |**Wireless Portable Devices**|Enables the transfer of media from a network-enabled camera or media device to managed computers with Media Transfer Protocol (MTP). This setting uses SSDP and UPnP network protocols.|
 
-### See also
+## See also
 [Policies to protect Windows PCs](policies-to-protect-windows-pcs-in-microsoft-intune.md)

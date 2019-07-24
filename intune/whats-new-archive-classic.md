@@ -384,5 +384,5 @@ __Support for the Windows Phone 8 Company Portal__
 Support for Windows Phone 8 Company Portal will now be deprecated. Support for the Windows Phone 8 and WinRT platforms was deprecated in October 2016. Support for the Windows 8 Company Portal was also deprecated in October 2016.
 
 
-### See also
+## See also
 See [What’s New in Microsoft Intune](whats-new.md) for details on recent developments.

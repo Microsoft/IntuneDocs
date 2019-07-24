@@ -7,7 +7,7 @@ keywords: Intune Data Warehouse
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 04/10/2019
+ms.date: 07/09/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.localizationpriority: medium
@@ -26,35 +26,35 @@ ms.custom: intune-classic
 ms.collection: M365-identity-device-management
 ---
 
-# Reference for Date entity
+# Reference for dates entity
 
-The **Date** category contains the **Date** entity used to define date references in the data model.
+The **dates** category contains the **date** entity used to define date references in the data model.
 
-## Date
+## dates
 
-The **Date** entity represents dates that are referenced across multiple data warehouse entities.
+The **date** entity represents dates that are referenced across multiple data warehouse entities.
 
 
 |    Property     |                      Description                       |       Example        |
 |-----------------|--------------------------------------------------------|----------------------|
-|     DateKey     | Unique identifier for this date in the data warehouse. |       20160703       |
-|    FullDate     |    This date represented in full Date/Time format.     | 7/3/2016 12:00:00 AM |
-|    DayOfWeek    |                      Day of week                       |          1           |
-|   DayOfMonth    |                      Day of month                      |          3           |
-|    DayOfYear    |                      Day of year                       |         185          |
-|   WeekOfYear    |                      Week of year                      |          28          |
-|   MonthOfYear   |                   Month of the year                    |          7           |
-| CalendarQuarter |                    Calendar quarter                    |          3           |
-|  CalendarYear   |                     Calendar year                      |         2016         |
-|     DateKey     | Unique identifier for this date in the data warehouse. |       20160703       |
-|    FullDate     |    This date represented in full Date/Time format.     | 7/3/2016 12:00:00 AM |
-|    DayOfWeek    |                      Day of week                       |          1           |
-|   DayOfMonth    |                      Day of month                      |          3           |
-|    DayOfYear    |                      Day of year                       |         185          |
-|   WeekOfYear    |                      Week of year                      |          28          |
-|   MonthOfYear   |                   Month of the year                    |          7           |
-| CalendarQuarter |                    Calendar quarter                    |          3           |
-|  CalendarYear   |                     Calendar year                      |         2016         |
+|     dateKey     | Unique identifier for this date in the data warehouse. |       20160703       |
+|    fullDate     |    This date represented in full Date/Time format.     | 7/3/2016 12:00:00 AM |
+|    dayOfWeek    |                      Day of week                       |          1           |
+|   dayOfMonth    |                      Day of month                      |          3           |
+|    dayOfYear    |                      Day of year                       |         185          |
+|   weekOfYear    |                      Week of year                      |          28          |
+|   monthOfYear   |                   Month of the year                    |          7           |
+| calendarQuarter |                    Calendar quarter                    |          3           |
+|  calendarYear   |                     Calendar year                      |         2016         |
+|     dateKey     | Unique identifier for this date in the data warehouse. |       20160703       |
+|    fullDate     |    This date represented in full Date/Time format.     | 7/3/2016 12:00:00 AM |
+|    dayOfWeek    |                      Day of week                       |          1           |
+|   dayOfMonth    |                      Day of month                      |          3           |
+|    dayOfYear    |                      Day of year                       |         185          |
+|   weekOfYear    |                      Week of year                      |          28          |
+|   monthOfYear   |                   Month of the year                    |          7           |
+| calendarQuarter |                    Calendar quarter                    |          3           |
+|  calendarYear   |                     Calendar year                      |         2016         |
 
 ## Next steps
 

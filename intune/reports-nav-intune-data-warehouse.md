@@ -30,13 +30,13 @@ ms.collection: M365-identity-device-management
 
 The Intune Data Warehouse API lets you access your Intune data in a machine-readable format for use in your favorite analytics tool. You can use the API to build reports that provide insight into your enterprise mobile environment. The API uses the OData protocol, which follows standard patterns for:
 
-  - Request and response headers
-  - Status codes
-  - HTTP methods
-  - URL conventions
-  - Media types
-  - Payload formats
-  - Query options
+- Request and response headers
+- Status codes
+- HTTP methods
+- URL conventions
+- Media types
+- Payload formats
+- Query options
 
 The OData (Open Data Protocol) is an Organization for the Advancement of Structured Information Standards (OASIS) standard that defines the best practice for building and consuming RESTful APIs. The Intune Data Warehouse uses OData version 4.0.
 
@@ -58,8 +58,8 @@ For more information, see [Get data from the Data Warehouse API with a REST clie
 
 The API requires authorization with Azure AD. Azure AD uses OAuth 2.0. Once authorized, you can get data from the API using an HTTP GET verb and contacting the exposed entity collections. For details see:
 
- - [Authorization](reports-api-url.md)
- - [API URL Structure](reports-api-url.md)
+- [Authorization](reports-api-url.md)
+- [API URL Structure](reports-api-url.md)
 
 ## Intune Data Warehouse data model
 

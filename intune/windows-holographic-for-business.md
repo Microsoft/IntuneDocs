@@ -108,23 +108,23 @@ Intune includes settings and features that you can enable or disable on differen
 
 In your profiles, you can use OMA-URI to customize some settings, create device restrictions, and configure a virtual private network (VPN) and Wi-Fi.
 
-#### [Custom device settings](custom-settings-windows-holographic.md)
+### [Custom device settings](custom-settings-windows-holographic.md)
 
 To configure OMA-URI (Open Mobile Alliance Uniform Resource Identifier) settings, you can create a custom profile in Intune. Use the OMA-URI settings to control different features on your Windows Holographic for Business devices, such as enabling VPN, or checking for updates on Microsoft Update.
 
-#### [Configure kiosk mode](kiosk-settings-holographic.md)
+### [Configure kiosk mode](kiosk-settings-holographic.md)
 
 Using the shared or guest PC features available in Intune, you can configure Windows Holographic for Business devices to run as a kiosk. These devices can run one app (single-app kiosk mode), or run multiple apps (multi-app kiosk mode).
 
-#### [Device restrictions](device-restrictions-windows-holographic.md)
+### [Device restrictions](device-restrictions-windows-holographic.md)
 
 Device restrictions let you control different settings and features on your devices, including requiring a password, installing apps from [Microsoft Store](https://www.microsoft.com/store/apps/windows?icid=CNavAppsWindowsApps), enabling Bluetooth, and more. These restrictions are created in an Intune profile. This profile can be applied to multiple devices running Windows Holographic for Business.
 
-#### [Configure VPN](vpn-settings-configure.md)
+### [Configure VPN](vpn-settings-configure.md)
 
 Virtual private networks (VPNs) give your users secure remote access to your company network. In Intune, you can create a VPN profile that includes specific settings for your devices running Windows Holographic for Business. For example, you can create a VPN profile so all Windows Holographic for Business devices use Citrix VPN as the connection type.
 
-#### [Configure Wi-Fi](wi-fi-settings-configure.md)
+### [Configure Wi-Fi](wi-fi-settings-configure.md)
 
 You can also create a Wi-Fi profile in Intune to assign wireless network settings to your Windows Holographic for Business devices. When you assign a Wi-Fi profile, your end users get corporate network access, without any network configuration. For example, you can create a Wi-Fi network dedicated to only your Windows Holographic for Business devices.
 

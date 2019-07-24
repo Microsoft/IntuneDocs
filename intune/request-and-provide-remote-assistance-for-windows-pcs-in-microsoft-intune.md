@@ -90,6 +90,6 @@ When helping your users with issues, you might need to remotely restart their PC
 
 4. In the **Task Status** dialog box, review the current remote tasks, task status, device name, and any reported errors.
 
-### See also
+## See also
 
 [Common Windows PC management tasks with the Intune software client](common-windows-pc-management-tasks-with-the-microsoft-intune-computer-client.md)

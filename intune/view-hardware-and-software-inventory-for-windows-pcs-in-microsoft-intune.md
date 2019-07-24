@@ -74,6 +74,6 @@ Intune collects detailed information about the hardware and software for desktop
 
     The **Task Status** dialog box displays showing current remote tasks, task status, device name, and any reported errors, and provides a link to troubleshooting information.
 
-### See also
+## See also
 
 [Common Windows PC management tasks with the Intune software client](common-windows-pc-management-tasks-with-the-microsoft-intune-computer-client.md)

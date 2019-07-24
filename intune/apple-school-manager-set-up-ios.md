@@ -170,12 +170,12 @@ Now that you've installed your token, you can create an enrollment profile for A
 After Intune has been assigned permission to manage your Apple School Manager devices, synchronize Intune with the Apple service to see your managed devices in Intune.
 
 In [Intune](https://aka.ms/intuneportal), choose **Device enrollment** > **Apple Enrollment** > **Enrollment program tokens** > choose a token in the list > **Devices** > **Sync**.
-  ![Screenshot of the Enrollment Program Devices node and Sync link.](./media/device-enrollment-program-enroll-ios/image06.png)
+![Screenshot of the Enrollment Program Devices node and Sync link.](./media/device-enrollment-program-enroll-ios/image06.png)
 
-  To follow Apple’s terms for acceptable enrollment program traffic, Intune imposes the following restrictions:
-  - A full sync can run no more than once every seven days. During a full sync, Intune refreshes every Apple serial number assigned to Intune. If a full sync is attempted within seven days of the previous full sync, Intune only refreshes serial numbers that aren't already listed in Intune.
-  - Any sync request is given 15 minutes to finish. During this time or until the request succeeds, the **Sync** button is disabled.
-  - Intune syncs new and removed devices with Apple every 24 hours.
+To follow Apple’s terms for acceptable enrollment program traffic, Intune imposes the following restrictions:
+- A full sync can run no more than once every seven days. During a full sync, Intune refreshes every Apple serial number assigned to Intune. If a full sync is attempted within seven days of the previous full sync, Intune only refreshes serial numbers that aren't already listed in Intune.
+- Any sync request is given 15 minutes to finish. During this time or until the request succeeds, the **Sync** button is disabled.
+- Intune syncs new and removed devices with Apple every 24 hours.
 
 >[!NOTE]
 >You can also assign Apple School Manager serial numbers to profiles from the **Enrollment Program Devices** blade.

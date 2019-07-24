@@ -37,6 +37,7 @@ This article:
 
 - Lists the steps to create a profile.
 - Shows you how to add a scope tag to "filter" the profile.
+- Describes applicability rules on Windows 10 devices, and shows you how to create a rule.
 - Lists the check-in refresh cycle times when devices receive profiles and any profile updates.
 
 ## Create the profile
@@ -104,6 +105,56 @@ For more information about scope tags, and what you can do, see [Use RBAC and sc
 1. Select **Scope (Tags)**.
 2. Select **Add** to create a new scope tag. Or, select an existing scope tag from the list.
 3. Select **OK** to save your changes.
+
+## Applicability rules
+
+Applies to:
+
+- Windows 10 and later
+
+Applicability rules allow administrators to target devices in a group that meet specific criteria. For example, you create a device restrictions profile that applies to the **All Windows 10 devices** group. And, you only want the profile assigned to devices running Windows 10 Enterprise.
+
+To do this task, create an **applicability rule**. These rules are great for the following scenarios:
+
+- You use Windows 10 Education (EDU). At Bellows College, you want to target all Windows 10 EDU devices between RS3 and RS4.
+- You want to target all users in Human Resources at Contoso, but only want Windows 10 Professional or Enterprise devices.
+
+To approach these scenarios, you:
+
+- Create a devices group that includes all devices at Bellows College. In the profile, add an applicability rule so it applies if the OS minimum version is `16299` and the maximum version is `17134`. Assign this profile to the Bellows College devices group.
+
+  When it's assigned, the profile applies to devices between the minimum and maximum versions you enter. For devices that aren't between the minimum and maximum versions you enter, their status shows as **Not applicable**.
+
+- Create a users group that includes all users in Human Resources (HR) at Contoso. In the profile, add an applicability rule so it applies to devices running Windows 10 Professional or Enterprise. Assign this profile to the HR users group.
+
+  When it's assigned, the profile applies to devices running Windows 10 Professional or Enterprise. For devices that aren't running these editions, their status shows as **Not applicable**.
+
+When you assign the profile to the groups, the applicability rules act as a filter, and only target the devices that meet your criteria.
+
+### Add a rule
+
+1. Select **Applicability Rules**. You can choose the **Rule**, **Property**, and **OS edition**:
+
+    ![Add an applicability rule to a device configuration profile in Microsoft Intune](./media/applicability-rules.png)
+
+2. In **Rule**, choose if you want to include or exclude users or groups. Your options:
+
+    - **Assign profile if**: Includes users or groups that meet the criteria you enter.
+    - **Don't assign profile if**: Excludes users or groups that meet the criteria you enter.
+
+3. In **Property**, choose your filter. Your options: 
+
+    - **OS edition**: In the list, check the Windows 10 editions you want to include (or exclude) in your rule.
+    - **OS version**: Enter the **min** and **max** Windows 10 version numbers of you want to include (or exclude) in your rule. 
+
+      For example, you can enter `16299` (RS3 or 1709) for minimum version and `17134` (RS4 or 1803) for maximum version. Or, you can be more granular and enter `16299.001` for minimum version and `17134.319` for maximum version.
+
+4. Select **Add** to save your changes.
+
+### Important
+
+- There are two profiles with the exact same rule, such as enabling BitLocker. The second profile has an applicability rule. The profile without the applicability rule is applied.
+- The devices that don't apply to the applicability rule show as **Not applicable**. Intune looks at the device, and evaluates it as **Not applicable**.
 
 ## Refresh cycle times
 

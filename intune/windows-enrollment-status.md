@@ -97,7 +97,7 @@ You can specify which apps need to be installed before the user can access the d
 3. Choose **Yes** for **Show app and profile installation progress**.
 4. Choose **Yes** for **Block device use until all apps and profiles are installed**.
 5. Choose **Selected** for **Block device use until these required apps are installed if they are assigned to the user/device**.
- 6. Choose **Select apps** > choose the apps > **Select** > **Save**.
+6. Choose **Select apps** > choose the apps > **Select** > **Save**.
 
 ## Enrollment Status Page tracking information
 
@@ -111,52 +111,54 @@ For device preparation, the enrollment status page tracks Trusted Platform Modul
 
 For device setup, the Enrollment Status Page tracks the following items if they're assigned to All Devices:
 - Security policies
-    - One configuration service provider (CSP) for all enrollments.
-    - Actual CSPs configured by Intune aren't tracked here.
+  - One configuration service provider (CSP) for all enrollments.
+  - Actual CSPs configured by Intune aren't tracked here.
 - Applications
-    - Per machine Line-of-business (LoB) MSI apps.
-    - LoB store apps with installation context = Device.
-    - Offline store and LoB store apps with installation context = Device.
-    - Win32 applications (Windows 10 version 1903 and newer only) 
+  - Per machine Line-of-business (LoB) MSI apps.
+  - LoB store apps with installation context = Device.
+  - Offline store and LoB store apps with installation context = Device.
+  - Win32 applications (Windows 10 version 1903 and newer only) 
 - Connectivity profiles
-    - VPN or Wi-Fi profiles that are assigned to **All Devices** or a device group in which the enrolling device is a member, but only for Autopilot devices
+  - VPN or Wi-Fi profiles that are assigned to **All Devices** or a device group in which the enrolling device is a member, but only for Autopilot devices
 - Certificate profiles that are assigned to **All Devices** or a device group in which the enrolling device is a member, but only for Autopilot devices
 
 ### Account setup
 For account setup, the Enrollment Status Page tracks the following items if they are assigned to the current logged in user:
 - Security policies
-    - One CSP for all enrollments.
-    - Actual CSPs configured by Intune aren't tracked here.
+  - One CSP for all enrollments.
+  - Actual CSPs configured by Intune aren't tracked here.
 - Applications
-    - Per user LoB MSI apps that are assigned to All Devices, All Users, or a user group in which the user enrolling the device is a member.
-    - Per machine LoB MSI apps that are assigned to All Users or a user group in which the user enrolling device is a member.
-    - LoB store apps, online store apps, and offline store apps that are assigned to any of the following:
-        - All Devices
-        - All Users
-        - A user group in which the user enrolling the device is a member with installation context set to User.
-    - Win32 applications (Windows 10 version 1903 and newer only) 
+  - Per user LoB MSI apps that are assigned to All Devices, All Users, or a user group in which the user enrolling the device is a member.
+  - Per machine LoB MSI apps that are assigned to All Users or a user group in which the user enrolling device is a member.
+  - LoB store apps, online store apps, and offline store apps that are assigned to any of the following:
+    - All Devices
+    - All Users
+    - A user group in which the user enrolling the device is a member with installation context set to User.
+  - Win32 applications (Windows 10 version 1903 and newer only) 
 - Connectivity profiles
-    - VPN or Wi-Fi profiles that are assigned to All Users or a user group in which the user enrolling the device is a member.
+  - VPN or Wi-Fi profiles that are assigned to All Users or a user group in which the user enrolling the device is a member.
 - Certificates
-    - Certificate profiles that are assigned to All Users or a user group in which the user enrolling the device is a member.
+  - Certificate profiles that are assigned to All Users or a user group in which the user enrolling the device is a member.
 
 ### Troubleshooting
 Top questions for troubleshooting.
 
 - Why were my applications not installed during Device setup phase during Autopilot deployment that is using Enrollment Status Page?
-    - To guarantee applications are installed during the Device setup phase during an Autopilot deployment, first, ensure the application is selected to block access in the selected apps list.  Second, ensure you targeting of the applications to the same AAD device group your Autopilot profile was assigned to. 
-    
-- Why is the Enrollment Status Page showing for non-Autopilot deployments, for example when a user logs in for the first time on a Configuration Manager co-mgmt enrolled device?  
-    - The Enrollment status page is designed to provide installation status for all enrollment methods, this includes Autopilot, Configuration Manager co-mgmt and also when any new user logs into the device that has Enrollment status page policy applied for the first time.  
-    
-- How can I disable the Enrollment Status Page if it has been configured on the device?
-   - Enrollment status page policy is set on a device at the time of enrollment, to disable it you can create a custom OMA-URI setting with the following configurations:
+  - To guarantee applications are installed during the Device setup phase during an Autopilot deployment, first, ensure the application is selected to block access in the selected apps list.  Second, ensure you targeting of the applications to the same AAD device group your Autopilot profile was assigned to. 
 
-         Name:  DisableESP (choose a name you desire)
-         Description:  (enter a description)
-         OMA-URI:  ./Vendor/MSFT/DMClient/Provider/MS DM Server/FirstSyncStatus/SkipUserStatusPage
-         Data type:  Boolean
-         Value:  True 
+- Why is the Enrollment Status Page showing for non-Autopilot deployments, for example when a user logs in for the first time on a Configuration Manager co-mgmt enrolled device?  
+  - The Enrollment status page is designed to provide installation status for all enrollment methods, this includes Autopilot, Configuration Manager co-mgmt and also when any new user logs into the device that has Enrollment status page policy applied for the first time.  
+
+- How can I disable the Enrollment Status Page if it has been configured on the device?
+  - Enrollment status page policy is set on a device at the time of enrollment, to disable it you can create a custom OMA-URI setting with the following configurations:
+
+    ```
+    Name:  DisableESP (choose a name you desire)
+    Description:  (enter a description)
+    OMA-URI:  ./Vendor/MSFT/DMClient/Provider/MS DM Server/FirstSyncStatus/SkipUserStatusPage
+    Data type:  Boolean
+    Value:  True 
+    ```
 
 - How can I collect log files?
   - There are two ways Enrollment Status Page log files can be collected.  The first method, enable the ability for users to collect logs in the ESP policy, when a timeout occurs in the ESP the end user can choose option to "Collect logs", by inserting a USB drive the log files can be copied to the drive. The second method, open a command prompt by entering Shift-F10 key sequence, then enter the following commandline to generate the log files: 

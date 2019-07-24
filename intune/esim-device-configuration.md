@@ -83,7 +83,7 @@ Cellular activation codes are provided by your mobile operator in a comma-separa
 4. Select the CSV file that has your activation codes.
 5. Select **OK** to save your changes.
 
-#### CSV file requirements
+### CSV file requirements
 
 When working with the csv file with the activation codes, be sure you or your mobile operator follows the requirements:
 
@@ -93,7 +93,7 @@ When working with the csv file with the activation codes, be sure you or your mo
 - Each file should be specific to a single mobile operator, and all activation codes specific to the same billing plan. Intune randomly distributes the activation codes to targeted devices. There isn't any guarantee which device gets a specific activation code.
 - A maximum of 1000 activation codes can be imported in one csv file.
 
-#### CSV file example
+### CSV file example
 
 1. The first row and first cell of the csv is the URL of the mobile operator eSIM activation service, which is called SM-DP+ (Subscription Manager Data Preparation server). The URL should be a fully qualified domain name (FQDN) without any commas.
 2. The second and all later rows are unique one-time use activation codes that include two values:
@@ -133,7 +133,7 @@ eSIM activation codes are used once. After Intune installs an activation code on
 
 ## Step 4: Monitor deployment
 
-#### Review the deployment status
+### Review the deployment status
 
 After you assign the profile, you can monitor the deployment status of a subscription pool.
 
@@ -142,7 +142,7 @@ After you assign the profile, you can monitor the deployment status of a subscri
 3. Select **Device configuration** > **eSIM cellular profiles**. All of your existing eSIM cellular subscription pools are listed.
 4. Select a subscription, and review the **Deployment Status**.
 
-#### Check the profile status
+### Check the profile status
 After you create your device profile, Intune provides graphical charts. These charts display the status of a profile, such as it being successfully assigned to devices, or if the profile shows a conflict.
 
 1. Select **Device configuration** > **eSIM cellular profiles** > Select an existing subscription.
@@ -164,14 +164,14 @@ You can monitor and view a detailed list of devices you can view in Device Statu
 1. Select **Device configuration** > **eSIM cellular profiles** > Select an existing subscription.
 2. Select **Device Status**. Intune shows additional details about the device:
 
-  - **Device Name**: Name of the device that is targeted
-  - **User**: User of the enrolled device
-  - **ICCID**: Unique code provided by the mobile operate within the activation code installed on the device
-  - **Activation Status**: Intune delivery and installation status of the activation code on the device
-  - **Cellular status**: State provided by the mobile operator. Follow up with mobile operator to troubleshoot.
-  - **Last Check-In**: Date the device last communicated with Intune
+    - **Device Name**: Name of the device that is targeted
+    - **User**: User of the enrolled device
+    - **ICCID**: Unique code provided by the mobile operate within the activation code installed on the device
+    - **Activation Status**: Intune delivery and installation status of the activation code on the device
+    - **Cellular status**: State provided by the mobile operator. Follow up with mobile operator to troubleshoot.
+    - **Last Check-In**: Date the device last communicated with Intune
 
-#### Monitor eSIM profile details on the actual device
+### Monitor eSIM profile details on the actual device
 
 1. On your device, open **Settings** > go to **Network & Internet**.
 2. Select **Cellular** > **Manage eSIM profiles**

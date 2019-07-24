@@ -42,6 +42,6 @@ Use this information to understand how and where your users get the apps that yo
 
 **Unmanaged apps** can be managed through policies and that have not been wrapped by Intune or that do not incorporate the Intune App SDK. App protection policies cannot be applied to these apps.
 
-### See also
+## See also
 [How your Android users get their apps](end-user-apps-android.md)
 [How your iOS users get their apps](end-user-apps-android.md)

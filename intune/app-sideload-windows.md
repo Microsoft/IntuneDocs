@@ -42,17 +42,17 @@ In Windows 10, sideloading is different than in earlier versions of Windows:
   >Symantec Phone certificates and Sideloading License keys are not required. However if an on-premise certificate authority is not available then you may need to obtain a code signing certificate from a public certification authority. See [Introduction to Code Signing](https://docs.microsoft.com/windows/desktop/SecCrypto/cryptography-tools#introduction-to-code-signing)
 
 
-### Code sign your app
+## Code sign your app
 
 First step is to code sign your appx package, See [sign app package using signtool](https://docs.microsoft.com/windows/uwp/packaging/sign-app-package-using-signtool)
 
-### Upload your app
+## Upload your app
 
 Next, you would upload the signed appx file as described at [upload LOB Windows app](lob-apps-windows.md)
 
 If you deploy the app as required to users or devices then you do not need the Inutne Company Portal app. However if you deploy the app as available to users, then they can either use the Company Portal app from the Public Microsoft Store, use the Company Portal app from the Private Microsoft Store for Business, or you will need to sign and manually deploy the Intune Company Portal app.
 
-### Upload the code-signing certificate
+## Upload the code-signing certificate
 
 If your Windows 10 device does not already trust the certificate authority, then after you have signed your appx package and uploaded it to the Intune service, you need to upload the code signing certificate to the Intune portal:
 1. Click Client Apps
@@ -68,7 +68,7 @@ Intune only deploys the latest .cer file that was uploaded. If you have multiple
 
 The certificate used to deploy Windows Phone 8.1 mobile apps was discontinued on February 28 2019 and is no longer available for renewal from Symantec. If you are deploying to WIndows 10 mobile then you can continue to use Symantec Desktop Enterprise code-signing certificates by following the Windows 10 instructions.
 
-### How to install the updated certificate for line-of-business (LOB) apps
+## How to install the updated certificate for line-of-business (LOB) apps
 
 Windows Phone 8.1
 
@@ -87,16 +87,16 @@ If you do not want to provide access to the Microsoft Store, you can manually de
 1. Sign in to your account in the [Microsoft Store for Business](https://www.microsoft.com/business-store) and acquire the **offline license** version of the Company Portal app.  
 2. Once the app has been acquired, select the app in the **Inventory** page.  
 3. Select **Windows 10 all devices** as the **Platform**, then the appropriate **Architecture** and download. An app license file is not needed for this app.
-![Image of Windows 10 X86 Package details for Download](./media/Win10CP-all-devices.png)
+   ![Image of Windows 10 X86 Package details for Download](./media/Win10CP-all-devices.png)
 4. Download all the packages under “Required Frameworks”. This must be done for x86, x64 and ARM architectures – resulting in a total of 9 packages as shown below.
 
-![Image of dependency files to Download ](./media/Win10CP-dependent-files.png)
+   ![Image of dependency files to Download ](./media/Win10CP-dependent-files.png)
 5. Before uploading the Company Portal app to Intune, create a folder (e.g., C:&#92;Company Portal) with the packages structured in the following way:
    1. Place the Company Portal package into C:\Company Portal. Create a Dependencies subfolder in this location as well.  
-   ![Image of Dependencies folder saved with APPXBUN file](./media/Win10CP-Dependencies-save.png)
+      ![Image of Dependencies folder saved with APPXBUN file](./media/Win10CP-Dependencies-save.png)
    2. Place the nine dependencies packages in the Dependencies folder.  
-   If the dependencies are not placed in this format, Intune will not be able to recognize and upload them during the package upload, causing the upload to fail with the following error.  
-   ![Error message - The Windows app dependency must be provided.](./media/Win10CP-error-message.png)
+      If the dependencies are not placed in this format, Intune will not be able to recognize and upload them during the package upload, causing the upload to fail with the following error.  
+      ![Error message - The Windows app dependency must be provided.](./media/Win10CP-error-message.png)
 6. Return to Intune, then upload the Company Portal app as a new app. Deploy it as a required app to the desired set of target users.  
 
 See [Deploying an appxbundle with dependencies via Microsoft Intune MDM](https://blogs.technet.microsoft.com/configmgrdogs/2016/11/30/deploying-an-appxbundle-with-dependencies-via-microsoft-intune-mdm/) for more information about how Intune handles dependencies for Universal apps.  

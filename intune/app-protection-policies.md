@@ -169,6 +169,6 @@ To see a full list of the policy settings for iOS and Android, select one of the
 ## Next steps
 [Monitor compliance and user status](app-protection-policies-monitor.md)
 
-### See also
+## See also
 * [What to expect when your Android app is managed by app protection policies](app-protection-enabled-apps-android.md)
 * [What to expect when your iOS app is managed by app protection policies](app-protection-enabled-apps-ios.md)

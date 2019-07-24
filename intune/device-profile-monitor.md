@@ -68,11 +68,11 @@ After you create your device profile, Intune provides graphical charts. These ch
     Close the **User status** details.
 
 5. Back in the **Profiles** list, select a specific profile. You can also change existing properties:
-  - **Properties**: Change the name, or update any existing settings.
-  - **Assignments**: Include or exclude devices that the policy should apply. Choose **Selected Groups** to choose specific groups.
-  - **Device status**: The devices assigned to the profile are listed, and it shows if the profile is successfully deployed. You can select a specific device to get even more details, including the installed apps.
-  - **User status**: Lists the user names with devices impacted by this profile, and if the profile successfully deployed. You can select a specific user to get even more details.
-  - **Per-setting status**: Filters the output by showing the individual settings within the profile, and shows if the setting is successfully applied.
+    - **Properties**: Change the name, or update any existing settings.
+    - **Assignments**: Include or exclude devices that the policy should apply. Choose **Selected Groups** to choose specific groups.
+    - **Device status**: The devices assigned to the profile are listed, and it shows if the profile is successfully deployed. You can select a specific device to get even more details, including the installed apps.
+    - **User status**: Lists the user names with devices impacted by this profile, and if the profile successfully deployed. You can select a specific user to get even more details.
+    - **Per-setting status**: Filters the output by showing the individual settings within the profile, and shows if the setting is successfully applied.
 
 ## View conflicts
 

@@ -47,13 +47,13 @@ This article shows you the Microsoft Intune device restrictions settings that yo
 ## Password
 
 - **Password** - Require the end user to enter a password to access the device.
-    - **Required password type** - Specifies the type of password that is required, such as alphanumeric or numeric only.
-    - **Minimum password length** - Specifies the minimum number of characters that are required in the password.
-    - **Simple passwords** - Specifies that simple passwords such as ‘0000’ and ‘1234’ can be used.
-    - **Number of sign-in failures before wiping device** - Specifies the number of times an incorrect password can be entered before the device is wiped.
-    - **Maximum minutes of inactivity until screen locks** - Specifies the amount of time a device must remain idle before the screen is automatically locked.
-    - **Password expiration (days)** - Specifies the number of days before the device password must be changed.
-    - **Prevent reuse of previous passwords** - Specifies how many previously used passwords are remembered.
+  - **Required password type** - Specifies the type of password that is required, such as alphanumeric or numeric only.
+  - **Minimum password length** - Specifies the minimum number of characters that are required in the password.
+  - **Simple passwords** - Specifies that simple passwords such as ‘0000’ and ‘1234’ can be used.
+  - **Number of sign-in failures before wiping device** - Specifies the number of times an incorrect password can be entered before the device is wiped.
+  - **Maximum minutes of inactivity until screen locks** - Specifies the amount of time a device must remain idle before the screen is automatically locked.
+  - **Password expiration (days)** - Specifies the number of days before the device password must be changed.
+  - **Prevent reuse of previous passwords** - Specifies how many previously used passwords are remembered.
 - **Encryption** - Requires that the data on supported mobile devices be encrypted.
 
 ## App Store

@@ -26,42 +26,42 @@ ms.custom: intune-classic
 ms.collection: M365-identity-device-management
 ---
 
-# Reference for Intune Management Extension
+# Reference for Intune Management Extensions
 
-The **IntuneManagementExtension** category contains entities for mobile devices that track information such as:
+The **intuneManagementExtensions** category contains entities for mobile devices that track information such as:
 
-  - Versions of an IntuneManagementExtension
-  - Installation status of an IntuneManagementExtension
+- Versions of an IntuneManagementExtension
+- Installation status of an IntuneManagementExtension
 
-## IntuneManagementExtensionVersion
+## intuneManagementExtensionVersions
 
-The **IntuneManagementExtensionVersion** entity lists all the versions used by IntuneManagementExtension.
-
-| Property  | Description | Example |
-|---------|------------|--------|
-| ExtensionVersionKey |Unique identifier of the IntuneManagementExtension version. | 1 |
-| ExtensionVersion |The 4 digit version number. |1.0.2.0 |
-
-## IntuneManagementExtensionHealthState
-
-The **IntuneManagementExtensionHealthState** lists all possible health states of the IntuneManagementExtension.
+The **intuneManagementExtensionVersion** entity lists all the versions used by intuneManagementExtensions.
 
 | Property  | Description | Example |
 |---------|------------|--------|
-| ExtensionStateKey |Unique identifier of health state. | 2 |
-| ExtensionState |Health state of a IntuneManagementExtension. | Healthy |
+| extensionVersionKey |Unique identifier of the intuneManagementExtensions version. | 1 |
+| extensionVersion |The 4 digit version number. |1.0.2.0 |
 
-## IntuneManagementExtension
+## intuneManagementExtensionHealthStates
 
-The **IntuneManagementExtension** lists the IntuneManagementExtension health on each Windows 10 device per day.
+The **intuneManagementExtensionHealthState** lists all possible health states of the intuneManagementExtensions.
+
+| Property  | Description | Example |
+|---------|------------|--------|
+| extensionStateKey |Unique identifier of health state. | 2 |
+| extensionState |Health state of a IntuneManagementExtension. | Healthy |
+
+## intuneManagementExtensions
+
+The **intuneManagementExtension** lists the IntuneManagementExtensions health on each Windows 10 device per day.
 The data is retained for the last 60 days. 
 
 
 |      Property       |                         Description                         | Example |
 |---------------------|-------------------------------------------------------------|---------|
-|       DateKey       |               Unique identifier of the Date.                |   123   |
-|      TenantKey      |              Unique identifier of the Tenant.               |   456   |
-|      DeviceKey      |              Unique identifier of the Device.               |   789   |
-| ExtensionVersionKey | Unique identifier of the IntuneManagementExtension version. |    1    |
-|  ExtensionStateKey  |             Unique identifier of health state.              |    2    |
+|       dateKey       |               Unique identifier of the Date.                |   123   |
+|      tenantKey      |              Unique identifier of the Tenant.               |   456   |
+|      deviceKey      |              Unique identifier of the Device.               |   789   |
+| extensionVersionKey | Unique identifier of the intuneManagementExtension version. |    1    |
+|  extensionStateKey  |             Unique identifier of health state.              |    2    |
 

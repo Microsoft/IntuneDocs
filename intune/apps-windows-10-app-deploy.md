@@ -51,22 +51,22 @@ Microsoft Store for Business apps that are modern apps purchased from the Micros
 Depending on the app type, the app can be installed on a Windows 10 device in one of two ways:
 
 - **User Context**: When an app is deployed in user context, the managed app will be installed for that user on the device when the user signs-in to the device. Note that the app installation will not succeed until the user signs-in to the device. 
-    - Modern line-of-business apps and Microsoft store for business apps (both online and offline) can be deployed in user context and will support both the Required and Available intent.
-    - Win32 apps built as **User Mode** or **Dual Mode** can be deployed in user context and will support both **Required** and **Available** intent. 
+  - Modern line-of-business apps and Microsoft store for business apps (both online and offline) can be deployed in user context and will support both the Required and Available intent.
+  - Win32 apps built as **User Mode** or **Dual Mode** can be deployed in user context and will support both **Required** and **Available** intent. 
 - **Device Context**: When an app is deployed in device context, the managed app will be installed directly to the device by Intune.
-    - Only modern line-of-business apps and offline licensed Microsoft Store for Business apps can be deployed in device context and will only support the Required intent.
-    - Win32 apps built as **Machine Mode** or **Dual Mode** can be deployed in user context and will support only the **Required** intent.
+  - Only modern line-of-business apps and offline licensed Microsoft Store for Business apps can be deployed in device context and will only support the Required intent.
+  - Win32 apps built as **Machine Mode** or **Dual Mode** can be deployed in user context and will support only the **Required** intent.
 
 > [!NOTE]
 > For Win32 apps built as **Dual Mode** apps, you (the admin) will need to pick if the app will function as a **User Mode** or **Machine Mode** app for all assignments associated with that instance. The deployment context cannot be changed per assignment.  
 
 When an app is deployed in device context, the installation will only succeed when targeted to a device that supports device context. In addition, deploying in device context supports the following conditions:
 - If an app is deployed in device context and targeted to a user, the installation will fail with the following status and error displayed in the admin console:
-    - Status: Failed.
-    - Error: A user can’t be targeted with a Device context install.
+  - Status: Failed.
+  - Error: A user can’t be targeted with a Device context install.
 - If an app is deployed in device context but targeted to a device that does not support device context, the installation will fail with the following status and error in the admin console:
-    - Status: Failed.
-    - Error: This platform does not support device context installs. 
+  - Status: Failed.
+  - Error: This platform does not support device context installs. 
 
 > [!Note]
 > Once an app assignment is saved with a specific deployment, the context cannot be changed for that assignment, except for modern apps. For the modern app case, context can be changed from user context to device context. 

@@ -62,6 +62,6 @@ When you retire a PC:
 
     If the Endpoint Protection client fails to uninstall, read [Troubleshoot Endpoint Protection](/intune/troubleshoot-endpoint-protection-in-microsoft-intune) for more help.
 
-### See also
+## See also
 
 [Common Windows PC management tasks with the Intune software client](common-windows-pc-management-tasks-with-the-microsoft-intune-computer-client.md)

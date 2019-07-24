@@ -32,9 +32,9 @@ ms.collection: M365-identity-device-management
 # Set up Intune enrollment of Android Enterprise fully managed devices (Preview)
 
 Android Enterprise fully managed devices are corporate-owned devices associated with a single user and used exclusively for work and not personal use. Admins can manage the entire device and enforce policy controls unavailable to work profiles, such as:
-- allow app installation only from Managed Google Play
-- block uninstallation of managed apps
-- prevent users from factory resetting devices, and so on.
+- Allow app installation only from Managed Google Play.
+- Block uninstallation of managed apps.
+- Prevent users from factory resetting devices, and so on.
 
 Intune helps you deploy apps and settings to Android Enterprise devices, including Android Enterprise fully managed devices. For specific details about Android Enterprise, see [Android Enterprise requirements](https://support.google.com/work/android/answer/6174145?hl=en&ref_topic=6151012).
 
@@ -63,8 +63,8 @@ To set up Android Enterprise fully managed device management, follow these steps
 1. Sign in to [Intune](https://go.microsoft.com/fwlink/?linkid=2090973) and choose **Device enrollment** > **Android enrollment** > **Corporate-owned, fully managed user devices (Preview)**.
 2. Under **Allow users to enroll corporate-owned user devices**, choose **Yes**.
 
-[!NOTE]
-If you have an Azure AD Conditional Access policy defined that uses the *require a device to be marked as compliant* control and  applies to **All Cloud apps**, **Android** and **Browsers** - you must exclude the **Microsoft Intune** cloud app from this policy. This is because the Android setup processes uses a Chrome tab to authenticate your users during enrolment. For more information, see [Azure AD Conditional Access Documentation](https://docs.microsoft.com/azure/active-directory/conditional-access/).
+> [!NOTE]
+> If you have an Azure AD Conditional Access policy defined that uses the *require a device to be marked as compliant* control and  applies to **All Cloud apps**, **Android** and **Browsers** - you must exclude the **Microsoft Intune** cloud app from this policy. This is because the Android setup processes uses a Chrome tab to authenticate your users during enrolment. For more information, see [Azure AD Conditional Access Documentation](https://docs.microsoft.com/azure/active-directory/conditional-access/).
 
 When this setting is set to **Yes**, it provides you with an enrollment token (a random string) and a QR code for your Intune tenant. This single enrollment token is valid for all your users and won't expire. Depending on the Android OS and version of the device, you can use either the token or QR code to enroll the kiosk device.
 

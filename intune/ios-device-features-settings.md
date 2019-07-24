@@ -2,7 +2,7 @@
 # required metadata
 
 title: iOS device feature settings in Microsoft Intune - Azure | Microsoft Docs
-description: See all the settings to configure iOS devices for AirPrint, layout of the home screen, app notifications, shared device, single sign-in, and web content filter settings in Microsoft Intune. Use these settings in a device configuration profile to configure iOS devices to use these different Apple features in your organization.
+description: See all the settings to configure iOS devices for AirPrint, layout of the home screen, app notifications, shared device, single sign-in, and web content filter settings in Microsoft Intune. Use these settings in a device configuration profile to configure iOS devices to use these Apple features in your organization.
 keywords:
 author: MandiOhlinger
 ms.author: mandia
@@ -45,7 +45,7 @@ This article lists these settings, and describes what each setting does.
 - **Port**: Enter the listening port of the AirPrint destination. If you leave this property blank, AirPrint uses the default port. Available on iOS 11.0 and later.
 - **TLS**: Choose **Enable** to secure AirPrint connections with Transport Layer Security (TLS). Available on iOS 11.0 and later.
 
-**Add** adds the AirPrint server to the list. You can add many AirPrint servers. You can also **Import** a comma-separated file (.csv) with this information. After you create the list, you can also **Export** your list of AirPrint servers.
+**Add** adds the AirPrint server to the list. Many AirPrint servers can be added. You can also **Import** a comma-separated file (.csv) with this information. **Export** creates a list of the AirPrint servers you added.
 
 Select **OK** to save your list.
 
@@ -257,7 +257,7 @@ Select **OK** to save your changes.
 
 ## Web content filter settings
 
-These settings control browser URL access on iOS devices.
+These settings control browser URL access on supervised iOS devices.
 
 - **Filter Type**: Choose to allow specific web sites. Your options:
 

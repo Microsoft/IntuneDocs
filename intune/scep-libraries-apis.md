@@ -178,8 +178,8 @@ Throws:
 
 **Security notes**  
 
-  - If this method throws an exception, the SCEP server **must not** issue a certificate to the client.
-  - SCEP certificate request validation failures may indicate a problem in the Intune infrastructure. Or, they could indicate that an attacker is trying to get a certificate.
+- If this method throws an exception, the SCEP server **must not** issue a certificate to the client.
+- SCEP certificate request validation failures may indicate a problem in the Intune infrastructure. Or, they could indicate that an attacker is trying to get a certificate.
 
 ##### SendSuccessNotification method
 
@@ -219,8 +219,8 @@ Throws:
 
 **Security notes**
 
-  - If this method throws an exception, the SCEP server **must not** issue a certificate to the client.
-  - SCEP certificate request validation failures may indicate a problem in the Intune infrastructure. Or, they could indicate that an attacker is trying to get a certificate.
+- If this method throws an exception, the SCEP server **must not** issue a certificate to the client.
+- SCEP certificate request validation failures may indicate a problem in the Intune infrastructure. Or, they could indicate that an attacker is trying to get a certificate.
 
 ##### SendFailureNotification method
 
@@ -256,8 +256,8 @@ Throws:
 
 **Security notes**
 
-  - If this method throws an exception, the SCEP server **must not** issue a certificate to the client.
-  - SCEP certificate request validation failures may indicate a problem in the Intune infrastructure. Or, they could indicate that an attacker is trying to get a certificate.
+- If this method throws an exception, the SCEP server **must not** issue a certificate to the client.
+- SCEP certificate request validation failures may indicate a problem in the Intune infrastructure. Or, they could indicate that an attacker is trying to get a certificate.
 
 ##### SetSslSocketFactory method
 

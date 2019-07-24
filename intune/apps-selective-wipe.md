@@ -92,7 +92,7 @@ Wipes with pending status are displayed until you manually delete them. To manua
 
 3. You're prompted to confirm the deletion, choose **Yes** or **No**, then click **OK**.
 
-### See also
+## See also
 [What's app protection policy](app-protection-policy.md)
 
 [What's app management](app-management.md)

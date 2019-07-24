@@ -240,8 +240,8 @@ You can use <code>$select</code> as an OData query parameter. The current versio
 
 ### New entities in the in Data Warehouse data model <!-- 2077804 -->
 
- - The entity, [**MobileAppDeviceuserInstallStatus**](reports-ref-application.md), has been added. The **MobileAppDeviceUserInstallStatus** represents a mobile app install status for a given device and user.
- - The entity, [**MobileAppInstallState**](reports-ref-application.md#mobileappinstallstate), has been added. The **MobileAppInstallState** entity represents the install state for a mobile application after it has been assigned to a group containing devices, users, or both. 
+- The entity, [**MobileAppDeviceuserInstallStatus**](reports-ref-application.md), has been added. The **MobileAppDeviceUserInstallStatus** represents a mobile app install status for a given device and user.
+- The entity, [**MobileAppInstallStates**](reports-ref-application.md#mobileappinstallstates), has been added. The **MobileAppInstallState** entity represents the install state for a mobile application after it has been assigned to a group containing devices, users, or both. 
 
 ## 1710
 _Released November  2017_
@@ -261,9 +261,9 @@ You can now build reports and data visualizations using the user device associat
 
 ### New entities in the in Data Warehouse data model <!-- 1479526 --><!-- -->
 
- - The entity, [**UserDeviceAssociation**](reports-ref-user-device.md), added. **UserDeviceAssociation** contains user device associations in your organization. You can now build reports and data visualizations using the user device association information that associates user and device entity collections.  
- - The entity, [**IntuneManagementExtension**](reports-ref-intunemanagementextension.md), added. **IntuneManagementExtension** contains entities for mobile devices that track information such as version and installation status.
+- The entity, [**UserDeviceAssociation**](reports-ref-user-device.md), added. **UserDeviceAssociation** contains user device associations in your organization. You can now build reports and data visualizations using the user device association information that associates user and device entity collections.  
+- The entity, [**IntuneManagementExtension**](reports-ref-intunemanagementextension.md), added. **IntuneManagementExtension** contains entities for mobile devices that track information such as version and installation status.
 
 ## Next steps
- - Learn [what’s new each week in Intune](whats-new.md). You can also find out about upcoming changes, important notices about the service, and information about past releases.
- - Read the [Microsoft Intune Blog](https://go.microsoft.com/fwlink/?LinkID=273882).
+- Learn [what’s new each week in Intune](whats-new.md). You can also find out about upcoming changes, important notices about the service, and information about past releases.
+- Read the [Microsoft Intune Blog](https://go.microsoft.com/fwlink/?LinkID=273882).

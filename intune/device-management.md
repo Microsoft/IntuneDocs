@@ -61,18 +61,18 @@ The actions available depend on the device platform, and the configuration of th
 
 - [View device inventory](device-inventory.md)
 - Run the remote device actions:
-    - [Retire](devices-wipe.md#retire)
-    - [Wipe](devices-wipe.md#wipe)
-    - [Remote lock](device-remote-lock.md)
-    - [Reset passcode](device-passcode-reset.md)
-    - [Bypass Activation Lock](device-activation-lock-bypass.md) (iOS only)
-    - [Fresh Start](device-fresh-start.md) (Windows only)
-    - [Lost mode](device-lost-mode.md) (iOS only)
-    - [Locate device](device-locate.md) (iOS only)
-    - [Restart](device-restart.md) (Windows only)
-    - [Windows 10 PIN reset](device-windows-pin-reset.md)
-    - [Remote control for Android](teamviewer-support.md)
-    - [Synchronize device](device-sync.md)
+  - [Retire](devices-wipe.md#retire)
+  - [Wipe](devices-wipe.md#wipe)
+  - [Remote lock](device-remote-lock.md)
+  - [Reset passcode](device-passcode-reset.md)
+  - [Bypass Activation Lock](device-activation-lock-bypass.md) (iOS only)
+  - [Fresh Start](device-fresh-start.md) (Windows only)
+  - [Lost mode](device-lost-mode.md) (iOS only)
+  - [Locate device](device-locate.md) (iOS only)
+  - [Restart](device-restart.md) (Windows only)
+  - [Windows 10 PIN reset](device-windows-pin-reset.md)
+  - [Remote control for Android](teamviewer-support.md)
+  - [Synchronize device](device-sync.md)
 
 ## Next steps
 

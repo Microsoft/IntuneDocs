@@ -39,9 +39,9 @@ Use the Intune Data Warehouse to build reports that provide insight into your en
 
 The Data Warehouse provides you access to more information about your mobile environment than the Azure portal. With the Intune Data Warehouse you can access:
 
-  - Historical Intune data
-  - Data refreshed on a daily cadence
-  - A data model using the OData standard
+- Historical Intune data
+- Data refreshed on a daily cadence
+- A data model using the OData standard
 
 > [!Note]
 > If you are a using co-managed mobile device management (MDM) with System Center Configuration Manager and Microsoft Intune, you need to retrieve your data from Configuration Manager. The Intune Data Warehouse only contains Intune data. You can use an Configuration Manager Power BI dashboard for your custom reports. For more information, see "[Announcing the Power BI solution template for System Center Configuration Manager]( https://powerbi.microsoft.com/blog/sccm-solution-template)" and "[Power BI content for Dynamics 365](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/analytics/power-bi-home-page)."

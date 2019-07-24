@@ -52,7 +52,7 @@ The Company Portal app for Windows now lists all managed apps (both required and
 
 ## Week of June 17, 2019  
 
-#### New features in Microsoft Intune app
+### New features in Microsoft Intune app
 We’ve added new features to the Microsoft Intune app (preview) for Android. Users on fully managed Android devices can now:  
 
 * View and manage the devices they've enrolled through the Intune Company Portal or Microsoft Intune app.    
@@ -545,7 +545,7 @@ These are the plans for ways we will be improving the user experience by updatin
 > The images below may be previews, and the announced product may differ from the presented versions.  
 
 
-### See also
+## See also
 * [Microsoft Intune Blog](http://go.microsoft.com/fwlink/?LinkID=273882)
 * [Cloud Platform roadmap](https://www.microsoft.com/cloud-platform/roadmap)
 * [What's new in Intune](https://docs.microsoft.com/intune/whats-new)

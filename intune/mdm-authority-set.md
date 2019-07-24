@@ -141,11 +141,11 @@ The MDM authority can't be changed back to Unknown. The MDM authority is used by
 - Users can quickly change to the new MDM authority by manually starting a check-in from the device to the service. Users can easily make this change by using the Company Portal app and initiating a device compliance check.
 - To validate that things are working correctly after devices have checked-in and synchronized with the service after the change in MDM authority, look for the devices the Configuration Manager console. The devices that were previously managed by Intune are now displayed as managed devices in the Configuration Manager console.    
 - There is an interim period when a device is offline during the change in MDM authority and when that device checks in to the service. To help ensure that the device remains protected and functional during this interim period, the following profiles remain on the device for up to seven days (or until the device connects with the new MDM authority and receives new settings that overwrite the existing ones):
-    - E-mail profile
-    - VPN profile
-    - Cert profile
-    - Wi-Fi profile
-    - Configuration profiles
+  - E-mail profile
+  - VPN profile
+  - Cert profile
+  - Wi-Fi profile
+  - Configuration profiles
 - After you change to the new MDM authority, the compliance data in the Microsoft Intune administration console can take up to a week to accurately report. However, the compliance states in Azure Active Directory and on the device will be accurate so the device is still be protected.
 - Make sure the new settings that are intended to overwrite existing settings have the same name as the previous ones to ensure that the old settings are overwritten. Otherwise, the devices might end up with redundant profiles and policies.    
 
@@ -153,9 +153,9 @@ The MDM authority can't be changed back to Unknown. The MDM authority is used by
   > As a best practice, you should create all management settings and configurations, as well as deployments, shortly after the change to the MDM authority has completed. This helps ensure that devices are protected and actively managed during the interim period.
 
 - After you change the MDM authority, perform the following steps to validate that new devices are enrolled successfully to the new authority:   
-    - Enroll a new device
-    - Make sure the newly enrolled device shows up in the Configuration Manager console.
-    - Perform an action, such as Remote Lock, from the administration console to the device. If it's successful, the device is being managed by the new MDM authority.
+  - Enroll a new device
+  - Make sure the newly enrolled device shows up in the Configuration Manager console.
+  - Perform an action, such as Remote Lock, from the administration console to the device. If it's successful, the device is being managed by the new MDM authority.
 - If you have issues with specific devices, you can unenroll and reenroll the devices to get them connected to the new authority and managed as quickly as possible.
 
 ## Next steps

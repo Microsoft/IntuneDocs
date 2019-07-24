@@ -263,5 +263,5 @@ When you select an update from the list, further commands are available that let
 6. You can check the details pane at the bottom of the **All Updates** page for reminder messages about the update.
 
 
-### See also
+## See also
 [Policies to protect Windows PCs](policies-to-protect-windows-pcs-in-microsoft-intune.md)

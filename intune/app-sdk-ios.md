@@ -150,6 +150,7 @@ To enable the Intune App SDK, follow these steps:
 
    > [!NOTE]
    > Your provisioning profile needs to support new keychain sharing values. The keychain access groups should support a wildcard character. You can check this by opening the .mobileprovision file in a text editor, searching for **keychain-access-groups**, and ensuring that you have a wildcard character. For example:
+   >
    >  ```xml
    >  <key>keychain-access-groups</key>
    >  <array>
@@ -165,15 +166,15 @@ To enable the Intune App SDK, follow these steps:
     
     c. Add `com.microsoft.adalcache` to your existing access groups.
     
-        ![Intune App SDK iOS: keychain sharing](./media/intune-app-sdk-ios-keychain-sharing.png)
+      ![Intune App SDK iOS: keychain sharing](./media/intune-app-sdk-ios-keychain-sharing.png)
     
     d. If you are editing the entitlements file directly, rather than using the Xcode UI shown above to create the keychain access groups, prepend the keychain access groups with `$(AppIdentifierPrefix)` (Xcode handles this automatically). For example:
     
-        - `$(AppIdentifierPrefix)com.microsoft.intune.mam`
-        - `$(AppIdentifierPrefix)com.microsoft.adalcache`
+      - `$(AppIdentifierPrefix)com.microsoft.intune.mam`
+      - `$(AppIdentifierPrefix)com.microsoft.adalcache`
     
-        > [!NOTE]
-        > An entitlements file is an XML file that is unique to your mobile application. It is used to specify special permissions and capabilities in your iOS app. If your app did not previously have an entitlements file, enabling keychain sharing (step 3) should have caused Xcode to generate one for your app. Ensure the app's bundle ID is the first entry in the list.
+      > [!NOTE]
+      > An entitlements file is an XML file that is unique to your mobile application. It is used to specify special permissions and capabilities in your iOS app. If your app did not previously have an entitlements file, enabling keychain sharing (step 3) should have caused Xcode to generate one for your app. Ensure the app's bundle ID is the first entry in the list.
 
 6. Include each protocol that your app passes to `UIApplication canOpenURL` in the `LSApplicationQueriesSchemes` array of your app's Info.plist file. Be sure to save your changes before proceeding to the next step.
 
@@ -326,6 +327,7 @@ If the enrollment fails, the app should consider calling this API again at a fut
 After this API has been invoked, the app can continue functioning as normal. If the enrollment succeeds, the SDK will notify the user that an app restart is required.
 
 Example:
+
 ```objc
 [[IntuneMAMEnrollmentManager instance] loginAndEnrollAccount:@”user@foo.com”];
 ```
@@ -373,6 +375,7 @@ This method must be called before the user account’s Azure AD tokens are delet
 If the app will delete the user’s corporate data on its own, the `doWipe` flag can be set to false. Otherwise, the app can have the SDK initiate a selective wipe. This will result in a call to the app's selective wipe delegate.
 
 Example:
+
 ```objc
 [[IntuneMAMEnrollmentManager instance] deRegisterAndUnenrollAccount:@”user@foo.com” withWipe:YES];
 ```
@@ -760,4 +763,5 @@ Both the static library and framework builds of the Intune App SDK are universal
     ```bash
     cp ~/Desktop/IntuneMAM.device_only ~/Desktop/IntuneMAM.framework/IntuneMAM
     ```
+
     The first command strips the simulator architectures from the framework's DYLIB file. The second command copies the device-only DYLIB file back into the framework directory.

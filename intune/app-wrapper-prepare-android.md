@@ -7,7 +7,7 @@ keywords:
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 03/11/2019
+ms.date: 07/09/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.localizationpriority: medium
@@ -43,9 +43,9 @@ Before running the tool, review [Security considerations for running the App Wra
 
 - Your input app must be a valid Android application package with the file extension .apk and:
 
-    - It cannot be encrypted.
-    - It must not have previously been wrapped by the Intune App Wrapping Tool.
-    - It must be written for Android 4.0 or later.
+  - It cannot be encrypted.
+  - It must not have previously been wrapped by the Intune App Wrapping Tool.
+  - It must be written for Android 4.0 or later.
 
 - The app must be developed by or for your company. You cannot use this tool on apps downloaded from the Google Play Store.
 
@@ -82,6 +82,7 @@ Note the folder to which you installed the tool. The default location is: C:\Pro
    ```
 
 3. Run the tool by using the **invoke-AppWrappingTool** command, which has the following usage syntax:
+
    ```PowerShell
    Invoke-AppWrappingTool [-InputPath] <String> [-OutputPath] <String> -KeyStorePath <String> -KeyStorePassword <SecureString>
    -KeyAlias <String> -KeyPassword <SecureString> [-SigAlg <String>] [<CommonParameters>]
@@ -113,10 +114,13 @@ Note the folder to which you installed the tool. The default location is: C:\Pro
 **Example:**
 
 Import the PowerShell module.
+
 ```PowerShell
 Import-Module "C:\Program Files (x86)\Microsoft Intune Mobile Application Management\Android\App Wrapping Tool\IntuneAppWrappingTool.psm1"
 ```
+
 Run the App Wrapping Tool on the native app HelloWorld.apk.
+
 ```PowerShell
 invoke-AppWrappingTool -InputPath .\app\HelloWorld.apk -OutputPath .\app_wrapped\HelloWorld_wrapped.apk -KeyStorePath "C:\Program Files (x86)\Java\jre1.8.0_91\bin\mykeystorefile" -keyAlias mykeyalias -SigAlg SHA1withRSA -Verbose
 ```
@@ -155,7 +159,7 @@ To prevent potential spoofing, information disclosure, and elevation of privileg
 
 - Secure the output directory that has the wrapped app. Consider using a user-level directory for the output.
 
-### See also
+## See also
 - [Decide how to prepare apps for mobile application management with Microsoft Intune](apps-prepare-mobile-application-management.md)
 
 - [Microsoft Intune App SDK for Android developer guide](app-sdk-android.md)

@@ -59,7 +59,7 @@ Conditional Access is an Azure Active Directory (Azure AD) technology. The Condi
 ## Next steps
 [Block apps that don't have modern authentication](app-modern-authentication-block.md)
 
-### See also
+## See also
 
 [Protect app data with app protection policies](app-protection-policies.md)
 [Conditional Access in Azure Active Directory](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access)

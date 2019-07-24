@@ -51,8 +51,6 @@ This feature is not supported for the following systems:
 5. After the device is located, its location is shown in **Locate device**.
     ![Screenshot of Locate device using Intune in Azure](./media/locate-device.png)
 
->[!NOTE]
->For privacy reasons, the distance you can zoom into the map is limited to a 300 meter radius.
 
 ## Activate lost mode sound alert on an iOS device
 

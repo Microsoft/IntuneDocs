@@ -56,8 +56,8 @@ Before diving into the details of setting up Intune, let’s review the mobile d
 
 - What terms of use do you need?
 
-    - Make sure to involve your legal department early in this.
-    - What localization is required?
+  - Make sure to involve your legal department early in this.
+  - What localization is required?
 
 - Are the users familiar with technology and IT in general?
 
@@ -68,8 +68,8 @@ Before diving into the details of setting up Intune, let’s review the mobile d
 - What are your current device passcode/pin code lengths?
 
 - Do you need to disable device features, or restrict certain device behaviors? You can control a variety of platform-specific settings with device configuration profiles, for example:
-    - Disable camera
-    - Lock to single-app mode<br/>
+  - Disable camera
+  - Lock to single-app mode<br/>
 
 - What kinds of authentication must you support? If you need certificate-based authentication, what kinds of certificates must be provisioned?
   - Intune can provision certificates with resource access profiles for enrolled devices.

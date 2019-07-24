@@ -7,7 +7,7 @@ keywords:
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 06/27/2019
+ms.date: 07/23/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.localizationpriority: medium
@@ -202,8 +202,8 @@ These settings are added to a device configuration profile in Intune, and then a
   - **Siri to query user-generated content from the internet (supervised only)**: **Block** prevents Siri from accessing websites to answer questions. **Not configured** allows Siri to access user-generated content from the internet.
 - **Server-side logging for Siri commands**: When set to **Disable**, server-side Siri logging is turned off. It can also prevent logging user requests on Siri servers. **Not configured** (default) logs Siri commands on the server-side. This setting is not dependent on the Siri setting being blocked or not configured.
 
-    This feature applies to:  
-    - iOS 12.2 and later
+  This feature applies to:  
+  - iOS 12.2 and later
 
 - **Apple News (supervised only)**: Choose **Block** to prevent access to the Apple News app on the device. **Not configured** allows using the Apple News app.
 - **iBooks store (supervised only)**: **Block** prevents access to the iBooks store. **Not configured** allows users to browse and buy books from the iBooks store.
@@ -215,7 +215,7 @@ These settings are added to a device configuration profile in Intune, and then a
 - **Spotlight search to return results from internet (supervised only)**: **Block** stops Spotlight from returning any results from an Internet search. **Not configured** allows Spotlight search connect to the Internet to provide search results.
 - **Block removal of system apps from device (supervised only)**: Choosing **Block** disables the ability to remove system apps from the device. **Not configured** allows users to remove system apps.
 
-#### Safari
+### Safari
 
 - **Safari (supervised only)**: **Block** using the Safari browser on the device. **Not configured** allows users to use the Safari browser.
 - **Autofill**: **Block** disables the autofill feature in Safari on the device. **Not configured** allows users to change autocomplete settings in the web browser.
@@ -266,6 +266,16 @@ To add apps to these lists, you can:
 - Import a CSV file with details about the app, including the URL. Use the `<app url>, <app name>, <app publisher>` format. Or, Export an existing list that includes the restricted apps list in the same format.
 
   You can also show or hide built-in apps and line-of-business apps by entering the Bundle ID and app name. For a list of built-in apps you can hide, see [built-in Apple apps](https://support.apple.com/HT208094) (opens Apple's web site).
+
+> [!IMPORTANT]  
+> For all supported iOS versions, use `iTunes` with the `apple.com` portion of the URL. If you use `apps`, it fails. This is a known issue, and is being fixed in a future release. When fixed, you can use `iTunes` or `apps` in the URL.
+>  
+> MS Word example:  
+> - With the following URL, the app is *visible* or *hidden* on the device (works): 
+>   - https://**itunes**.apple.com/de/app/microsoft-word/id586447913  
+>
+> - With the following URL, the app isn't *visible* or *hidden* on the device (doesn't work): 
+>   - https://**apps**.apple.com/de/app/microsoft-word/id586447913 
 
 ## Wireless
 

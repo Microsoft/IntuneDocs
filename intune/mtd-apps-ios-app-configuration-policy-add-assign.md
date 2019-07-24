@@ -94,7 +94,7 @@ Choose the section that corresponds to your MTD provider:
 
 ### Configure Symantec Endpoint Protection Mobile apps  
 - **Android**
-   - See the instructions for [adding Android store apps to Microsoft Intune](store-apps-android.md). In **step 7**, use this [SEP Mobile app store URL](https://play.google.com/store/apps/details?id=com.skycure.skycure).  For **Minimum operating system**, select **Android 4.0 (Ice Cream Sandwich)**.
+  - See the instructions for [adding Android store apps to Microsoft Intune](store-apps-android.md). In **step 7**, use this [SEP Mobile app store URL](https://play.google.com/store/apps/details?id=com.skycure.skycure).  For **Minimum operating system**, select **Android 4.0 (Ice Cream Sandwich)**.
 
 - **iOS**
   - See the instructions for [adding iOS store apps to Microsoft Intune](store-apps-ios.md). Use this [SEP Mobile app store URL](https://itunes.apple.com/us/app/skycure/id695620821?mt=8) on **step 11** for the **Appstore URL**.
@@ -166,7 +166,7 @@ Choose the section that corresponds to your MTD provider:
 
 ### Check Point SandBlast Mobile app configuration policy  
 - See the instructions for [using Microsoft Intune app configuration policies for iOS](app-configuration-policies-use-ios.md) to add the Check Point SandBlast Mobile iOS app configuration policy.
-    - On **step 8**, use the option **Enter XML data**, copy the content below and paste it into the configuration policy body.
+  - On **step 8**, use the option **Enter XML data**, copy the content below and paste it into the configuration policy body.
 
 ```
 <dict><key>MDM</key><string>INTUNE</string></dict>

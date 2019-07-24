@@ -178,43 +178,43 @@ To review costs related to managing the Log Analytics workspace, see [Manage cos
 
 Get answers to frequently asked questions, and read about any known issues with Intune logs in Azure Monitor.
 
-#### Which logs are included?
+### Which logs are included?
 
 Audit logs and operational (preview) logs are both available for routing using this feature.
 
-#### After an action, when do the corresponding logs show up in the event hub?
+### After an action, when do the corresponding logs show up in the event hub?
 
 The logs typically show up in your event hub within several minutes after the action is performed. [What is Azure Event Hubs?](https://docs.microsoft.com/azure/event-hubs/) provides more information.
 
-#### After an action, when do the corresponding logs show up in the storage account?
+### After an action, when do the corresponding logs show up in the storage account?
 
 For Azure storage accounts, the latency is anywhere from 5 to 15 minutes after the action runs.
 
-#### What happens if an Administrator changes the retention period of a diagnostic setting?
+### What happens if an Administrator changes the retention period of a diagnostic setting?
 
 The new retention policy is applied to logs collected after the change. Logs collected before the policy change are unaffected.
 
-#### How much does it cost to store my data?
+### How much does it cost to store my data?
 
 The storage costs depend on the size of your logs and the retention period you choose. For a list of the estimated costs for tenants, which depend on the log volume generated, see the [Storage size for activity logs](#storage-size-for-activity-logs) (in this article).
 
-#### How much does it cost to stream my data to an event hub?
+### How much does it cost to stream my data to an event hub?
 
 The streaming costs depend on the number of messages you receive per minute. For details on how costs are calculated and cost estimates based on the number of messages, see [Event hub messages for activity logs](#event-hub-messages-for-activity-logs) (in this article).
 
-#### How do I integrate Intune audit logs with my SIEM system?
+### How do I integrate Intune audit logs with my SIEM system?
 
 Use Azure Monitor with Event Hubs to stream logs to your SIEM system. First, [stream the logs to an event hub](https://docs.microsoft.com/azure/active-directory/reports-monitoring/tutorial-azure-monitor-stream-logs-to-event-hub). Then, [set up your SIEM tool](https://docs.microsoft.com/azure/active-directory/reports-monitoring/tutorial-azure-monitor-stream-logs-to-event-hub#access-data-from-your-event-hub) with the configured event hub. 
 
-#### What SIEM tools are currently supported?
+### What SIEM tools are currently supported?
 
 Currently, Azure Monitor is supported by [Splunk](https://docs.microsoft.com/azure/active-directory/reports-monitoring/tutorial-integrate-activity-logs-with-splunk), QRadar, and [Sumo Logic](https://help.sumologic.com/Send-Data/Applications-and-Other-Data-Sources/Azure_Active_Directory) (opens a new website). For more information about how the connectors work, see [Stream Azure monitoring data to an event hub for consumption by an external tool](https://docs.microsoft.com/azure/azure-monitor/platform/stream-monitoring-data-event-hubs).
 
-#### Can I access the data from an event hub without using an external SIEM tool?
+### Can I access the data from an event hub without using an external SIEM tool?
 
 Yes. To access the logs from your custom application, you can use the [Event Hubs API](https://docs.microsoft.com/azure/event-hubs/event-hubs-dotnet-standard-getstarted-receive-eph).
 
-#### What data is stored?
+### What data is stored?
 
 Intune doesn't store any data sent through the pipeline. Intune routes data to the Azure Monitor pipeline, at the authority of the tenant. For more information, see [Azure Monitor overview](https://docs.microsoft.com/azure/azure-monitor/overview).
 

@@ -102,23 +102,23 @@ For more information, see [Policy CSP - Bitlocker](https://docs.microsoft.com/wi
 
   For Bit locker removable drive policy, configure the following settings:
 
-    - **Require encryption for write access**  
-      **Default**: Yes  
-  
-    - **Encryption method**  
-      **Default**: AES 256bit CBC  
+  - **Require encryption for write access**  
+    **Default**: Yes  
+
+  - **Encryption method**  
+    **Default**: AES 256bit CBC  
 
 - **Bit locker fixed drive policy**  
   This policy setting is used to control the encryption method and cipher strength. The values of this policy determine the strength of the cipher that BitLocker uses for encryption. Enterprises may want to control the encryption level for increased security (AES-256 is stronger than AES-128). If you enable this setting, you can configure an encryption algorithm and key cipher strength for fixed data drives, operating system drives, and removable data drives individually. For fixed and operating system drives, we recommend that you use the XTS-AES algorithm. For removable drives, you should use AES-CBC 128-bit or AES-CBC 256-bit if the drive is used in other devices that aren't running Windows 10, version 1511 or later. Changing the encryption method has no effect if the drive is already encrypted or if encryption is in progress. In these cases, this policy setting is ignored.  
  
-   For Bit locker fixed drive policy, configure the following settings: 
-   - **Encryption method**
-     **Default**: AES 256bit XTS  
+  For Bit locker fixed drive policy, configure the following settings: 
+  - **Encryption method**  
+    **Default**: AES 256bit XTS  
 
 - **Bit locker system drive policy**  
   This policy setting is used to control the encryption method and cipher strength. The values of this policy determine the strength of the cipher that BitLocker uses for encryption. Enterprises may want to control the encryption level for increased security (AES-256 is stronger than AES-128). If you enable this setting, you can configure an encryption algorithm and key cipher strength for fixed data drives, operating system drives, and removable data drives individually. For fixed and operating system drives, we recommend that you use the XTS-AES algorithm. For removable drives, you should use AES-CBC 128-bit or AES-CBC 256-bit if the drive is used in other devices that aren't running Windows 10, version 1511 or later. Changing the encryption method has no effect if the drive is already encrypted or if encryption is in progress. In these cases, this policy setting is ignored.  
 
-   For Bit locker system drive policy, configure the following settings:
+  For Bit locker system drive policy, configure the following settings:
   - **Encryption method**  
     **Default**: AES 256bit XTS  
 
@@ -226,33 +226,33 @@ For more information, see [Policy CSP - DeviceInstallation](https://docs.microso
   
   **Default**: Block hardware device installation  
 
-    When *Block hardware device installation* is selected, the following settings are available.
-  
-    - **Remove matching hardware devices**   
-    This setting is available only when *Hardware device installation by device identifiers* is set to *Block hardware device installation*.
-      
-      **Default**: Yes
-  
-    - **Hardware device identifiers that are blocked**  
-       This setting is available only when *Hardware device installation by device identifiers* is set to *Block hardware device installation*.
-      
-      **Default**: Yes  
+  When *Block hardware device installation* is selected, the following settings are available.
+
+  - **Remove matching hardware devices**   
+  This setting is available only when *Hardware device installation by device identifiers* is set to *Block hardware device installation*.
+    
+    **Default**: Yes
+
+  - **Hardware device identifiers that are blocked**  
+      This setting is available only when *Hardware device installation by device identifiers* is set to *Block hardware device installation*.
+    
+    **Default**: Yes  
   
 - **Hardware device installation by setup classes**  
   This policy setting allows you to specify a list of device setup class globally unique identifiers (GUIDs) for device drivers that Windows is prevented from installing. This policy setting takes precedence over any other policy setting that allows Windows to install a device. If you enable this policy setting, Windows is prevented from installing or updating device drivers whose device setup class GUIDs appear in the list you create. If you enable this policy setting on a remote desktop server, the policy setting affects redirection of the specified devices from a remote desktop client to the remote desktop server. If you disable or don't configure this policy setting, Windows can install and update devices as allowed or prevented by other policy settings.
   
   **Default**: Block hardware device installation  
 
-    When *Block hardware device installation* is selected, the following settings are available.
-    - **Remove matching hardware devices**    
-    This setting is available only when *Hardware device installation by setup classes* is set to *Block hardware device installation*.  
+  When *Block hardware device installation* is selected, the following settings are available.
+  - **Remove matching hardware devices**    
+  This setting is available only when *Hardware device installation by setup classes* is set to *Block hardware device installation*.  
 
-      **Default**: *No default configuration*  
-  
-    - **Hardware device identifiers that are blocked**  
-      This setting is available only when *Hardware device installation by setup classes* is set to *Block hardware device installation*.
-      
-      **Default**: *No default configuration*  
+    **Default**: *No default configuration*  
+
+  - **Hardware device identifiers that are blocked**  
+    This setting is available only when *Hardware device installation by setup classes* is set to *Block hardware device installation*.
+    
+    **Default**: *No default configuration*  
 
 ### Device Lock  
 
@@ -268,38 +268,38 @@ For more information, see [Policy CSP - DeviceLock](https://docs.microsoft.com/w
   
   **Default**: Yes  
   
-    When *Require password* is set to *Yes*, the following settings are available.
+  When *Require password* is set to *Yes*, the following settings are available.
 
-    - **Password minimum character set count**  
-      The number of complex element types (uppercase and lowercase letters, numbers, and punctuation) required for a strong PIN or password. PIN enforces the following behavior for desktop and mobile devices: 1 - Digits only 2 - Digits and lowercase letters are required 3 - Digits, lowercase letters, and uppercase letters are required. Not supported in desktop Microsoft accounts and domain accounts. 4 - Digits, lowercase letters, uppercase letters, and special characters are required. Not supported in desktop. The default value is 1. 
-      
-      **Default**: 3  
+  - **Password minimum character set count**  
+    The number of complex element types (uppercase and lowercase letters, numbers, and punctuation) required for a strong PIN or password. PIN enforces the following behavior for desktop and mobile devices: 1 - Digits only 2 - Digits and lowercase letters are required 3 - Digits, lowercase letters, and uppercase letters are required. Not supported in desktop Microsoft accounts and domain accounts. 4 - Digits, lowercase letters, uppercase letters, and special characters are required. Not supported in desktop. The default value is 1. 
+    
+    **Default**: 3  
   
-    - **Number of sign-in failures before wiping device**  
-      The number of authentication failures allowed before the device is wiped. A value of 0 disables device wipe functionality.
-        
-      **Default**: 10  
+  - **Number of sign-in failures before wiping device**  
+    The number of authentication failures allowed before the device is wiped. A value of 0 disables device wipe functionality.
+    
+    **Default**: 10  
   
-    - **Password expiration (days)**  
-      The Maximum password age policy setting determines the how long (in days) that a password can be used before the system requires the user to change it. You can set passwords to expire after a number of days between 1 and 999, or you can specify that passwords never expire by setting the number of days to 0. If Maximum password age is between 1 and 999 days, the minimum password age must be less than the maximum password age. If Maximum password age is set to 0, Minimum password age can be any value between 0 and 998 days.
-      
-      **Default**: 60  
+  - **Password expiration (days)**  
+    The Maximum password age policy setting determines the how long (in days) that a password can be used before the system requires the user to change it. You can set passwords to expire after a number of days between 1 and 999, or you can specify that passwords never expire by setting the number of days to 0. If Maximum password age is between 1 and 999 days, the minimum password age must be less than the maximum password age. If Maximum password age is set to 0, Minimum password age can be any value between 0 and 998 days.
+    
+    **Default**: 60  
   
-    - **Required password type**  
-      Determines the type of PIN or password required.
-      
-      **Default**: Alphanumeric  
+  - **Required password type**  
+    Determines the type of PIN or password required.
+    
+    **Default**: Alphanumeric  
   
-    - **Minimum password length**  
-      The Minimum password length policy setting determines the least number of characters that can make up a password for a user account. You can set a value of between 1 and 14 characters, or you can establish that no password is required by setting the number of characters to 0.
-      
-      **Default**: 8  
-  
-    - **Block simple passwords**  
-      Specifies whether PINs or passwords such as "1111" or "1234" are allowed. For the desktop, it also controls the use of picture passwords.
-      
-      **Default**: Yes  
-        *A setting of Yes prevents use of simple passwords.* 
+  - **Minimum password length**  
+    The Minimum password length policy setting determines the least number of characters that can make up a password for a user account. You can set a value of between 1 and 14 characters, or you can establish that no password is required by setting the number of characters to 0.
+    
+    **Default**: 8  
+
+  - **Block simple passwords**  
+    Specifies whether PINs or passwords such as "1111" or "1234" are allowed. For the desktop, it also controls the use of picture passwords.
+    
+    **Default**: Yes  
+      *A setting of Yes prevents use of simple passwords.* 
 
   - **Prevent reuse of previous passwords**  
     Specifies how many passwords can be stored in the history that can’t be used. The value includes the user's current password. For example, with a setting of *1* the user can't reuse their current password when choosing a new password. A setting of *5* means that a user can't set their new password to their current password or any of their previous four passwords.
@@ -351,10 +351,10 @@ For more information, see [Policy CSP - Experience](https://docs.microsoft.com/w
     Specifies whether to allow app and content suggestions from third-party software publishers in Windows spotlight features like lock screen spotlight, suggested apps in the Start menu, and Windows tips. Users may still see suggestions for Microsoft features, apps, and services.
       
     **Default**: Yes  
-   - **Block consumer specific features**  
-      Allows IT admins to turn on experiences that are typically for consumers only, such as Start suggestions, Membership notifications, Post-OOBE app install, and redirect tiles.
-      
-     **Default**: Yes  
+  - **Block consumer specific features**  
+    Allows IT admins to turn on experiences that are typically for consumers only, such as Start suggestions, Membership notifications, Post-OOBE app install, and redirect tiles.
+    
+    **Default**: Yes  
 
 
 ### Exploit Guard  
@@ -1006,12 +1006,12 @@ For more information, see [Policy CSP - LocalPoliciesSecurityOptions](https://do
   
 - **Administrator elevation prompt behavior**  
   This policy setting controls the behavior of the elevation prompt for administrators. The options are: 
-    - *Elevate without prompting*: Allows privileged accounts to perform an operation that requires elevation without requiring consent or credentials. Note: Use this option only in the most constrained environments. 
-    - *Prompt for credentials on the secure desktop*: When an operation requires elevation of privilege, the user is prompted on the secure desktop to enter a privileged user name and password. If the user enters valid credentials, the operation continues with the user's highest available privilege. 
-    - *Prompt for consent on the secure desktop*: When an operation requires elevation of privilege, the user is prompted on the secure desktop to select either Permit or Deny. If the user selects Permit, the operation continues with the user's highest available privilege. 
-    - *Prompt for credentials*: When an operation requires elevation of privilege, the user is prompted to enter an administrative user name and password. If the user enters valid credentials, the operation continues with the applicable privilege. 
-    - *Prompt for consent*: When an operation requires elevation of privilege, the user is prompted to select either Permit or Deny. If the user selects Permit, the operation continues with the user's highest available privilege.  
-    - *Prompt for consent for non-Windows binaries*: When an operation for a non-Microsoft application requires elevation of privilege, the user is prompted on the secure desktop to select either Permit or Deny. If the user selects Permit, the operation continues with the user's highest available privilege.   
+  - *Elevate without prompting*: Allows privileged accounts to perform an operation that requires elevation without requiring consent or credentials. Note: Use this option only in the most constrained environments. 
+  - *Prompt for credentials on the secure desktop*: When an operation requires elevation of privilege, the user is prompted on the secure desktop to enter a privileged user name and password. If the user enters valid credentials, the operation continues with the user's highest available privilege. 
+  - *Prompt for consent on the secure desktop*: When an operation requires elevation of privilege, the user is prompted on the secure desktop to select either Permit or Deny. If the user selects Permit, the operation continues with the user's highest available privilege. 
+  - *Prompt for credentials*: When an operation requires elevation of privilege, the user is prompted to enter an administrative user name and password. If the user enters valid credentials, the operation continues with the applicable privilege. 
+  - *Prompt for consent*: When an operation requires elevation of privilege, the user is prompted to select either Permit or Deny. If the user selects Permit, the operation continues with the user's highest available privilege.  
+  - *Prompt for consent for non-Windows binaries*: When an operation for a non-Microsoft application requires elevation of privilege, the user is prompted on the secure desktop to select either Permit or Deny. If the user selects Permit, the operation continues with the user's highest available privilege.   
   
   **Default**: Prompt for consent on the secure desktop
   
@@ -1024,12 +1024,12 @@ For more information, see [Policy CSP - LocalPoliciesSecurityOptions](https://do
   **Default**: Require NTLM V2 128 encryption
   
 - **Smart card removal behavior**  
-    This security setting determines what happens when the smart card for a logged-on user is removed from the smart card reader. The options are:
-     - *No action*. 
-     - *Lock Workstation* - The workstation is locked when the smart card is removed, allowing users to leave the area, take their smart card with them, and still maintain a protected session.
-     - *Force Logoff* - the user is automatically logged off when the smart card is removed.
-     - *Disconnect Remote Desktop session* - Removal of the smart card disconnects the session without logging the user off. This allows the user to insert the smart card and resume the session later, or at another smart card reader-equipped computer, without having to log on again. If the session is local, this policy functions identically to Lock Workstation.  <br><br>
-    
+  This security setting determines what happens when the smart card for a logged-on user is removed from the smart card reader. The options are:
+  - *No action*. 
+  - *Lock Workstation* - The workstation is locked when the smart card is removed, allowing users to leave the area, take their smart card with them, and still maintain a protected session.
+  - *Force Logoff* - the user is automatically logged off when the smart card is removed.
+  - *Disconnect Remote Desktop session* - Removal of the smart card disconnects the session without logging the user off. This allows the user to insert the smart card and resume the session later, or at another smart card reader-equipped computer, without having to log on again. If the session is local, this policy functions identically to Lock Workstation.  <br><br>
+
   **Default**: Lock workstation
   
 - **Block anonymous enumeration of SAM accounts and shares**  

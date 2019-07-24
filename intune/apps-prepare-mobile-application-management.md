@@ -123,6 +123,6 @@ This table lists the settings that you can use for the App SDK and App Wrapping 
 
 To learn more about app protection policies and Intune, see the following topics:
 
-  - [Android app wrapping tool](app-wrapper-prepare-android.md)<br>
-  - [iOS app wrapping tool](app-wrapper-prepare-ios.md)<br>
-  - [Use the SDK to enable apps for mobile application management](app-sdk.md)
+- [Android app wrapping tool](app-wrapper-prepare-android.md)<br>
+- [iOS app wrapping tool](app-wrapper-prepare-ios.md)<br>
+- [Use the SDK to enable apps for mobile application management](app-sdk.md)

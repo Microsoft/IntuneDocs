@@ -68,6 +68,7 @@ To disable outbound proxy usage for the connector, edit the :\Program Files\Micr
     </appSettings>
 </configuration>
 ```
+
 To ensure that the Connector Updater service also bypasses the proxy, make a similar change to C:\Program Files\Microsoft Intune\ODJConnector\ODJConnectorSvc\ODJConnectorSvc.exe.config.
 
 ```xml

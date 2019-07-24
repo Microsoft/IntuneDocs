@@ -8,7 +8,7 @@ keywords:
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 03/11/2019
+ms.date: 07/09/2019
 ms.topic: quickstart
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -37,8 +37,8 @@ Intune provides mobile device management (MDM) and mobile app management (MAM) f
 ## Prerequisites
 Before setting up Microsoft Intune, review the following requirements:
 
-   - [Supported operating systems and browsers](supported-devices-browsers.md) 
-   - [Network configuration requirements and bandwidth](network-bandwidth-use.md)
+- [Supported operating systems and browsers](supported-devices-browsers.md) 
+- [Network configuration requirements and bandwidth](network-bandwidth-use.md)
 
 ## Sign up for a Microsoft Intune free trial
 

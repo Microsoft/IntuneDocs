@@ -57,7 +57,7 @@ Configuring the user UPN setting is **required** for devices that are managed by
 
       **key** = IntuneMAMUPN, **value** = <username@company.com>
 
-      Example: [‘IntuneMAMUPN’, ‘jondoe@microsoft.com’]
+      Example: [‘IntuneMAMUPN’, ‘janellecraig@contoso.com’]
       
      > [!NOTE]
      > In Intune, the App Configuration policy enrollment type must be set to **Managed Devices**.
@@ -114,5 +114,5 @@ For example, the **Require app PIN** policy setting is easy to test. When the po
 First,  [create and assign an app protection policy](app-protection-policies.md) to the iOS app. For more information on how to test app protection policy, See [Validate app protection policies](app-protection-policies-validate.md).
 
 
-### See also
+## See also
 [What is Intune app protection policy](app-protection-policy.md)

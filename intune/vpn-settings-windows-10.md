@@ -71,29 +71,29 @@ Depending on the settings you choose, not all values may be configurable.
   - **PPTP**
 
   When you choose a VPN connection type, you may also be asked for the following settings:  
-    - **Always On**: Choose **Enable** to automatically connect to the VPN connection when the following events happen: 
-      - Users sign into their devices
-      - The network on the device changes
-      - The screen on the device turns back on after being turned off 
+  - **Always On**: Choose **Enable** to automatically connect to the VPN connection when the following events happen: 
+    - Users sign into their devices
+    - The network on the device changes
+    - The screen on the device turns back on after being turned off 
 
-    - **Authentication method**: Select how you want users to authenticate to the VPN server. Using **certificates** provides enhanced features, such as zero-touch experience, on-demand VPN, and per-app VPN.
-    - **Remember credentials at each logon**: Choose to cache the authentication credentials.
-    - **Custom XML**: Enter any custom XML commands that configure the VPN connection.
-    - **EAP Xml**: Enter any EAP XML commands that configure the VPN connection
+  - **Authentication method**: Select how you want users to authenticate to the VPN server. Using **certificates** provides enhanced features, such as zero-touch experience, on-demand VPN, and per-app VPN.
+  - **Remember credentials at each logon**: Choose to cache the authentication credentials.
+  - **Custom XML**: Enter any custom XML commands that configure the VPN connection.
+  - **EAP Xml**: Enter any EAP XML commands that configure the VPN connection
 
-#### Pulse Secure example
+### Pulse Secure example
 
 ```
 <pulse-schema><isSingleSignOnCredential>true</isSingleSignOnCredential></pulse-schema>
 ```
 
-#### F5 Edge Client example
+### F5 Edge Client example
 
 ```
 <f5-vpn-conf><single-sign-on-credential /></f5-vpn-conf>
 ```
 
-#### SonicWALL Mobile Connect example
+### SonicWALL Mobile Connect example
 **Login group or domain**: This property can't be set in the VPN profile. Instead, Mobile Connect parses this value when the user name and domain are entered in the `username@domain` or `DOMAIN\username` formats.
 
 Example:
@@ -102,13 +102,13 @@ Example:
 <MobileConnect><Compression>false</Compression><debugLogging>True</debugLogging><packetCapture>False</packetCapture></MobileConnect>
 ```
 
-#### CheckPoint Mobile VPN example
+### CheckPoint Mobile VPN example
 
 ```
 <CheckPointVPN port="443" name="CheckPointSelfhost" sso="true" debug="3" />
 ```
 
-#### Writing custom XML
+### Writing custom XML
 For more information about writing custom XML commands, see each manufacturer's VPN documentation.
 
 For more information about creating custom EAP XML, see [EAP configuration](https://docs.microsoft.com/windows/client-management/mdm/eap-configuration).

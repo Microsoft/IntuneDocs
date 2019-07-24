@@ -65,8 +65,8 @@ This article shows you how to create a device configuration profile using kernel
 >
 > For information on this notarization policy, and any updates or changes, see the following resources:
 >
->  - [Notarizing your app before distribution](https://developer.apple.com/documentation/security/notarizing_your_app_before_distribution) (opens Apple's web site) 
->  - [Prepare for changes to kernel extensions in macOS High Sierra](https://support.apple.com/en-us/HT208019) (opens Apple's web site)
+> - [Notarizing your app before distribution](https://developer.apple.com/documentation/security/notarizing_your_app_before_distribution) (opens Apple's web site) 
+> - [Prepare for changes to kernel extensions in macOS High Sierra](https://support.apple.com/en-us/HT208019) (opens Apple's web site)
 
 ## Create the profile
 

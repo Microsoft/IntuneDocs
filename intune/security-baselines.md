@@ -7,7 +7,7 @@ keywords:
 author: brenduns 
 ms.author: brenduns
 manager: dougeby
-ms.date: 06/20/2019
+ms.date: 07/12/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -74,9 +74,12 @@ The following security baseline instances are available for use with Intune. Use
   - [MDM Security Baseline for Spring 2019 (19H1)](security-baseline-settings-mdm.md)
   - [Preview: MDM Security Baseline for October 2018](security-baseline-settings-mdm-archive.md)
 
-- **Windows Defender ATP baseline**  
+- **Microsoft Defender ATP baseline**  
   *(To use this baseline your environment must meet the prerequisites for using [Microsoft Defender Advanced Threat Protection](advanced-threat-protection.md#prerequisites))*.
-  - [Preview: Windows Defender ATP baseline](security-baseline-settings-defender-atp.md)  
+  - [Preview: Microsoft Defender ATP baseline](security-baseline-settings-defender-atp.md)  
+
+  > [!NOTE]
+  > The Microsoft Defender ATP security baseline has been optimized for physical devices and is currently not recommended for use on virtual machines (VMs) or VDI endpoints. Certain baseline settings can impact remote interactive sessions on virtualized environments.  For more information, see [Increase compliance to the Microsoft Defender ATP security baseline](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/configure-machines-security-baseline) in the Windows documentation.
 
 You can continue to use and edit profiles that you previously created based on a preview template, even when that preview template is no longer available for creating new profiles. 
 
@@ -159,7 +162,7 @@ Upon saving, after the conversion is complete, the baseline is immediately redep
 3. On the **Change Version** pane, use the **Select a security baseline to update to** dropdown, and select the version instance you want to use.  
 
    ![select a version](./media/security-baselines/select-instance.png)  
- 
+   
 4. Select **Review update** to download a CSV file that displays the difference between the profiles current instance version and the new version you’ve selected. Review this file so that you understand which settings are added, removed, and what the default values for these settings are in the updated profile.  
 
    When ready, continue to the next step.  
@@ -181,19 +184,19 @@ Other processes that might later change settings on the device include a differe
 
 ## Q & A
 
-#### Why these settings?
+### Why these settings?
 
 The Microsoft security team has years of experience working directly with Windows developers and the security community to create these recommendations. The settings in this baseline are considered the most relevant security-related configuration options. In each new build of Windows, the team adjusts its recommendations based on newly released features.
 
-#### Is there a difference in the recommendations for Windows security baselines for group policy vs. Intune?
+### Is there a difference in the recommendations for Windows security baselines for group policy vs. Intune?
 
 The same Microsoft security team chose and organized the settings for each baseline. Intune includes all the relevant settings in the Intune security baseline. There are some settings in the group policy baseline that are specific to an on-premises domain controller. These settings are excluded from Intune's recommendations. All the other settings are the same.
 
-#### Are the Intune security baselines CIS or NSIT compliant?
+### Are the Intune security baselines CIS or NSIT compliant?
 
 Strictly speaking, no. The Microsoft security team consults organizations, such as CIS, to compile its recommendations. But, there isn't a one-to-one mapping between “CIS-compliant” and Microsoft baselines.
 
-#### What certifications does Microsoft’s security baselines have? 
+### What certifications does Microsoft’s security baselines have? 
 
 - Microsoft continues to publish security baselines for group policies (GPOs) and the [Security Compliance Toolkit](https://docs.microsoft.com/windows/security/threat-protection/security-compliance-toolkit-10), as it has for many years. These baselines are used by many organizations. The recommendations in these baselines are from the Microsoft security team’s engagement with enterprise customers and external agencies, including the Department of Defense (DoD), National Institute of Standards and Technology (NIST), and more. We share our recommendations and baselines with these organizations. These organizations also have their own recommendations that closely mirror Microsoft's recommendations. As mobile device management (MDM) continues to grow into the cloud, Microsoft created equivalent MDM recommendations of these group policy baselines. These additional baselines are built in to Microsoft Intune, and include compliance reports on users, groups, and devices that follow (or don't follow) the baseline.
 
@@ -204,6 +207,7 @@ Strictly speaking, no. The Microsoft security team consults organizations, such 
 ## Next steps
 - View the settings in the latest versions of the available baselines:  
   - [MDM security baseline](security-baseline-settings-mdm.md)  
-  - [Windows Defender ATP baseline](security-baseline-settings-defender-atp.md)  
+  - [Microsoft Defender ATP baseline](security-baseline-settings-defender-atp.md)  
 
-- Check the status and monitor the [baseline and profile](security-baselines-monitor.md).
+- Check the status and monitor the [baseline and profile](security-baselines-monitor.md)
+

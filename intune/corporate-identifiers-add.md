@@ -47,7 +47,16 @@ After enrollment, you can [change the ownership setting](#change-device-ownershi
 
 ## Identify corporate-owned devices with IMEI or serial number
 
-As an Intune admin, you can create and import a comma-separated value (.csv) file that lists 14-digit IMEI numbers or serial numbers. Intune uses these identifiers to specify device ownership as corporate during device enrollment. You can declare IMEI numbers for all supported platforms. You can only declare serial number for iOS, macOS, and Android devices. Each IMEI or serial number can have details specified in the list for administrative purposes.
+As an Intune admin, you can create and import a comma-separated value (.csv) file that lists 14-digit IMEI numbers or serial numbers. Intune uses these identifiers to specify device ownership as corporate during device enrollment. Each IMEI or serial number can have details specified in the list for administrative purposes.
+
+This feature is supported for the following platforms:
+
+| Platform | IMEI numbers | Serial numbers |
+|---|---|---|
+| Windows | Supported | Supported |
+| iOS/macOS | Not supported | Supported |
+| Device admin managed Android OS v10 | Not supported | Not supported |
+| Other Android | Not supported | Supported |
 
 <!-- When you upload serial numbers for corporate-owned iOS devices, they must be paired with a corporate enrollment profile. Devices must then be enrolled using either Apple’s device enrollment program (DEP) or Apple Configurator to have them appear as corporate-owned. -->
 
@@ -97,7 +106,7 @@ This .csv file when viewed in a text editor appears as:
 
 2. In the **Add identifiers** blade, specify the identifier type: **IMEI** or **Serial**.
 
-3. Enter the **Identifer** and **Details** for each identifier you want to add. When you're done entering identifiers, choose **Add**.
+3. Enter the **Identifier** and **Details** for each identifier you want to add. When you're done entering identifiers, choose **Add**.
 
 5. If you entered corporate identifiers that are already in Intune, but have different details, the **Review duplicate identifiers** popup appears. Select the identifiers that you want to overwrite into Intune and choose **Ok** to add the identifiers. For each identifier, only the first duplicate will be compared.
 

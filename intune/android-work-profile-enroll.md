@@ -32,18 +32,20 @@ ms.collection: M365-identity-device-management
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
-Intune helps you deploy apps and settings to Android Enterprise work profile devices to ensure work and personal information are separate. For specific details about Android Enterprise, see [Android Enterprise requirements](https://support.google.com/work/android/answer/6174145?hl=en&ref_topic=6151012).
+Intune helps you deploy apps and settings to Android Enterprise work profile devices to make work and personal information are separate. For specific details about Android Enterprise, see [Android Enterprise requirements](https://support.google.com/work/android/answer/6174145?hl=en&ref_topic=6151012).
 
 To set up Android Enterprise work profile management, follow these steps:
 
 1. [Connect your Intune tenant account to your Android Enterprise account](connect-intune-android-enterprise.md).
-2. Specify Android Enterprise work profile enrollment settings. Android Enterprise work profiles are [supported on only certain Android devices](https://support.google.com/work/android/answer/6174145?hl=en&ref_topic=6151012%20style=%22target=new_window%22). Any device that supports Android Enterprise work profiles also supports conventional Android management. Intune lets you specify how devices that support Android Enterprise work profiles should be managed from within [Enrollment Restrictions](enrollment-restrictions-set.md).
-    - **Block (set by default)**:  All Android devices, including devices that support Android Enterprise work profiles, will be enrolled as conventional Android devices.
-    - **Allow**: All devices that support Android Enterprise work profiles are enrolled as Android Enterprise work profile devices. Any Android device that does not support Android Enterprise work profiles is enrolled as a conventional Android device.
+2. Specify Android Enterprise work profile enrollment settings. Android Enterprise work profiles are [supported on only certain Android devices](https://support.google.com/work/android/answer/6174145?hl=en&ref_topic=6151012%20style=%22target=new_window%22). Any device that supports Android Enterprise work profiles also supports Android device administrator management. Intune lets you specify how devices that support Android Enterprise work profiles should be managed from within [Enrollment Restrictions](enrollment-restrictions-set.md).
+    - **Block**:  All Android devices, including devices that support Android Enterprise work profiles, will be enrolled as Android device administrator devices, unless Android device administrator enrollment is also blocked. 
+    - **Allow (set by default)**: All devices that support Android Enterprise work profiles are enrolled as Android Enterprise work profile devices. Any Android device that does not support Android Enterprise work profiles is enrolled as an Android device administrator device, unless Android device administrator enrollment is blocked. 
+> [!NOTE]
+> The default set to **Allow** is true for new tenants as of July 2019. All previous tenants will experience no change to their Enrollment Restrictions, and will see whatever policies they have set in Enrollment Restrictions. For previous tenants that never had Enrollment Restrictions changes, **Block** will still be the default for Android Enterprise work profiles.
 3. [Tell your users how to enroll their devices](/intune-user-help/create-a-work-profile-and-enroll-your-device-in-intune-android).  
 
 
-If you want to enroll devices using Android Enterprise work profiles, but those devices were already enrolled as regular Android devices, those devices must first unenroll and then re-enroll.
+If you want to enroll devices using Android Enterprise work profiles, but those devices were already enrolled with Android device administrator, those devices must first unenroll and then re-enroll.
 
 If you're enrolling Android Enterprise work profile devices by using a [Device Enrollment Manager](device-enrollment-manager-enroll.md) account, there is a limit of 10 devices that can be enrolled per account.
 
@@ -55,4 +57,4 @@ For more information, see [Data Intune sends to Google](data-intune-sends-to-goo
 
 ## See also
 
-[Configuring and troubleshooting Android enterprise devices in Microsoft Intune](https://support.microsoft.com/help/4476974)
+[Configuring and troubleshooting Android Enterprise devices in Microsoft Intune](https://support.microsoft.com/help/4476974)

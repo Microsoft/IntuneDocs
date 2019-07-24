@@ -164,7 +164,7 @@ If you want to remove devices from the Intune portal, you can delete them from t
 You can configure Intune to automatically delete devices that appear to be inactive, stale, or unresponsive. These cleanup rules continuously monitor your device inventory so that your device records stay current. Devices deleted in this way are removed from Intune management.
 1. Sign in to the [Intune in the Azure portal](https://aka.ms/intuneportal).
 2. Choose **Devices** > **Device cleanup rules** > **Yes**.
-3. In the **Delete devices that haven’t checked in for this many days** box, enter a number between 90 and 270.
+3. In the **Delete devices that haven’t checked in for this many days** box, enter a number between 30 and 270.
 4. Choose **Save**.
 
 

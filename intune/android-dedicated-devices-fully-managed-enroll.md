@@ -5,7 +5,7 @@ title: Enroll Android Enterprise dedicated devices or fully managed devices in I
 titleSuffix: Microsoft Intune
 description: Learn how to enroll Android Enterprise dedicated devices or fully managed devices in Intune.
 keywords:
-author: ErikjeMS 
+author: ErikjeMS
 ms.author: erikje
 manager: dougeby
 ms.date: 1/15/2018
@@ -13,7 +13,7 @@ ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
 ms.technology:
-ms.assetid: 
+ms.assetid:
 
 # optional metadata
 
@@ -42,11 +42,11 @@ After you've set up your [Android Enterprise dedicated devices](android-kiosk-en
 
 \* On participating manufacturers.
 
-### Enroll by using Near Field Communication (NFC)
+## Enroll by using Near Field Communication (NFC)
 
 For devices that support NFC, you can provision your devices by creating a specially formatted NFC tag. You can use your own app or any NFC tag creator tool. For more information, see [C-based Android Enterprise device enrollment with Microsoft Intune](https://blogs.technet.microsoft.com/cbernier/2018/10/15/nfc-based-android-enterprise-device-enrollment-with-microsoft-intune/) and [Google's Android Management API documentation](https://developers.google.com/android/management/provision-device#nfc_method).
 
-### Enroll by using a token
+## Enroll by using a token
 
 For Android 6 and later devices, you can use the token to enroll the device. Android 6.1 and later versions can also leverage QR code scanning when using the **afw#setup** enrollment method.
 
@@ -56,11 +56,11 @@ For Android 6 and later devices, you can use the token to enroll the device. And
 4. Accept the Google Terms and conditions and then choose **NEXT**.
 5. On the Google sign-in screen, enter **afw#setup** instead of a Gmail account, and then choose **NEXT**.
 6. Choose **INSTALL** for the **Android Device Policy** app.
-7. Continue installation of this policy.  Some devices may require additional terms acceptance. 
+7. Continue installation of this policy.  Some devices may require additional terms acceptance.
 8. On the **Enroll this device** screen, allow your device to scan the QR code or choose to enter the token manually.
-9. Follow the on-screen prompts to complete enrollment. 
+9. Follow the on-screen prompts to complete enrollment.
 
-### Enroll by using a QR code
+## Enroll by using a QR code
 
 On Android 7 and later devices, you can scan the QR code from the enrollment profile to enroll the device.
 
@@ -71,27 +71,28 @@ On Android 7 and later devices, you can scan the QR code from the enrollment pro
 2. For Android 7 and 8 devices, you'll be prompted to install a QR reader. Android 9 and later devices already have a QR reader installed.
 3. Use the QR reader to scan the enrollment profile QR code and then follow the on-screen prompts to enroll.
 
-### Enroll by using Google Zero Touch
+## Enroll by using Google Zero Touch
 
-To use Google's Zero Touch system, the device must support it and be affiliated with a supplier that is part of the service.  For more information, see [Google’s Zero Touch program website](https://www.android.com/enterprise/management/zero-touch/). 
+To use Google's Zero Touch system, the device must support it and be affiliated with a supplier that is part of the service.  For more information, see [Google’s Zero Touch program website](https://www.android.com/enterprise/management/zero-touch/).
 
 1. Create a new Configuration in the Zero Touch console.
 2. Choose **Microsoft Intune** from the EMM DPC dropdown.
 3. In Google’s Zero Touch console, copy/paste the following JSON into the DPC extras field. Replace the *YourEnrollmentToken* string with the enrollment token you created as part of your enrollment profile. Be sure to surround the enrollment token with double quotes.
 
-```
-{ 
-    "android.app.extra.PROVISIONING_DEVICE_ADMIN_COMPONENT_NAME": "com.google.android.apps.work.clouddpc/.receivers.CloudDeviceAdminReceiver", 
+    ```json
+    {
+        "android.app.extra.PROVISIONING_DEVICE_ADMIN_COMPONENT_NAME": "com.google.android.apps.work.clouddpc/.receivers.CloudDeviceAdminReceiver",
 
-    "android.app.extra.PROVISIONING_DEVICE_ADMIN_SIGNATURE_CHECKSUM": "I5YvS0O5hXY46mb01BlRjq4oJJGs2kuUcHvVkAPEXlg", 
+        "android.app.extra.PROVISIONING_DEVICE_ADMIN_SIGNATURE_CHECKSUM": "I5YvS0O5hXY46mb01BlRjq4oJJGs2kuUcHvVkAPEXlg",
 
-    "android.app.extra.PROVISIONING_DEVICE_ADMIN_PACKAGE_DOWNLOAD_LOCATION": "https://play.google.com/managed/downloadManagingApp?identifier=setup", 
+        "android.app.extra.PROVISIONING_DEVICE_ADMIN_PACKAGE_DOWNLOAD_LOCATION": "https://play.google.com/managed/downloadManagingApp?identifier=setup",
 
-    "android.app.extra.PROVISIONING_ADMIN_EXTRAS_BUNDLE": { 
-        "com.google.android.apps.work.clouddpc.EXTRA_ENROLLMENT_TOKEN": "YourEnrollmentToken" 
-    } 
-} 
-```
+        "android.app.extra.PROVISIONING_ADMIN_EXTRAS_BUNDLE": {
+            "com.google.android.apps.work.clouddpc.EXTRA_ENROLLMENT_TOKEN": "YourEnrollmentToken"
+        }
+    }
+    ```
+
 4. Choose **Apply**.
 
 

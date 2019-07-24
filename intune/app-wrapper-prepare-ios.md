@@ -207,29 +207,37 @@ You can use the following command line parameters with the App Wrapping Tool:
 |**-p**|`<Path of your provisioning profile for iOS apps>`|
 |**-c**|`<SHA1 hash of the signing certificate>`|
 |**-h**|Shows detailed usage information about the available command line properties for the App Wrapping Tool.|
+|**-aa**|(Optional) `<Authority URI of the input app if the app uses the Azure Active Directory Authentication Library>`  |
+|**-ac**|(Optional) `<Client ID of the input app if the app uses the Azure Active Directory Authentication Library>`  |
+|**-ar**|(Optional) `<Reply URI of the input app if the app uses the Azure Active Directory Authentication Library>`  |
 |**-v**|(Optional) Outputs verbose messages to the console. It is recommended to use this flag to debug any errors.|
 |**-e**| (Optional) Use this flag to have the App Wrapping Tool remove missing entitlements as it processes the app. See [Setting app entitlements](#setting-app-entitlements) for more details.|
 |**-xe**| (Optional) Prints information about the iOS extensions in the app and what entitlements are required to use them. See  [Setting app entitlements](#setting-app-entitlements) for more details. |
 |**-x**| (Optional) `<An array of paths to extension provisioning profiles>`. Use this if your app needs extension provisioning profiles.|
-|**-f**|(Optional) `<Path to a plist file specifying arguments.>` Use this flag in front of the [plist](https://developer.apple.com/library/mac/documentation/Cocoa/Conceptual/PropertyLists/Introduction/Introduction.html) file if you choose to use the plist template to specify the rest of the IntuneMAMPackager properties like -i, -o, and -p. See Use a plist to input arguments. |
 |**-b**|(Optional) Use -b without an argument if you want the wrapped output app to have the same bundle version as the input app (not recommended). <br/><br/> Use `-b <custom bundle version>` if you want the wrapped app to have a custom CFBundleVersion. If you choose to specify a custom CFBundleVersion, it's a good idea to increment the native app’s CFBundleVersion by the least significant component, like 1.0.0 -> 1.0.1. |
+|**-citrix**|(Optional) Include the Citrix XenMobile App SDK (network-only variant). You must have the [Citrix MDX Toolkit](https://docs.citrix.com/en-us/mdx-toolkit/about-mdx-toolkit.html) installed to use this option. |
+|**-f**|(Optional) `<Path to a plist file specifying arguments.>` Use this flag in front of the [plist](https://developer.apple.com/library/mac/documentation/Cocoa/Conceptual/PropertyLists/Introduction/Introduction.html) file if you choose to use the plist template to specify the rest of the IntuneMAMPackager properties like -i, -o, and -p. See Use a plist to input arguments. |
 
 ### Use a plist to input arguments
 An easy way to run the App Wrapping Tool is to put all the command arguments into a [plist](https://developer.apple.com/library/mac/documentation/Cocoa/Conceptual/PropertyLists/Introduction/Introduction.html) file. Plist is a file format similar to XML that you can use to input your command line arguments using a form interface.
 
 In the IntuneMAMPackager/Contents/MacOS folder, open `Parameters.plist` (a blank plist template) with a text editor or Xcode. Enter your arguments for the following keys:
 
-| Plist key |  Default value| Notes |
-|------------------|--------------|-----|
-| Input Application Package Path  |empty| Same as -i|
-| Output Application Package Path |empty| Same as -o|
-| Provisioning Profile Path |empty| Same as -p|
-| SHA-1 Certificate Hash |empty| Same as -c|
-| Verbose Enabled |false| Same as -v|
-| Remove Missing Entitlements | false| Same as -c|
-| Prevent Default Build |false | Equivalent to using -b without arguments|
-|Build String Override | empty| The custom CFBundleVersion of the wrapped output app |
-|Extension Provisioning Profile Paths | empty| An array of extension provisioning profiles for the app.
+| Plist key | Type |  Default Value | Notes |
+|------------------|-----|--------------|-----|
+| Input Application Package Path |String|empty| Same as -i|
+| Output Application Package Path |String|empty| Same as -o|
+| Provisioning Profile Path |String|empty| Same as -p|
+| SHA-1 Certificate Hash |String|empty| Same as -c|
+| ADAL Authority |String|empty| Same as -aa|
+| ADAL Client ID |String|empty| Same as -ac|
+| ADAL Reply URI |String|empty| Same as -ar|
+| Verbose Enabled |Boolean|false| Same as -v|
+| Remove Missing Entitlements |Boolean|false| Same as -c|
+| Prevent Default Build Update |Boolen|false| Equivalent to using -b without arguments|
+| Build String Override |String|empty| The custom CFBundleVersion of the wrapped output app|
+| Include Citrix XenMobile App SDK (network-only variant)|Boolean|false| Same as -citrix|
+| Extension Provisioning Profile Paths |Array of Strings|empty| An array of extension provisioning profiles for the app.
 
 
 Run the IntuneMAMPackager with the plist as the sole argument:
@@ -297,6 +305,7 @@ Apps that have been wrapped by using the App Wrapping Tool generate logs that ar
     ```bash
     grep “IntuneAppRestrictions” <text file containing console output> > <required filtered log file name>
     ```
+
     You can submit the filtered logs to Microsoft.
 
     > [!NOTE]
@@ -421,11 +430,13 @@ To use the `-citrix` flag, you will also need to install the [Citrix MDX app wra
 Simply run your general app wrapping command and with the `-citrix` flag appended. The `-citrix` flag currently does not take any arguments.
 
 **Usage format**:
+
 ```bash
 ./IntuneMAMPackager/Contents/MacOS/IntuneMAMPackager -i /<path of input app>/<app filename> -o /<path to output folder>/<app filename> -p /<path to provisioning profile> -c <SHA1 hash of the certificate> [-b [<output app build string>]] [-v] [-e] [-x /<array of extension provisioing profile paths>] [-citrix]
 ```
 
 **Example command**:
+
 ```bash
 ./IntuneMAMPackager/Contents/MacOS/IntuneMAMPackager -i ~/Desktop/MyApp.ipa -o ~/Desktop/MyApp_Wrapped.ipa -p ~/Desktop/My_Provisioning_Profile_.mobileprovision -c 12A3BC45D67EF8901A2B3CDEF4ABC5D6E7890FAB  -v true -citrix
 ```

@@ -129,15 +129,17 @@ Now that you've installed your token, you can create an enrollment profile for D
  
 
 1. In Intune in the Azure portal, choose **Device enrollment** > **Apple Enrollment** > **Enrollment program tokens**.
-2. Select a token, choose **Profiles**, and then choose **Create profile**.
+2. Select a token, choose **Profiles** > **Create profile** > **iOS**.
 
     ![Create a profile screenshot.](./media/device-enrollment-program-enroll-ios/image04.png)
 
-3. Under **Create Profile**, enter a **Name** and **Description** for the profile for administrative purposes. Users don't see these details. You can use this **Name** field to create a dynamic group in Azure Active Directory. Use the profile name to define the enrollmentProfileName parameter to assign devices with this enrollment profile. Learn more about [Azure Active Directory dynamic groups](https://docs.microsoft.com/azure/active-directory/users-groups-roles/groups-dynamic-membership#rules-for-devices).
+3. On the **Basics** page, enter a **Name** and **Description** for the profile for administrative purposes. Users don't see these details. You can use this **Name** field to create a dynamic group in Azure Active Directory. Use the profile name to define the enrollmentProfileName parameter to assign devices with this enrollment profile. Learn more about [Azure Active Directory dynamic groups](https://docs.microsoft.com/azure/active-directory/users-groups-roles/groups-dynamic-membership#rules-for-devices).
 
     ![Profile name and description.](./media/device-enrollment-program-enroll-ios/image05.png)
 
-4. For **User Affinity**, choose whether devices with this profile must enroll with or without an assigned user.
+4. Select **Next: Device Management Settings**.
+
+5. For **User Affinity**, choose whether devices with this profile must enroll with or without an assigned user.
     - **Enroll with User Affinity** - Choose this option for devices that belong to users and that want to use the Company Portal for services like installing apps. If using ADFS and the enrollment profile has **Authenticate with Company Portal instead of Setup Assistant** set to **No**, [WS-Trust 1.3 Username/Mixed endpoint](https://technet.microsoft.com/library/adfs2-help-endpoints) [Learn more](https://technet.microsoft.com/itpro/powershell/windows/adfs/get-adfsendpoint) is required.
 
     - **Enroll without User Affinity** - Choose this option for device unaffiliated with a single user. Use this option for devices that perform tasks without accessing local user data. Apps like the Company Portal app don’t work.
@@ -147,30 +149,30 @@ Now that you've installed your token, you can create an enrollment profile for D
     ![Authenticate with Company Portal.](./media/device-enrollment-program-enroll-ios/authenticatewithcompanyportal.png)
 
     > [!NOTE]
-    > If you want do any of the following, set **Authenticate with Company Portal instead of Apple Setup Assistant** to **Yes**.
+    > If you want do any of the following, set **Select where users must authenticate** to **Company Portal**.
     >    - use multifactor authentication
     >    - prompt users who need to change their password when they first sign in
     >    - prompt users to reset their expired passwords during enrollment
     >
     > These are not supported when authenticating with Apple Setup Assistant.
 
-6. If you chose **Yes** for **Authenticate with Company Portal instead of Apple Setup Assistant**, you can use a Volume Purchase Program (VPP) token to automatically install the Company Portal on the device. In this case, the user doesn't have to supply an Apple ID. To install the Company Portal with a VPP token, choose a token under **Install Company Portal with VPP**. Don't configure a policy to require the app for users, Intune will automatically install the Company Portal on devices with this enrollment profile applied. Make sure that the token doesn't expire and that you have enough device licenses for the Company Portal app. If the token expires or runs out of licenses, Intune installs the App Store Company Portal instead and prompts for an Apple ID. 
+6. If you chose **Company Portal** for **Select where users must authenticate**, you can use a Volume Purchase Program (VPP) token to automatically install the Company Portal on the device. In this case, the user doesn't have to supply an Apple ID. To install the Company Portal with a VPP token, choose a token under **Install Company Portal with VPP**. Don't configure a policy to require the app for users, Intune will automatically install the Company Portal on devices with this enrollment profile applied. Make sure that the token doesn't expire and that you have enough device licenses for the Company Portal app. If the token expires or runs out of licenses, Intune installs the App Store Company Portal instead and prompts for an Apple ID. 
 
     > [!NOTE]
-    > When **Authenticate with Company Portal instead of Apple Setup Assistant** is set to *Yes*, make sure that the device enrollment process is performed within the first 24 hours of the company portal being downloaded to the DEP device. Otherwise enrollment might fail, and a factory reset will be needed to enroll the device.
+    > When **Select where users must authenticate** is to **Company Portal**, make sure that the device enrollment process is performed within the first 24 hours of the company portal being downloaded to the DEP device. Otherwise enrollment might fail, and a factory reset will be needed to enroll the device.
     
     ![Screenshot of install company portal with VPP.](./media/device-enrollment-program-enroll-ios/install-cp-with-vpp.png)
 
-7. If you chose **No** for **Authenticate with Company Portal instead of Apple Setup Assistant**, but you also want to use Conditional Access or deploy company apps on the devices, you must install the Company Portal on the devices. To do so, choose **Yes** for **Install Company Portal**.  If you would like users to receive the Company Portal without having to authenticate into the app store, choose to **Install Company Portal with VPP** and select a VPP token. Make sure that the token doesn't expire and that you have enough device licenses for the Company Portal app to deploy correctly.
+7. If you chose **Setup Assistant** for **Select where users must authenticate**, but you also want to use Conditional Access or deploy company apps on the devices, you must install the Company Portal on the devices. To do so, choose **Yes** for **Install Company Portal**.  If you would like users to receive the Company Portal without having to authenticate into the app store, choose to **Install Company Portal with VPP** and select a VPP token. Make sure that the token doesn't expire and that you have enough device licenses for the Company Portal app to deploy correctly.
 
 8. If you chose a token for **Install Company Portal with VPP**, you can lock the device in Single App Mode (specifically, the Company Portal app) right after the Setup Assistant completes. Choose **Yes** for **Run Company Portal in Single App Mode until authentication** to set this option. To use the device, the user must first authenticate by signing in using the Company Portal.
     This feature is only supported for iOS 11.3.1 and later.
 
    ![Screenshot of single app mode.](./media/device-enrollment-program-enroll-ios/single-app-mode.png)
 
-9. Choose **Device Management Settings** and choose if you want devices using this profile to be supervised.
+9. If you want devices using this profile to be supervised, choose **Yes** for **Supervised**.
 
-    ![Device Management Settings screenshot.](./media/device-enrollment-program-enroll-ios/devicemanagementsettingsblade.png)
+    ![Device Management Settings screenshot.](./media/device-enrollment-program-enroll-ios/supervisedmode.png)
 
     **Supervised** devices give you more management options and disabled Activation Lock by default. Microsoft recommends using DEP as the mechanism for enabling supervised mode, especially if you're deploying large numbers of iOS devices.
 
@@ -190,9 +192,9 @@ Now that you've installed your token, you can create an enrollment profile for D
 
 13. You can specify a naming format for devices that is automatically applied when they enroll and upon each successive checkin. To create a naming template, select **Yes** under **Apply device name template**. Then, in the **Device Name Template** box, enter the template to use for the names using this profile. You can specify a template format that includes the device type and serial number. 
 
-14. Choose **OK**.
+14. Choose **Next: Setup Assistant Customization**.
 
-15. Choose **Setup Assistant customization** to configure the following profile settings:
+15. On the **Setup Assistant customization** page, configure the following profile settings:
     ![Setup Assistant Customization.](./media/device-enrollment-program-enroll-ios/setupassistantcustom.png)
 
 
@@ -201,9 +203,9 @@ Now that you've installed your token, you can create an enrollment profile for D
     | <strong>Department Name</strong> | Appears when users tap <strong>About Configuration</strong> during activation. |
     |    <strong>Department Phone</strong>     | Appears when the user clicks the <strong>Need Help</strong> button during activation. |
 
-  You can choose to hide Setup Assistant screens on the device during user setup.
-  - If you choose **Hide**, the screen won't be displayed during setup. After setting up the device, the user can still go in to the **Settings** menu to set up the feature.
-  - If you choose **Show**, the screen will be displayed during setup. The user can sometimes skip the screen without taking action. But they can then later go into the device's **Settings** menu to set up the feature. 
+    You can choose to hide Setup Assistant screens on the device during user setup.
+    - If you choose **Hide**, the screen won't be displayed during setup. After setting up the device, the user can still go in to the **Settings** menu to set up the feature.
+    - If you choose **Show**, the screen will be displayed during setup. The user can sometimes skip the screen without taking action. But they can then later go into the device's **Settings** menu to set up the feature. 
 
 
     | Setup Assistant screen settings | If you choose **Show**, during setup the device will... |
@@ -228,7 +230,7 @@ Now that you've installed your token, you can create an enrollment profile for D
     | <strong>Software Update</strong> | Display the mandatory software update screen. |
     | <strong>SIM Setup</strong> | Give the user the option to add a cellular plan. |
 
-16. Choose **OK**.
+16. Choose **Next** to go to the **Review + Create** page.
 
 17. To save the profile, choose **Create**.
 

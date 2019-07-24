@@ -100,7 +100,7 @@ Detect threats to your network like **Man-in-the-middle** attacks, and prevent s
 
 - Pradeo Security for Mobile Threat Defense subscription
 
-    - For more information, see the [Pradeo website](https://www.pradeo.com/en-US/mobile-threat-protection).
+  - For more information, see the [Pradeo website](https://www.pradeo.com/en-US/mobile-threat-protection).
 
 ## Next steps
 

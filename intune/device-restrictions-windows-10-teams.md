@@ -37,8 +37,8 @@ This article shows you the Microsoft Intune device restrictions settings that yo
 
 - **Wake screen when someone in room** - Allows the device to wake automatically when its sensor detects someone in the room.
 - **Meeting information displayed on welcome screen** - Enable this option to choose the information that is displayed on the Meetings tile of the Welcome screen. You can:
-    - **Show organizer and time only**
-    - **Show organizer, time, and subject (subject hidden for private meetings)**
+  - **Show organizer and time only**
+  - **Show organizer, time, and subject (subject hidden for private meetings)**
 - **Welcome screen background image URL** - Enable this setting to display a custom background on the **Welcome** screen of Windows 10 Team devices from the URL you specify.<br>The image must be in PNG format and the URL must begin with **https://**.
 
 ## Azure operational insights

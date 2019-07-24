@@ -167,9 +167,10 @@ The following sample contains a simple REST client. The code uses the **httpClie
 6. Select **I Accept** to accept the NuGet package license.
 7. Open `Program.cs` from the Solution Explorer.
 
-    ![Progam.cs and Solution Explorer in Visual Studio](./media/reports-get_rest_data_in.png)
+    ![Program.cs and Solution Explorer in Visual Studio](./media/reports-get_rest_data_in.png)
 
 8. Replace the code in *Program.cs* with the following code:  
+
    ```csharp
    namespace IntuneDataWarehouseSamples
    {

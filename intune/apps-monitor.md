@@ -8,7 +8,7 @@ keywords:
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 04/12/2019
+ms.date: 07/22/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -68,12 +68,7 @@ The graphs show the number of apps for the following status:
 | **Not Applicable**           | The number of apps for which status is not applicable.            |
 
 > [!NOTE]
-> The number of discovered apps may not match the app install status count. Possibilities for inconsistencies include:
->    - A targeting change of an installed managed app can cause the install count in the status blade to decrement, but remain reported in the detected apps.
->    - Targeting multiple instances of the same app in a tenant will result in different counts due to potential overlap of users or devices. Each instance of the app will count overlapping users, but discovered apps will have duplicated counts.
->    - Discovered apps and app status are collected at different time intervals, which could cause a discrepancy in the app counts.
-> 
-> Also, be aware that Android LOB apps (.APK) deployed as **Available with or without enrollment** only report app installation status for enrolled devices. App installation status is not available for devices that are not enrolled in Intune.
+> Be aware that Android LOB apps (.APK) deployed as **Available with or without enrollment** only report app installation status for enrolled devices. App installation status is not available for devices that are not enrolled in Intune.
 
 ### Device install status
 

@@ -43,13 +43,13 @@ Microsoft Intune helps you manage multiple copies of apps purchased through this
 
 There are two methods you can use to assign volume-purchased apps:
 
-### Device licensing
+## Device licensing
 
 When you assign an app to devices, one app license is used, and remains associated with the device to which you assigned it.
 
 When you assign volume-purchased apps to a device, the end user of the device does not have to supply an Apple ID to access the store.
 
-### User licensing
+## User licensing
 
 When you assign an app to a user, one app license is used for and is associated with the user. The app can be run on multiple devices that the user owns (with a limit controlled by Apple).
 
@@ -180,13 +180,13 @@ If **Assigned to external MDM** is indicated in the Intune portal, then you (the
 
 ## Frequently asked questions
 
-#### How long does the portal take to update the license count once an app is installed or removed from the device?
+### How long does the portal take to update the license count once an app is installed or removed from the device?
 The license should be updated within a few hours after installing or uninstalling an app. Note that if the end user removes the app from the device, the license is still assigned to that user or device.
 
-#### Is it possible to oversubscribe an app and, if so, in what circumstance?
+### Is it possible to oversubscribe an app and, if so, in what circumstance?
 Yes. The Intune admin can oversubscribe an app. For example, if the admin purchases 100 licenses for app XYZ, and then targets the app to a group with 500 members in it. The first 100 members (users or devices) will get the license assigned to them, the rest of the members will fail on license assignment.
 
-#### I understand Intune automatically syncs app licenses each day with Apple, is that correct?
+### I understand Intune automatically syncs app licenses each day with Apple, is that correct?
 Intune syncs app licenses twice a day with Apple.
 
 ## Next steps

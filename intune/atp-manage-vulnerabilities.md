@@ -7,7 +7,7 @@ keywords:
 author: brenduns 
 ms.author: brenduns
 manager: dougeby
-ms.date: 05/17/2019
+ms.date: 07/12/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -36,7 +36,7 @@ When you integrate Intune with Microsoft Defender Advanced Threat Protection (AT
 
 After you connect Intune to Microsoft Defender Advanced Threat Protection, ATP receives threat and vulnerability details from managed devices.  
 
-In the Windows Defender Security Center console, ATP security admins review data about endpoint vulnerabilities. The admins then use a single-click to create security tasks that flag the vulnerable devices for remediation. The security tasks are immediately passed to the Intune console where Intune admins can view them. The security task identifies the type of vulnerability, priority, status, and the steps to take to remediate the vulnerability. The Intune admin chooses to accept or reject the task.  
+In the Microsoft Defender Security Center console, ATP security admins review data about endpoint vulnerabilities. The admins then use a single-click to create security tasks that flag the vulnerable devices for remediation. The security tasks are immediately passed to the Intune console where Intune admins can view them. The security task identifies the type of vulnerability, priority, status, and the steps to take to remediate the vulnerability. The Intune admin chooses to accept or reject the task.  
 
 When a task is accepted, the Intune admin then acts to remediate the vulnerability though Intune, using the guidance provided as part of the security task.  
 

@@ -42,25 +42,25 @@ This guide breaks down the migration into two phases, both of which include task
 
 - [Phase 1: Prepare Intune for mobile device management](migration-guide-prepare.md)
 
-    - [Assess your MDM migration requirements](migration-guide-prepare.md#assess-mdm-requirements)
+  - [Assess your MDM migration requirements](migration-guide-prepare.md#assess-mdm-requirements)
 
-    - [Basic setup](migration-guide-setup.md)
+  - [Basic setup](migration-guide-setup.md)
 
-    - [Configure device and app management policies](migration-guide-configure-policies.md)
+  - [Configure device and app management policies](migration-guide-configure-policies.md)
 
-    - [Configure app protection policies](migration-guide-app-protection-policies.md)
+  - [Configure app protection policies](migration-guide-app-protection-policies.md)
 
-    - [Special migration considerations](migration-guide-considerations.md)
+  - [Special migration considerations](migration-guide-considerations.md)
 
 - [Phase 2: Migration campaign](migration-guide-campaign.md)
 
-    - [Communication plan](migration-guide-communication-plan.md)
+  - [Communication plan](migration-guide-communication-plan.md)
 
-    - [Drive end-user adoption with Conditional Access](migration-guide-drive-adoption.md)
+  - [Drive end-user adoption with Conditional Access](migration-guide-drive-adoption.md)
 
-    - [Typical migration cycle](migration-guide-cycle.md)
-        - [Monitoring migration](migration-guide-cycle.md#monitoring-migration)
-        - [Post migration](migration-guide-cycle.md#post-migration)
+  - [Typical migration cycle](migration-guide-cycle.md)
+    - [Monitoring migration](migration-guide-cycle.md#monitoring-migration)
+    - [Post migration](migration-guide-cycle.md#post-migration)
 
 ## Assumptions
 

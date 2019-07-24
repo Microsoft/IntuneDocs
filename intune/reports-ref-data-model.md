@@ -34,22 +34,22 @@ The Intune Data Warehouse samples data daily to provide a historical view of you
 
 The warehouse exposes data in the following high-level areas:
 
-  - App protection enabled apps and usage
-  - Enrolled devices, properties, and inventory
-  - Apps and software inventory
-  - Device configuration and compliance policies
+- App protection enabled apps and usage
+- Enrolled devices, properties, and inventory
+- Apps and software inventory
+- Device configuration and compliance policies
 
 These areas contain the entities that are meaningful to your Intune environment. You find details about the entity sets in the following topics:
 
-  - [Application](reports-ref-application.md)
-  - [Date](reports-ref-date.md)
-  - [Devices](reports-ref-devices.md)
-  - [Intune Management Extension](reports-ref-intunemanagementextension.md)
-  - [Policy](reports-ref-policy.md)
-  - [Mobile App Management (MAM)](reports-ref-mobile-app-management.md)
-  - [User](reports-ref-user.md)
-  - [Current User](reports-ref-current-user.md)
-  - [User Device Associations](reports-ref-user-device.md)
+- [Application](reports-ref-application.md)
+- [Date](reports-ref-date.md)
+- [Devices](reports-ref-devices.md)
+- [Intune Management Extension](reports-ref-intunemanagementextension.md)
+- [Policy](reports-ref-policy.md)
+- [Mobile App Management (MAM)](reports-ref-mobile-app-management.md)
+- [User](reports-ref-user.md)
+- [Current User](reports-ref-current-user.md)
+- [User Device Associations](reports-ref-user-device.md)
 
 ## Relationships: Star-schema model
 
@@ -65,6 +65,6 @@ The warehouse is downstream from your Intune data. Intune takes a daily snapshot
 
 ## Next steps
 
- - To learn more about how the data warehouse tracks a user's lifetime in Intune, see [User lifetime representation in the Intune Data Warehouse](reports-ref-user-timeline.md).
- - To learn more about working with data warehouses in the [Create First Data WareHouse](https://www.codeproject.com/Articles/652108/Create-First-Data-WareHouse).
- - To learn more about working with Power BI and a data warehouse in [Create a new Power BI report by importing a dataset](https://powerbi.microsoft.com/documentation/powerbi-service-create-a-new-report/). 
+- To learn more about how the data warehouse tracks a user's lifetime in Intune, see [User lifetime representation in the Intune Data Warehouse](reports-ref-user-timeline.md).
+- To learn more about working with data warehouses in the [Create First Data WareHouse](https://www.codeproject.com/Articles/652108/Create-First-Data-WareHouse).
+- To learn more about working with Power BI and a data warehouse in [Create a new Power BI report by importing a dataset](https://powerbi.microsoft.com/documentation/powerbi-service-create-a-new-report/). 

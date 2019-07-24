@@ -8,7 +8,7 @@ keywords:
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 05/16/2019
+ms.date: 07/16/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -93,7 +93,7 @@ The following table lists the Managed Home Screen available configuration keys, 
 | Exit lock task mode password | string |   | Enter a 4-6-digit code to use to temporarily drop out of lock-task mode for troubleshooting. |
 | Show Wi-Fi setting | bool | FALSE | Turning this setting to `True` allows the end user to turn on or off Wi-Fi, or to connect to different Wi-Fi networks.  |
 | Show Bluetooth setting | bool | FALSE | Turning this setting to `True` allows the end user to turn on or off Bluetooth and to connect to different Bluetooth-capable devices.   |
-| Applications in folder are ordered by name | bool | TRUE | Turning this setting to `False` allows items in a folder to appear in the order in which they are specified. Otherwise, they will appear in the folder alphbetically.   |
+| Applications in folder are ordered by name | bool | TRUE | Turning this setting to `False` allows items in a folder to appear in the order in which they are specified. Otherwise, they will appear in the folder alphabetically.   |
 | Application order enabled | bool | FALSE | Turning this setting to `True` allows enables the ability to set the order of applications, weblinks, and folders on the Managed Home Screen. Once enabled, set the ordering with **app_order**.the end user to turn on or off Bluetooth and to connect to different Bluetooth-capable devices.   |
 | Application order | bundleArray | FALSE | Allows you to specify the order of applications, weblinks and folders on the Managed Home Screen. To use this setting, **Lock Home Screen** must be enabled, **Set grid size** must be defined and **Application order enabled** must be set to `True`.   |
 
@@ -386,8 +386,11 @@ The following is an example JSON script with all the available configuration key
         }
     ]
 }
-
 ```
+
+## Google's Android Device Policy app
+The Managed Home Screen app now provides access to Google's Android Device Policy app. The Managed Home Screen app is a custom launcher used for devices enrolled in Intune as Android Enterprise (AE) dedicated devices using multi-app kiosk mode. You can access the Android Device Policy app, or guide users to the Android Device Policy app, for support and debug purposes. This launching capability is available at the time the device enrolls and locks into Managed Home Screen. No additional installations are needed to use this functionality.
+
 ## Next steps
 
 - For more information about Android Enterprise dedicated devices, see [Set up Intune enrollment of Android Enterprise dedicated devices](android-kiosk-enroll.md).

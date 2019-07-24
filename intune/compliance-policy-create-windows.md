@@ -7,7 +7,7 @@ keywords:
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 05/28/2019
+ms.date: 07/12/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.localizationpriority: medium
@@ -29,7 +29,7 @@ ms.collection: M365-identity-device-management
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
-This article lists and describes the different compliance settings you can configure on Windows 10 and later devices in Intune. As part of your mobile device management (MDM) solution, use these settings to require BitLocker, set a minimum and maximum operating system, set a risk level using Windows Defender Advanced Threat Protection (ATP), and more.
+This article lists and describes the different compliance settings you can configure on Windows 10 and later devices in Intune. As part of your mobile device management (MDM) solution, use these settings to require BitLocker, set a minimum and maximum operating system, set a risk level using Microsoft Defender Advanced Threat Protection (ATP), and more.
 
 This feature applies to:
 
@@ -137,10 +137,10 @@ Applies only to co-managed devices running Windows 10 and later. Intune-only dev
 
   [DeviceStatus CSP - DeviceStatus/TPM/SpecificationVersion node](https://docs.microsoft.com/windows/client-management/mdm/devicestatus-csp)
   
-- **Antivirus**: When set to **Require**, you can check compliance using antivirus solutions that are registered with [Windows Security Center](https://blogs.windows.com/windowsexperience/2017/01/23/introducing-windows-defender-security-center/), such as Symantec and Windows Defender. When **Not configured**, Intune doesn't check for any AV solutions installed on the device.
-- **Antispyware**: When set to **Require**, you can check compliance using antispyware solutions that are registered with [Windows Security Center](https://blogs.windows.com/windowsexperience/2017/01/23/introducing-windows-defender-security-center/), such as Symantec and Windows Defender. When **Not configured**, Intune doesn't check for any antispyware solutions installed on the device.
+- **Antivirus**: When set to **Require**, you can check compliance using antivirus solutions that are registered with [Windows Security Center](https://blogs.windows.com/windowsexperience/2017/01/23/introducing-windows-defender-security-center/), such as Symantec and Microsoft Defender. When **Not configured**, Intune doesn't check for any AV solutions installed on the device.
+- **Antispyware**: When set to **Require**, you can check compliance using antispyware solutions that are registered with [Windows Security Center](https://blogs.windows.com/windowsexperience/2017/01/23/introducing-windows-defender-security-center/), such as Symantec and Microsoft Defender. When **Not configured**, Intune doesn't check for any antispyware solutions installed on the device.
 
-## Windows Defender ATP
+## Microsoft Defender ATP
 
 - **Require the device to be at or under the machine risk score**: Use this setting to take the risk assessment from your defense threat services as a condition for compliance. Choose the maximum allowed threat level:
 
@@ -149,7 +149,7 @@ Applies only to co-managed devices running Windows 10 and later. Intune-only dev
   - **Medium**: The device is evaluated as compliant if existing threats on the device are low or medium level. If the device is detected to have high-level threats, it's determined to be non-compliant.
   - **High**: This option is the least secure, and allows all threat levels. It may be useful if you're using this solution only for reporting purposes.
   
-  To set up Windows Defender ATP (Advanced Threat Protection) as your defense threat service, see [Enable Windows Defender ATP with Conditional Access](advanced-threat-protection.md).
+  To set up Microsoft Defender ATP (Advanced Threat Protection) as your defense threat service, see [Enable Microsoft Defender ATP with Conditional Access](advanced-threat-protection.md).
 
 Select **OK** > **Create** to save your changes.
 

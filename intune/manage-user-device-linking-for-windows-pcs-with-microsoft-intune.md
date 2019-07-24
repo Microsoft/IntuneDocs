@@ -56,6 +56,6 @@ To link a user to a PC:
 > [!TIP]
 > If you want to restrict end users ability to link themselves to PCs, enable the option **Restrict users' ability to link themselves to PCs** in the **Microsoft Intune Agent Settings** policy.
 
-### See also
+## See also
 
 [Common Windows PC management tasks with the Intune software client](common-windows-pc-management-tasks-with-the-microsoft-intune-computer-client.md)

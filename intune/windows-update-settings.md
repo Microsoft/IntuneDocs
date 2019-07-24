@@ -185,8 +185,8 @@ This setting has different results depending on the devices version of Windows:
 Allow or block a device user from pausing the installation of an update. 
 
 ### Block user from scanning for Windows updates  
- - **Default**: Allow
- - **Windows reference documentation**: [Update/SetDisableUXWUAccess](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-update#update-setdisableuxwuaccess) 
+- **Default**: Allow
+- **Windows reference documentation**: [Update/SetDisableUXWUAccess](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-update#update-setdisableuxwuaccess) 
 
 Specifies whether to allow or block a user’s access to scan Windows Update. For example, if you configure a *block*, users can't access the Windows Update scan, download, and install features.  
 

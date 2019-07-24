@@ -100,7 +100,7 @@ Detect threats like **Man-in-the-middle** in network, and prevent synchronizatio
 
 - Zimperium Mobile Threat Defense subscription
 
-    - For more information, see [Zimperium website](https://www.zimperium.com/zips-mobile-ips).
+  - For more information, see [Zimperium website](https://www.zimperium.com/zips-mobile-ips).
 
 ## Next steps
 

@@ -35,7 +35,7 @@ To manage Windows desktops as PCs, by running the Intune software client on them
 
 ![Policies template for Windows PCs](media/pc_policy_template.png)
 
-### Manage the Microsoft Intune Center
+## Manage the Microsoft Intune Center
 Users see the Intune software client as the **Microsoft Intune Center**. The Microsoft Intune Center lets users:
 
 - Get applications from the company portal.
@@ -66,6 +66,6 @@ See the following resources for information about policies and settings that you
 - [Help protect Windows PCs using Windows Firewall policies in Microsoft Intune](help-protect-windows-pcs-using-windows-firewall-policies-in-microsoft-intune.md) - These policies simplify the administration of Windows Firewall settings on managed computers.
 
 
-### See also
+## See also
 
 [Common Windows PC management tasks with the Intune software client](common-windows-pc-management-tasks-with-the-microsoft-intune-computer-client.md)

@@ -56,8 +56,8 @@ The following prerequisites must be met to use Windows updates for Windows 10 de
 
     > [!NOTE]  
     > **Unsupported versions and editions**:
-    >   - Windows 10 Mobile  
-    >   - Windows 10 Enterprise LTSC. Windows Update for Business (WUfB) does not currently support *Long Term Service Channel* releases. Plan to use alternative patching methods, like WSUS or Configuration Manager.  
+    > - Windows 10 Mobile  
+    > - Windows 10 Enterprise LTSC. Windows Update for Business (WUfB) does not currently support *Long Term Service Channel* releases. Plan to use alternative patching methods, like WSUS or Configuration Manager.  
 
 - On Windows devices, **Feedback & diagnostics** > **Diagnostic and usage data** must be set to **Basic**, **Enhanced**, or **Full**.  
 

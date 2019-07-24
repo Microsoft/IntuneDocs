@@ -8,7 +8,7 @@ keywords:
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 03/19/2019
+ms.date: 07/09/2019
 ms.topic: troubleshooting
 ms.service: microsoft-intune
 ms.localizationpriority: medium
@@ -76,5 +76,5 @@ The following table lists the name and an explanation of the settings recorded i
 
 ## Next steps
 
- - To learn more about app protection policies, see [What are app protection policies?](app-protection-policy.md)
- - Intune offers a number of tools to help you troubleshoot issues in your environment. For more information, see [Use the troubleshooting portal to help users](help-desk-operators.md).
+- To learn more about app protection policies, see [What are app protection policies?](app-protection-policy.md)
+- Intune offers a number of tools to help you troubleshoot issues in your environment. For more information, see [Use the troubleshooting portal to help users](help-desk-operators.md).

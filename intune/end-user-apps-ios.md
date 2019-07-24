@@ -57,7 +57,7 @@ Enrolled users get their apps by tapping on the following tiles on the Apps scre
 
 For information on how to add apps, see [How to add an app to Microsoft Intune](apps-add.md).
 
-### See also
+## See also
 [How your Android users get their apps](end-user-apps-android.md)
 
 [How your Windows users get their apps](end-user-apps-windows.md)

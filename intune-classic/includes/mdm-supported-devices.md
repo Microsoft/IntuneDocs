@@ -1,8 +1,6 @@
-
-
 ### Apple
-  - Apple iOS 9.0 and later
-  - Mac OS X 10.9 and later
+- Apple iOS 9.0 and later
+- Mac OS X 10.9 and later
 
 ### Windows
 - PCs running Windows 10 (Home, Pro, Education, and Enterprise versions)

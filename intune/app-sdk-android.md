@@ -157,6 +157,7 @@ buildscript {
 ```
 
 Then, in the `build.gradle` file for your APK project, simply apply the plugin as
+
 ```groovy
 apply plugin: 'com.microsoft.intune.mam'
 ```
@@ -167,11 +168,11 @@ Test compilation not affected. Configuration may be provided to list
 * [External dependencies to include](#usage-of-includeexternallibraries) 
 * Specific classes to exclude from processing
 * Variants to exclude from processing. These can refer to either a
-   complete variant name or a single flavor. For example
-     * if your app has build types `debug` and `release` with flavors
-       {`savory`, `sweet`} and {`vanilla`, `chocolate`} you could specify
-     * `savory` to exclude all variants with the savory flavor or
-       `savoryVanillaRelease` to exclude only that exact variant.
+  complete variant name or a single flavor. For example
+  * if your app has build types `debug` and `release` with flavors
+    {`savory`, `sweet`} and {`vanilla`, `chocolate`} you could specify
+  * `savory` to exclude all variants with the savory flavor or
+    `savoryVanillaRelease` to exclude only that exact variant.
 
 #### Example partial build.gradle
 
@@ -196,8 +197,8 @@ intunemam {
     excludeClasses = ['com.contoso.SplashActivity']
     excludeVariants=['savory']
 }
-
 ```
+
 This would have the following effects:
 * `:product:FooLib` is not rewritten because it is included in `excludeProjects`
 * `:product:foo-project` is rewritten, except for `com.contoso.SplashActivity` which is skipped because it's in `excludeClasses`
@@ -805,15 +806,15 @@ To configure your app and enable proper authentication, add the following to the
 
 * **NonBrokerRedirectURI** is the AAD redirect URI to use in broker-less cases. If none is specified, a default value of `urn:ietf:wg:oauth:2.0:oob` is used. This default is suitable for most apps.
 
-    * The NonBrokerRedirectURI is only used when SkipBroker is "true".
+  * The NonBrokerRedirectURI is only used when SkipBroker is "true".
 
 * **SkipBroker** is used to override the default ADAL SSO participation behavior. SkipBroker should only be specified for apps that specify a ClientID **and** do not support brokered authentication/device-wide SSO. In this case it should be set to "true". Most apps should not set the SkipBroker parameter.
 
-    * A ClientID **must** be specified in the manifest to specify a SkipBroker value.
+  * A ClientID **must** be specified in the manifest to specify a SkipBroker value.
 
-    * When a ClientID is specified, the default value is "false".
+  * When a ClientID is specified, the default value is "false".
 
-    * When SkipBroker is "true," the NonBrokerRedirectURI will be used. Apps that do not integrate ADAL (and therefore have no ClientID) will also default to "true".
+  * When SkipBroker is "true," the NonBrokerRedirectURI will be used. Apps that do not integrate ADAL (and therefore have no ClientID) will also default to "true".
 
 ### Common ADAL configurations
 
@@ -1211,9 +1212,10 @@ notificationRegistry.registerReceiver(receiver, MAMNotificationType.COMPLIANCE_S
 
 > [!NOTE]
 > The app's `MAMServiceAuthenticationCallback.acquireToken()` method must pass *true* for the new `forceRefresh` flag to `acquireTokenSilentSync()` to force a refresh from the broker.  This is to work around a caching issue with tokens in ADAL that can affect MAM Service tokens. In general, this looks like:
-```java
-AuthenticationResult result = acquireTokenSilentSync(resourceId, clientId, userId, /* forceRefresh */ true);
-```
+>
+> ```java
+> AuthenticationResult result = acquireTokenSilentSync(resourceId, clientId, userId, /* forceRefresh */ true);
+> ```
 
 > [!NOTE]
 > If you want to show a custom blocking UX during the remediation attempt, you should pass *false* for the showUX parameter to `remediateCompliance()`. You must ensure that you show your UX and register your notification listener first before calling `remediateCompliance()`.  This will prevent a race condition where the notification could be missed if `remediateCompliance()` fails very quickly.  For example, the `onCreate()` or `onMAMCreate()` method of an Activity subclass is the ideal place to register the notification listener and then call `remediateCompliance()`.  The parameters for `remediateCompliance()` can be passed to your UX as Intent extras.  When the compliance status notification is received, you can display the result or simply finish the activity.
@@ -1484,48 +1486,48 @@ In addition to the app's ability to set the identity, a thread, or a context's i
 
 #### Examples
 
-  1. If an activity is launched from an `Intent` sent by another MAM app, the activity’s identity will be set based on the effective identity in the other app at the point the `Intent` was sent.
+1. If an activity is launched from an `Intent` sent by another MAM app, the activity’s identity will be set based on the effective identity in the other app at the point the `Intent` was sent.
 
-  2. For services, the thread identity will be set similarly for the duration of an `onStart` or `onBind` call. Calls into the `Binder` returned from `onBind` will also temporarily set the thread identity.
+2. For services, the thread identity will be set similarly for the duration of an `onStart` or `onBind` call. Calls into the `Binder` returned from `onBind` will also temporarily set the thread identity.
 
-  3. Calls into a `ContentProvider` will similarly set the thread identity for their duration.
-
-
-  In addition, user interaction with an activity may cause an implicit identity switch.
-
-  **Example:** A user canceling out of an authorization prompt during `Resume` will result in an implicit switch to an empty identity.
-
-  The app is given an opportunity to be made aware of these changes, and, if it must, the app can forbid them. `MAMService` and `MAMContentProvider` expose the following method that subclasses may override:
-
-  ```java
-  public void onMAMIdentitySwitchRequired(final String identity,
-    final AppIdentitySwitchResultCallback callback);
-  ```
-
-  In the `MAMActivity` class, an additional parameter is present in the method:
-
-  ```java
-  public void onMAMIdentitySwitchRequired(final String identity,
-    final AppIdentitySwitchReason reason,
-    final AppIdentitySwitchResultCallback callback);
-  ```
-
-  * The `AppIdentitySwitchReason` captures the source of the implicit switch, and can accept the values `CREATE`, `RESUME_CANCELLED`, and `NEW_INTENT`.  The `RESUME_CANCELLED` reason is used when activity resume causes PIN, authentication, or other compliance UI to be displayed and the user attempts to cancel out of that UI, generally though use of the back button.
+3. Calls into a `ContentProvider` will similarly set the thread identity for their duration.
 
 
-  * The `AppIdentitySwitchResultCallback` is as follows:
+    In addition, user interaction with an activity may cause an implicit identity switch.
+
+    **Example:** A user canceling out of an authorization prompt during `Resume` will result in an implicit switch to an empty identity.
+
+    The app is given an opportunity to be made aware of these changes, and, if it must, the app can forbid them. `MAMService` and `MAMContentProvider` expose the following method that subclasses may override:
 
     ```java
-    public interface AppIdentitySwitchResultCallback {
-        /**
-         * @param result
-         *            whether the identity switch can proceed.
-         */
-        void reportIdentitySwitchResult(AppIdentitySwitchResult result);
-    }
+    public void onMAMIdentitySwitchRequired(final String identity,
+      final AppIdentitySwitchResultCallback callback);
     ```
 
-    Where ```AppIdentitySwitchResult``` is either `SUCCESS` or `FAILURE`.
+    In the `MAMActivity` class, an additional parameter is present in the method:
+
+    ```java
+    public void onMAMIdentitySwitchRequired(final String identity,
+      final AppIdentitySwitchReason reason,
+      final AppIdentitySwitchResultCallback callback);
+    ```
+
+    * The `AppIdentitySwitchReason` captures the source of the implicit switch, and can accept the values `CREATE`, `RESUME_CANCELLED`, and `NEW_INTENT`.  The `RESUME_CANCELLED` reason is used when activity resume causes PIN, authentication, or other compliance UI to be displayed and the user attempts to cancel out of that UI, generally though use of the back button.
+
+
+    * The `AppIdentitySwitchResultCallback` is as follows:
+
+      ```java
+      public interface AppIdentitySwitchResultCallback {
+          /**
+            * @param result
+            *            whether the identity switch can proceed.
+            */
+          void reportIdentitySwitchResult(AppIdentitySwitchResult result);
+        }
+        ```
+
+      Where ```AppIdentitySwitchResult``` is either `SUCCESS` or `FAILURE`.
 
 The method `onMAMIdentitySwitchRequired` is called for all implicit identity changes except for those made through a Binder returned from `MAMService.onMAMBind`. The default implementations of `onMAMIdentitySwitchRequired` immediately call:
 
@@ -1595,6 +1597,7 @@ To use `MAMAsyncTask`, simply inherit from it instead of `AsyncTask` and replace
   Executor wrappedExecutor = MAMIdentityExecutors.wrapExecutor(originalExecutor, activity);
   ExecutorService wrappedService = MAMIdentityExecutors.wrapExecutorService(originalExecutorService, activity);
 ```
+
 ### File Protection
 
 Every file has an identity associated with it at the time of creation, based on thread and process identity. This identity will be used for both file encryption and selective wipe. Only files whose identity is managed and has policy requiring encryption will be encrypted. The SDK's default selective functionality wipe will only wipe files associated with the managed identity for which a wipe has been requested. The app may query or change a file’s identity using the `MAMFileProtectionManager` class.
@@ -1686,14 +1689,14 @@ this identity (using `MAMActivity.switchMAMIdentity` or
 data from the file *must not* be displayed.
 
 An example flow might look something like the following:
-  * User selects a document to open in the app.
-  * During the open flow, prior to reading data from disk, the app confirms the identity that should be used to display the content
-    * MAMFileProtectionInfo info = MAMFileProtectionManager.getProtectionInfo(docPath)
-    * if(info) 
-        MAMPolicyManager.setUIPolicyIdentity(activity, info.getIdentity(), callback)
-    * The app waits until a result is reported to callback
-    * If the reported result is a failure, the app does not display the document.
-  * The app opens and renders the file.
+* User selects a document to open in the app.
+* During the open flow, prior to reading data from disk, the app confirms the identity that should be used to display the content
+  * MAMFileProtectionInfo info = MAMFileProtectionManager.getProtectionInfo(docPath)
+  * if(info) 
+      MAMPolicyManager.setUIPolicyIdentity(activity, info.getIdentity(), callback)
+  * The app waits until a result is reported to callback
+  * If the reported result is a failure, the app does not display the document.
+* The app opens and renders the file.
   
 #### Single-Identity to Multi-Identity Transition
 If an app which previously released with single-identity Intune
@@ -1711,11 +1714,11 @@ they were encrypted).
 
 File identity tagging is sensitive to offline mode. The following points should be taken into account:
 
-  * If the Company Portal is not installed, files cannot be identity-tagged.
+* If the Company Portal is not installed, files cannot be identity-tagged.
 
-  * If the Company Portal is installed, but the app does not have Intune MAM policy, files cannot be reliably tagged with identity.
+* If the Company Portal is installed, but the app does not have Intune MAM policy, files cannot be reliably tagged with identity.
 
-  * When file identity tagging becomes available, all previously created files are treated as personal/unmanaged (belonging to the empty-string identity) unless the app was previously installed as a single-identity managed app in which case they are treated as belonging to the enrolled user.
+* When file identity tagging becomes available, all previously created files are treated as personal/unmanaged (belonging to the empty-string identity) unless the app was previously installed as a single-identity managed app in which case they are treated as belonging to the enrolled user.
 
 ### Directory Protection
 
@@ -1875,6 +1878,7 @@ the same key.
 > Configurations setup for delivery via MAM-WE can not be delievered in `offline`.  Only Android Enterprise AppRestrictions will be delivered via a `MAMUserNotification` on an empty identity in this case.
 
 ### Example
+
 ```java
 MAMAppConfigManager configManager = MAMComponents.get(MAMAppConfigManager.class);
 String identity = "user@contoso.com"
@@ -1910,6 +1914,7 @@ Views generated by the MAM SDK can be visually customized to more closely match 
 
 ### How to customize
 In order to have style changes apply to the Intune MAM views, you must first create a style override XML file. This file should be placed in the “/res/xml” directory of your app and you may name it whatever you like. Below is an example of the format this file needs to follow.
+
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
 <styleOverrides>
@@ -1956,16 +1961,20 @@ Enable default enrollment with the following steps:
    following [common ADAL configuration](#common-adal-configurations) #2. If not, you may skip this step.
    
 2. Enable default enrollment by putting the following value in the manifest:
+
    ```xml 
    <meta-data android:name="com.microsoft.intune.mam.DefaultMAMServiceEnrollment" android:value="true" />
    ```
+
    > [!NOTE] 
    > This must be the only MAM-WE integration in the app. If there are any other attempts to call MAMEnrollmentManager APIs, conflicts will arise.
 
 3. Enable MAM policy required by putting the following value in the manifest:
+
    ```xml 
    <meta-data android:name="com.microsoft.intune.mam.MAMPolicyRequired" android:value="true" />
    ```
+
    > [!NOTE] 
    > This forces the user to download the Company Portal on the device and complete the default enrollment flow before use.
 
@@ -1985,9 +1994,11 @@ For large code bases that run without [ProGuard](http://proguard.sourceforge.net
 access the content provider in another app. This will cause `ContentResolver` methods to return null or throw a failure value (for
 example, `openOutputStream` will throw `FileNotFoundException` if blocked). The app can determine whether a failure to write data
 through a content resolver was caused by policy (or would be caused by policy) by making the call:
+
     ```java
     MAMPolicyManager.getPolicy(currentActivity).getIsSaveToLocationAllowed(contentURI);
     ```
+
     or if there is no associated activity
 
     ```java

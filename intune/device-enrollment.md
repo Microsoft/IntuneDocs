@@ -35,13 +35,13 @@ Intune lets you manage your workforce’s devices and apps and how they access y
 
 As you can see in the following tables, there are several methods to enroll your workforce’s devices. Each method depends on the device's ownership (personal or corporate), device type (iOS, Windows, Android), and management requirements (resets, affinity, locking).
 
-By default, devices for all platforms are allowed to enroll in Intune. However, you can [restrict devices by platform](enrollment-restrictions-set.md#set-device-type-restrictions).
+By default, devices for all platforms are allowed to enroll in Intune. However, you can [restrict devices by platform](enrollment-restrictions-set.md#create-a-device-type-restriction).
 
 ## iOS enrollment methods
 
 | **Method** | **Reset Required** | [**User Affinity**](device-enrollment-program-enroll-ios.md#create-an-apple-enrollment-profile) | **Locked** | **Details** |
 |:---:|:---:|:---:|:---:|:---:|
-| | Devices are wiped during enrollment. | Associates each device with a user.| Users can’t unenroll devices. | |
+| | Devices are wiped during enrollment. | Associates each device with a user.| If yes, users can’t unenroll devices. | |
 |**[BYOD](#bring-your-own-device)** | No| Yes | No | [More information](./apple-mdm-push-certificate-get.md)|
 |**[DEM](#device-enrollment-manager)**| No |No |No | [More information](./device-enrollment-program-enroll-ios.md)|
 |**[DEP](#apple-device-enrollment-program)**| Yes | Optional | Optional|[More information](./device-enrollment-program-enroll-ios.md)|
@@ -105,8 +105,8 @@ Learn more about iOS DEP enrollment:
 
 ### USB-SA
 IT admins use Apple Configurator, through USB, to prepare each corporate-owned device manually for enrollment using Setup Assistant. The IT admin creates an enrollment profile and exports it to Apple Configurator. When users receive their devices, they are then prompted to run Setup Assistant to enroll their device. This method supports **iOS supervised** mode, which in turn enables the following features:
-  - Locked enrollment
-  - Kiosk mode and other advanced configurations and restrictions
+- Locked enrollment
+- Kiosk mode and other advanced configurations and restrictions
 
 Learn more about iOS Apple Configurator enrollment with Setup Assistant:
 

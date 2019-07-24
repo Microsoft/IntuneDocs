@@ -8,7 +8,7 @@ keywords:
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 04/30/2019
+ms.date: 07/22/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -33,7 +33,18 @@ ms.collection: M365-identity-device-management
 > [!NOTE] 
 > This topic applies to all Mobile Threat Defense partners.
 
-During Mobile Threat Defense (MTD) setup, you've configured a policy for classifying threats in your MTD partner console and you've created the device compliance policy in Intune. If you've already configured the Intune connector in the MTD partner console, you can now enable the MTD connection in Intune.
+During Mobile Threat Defense (MTD) setup, you've configured a policy for classifying threats in your MTD partner console and you've created the device compliance policy in Intune. If you've already configured the Intune connector in the MTD partner console, you can now enable the MTD connection for MTD partner applications.
+
+When you integrate a new application to Intune Mobile Threat Defense and enable the connection, Intune creates a classic conditional access policy in Azure Active Directory. Each MTD app you integrate, like [Defender ATP](advanced-threat-protection.md) or any of our additional [MTD partners](mobile-threat-defense.md#mobile-threat-defense-partners), creates a new classic conditional access policy.  These policies can be ignored, but should not be edited, deleted, or disabled.
+
+Classic conditional access policies for MTD apps: 
+
+- Are used by Intune MTD to require that devices are registered in Azure AD so that they have a device ID. The ID is required so that devices and can successfully report their status to Intune.  
+- Are distinct from conditional access policies you might create to help manage MTD.
+- By default, don’t interact with other conditional access policies you use for evaluation.  
+
+To view classic conditional access policies, in [Azure](https://portal.azure.com/#home), go to **Azure Active Directory** > **Conditional Access** > **Classic policies**.
+
 
 ## To enable the MTD connector
 
@@ -54,10 +65,10 @@ During Mobile Threat Defense (MTD) setup, you've configured a policy for classif
 You can decide which MTD toggle options you need to enable according to your organization's requirements. Here are more details:
 
 - **Connect Android 4.1+ devices to [MTD partner name] for Work MTD**: When you enable this option, you can have Android 4.1+ devices reporting security risk back to Intune.
-    - **Mark as noncompliant if no data is received**: If Intune doesn't receive data about a device on this platform from the MTD partner, consider the device noncompliant.
+  - **Mark as noncompliant if no data is received**: If Intune doesn't receive data about a device on this platform from the MTD partner, consider the device noncompliant.
 <br></br>
 - **Connect iOS 8.0+ devices to [MTD partner name] for Work MTD**: When you enable this option, you can have iOS 8.0+ devices reporting security risk back to Intune.
-    - **Mark as noncompliant if no data is received**: If Intune doesn't receive data about a device on this platform from the MTD partner, consider the device noncompliant.
+  - **Mark as noncompliant if no data is received**: If Intune doesn't receive data about a device on this platform from the MTD partner, consider the device noncompliant.
 <br></br>
 - **Enable App Sync for iOS Devices**: Allows this Mobile Threat Defense partner to request metadata of iOS applications from Intune to use for threat analysis purposes.
 

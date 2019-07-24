@@ -148,8 +148,8 @@ The setting **File extensions to exclude when running a scan or using real-time 
 
 ### Specify Microsoft Active Protection Service Settings
 Microsoft Active Protection Service is an online community that helps you decide how to respond to potential threats. The community also helps stop the spread of new malware infections. You can **Join Microsoft Active Protection Service** by selecting **Yes**, and then specifying your **Membership Level**:
-  - **Basic** - Sends basic information to Microsoft about detected malware. This includes where the software came from, the actions that you apply or that Endpoint Protection applies automatically, and whether the actions were successful.
-  - **Advanced** - Sends more information to Microsoft about malware, spyware, and potentially unwanted software. This includes information about the location of the software, file names, how the software operates, and how it has affected your computer.
+- **Basic** - Sends basic information to Microsoft about detected malware. This includes where the software came from, the actions that you apply or that Endpoint Protection applies automatically, and whether the actions were successful.
+- **Advanced** - Sends more information to Microsoft about malware, spyware, and potentially unwanted software. This includes information about the location of the software, file names, how the software operates, and how it has affected your computer.
 
 You can also **Receive dynamic definitions based on Microsoft Active Protection Service reports**.
 
@@ -200,5 +200,5 @@ Intune can run either a full or quick malware scan by using Endpoint Protection 
 ## Need more help?
 For further help and support, see [Troubleshoot Endpoint Protection in Microsoft Intune](troubleshoot-endpoint-protection-in-microsoft-intune.md).
 
-### See Also
+## See also
 [Policies to protect Windows PCs](policies-to-protect-windows-pcs-in-microsoft-intune.md)

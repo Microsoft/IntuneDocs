@@ -126,5 +126,5 @@ You can apply GPOs to only those security groups that are specified in the **Sec
 
 The new security group must be maintained as enrollment in the Intune service changes.
 
-### See also
+## See also
 [Manage Windows PCs with Microsoft Intune](manage-windows-pcs-with-microsoft-intune.md)

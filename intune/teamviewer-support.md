@@ -36,8 +36,8 @@ Devices managed by Intune can be administered remotely using [TeamViewer](https:
 
 - The Intune administrator within the Azure portal must have following [Intune roles](role-based-access-control.md):  
 
-    - **Update Remote Assistance**: Allows administrators to modify the TeamViewer connector settings
-    - **Request Remote Assistance**: Allows administrators to start a new remote assistance session for any user. Users with this role are not limited by any Intune role within a scope. Also, user or device groups assigned an Intune role within a scope can also request remote assistance. 
+  - **Update Remote Assistance**: Allows administrators to modify the TeamViewer connector settings
+  - **Request Remote Assistance**: Allows administrators to start a new remote assistance session for any user. Users with this role are not limited by any Intune role within a scope. Also, user or device groups assigned an Intune role within a scope can also request remote assistance. 
 
 - A [TeamViewer](https://www.teamviewer.com) account with the sign-in credentials. Only some TeamViewer licenses may support integration with Intune. For specific TeamViewer needs, see [TeamViewer Integration Partner: Microsoft Intune](https://www.teamviewer.com/integrations/microsoft-intune/).
 

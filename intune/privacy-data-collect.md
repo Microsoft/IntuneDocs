@@ -45,48 +45,48 @@ Most personal data collected by Intune is identified data. This data is tied to 
 Identified data collected by Intune may include, but is not limited to: 
 
 - User information
-    - Owner name/user display (the Azure-registered name of the user as identified by theAzureUserID)
-    - User Principal Name or email address
-    - Third-party user identifies (like AppleID)
+  - Owner name/user display (the Azure-registered name of the user as identified by theAzureUserID)
+  - User Principal Name or email address
+  - Third-party user identifies (like AppleID)
 - Hardware inventory information
-    - Device name
-    - Manufacturer
-    - Operating system
-    - Serial number
-    - IMEI number
-    - IP address
-    - Wi-Fi MacAddress
-    - ICCID
-    - Phone number
+  - Device name
+  - Manufacturer
+  - Operating system
+  - Serial number
+  - IMEI number
+  - IP address
+  - Wi-Fi MacAddress
+  - ICCID
+  - Phone number
 - Audit log information, including data about the following activities
-    - Manage
-    - Create
-    - Update (edit)
-    - Delete
-    - Assign
-    - Remote tasks
+  - Manage
+  - Create
+  - Update (edit)
+  - Delete
+  - Assign
+  - Remote tasks
 - Support information
-    - Contact information (name, phone number, email address)
-    - Email discussions with Microsoft support, product, and/or customer experience team members
+  - Contact information (name, phone number, email address)
+  - Email discussions with Microsoft support, product, and/or customer experience team members
 - Access control information (Intune uses this data to manage access to administrative roles and functions through features like [Role Based Access Control](role-based-access-control.md).
-    - Static authenticators (customer’s password)
-    - Privacy keys for certificates 
+  - Static authenticators (customer’s password)
+  - Privacy keys for certificates 
 - Admin and account information
-    - Admin user first name and last name
-    - Admin user name
-    - UPN (email)
-    - Phone number
-    - Email address of account owner
-    - Active Directory ID of each customer IT admin
-    - Payment data for customer billing
-    - Subscription key
+  - Admin user first name and last name
+  - Admin user name
+  - UPN (email)
+  - Phone number
+  - Email address of account owner
+  - Active Directory ID of each customer IT admin
+  - Payment data for customer billing
+  - Subscription key
 - Application inventory, like
-    - app name
-    - version
-    - app ID
-    - size
-    - installation location
-    - Application inventory data is only collected when marked by the Admin as a corporate-owned device or the compliant app feature is turned on.  
+  - app name
+  - version
+  - app ID
+  - size
+  - installation location
+  - Application inventory data is only collected when marked by the Admin as a corporate-owned device or the compliant app feature is turned on.  
 - Customer 3rd party tenant IDs, like the Apple ID. 
 
 ## Pseudonymized data
@@ -96,30 +96,30 @@ Pseudonymized data is associated with a unique identifier, typically a number ge
 Pseudonymized data collected by Intune may include, but is not limited to: 
 
 - Diagnostic, performance, and usage data tied to a user and/or device
-    - The number of times a feature is used
-    - The commands provided to the feature
-    - A service’s response time
-    - Success rates of installations and other processes
-    - Intune company portal application errors
-    - User and device identifiers
-    - Identifiers for reference, correlation, management purposes 
+  - The number of times a feature is used
+  - The commands provided to the feature
+  - A service’s response time
+  - Success rates of installations and other processes
+  - Intune company portal application errors
+  - User and device identifiers
+  - Identifiers for reference, correlation, management purposes 
 - Device data not tied to a device or user (if this data is tied to a device or user, Intune treats it as identified data)
-    - Intune device ID
-    - Azure Active Directory device ID
-    - Intune device management ID
-    - Tenant ID
-    - Account ID
-    - EAS device ID
-    - Platform-specific IDs
-    - AppleID for iOS devices
-    - Mac Address for Mac devices
-    - Windows ID for Windows devices
+  - Intune device ID
+  - Azure Active Directory device ID
+  - Intune device management ID
+  - Tenant ID
+  - Account ID
+  - EAS device ID
+  - Platform-specific IDs
+  - AppleID for iOS devices
+  - Mac Address for Mac devices
+  - Windows ID for Windows devices
 - Managed application information
-    - Managed application ID
-    - Managed application device tag
-    - Intune device management ID
-    - Azure Active Directory device ID
-    - Encryption keys
+  - Managed application ID
+  - Managed application device tag
+  - Intune device management ID
+  - Azure Active Directory device ID
+  - Encryption keys
 
 ## Aggregated data
 
@@ -129,14 +129,14 @@ Aggregated data collected by Intune may include, but is not limited to:
 
 - Admin usage data from across all Intune tenants (for example, admin controls selected when interacting with the Admin console)
 - Tenant account information (this data is available from the Intune blade)
-    - Number of devices or users enrolled
-    - Number of identified device platforms  
-    - Number of installed devices
-    - installedDeviceCount: The number of devices on which the application is installed.
-    - notApplicableDeviceCount: The number of devices for which the application is not applicable.
-    - notInstalledDeviceCount: The number of devices for which the application is applicable but not installed.
-    - pendingInstallDeviceCount: The numberr of devices for which the application is applicable and installation is pending.
-    
+  - Number of devices or users enrolled
+  - Number of identified device platforms  
+  - Number of installed devices
+  - installedDeviceCount: The number of devices on which the application is installed.
+  - notApplicableDeviceCount: The number of devices for which the application is not applicable.
+  - notInstalledDeviceCount: The number of devices for which the application is applicable but not installed.
+  - pendingInstallDeviceCount: The numberr of devices for which the application is applicable and installation is pending.
+
 ## Next steps
 
 Find out more about how Intune [stores and processes](privacy-data-store-process.md) and [shares](privacy-data-secure-share.md) personal data. 

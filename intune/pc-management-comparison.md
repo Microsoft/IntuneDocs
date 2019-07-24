@@ -52,7 +52,7 @@ Organizations can use Microsoft Intune to manage Windows PCs either as mobile de
 |**Health attestation**|Not available|Available|
 
 
-### Advantages of MDM Windows PC management
+## Advantages of MDM Windows PC management
 Windows PC management with modern mobile device management has the following advantages:
 - **Scalability** - MDM management scales with Intune cloud management. The Intune software client is limited to 7000 PCs.
 - **Simplicity** - Uses modern management capabilities included in the operating system without relying on a downloaded software client

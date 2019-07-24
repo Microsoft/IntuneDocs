@@ -48,19 +48,19 @@ These are the keys to migrating successfully from a third-party MDM provider to 
 
 - Monitor the helpdesk load and enrollment success of each cycle. Leave time in the schedule to ensure success criteria can be evaluated for each group before migrating the next. Your pilot deployment should validate the following:
 
-    - Enrollment success and failure rates are within expectations.
+  - Enrollment success and failure rates are within expectations.
 
-    - User productivity:
+  - User productivity:
 
-        - Corporate resources such as VPN, Wi-Fi, email, and certificates are working.
+    - Corporate resources such as VPN, Wi-Fi, email, and certificates are working.
 
-        - Provisioned apps are accessible.
+    - Provisioned apps are accessible.
 
-    - Data security:
+  - Data security:
 
-        - Compliance reporting is occurring.
+    - Compliance reporting is occurring.
 
-        - Mobile app protections are enforced.
+    - Mobile app protections are enforced.
 
 When you are satisfied with the first phase of migrations, repeat the [migration cycle](migration-guide-cycle.md) for the next phase.
 

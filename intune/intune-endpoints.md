@@ -8,7 +8,7 @@ keywords:
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 05/30/2019
+ms.date: 07/22/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -28,11 +28,13 @@ ms.custom: intune-classic; get-started
 ms.collection: M365-identity-device-management
 ---
 
-# Network endpoints for Microsoft Intune
+# Network endpoints for Microsoft Intune  
 
 This page lists IP addresses and port settings needed for proxy settings in your Intune deployments.
 
 As a cloud-only service, Intune doesn't require on-premises infrastructure such as servers or gateways.
+
+## Access for managed devices  
 
 To manage devices behind firewalls and proxy servers, you must enable communication for Intune.
 
@@ -49,8 +51,8 @@ Managed devices require configurations that let **All Users** access services th
 
 The following tables list the ports and services that the Intune client accesses:
 
-|**Domains**|**IP address**|
-|---------------------|-----------|
+|Domains    |IP address      |
+|-----------|----------------|
 |login.microsoftonline.com | More information [Office 365 URLs and IP address ranges](https://support.office.com/article/Office-365-URLs-and-IP-address-ranges-8548a211-3fe7-47cb-abb1-355ea5aa88a2) |
 |portal.manage.microsoft.com<br> m.manage.microsoft.com |52.175.12.209<br>20.188.107.228<br>52.138.193.149<br>51.144.161.187<br>52.160.70.20<br>52.168.54.64 |
 | sts.manage.microsoft.com | 13.93.223.241 <br>52.170.32.182 <br>52.164.224.159 <br>52.174.178.4 <br>13.75.122.143 <br>52.163.120.84|
@@ -84,9 +86,9 @@ The following tables list the ports and services that the Intune client accesses
 |wip.mam.manage.microsoft.com|52.187.76.84<br>13.76.5.121<br>52.165.160.237<br>40.86.82.163<br>52.233.168.142<br>168.63.101.57|
 |mam.manage.microsoft.com|104.40.69.125<br>13.90.192.78<br>40.85.174.177<br>40.85.77.31<br>137.116.229.43<br>52.163.215.232<br>52.174.102.180|
 
+## Network requirements for PowerShell scripts and Win32 apps  
 
-### Network requirements for Powershell scripts and Win32 apps
-If you're using Intune to deploy Powershell scripts or Win32 apps, you'll also need to grant access to endpoints in which your tenant currently resides.
+If you're using Intune to deploy PowerShell scripts or Win32 apps, you'll also need to grant access to endpoints in which your tenant currently resides.
 
 |ASU | Storage name | CDN |
 | --- | --- |--- |
@@ -112,29 +114,32 @@ If you're using Intune to deploy Powershell scripts or Win32 apps, you'll also n
 | AMSUC0501 | prodmsuc05data | https:\//prodmsuc05data.azureedge.net |
 | AMSUA0701 | pemsua07rcdata | https:\//pemsua07data.azureedge.net |
 
-### Windows Push Notification Services (WNS)
-For Intune-managed Windows devices managed using Mobile Device Management (MDM), device actions and other immediate activities require the use of Windows Push Notification Services (WNS). For more information see [Allowing Windows Notification traffic through enterprise firewalls](https://docs.microsoft.com/windows/uwp/design/shell/tiles-and-notifications/firewall-allowlist-config).    
+## Windows Push Notification Services (WNS)  
 
-### Delivery Optimization port requirements
+For Intune-managed Windows devices managed using Mobile Device Management (MDM), device actions and other immediate activities require the use of Windows Push Notification Services (WNS). For more information, see [Allowing Windows Notification traffic through enterprise firewalls](https://docs.microsoft.com/windows/uwp/design/shell/tiles-and-notifications/firewall-allowlist-config).  
 
-#### Port requirements
+## Delivery Optimization port requirements  
+
+### Port requirements  
+
 For peer-to-peer traffic, Delivery Optimization uses 7680 for TCP/IP or 3544 for NAT traversal (optionally Teredo). 
 For client-service communication, it uses HTTP or HTTPS over port 80/443.
 
-#### Proxy requirements
+### Proxy requirements  
+
 To use Delivery Optimization, you must allow Byte Range requests. For more information, see [Proxy requirements for Windows Update](https://docs.microsoft.com/windows/deployment/update/windows-update-troubleshooting).
 
-#### Firewall requirements
+### Firewall requirements  
+
 Allow the following hostnames through your firewall to support Delivery Optimization.
 For communication between clients and the Delivery Optimization cloud service:
-- *.do.dsp.mp.microsoft.com
+- \*.do.dsp.mp.microsoft.com
 
 For Delivery Optimization metadata:
-- *.dl.delivery.mp.microsoft.com
-- *.emdl.ws.microsoft.com
+- \*.dl.delivery.mp.microsoft.com
+- \*.emdl.ws.microsoft.com
 
-### Apple device network information
-
+## Apple device network information  
 
 |Used for|Hostname (IP address/subnet)|Protocol|Port|
 |-----|--------|------|-------|
@@ -142,4 +147,38 @@ For Delivery Optimization metadata:
 |Communications with APNS servers|#-courier.push.apple.com<br>'#' is a random number from 0 to 50.|    TCP     |  5223 and 443  |
 |Various functionalities including accessing the World Wide Web, iTunes store, macOS app store, iCloud, messaging, etc. |phobos.apple.com<br>ocsp.apple.com<br>ax.itunes.apple.com<br>ax.itunes.apple.com.edgesuite.net| HTTP/HTTPS |  80 or 443   |
 
-For more information, see Apple's [TCP and UDP ports used by Apple software products](https://support.apple.com/en-us/HT202944), [About macOS, iOS, and iTunes server host connections and iTunes background processes](https://support.apple.com/en-us/HT201999), and [If your macOS and iOS clients aren't getting Apple push notifications](https://support.apple.com/en-us/HT203609).
+For more information, see Apple's [TCP and UDP ports used by Apple software products](https://support.apple.com/en-us/HT202944), [About macOS, iOS, and iTunes server host connections and iTunes background processes](https://support.apple.com/en-us/HT201999), and [If your macOS and iOS clients aren't getting Apple push notifications](https://support.apple.com/en-us/HT203609).  
+
+## Microsoft Intune Certificate Connector  
+
+The server that hosts the Microsoft Intune Certificate Connector must have access using **TCP** port **443** to the public IP locations that are listed in the following table.  
+
+|Domains                             |IP address       |
+|---------------|--------------------------------------|
+|Manage.microsoft.com <br> i.manage.microsoft.com <br> r.manage.microsoft.com <br> a.manage.microsoft.com <br> p.manage.microsoft.com <br> EnterpriseEnrollment.manage.microsoft.com <br> EnterpriseEnrollment-s.manage.microsoft.com|13.76.177.110  |
+|fef.msua06.manage.microsoft.com  |13.78.185.97	 |
+|Manage.microsoft.com <br> i.manage.microsoft.com <br> r.manage.microsoft.com <br> a.manage.microsoft.com <br> p.manage.microsoft.com <br> EnterpriseEnrollment.manage.microsoft.com <br> EnterpriseEnrollment-s.manage.microsoft.com |13.82.96.212  |
+|fef.amsua0502.manage.microsoft.com |13.85.68.142	|
+| portal.manage.microsoft.com <br> m.manage.microsoft.com <br> portal.fei.msuc01.manage.microsoft.com <br> m.fei.msuc01.manage.microsoft.com <br> portal.fei.msuc02.manage.microsoft.com <br> m.fei.msuc02.manage.microsoft.com <br> portal.fei.msuc03.manage.microsoft.com <br> m.fei.msuc03.manage.microsoft.com <br> portal.fei.msuc05.manage.microsoft.com <br> m.fei.msuc05.manage.microsoft.com |20.188.107.228|
+|fef.msua04.manage.microsoft.com  |23.96.112.28	 |
+|fef.amsua0402.manage.microsoft.com|40.69.157.122	 |
+|Manage.microsoft.com <br> i.manage.microsoft.com <br> r.manage.microsoft.com <br> a.manage.microsoft.com <br> p.manage.microsoft.com <br> EnterpriseEnrollment.manage.microsoft.com <br> EnterpriseEnrollment-s.manage.microsoft.com |40.83.123.72    |
+|portal.manage.microsoft.com <br> m.manage.microsoft.com <br> portal.fei.msub01.manage.microsoft.com <br> m.fei.msub01.manage.microsoft.com <br> portal.fei.amsub0102.manage.microsoft.com <br> m.fei.amsub0102.manage.microsoft.com <br> fei.msub02.manage.microsoft.com <br> portal.fei.msub02.manage.microsoft.com <br> m.fei.msub02.manage.microsoft.com <br> portal.fei.msub03.manage.microsoft.com <br> m.fei.msub03.manage.microsoft.com <br> portal.fei.msub05.manage.microsoft.com <br> m.fei.msub05.manage.microsoft.com <br> portal.fei.amsub0202.manage.microsoft.com <br> m.fei.amsub0202.manage.microsoft.com <br> portal.fei.amsub0302.manage.microsoft.com <br> m.fei.amsub0302.manage.microsoft.com |51.144.161.187 |
+|portal.manage.microsoft.com <br> m.manage.microsoft.com <br> portal.fei.msub01.manage.microsoft.com <br> m.fei.msub01.manage.microsoft.com <br> portal.fei.amsub0102.manage.microsoft.com <br> m.fei.amsub0102.manage.microsoft.com <br> fei.msub02.manage.microsoft.com <br> portal.fei.msub02.manage.microsoft.com <br> m.fei.msub02.manage.microsoft.com <br> portal.fei.msub03.manage.microsoft.com <br> m.fei.msub03.manage.microsoft.com <br> portal.fei.msub05.manage.microsoft.com <br> m.fei.msub05.manage.microsoft.com <br> portal.fei.amsub0202.manage.microsoft.com <br> m.fei.amsub0202.manage.microsoft.com <br> portal.fei.amsub0302.manage.microsoft.com <br> m.fei.amsub0302.manage.microsoft.com  |52.138.193.149  |
+|portal.manage.microsoft.com <br> m.manage.microsoft.com <br> portal.fei.msua01.manage.microsoft.com <br> m.fei.msua01.manage.microsoft.com <br> portal.fei.msua02.manage.microsoft.com <br> m.fei.msua02.manage.microsoft.com <br> portal.fei.msua04.manage.microsoft.com <br> m.fei.msua04.manage.microsoft.com <br> portal.fei.msua05.manage.microsoft.com <br> m.fei.msua05.manage.microsoft.com <br> portal.fei.amsua0502.manage.microsoft.com <br> m.fei.amsua0502.manage.microsoft.com <br> portal.fei.msua06.manage.microsoft.com <br> m.fei.msua06.manage.microsoft.com <br> portal.fei.amsua0602.manage.microsoft.com <br> m.fei.amsua0602.manage.microsoft.com <br> fei.amsua0202.manage.microsoft.com <br> portal.fei.amsua0202.manage.microsoft.com <br> m.fei.amsua0202.manage.microsoft.com <br> portal.fei.amsua0402.manage.microsoft.com <br> m.fei.amsua0402.manage.microsoft.com |52.160.70.20  |
+|fef.amsua0602.manage.microsoft.com |52.161.28.64	|
+|fef.amsua0202.manage.microsoft.com |52.165.165.17	 |
+|portal.manage.microsoft.com <br> m.manage.microsoft.com <br> portal.fei.msua01.manage.microsoft.com <br> m.fei.msua01.manage.microsoft.com <br> portal.fei.msua02.manage.microsoft.com <br> m.fei.msua02.manage.microsoft.com <br> portal.fei.msua04.manage.microsoft.com <br> m.fei.msua04.manage.microsoft.com <br> portal.fei.msua05.manage.microsoft.com <br> m.fei.msua05.manage.microsoft.com <br> portal.fei.amsua0502.manage.microsoft.com <br> m.fei.amsua0502.manage.microsoft.com <br> portal.fei.msua06.manage.microsoft.com <br> m.fei.msua06.manage.microsoft.com <br> portal.fei.amsua0602.manage.microsoft.com <br> m.fei.amsua0602.manage.microsoft.com <br> fei.amsua0202.manage.microsoft.com <br> portal.fei.amsua0202.manage.microsoft.com <br> m.fei.amsua0202.manage.microsoft.com <br> portal.fei.amsua0402.manage.microsoft.com <br> m.fei.amsua0402.manage.microsoft.com |52.168.54.64   |
+|r.manage.microsoft.com |52.169.9.87    |
+|.manage.microsoft.com  |52.174.26.23   |
+|portal.fei.msuc01.manage.microsoft.com <br> m.fei.msuc01.manage.microsoft.com <br> portal.fei.msuc02.manage.microsoft.com <br> m.fei.msuc02.manage.microsoft.com <br> portal.fei.msuc03.manage.microsoft.com <br> m.fei.msuc03.manage.microsoft.com <br> portal.fei.msuc05.manage.microsoft.com <br> m.fei.msuc05.manage.microsoft.com |52.175.12.209  |
+|fef.msua07.manage.microsoft.com |52.175.208.218	 |
+|fef.msua02.manage.microsoft.com |52.177.194.236	|
+|sts.manage.microsoft.com        |104.40.82.191    |
+|fef.msua01.manage.microsoft.com |138.91.243.97 	|
+|fef.msua05.manage.microsoft.com |138.91.244.151	 |
+
+
+
+
+

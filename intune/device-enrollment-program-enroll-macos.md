@@ -136,9 +136,9 @@ Now that you've installed your token, you can create an enrollment profile for d
     | <strong>Department Name</strong> | Appears when users tap <strong>About Configuration</strong> during activation. |
     | <strong>Department Phone</strong> | Appears when the user clicks the <strong>Need Help</strong> button during activation. |
 
-  You can choose to show or hide a variety of Setup Assistant screens on the device when the user sets it up.
-  - If you choose **Hide**, the screen won't be displayed during setup. After setting up the device, the user can still go in to the **Settings** menu to set up the feature.
-  - If you choose **Show**, the screen will be displayed during setup. The user can sometimes skip the screen without taking action. But they can then later go into the device's **Settings** menu to set up the feature. 
+    You can choose to show or hide a variety of Setup Assistant screens on the device when the user sets it up.
+    - If you choose **Hide**, the screen won't be displayed during setup. After setting up the device, the user can still go in to the **Settings** menu to set up the feature.
+    - If you choose **Show**, the screen will be displayed during setup. The user can sometimes skip the screen without taking action. But they can then later go into the device's **Settings** menu to set up the feature. 
 
 
     | Setup Assistant screen settings | If you choose **Show**, during setup the device will... |

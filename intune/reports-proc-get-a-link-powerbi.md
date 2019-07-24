@@ -32,13 +32,13 @@ ms.collection: M365-identity-device-management
 
 You can use the Power BI Compliance app to load interactive, dynamically generated reports for your Intune tenant. Additionally, you can load your tenant data in Power BI using the OData link. Intune provides connection settings to your tenant so that you can view the following sample reports and charts related to:  
 
-  - Devices
-  - Enrollment
-  - App protection policy
-  - Compliance policy
-  - Device configuration profiles
-  - Software updates
-  - Device inventory logs
+- Devices
+- Enrollment
+- App protection policy
+- Compliance policy
+- Device configuration profiles
+- Software updates
+- Device inventory logs
 
 There are also trends highlighted for the enrollment, compliance, device configuration profile, and software updates. Sample charts and reports apply user-friendly filters to the canvas. To use advanced filters, check out the **Filter** pane in Power BI Desktop.
 
@@ -97,5 +97,5 @@ With a client authenticated to Azure AD, the OData URL connects to the RESTful e
 You can find the answers to questions about your environment such as the number of devices enrolled by day over the last week. You can gain insight into your Intune tenant and client population using the Intune Data Warehouse Power BI reports retrieved from the blade in Azure. However, Intune provides a number of additional ways to extend or reuse the data. Power BI and the Intune Data Warehouse API provide additional functionality, for example:
 
 <!-- - You can use Power BI Desktop to create additional report types with your data. For example, you could create a custom chart representing the ratio of device manufactures in your enterprise. For more information about creating custom reports with Power BI and the Intune Data Warehouse, see `BLOG POST ON POWER BI`. -->
- - Your tenant data is organized to help you pull insight from your data. For more information about how the data is organized, see [Data Warehouse Data Model](reports-ref-data-model.md).
- - You can also access the data from a RESTful interface and incorporate the data into your own app. For more information, see [Get data from the Data Warehouse API with a REST client](reports-proc-data-rest.md).
+- Your tenant data is organized to help you pull insight from your data. For more information about how the data is organized, see [Data Warehouse Data Model](reports-ref-data-model.md).
+- You can also access the data from a RESTful interface and incorporate the data into your own app. For more information, see [Get data from the Data Warehouse API with a REST client](reports-proc-data-rest.md).

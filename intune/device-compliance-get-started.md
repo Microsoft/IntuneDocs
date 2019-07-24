@@ -77,11 +77,11 @@ Intune uses Azure Active Directory (AD) [Conditional Access](https://docs.micros
 
 ## Ways to use device compliance policies
 
-#### With Conditional Access
+### With Conditional Access
 
 For devices that comply to policy rules, you can give those devices access to email and other organization resources. If the devices don't comply to policy rules, then they don't get access to organization resources. This is Conditional Access.
 
-#### Without Conditional Access
+### Without Conditional Access
 
 You can also use device compliance policies without any Conditional Access. When you use compliance policies independently, the targeted devices are evaluated and reported with their compliance status. For example, you can get a report on how many devices aren't encrypted, or which devices are jail-broken or rooted. When you use compliance policies without Conditional Access, there aren't any access restrictions to organization resources.
 
@@ -133,8 +133,8 @@ The following table describes how noncompliant settings are managed when a compl
 
 **Quarantined**: The device operating system doesn't enforce compliance. For example, Android and Android Enterprise devices don't force the user to encrypt the device. When the device isn't compliant, the following actions take place:
 
-  - If a Conditional Access policy applies to the user, the device is blocked.
-  - The Company Portal app notifies the user about any compliance problems.
+- If a Conditional Access policy applies to the user, the device is blocked.
+- The Company Portal app notifies the user about any compliance problems.
 
 ## Azure classic portal vs. Azure portal
 

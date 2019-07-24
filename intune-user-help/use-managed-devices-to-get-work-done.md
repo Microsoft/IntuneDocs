@@ -58,10 +58,10 @@ The Microsoft Intune app is for corporate-owned Android devices.
 - Apple devices using iOS (such as iPhone and iPad) and macOS (such as MacBook and iMac)
 - Android devices
 - Windows devices
-    - Windows 10 Mobile
-    - Windows 10 Desktop
-    - Windows Phone 8.1
-    - Windows 8.1
+  - Windows 10 Mobile
+  - Windows 10 Desktop
+  - Windows Phone 8.1
+  - Windows 8.1
 
 ## What kind of devices can you enroll with the Microsoft Intune app?  
 You can enroll corporate-owned Android devices that your organization has set up to use with the app. The app supports Android 6.0 and later. 

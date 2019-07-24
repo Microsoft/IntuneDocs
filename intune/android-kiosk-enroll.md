@@ -58,6 +58,9 @@ To set up Android Enterprise dedicated device management, follow these steps:
 
 ### Create an enrollment profile
 
+> [!NOTE]
+> If a token has expired, the profile associated with it will not be displayed in **Device enrollment** > **Android enrollment** > **Corporate-owned dedicated devices**. To see all profiles associated with both active and inactive tokens, click on **Filter** and check the boxes for both "Active" and "Inactive" policy states. 
+
 You must create an enrollment profile so that you can enroll your dedicated devices. When the profile is created, it provides you with an enrollment token (random string) and a QR code. Depending on the Android OS and version of the device, you can use either the token or QR code to [enroll the dedicated device](#enroll-the-dedicated-devices).
 
 1. Sign in to [Intune](https://go.microsoft.com/fwlink/?linkid=2090973) and choose **Device enrollment** > **Android enrollment** > **Corporate-owned dedicated devices**.
@@ -86,12 +89,10 @@ You can target apps and policies to either assigned or dynamic device groups. Yo
 
 ### Replace or remove tokens
 
-You can replace or remove tokens and QR codes.
-
 - **Replace token**: You can generate a new token/QR code when one nears expiration by using Replace Token.
 - **Revoke token**: You can immediately expire the token/QR code. From this point on, the token/QR code is no longer usable. You might use this option if you:
-    - accidentally share the token/QR code with an unauthorized party
-    - complete all enrollments and no longer need the token/QR code
+  - accidentally share the token/QR code with an unauthorized party
+  - complete all enrollments and no longer need the token/QR code
 
 Replacing or revoking a token/QR code won't have any effect on devices that are already enrolled.
 

@@ -27,18 +27,18 @@ ms.collection: M365-identity-device-management
 ---
 # Reference for User Device Association entity
 
-The **UserDeviceAssociation** entity contains user device associations in your organization.
+The **userDeviceAssociation** entity contains user device associations in your organization.
 
-## UserDeviceAssociation
+## userDeviceAssociations
 
 
 |        Name        |                                           Description                                            |        Example         |
 |--------------------|--------------------------------------------------------------------------------------------------|------------------------|
-|      UserKey       |              Unique identifier of the user in the data warehouse. (Surrogate key).               |          123           |
-|     DeviceKey      |                      Unique identifier of the device in the data warehouse.                      |          123           |
-| CreatedDateTimeUTC |           Date and time when the user device association was created. Uses UTC format.           | 11/23/2016 12:00:00 AM |
-|     IsDeleted      | Indicates that the user unenrolled that device, and that the association is not current anymore. |       True/False       |
-|  EndedDateTimeUTC  |              Date and time in UTC when IsDeleted changed to <strong>True</strong>.               | 06/23/2017 12:00:00 AM |
+|      userKey       |              Unique identifier of the user in the data warehouse. (Surrogate key).               |          123           |
+|     deviceKey      |                      Unique identifier of the device in the data warehouse.                      |          123           |
+| createdDateTimeUTC |           Date and time when the user device association was created. Uses UTC format.           | 11/23/2016 12:00:00 AM |
+|     isDeleted      | Indicates that the user unenrolled that device, and that the association is not current anymore. |       True/False       |
+|  endedDateTimeUTC  |              Date and time in UTC when IsDeleted changed to <strong>True</strong>.               | 06/23/2017 12:00:00 AM |
 
 ## Next steps
 

@@ -60,7 +60,7 @@ By adding the **Webex** package as an exception to the MAM data transfer policy,
 - iOS **Webex** example:
     To exempt the **Webex** app so that it's allowed to be invoked by Intune managed apps, you must add a data transfer exception for the following string: <code>wbx</code>
     
- - iOS **Maps** example:
+- iOS **Maps** example:
     To exempt the native **Maps** app so that it's allowed to be invoked by Intune managed apps, you must add a data transfer exception for the following string: <code>maps</code>
 
 - Android **Webex** example:

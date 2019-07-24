@@ -60,10 +60,26 @@ With Intune App SDK or App Wrapping integration, you can protect corporate data 
 #### What can I do to prepare for this change?
 Check your Microsoft, third-party, and line-of-business (LOB) apps. You should ensure all that all your applications protected with Intune APP are using SDK version 8.1.1 or later.
 
-- For LOB apps: You may need to republish your apps integrated with SDK version 8.1.1 or later. We recommend the latest SDK version. For infomration on how to prepare your LOB apps for App protection policies, see [Prepare line-of-business apps for app protection policies](../apps-prepare-mobile-application-management.md).
+- For LOB apps: You may need to republish your apps integrated with SDK version 8.1.1 or later. We recommend the latest SDK version. For information on how to prepare your LOB apps for App protection policies, see [Prepare line-of-business apps for app protection policies](../apps-prepare-mobile-application-management.md).
 - For Microsoft/Third Party apps: Ensure that you are deploying the latest version of these apps to your users.
 
 You should also update your documentation or developer guidance if applicable to include this change in support for the SDK.
 
 #### Additional information
 https://docs.microsoft.com/intune/apps-prepare-mobile-application-management
+
+### Plan for change: New Windows updates settings in Intune <!-- 4464404 -->
+Starting with the August release to the Intune service or 1908, we’re adding in new “Deadline settings” which you can configure instead of the “Allow user to restart (engaged restart)” settings. We plan to disable the engaged restart settings in the UI in 1909 or the September update and then completely remove them from the console towards the end of October. 
+
+#### How does this affect me?
+If you manage Windows 10 devices in your environment: 
+- With the August Intune update or 1908, you will see new deadline settings in the console in addition to the old engaged restart settings.
+- When both these old and new settings are configured, the deadline settings values will override the engaged restart setting values.
+- Deadline settings will replace the “Allow user to restart (engaged restart) option in the console in the 1910 update.
+
+#### What can I do to prepare for this change?
+Start using the deadline settings in 1908 by configuring them with your desired values. Once you have that in place, you can set the engaged restart setting to “Not configured” to prepare for these being removed from the console in October.
+
+Update your documentation and any automation scripts if needed. 
+
+We’ll keep you updated and post a reminder to the Message center before we remove the engaged restart settings.

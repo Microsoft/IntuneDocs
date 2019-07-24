@@ -49,14 +49,14 @@ The following tables list the ports and services that the Intune client accesses
 | enterpriseregistration.microsoftonline.us | 13.72.188.239 <br> 13.72.55.179 |
 
 ## US Government customer designated endpoints:
-- Azure portal: https://portal.azure.us/ 
-- Office 365: https://portal.office365.us/ 
-- Intune Company Portal: https://portal.manage.microsoft.us/ 
+- Azure portal: https:\//portal.azure.us/ 
+- Office 365: https:\//portal.office365.us/ 
+- Intune Company Portal: https:\//portal.manage.microsoft.us/ 
 
 ## Partner service endpoints that Intune depends on:
-- AAD Sync service: https://syncservice.gov.us.microsoftonline.com/DirectoryService.svc
-- Evo STS: https://login.microsoftonline.us
-- Directory Proxy: https://directoryproxy.microsoftazure.us/DirectoryProxy.svc
-- AAD Graph: https://directory.microsoftazure.us and https://graph.microsoftazure.us
-- MS Graph: https://graph.microsoft.us
-- ADRS: https://enterpriseregistration.microsoftonline.us
+- AAD Sync service: https:\//syncservice.gov.us.microsoftonline.com/DirectoryService.svc
+- Evo STS: https:\//login.microsoftonline.us
+- Directory Proxy: https:\//directoryproxy.microsoftazure.us/DirectoryProxy.svc
+- AAD Graph: https:\//directory.microsoftazure.us and https:\//graph.microsoftazure.us
+- MS Graph: https:\//graph.microsoft.us
+- ADRS: https:\//enterpriseregistration.microsoftonline.us

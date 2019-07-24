@@ -34,11 +34,11 @@ Remotely lock a lost or stolen device from the Company Portal app for Windows 10
 
 Remote lock is supported on devices running:  
 
-  * Android
-  * iOS
-  * macOS
-  * Windows 10 Mobile (if the device already had a passcode set)
-  * Windows Phone 8.1 (if the device already had a passcode set) 
+* Android
+* iOS
+* macOS
+* Windows 10 Mobile (if the device already had a passcode set)
+* Windows Phone 8.1 (if the device already had a passcode set) 
   
 ## Remote lock device
 Complete the following steps to lock your device from the Company app.  

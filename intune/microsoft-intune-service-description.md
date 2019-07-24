@@ -64,24 +64,24 @@ Because the mobile device management ecosystem changes frequently with operating
 
 - Important service updates are also announced in the [Microsoft 365 admin center](https://admin.microsoft.com/) Message Center. If you install the companion [Office 365 Admin mobile app](https://support.office.com/article/Office-365-Admin-Mobile-App-e16f6421-2a1a-4142-bf9d-9846600a060a), you can receive notifications on your mobile device. Learn more about how to work with the [Office 365 Message Center](https://support.office.com/client/results?Shownav=true&ns=O365ENTADMIN&version=15&ver=15&HelpID=O365E_MCManageUpdates).
 
-    A few helpful hints:
+  A few helpful hints:
 
-    - The messages in the Office 365 Message Center are targeted. This means that if your company doesn’t have an Intune for EDU offer, we won’t message you about Intune for EDU.
+  - The messages in the Office 365 Message Center are targeted. This means that if your company doesn’t have an Intune for EDU offer, we won’t message you about Intune for EDU.
 
-    - Messages expire. For example, the notification that your service has been updated with a link to the What’s New page will likely expire prior to the next service update notification. Otherwise, you’d have a large backlog of posts that may no longer be relevant.
+  - Messages expire. For example, the notification that your service has been updated with a link to the What’s New page will likely expire prior to the next service update notification. Otherwise, you’d have a large backlog of posts that may no longer be relevant.
 
-    - The Office 365 admin mobile app allows you to search through all the messages and to forward the notification if you wanted to share it with peers in your organization.
+  - The Office 365 admin mobile app allows you to search through all the messages and to forward the notification if you wanted to share it with peers in your organization.
 
-    - Under Edit message center preferences, we’ll eventually have a toggle for **Intune** so you can look at those messages posted to an Intune subscription. If you see Mobile Device Management for Office 365, that is a different service, not Intune.
+  - Under Edit message center preferences, we’ll eventually have a toggle for **Intune** so you can look at those messages posted to an Intune subscription. If you see Mobile Device Management for Office 365, that is a different service, not Intune.
 
 - We also use two blogs to share the EMS message and Intune support best practices:
 
-    - [Enterprise Mobility + Security blog](https://blogs.technet.microsoft.com/enterprisemobility/)
+  - [Enterprise Mobility + Security blog](https://blogs.technet.microsoft.com/enterprisemobility/)
 
-    - [Intune support blog](https://blogs.technet.microsoft.com/intunesupport/)
+  - [Intune support blog](https://blogs.technet.microsoft.com/intunesupport/)
 
->[!Note]
->You can monitor Intune service health in the [Microsoft 365 admin center](https://admin.microsoft.com). Choose **Service Health** in the left pane. You can also use the [Office 365 Admin mobile app](https://support.office.com/article/Office-365-Admin-Mobile-App-e16f6421-2a1a-4142-bf9d-9846600a060a) to view service health.
+> [!Note]
+> You can monitor Intune service health in the [Microsoft 365 admin center](https://admin.microsoft.com). Choose **Service Health** in the left pane. You can also use the [Office 365 Admin mobile app](https://support.office.com/article/Office-365-Admin-Mobile-App-e16f6421-2a1a-4142-bf9d-9846600a060a) to view service health.
 
 ## Types of notices Microsoft provides about the Intune service
 

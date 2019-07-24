@@ -78,7 +78,7 @@ Intune app protection policies platform support aligns with Office mobile applic
 
 ## How app protection policies protect app data
 
-#### Apps without app protection policies
+### Apps without app protection policies
 
 ![Conceptual image for data movement between apps with no policies in place](./media/apps-without-protection-policies.png)
 

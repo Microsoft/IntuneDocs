@@ -143,7 +143,7 @@ This feature supports:
 
 [Endpoint protection settings for Windows 10](endpoint-protection-windows-10.md) configures BitLocker and Windows Defender settings for Windows 10 devices.
 
-To onboard Windows Defender Advanced Threat Protection (WDATP) with Microsoft Intune, see [Configure endpoints using Mobile Device Management (MDM) tools](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/configure-endpoints-mdm-windows-defender-advanced-threat-protection).
+To onboard Microsoft Defender Advanced Threat Protection (WDATP) with Microsoft Intune, see [Configure endpoints using Mobile Device Management (MDM) tools](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/configure-endpoints-mdm).
 
 This feature supports:
 
