@@ -82,7 +82,7 @@ Pausing for more than a few minutes during enrollment might cause the app to clo
 
 6. Safari opens the Company Portal website on your device. When prompted to download the configuration profile, tap **Allow**. If you're on a device running:  
     * iOS 12.2 and later: When the download is complete, tap **Done.** Continue to step 7 in this article.
-    * iOS 12.1 and earlier: You'll be automatically redirected to the Settings app. Skip to step 8 in this article.  
+    * iOS 12.1 and earlier: You'll be automatically redirected to the Settings app. Skip to step 9 in this article.  
  
     If you accidentally tap **Ignore**, refresh the page. You'll be prompted to open the Company Portal app. From the app, you can tap **Download again**.
 
