@@ -113,7 +113,8 @@ For devices enrolled in Intune using KME for Android, you can configure how an e
 
 > [!NOTE]
 >
->User association only applies to Android enrollment. When user association is defined, only the associated user can enroll the device using KME. This is true even after a factory reset of the device. When no user association is defined in the Knox portal, any user with a valid Intune license can enroll the device using KME.
+>User association only applies to Android device administrator enrollment. When user association is defined, only the associated user can enroll the device using KME. This is true even after a factory reset of the device. When no user association is defined in the Knox portal, any user with a valid Intune license can enroll the device using KME.
+>For Android Enterprise fully managed devices, even if user association is defined, it will not be passed to the device or tie the device to the user.
 >
 
 ## Distribute devices
@@ -130,7 +131,7 @@ Still need help? Check out the complete [KME User Guide](https://docs.samsungkno
 
 - **Factory reset to enroll to Android enterprise:** If repurposing devices that have already been set up, devices need to be factory reset when enrolling to Android enterprise.
 
-- **Updates using Google Play account:** Google Play account isn't necessary for enrolling the device to Microsoft Intune. But future updates to the Intune Company Portal app may require a Google Play account on the device. Google Play account isn't required when enrolling to Google Device Owner.
+- **Updates using Google Play account:** Google Play account isn't necessary for enrolling the device to Microsoft Intune. But, for Android device administrator enrollments, future updates to the Intune Company Portal app may require a Google Play account on the device. Google Play account isn't required when enrolling to Google Device Owner.
 
 - **"Password" field is ignored:** If the **password** field is populated in **Device details** in the Knox Portal, it's ignored by the Intune Company Portal app during Android enrollment. The end user must enter a password on the device to complete device enrollment.
 
