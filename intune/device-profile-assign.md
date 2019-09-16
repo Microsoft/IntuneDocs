@@ -65,7 +65,9 @@ On Windows 10 devices, you can add **applicability rules** so the profile only a
 
 ## Exclude groups from a profile assignment
 
-Intune device configuration profiles let you exclude groups from policy assignment. For example, you can assign a device profile to the **All corporate users** group, but exclude members in the **Senior Management Staff** group.
+Intune device configuration profiles allows you to include and exclude group members from policy assignments. If one type of group is used and a member is in both, an include and a exclude group the precedence is exclusion over inclusion. 
+
+For example, you can assign a device profile to the **All corporate users** user group, but exclude members in the **Senior Management Staff** user group. As only user groups are in use, alll members of the **Senior Management Staff** will be exclude from the policy even if they are members of the include group.  
 
 Intune doesn't look at user-to-device relationships. Including user groups while excluding device groups may not get the results you expect. Inclusion takes precedence over exclusion:
 
