@@ -31,7 +31,7 @@ ms.collection: M365-identity-device-management
 # What is device enrollment?
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
-Intune lets you manage your workforce’s devices and apps and how they access your company data. To use this mobile device management (MDM), the devices must first be enrolled in the Intune service. When a device is enrolled, it is issued an MDM certificate. This certificate is used to communicate with the Intune service.
+Intune lets you manage your workforce’s devices and apps and how they access your company data. To use this mobile device management (MDM), the devices must first be enrolled in the Intune service. When a device is enrolled, it's issued an MDM certificate. This certificate is used to communicate with the Intune service.
 
 As you can see in the following tables, there are several methods to enroll your workforce’s devices. Each method depends on the device's ownership (personal or corporate), device type (iOS, Windows, Android), and management requirements (resets, affinity, locking).
 
@@ -87,7 +87,7 @@ By default, devices for all platforms are allowed to enroll in Intune. However, 
 
 
 ## Bring your own device
-Bring your own devices (BYOD) include personal phones, tables, and PCs. Users install and run the Company Portal app to enroll BYODs. This program lets users access company resources like email.
+Bring your own devices (BYOD) include personal phones, tablets, and PCs. Users install and run the Company Portal app to enroll BYODs. This program lets users access company resources like email.
 
 ## Corporate-owned device
 [Corporate-owned devices (COD)](corporate-identifiers-add.md) include phones, tablets, and PCs owned by the organization and distributed to the workforce. COD enrollment supports scenarios like automatic enrollment, shared devices, or pre-authorized enrollment requirements. A common way to enroll CODs is for an administrator or manager to use the device enrollment manager (DEM). iOS devices can be enrolled directly through the Device Enrollment Program (DEP) tools that are provided by Apple. Devices with an IMEI number can also be identified and tagged as corporate-owned.
@@ -104,7 +104,7 @@ Learn more about iOS DEP enrollment:
 - [Enroll iOS devices using Device Enrollment Program](https://docs.microsoft.com/intune/device-enrollment-program-enroll-ios)
 
 ### USB-SA
-IT admins use Apple Configurator, through USB, to prepare each corporate-owned device manually for enrollment using Setup Assistant. The IT admin creates an enrollment profile and exports it to Apple Configurator. When users receive their devices, they are then prompted to run Setup Assistant to enroll their device. This method supports **iOS supervised** mode, which in turn enables the following features:
+IT admins use Apple Configurator, through USB, to prepare each corporate-owned device manually for enrollment using Setup Assistant. The IT admin creates an enrollment profile and exports it to Apple Configurator. When users receive their devices, they're then prompted to run Setup Assistant to enroll their device. This method supports **iOS supervised** mode, which in turn enables the following features:
 - Locked enrollment
 - Kiosk mode and other advanced configurations and restrictions
 
@@ -114,7 +114,7 @@ Learn more about iOS Apple Configurator enrollment with Setup Assistant:
 - [Enroll iOS devices with Configurator and Setup Assistant](apple-configurator-setup-assistant-enroll-ios.md)
 
 ### USB-Direct
-For direct enrollment, the admin must enroll each device manually by creating an enrollment policy and exporting it to Apple Configurator. USB-connected, corporate-owned devices are enrolled directly and don't require a wipe. Devices are managed as user-less devices. They are not locked or supervised and cannot support Conditional Access, jailbreak detection, or mobile application management.
+For direct enrollment, the admin must enroll each device manually by creating an enrollment policy and exporting it to Apple Configurator. USB-connected, corporate-owned devices are enrolled directly and don't require a wipe. Devices are managed as user-less devices. They're not locked or supervised and can't support Conditional Access, jailbreak detection, or mobile application management.
 
 To learn more about iOS enrollment, see:
 
@@ -123,4 +123,4 @@ To learn more about iOS enrollment, see:
 
 ## Mobile device cleanup after MDM certificate expiration
 
-The MDM certificate is renewed automatically when mobile devices are communicating with the Intune service. If mobile devices are wiped, or they fail to communicate with the Intune service for some period of time, the MDM certificate is not renewed. The device is removed from the Azure portal 180 days after the MDM certificate expires.
+The MDM certificate is renewed automatically when mobile devices are communicating with the Intune service. If mobile devices are wiped, or they fail to communicate with the Intune service for some period of time, the MDM certificate isn't renewed. The device is removed from the Azure portal 180 days after the MDM certificate expires.

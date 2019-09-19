@@ -122,7 +122,7 @@ Check the [Tenant Status](tenant-status.md) and confirm the subscription is Acti
 ## Policy troubleshooting resources
 
 - [Troubleshooting iOS or Android policies not applying to devices](https://techcommunity.microsoft.com/t5/Intune-Customer-Success/Support-tip-Troubleshooting-iOS-or-Android-policies-not-applying/ba-p/280154) (opens another Microsoft site)
-- [Troubleshooting Windows 10 Intune policy failures](http://configmgrdogsarchive.com/2018/08/09/troubleshooting-windows-10-intune-policy-failures/) (opens a blog)
+- [Troubleshooting Windows 10 Intune policy failures](https://blogs.technet.microsoft.com/configmgrdogs/2018/08/09/troubleshooting-windows-10-intune-policy-failures/) (opens a blog)
 - [Troubleshoot CSP custom settings for Windows 10](https://support.microsoft.com/en-us/help/4055338/troubleshoot-csp-setting-windows-10-computer-intune) (opens another Microsoft site)
 - [Windows 10 Group Policy vs Intune MDM policy](https://blogs.technet.microsoft.com/cbernier/2018/04/02/windows-10-group-policy-vs-intune-mdm-policy-who-wins/) (opens another Microsoft site)
 

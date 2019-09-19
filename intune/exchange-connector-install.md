@@ -129,6 +129,9 @@ Perform the following steps to install the Intune on-premises Exchange connector
 
 6. In the **Password** field, provide the password for this account to enable Intune to access the Exchange Server.
 
+   > [!NOTE]
+   > For the connection to be successfull, the account that you use to sign in to the tenant needs to be at least Intune Service Administrator. Without it you will get a failed connection with error: "The remote server returned an error: (400) Bad Request".
+
 7. Choose **Connect**.
 
    > [!NOTE]

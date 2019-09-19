@@ -33,11 +33,12 @@ When you configure features on iOS devices, you can also add the built-in apps o
 
 | Bundle ID                   | App Name     | Publisher |
 |-----------------------------|--------------|-----------|
-| com.apple.AppStore          | App Store    | Apple     |
+| com.apple.store             | App Store    | Apple     |
 | com.apple.calculator        | Calculator   | Apple     |
 | com.apple.mobilecal         | Calendar     | Apple     |
 | com.apple.camera            | Camera       | Apple     |
 | com.apple.mobiletimer       | Clock        | Apple     |
+| com.apple.clips             | Clips        | Apple     |
 | com.apple.compass           | Compass      | Apple     |
 | com.apple.MobileAddressBook | Contacts     | Apple     |
 | com.apple.facetime          | FaceTime     | Apple     |
@@ -77,7 +78,7 @@ When you configure features on iOS devices, you can also add the built-in apps o
 | com.apple.VoiceMemos        | VoiceMemos   | Apple     |
 | com.apple.Passbook          | Wallet       | Apple     |
 | com.apple.Bridge            | Watch        | Apple     |
-| com.apple.weather           | Weather      | Apple     |
+| com.apple.weather           | Weather      | Apple     |      
 
 ## Next steps
 

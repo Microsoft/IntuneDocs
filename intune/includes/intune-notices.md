@@ -61,7 +61,7 @@ You do not need to take any action but can consider updating your IT pro guidanc
 #### Additional information 
 https://aka.ms/intune_fullscreen
 
-### Plan for Change: Intune moving to support iOS 11 and higher in September <!-- 4665342-->
+### Plan for Change: Intune moving to support iOS 11 and higher in September <!-- 4665324-->
 In September, we expect iOS 13 to be released by Apple. Intune enrollment, the Company Portal, and the Managed Browser will move to support iOS 11 and higher shortly after the iOS 13 release.
 
 #### How does this affect me?
@@ -71,7 +71,7 @@ Provided that O365 mobile apps are supported on iOS 11.0 and higher, this may no
 - iPhone 5c
 - iPad (4th Generation)
 
-Starting in July, MDM enrolled devices with iOS 10 and the Company Portal will receive a prompt to upgrade their OS or device. If you use Application Protection Policies (APP), you can also set the “Require minimum iOS operating system (Warning only)” access setting.
+If you use Application Protection Policies (APP), you can also set the “Require minimum iOS operating system (Warning only)” access setting.
 
 #### What do I need to do to prepare for this change?
 Check your Intune reporting to see what devices or users may be affected. Go to **Devices** > **All devices** and filter by OS. You can add in additional columns to help identify who in your organization has devices running iOS 10. Request that your end users upgrade their devices to a supported OS version before September.

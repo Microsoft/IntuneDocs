@@ -27,11 +27,6 @@ ms.collection: M365-identity-device-management
 
 # Configure eSIM cellular profiles in Intune - Public preview
 
-> [!NOTE]
-> Microsoft would like to hear from you. Send questions, or start a discussion by emailing `eSIMonIntune@microsoft.com`.
-
-## Introduction
-
 eSIM is an embedded SIM chip, and lets you connect to the Internet over a cellular data connection on an eSIM-capable device, such as the [Surface LTE Pro](https://www.microsoft.com/surface/business/surface-pro). With an eSIM, you don't need to get a SIM card from your mobile operator. As a global traveler, you can also switch between mobile operators and data plans to always stay connected.
 
 For example, you have a cellular data plan for work, and another data plan with a different mobile operator for personal use. When traveling, you can get Internet access by finding mobile operators with data plans in that area.

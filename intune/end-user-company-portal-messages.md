@@ -33,12 +33,15 @@ ms.collection: M365-identity-device-management
 [!INCLUDE [both-portals](./includes/note-for-both-portals.md)]
 
 > [!NOTE]
-> The following information applies only on devices with Android 6.0+.
+> The following information applies only on devices with Android 6.0+ and iOS 10+.
 
 Understand the different app messages that end users may see in the Company Portal. These app messages are commonly displayed at different points in the enrollment process. Learn where the messages appear, what the messages mean, and what happens if users deny access. Additionally, learn how to best explain the messages to users.
 
 - __Allow Company Portal to make and manage phone calls?__
 - __Allow Company Portal to access photos, media, and files on your device?__
+
+> [!NOTE]
+> We do not sell any data collected by our service to any third parties for any reason.
 
 ## Allow Company Portal to make and manage phone calls?
 

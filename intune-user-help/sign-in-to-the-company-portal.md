@@ -7,7 +7,7 @@ keywords:
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 04/19/2019
+ms.date: 09/18/2019
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -42,8 +42,7 @@ The following steps show screenshots from the Company Portal for iOS.
 
 1. Open the app on your device and tap **Sign In**.  
 
-   ![The Company Portal sign in page, with an icon of a person in front of a graphical representation of a website. Below that is the text "Get access to company resources and keep them secure," and the "Sign in" button. A link at the bottom leads to Microsoft Privacy and Cookies information.](/intune-user-help/media/cp_ios_aad_signin_after_1804_001.png)
-
+   [ ![Example screenshot of the Company Portal sign in page.](/intune-user-help/media/intune-ios-cp-signin-1908.png) ](/intune-user-help/media/intune-ios-cp-signin-lightbox-1908.png#lightbox)  
 
 
 2. Enter your **Work or school account** and tap **Next**.

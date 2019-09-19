@@ -20,7 +20,7 @@ ms.assetid: 7196b33e-d303-4415-ad0b-2ecdb14230fd
 #ROBOTS:
 #audience:
 #ms.devlang:
-ms.reviewer: damionw
+ms.reviewer: tisilver
 ms.suite: ems
 search.appverid: MET150
 #ms.tgt_pltfrm:
@@ -44,7 +44,7 @@ DEM user accounts and devices that are enrolled with a DEM user account have the
 - Devices can install VPP apps if they have Apple VPP device licenses.
 - Devices are blocked for Conditional Access with the exception of Windows 10 1803+
 - Every device enrolled with DEM accounts needs to be properly licensed to be managed by Intune. The license could be an Intune user license or an Intune device license.
-
+- If you're [enrolling Android Enterprise work profile devices](android-work-profile-enroll.md) by using a DEM account, there is a limit of 10 devices that can be enrolled per account.
 
 
 ## Add a device enrollment manager

@@ -7,7 +7,7 @@ keywords:
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 06/25/2019
+ms.date: 09/17/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -65,14 +65,15 @@ On Windows 10 devices, you can add **applicability rules** so the profile only a
 
 ## Exclude groups from a profile assignment
 
-Intune device configuration profiles let you exclude groups from policy assignment. For example, you can assign a device profile to the **All corporate users** group, but exclude members in the **Senior Management Staff** group.
+Intune device configuration profiles let you exclude groups from policy assignment.
 
-Intune doesn't look at user-to-device relationships. Including user groups while excluding device groups may not get the results you expect. Inclusion takes precedence over exclusion:
+Intune doesn't look at user-to-device group relationships. Including user groups while excluding device groups may not get the results you expect. In user group-to-user group and device group-to-device group scenarios, exclusion takes precedence over inclusion.
 
-- When using mixed groups
-- If there are other conflicts
+For example, you assign a device profile to the **All corporate users** user group, but exclude members in the **Senior Management Staff** user group. Since both groups are user groups, all members of the **Senior Management Staff** are excluded from the policy, even though they're members of the **All corporate users** include group.
 
-For example, you want to assign a device profile to all devices in your organization, except kiosk devices. You include the **All Users** group, but exclude the **All Devices** group. In this case, all your users and their devices get the policy, even if the user’s device is in the **All Devices** group.
+Inclusion takes precedence over exclusion when using mixed groups, such as user group-to-device group, or device group-to-user group.
+
+For example, you want to assign a device profile to all users in your organization, except kiosk devices. You include the **All Users** group, but exclude the **All Devices** group. In this case, all your users and their devices get the policy, even if the user’s device is in the **All Devices** group.
 
 Exclusion only looks at the direct members of the group. It doesn't include devices that are associated with a user. However, devices that don't have a user, don't get the policy. This behavior happens because devices without users have no relationship to the **All Users** group.
 

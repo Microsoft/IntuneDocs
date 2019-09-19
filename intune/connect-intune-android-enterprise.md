@@ -20,7 +20,7 @@ ms.assetid:
 #ROBOTS:
 #audience:
 #ms.devlang:
-ms.reviewer: chrisbal
+ms.reviewer: chmaguir
 ms.suite: ems
 search.appverid: MET150
 #ms.tgt_pltfrm:
@@ -64,7 +64,7 @@ To make it easier for you to configure and use Android Enterprise management, up
 
 ## Disconnect your Android Enterprise administrative account
 
-You can turn off Android Enterprise enrollment and management. To do this, you must first retire any enrolled Android Enterprise work profile devices. Then, choose **Disconnect** in the Intune administration console to remove all enrolled Android Enterprise work profile devices and dedicated devices from enrollment. This also removes the relationship between the Managed Google Play account and Intune.
+You can turn off Android Enterprise enrollment and management. To do this, you must first retire any enrolled Android Enterprise devices, including work profile devices, dedicated devices and fully managed devices. Then, choose **Disconnect** in the Intune administration console to remove all enrolled Android Enterprise work profile devices, dedicated devices and fully managed devices from enrollment. This also removes the relationship between the Managed Google Play account and Intune.
 
 1. As an Intune administrator, sign in to [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
 2. Choose **Device enrollment** > **Android enrollment** > **Managed Google Play** > **Disconnect**.
@@ -72,5 +72,5 @@ You can turn off Android Enterprise enrollment and management. To do this, you m
 
 ## Next steps
 
-After connecting to the Managed Google Play account, you can [set up Android Enterprise work profile devices](android-work-profile-enroll.md) and
-[set up Android Enterprise dedicated devices](android-kiosk-enroll.md).
+After connecting to the Managed Google Play account, you can [set up Android Enterprise work profile devices](android-work-profile-enroll.md), 
+[set up Android Enterprise dedicated devices](android-kiosk-enroll.md) and [set up Android Enterprise fully managed devices](android-kiosk-enroll.md)

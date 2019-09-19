@@ -42,13 +42,13 @@ You need the following to configure Conditional Access with Jamf Pro:
 - [Company Portal app for macOS](https://aka.ms/macoscompanyportal)
 - macOS devices with OS X 10.11 Yosemite or later
 
-## Connecting Intune to Jamf Pro
+## Connect Intune to Jamf Pro
 
-To connect Intune with Jamf Pro you:
+To connect Intune with Jamf Pro:
 
-1. Create a new application in Azure
-2. Enable Intune to integrate with Jamf Pro
-3. Configure Conditional Access in Jamf Pro
+1. Create a new application in Azure.
+2. Enable Intune to integrate with Jamf Pro.
+3. Configure Conditional Access in Jamf Pro.
 
 ## Create an application in Azure Active Directory
 
@@ -59,7 +59,7 @@ To connect Intune with Jamf Pro you:
    - For the **Supported account types** section, select **Accounts in any organizational directory**. 
    - For **Redirect URI**, leave the default of Web, and then specify the URL for your Jamf Pro instance.  
 
-3. Select **Register** to create the application and to open the Overview page for the new app.  
+3. Select **Register** to create the application and to open the **Overview** page for the new app.  
 
 4. On the app **Overview** page, copy the **Application (client) ID** value and record it for later use. You'll need this value in later procedures.  
 
@@ -68,13 +68,13 @@ To connect Intune with Jamf Pro you:
    > [!IMPORTANT]  
    > Before you leave this page, copy the value for the client secret and record it for later use. You will need this value in later procedures. This value isn’t available again, without recreating the app registration.  
 
-6. Select **API permissions** under Manage.  Select the existing permissions and then select **Remove permission** to delete those permissions. Removal of all existing permissions is necessary as you’ll add a new permission, and the application only works if it has the single required permission.  
+6. Select **API permissions** under **Manage**. Select the existing permissions and then select **Remove permission** to delete those permissions. Removal of all existing permissions is necessary as you’ll add a new permission, and the application only works if it has the single required permission.  
 
-7. To assign a new permission, select **Add a permission**. On the **Request API permissions** page, select **Intune**, and then select **Application permissions**. Select only the checkbox for **update_device_attributes**.  
+7. To assign a new permission, select **Add a permission**. On the **Request API permissions** page, select **Intune**, and then select **Application permissions**. Select only the check box for **update_device_attributes**.  
 
    Select **Add permission** to save this configuration.  
 
-8. On the **API permissions** page, select **Grant admin consent for Microsoft**, and then select Yes.  
+8. On the **API permissions** page, select **Grant admin consent for Microsoft**, and then select **Yes**.  
 
    The app registration process in Azure AD is complete.
 
@@ -92,9 +92,9 @@ To connect Intune with Jamf Pro you:
 
 ## Configure Microsoft Intune Integration in Jamf Pro
 
-1. In Jamf Pro, navigate to **Global Management** > **Conditional Access**. Click the **Edit** button on the **Microsoft Intune Integration** tab.
+1. In Jamf Pro, navigate to **Global Management** > **Conditional Access**. Click the **Edit** button on the **macOS Intune Integration** tab.
 
-2. Select the checkbox for **Enable Microsoft Intune Integration**.
+2. Select the check box for **Enable Intune Integration for macOS**.
 
 3. Provide the required information about your Azure tenant, including **Location**, **Domain name**, the **Application ID**, and the value for the *client secret* that you saved when you created the app in Azure AD.  
 
@@ -104,7 +104,17 @@ To connect Intune with Jamf Pro you:
 
 After you configure integration between Intune and Jamf, you need to [apply compliance policies to Jamf-managed devices](conditional-access-assign-jamf.md).
 
+## Disconnect Jamf Pro and Intune 
 
+If you no longer use Jamf Pro to manage Macs in your organization and want users to be managed by Intune, you must remove the connection between Jamf Pro and Intune. Remove the connection by using the Jamf Pro console. 
+
+1. In Jamf Pro, go to **Global Management** > **Conditional Access**. On the **macOS Intune Integration** tab, select **Edit**.
+2. Clear the **Enable Intune Integration for macOS** check box.
+3. Select **Save**. Jamf Pro sends your configuration to Intune and the integration will be terminated.
+4. Sign in to [Intune](https://go.microsoft.com/fwlink/?linkid=2090973). Go to **Microsoft Intune** > **Device Compliance** > **Partner device management** to verify that the status is now **Terminated**. 
+
+   > [!NOTE]
+   > Your organization's Mac devices will be removed at the date (3 months) shown in your console. 
 
 ## Next steps
 

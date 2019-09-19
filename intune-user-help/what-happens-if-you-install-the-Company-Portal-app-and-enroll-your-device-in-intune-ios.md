@@ -8,7 +8,7 @@ author: lenewsad
 
 ms.author: lanewsad
 manager: dougeby
-ms.date: 11/06/2017
+ms.date: 09/12/2019
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -42,7 +42,10 @@ When you install the Company Portal app and enroll your iOS device in Intune, yo
 
 - Automatically set up your company email account.
 
-When you enroll your device in Intune, you are giving your company support permission to manage your device to help protect the company information on the device.
+> [!NOTE]
+> We do not sell any data collected by our service to any third parties for any reason.  
+
+When you enroll your device in Intune, you are giving your company support permission to manage your device to help protect the company information on the device.  
 
 When your device is enrolled, your company support can:
 
@@ -69,5 +72,7 @@ When your device is enrolled, your company support can:
 - Enable or disable voice roaming on your device. If voice roaming is allowed, you might incur roaming charges.
 
 - Enable or disable automatic file synchronization while in roaming mode on your device. If automatic file synchronization is allowed, you might incur roaming charges.
+
+
 
 If you have questions, contact your company support. For contact information, check the [Company Portal website](https://go.microsoft.com/fwlink/?linkid=2010980).

@@ -7,7 +7,7 @@ keywords:
 author: ErikjeMS  
 ms.author: erikje
 manager: dougeby
-ms.date: 08/27/2019
+ms.date: 09/16/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -56,6 +56,44 @@ Learn what’s new each week in Microsoft Intune. You can also find [important n
 -->  
 
 <!-- ########################## -->
+
+## Week of September 16, 2019
+
+### App management
+
+#### macOS support for web apps <!-- 3174427 -->
+Web apps, which allow you to add a shortcut to a URL on the web, can be installed to the Dock using the macOS Company Portal. End-users can access the **Install** action from the app details page for a web app in the macOS Company Portal. For more information about the **Web link** app type, see [Add apps to Microsoft Intune](apps-add.md) and [Add web apps to Microsoft Intune](web-app.md).
+
+#### macOS support for VPP apps <!-- 3173501  -->
+macOS apps, purchased using Apple Business Manager, are displayed in the console when Apple VPP tokens are synced in Intune. You can assign, revoke and reassign device and user-based licenses for groups using the Intune console. Microsoft Intune helps you manage VPP apps purchased for use at your company by:
+- Reporting license information from the app store.
+- Tracking how many of the licenses you have used.
+- Helping you not install more copies of the app than you own.
+
+For more information about Intune and VPP, see [Manage volume-purchased apps and books with Microsoft Intune](vpp-apps.md).
+
+## Week of September 9, 2019
+
+### App management
+
+#### Updates to Microsoft Intune app <!-- 4997846 -->
+The Microsoft Intune app for Android has been updated with the following improvements:
+- Updated and improved the layout to include bottom navigation for the most important actions.
+- Added an additional page that shows the user's profile.
+- Added the display of actionable notifications in the app for the user, such as the need to update their device settings.
+- Added the display of custom push notifications, aligning the app with the support recently added in the Company Portal app for iOS and Android. For more information, see [Send custom notifications in Intune](custom-notifications.md).
+
+#### For iOS devices, customize the enrollment process privacy screen of the Company Portal <!-- 4394993 -->
+Using Markdown, you can customize the Company Portal's privacy screen that end users see during iOS enrollment. Specifically, you'll be able to customize the list of things that your organization can't see or do on the device. For more information, see [How to configure the Intune Company Portal app](company-portal-app.md#privacy-statement-customization).
+
+
+## Week of September 2, 2019
+
+### Monitor and troubleshoot
+
+#### Intune user interface update – Tenant Status dashboard  <!-- 5273210  -->
+The user interface for the Tenant Status dashboard has been updated to align with Azure user interface styles. For more information, see  [Tenant status](tenant-status.md).
+
 
 ## Week of August 26, 2019
 
@@ -188,7 +226,7 @@ In Intune, you can create policies to use Windows Defender Antivirus to scan you
 
 In this update, this behavior is fixed. So, the **Time to perform a daily quick scan** and **Type of system scan to perform** settings shows a success status when the scans complete successfully, and show a failed status when the settings fail to apply. 
 
-For more information on the Windows Defender Antivirus settings, see [Windows 10 (and newer) device settings to allow or restrict features using Intune](device-restrictions-windows-10.md#windows-defender-antivirus). 
+For more information on the Windows Defender Antivirus settings, see [Windows 10 (and newer) device settings to allow or restrict features using Intune](device-restrictions-windows-10.md#microsoft-defender-antivirus). 
 
 ### Device enrollment
 
@@ -212,8 +250,7 @@ You can set Device Enrollment Program profiles to skip the following Setup Assis
 For more information about Setup Assistant customization, see [Create an Apple enrollment profile for iOS ](device-enrollment-program-enroll-ios.md#create-an-apple-enrollment-profile) and [Create an Apple enrollment profile for macOS ](device-enrollment-program-enroll-macos.md#create-an-apple-enrollment-profile).
 
 #### Add a user column to the Autopilot device CSV upload process <!-- 3823054 -->
-You can now add a user column to the CSV upload for Autopilot devices. This lets you bulk assign users at the time you import the CSV. The new format for the rows in the CSV looks like this:
-serial-number, windows-product-id, hardware-hash, optional-group-tag, optional-assigned-user. For more information, see [Enroll Windows devices in Intune by using the Windows Autopilot](enrollment-autopilot.md).
+You can now add a user column to the CSV upload for Autopilot devices. This lets you bulk assign users at the time you import the CSV. For more information, see [Enroll Windows devices in Intune by using the Windows Autopilot](enrollment-autopilot.md).
 
 
 ### Device management

@@ -32,7 +32,7 @@ ms.collection: M365-identity-device-management
 
 App configuration policies can help you eliminate app setup up problems by letting you assign configuration settings to a policy that is assigned to end-users before they run the app. The settings are then supplied automatically when the app is configured on the end-users device, and end-users don't need to take action. The configuration settings are unique for each app. 
 
-You can create and use app configuration policies to provide configuration settings for both iOS or Android apps. These configuration settings allow an app to be customized by using an [industry standard approach](https://www.appconfig.org/) to app configuration and management. The configuration policy settings are used when the app checks for these settings, typically the first time the app is run. 
+You can create and use app configuration policies to provide configuration settings for both iOS or Android apps. These configuration settings allow an app to be customized by using app configuration and management. The configuration policy settings are used when the app checks for these settings, typically the first time the app is run. 
 
 An app configuration setting, for example, might require you to specify any of the following details:
 
@@ -64,7 +64,7 @@ You have two options to use app configuration policies with Intune:
 ## Apps that support app configuration
 
 ### Managed devices
-You can use app configuration policies for apps that support it. To support app configuration in Intune, apps must be written to support the use of app configurations as defined by the [AppConfig Community](https://www.appconfig.org/members). Consult your app vendor for details.
+You can use app configuration policies for apps that support it. To support app configuration in Intune, apps must be written to support the use of app configurations as defined by the OS. Consult your app vendor for details for which app config keys they support.
 
 ### Managed apps
 You can prepare your line-of-business apps by either incorporating the [Intune App SDK](app-sdk.md) into the app, or wrapping the app after it is developed using the [Intune App Wrapping Tool](apps-prepare-mobile-application-management.md). The Intune App SDK strives to minimize the amount of code changes required from the app developer. For more information, see the [Intune App SDK overview](app-sdk.md). For a comparison between the Intune App SDK and the Intune App Wrapping Tool, see [Prepare line-of-business apps for app protection policies](apps-prepare-mobile-application-management.md#feature-comparison).

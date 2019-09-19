@@ -8,7 +8,7 @@ keywords:
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 08/09/2019
+ms.date: 08/22/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -54,6 +54,9 @@ The company name is displayed as the Company Portal title. The privacy statement
 |---|---|---|
 |**Company name**| 40 | This name is displayed as the title of the Company Portal and appears as text throughout the Intune user experience. |
 | **Privacy statement URL** |     79     | You can specify your own company privacy statement that appears when users click the privacy links from the Company Portal. You must enter a valid URL in the format `<https://www.contoso.com>`. |
+
+> [!NOTE]
+> Consistent with Microsoft and Apple policy, we do not sell any data collected by our service to any third parties for any reason.
 
 ## Support information
 Enter your company's support information to provide your employee with a contact for Intune-related questions.
@@ -119,6 +122,15 @@ The following image shows an example iPad branding image:
 The following image shows an example iPhone branding image:
 
 ![Screenshot of example iPad branding image](media/company-portal-app/company-portal-app-02.png)
+
+## Privacy statement customization
+
+You can customize the privacy statement that appears for your organization on managed iOS devices. This message lists the items that your organization can't see or do on managed iOS devices.
+
+Under **Company Portal customization** > **Device management and privacy message**, you can:
+
+- Accept the **Default** to use the list as shown, or
+- Choose **Custom** to customize the the list of items that your organization can’t see or do on managed iOS devices. You can use [markdown](https://daringfireball.net/projects/markdown/) to add bullets, bolding, italics, and links.
 
 ## Windows Company Portal keyboard shortcuts
 

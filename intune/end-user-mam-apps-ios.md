@@ -31,7 +31,7 @@ ms.collection: M365-identity-device-management
 
 [!INCLUDE [both-portals](./includes/note-for-both-portals.md)]
 
- This topic describes the user experience when using apps with app protection policies applied to. App protection policies are applied only when apps are used in the work context; for example, when the user is accessing apps with a work account or accessing files that are stored in a company OneDrive for business location.
+ This topic describes the user experience when using apps that have app protection policies applied. App protection policies are applied only when apps are used in the work context; for example, when the user is accessing apps with a work account or accessing files that are stored in a company OneDrive for business location.
 
 ## Access apps
 

@@ -49,7 +49,7 @@ If after enrollment your organization enforces a new security requirement, such 
 To learn more about enrollment, see [What happens when I install the Company Portal app and enroll my device?](what-happens-if-you-install-the-Company-Portal-app-and-enroll-your-device-in-intune-macos.md).  
 
 ## Get your device managed  
-Use the following steps to enroll macOS devices running OS X El Capitan 10.11 and later.   
+Use the following steps to enroll macOS devices running macOS 10.12 and later.   
 
 
 1. To access the Company Portal website, open a new window in __Safari__, and go to https://portal.manage.microsoft.com.  

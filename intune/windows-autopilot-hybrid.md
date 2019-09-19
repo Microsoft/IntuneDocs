@@ -20,7 +20,7 @@ ms.assetid: 8518d8fa-a0de-449d-89b6-8a33fad7b3eb
 #ROBOTS:
 #audience:
 #ms.devlang:
-ms.reviewer: damionw
+ms.reviewer: priyar
 ms.suite: ems
 search.appverid: MET150
 #ms.tgt_pltfrm:
@@ -111,14 +111,14 @@ The organizational unit that's granted the rights to create computers must match
 
 The Intune Connector for Active Directory must be installed on a computer that's running Windows Server 2016 or later. The computer must also have access to the internet and your Active Directory. To increase scale and availability or to support multiple Active Directory domains, you can install multiple connectors in your environment. We recommend installing the Connector on a server that's not running any other Intune connectors.
 
-1. In [Intune](https://aka.ms/intuneportal), select **Device enrollment** > **Windows enrollment** > **Intune Connector for Active Directory (Preview)** > **Add connector**. 
+1. In [Intune](https://aka.ms/intuneportal), select **Device enrollment** > **Windows enrollment** > **Intune Connector for Active Directory** > **Add**. 
 2. Follow the instructions to download the Connector.
 3. Open the downloaded Connector setup file, *ODJConnectorBootstrapper.exe*, to install the Connector.
 4. At the end of the setup, select **Configure**.
 5. Select **Sign In**.
 6. Enter the user Global Administrator or Intune Administrator role credentials.  
    The user account must have an assigned Intune license.
-7. Go to **Device enrollment** > **Windows enrollment** > **Intune Connector for Active Directory (Preview)**, and then confirm that the connection status is **Active**.
+7. Go to **Device enrollment** > **Windows enrollment** > **Intune Connector for Active Directory**, and then confirm that the connection status is **Active**.
 
 > [!NOTE]
 > After you sign in to the Connector, it might take a couple of minutes to appear in [Intune](https://aka.ms/intuneportal). It appears only if it can successfully communicate with the Intune service.
@@ -188,14 +188,17 @@ After your Autopilot devices are enrolled, their names become the hostname of th
 Autopilot deployment profiles are used to configure the Autopilot devices.
 
 1. In [Intune](https://aka.ms/intuneportal), select **Device enrollment** > **Windows enrollment** > **Deployment Profiles** > **Create Profile**.
-1. Type a **Name** and, optionally, a **Description**.
-1. For **Deployment mode**, select **User-driven**.
-1. In the **Join to Azure AD as** box, select **Hybrid Azure AD joined (Preview)**.
-1. Select **Out-of-box experience (OOBE)**, configure the options as needed, and then select **Save**.
-1. Select **Create** to create the profile. 
-1. In the profile pane, select **Assignments**.
-1. Select **Select groups**.
-1. In the **Select groups** pane, select the device group, and then click **Select**.
+2. On the **Basics** page, type a **Name** and optional **Description**.
+3. If you want all devices in the assigned groups to automatically convert to Autopilot, set **Convert all targeted devices to Autopilot** to **Yes**. All non-Autopilot devices in assigned groups will register with the Autopilot deployment service. Allow 48 hours for the registration to be processed. When the device is unenrolled and reset, Autopilot will enroll it. After a device is registered in this way, disabling this option or removing the profile assignment won't remove the device from the Autopilot deployment service. You must instead [remove the device directly](enrollment-autopilot.md#delete-autopilot-devices).
+4. Select **Next**.
+5. On the **Out-of-box experience (OOBE)** page, for **Deployment mode**, select **User-driven**.
+6. In the **Join to Azure AD as** box, select **Hybrid Azure AD joined**.
+7. Configure the remaining options on the **Out-of-box experience (OOBE)** page as needed.
+8. Select **Next**.
+9. On the **Scope tags** page, select [scope tags](scope-tags.md) for this this profile.
+10. Select **Next**.
+11. On the **Assignments** page, select **Select groups to include** > search for and select the device group > **Select**.
+12. Select **Next** > **Create**.
 
 It takes about 15 minutes for the device profile status to change from *Not assigned* to *Assigning* and, finally, to *Assigned*.
 

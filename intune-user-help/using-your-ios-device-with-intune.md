@@ -33,13 +33,14 @@ This article lists tasks and information specific to the Company Portal for iOS.
 
 ## Supported versions
 
-The Company Portal for iOS currently supports iOS 10.0 and later.
+The Company Portal for iOS currently supports iOS 10.0 and later.  
+
 
 ## Enrolling into Intune and installing the Company Portal
 
 - [Install and sign in to the Intune Company Portal app](install-and-sign-in-to-the-intune-company-portal-app-ios.md)
 - [Enroll your iOS device in Intune](enroll-your-device-in-intune-ios.md)
-- [What happens if you install the Company Portal app and enroll your device in Intune?](what-happens-if-you-install-the-Company-Portal-app-and-enroll-your-device-in-intune-ios.md)
+- [What happens if you install the Company Portal app and enroll your device in Intune?](what-happens-if-you-install-the-Company-Portal-app-and-enroll-your-device-in-intune-ios.md)  
 
 ## Things you can do when your device is enrolled in Intune
 

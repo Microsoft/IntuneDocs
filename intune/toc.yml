@@ -14,7 +14,7 @@
     - name: What's new in the app UI
       href: whats-new-app-ui.md
     - name: Features in development
-      href: in-development.md
+      href: in-development.md   
 - name: Quickstarts
   items:
   - name: Try Intune for free
@@ -519,6 +519,8 @@
       - name: PKCS
         href: certficates-pfx-configure.md
         displayName: ksp
+      - name: Imported PKCS
+        href: certificates-imported-pfx-configure.md
       - name: Use S/MIME to encrypt email
         href: certificates-s-mime-encryption-sign.md
       - name: Use third-party certificate authority with SCEP
@@ -546,10 +548,11 @@
     - name: What is Intune app management?
       href: app-management.md    
       displayName: mam-we
-    - name: Add apps overview
-      href: apps-add.md
-      displayName: apk; ipa; msi; appx; appxbundle; msix; msixbundle; app
+    - name: Add apps 
       items:
+      - name: Add apps overview
+        href: apps-add.md
+        displayName: apk; ipa; msi; appx; appxbundle; msix; msixbundle; app      
       - name: Intune protected apps
         href: apps-supported-intune-apps.md      
       - name: Store apps
@@ -561,9 +564,10 @@
         - name: Windows Phone 8.1 store apps
           href: store-apps-windows-phone-8-1.md
         - name: Microsoft Store apps
-          href: store-apps-windows.md
           items:
-          - name: Manually add Company Portal app
+          - name: Windows apps
+            href: store-apps-windows.md
+          - name: Company Portal app
             href: store-apps-company-portal-app.md
         - name: Managed Google Play apps
           href: apps-add-android-for-work.md
@@ -571,10 +575,13 @@
           href: apps-add-office365.md
         - name: Office 365 apps for macOS
           href: apps-add-office365-macos.md
+      - name: Web apps
+        href: web-app.md
+        displayName: web; web link; weblink; web-link
+      - name: Built-in apps
+        href: apps-add-built-in.md     
       - name: Build your app (LOB)
         items:
-        - name: Win32 app management
-          href: apps-win32-app-management.md
         - name: Android LOB apps
           href: lob-apps-android.md
         - name: iOS LOB apps
@@ -587,11 +594,8 @@
           href: app-sideload-windows.md          
         - name: macOS LOB apps
           href: lob-apps-macos.md          
-      - name: Web apps
-        href: web-app.md
-        displayName: web; web link; weblink; web-link
-      - name: Built-in apps
-        href: apps-add-built-in.md      
+      - name: Win32 app management
+        href: apps-win32-app-management.md
       - name: PowerShell scripts
         href: intune-management-extension.md          
     - name: Assign apps
@@ -742,8 +746,10 @@
         href: troubleshoot-certificate-connector-events.md
       - name: Troubleshoot Exchange connectors
         href: troubleshoot-exchange-connector.md
+    - name: Using the Intune docs
+      href: use-docs.md 
     - name: Get support
-      href: get-support.md      
+      href: get-support.md  
 - name: Reference
   items:
   - name: Settings lists
@@ -849,7 +855,7 @@
           href: vpn-settings-windows-10.md
         - name: Wi-Fi
           href: wi-fi-settings-windows.md
-        - name: Education
+        - name: Secure assessment
           href: education-settings-windows.md
         - name: Shared multi-user device
           href: shared-user-device-settings-windows.md
@@ -857,8 +863,8 @@
           href: custom-settings-windows-10.md
       - name: Security baselines
         items: 
-        - name: Windows 10 baseline settings
-          href: security-baseline-settings-mdm.md
+        - name: Windows 10 MDM baseline settings
+          href: security-baseline-settings-mdm-all.md
         - name: Microsoft Defender ATP baseline settings 
           href: security-baseline-settings-defender-atp.md
       - name: Windows update settings
@@ -1047,10 +1053,6 @@
         href: troubleshoot-software-updates-in-microsoft-intune.md
       - name: Endpoint protection common errors 
         href: troubleshoot-endpoint-protection-in-microsoft-intune.md
-    - name: Security baselines archive
-      items:  
-      - name: Archived MDM security baselines  
-        href: security-baseline-settings-mdm-archive.md
   - name: Scenario implementation guides 
     items:
     - name: Protect Exchange Online

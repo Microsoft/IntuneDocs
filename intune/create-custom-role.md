@@ -19,7 +19,7 @@ ms.assetid:
 #ROBOTS:
 #audience:
 #ms.devlang:
-ms.reviewer: 
+ms.reviewer: pjain
 ms.suite: ems
 search.appverid: MET150
 #ms.tgt_pltfrm:
@@ -46,7 +46,7 @@ To create, edit, or assign roles, your account must have one of the following pe
 
 4. On the **Add Custom Role** blade, enter a name and description for the new role, then click **Permissions**.
 
-5. On the **Permissions** blade, choose the permissions you want to use with this role. Use the [Intune RBAC table](https://gallery.technet.microsoft.com/Intune-RBAC-table-2e3c9a1a) to help you decide which permissions you want to apply.
+5. On the **Permissions** blade, choose the permissions you want to use with this role.
 
 6. On the **Scope (Tags)** blade, choose the tags for this role. This role can access resources that also have these tags.
 

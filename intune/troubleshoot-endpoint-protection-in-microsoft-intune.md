@@ -7,7 +7,7 @@ keywords:
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 05/29/2019
+ms.date: 08/26/2019
 ms.topic: troubleshooting
 ms.service: microsoft-intune
 ms.localizationpriority: medium
@@ -63,20 +63,20 @@ You may get a message that some features are disabled. These messages can happen
 **Possible solutions**: Enable these features. For guidance, see:
 
 - [Add endpoint protection settings](endpoint-protection-configure.md)
-- [Windows Defender Antivirus](device-restrictions-windows-10.md#windows-defender-antivirus)
+- [Windows Defender Antivirus](device-restrictions-windows-10.md#microsoft-defender-antivirus)
 - [End users: Turn on real-time protection to access company resources](/intune-user-help/turn-on-defender-windows)
 
 ### Malware definitions out of date
 
 This status shows when the malware definitions on the device are out of date by 14 days or more. For example, the message may show if the device is disconnected from the Internet, or the malware definitions are outdated.
 
-**Possible solutions**: If malware definitions are out of date, update the definitions using [Windows Defender Antivirus](device-restrictions-windows-10.md#windows-defender-antivirus).
+**Possible solutions**: If malware definitions are out of date, update the definitions using [Windows Defender Antivirus](device-restrictions-windows-10.md#microsoft-defender-antivirus).
 
 ### Full scan overdue or Quick scan overdue
 
 A full scan or quick scan hasn't completed for 14 days. This scenario can happen if the device restarts during a full scan.
 
-**Possible solutions**: If a scan is overdue, you can run a one-time scan or schedule recurring scans. See [Windows Defender Antivirus](device-restrictions-windows-10.md#windows-defender-antivirus).
+**Possible solutions**: If a scan is overdue, you can run a one-time scan or schedule recurring scans. See [Windows Defender Antivirus](device-restrictions-windows-10.md#microsoft-defender-antivirus).
 
 ### Another endpoint protection application running
 

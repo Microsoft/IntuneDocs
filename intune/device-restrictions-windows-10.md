@@ -7,7 +7,7 @@ keywords:
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 08/13/2019
+ms.date: 08/29/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.localizationpriority: medium
@@ -27,7 +27,7 @@ ms.collection: M365-identity-device-management
 
 # Windows 10 (and newer) device settings to allow or restrict features using Intune
 
-This article lists and describes all the different settings you can control on Windows 10 and newer devices. As part of your mobile device management (MDM) solution, use these settings to allow or disable features, set password rules, customize the lock screen, use Windows Defender, and more.
+This article lists and describes all the different settings you can control on Windows 10 and newer devices. As part of your mobile device management (MDM) solution, use these settings to allow or disable features, set password rules, customize the lock screen, use Microsoft Defender, and more.
 
 These settings are added to a device configuration profile in Intune, and then assigned or deployed to your Windows 10 devices.
 
@@ -83,8 +83,6 @@ These settings use the [ApplicationManagement policy CSP](https://docs.microsoft
 
   [ApplicationManagement/LaunchAppAfterLogOn CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-applicationmanagement#applicationmanagement-launchappafterlogon)
 
-Select **OK** to save your changes.
-
 ## Cellular and Connectivity
 
 These settings use the [connectivity policy](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-connectivity) and [Wi-Fi policy](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-wifi) CSPs, which also list the supported Windows editions.
@@ -118,8 +116,6 @@ These settings use the [Bluetooth policy CSP](https://docs.microsoft.com/windows
 
   [ServicesAllowedList usage guide](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-bluetooth#servicesallowedlist-usage-guide) has more information on the service list.
 
-Select **OK** to save your changes.
-
 ## Cloud and Storage
 
 These settings use the [accounts policy CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-accounts); which also lists the supported Windows editions.
@@ -128,8 +124,6 @@ These settings use the [accounts policy CSP](https://docs.microsoft.com/windows/
 - **Non-Microsoft account**: **Block** prevents end users from adding non-Microsoft accounts using the user interface. **Not configured** (default) allows users to add email accounts that aren't associated with a Microsoft account.
 - **Settings synchronization for Microsoft account**: **Not configured** (default) allows device and app settings associated with a Microsoft account to synchronize between devices. **Block** prevents this synchronization.
 - **Microsoft Account sign-in assistant**: When set to **Not configured** (default), end users can start and stop the **Microsoft Account Sign-In Assistant** (wlidsvc) service. This operating system service allows users to sign in to their Microsoft account. **Disable** prevents end users from controlling the Microsoft Sign-in Assistant service (wlidsvc).
-
-Select **OK** to save your changes.
 
 ## Cloud Printer
 
@@ -144,8 +138,6 @@ These settings use the [EnterpriseCloudPrint policy CSP](https://docs.microsoft.
 
 > [!TIP]
 > After you setup a [Windows Server Hybrid Cloud Print](https://docs.microsoft.com/windows-server/administration/hybrid-cloud-print/hybrid-cloud-print-overview), you can configure these settings, and then deploy to your Windows devices.
-
-Select **OK** to save your changes.
 
 ## Control Panel and Settings
 
@@ -169,8 +161,6 @@ Select **OK** to save your changes.
   - **Privacy**: **Block** prevents access to the Privacy area of the Settings app on the device. **Not configured** (default) allows access.
   - **Update and Security**: **Block** prevents access to the Update & Security area of the Settings app on the device. **Not configured** (default) allows access.
 
-Select **OK** to save your changes.
-
 ## Display
 
 These settings use the [display policy CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-display); which also lists the supported Windows editions.
@@ -186,8 +176,6 @@ GDI DPI scaling enables applications that aren't DPI aware to become per monitor
   GDI DPI scaling is turned off for all legacy applications in your list.
 
 You can also **Import** a .csv file with the list of apps.
-
-Select **OK** to save your changes.
 
 ## General
 
@@ -234,8 +222,6 @@ These settings use the [experience policy CSP](https://docs.microsoft.com/window
 
 - **End processes from Task Manager**: This setting determines whether non-administrators can use Task Manager to end tasks. **Block** prevents standard users (non-administrators) from using Task Manager to end a process or task on the device. **Not configured** (default) allows standard users to end a process or task using Task Manager.
 
-Select **OK** to save your changes.
-
 ## Locked screen experience
 
 - **Action center notifications (mobile only)**: **Block** prevents Action Center notifications from showing on the device lock screen. **Not configured** (default) allows users to choose which apps show notifications on the lock screen.
@@ -259,8 +245,6 @@ Select **OK** to save your changes.
 
   [DeviceLock/ScreenTimeoutWhileLocked CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-devicelock#devicelock-screentimeoutwhilelocked)
 
-Select **OK** to save your changes.
-
 ## Messaging
 
 These settings use the [messaging policy CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-messaging); which also lists the supported Windows editions.
@@ -268,8 +252,6 @@ These settings use the [messaging policy CSP](https://docs.microsoft.com/windows
 - **Message sync (mobile only)**: **Block** disables text messages from being backed up and restored, and from syncing messages between Windows devices. Disabling helps avoid information being stored on servers outside of the organization's control. **Not configured** (default) allows users to change these settings, and sync their messages.
 - **MMS (mobile only)**: **Block** disables MMS send and receive functionality on the device. For enterprises, use this policy to disable MMS on devices as part of the auditing or management requirement. **Not configured** (default) allows MMS send and receive.
 - **RCS (mobile only)**: **Block** disables Rich Communication Services (RCS) send and receive functionality on the device. For enterprises, use this policy to disable RCS on devices as part of the auditing or management requirement. **Not configured** (default) allows RCS send and receive.
-
-Select **OK** to save your changes.
 
 ## Microsoft Edge Browser
 
@@ -331,7 +313,7 @@ This device restrictions profile is directly related to the kiosk profile you cr
 - **Message when opening sites in Internet Explorer**: Use this setting to configure Microsoft Edge to show a notification before a site opens in Internet Explorer 11. Your options:
   - **Don't show message**: The OS default behavior is used, which may not show a message.
   - **Show message that site is opened in Internet Explorer 11**: Show the message when opening sites in IE. Sites open in IE. 
-  - **Show message with option to open sites in Microsoft Edge**: Show the message when opening sites in Edge. The message includes a **Keep going in Microsoft Edge** link so users can choose Microsoft Edge instead of IE.
+  - **Show message with option to open sites in Microsoft Edge**: Show the message when opening sites in Microsoft Edge. The message includes a **Keep going in Microsoft Edge** link so users can choose Microsoft Edge instead of IE.
 
   > [!IMPORTANT]
   > This setting requires you to use the **Enterprise mode site list location** setting, the **Send intranet traffic to Internet Explorer** setting, or both settings.
@@ -339,8 +321,6 @@ This device restrictions profile is directly related to the kiosk profile you cr
 - **Allow Microsoft compatibility list**: **Yes** (default) allows using a Microsoft compatibility list. **No** prevents the Microsoft compatibility list in Microsoft Edge. This list from Microsoft helps Microsoft Edge properly display sites with known compatibility issues.
 - **Preload start pages and New Tab page**: **Yes** (default) uses the OS default behavior, which may be to preload these pages. Preloading minimizes the time to start Microsoft Edge, and load new tabs. **No** prevents Microsoft Edge from preloading start pages and the new tab page.
 - **Prelaunch Start pages and New Tab page**: **Yes** (default) uses the OS default behavior, which may be to prelaunch these pages. Pre-launching helps the performance of Microsoft Edge, and minimizes the time required to start Microsoft Edge. **No** prevents Microsoft Edge from pre-launching the start pages and new tab page.
-
-Select **OK** to save your changes.
 
 ### Favorites and search
 
@@ -361,8 +341,6 @@ Select **OK** to save your changes.
 - **Allow changes to search engine**: **Yes** (default) allows users to add new search engines, or change the default search engine in Microsoft Edge. Choose **No** to prevent users from customizing the search engine.
 
   This setting is only available when running in [Normal mode (multi-app kiosk)](#use-microsoft-edge-kiosk-mode).
-
-Select **OK** to save your changes.
 
 ### Privacy and security
 
@@ -387,8 +365,6 @@ When "block and enable user override" is selected, user can override admin desig
 - **Allow live tile data collection**: **Yes** (default) allows Microsoft Edge to collect information from Live Tiles pinned to the start menu. **No** prevents collecting this information, which may provide users with a limited experience.
 - **User can override certificate errors**: **Yes** (default) allows users to access websites that have Secure Sockets Layer/Transport Layer Security (SSL/TLS) errors. **No** (recommended for increased security) prevents users from accessing websites with SSL or TLS errors.
 
-Select **OK** to save your changes.
-
 ### Additional
 
 - **Allow Microsoft Edge browser** (mobile only): **Yes** (default) allows using the Microsoft Edge web browser on the mobile device. **No** prevents using Microsoft Edge on the device. If you choose **No**, the other individual settings only apply to desktop.
@@ -405,8 +381,6 @@ Select **OK** to save your changes.
 
   You can also **Import** a CSV file that includes the package family names. Or, **Export** the package family names you enter.
 
-Select **OK** to save your changes.
-
 ## Network proxy
 
 These settings use the [NetworkProxy policy CSP](https://docs.microsoft.com/windows/client-management/mdm/networkproxy-csp), which also lists the supported Windows editions.
@@ -419,8 +393,6 @@ These settings use the [NetworkProxy policy CSP](https://docs.microsoft.com/wind
   - **Port number**: Enter the port number of your proxy server.
   - **Proxy exceptions**: Enter any URLs that must not use the proxy server. Use a semicolon to separate each item.
   - **Bypass proxy server for local address**: **Not configured** (default) prevents using a proxy server for local addresses on your intranet. **Allow** uses a proxy server for local addresses.
-
-Select **OK** to save your changes.
 
 ## Password
 
@@ -470,8 +442,6 @@ These settings use the [DeviceLock policy CSP](https://docs.microsoft.com/window
 
   [Authentication/PreferredAadTenantDomainName CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-authentication#authentication-preferredaadtenantdomainname)
 
-Select **OK** to save your changes.
-
 ## Per-app privacy exceptions
 
 You can add apps that should have a different privacy behavior from what you define in “Default privacy”.
@@ -500,23 +470,17 @@ You can add apps that should have a different privacy behavior from what you def
 - **Feedback and diagnostics**: Define whether this app can access diagnostic information.
 - **Sync with devices**: Choose if this app can automatically share and sync info with wireless devices that don't explicitly pair with the device.
 
-Select **OK** to save your changes.
-
 ## Personalization
 
 These settings use the [personalization policy CSP](https://docs.microsoft.com/windows/client-management/mdm/personalization-csp), which also lists the supported Windows editions.
 
 - **Desktop background picture URL (Desktop only)**: Enter the URL to a picture in .jpg, .jpeg or .png format that you want to use as the Windows desktop wallpaper. Users can't change the picture. For example, enter `https://contoso.com/logo.png`.
 
-Select **OK** to save your changes.
-
 ## Printer
 
 - **Printers**: List of local printers that have been added.
 - **Default printer**: Set the default printer.
 - **User access to add new printers**: Allow or block use of local printers.
-
-Select **OK** to save your changes.
 
 ## Privacy
 
@@ -528,8 +492,6 @@ These settings use the [privacy policy CSP](https://docs.microsoft.com/windows/c
 - **Local activities only**: **Block** prevents shared experiences and the discovery of recently used resources in task switcher, based only on local activity. **Not configured** (default) enables this feature.
 
 You can configure information that all apps on the device can access. Also, define exceptions on a per-app basis using **Per-app privacy exceptions**.
-
-Select **OK** to save your changes.
 
 ### Exceptions
 
@@ -552,8 +514,6 @@ Select **OK** to save your changes.
 - **Feedback and diagnostics**: Choose if this app can access diagnostic information.
 - **Sync with devices** -Define whether this app can automatically share and sync info with wireless devices that don't explicitly pair with this PC, tablet, or phone.
 
-Select **OK** to save your changes.
-
 ## Projection
 
 These settings use the [WirelessDisplay policy CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-wirelessdisplay), which also lists the supported Windows editions.
@@ -561,8 +521,6 @@ These settings use the [WirelessDisplay policy CSP](https://docs.microsoft.com/w
 - **User input from wireless display receivers**: **Block** prevents user input from wireless display receivers. **Not configured** (default) allows a wireless display to send keyboard, mouse, pen, and touch input back to the source device.
 - **Projection to this PC**: **Block** prevents other devices from finding the device for projection. **Not configured** (default) allows the device to be discoverable, and can project to the device above the lock screen.
 - **Require PIN for pairing**: Choose **Require** to always prompt for a PIN when connecting to a projection device. **Not configured** (default) doesn't require a PIN to pair the device to a projection device.
-
-Select **OK** to save your changes.
 
 ## Reporting and telemetry
 
@@ -606,8 +564,6 @@ These settings use the [search policy CSP](https://docs.microsoft.com/windows/cl
   - **Strict**: Highest filtering against adult content.
   - **Moderate**: Moderate filtering against adult content. Valid search results aren't filtered.
 - **Display web results in search**: When set to **Block**, users can't search, and web results aren't shown in Search. **Not configured** (default) allows users to search the web, and the results are shown on the device.
-
-Select **OK** to save your changes.
 
 ## Start
 
@@ -679,8 +635,6 @@ These settings use the [start policy CSP](https://docs.microsoft.com/windows/cli
   - **Hide**: The shortcut is hidden, and disables the setting in the Settings app.
   - **Show**: The shortcut is shown, and disables the setting in the Settings app.
 
-Select **OK** to save your changes.
-
 ## Windows Defender Smart Screen
 
 - **SmartScreen for Microsoft Edge**: **Require** turns off Windows Defender SmartScreen and prevent users from turning it on. **Not configured** (default) turns on SmartScreen. Helps protect users from potential threats and prevent users from turning it off.
@@ -697,8 +651,6 @@ Select **OK** to save your changes.
 
   [Browser/PreventSmartScreenPromptOverrideForFiles CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-browser#browser-preventsmartscreenpromptoverrideforfiles)
 
-Select **OK** to save your changes.
-
 ## Windows Spotlight
 
 These settings use the [experience policy CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-experience), which also lists the supported Windows editions.
@@ -713,38 +665,96 @@ These settings use the [experience policy CSP](https://docs.microsoft.com/window
   - **Windows Spotlight personalization**: **Block** prevents Windows from using diagnostic data to provide customized experiences to the user. **Not configured** (default) allows Microsoft to use diagnostic data to provide personalized recommendations, tips, and offers to tailor Windows for the user's needs.
   - **Windows welcome experience**: **Block** turns off the Windows spotlight Windows welcome experience feature. The Windows welcome experience won't show  when there are updates and changes to Windows and its apps. **Not configured** (default) allows Windows welcome experience that shows the user information about new, or updated features.
 
-Select **OK** to save your changes.
-
-## Windows Defender Antivirus
+## Microsoft Defender Antivirus
 
 These settings use the [defender policy CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender), which also lists the supported Windows editions.
 
-- **Real-time monitoring**: **Enable** prevents real-time scanning for malware, spyware, and other unwanted software. **Not configured** (default) allows this feature.
-- **Behavior monitoring**: **Enable** prevents Defender check for certain known patterns of suspicious activity on devices. **Not configured** (default) allows Windows Defender Behavior Monitoring.
-- **Network Inspection System (NIS)**: NIS helps to protect devices against network-based exploits. It uses the signatures of known vulnerabilities from the Microsoft Endpoint Protection Center to help detect and block malicious traffic.
-- **Scan all downloads**: Controls whether Defender scans all files downloaded from the Internet.
-- **Scan scripts loaded in Microsoft web browsers**: **Not configured** (default) lets Defender scan scripts that are used in Internet Explorer. **Enable** prevents this scanning.
-- **End user access to Defender**: **Block** hides the Windows Defender user interface from end users. All Windows Defender notifications are also suppressed. **Not configured** (default) allows user access to the Windows Defender UI. When this setting is changed, it takes effect the next time the end user's PC is restarted.
-- **Signature update interval (in hours)**: Enter the interval that Defender checks for new signature files, from 0-24. Your options:
+- **Real-time monitoring**: **Enable** turns off real-time scanning for malware, spyware, and other unwanted software. **Not configured** (default) allows this feature.
 
-  - **Not configured** (default)
-  - **Do not check**: Defender doesn't check for new signature files.
+  [Defender/AllowRealtimeMonitoring CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-allowrealtimemonitoring)
+
+- **Behavior monitoring**: **Enable** turns off Defender checks for certain known patterns of suspicious activity on devices. **Not configured** (default) allows Windows Defender Behavior Monitoring.
+
+  [Defender/AllowBehaviorMonitoring CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-allowbehaviormonitoring)
+
+- **Network Inspection System (NIS)**: NIS helps to protect devices against network-based exploits. It uses the signatures of known vulnerabilities from the Microsoft Endpoint Protection Center to help detect and block malicious traffic.
+
+  **Not configured** (default) disables this feature. Users aren't blocked from connecting to known vulnerabilities. When set to **Enable**, network protection and network blocking are turned on, and users can't turn it off. Users are blocked from connecting to known vulnerabilities.
+
+  [Defender/EnableNetworkProtection CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-enablenetworkprotection)
+
+- **Scan all downloads**: **Not configured** (default) has Defender scans all files downloaded from the Internet. When set to **Enable**, this feature is disabled. So, Defender doesn't scan all downloaded Internet files.
+
+  [Defender/AllowIOAVProtection CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-allowioavprotection)
+
+- **Scan scripts loaded in Microsoft web browsers**: **Not configured** (default) lets Defender scan scripts that are used in Internet Explorer. **Enable** prevents this scanning.
+
+  [Defender/AllowScriptScanning CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-allowscriptscanning)
+
+- **End user access to Defender**: **Block** hides the Windows Defender user interface from end users. All Windows Defender notifications are also suppressed. **Not configured** (default) allows user access to the Windows Defender UI. When this setting is changed, it takes effect the next time the end user's PC is restarted.
+
+  [Defender/AllowUserUIAccess CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-allowuseruiaccess)
+
+- **Security intelligence update interval (in hours)**: Enter the interval that Defender checks for new security intelligence, from 0-24. Your options:
+
+  - **Not configured** (default): Check for updates every 8 hours.
+  - **Do not check**: Defender doesn't check for new security intelligence updates.
   - **1-24**: `1` checks every hour, `2` checks every two hours, `24` checks every day, and so on.
-- **Monitor file and program activity**: Allows Defender to monitor file and program activity on devices.
-- **Days before deleting quarantined malware**: Continue tracking resolved malware for the number of days you enter so you can manually check previously affected devices. If you set the number of days to **0**, malware stays in the Quarantine folder, and isn't automatically removed. When set to `90`, quarantine items are stored for 90 days on the system, and then removed.
-- **CPU usage limit during a scan**: Limit the amount of CPU that scans are allowed to use, from **1** to **100**.
-- **Scan archive files**: **Enable** prevents Defender from scan archived files, such as Zip or Cab files. **Not configured** (default) allows this scanning.
+  
+  [Defender/SignatureUpdateInterval CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-signatureupdateinterval)
+  
+- **Monitor file and program activity**: Allows Defender to monitor file and program activity on devices. Your options:
+
+  - **Not configured** (default): Monitors all files
+  - **Monitoring disabled**
+  - **Monitor all files**
+  - **Monitor incoming files only**
+  - **Monitor outgoing files only**
+
+  [Defender/RealTimeScanDirection CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-realtimescandirection)
+
+- **Days before deleting quarantined malware**: Continue tracking resolved malware for the number of days you enter so you can manually check previously affected devices. If you set the number of days to `0`, malware stays in the Quarantine folder, and isn't automatically removed. When set to `90`, quarantine items are stored for 90 days on the system, and then removed.
+
+  [Defender/DaysToRetainCleanedMalware CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-daystoretaincleanedmalware)
+
+- **CPU usage limit during a scan**: Limit the amount of CPU that scans are allowed to use, from `0` to `100`.
+- **Scan archive files**: **Enable** turns off Defender from scanning archive files, such as Zip or Cab files. **Not configured** (default) allows this scanning.
+
+  [Defender/AllowArchiveScanning CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-allowarchivescanning)
+
 - **Scan incoming mail messages**: **Enable** allows Defender to scan email messages as they arrive on the device. **Not configured** (default) prevents email scanning.
+
+  [Defender/AllowEmailScanning CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-allowemailscanning)
+
 - **Scan removable drives during a full scan**: **Enable** prevents full scans of removable drives. **Not configured** (default) lets Defender scan removable drives, such as USB sticks.
+
+  During a quick scan, removable drives may still be scanned.
+
+  [Defender/AllowFullScanRemovableDriveScanning CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-allowfullscanremovabledrivescanning)
+
 - **Scan mapped network drives during a full scan**: **Enable** lets Defender scan files on mapped network drives. **Not configured** (default) prevents the full scan. If the files on the drive are read-only, Defender can't remove any malware found in them.
+
+  During a quick scan, mapped network drives may still be scanned.
+
+  [Defender/AllowFullScanOnMappedNetworkDrives CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-allowfullscanonmappednetworkdrives)
+
 - **Scan files opened from network folders**: **Not configured** (default) lets Defender scan files on shared network drives, such as files accessed from a UNC path. **Enable** prevents this scanning. If the files on the drive are read-only, Defender can't remove any malware found in them.
+
+  [Defender/AllowScanningNetworkFiles CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-allowscanningnetworkfiles)
+
 - **Cloud protection**: **Not configured** (default) allows the Microsoft Active Protection Service to receive information about malware activity from devices that you manage. **Enable** blocks this feature.
+
+  [Defender/AllowCloudProtection CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-allowcloudprotection)
+
 - **Prompt users before sample submission**: Controls whether potentially malicious files that might require further analysis are automatically sent to Microsoft. Your options:
-  - **Not configured**
+
+  - **Not configured** (default): Send safe samples automatically.
   - **Always prompt**
   - **Prompt before sending personal data**
   - **Never send data**
-  - **Send all data without prompting**: Data is sent automatically
+  - **Send all data without prompting**: Data is sent automatically.
+
+  [Defender/SubmitSamplesConsent CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-submitsamplesconsent)
 
 - **Time to perform a daily quick scan**: Choose the hour to run a daily quick scan. **Not configured** doesn't run a daily scan. If you want more customization, configure the **Type of system scan to perform** setting.
 
@@ -760,12 +770,16 @@ These settings use the [defender policy CSP](https://docs.microsoft.com/windows/
     - **Day scheduled**: Choose the day to run the scan.
     - **Time scheduled**: Choose the hour to run the scan.
 
-  This setting may conflict with the **Time to perform a daily quick scan** setting. Some recommendations:
-
-  - To run a daily quick scan, configure the **Time to perform a daily quick scan** setting.
-  - To run a daily quick scan and a full scan every week, then configure the **Time to perform a daily quick scan**. Set **Type of system scan to perform** to a full scan with the day and time.
-  - Don't configure the **Time to perform a daily quick scan** setting simultaneously with the **Type of system scan to perform** set to **Quick scan**. These settings may conflict, and a scan may not run.
-  - To run a quick scan every Tuesday at 6 AM, configure the **Type of system scan to perform** setting.
+  > [!TIP]
+  > This setting may conflict with the **Time to perform a daily quick scan** setting. Some recommendations:  
+  >
+  > - If you want to schedule a daily quick scan, and a weekly full scan, then:
+  >   1. Configure the **Time to perform a daily quick scan** setting.
+  >   2. Configure the **Type of system scan to perform** to do a full scan.
+  > 
+  > - If you only want one quick scan daily (no full scan), then use either setting: **Time to perform a daily quick scan** or **Type of system scan to perform**. For example, to run a quick scan every Tuesday at 6 AM, configure the **Type of system scan to perform** setting.
+  > 
+  > - Don't configure the **Time to perform a daily quick scan** setting simultaneously with the **Type of system scan to perform** set to **Quick scan**. These settings may conflict, and a scan may not run.
 
   [Defender/ScanParameter CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-scanparameter)  
   [Defender/ScheduleScanDay CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-schedulescanday)  
@@ -778,7 +792,10 @@ These settings use the [defender policy CSP](https://docs.microsoft.com/windows/
 
   For more information about potentially unwanted apps, see [Detect and block potentially unwanted applications](https://docs.microsoft.com/windows/threat-protection/windows-defender-antivirus/detect-block-potentially-unwanted-apps-windows-defender-antivirus).
 
-- **Actions on detected malware threats**: Choose the actions you want Defender to take for each threat level it detects: low, moderate, high, and severe. If it's not possible, Windows Defender chooses the best option to ensure the threat is remediated. Your options:
+  [Defender/PUAProtection CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-puaprotection)
+
+- **Actions on detected malware threats**: Choose how you want to handle malware threads. **Not configured** (default) lets Microsoft Defender choose the best option. When set to **Enable**, choose the actions you want Defender to take for each threat level it detects: low, moderate, high, and severe. Your options:
+  
   - **Clean**
   - **Quarantine**
   - **Remove**
@@ -786,15 +803,15 @@ These settings use the [defender policy CSP](https://docs.microsoft.com/windows/
   - **User defined**
   - **Block**
 
-Select **OK** to save your changes.
+  If your action isn't possible, then Windows Defender chooses the best option to ensure the threat is remediated. 
+
+  [Defender/ThreatSeverityDefaultAction CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-threatseveritydefaultaction)
 
 ### Windows Defender Antivirus Exclusions
 
 - **Files and folders to exclude from scans and real-time protection**: Adds one or more files and folders like **C:\Path** or **%ProgramFiles%\Path\filename.exe** to the exclusions list. These files and folders aren't included in any real-time or scheduled scans.
 - **File extensions to exclude from scans and real-time protection**: Add one or more file extensions like **jpg** or **txt** to the exclusions list. Any files with these extensions aren't included in any real-time or scheduled scans.
 - **Processes to exclude from scans and real-time protection**: Add one or more processes of the type **.exe**, **.com**, or **.scr** to the exclusions list. These processes aren't included in any real-time, or scheduled scans.
-
-Select **OK** to save your changes.
 
 ## Next steps
 

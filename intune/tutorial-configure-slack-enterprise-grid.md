@@ -5,10 +5,10 @@ title: Tutorial - Configure Slack to use Intune for EMM and app configuration
 titleSuffix: Microsoft Intune
 description: In this tutorial you will configure Slack to use Intune for EMM and app configuration.
 keywords:
-author: ErikRe
+author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 06/11/2019
+ms.date: 09/09/2019
 ms.topic: tutorial
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -81,7 +81,6 @@ Add an app configuration policy for the Slack for EMM iOS. App configuration pol
 5. Select **Associated app**.
 6. In the search bar, enter "Slack for EMM" and select the app.
 7. Click **OK**, and then select **Configuration settings**. 
-    - For information on configuration keys and their values, consult the documentation on the “Technical” tab of [Slack’s AppConfig web page](https://www.appconfig.org/company/slack/).
 8. Select **OK**, and then select **Add**.
 9. In the search bar, enter "Slack app configuration policy test" and select the policy you just added.
 10. From Manage, select **Assignments**.

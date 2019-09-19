@@ -33,7 +33,7 @@ ms.reviewer: karthig
 
 Microsoft Intune includes many settings to help protect your devices. This article describes all the settings you can enable and configure in Windows 10 and newer devices. These settings are created in an endpoint protection configuration profile in Intune to control security, including BitLocker and Windows Defender.  
 
-To configure Windows Defender Antivirus, see [Windows 10 device restrictions](device-restrictions-windows-10.md#windows-defender-antivirus).  
+To configure Windows Defender Antivirus, see [Windows 10 device restrictions](device-restrictions-windows-10.md#microsoft-defender-antivirus).  
 
 ## Before you begin  
 
@@ -964,7 +964,7 @@ Block outbound connections from any app to IP addresses or domains with low repu
 - **Upload XML**  
   **Default**: *Not configured*  
 
-  To use exploit protection to [protect devices from exploits](https://go.microsoft.com/fwlink/?linkid=853982 ), create an XML file that includes the system and application mitigation settings you want. There are two methods to create the XML file:  
+  To use exploit protection to [protect devices from exploits](/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection), create an XML file that includes the system and application mitigation settings you want. There are two methods to create the XML file:  
 
   - *PowerShell* - Use one or more of the *Get-ProcessMitigation*, *Set-ProcessMitigation*, and *ConvertTo-ProcessMitigationPolicy* PowerShell cmdlets. The cmdlets configure mitigation settings, and export an XML representation of them.  
 

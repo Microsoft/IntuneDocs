@@ -45,13 +45,13 @@ Telemetry (service logs, performance logs, errors, and so on) that are key to mo
 
 Microsoft offers and operates Intune services in many regions worldwide. Intune respects the storage location elections made by the administrator for Customer Data.
 
-For more information, see [Microsoft Intune Where is my customer data?](For more information, see Microsoft Intune Where is my customer data?)
+For more information, see [Where your data is located?](https://www.microsoft.com/trust-center/privacy/data-location)
 
 ### Personal data retention
 
-In general, personal data is retained by Intune until thirty days after the user is removed from Intune management.
+In general, personal data is retained by Intune until 30 days after the user is removed from Intune management.
 
-Telemetry data collected as part of Intune usage is retained for a maximum of thirty days.
+Telemetry data collected as part of Intune usage is retained for a maximum of 30 days.
 
 Audit logs are retained for up to one year.
 

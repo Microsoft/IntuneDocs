@@ -7,7 +7,7 @@ keywords:
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 05/24/2019
+ms.date: 09/12/2019
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -34,6 +34,9 @@ ms.collection: M365-identity-device-management
 Enroll your iOS device with the Intune Company Portal app to gain secure access to your organization's email, files, and apps.
 
 After your device is enrolled, it becomes *managed*. Your organization can assign policies and apps to the device through a mobile device management (MDM) provider, such as Intune.  
+
+> [!NOTE]
+> We do not sell any data collected by our service to any third parties for any reason.  
 
 To maintain access to work or school information from your device, you'll need to configure your device to match your organization's preferred settings. This article describes how to use Company Portal to enroll you device and maintain your organization's setting requirements.  
 </br>

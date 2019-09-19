@@ -38,6 +38,9 @@ When users enroll their corporate or personal devices using Intune, Intune colle
 
 From these sources, Intune collects information that falls into the following three categories: [identified](#identified-data), [pseudonymized](#pseudonymized-data), and [aggregated](#aggregated-data).
 
+> [!NOTE]
+> We do not sell any data collected by our service to any third parties for any reason.
+
 ## Identified data
 
 Most personal data collected by Intune is identified data. This data is tied to a user, device, or application and is essential to the nature of management. Identified data is used to manage a user’s device and applications, and to provision the Intune service.

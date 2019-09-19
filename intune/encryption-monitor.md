@@ -204,8 +204,7 @@ Intune supports multiple options to rotate and recover personal recovery keys. O
   1. Sign in to the *Intune Company Portal* website from any device.  
   2. In the portal, go to **Devices** and select the  macOS device that is encrypted with FileVault.  
   3. Select **Get recovery key**. The current recovery key is displayed.  
-  
-     On an iPhone, you must select the *three* dots before the *Get recovery key* option appears.  
+ 
 
 ## BitLocker recovery keys  
 

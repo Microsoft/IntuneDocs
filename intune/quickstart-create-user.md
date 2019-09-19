@@ -27,13 +27,13 @@ ms.collection: M365-identity-device-management
 
 # Quickstart: Create a user in Intune and assign them a license
 
-In this quickstart, you will create a user and then assign them an Intune. When using Intune, each person you want to have access to company data must have their own user account. Intune admins can configure users later to manage access control.
+In this quickstart, you'll create a user and then assign them an Intune license. When using Intune, each person you want to have access to company data must have their own user account. Intune admins can configure users later to manage access control.
 
 If you don’t have an Intune subscription, [sign up for a free trial account](free-trial-sign-up.md).
 
 ## Sign in to Intune
 
-Sign in to [Intune](https://aka.ms/intuneportal) as a [Global administrator or an Intune Service administrator](users-add.md#types-of-administrators). If you have created an Intune Trial subscription, the account you created the subscription with is the Global administrator.
+Sign in to [Intune](https://aka.ms/intuneportal) as a [Global administrator or an Intune Service administrator](users-add.md#types-of-administrators). If you've created an Intune Trial subscription, the account you created the subscription with is the Global administrator.
 
 ## Create a user
 
@@ -52,7 +52,7 @@ Users must have a user account to enroll in Intune device management. To create 
 
 ## Assign a license to the user
 
-After you've created a user, you must use the [Microsoft 365 admin center](http://go.microsoft.com/fwlink/p/?LinkId=698854) to assign an Intune license to them. If you do not assign the user a license, they will be unable to enroll their device into Intune. 
+After you've created a user, you must use the [Microsoft 365 admin center](http://go.microsoft.com/fwlink/p/?LinkId=698854) to assign an Intune license to them. If you don't assign the user a license, they'll be unable to enroll their device into Intune. 
 
 To assign an Intune license to a user:
 
@@ -60,17 +60,17 @@ To assign an Intune license to a user:
 2. Choose **Users** > **Active Users** > and choose the user you just created.
 3. Next to **Product licenses** select **Edit**.
 4. Under **Location**, choose a location for the user.
-5. Click **On** next to the Intune license (or another license that you have that includes Intune). The displayed [product name](https://docs.microsoft.com/azure/active-directory/users-groups-roles/licensing-service-plan-reference)** is used as the service plan in the Azure management 
+5. Click **On** next to the Intune license (or another license that you've that includes Intune). The displayed [product name](https://docs.microsoft.com/azure/active-directory/users-groups-roles/licensing-service-plan-reference)** is used as the service plan in the Azure management 
 
    > [!NOTE]
    > This setting uses one of your licenses for this user. If you are using a trial environment, you would later reassign this license to a real user in a live environment.
 6. Choose **Save** > **Close**.
 
-The new active Intune user will now show that they are using an **Intune** license.
+The new active Intune user will now show that they're using an **Intune** license.
 
 ## Clean up resources
 
-If you don't need this user any more, you can delete the user by navigating to the [Microsoft 365 admin center](http://go.microsoft.com/fwlink/p/?LinkId=698854) and choose **Users** > **Active users** > *choose the user in the list* > **Delete user** > **Delete user** > **Confirm changes** > **Close**.
+If you don't need this user anymore, you can delete the user by navigating to the [Microsoft 365 admin center](http://go.microsoft.com/fwlink/p/?LinkId=698854) and choose **Users** > **Active users** > *choose the user in the list* > **Delete user** > **Delete user** > **Confirm changes** > **Close**.
 
 ## Next steps
 

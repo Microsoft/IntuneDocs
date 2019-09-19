@@ -16,7 +16,7 @@ ms.assetid:
 
 # optional metadata
 
-#ROBOTS:
+ROBOTS: NOINDEX 
 
 #audience:
 #ms.devlang:
@@ -167,6 +167,16 @@ For more information, see [Policy CSP - Connectivity](https://docs.microsoft.com
   [Learn more](https://go.microsoft.com/fwlink/?linkid=2067136)  
   
   **Default**: Enabled  
+
+- **Configure secure access to UNC paths**  
+  This policy setting configures secure access to UNC paths. If you enable this policy, Windows only allows access to the specified UNC paths after fulfilling additional security requirements.
+  [Learn more](https://go.microsoft.com/fwlink/?linkid=2067243) 
+
+  **Default**: Configure Windows to only allow access to the specified UNC paths after fulfilling additional security requirements
+  
+  When *Configure Windows to only allow access to the specified UNC paths after fulfilling additional security requirements* is selected, you can configure the *Hardended UNC path list.
+  - **Hardened UNC path list**  
+    Select **Add** to specify additonal security flags and server paths.  
 
 - **Block downloading of print drivers over HTTP**  
   This policy setting specifies whether to allow this client to download print driver packages over HTTP. To set up HTTP printing, non-inbox drivers need to be downloaded over HTTP. Note: This policy setting doesn't prevent the client from printing to printers on the Intranet or the Internet over HTTP. It only prohibits downloading drivers that aren't already installed locally. If you enable this policy setting, print drivers can't be downloaded over HTTP. If you disable or don't configure this policy setting, users can download print drivers over HTTP.  

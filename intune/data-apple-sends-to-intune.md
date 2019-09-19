@@ -43,6 +43,9 @@ When any of the following Apple services are enabled on a device, Microsoft Intu
 
 Before Microsoft Intune can establish a connection, you must create an Apple account for each of the Apple services.
 
+> [!NOTE]
+> Consistent with Microsoft and Apple policy, we do not sell any data collected by our service to any third parties for any reason.
+
 The following table lists the data that an Apple device sends to Intune. [Intune also sends data to Apple](data-intune-sends-to-apple.md). 
 
 | Service | Message | Data sent to Intune | Used for |

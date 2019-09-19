@@ -7,7 +7,7 @@ keywords:
 author: brenduns 
 ms.author: brenduns
 manager: dougeby
-ms.date: 08/27/2019
+ms.date: 09/09/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -78,8 +78,8 @@ When you use multiple security baselines, review the settings in each one to ide
 The following security baseline instances are available for use with Intune. Use the links to view the settings for the most recent instance of each baseline. 
 
 - **MDM Security Baseline**
-  - [MDM Security Baseline for May 2019](security-baseline-settings-mdm.md)
-  - [Preview: MDM Security Baseline for October 2018](security-baseline-settings-mdm-archive.md)
+  - [MDM Security Baseline for May 2019](https://docs.microsoft.com/intune/security-baseline-settings-mdm-all?pivots=mdm-may-2019)
+  - [Preview: MDM Security Baseline for October 2018](https://docs.microsoft.com/intune/security-baseline-settings-mdm-all?pivots=mdm-preview)
 
 - **Microsoft Defender ATP baseline**  
   *(To use this baseline your environment must meet the prerequisites for using [Microsoft Defender Advanced Threat Protection](advanced-threat-protection.md#prerequisites))*.
@@ -219,7 +219,7 @@ Strictly speaking, no. The Microsoft security team consults organizations, such 
 
 ## Next steps
 - View the settings in the latest versions of the available baselines:  
-  - [MDM security baseline](security-baseline-settings-mdm.md)  
+  - [MDM security baseline](security-baseline-settings-mdm-all.md)  
   - [Microsoft Defender ATP baseline](security-baseline-settings-defender-atp.md)  
 
 - Check the status and monitor the [baseline and profile](security-baselines-monitor.md)

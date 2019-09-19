@@ -417,9 +417,6 @@ These delegate methods return an `IntuneMAMEnrollmentStatus` object that has the
 * An error string with a description of the status code
 * An `NSError` object. This object is defined in `IntuneMAMEnrollmentStatus.h`, along with the specific status codes that can be returned.
 
-> [!NOTE]
-> This information is for debug purposes only. No business logic in your app should be based off these notifications. This information can be sent to a telemetry service for debugging or monitoring purposes.
-
 ### Sample code
 
 These are example implementations of the delegate methods:

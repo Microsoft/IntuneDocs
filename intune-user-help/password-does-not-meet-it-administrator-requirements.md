@@ -1,13 +1,13 @@
 ---
 # required metadata
 
-title: Your password does not meet your company support's requirements | Microsoft Docs
-description:
+title: Password requirements for devices in Intune Company Portal | Microsoft Docs
+description: This article describes common password requirements that your organization might enforce.  
 keywords:
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 07/10/2018
+ms.date: 09/05/2019
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -29,35 +29,79 @@ ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
 ---
 
-# Your password does not meet your company support's requirements
+# Device password requirements for enrolled devices
 
-Your company support requires a password to help protect your device. Currently, the password that you use to access your company or school resources does not meet one or more requirements that your company support has set up. To fix the issue, follow the instructions that are shown on your device. Descriptions of the issues are listed below.
+Your organization can require you to create a more secure password before allowing you access to work or school resources. This article describes common password requirements for Windows 10, iOS, macOS, and Android devices. Your organization might not enforce all of these requirements.  
 
-For the steps needed to set your PIN or password, use the link that matches the type of device you have:
 
-- [Set your Android device PIN or password](set-your-pin-or-password-android.md)
-- [Set or change your iOS device passcode](set-or-change-your-passcode-ios.md)
-- [Set or change your Windows device password](set-or-change-your-password-windows.md)
+When a password or passcode no longer meets a requirement, you'll receive a message from Company Portal. It will describe the changes you need to make. If no details are provided in the message, use this article as a reference to compare to your current password.  
 
-> [!NOTE]
-> If you have trouble determining how to make your password meet your company support's requirements, contact your company support. For contact information, check the [Company Portal website](https://go.microsoft.com/fwlink/?linkid=2010980).
+> [!IMPORTANT]
+> If you've changed your password to meet the requirements but are still receiving notifications, restart your device.  
 
-## PIN or password issue descriptions
+For additional help or to find out your organization's specific requirements, contact your IT support person. Check the [Company Portal website](https://go.microsoft.com/fwlink/?linkid=2010980) for contact information.  
 
-| **Issue** | **Description** |
+## Windows 10 password requirements
+
+| Message | How to fix |
 |-----------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| **Password does not contain complex characters.** | Your company support requires you to use complex characters in your password. Examples of complex characters might be numbers, capital letters, and symbols like $, %, and #. |
-| **Password is too simple and not secure enough.** | Examples of simple passwords might be 1234 or 1111. If you're not sure what kinds of passwords are allowed, try making sure that your password doesn't contain sequential or repeating numbers, like the ones in the example. |
-| **Password has expired.** | Your password has expired, so you must set a new one that meets the requirements set by your company support. |
-| **Password is not set.** | Before you can access work email and data on your device, you must set a password that meets the requirements set by your company support. |
-| **Password is too short.** | Your company support requires you to use a longer password with more characters. |
-| **Your password was used too recently.** | Your company support is preventing you from using previous passwords that you've used in the past. Choose a password that you haven't used before. |
-| **Password isn't complex enough to meet requirements.** | Your company support requires you to use more complex characters in your password. Try using characters like numbers, capital letters, and symbols like $, %, and #. This can also be true of other accounts on your device, so be sure to check any other work accounts to ensure that your password meets the requirements set up by IT for your device. |
+| Password is required. | Set a password. Your organization requires that you enter a password to unlock your device. |
+| Password is too simple. |  Make sure that your password doesn't contain sequential or repeating numbers, such as 1234 or 1111. |
+| Password is too short.| Update or set a password with more characters. Your organization requires that your password is a certain length. What they actually choose will vary, but the minimum length they can require is 4 characters, and the maximum is 16. |
+| Password must only contain numbers. | Set a password that only contains numbers.|
+| Password must only contain alphanumeric characters. | Set a password that contains a mix of numbers and letters.|
+| Password must contain complex characters. | Add complex characters such as numbers, capital letters, and symbols like `$`, `%`, and `#`. Your organization requires a mix of letters, numbers, and non-alphanumeric characters to make it harder for others to guess the password.|  
+| Password has expired. | Set a new password. Your organization requires you to change your password after a certain number of days. |
+| Your password was used too recently. | Choose a password you haven't used before. Your organization requires that a certain amount of time passes before you reuse a password. |
+
+## iOS passcode requirements
+
+| Message | How to fix |
+|-----------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Passcode is required.| Set a passcode. Your organization requires that you enter a passcode to unlock your device. |
+| Passcode is too simple. |  Make sure that your passcode doesn't contain sequential or repeating numbers, such as 1234 or 1111. |
+| Passcode is too short. | Update or set a passcode with more characters. Your organization requires that your passcode is a certain length. What they actually choose will vary, but the minimum length they can require is 4 characters, and the maximum is 14. When you change your passcode, you might see a prompt from Apple telling you to enter 6 or more characters; this message is an Apple system recommendation. If your organization only requires a passcode that's 4 or 5 characters, you do not have to enter a 6 digit passcode.|  
+| Passcode must only contain numbers. | Set a passcode that only contains numbers.|
+| Passcode must only contain alphanumeric characters.| Set a passcode that contains a mix of numbers and letters.|
+| Passcode must contain non-alphanumeric characters. | Add special characters such as `&`, `!`, `$`, `%`, and `#`. Your organization requires a mix of letters, numbers, and non-alphanumeric characters to make it harder for others to guess the passcode.|
+| Passcode has expired. | Set a new password. Your organization requires you to change your password after a certain number of days. |
+| Your passcode was used too recently.| Choose a passcode you haven't used before. Your organization requires that a certain amount of time passes before you reuse a passcode. |
+|Touch ID or Face ID authentication required. | Set up Touch ID or Face ID. Your organization requires you to authenticate with one of these methods before using autofill for passwords or credit card information. | 
+
+## macOS password requirements
+| Message | How to fix |
+|-----------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Password is required. | Set a password. Your organization requires that you enter a password to unlock your device. |
+| Password is too simple.|  Make sure that your password doesn't contain sequential or repeating numbers, such as 1234 or 1111. |
+| Password is too short. | Update or set a password with more characters. Your organization requires that your password is a certain length.|
+| Password must only contain numbers. | Set a password that only contains numbers.|
+| Password must only contain alphanumeric characters. | Set a password that contains a mix of numbers and letters.|
+| Password must contain non-alphanumeric characters. | Add special characters such as `&`, `!`, `$`, `%`, and `#`. Your organization requires a mix of letters, numbers, and non-alphanumeric characters to make it harder for others to guess the password.|
+| Password has expired. | Set a new password. Your organization requires you to change your password after a certain number of days. |
+| Your password was used too recently. | Choose a password you haven't used before. Your organization requires that a certain amount of time passes before you reuse a password. |
+
+## Android password requirements
+| Message | How to fix |
+|-----------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Password is required. | Set a password or PIN. Your organization requires that you enter a password to unlock your device. |
+| Password is too simple. |  Make sure that your password or PIN doesn't contain sequential or repeating numbers, such as 1234 or 1111. |
+| Password is too short. | Update or set a password with more characters. Your organization requires that your password is a certain length.|
+| Password must contain numbers. | Set a password or PIN that contains numbers.|
+| Password must contain letters. | Set a password that contains letters from the alphabet.|
+| Password must contain alphanumeric characters. | Set a password that contains a mix of numbers and letters.|
+| Password must contain alphanumeric characters and symbols. | Set a password that contains a mix of letters, numbers, and special characters such as `&`, `!`, `$`, `%`, and `#`. |
+| Password must use biometric technology.| Set up your device to use biometric authentication, such as fingerprint or facial recognition.
+| Password has expired. | Set a new password. Your organization requires you to change your password after a certain number of days. |
+| Your password was used too recently. | Choose a password you haven't used before. Your organization requires that a certain amount of time passes before you reuse a password. |
 
 ## Next steps
 
-For the steps needed to set your PIN or password, use the link that matches the type of device you have:
+See the following articles to create or change your device password, passcode, or PIN.  
 
-- [Set your Android device PIN or password](set-your-pin-or-password-android.md)
-- [Set or change your iOS device passcode](set-or-change-your-passcode-ios.md)
-- [Set or change your Windows device password](set-or-change-your-password-windows.md)
+- [Set Windows 10 device password](set-or-change-your-password-windows.md)  
+- [Set iOS device passcode](set-or-change-your-passcode-ios.md)  
+- [Set Android device PIN or password](set-your-pin-or-password-android.md)  
+
+Still need help? Contact your support person. For contact information, check the [Company Portal website](https://go.microsoft.com/fwlink/?linkid=2010980).  
+
+

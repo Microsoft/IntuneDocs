@@ -19,7 +19,7 @@ ms.assetid: ca3de752-3caa-46a4-b4ed-ee9012ccae8e
 #ROBOTS:
 #audience:
 #ms.devlang:
-ms.reviewer: 
+ms.reviewer: pjain
 ms.suite: ems
 search.appverid: MET150
 #ms.tgt_pltfrm:
@@ -47,7 +47,7 @@ To see a role, choose **Intune** > **Roles** > **All roles** > choose a role. Yo
 - **Assignments**: A list of [role assignments]( assign-role.md) defining which users have access to which users/devices. A role can have multiple assignments, and a user can be in multiple assignments.
 
 ### Built-in roles
-You can assign built-in roles to groups without further configuration. You can't delete or edit the name, description, type, or permissions of a built-in role. For a full list of the permissions for each built-in role, see the [Intune RBAC Table](https://gallery.technet.microsoft.com/Intune-RBAC-table-2e3c9a1a).
+You can assign built-in roles to groups without further configuration. You can't delete or edit the name, description, type, or permissions of a built-in role.
 
 - **Help Desk Operator**: Performs remote tasks on users and devices, and can assign applications or policies to users or devices.
 - **Policy and Profile Manager**: Manages compliance policy, configuration profiles, Apple enrollment, corporate device identifiers, and security baselines.

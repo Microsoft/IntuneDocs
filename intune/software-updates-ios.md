@@ -60,14 +60,8 @@ The device checks in with Intune about every 8 hours. If an update is available,
 
     - **Delay visibility of software updates to end users with no change to scheduled updates (days)**: 
 
-      **This setting moved to [Device Restrictions](device-restrictions-ios.md#general). It will be removed from this location in the portal**. For a short time, existing policies can be changed here. After about a month, this setting will be removed from existing policies.
-
-      To limit impact, we recommend:
-        - Remove the existing policy from this location in the portal.
-        - Create a new [device restriction policy](device-restrictions-ios.md#general).
-        - Target the same users as the original policy.
-
-      If there's a conflict, this setting does nothing *unless* the two values are identical. To prevent a conflict, be sure to change or remove the existing policy from this location in the portal.
+      **If you want to delay the visibility of software updates for a specific amount of time on your supervised iOS devices, please configure those settings in [Device Restrictions](device-restrictions-ios.md#general).
+     
       > [! Important]  
       > A policy that has a *Start time* and *End time* set to 12 AM is evaluated as 0 hours, and not 24 hours. This results in no restriction.  
 

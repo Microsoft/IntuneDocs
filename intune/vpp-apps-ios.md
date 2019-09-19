@@ -1,9 +1,9 @@
 ---
 # required metadata
 
-title: Manage iOS volume-purchased apps
+title: Manage Apple volume-purchased apps
 titleSuffix: Microsoft Intune
-description: Learn about how you can sync apps you purchased in volume from the iOS store into Microsoft Intune and then manage and track their usage.
+description: Learn about how you can sync apps you purchased in volume from iOS and macOS App Store into Microsoft Intune and then manage and track their usage.
 keywords:
 author: Erikre
 ms.author: erikre
@@ -28,12 +28,12 @@ ms.custom: intune-azure
 ms.collection: M365-identity-device-management
 ---
 
-# How to manage iOS apps purchased through a volume-purchase program with Microsoft Intune
+# How to manage iOS and macOS apps purchased through Apple Volume Purchase Program with Microsoft Intune
 
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
-The iOS app store lets you purchase multiple licenses for an app that you want to run in your company. Purchasing multiple copies helps you to efficiently manage apps in your company.
+Apple lets you purchase multiple licenses for an app that you want to run in your company on iOS and macOS devices. Purchasing multiple copies helps you to efficiently manage apps in your company.
 
 Microsoft Intune helps you manage multiple copies of apps purchased through this program by:
 
@@ -51,21 +51,21 @@ When you assign volume-purchased apps to a device, the end user of the device do
 
 ## User licensing
 
-When you assign an app to a user, one app license is used for and is associated with the user. The app can be run on multiple devices that the user owns (with a limit controlled by Apple).
+When you assign an app to a user, one app license is used for and is associated with the user. The app can be run on up to 5 devices that the user owns (the device limit is controlled by Apple).
 
 When you assign a volume-purchased app to users, each end user must have a valid and unique Apple ID in order to access the app store.
 
-Additionally, you can synchronize, manage, and assign books you purchased from the Apple volume-purchase program (VPP) store with Intune. For more information, see [How to manage iOS eBooks you purchased through a volume-purchase program](vpp-ebooks-ios.md).
+Additionally, you can synchronize, manage, and assign books you purchased from the Apple volume-purchase program (VPP) store with Intune to iOS devices. For more information, see [How to manage iOS eBooks you purchased through a volume-purchase program](vpp-ebooks-ios.md).
 
-## Manage volume-purchased apps for iOS devices
+## Manage volume-purchased apps for iOS and macOS devices
 
-### Supports Apple Volume Purchase Program volume-purchased apps for iOS devices
+### Supports Apple Volume Purchase Program volume-purchased apps
 
-Purchase multiple licenses for iOS apps through the [Apple Volume Purchase Program for Business](https://www.apple.com/business/vpp/) or the [Apple Volume Purchase Program for Education](https://volume.itunes.apple.com/us/store). This process involves setting up an Apple VPP account from the Apple website and uploading the Apple VPP token to Intune.  You can then synchronize your volume purchase information with Intune and track your volume-purchased app use.
+Purchase multiple licenses for iOS and macOS apps through the [Apple Volume Purchase Program for Business](https://www.apple.com/business/vpp/) or the [Apple Volume Purchase Program for Education](https://volume.itunes.apple.com/us/store). This process involves setting up an Apple VPP account from the Apple website and uploading the Apple VPP token to Intune.  You can then synchronize your volume purchase information with Intune and track your volume-purchased app use.
 
-### Supports Business-to-Business volume-purchased apps for iOS devices
+### Supports Business-to-Business volume-purchased apps
 
-In addition, third-party developers can also privately distribute apps to authorized Volume Purchase Program for Business members specified in iTunes Connect. These VPP for Business members can sign in to the Volume Purchase Program App Store and purchase their apps. VPP for Business apps purchased by the end user will sync to their Intune tenants.
+In addition, third-party developers can also privately distribute apps to authorized Volume Purchase Program for Business members specified in App Store Connect. These VPP for Business members can sign in to the Volume Purchase Program App Store and purchase their apps. VPP for Business apps purchased by the end user will sync to their Intune tenants.
 
 ## Before you start
 Before you start, you need to get a VPP token from Apple and upload it to your Intune account. Additionally, you should understand the following criteria:
@@ -87,7 +87,7 @@ Before you start, you need to get a VPP token from Apple and upload it to your I
 ## To get and upload an Apple VPP token
 
 1. Sign in to [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
-3. On the **Intune** pane, choose **Client apps** > **iOS VPP tokens** under **Setup**.
+3. On the **Intune** pane, choose **Client apps** > **Apple VPP tokens** under **Setup**.
 4. On the list of VPP tokens pane, select **Create**.
 5. On the **Create VPP token** pane, specify the following information:
     - **VPP token file** - If you haven't already, sign up for the Volume Purchase Program for Business or the program for Education. After you sign up, download the Apple VPP token for your account and select it here.
@@ -99,11 +99,12 @@ Before you start, you need to get a VPP token from Apple and upload it to your I
         > Changing the country/region will update the apps metadata and store URL on next sync with the Apple service for apps created with this token. The app will not be updated if it does not exist in the new country/region store.
 
     - **Type of VPP account** - Choose from **Business** or **Education**.
-    - **Automatic app updates** - Choose from **On** or **Off** to enable automatic updates. When enabled, Intune detects the VPP app updates inside the app store and automatically pushes them to the device when the device checks in. Automatic app updates for Apple VPP apps will automatically update only apps deployed with **Required** install intent. For apps deployed with **Available** install intent, the automatic update generates a notification for you (the admin) informing you that a new version of the app is available. The user must click install to install the newer version of the app. Additionally, the user will see that the app as not installed on Company Portal, even though an earlier version of the app is installed. In this case, the user can reinstall the app.
+    - **Automatic app updates** - Choose from **On** or **Off** to enable automatic updates. When enabled, Intune detects the VPP app updates inside the app store and automatically pushes them to the device when the device checks in. Automatic app updates for Apple VPP apps will automatically update only apps deployed with **Required** install intent. For apps deployed with **Available** install intent, the automatic update generates a notification for the admin informing that a new version of the app is available. Additionally, the user will see that the app as not installed on Company Portal, even though an earlier version of the app is installed. In this case, the user can reinstall the app by clicking **Install** on the app details screen in the Company Portal app to install the newer version of the app.
 
         > [!NOTE]
         > Automatic app updates work for both device and user licensed apps for iOS Version 11.0 and above.
     - **I grant Microsoft permission to send both user and device information to Apple.** - You must select I agree to proceed. To review what data Microisoft sends to Apple use the following [link](https://docs.microsoft.com/en-us/intune/data-intune-sends-to-apple).
+
 6. When you are done, select **Create**.
 
 The token is displayed in the list of tokens pane.
@@ -142,15 +143,23 @@ The end-user will receive prompts for VPP app installation in a number of scenar
 > [!Note]  
 > It is not recommended to assign VPP apps to Kiosk-mode devices using the VPP user licensing.
 
-## Revoking app licenses and deleting tokens 
+## Revoking app licenses
 
-You can revoke all associated iOS volume-purchase program (VPP) app licenses based on a given device, user, or app. You can notify users when an app is no longer assigned to them. Revoking an app license will not uninstall the related VPP app from the device. To uninstall a VPP app and reclaim an app license assigned to a user or device, you must change the assignment action to **Uninstall**. When you remove an app that was assigned to a user, Intune reclaims the user or device license and uninstalls the app from the device. The reclaimed license count will be reflected in **Licensed Apps** node in the **App** workload​ of Intune. Once an VPP app has been uninstall and the app license has been reclaimed, you can choose to assign the app license to another user or device. 
+You can revoke all associated iOS or macOS volume-purchase program (VPP) app licenses based on a given device, user, or app.  But there are some differences between iOS and macOS platforms. 
+
+### Revoking app licenses on iOS
+You can notify users when an app is no longer assigned to them. But revoking an app license will not uninstall the related VPP app from the device. To uninstall a VPP app and reclaim an app license assigned to a user or device, you must change the assignment action to **Uninstall**. When you remove an app that was assigned to a user, Intune reclaims the user or device license and uninstalls the app from the device. The reclaimed license count will be reflected in **Licensed Apps** node in the **App** workload​ of Intune. Once a VPP app has been uninstalled and the app license has been reclaimed, you can choose to assign the app license to another user or device.
+
+
+### Revoking app licenses on macOS
+Revoking an app license does not uninstall the VPP app from the device. When you revoke an app license that was assigned to a user, Intune reclaims the user or device license. The macOS app with revoked license remains usable on the device, but cannot be updated until a license is reassigned to the user or device. According to Apple, such apps are removed after a 30-day grace period. However, Apple does not provide a means for Intune to remove the app using **Uninstall** assignment action. But you can choose to assign the reclaimed app license to another user or device.
 
 >[!NOTE]
->Intune will retrieve all user licensed iOS VPP apps licenses when an employee leaves the company and is no longer part of the AAD groups.
+>Intune will retrieve both iOS and macOS user licensed VPP app licenses when an employee leaves the company and is no longer part of the AAD groups.
 
+## Deleting VPP tokens
 <!-- 820879 -->  
-You can delete an iOS Volume Purchasing Program (VPP) token using the console. This may be necessary when you have duplicate instances of a VPP token. Deleting a token will also delete any associated apps and assignment. However, deleting a token does not revoke app licenses or uninstall apps. 
+You can delete an Apple Volume Purchasing Program (VPP) token using the console. This may be necessary when you have duplicate instances of a VPP token. Deleting a token will also delete any associated apps and assignment. However, deleting a token does not revoke app licenses or uninstall apps. 
 
 >[!NOTE]
 >Intune cannot revoke app licenses after a token has been deleted. 
@@ -162,20 +171,20 @@ To revoke the license of all VPP apps for a given VPP token, you must first revo
 
 You can renew an Apple VPP token by downloading a new token from Apple Volume Purchase Program portal and updating the existing token in Intune.
 
-## Deleting an iOS VPP app
+## Deleting a VPP app
 
 Currently, you cannot delete an iOS VPP app from Microsoft Intune.
 
 ## Assigning custom role permissions for VPP
 
-Access to iOS VPP tokens and iOS VPP apps can be controlled independently using permissions assigned to custom administrator roles in Intune.
+Access to Apple VPP tokens and VPP apps can be controlled independently using permissions assigned to custom administrator roles in Intune.
 
-* To allow an Intune custom role to manage iOS VPP tokens under **Client apps** > **iOS VPP tokens**, assign permissions for **Managed apps**.
+* To allow an Intune custom role to manage Apple VPP tokens under **Client apps** > **Apple VPP tokens**, assign permissions for **Managed apps**.
 * To allow an Intune custom role to manage apps purchased using iOS VPP tokens under **Client apps** > **Apps**, assign permissions for **Mobile apps**. 
 
 ## Additional information
 
-When a user with an eligible device first tries to install a VPP app to a device, they are asked to join the Apple Volume Purchase program. They must join before the app installation proceeds. The invitation to join the Apple Volume Purchase program requires that the user can use the iTunes app on the iOS device. If you have set a policy to disable the iTunes Store app, user-based licensing for VPP apps does not work. The solution is to either allow the iTunes app by removing the policy, or use device-based licensing.
+When a user with an eligible device first tries to install a VPP app to a device, they are asked to join the Apple Volume Purchase program. They must join before the app installation proceeds. The invitation to join the Apple Volume Purchase program requires that the user can use the App Store app on the iOS or macOS device. If you have set a policy to disable the App Store app, user-based licensing for VPP apps does not work. The solution is to either allow the App Store app by removing the policy, or use device-based licensing.
 
 Apple provides direct assistance to create and renew VPP tokens. For more information, see [Distribute content to your users with the Volume Purchase Program (VPP)](https://go.microsoft.com/fwlink/?linkid=2014661) as part of Apple's documentation. 
 
@@ -189,8 +198,8 @@ The license should be updated within a few hours after installing or uninstallin
 ### Is it possible to oversubscribe an app and, if so, in what circumstance?
 Yes. The Intune admin can oversubscribe an app. For example, if the admin purchases 100 licenses for app XYZ, and then targets the app to a group with 500 members in it. The first 100 members (users or devices) will get the license assigned to them, the rest of the members will fail on license assignment.
 
-### I understand Intune automatically syncs app licenses each day with Apple, is that correct?
-Intune syncs app licenses twice a day with Apple.
+### How frequently does Intune sync VPP tokens with Apple?
+Intune syncs VPP tokens and licenses twice a day with Apple. The Intune admin can initiate a manual sync under **Client apps** > **Apple VPP tokens**.
 
 ## Next steps
 

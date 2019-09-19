@@ -5,7 +5,7 @@ keywords:
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 08/28/2019
+ms.date: 09/03/2019
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -40,7 +40,11 @@ After you [configure your infrastructure](certificates-scep-configure.md) to sup
 2. Select **Device configuration** > **Profiles** > **Create profile**.
 3. Enter a **Name** and **Description** for the SCEP certificate profile.
 4. From the **Platform** drop-down list, select a [supported device platform](certificates-configure.md#supported-platforms-and-certificate-profiles) for this SCEP certificate. 
-5. From the **Profile type** drop-down list, select **SCEP certificate**.
+5. From the **Profile type** drop-down list, select **SCEP certificate**.  
+
+   > [!NOTE]  
+   > For the **Android Enterprise** platform, *Profile type* is divided into two categories: *Device Owner Only* and *Work Profile Only*.  SCEP certificate profiles are only supported for *Work Profile Only*.
+
 6. Select **Settings**, and then complete the following configurations:
 
    - **Certificate type**:   

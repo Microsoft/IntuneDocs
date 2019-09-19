@@ -1,10 +1,10 @@
 # User help for Intune
 
-## [Use managed devices to get work done](use-managed-devices-to-get-work-done.md)
+## [What is device enrollment?](use-managed-devices-to-get-work-done.md)
 
 ## [What information can my company see with Intune?](what-info-can-your-company-see-when-you-enroll-your-device-in-intune.md)
 
-## [Updating my password](password-does-not-meet-it-administrator-requirements.md)
+## [Device password requirements](password-does-not-meet-it-administrator-requirements.md)
 
 ## [Sign in to the Company Portal](sign-in-to-the-company-portal.md)
 
@@ -158,6 +158,7 @@
 
 ## [Using the Intune Company Portal website](using-the-intune-company-portal-website.md)
 ### [Manage apps](manage-apps-cpweb.md)  
+### [Get recovery key](get-recovery-key-cpweb.md)
 ### [Remote lock device](remote-lock-your-device-cpwebsite.md)  
 ### [Rename device](rename-your-device-cpwebsite.md)  
 ### [Remove device](remove-your-device-cpwebsite.md)  
