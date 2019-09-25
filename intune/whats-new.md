@@ -65,7 +65,7 @@ Apple's iOS 13.1 release includes User Enrollment, a new form of lightweight man
 - Target User Enrollment to user groups.
 - Give end users the ability to select between lighter User Enrollment or stronger Device Enrollment when they enroll their devices.
 
-Starting on 9/24/2019 with the release of iOS 31.1, we're in the process of rolling out these updates to all customers and expect to be completed by the end of next week.
+Starting on 9/24/2019 with the release of iOS 13.1, we're in the process of rolling out these updates to all customers and expect to be completed by the end of next week.
 Applies to:
 
 iOS 13.1 and later
