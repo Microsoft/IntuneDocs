@@ -71,7 +71,7 @@ If the device recently enrolled, the compliance and configuration check-in runs 
 | iOS | Every 15 minutes for 1 hour, and then around every 8 hours |  
 | macOS | Every 15 minutes for 1 hour, and then around every 8 hours | 
 | Android | Every 3 minutes for 15 minutes, then every 15 minutes for 2 hours, and then around every 8 hours | 
-| Windows 10 PCs enrolled as devices | Every 3 minutes for 30 minutes, and then around every 8 hours | 
+| Windows 10 PCs enrolled as devices | Every 3 minutes for 15 minutes, then every 15 minutes for 2 hours, and then around every 8 hours | 
 | Windows Phone | Every 5 minutes for 15 minutes, then every 15 minutes for 2 hours, and then around every 8 hours | 
 | Windows 8.1 | Every 5 minutes for 15 minutes, then every 15 minutes for 2 hours, and then around every 8 hours | 
 
