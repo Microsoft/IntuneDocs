@@ -92,7 +92,7 @@ Before you start, you need to get a VPP token from Apple and upload it to your I
 5. On the **Create VPP token** pane, specify the following information:
     - **VPP token file** - If you haven't already, sign up for the Volume Purchase Program for Business or the program for Education. After you sign up, download the Apple VPP token for your account and select it here.
     - **Apple ID** - Enter the Apple ID of the account associated with the volume-purchase program.
-    - **Take control of token from another MDM** - Setting this option to yes will allow the token to be reassigned to Intune from another MDM.
+    - **Take control of token from another MDM** - Setting this option to **yes** allows the token to be reassigned to Intune from another MDM.
     - **Token Name** - An administrative field for setting the token name.
     - **Country/Region** - Select the VPP country/region store.  Intune synchronizes VPP apps for all locales from the specified VPP country/region store.
         > [!WARNING]  
@@ -103,7 +103,7 @@ Before you start, you need to get a VPP token from Apple and upload it to your I
 
         > [!NOTE]
         > Automatic app updates work for both device and user licensed apps for iOS Version 11.0 and above.
-    - **I grant Microsoft permission to send both user and device information to Apple.** - You must select I agree to proceed. To review what data Microisoft sends to Apple use the following [link](https://docs.microsoft.com/intune/data-intune-sends-to-apple).
+    - **I grant Microsoft permission to send both user and device information to Apple.** - You must select **I agree** to proceed. To review what data Microisoft sends to Apple, see [Data Intune sends to Apple](https://docs.microsoft.com/intune/data-intune-sends-to-apple).
 
 6. When you are done, select **Create**.
 
