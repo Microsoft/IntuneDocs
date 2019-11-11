@@ -3,7 +3,7 @@
 
 title: Data transfer policy exceptions for apps 
 titleSuffix: Microsoft Intune
-description: Create exceptions to the Intune Mobile Application Management (MAM) data transfer policy.
+description: Create exceptions to the Intune App Protection Policy (APP) data transfer policy.
 keywords:
 author: Erikre
 ms.author: erikre
@@ -30,9 +30,9 @@ ms.custom: intune-azure
 ms.collection: M365-identity-device-management
 ---
 
-# How to create exceptions to the Intune Mobile Application Management (MAM) data transfer policy
+# How to create exceptions to the Intune App Protection Policy (APP) data transfer policy
 
-As an administrator, you can create exceptions to the Intune Mobile Application Management (MAM) data transfer policy. An exception allows you to specifically choose which unmanaged apps can transfer data to and from managed apps. Your IT must trust the unmanaged apps that you include in the exception list. 
+As an administrator, you can create exceptions to the Intune App Protection Policy (APP) data transfer policy. An exception allows you to specifically choose which unmanaged apps can transfer data to and from managed apps. Your IT must trust the unmanaged apps that you include in the exception list. 
 
 >[!WARNING] 
 > You are responsible for making changes to the data transfer exception policy. Additions to this policy allow unmanaged apps (apps that are not managed by Intune) to access data protected by managed apps. This access to protected data may result in data security leaks. Only add data transfer exceptions for apps that your organization must use, but that do not support Intune APP (Application Protection Policies). Additionally, only add exceptions for apps that you do not consider to be data leak risks.
@@ -75,6 +75,9 @@ By adding the **Webex** package as an exception to the MAM data transfer policy,
     
     <code>com.samsung.android.messaging</code>
 
+- Android **Certificate installer** example:
+    To exempt the native **Certificate installer** app so that Outlook for Android can install a S/MIME certificate (delivered as an email attachment) into the Android KeyStore, you must add the data transfer exceptions for the following string: <code>com.android.certinstaller</code>. For more information, see [Sensitivity labeling and protection in Outlook for iOS and Android](https://docs.microsoft.com/exchange/clients-and-mobile-in-exchange-online/outlook-for-ios-and-android/sensitive-labeling-and-protection-outlook-for-ios-android).
+    
 ## Next steps
 
 - [Create and deploy app protection policies](app-protection-policies.md)
