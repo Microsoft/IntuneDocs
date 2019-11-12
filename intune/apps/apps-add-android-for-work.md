@@ -128,7 +128,19 @@ For more information about Managed Google Play private apps including a FAQ, see
 
 >[!NOTE]
 >Private apps added using this method can never be made public. Only use this publishing option if you are sure that this app will always be private to your organization.
-  
+
+### Updating Managed Google Play private apps directly in the Intune console
+
+1. Sign in to [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
+3. In the **Intune** pane, select **Client apps** > **Apps**.
+5. In the **Apps** pane, select **Add**.
+6. In the **App type** dropdown box, select **Managed Google Play**.
+7. Select **Managed Google Play - Open** to open the managed Google Play catalog.
+8. Select **Private Apps** in the Google Play catalog.  
+9. Select the private app you want to edit.
+10. Click Edit.
+11. Upload the new APK.
+12. Click Save.
 
 ### Managed Google Play private (LOB) app publishing using the Google Developer Console
 
