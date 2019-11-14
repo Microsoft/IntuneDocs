@@ -160,6 +160,8 @@ Use these settings to configure a kiosk-style experience on your dedicated devic
       - `www.contoso.com/image.bmp`
       - `https://www.contoso.com/image.html`
 
+      Supported image formats include *.jpg, *.png, *.bmp 
+
       If you don't enter a URL, then the device's default image is used, if there is a default image.
 
     - **Number of seconds the device shows screen saver before turning off screen**: Choose how long the device shows the screensaver. Enter a value between 0-9999999 seconds. Default is `0` seconds. When left blank, or set to zero (`0`), the screen saver is active until a user interacts with the device.
