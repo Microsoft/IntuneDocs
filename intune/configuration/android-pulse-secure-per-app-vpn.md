@@ -41,6 +41,10 @@ After you assign the policy to your Android device or user groups, users should 
 >
 > Only the Pulse Secure and Citrix connection types are supported for this profile.
 
+> [!NOTE]
+>
+>The Per-app VPN Profiles support is similar to for Android and Android Enteprise devices. 
+
 ## Step 1: Create a VPN profile
 
 1. Sign in to the [Microsoft Endpoint Manager Admin Center](https://go.microsoft.com/fwlink/?linkid=2109431).
