@@ -28,7 +28,7 @@ ms.collection: M365-identity-device-management
  
 # Use Device Firmware Configuration Interface profiles on Windows devices in Microsoft Intune (public preview)
 
-[!INCLUDE [azure_portal](../includes/azure_portal.md)]
+
 
 When you use Intune to manage Autopilot devices, you can manage UEFI (BIOS) settings after they're enrolled, using the Device Firmware Configuration Interface (DFCI). For an overview of benefits, scenarios, and prerequisites, see [Overview of DFCI](https://microsoft.github.io/mu/dyn/mu_plus/DfciPkg/Docs/Dfci_Feature/).
 

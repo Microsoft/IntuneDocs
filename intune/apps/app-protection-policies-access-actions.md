@@ -8,7 +8,7 @@ keywords:
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 10/24/2019
+ms.date: 11/26/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: apps
@@ -37,19 +37,16 @@ You can explicitly choose to wipe your company’s corporate data from the end u
 
 ## Create an app protection policy using conditional launch actions
 
-1. Sign in to [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
-3. In the **Intune** pane, select **Client apps** > **App protection Policies**.
-4. Click **Add a policy** (You can also edit an existing policy). 
-5. Click **Configure required settings** to see the list of settings available to be configured for the policy. 
-6. By scrolling down in the Settings pane, you will see a section titled **Conditional launch** with an editable table.
+1. Sign in to the [Microsoft Endpoint Manager Admin Center](https://go.microsoft.com/fwlink/?linkid=2109431).
+2. Select **Apps** > **App protection Policies**.
+3. Click **Create policy** and select the platform of the device for your policy. 
+4. Click **Configure required settings** to see the list of settings available to be configured for the policy. 
+5. By scrolling down in the Settings pane, you will see a section titled **Conditional launch** with an editable table.
 
     ![Screenshot of the Intune app protection access actions](./media/app-protection-policies-access-actions/apps-selective-wipe-access-actions01.png)
 
-7. Select a **Setting** and enter the **Value** that users must meet to sign in to your company app. 
-8. Select the **Action** you want to take if users do not meet your requirements. In some cases, multiple actions can be configured for a single setting. For more information, see [How to create and assign app protection policies](app-protection-policies.md).
-
->[!NOTE]
-> To use the **Device model(s) or Device manufacturer(s)** setting, input a semi-colon separated list of device model identifiers (iOS) or device manufacturers (Android). Avoid spaces in lists of multiple values. These values are not case sensitive. 
+6. Select a **Setting** and enter the **Value** that users must meet to sign in to your company app. 
+7. Select the **Action** you want to take if users do not meet your requirements. In some cases, multiple actions can be configured for a single setting. For more information, see [How to create and assign app protection policies](app-protection-policies.md).
 
 ## Policy settings 
 
@@ -66,7 +63,7 @@ For iOS, you will be able to configure actions for the following settings using 
 - Device model(s)
 - Max allowed device threat level
 
-To use the **Device model(s)** setting, input a semi-colon separated list of iOS model identifiers. You can find an iOS model identifier under the Device Type column in [HockeyApp's support documentation](https://support.hockeyapp.net/kb/client-integration-ios-mac-os-x-tvos/ios-device-types).<br>
+To use the **Device model(s)** setting, input a semi-colon separated list of iOS model identifiers. These values are not case sensitive. Besides within Intune Reporting for the 'Device model(s)' input, you can find an iOS model identifier under the Device Type column in [HockeyApp's support documentation](https://support.hockeyapp.net/kb/client-integration-ios-mac-os-x-tvos/ios-device-types) or this [3rd party GitHub repository](https://gist.github.com/adamawolf/3048717).<br>
 Example input: *iPhone5,2;iPhone5,3*
 
 On end-user devices, the Intune client would take action based on a simple matching of device model strings specified in Intune for Application Protection Policies. Matching depends entirely on what the device reports. You (the IT administrator) are encouraged to ensure that the intended behavior occurs by testing this setting based on a variety of device manufacturers and models, and targeted to a small user group. The default value is **Not configured**.<br>
@@ -94,7 +91,7 @@ For Android, you will be able to configure actions for the following settings us
 
 By using the **Min Company Portal version**, you can specify a specific minimum defined version of the Company Portal that is enforced on an end user device. This conditional launch setting allows you to set values to **Block access**, **Wipe data**, and **Warn** as possible actions when each value is not met. The possible formats for this value follows the pattern *[Major].[Minor]*, *[Major].[Minor].[Build]*, or *[Major].[Minor].[Build].[Revision]*. Given that some end users may not prefer a forced update of apps on the spot, the 'warn' option may be ideal when configuring this setting. The Google Play Store does a good job of only sending the delta bytes for app updates, but this can still be a large amount of data that the user may not want to utilize if they are on data at the time of the update. Forcing an update and thereby downloading an updated app could result in unexpected data charges at the time of the update. The **Min Company Portal version** setting, if configured, will affect any end user who gets gets version 5.0.4560.0 of the Company Portal and any future versions of the Company Portal. This setting will have no effect on users using a version of Company Portal that is older than the version that this feature is released with. End users using app auto-updates on their device will likely not see any dialogs from this feature, given that they will likely be on the latest Company Portal version. This setting is Android only with app protection for enrolled and unenrolled devices.
 
-To use the **Device manufacturer(s)** setting, input a semi-colon separated list of Android manufacturers. You can find the Android manufacturer of a device under the device settings.<br>
+To use the **Device manufacturer(s)** setting, input a semi-colon separated list of Android manufacturers. These values are not case sensitive. Besides Intune Reporting, you can find the Android manufacturer of a device under the device settings. <br>
 Example input: *Manufacturer A;Manufacturer B* 
 
 >[!NOTE]

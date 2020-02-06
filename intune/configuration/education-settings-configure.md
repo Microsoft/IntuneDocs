@@ -30,7 +30,7 @@ ms.collection: M365-identity-device-management
 
 # Use the Take a Test app on Windows 10 devices in Microsoft Intune
 
-[!INCLUDE [azure_portal](../includes/azure_portal.md)]
+
 
 Education profiles in Intune are designed for students to take a test or exam on devices. This feature includes the **Take a Test** app and settings to add a test URL, choose how end-users sign in to the test, and more. This feature supports the following platform:
 

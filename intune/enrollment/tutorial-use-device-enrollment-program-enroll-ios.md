@@ -41,7 +41,7 @@ Before enrolling iOS devices with Apple's corporate enrollment features, you nee
 
 You use the ABM or DEP portal to create a Device Enrollment token. You also use the portals to assign devices to Intune for management.
 
-1. In the [Microsoft Endpoint Manager Admin Center](https://go.microsoft.com/fwlink/?linkid=2109431), choose **Device enrollment** > **Apple enrollment** > **Enrollment Program Tokens** > **Add**.
+1. In the [Microsoft Endpoint Manager Admin Center](https://go.microsoft.com/fwlink/?linkid=2109431), choose **Devices** > **iOS** > **iOS enrollment** > **Enrollment Program Tokens** > **Add**.
 
 2. Grant permission to Microsoft to send user and device information to Apple by selecting **I agree**.
 
@@ -77,7 +77,7 @@ You use the ABM or DEP portal to create a Device Enrollment token. You also use 
 ## Create an Apple enrollment profile
 Now that you've installed your token, you can create an enrollment profile for corporate-owned iOS devices. A device enrollment profile defines the settings applied to a group of devices during enrollment.
 
-1. In the [Microsoft Endpoint Manager Admin Center](https://go.microsoft.com/fwlink/?linkid=2109431), choose **Device enrollment** > **Apple Enrollment** > **Enrollment program tokens**.
+1. In the [Microsoft Endpoint Manager Admin Center](https://go.microsoft.com/fwlink/?linkid=2109431), choose **Devices** > **iOS** > **iOS enrollment** > **Enrollment Program Tokens**.
 
 2. Select the token you just installed, choose **Profiles** > **Create profile**.
 
@@ -87,7 +87,7 @@ Now that you've installed your token, you can create an enrollment profile for c
 
 5. Determine if you would like your devices to enroll with or without **User Affinity**. User Affinity is designed for devices that will be used by particular users. If your users will want to use the Company Portal for services like installing apps, choose **Enroll with User Affinity**. If your users do not need the Company Portal or you want to provision the device for many users, choose **Enroll without User Affinity**.
 
-6. If you chose to enroll with User Affinity, determine if you would like to Authenticate with Company Portal or Apple Setup Assistant. If you would like to use Multi-Factor Authentication, allow users to change passwords upon first sign in, or prompt users to reset their expired passwords during enrollment, choose **Yes** under **Authenticate with Company Portal instead of Apple Setup Assistant**. If you are comfortable using Apple's provided basic HTTP authentication through Apple Setup Assistant, choose **No**.
+6. If you chose to enroll with User Affinity, determine if you would like to Authenticate with Company Portal or Apple Setup Assistant. If you would like to use Multi-Factor Authentication, allow users to change passwords upon first sign in, or prompt users to reset their expired passwords during enrollment, choose **Yes** under **Authenticate with Company Portal instead of Apple Setup Assistant**. If you are comfortable using Apple's provided basic HTTP authentication through Apple Setup Assistant, choose **No**. If you choose **Yes** and you would like the Company Portal application to update automatically on end users' devices, separately deploy the Company Portal as a required app to these users through Apple's Volume Purchasing Program (VPP).
 
 7. If you chose to enroll with User Affinity and Authenticate with Company Portal, determine if you would like to install Company Portal with Apple's Volume Purchase Program (VPP). If you install the Company Portal with a VPP token, your user will not have to enter an Apple ID and Password to download the Company Portal from the app store during enrollment. Choose **Use Token:** under **Install Company Portal with VPP** to select a VPP token that has free licenses of the Company Portal available. If you don't want to use VPP to deploy the Company Portal, choose **Don't use VPP** under **Install Company Portal with VPP**. 
 
@@ -115,13 +115,13 @@ Now that you've installed your token, you can create an enrollment profile for c
 
 After you set up an enrollment program token with the ABM, ASM, or DEP portal and assign devices there to the MDM server, you can wait for these devices to sync to the Intune service, or manually push a sync. Without a manual sync, devices may take up to 24 hours to show up in the Azure portal.
 
-1. In the [Microsoft Endpoint Manager Admin Center](https://go.microsoft.com/fwlink/?linkid=2109431), choose **Device enrollment** > **Apple Enrollment** > **Enrollment program tokens** > choose a token in the list > **Devices** > **Sync**.
+1. In the [Microsoft Endpoint Manager Admin Center](https://go.microsoft.com/fwlink/?linkid=2109431), choose **Devices** > **iOS** > **iOS enrollment** > **Enrollment Program Tokens** > choose a token in the list > **Devices** > **Sync**.
 
 ## Assign an enrollment profile to iOS devices
 
 You must assign an enrollment program profile to devices before they can enroll. These devices are synced to Intune from Apple, and must be assigned to the proper MDM server token in the ABM, ASM, or DEP portal.
 
-1. In the [Microsoft Endpoint Manager Admin Center](https://go.microsoft.com/fwlink/?linkid=2109431), choose **Device enrollment** > **Apple Enrollment** > **Enrollment program tokens** > choose your token in the list.
+1. In the [Microsoft Endpoint Manager Admin Center](https://go.microsoft.com/fwlink/?linkid=2109431), choose **Devices** > **iOS** > **iOS enrollment** > **Enrollment Program Tokens** > choose your token in the list.
 2. Choose **Devices** > choose devices in the list > **Assign profile**.
 3. Under **Assign profile**, choose a profile for the devices > **Assign**.
 

@@ -6,7 +6,7 @@ keywords:
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 10/16/2019
+ms.date: 11/18/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -21,7 +21,7 @@ ms.collection: M365-identity-device-management
 
 # Guided scenario - Cloud-managed Modern Desktop
 
-The modern desktop is the state-of-the-art productivity platform for the Information Worker. Office 365 ProPlus and Windows 10 are the core components of the modern desktop along with the latest security baselines for Windows 10 and Windows Defender Advanced Threat Protection. 
+The modern desktop is the state-of-the-art productivity platform for the Information Worker. Office 365 ProPlus and Windows 10 are the core components of the modern desktop along with the latest security baselines for Windows 10 and Microsoft Defender Advanced Threat Protection. 
 
 Managing the modern desktop from the cloud brings the added benefit of internet-wide remote actions. Cloud-management utilizes the in-built Windows Mobile Device Management policies and removes dependencies on local Active Directory group policy. 
 
@@ -29,7 +29,7 @@ If you want to evaluate a cloud-managed modern desktop in your own organization,
 
 ## Prerequisites
 - [Set the MDM authority to Intune](~/fundamentals/mdm-authority-set.md#set-mdm-authority-to-intune) - The mobile device management (MDM) authority setting determines how you manage your devices. As an IT admin, you must set an MDM authority before users can enroll devices for management.
-- M356 E3 minimum (or M365 E5 for best security)
+- M365 E3 minimum (or M365 E5 for best security)
 - Windows 10 1903 device (registered with Windows Autopilot for best end-user experience)
 - Intune administrator permissions required to complete this guided scenario:
   - Device configuration Read, Create, Delete, Assign and Update
@@ -114,5 +114,5 @@ Once the user joins the device to Azure Active Directory, the following configur
 
 ## Next steps
 
-- If you are using Windows Defender Advanced Threat Detection, create an [Intune Compliance policy](~/protect/advanced-threat-protection.md#create-and-assign-the-compliance-policy) to require Defender threat analysis to meet compliance.
+- If you are using Microsoft Defender Advanced Threat Detection, create an [Intune Compliance policy](~/protect/advanced-threat-protection.md#create-and-assign-the-compliance-policy) to require Defender threat analysis to meet compliance.
 - Create a [Device-based Conditional Access policy](~/protect/advanced-threat-protection.md#create-a-conditional-access-policy) to block access if the device does not meet Intune compliance.

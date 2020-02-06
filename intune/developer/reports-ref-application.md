@@ -7,7 +7,7 @@ keywords: Intune Data Warehouse
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 10/02/2019
+ms.date: 01/02/2020
 ms.topic: reference
 ms.service: microsoft-intune
 ms.subservice: developer
@@ -29,7 +29,7 @@ ms.collection: M365-identity-device-management
 
 # Reference for application entities
 
-The **Application** category contains entities for mobile devices that track information such as:
+The **Application** category contains entities for devices that track information such as:
 
 - Versions of an app
 - Installation source of an app

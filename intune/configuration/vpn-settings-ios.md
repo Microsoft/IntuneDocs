@@ -7,7 +7,7 @@ keywords:
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 10/18/2019
+ms.date: 11/13/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.subservice: configuration
@@ -27,8 +27,6 @@ ms.collection: M365-identity-device-management
 ---
 
 # Add VPN settings on iOS devices in Microsoft Intune
-
-[!INCLUDE [azure_portal](../includes/azure_portal.md)]
 
 Microsoft Intune includes many VPN settings that can be deployed to your iOS devices. These settings are used to create and configure VPN connections to your organization's network. This article describes these settings. Some settings are only available for some VPN clients, such as Citrix, Zscaler, and more.
 
@@ -77,7 +75,7 @@ The settings shown in the following list are determined by the VPN connection ty
     > [!NOTE]
     > If username and password are used as the authentication method for Cisco IPsec VPN, they must deliver the SharedSecret through a custom Apple Configurator profile.
 
-  - **Derived credential**: If no derived credential issuer has been configured, Intune prompts you to do so.
+  - **Derived credential**: Use a certificate that’s derived from a user’s smart card. If no derived credential issuer is configured, Intune prompts you to add one. For more information, see [Use derived credentials in Microsoft Intune](../protect/derived-credentials.md).
 
 - **Excluded URLs** (Zscaler only): When connected to the Zscaler VPN, the listed URLs are accessible outside the Zscaler cloud. 
 
@@ -106,7 +104,7 @@ The settings shown in the following list are determined by the VPN connection ty
   - When NAC is enabled, the VPN is disconnected every 24 hours. The VPN can immediately be reconnected.
   - The device ID is part of the profile, but it isn't shown in Intune. This ID isn't stored by Microsoft anywhere, and isn't shared by Microsoft.
 
-  When the device ID is supported by VPN partners, the VPN client, such as Citrix SSO, can get the ID. Then, it can query Intune to confirm the device is enrolled, and if the VPN profile is compliant or not compliant.
+  For the VPN partners that support device ID, the VPN client, such as Citrix SSO, can get the ID. Then, it can query Intune to confirm the device is enrolled, and if the VPN profile is compliant or not compliant.
 
   - To remove this setting, recreate the profile, and don't select **I agree**. Then, reassign the profile.
 
@@ -128,7 +126,7 @@ These settings apply when you choose **Connection type** > **IKEv2**.
       - **ECDSA384**
       - **ECDSA521**
 
-  - **Username and password** (User authentication only): When users connect to the VPN, they are prompted for their username and password.
+  - **Username and password** (User authentication only): When users connect to the VPN, they're prompted for their username and password.
   - **Shared secret** (Machine authentication only): Allows you to enter a shared secret to send to the VPN server.
     - **Shared secret**: Enter the shared secret, also known as the pre-shared key (PSK). Be sure the value matches the shared secret configured on the VPN server.
 
@@ -144,6 +142,10 @@ These settings apply when you choose **Connection type** > **IKEv2**.
 
 - **TLS version range minimum**: Enter the minimum TLS version to use. Enter `1.0`, `1.1`, or `1.2`. If left blank, the default value of `1.0` is used.
 - **TLS version range maximum**: Enter the maximum TLS version to use. Enter `1.0`, `1.1`, or `1.2`. If left blank, the default value of `1.2` is used.
+
+> [!NOTE]
+> TLS version range minimum and maximum must be set when using user authentication and certificates.
+
 - **Perfect forward secrecy**: Select **Enable** to turn on perfect forward secrecy (PFS). PFS is an IP security feature that reduces the impact if a session key is compromised. **Disable** (default) doesn't use PFS.
 - **Certificate revocation check**: Select **Enable** to make sure the certificates aren't revoked before allowing the VPN connection to succeed. This check is best-effort. If the VPN server times out before determining if the certificate is revoked, access is granted. **Disable** (default) doesn't check for revoked certificates.
 
@@ -185,7 +187,7 @@ These settings apply when you choose **Connection type** > **IKEv2**.
 
 ## Automatic VPN settings
 
-- **Per-app VPN**: Enables per-app VPN. Allows the VPN connection to trigger automatically when certain apps are opened. Also associate the apps with this VPN profile. For more information, see [instructions for setting up per-app VPN for iOS](vpn-setting-configure-per-app.md).
+- **Per-app VPN**: Enables per-app VPN. Allows the VPN connection to trigger automatically when certain apps are opened. Also associate the apps with this VPN profile. Per-app VPN is not supported on IKEv2. For more information, see [instructions for setting up per-app VPN for iOS](vpn-setting-configure-per-app.md). 
   - **Provider Type**: Only available for Pulse Secure and Custom VPN.
   - When using iOS **per-app VPN** profiles with Pulse Secure or a Custom VPN, choose app-layer tunneling (app-proxy) or packet-level tunneling (packet-tunnel). Set the **ProviderType** value to **app-proxy** for app-layer tunneling, or **packet-tunnel** for packet-layer tunneling. If you're not sure which value to use, check your VPN provider's documentation.
   - **Safari URLs that will trigger this VPN**: Add one or more web site URLs. When these URLs are visited using the Safari browser on the device, the VPN connection is automatically established.
@@ -193,7 +195,10 @@ These settings apply when you choose **Connection type** > **IKEv2**.
 - **On-demand VPN**: Configure conditional rules that control when the VPN connection is started. For example, create a condition where the VPN connection is only used when a device isn't connected to a company Wi-Fi network. Or, create a condition. For example, if a device can't access a DNS search domain you enter, then the VPN connection isn't started.
 
   - **SSIDs or DNS search domains**: Select whether this condition uses wireless network **SSIDs**, or **DNS search domains**. Choose **Add** to configure one or more SSIDs or search domains.
-  - **URL string probe**: Optional. Enter a URL that the rule uses as a test. If the device with this profile accesses this URL without redirection, then the VPN connection is started. And, the device connects to the target URL. The user doesn't see the URL string probe site. A URL string probe example is the address of an auditing Web server that checks device compliance before connecting the VPN. Another possibility is that the URL tests the ability of the VPN to connect to a site before connecting the device to the target URL through the VPN.
+  - **URL string probe**: Optional. Enter a URL that the rule uses as a test. If the device accesses this URL without redirection, then the VPN connection is started. And, the device connects to the target URL. The user doesn't see the URL string probe site.
+
+    For example, a URL string probe is an auditing Web server URL that checks device compliance before connecting the VPN. Or, the URL tests the VPN's ability to connect to a site before connecting the device to the target URL through the VPN.
+.
   - **Domain action**: Choose one of the following items:
     - Connect if needed
     - Never connect

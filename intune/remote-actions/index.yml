@@ -87,5 +87,5 @@ landingContent:
             url: device-lost-mode.md
           - text: Erase data from macOS device
             url: device-erase.md
-          - text: Bypass activation lock
-            url: device-activation-lock-bypass.md
+          - text: Disable Activation Lock
+            url: device-activation-lock-disable.md

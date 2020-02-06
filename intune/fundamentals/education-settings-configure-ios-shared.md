@@ -35,7 +35,7 @@ ms.collection: M365-identity-device-management
 [!INCLUDE [azure_portal](../includes/azure_portal.md)]
 
 > [!NOTE]
-> Intune settings for the Classroom App are obsolete in Intune. This article is only applicable for users with existing education profiles in Intune.
+> Intune doesn't currently support configuring the Classroom app. This article is only applicable for users with existing iOS education profiles in Intune.
 
 Intune supports the iOS Classroom app that helps teachers to guide learning, and control student devices in the classroom. In addition, to the Classroom app, Apple supports the ability for student iPad devices to be configured such that multiple students can share a single device. This document guides you to achieve this goal with Intune.
 

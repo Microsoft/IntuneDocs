@@ -44,14 +44,15 @@ For example, let’s say a Seattle regional office admin has the Policy and Prof
 ## Default scope tag
 The default scope tag is automatically added to all untagged objects that support scope tags.
 
-The default scope tag feature is similar to the security scopes feature in System Center Configuration Manager. 
+The default scope tag feature is similar to the security scopes feature in Microsoft Endpoint Configuration Manager. 
 
 ## To create a scope tag
 
-1. In Intune, choose **Roles** > **Scope (Tags)** > **Create**.
+1. In the [Microsoft Endpoint Manager Admin Center](https://go.microsoft.com/fwlink/?linkid=2109431), choose **Tenant administration** > **Roles** > **Scope (Tags)** > **Create**.
 
     ![Screenshot of create a scope tag.](./media/scope-tags/create-scope-tag.png)
 
+2. Provide a **Name** and optional **Description**.
 3. If you want all devices in specific groups, choose **Assign scope tag to all devices in selected groups**.
     1. In the **Select groups to include** page, choose the groups containing the devices that you want to assign this scope tag to.
     2. Choose **Select**.
@@ -59,10 +60,7 @@ The default scope tag feature is similar to the security scopes feature in Syste
 
 ## To assign a scope tag to a role
 
-1. In Intune, choose **Roles** > **All roles** > choose a role > **Assignments** > **Assign**.
-
-    ![Screenshot of assign scope to a role.](./media/scope-tags/assign-scope-to-role.png)
-
+1. In the [Microsoft Endpoint Manager Admin Center](https://go.microsoft.com/fwlink/?linkid=2109431), choose **Tenant administration** > **Roles** > **All roles** > choose a role > **Assignments** > **Assign**.
 2. Provide an **Assignment name** and **Description**.
 3. Choose **Members (Groups)** > **Add** > choose the groups that you want as part of this assignment > **Select** > **OK**. Users in this group will have permissions to manage users/devices in the Scope (Groups).
 
@@ -86,9 +84,7 @@ The default scope tag feature is similar to the security scopes feature in Syste
 
 For objects that support scope tags, scope tags usually appear under **Properties**. For example, to assign a scope tag to a configuration profile, follow these steps:
 
-1. In Intune, choose **Device configuration** > **Profiles** > choose a profile.
-
-    ![Screenshot of select profile.](./media/scope-tags/choose-profile.png)
+1. In the [Microsoft Endpoint Manager Admin Center](https://go.microsoft.com/fwlink/?linkid=2109431), choose **Devices** > **Configuration profiles** > choose a profile.
 
 2. Choose **Properties** > **Scope (Tags)** > **Add**.
 

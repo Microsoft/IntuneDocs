@@ -7,7 +7,7 @@ keywords:
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 09/03/2019
+ms.date: 12/04/2019
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -27,14 +27,16 @@ ms.reviewer:
 ms.suite: ems
 #ms.tgt_pltfrm:
 ms.custom: intune-enduser
-ms.collection: M365-identity-device-management
+ms.collection: 
 ---
 
 # Get a recovery key for a macOS device
 
 Use the Company Portal website to get a recovery key for your locked macOS device. If you forget your device password, you can sign in to the Company Portal from another device to retrieve your key.  
 
-This option is only available for devices that were encrypted by your organization using FileVault. It's not available for devices that you've personally encrypted.
+## Get recovery key from Company Portal website
+
+This option is available for devices that were encrypted by your organization using FileVault. It's not available for devices that you've personally encrypted.
 
 1. On any device, sign in to the [Company Portal website](https://portal.manage.microsoft.com) and select the **Menu** button > **Devices**.  
 2. Select the encrypted macOS device.  
@@ -49,6 +51,19 @@ This option is only available for devices that were encrypted by your organizati
     For security reasons, the key will disappear after five minutes. To see the key again, select **Get recovery key**.
 
 If a key isn't found but your device is properly encrypted, contact your organization's support person. For contact information, check the [Company Portal website](https://go.microsoft.com/fwlink/?linkid=2010980).  
+
+## Get recovery key from Company Portal app for iOS
+
+You can retrieve your personal recovery key (FileVault key) using the Company Portal app for iOS. Your device that has the personal recovery key must be enrolled with Intune and encrypted with FileVault through Intune. This option is not available for devices that you've personally encrypted. 
+
+Using the Company Portal app, you can open the Safari web view and retrieve your personal recovery key. 
+
+1. Open Company Portal.
+2. Click on **Get recovery key**.
+
+    ![Screenshot of Company Portal app for iOS, showing recovery key](./media/get-recovery-key-cpweb-02.png)  
+
+The Company Portal website opens in Safari web view and displays the key. 
 
 ## IT pro support
 

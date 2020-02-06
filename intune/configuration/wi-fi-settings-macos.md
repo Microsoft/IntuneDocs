@@ -29,7 +29,7 @@ ms.collection: M365-identity-device-management
 
 # Add Wi-Fi settings for macOS devices in Microsoft Intune
 
-[!INCLUDE [azure_portal](../includes/azure_portal.md)]
+
 
 You can create a profile with specific WiFi settings, and then deploy this profile to your macOS devices. Microsoft Intune offers many features, including authenticating to your network, adding a PKS or SCEP certificate, and more.
 

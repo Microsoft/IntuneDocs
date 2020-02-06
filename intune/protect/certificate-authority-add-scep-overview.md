@@ -59,7 +59,8 @@ The following steps provide an overview of using SCEP for certificates in Intune
 
 The following diagram shows a detailed flow of third-party SCEP integration with Intune:
 
-![How third-party certification authority SCEP integrates with Microsoft Intune](./media/certificate-authority-add-scep-overview/scep-certificate-vendor-integration.png)
+> [!div class="mx-imgBorder"]
+> ![How third-party certification authority SCEP integrates with Microsoft Intune](./media/certificate-authority-add-scep-overview/scep-certificate-vendor-integration.png)
 
 ## Set up third-party CA integration
 
@@ -120,7 +121,7 @@ When you unenroll or wipe the device, the certificates are removed. The certific
 ## Third-party certification authority partners
 The following third-party certification authorities support Intune:
 
-- [Entrust Datacard](https://info.entrustdatacard.com/pki-eval-tool)
+- [Entrust Datacard](https://go.entrustdatacard.com/pki/intune/)
 - [EJBCA GitHub open-source version](https://github.com/agerbergt/intune-ejbca-connector)
 - [EverTrust](https://evertrust.fr/en/products/)
 - [GlobalSign](https://downloads.globalsign.com/acton/attachment/2674/f-6903f60b-9111-432d-b283-77823cc65500/1/-/-/-/-/globalsign-aeg-microsoft-intune-integration-guide.pdf)

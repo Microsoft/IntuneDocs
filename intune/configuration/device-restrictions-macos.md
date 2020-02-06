@@ -29,7 +29,7 @@ ms.collection: M365-identity-device-management
 
 # macOS device settings to allow or restrict features using Intune
 
-[!INCLUDE [azure_portal](../includes/azure_portal.md)]
+
 
 This article lists and describes the different settings you can control on macOS devices. As part of your mobile device management (MDM) solution, use these settings to allow or disable features, set password rules, allow or restrict specific apps, and more.
 

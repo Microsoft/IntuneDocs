@@ -4,8 +4,8 @@
 title: Troubleshoot software updates in Microsoft Intune - Azure | Microsoft Docs
 description: Solve software update problems in Microsoft Intune.
 keywords:
-author: MandiOhlinger
-ms.author: mandia
+author: Brenduns
+ms.author: brenduns
 manager: dougeby
 ms.date: 05/29/2019
 ms.topic: troubleshooting

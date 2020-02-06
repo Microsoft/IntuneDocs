@@ -6,7 +6,7 @@ keywords:
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 08/23/2019
+ms.date: 01/10/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: apps
@@ -52,8 +52,10 @@ The following table lists the specific app types and how you can add them in the
 | Windows Phone 8.1 store apps  | Store app  | Select **Windows Phone 8.1** as the **app type**, and enter the Microsoft store URL for the app. |
 | Microsoft store apps  | Store app  | Select **Windows** as the **app type**, and enter the Microsoft store URL for the app. |
 | Managed Google Play apps | Store app  | Select **Managed Google Play** as the **app type**, search for the app, and select the app in Intune. |
-| Office 365 apps for Windows 10  | Store app (Office 365) | Select **Windows 10** under the **Office 365 Suite** as the **app type**, and then select the Office 365 app that you want to install.  |
-| Office 365 apps for macOS | Store app (Office 365) | Select **macOS** under the **Office 365 Suite** as the **app type**, and then select the Office 365 app suite. |
+| Office 365 apps for Windows 10  | Store app (Office 365) | Select **Windows 10** under **Office 365 Suite** as the **app type**, and then select the Office 365 app that you want to install.  |
+| Office 365 apps for macOS | Store app (Office 365) | Select **macOS** under **Office 365 Suite** as the **app type**, and then select the Office 365 app suite. |
+| Microsoft Edge, version 77 and later for Windows 10 | Store app | Select **Windows 10** under **Microsoft Edge, version 77 and later** as the **app type**. |
+| Microsoft Edge, version 77 and later for macOS | Store app | Select **macOS** under **Microsoft Edge, version 77 and later** as the **app type**. |
 | Android line-of-business (LOB) apps | LOB app | Select **Line-of-business** app as the **app type**, select the **App package file**, and then enter an Android installation file with the extension **.apk**.  |
 | iOS LOB apps | LOB app | Select **Line-of-business** app as the **app type**, select the **App package file**, and then enter an iOS installation file with the extension **.ipa**.  |
 | Windows Phone LOB apps | LOB app | Select **Line-of-business** app as the **app type**, select the **App package file**, and then enter a Windows Phone installation file with the extension **.xap**.  |
@@ -68,10 +70,10 @@ The following table lists the specific app types and how you can add them in the
 
 <sup>1</sup> For more information about Android Enterprise and Android work profiles, see [Understanding licensed apps](apps-add.md#understanding-licensed-apps) below.
 
-You can add an app in Microsoft Intune by selecting **Client apps** > **Apps** > **Add**. The **Add app** pane is displayed and allows you to select the **App type**. 
+You can add an app in Microsoft Intune by selecting **Apps** > **All apps** > **Add**. The **Select app type** pane is displayed and allows you to select the **App type**. 
 
 >[!TIP]
-> An LOB app is one that you add from an app installation file. For example, to install an iOS LOB app, you add the application by selecting **Line-of-business app** as the **App type** in the **Add app** pane. You then select the app package file (extension .ipa). These types of apps are typically written in-house.
+> An LOB app is one that you add from an app installation file. For example, to install an iOS LOB app, you add the application by selecting **Line-of-business app** as the **App type** in the **Select app type** pane. You then select the app package file (extension .ipa). These types of apps are typically written in-house.
 
 ## Assess app requirements
 As an IT Admin, you determine not only which apps your group must use, but you also determine the capabilities needed for each group and subgroup. For each app, you determine the platforms needed, the groups of users that need the app, the configuration policies to apply for those groups, and the protection policies to apply.  
@@ -147,7 +149,7 @@ Requirements for cloud storage space are as follows:
 - The maximum file size for any file that you upload is 8 GB.
 
   > [!NOTE]
-  > Windows Line-of-business (LOB) apps have a maximum size limit of 8 GB per app. iOS LOB apps have a maximum size limit of 4 GB per app.
+  > Windows Line-of-business (LOB) apps, including Win32, Windows Universal AppX, Windows Universal AppX bundle, Windows Universal MSI X, and Windows Universal MSI X bundle, have a maximum size limit of 8 GB per app. All other LOB apps, including iOS LOB apps, have a maximum size limit of 2 GB per app.
 
 ## Create and edit categories for apps
 
@@ -155,9 +157,8 @@ App categories can be used to help you sort apps to make them easier for users t
 
 When you add an app to Intune, you are given the option to select the category you want. Use the platform-specific topics to add an app and assign categories. To create and edit your own categories, use the following procedure:
 
-1. Sign in to [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
-3. In the **Intune** pane, select **Client apps**.
-4. In the **Client apps** workload pane, under **Setup**, select **App categories**.  
+1. Sign in to the [Microsoft Endpoint Manager Admin Center](https://go.microsoft.com/fwlink/?linkid=2109431).
+3. Select **Apps** > **App categories**.  
     The **App categories** pane displays a list of current categories. 
 5. Do either of the following:
     - To add a category, in the **Create category** pane, select **Add**, and then enter a name for the category.  
@@ -184,7 +185,7 @@ Intune will automatically reinstall, update, or remove a required app based on t
 
 ## App installation errors
 
-For details about Intune app installation errors, see [App installation errors](troubleshoot-app-install.md#app-installation-errors).
+For details about Intune app installation errors, see [App installation errors](troubleshoot-app-install.md).
 
 ## Next steps
 
@@ -202,6 +203,8 @@ To learn how to add apps for each platform to Intune, see:
 - [Windows LOB app](lob-apps-windows.md)
 - [Office 365 apps for Windows 10](apps-add-office365.md)
 - [Office 365 apps for macOS](apps-add-office365-macos.md)
+- [Microsoft Edge for Windows 10](apps-windows-edge.md)
+- [Microsoft Edge for macOS](apps-edge-macos.md)
 - [Built-in apps](apps-add-built-in.md)
 - [Android Enterprise system app](apps-ae-system.md)
-- [Win32 apps](app-management.md)
+- [Win32 apps](~/apps/apps-win32-app-management.md)

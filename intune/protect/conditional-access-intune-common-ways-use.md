@@ -21,7 +21,7 @@ ms.assetid: a0b8e55e-c3d8-4599-be25-dc10c1027b62
 #ROBOTS:
 #audience:
 #ms.devlang:
-#ms.reviewer:
+#ms.reviewer: demerson
 ms.suite: ems
 search.appverid: MET150
 #ms.tgt_pltfrm:
@@ -88,17 +88,9 @@ Conditional access for PCs provides capabilities similar to those available for 
 
 #### Corporate-owned
 
-- **On premises AD domain joined:** This option is commonly used by organizations that are reasonably comfortable with how they’re already managing their PCs through AD group policies or System Center Configuration Manager.
+- **On premises AD domain joined:** This option is commonly used by organizations that are reasonably comfortable with how they’re already managing their PCs through AD group policies or Configuration Manager.
 
 - **Azure AD domain joined and Intune management:** This scenario is for organizations that want to be cloud-first (that is, primarily use cloud services, with a goal to reduce use of an on-premises infrastructure) or cloud-only (no on-premises infrastructure). Azure AD Join works well in a hybrid environment, enabling access to both cloud and on-premises apps and resources. The device joins to the Azure AD and gets enrolled to Intune, which can be used as a conditional access criteria when accessing corporate resources.
-
-- **AD domain joined and System Center Configuration Manager:** As of current branch, System Center Configuration Manager provides conditional access capabilities that can evaluate specific compliance criteria, in addition to being a domain-joined PC:
-
-  - Is the PC encrypted?
-
-  - Is anti-malware installed? Is it up-to-date?
-
-  - Is the device jailbroken or rooted?
 
 #### Bring your own device (BYOD)
 

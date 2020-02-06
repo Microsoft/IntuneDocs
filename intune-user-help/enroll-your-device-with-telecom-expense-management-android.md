@@ -26,7 +26,7 @@ ms.reviewer: sumitp
 ms.suite: ems
 #ms.tgt_pltfrm:
 ms.custom: intune-enduser
-ms.collection: M365-identity-device-management
+ms.collection: 
 ---
 
 # Enroll your Android device in telecom expense management

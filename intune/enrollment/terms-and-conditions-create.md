@@ -51,31 +51,30 @@ To learn which method is best for you, check out the [Choosing the right Terms s
 ## Create terms and conditions
 Complete these steps to create terms and conditions. The display name and description are for administrative use while terms properties are displayed to users in the Company Portal.
 
-1. Sign in to [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
-2. On the **Intune** pane, choose **Device enrollment** > **Terms and Conditions**.
-3. Choose **Create**.
-4. On the **Basics** page, specify the following information:
+1. Sign in to the [Microsoft Endpoint Manager Admin Center](https://go.microsoft.com/fwlink/?linkid=2109431), choose **Tenant administration** > **Terms and Conditions**.
+2. Choose **Create**.
+3. On the **Basics** page, specify the following information:
 
    - **Name**: The name for the terms in the Azure portal. Users don't see this name.
    - **Description**: Optional details that help you identify this set of terms in the Azure portal.
 
     ![Screenshot of the Azure portal showing the Basics page for terms and conditions](./media/terms-and-conditions-create/terms-basics-page.png)
 
-5. Choose **Next** to go to the **Terms** page and provide the following information:
+4. Choose **Next** to go to the **Terms** page and provide the following information:
 
    - **Title**: The name for your terms that users see in the Company Portal above the **Summary**.
    - **Terms and Conditions**: The terms and conditions that users see and must either accept or reject.
    - **Summary of Terms**: Text that explains what it means when users accept the terms. For example, "By enrolling your device, you're agreeing to the terms of use set out by Contoso. Read the terms carefully before proceeding."
 
-6. Choose **Next** to go to the **Scope tags** page.
+5. Choose **Next** to go to the **Scope tags** page.
 
-7. Choose **Select scope tags**, select the scope tags that you want to assign to these terms and conditions, and then choose **Select**. 
+6. Choose **Select scope tags**, select the scope tags that you want to assign to these terms and conditions, and then choose **Select**. 
 
-8. Choose **Next** to go to the **Assignments** page and choose one of the following options for **Assign to**:
+7. Choose **Next** to go to the **Assignments** page and choose one of the following options for **Assign to**:
     - **All users**: Choose this option to assign these terms and conditions to all users.
     - **Select groups**: Choose this option to assign these terms and conditions to everyone in the groups that you identify by choosing **Select groups to include**.
 
-9. Choose **Next** > **Create**.
+8. Choose **Next** > **Create**.
 
 ## See how terms are displayed to your users
 The following example shows the **Title** and **Summary of Terms** in the admin console and Company Portal.
@@ -89,8 +88,7 @@ The following example shows the terms and conditions in the admin console and th
 
 ## Monitor terms and conditions
 
-1. Sign in to [Intune](https://go.microsoft.com/fwlink/?linkid=2090973). 
-1. On the Intune pane, choose **Device enrollment** > **Terms and Conditions**.
+1. Sign in to the [Microsoft Endpoint Manager Admin Center](https://go.microsoft.com/fwlink/?linkid=2109431), choose **Tenant administration** > **Terms and Conditions**.
 2. In the list of terms and conditions, choose the terms you want to view acceptance for > **Acceptance Reporting**.
 
 ## Work with multiple versions of terms and conditions
@@ -100,12 +98,10 @@ You can edit your terms and conditions and manage their versions. Each time you 
 
 Keep the current version number if, for example, you're fixing typos or changing formatting.
 
-1. Sign in to [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
+1. Sign in to the [Microsoft Endpoint Manager Admin Center](https://go.microsoft.com/fwlink/?linkid=2109431), choose **Tenant administration** > **Terms and Conditions** > choose the terms and conditions you want to modify > **Properties**.
 
-2. On the Intune pane, choose **Device enrollment** > **Terms and Conditions** > choose the terms and conditions you want to modify > **Properties**.
+2. On the **Properties** pane, choose **Terms and Conditions** and then modify the **Title**, **Summary of Terms**, and **Terms and Conditions** as needed. If your changes make it necessary for users to reaccept the new terms, choose **Require users to re-accept, and increment the version number to**
 
-4. On the **Properties** pane, choose **Terms and Conditions** and then modify the **Title**, **Summary of Terms**, and **Terms and Conditions** as needed. If your changes make it necessary for users to reaccept the new terms, choose **Require users to re-accept, and increment the version number to**
-
-4. Choose **OK** > **Save**.
+3. Choose **OK** > **Save**.
 
 Users only have to accept updated terms and conditions once. Users with multiple devices don't have to accept terms and conditions on each device.

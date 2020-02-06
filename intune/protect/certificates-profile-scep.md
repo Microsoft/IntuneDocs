@@ -5,7 +5,7 @@ keywords:
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 11/07/2019
+ms.date: 11/13/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: protect
@@ -52,15 +52,13 @@ After you [configure your infrastructure](certificates-scep-configure.md) to sup
 
    SCEP certificate profiles for the *Device Owner Only* profile have the following limitations:
 
-   1. The following variables are not supported:
+   1. Under Monitoring, certificate reporting isn't available for Device Owner SCEP certificate profiles.
 
-      - CN={{OnPrem_Distinguished_Name}}
-      - CN={{onPremisesSamAccountName}}
+   2. You can't use Intune to revoke certificates that were provisioned by SCEP certificate profiles for Device Owners. You can manage revocation through an external process or directly with the certification authority. 
 
-   2. Under Monitoring, certificate reporting isn't available for Device Owner SCEP certificate profiles.
+   4. For Android Enterprise dedicated devices, SCEP certificate profiles are supported for Wi-Fi network configuration and authentication only.  SCEP certificate profiles on Android Enterprise dedicated devices are not supported for VPN or app authentication.   
 
-   3. You can't use Intune to revoke certificates that were provisioned by SCEP certificate profiles for Device Owners. You can manage revocation through an external process or directly with the certification authority. 
-
+   
 7. Select **Settings**, and then complete the following configurations:
 
    - **Certificate type**:
@@ -118,12 +116,11 @@ After you [configure your infrastructure](certificates-scep-configure.md) to sup
 
         Format options for the Subject name format include the following variables:
 
-        - **{{AAD_Device_ID}}**
+        - **{{AAD_Device_ID}}** or **{{AzureADDeviceId​}}** - Either variable can be used to identify a device by its Azure AD ID.
         - **{{Device_Serial}}**
         - **{{Device_IMEI}}**
         - **{{SerialNumber}}**
         - **{{IMEINumber}}**
-        - **{{AzureADDeviceId​}}**
         - **{{WiFiMacAddress}}**
         - **{{IMEI}}**
         - **{{DeviceName}}**
@@ -161,12 +158,11 @@ After you [configure your infrastructure](certificates-scep-configure.md) to sup
 
         With the *Device* certificate type, you can use the following device certificate variables for the value:
 
-        - **{{AAD_Device_ID}}**
+        - **{{AAD_Device_ID}}** or **{{AzureADDeviceId​}}** - Either variable can be used to identify a device by its Azure AD ID.
         - **{{Device_Serial}}**
         - **{{Device_IMEI}}**
         - **{{SerialNumber}}**
         - **{{IMEINumber}}**
-        - **{{AzureADDeviceId​}}**
         - **{{WiFiMacAddress}}**
         - **{{IMEI}}**
         - **{{DeviceName}}**
@@ -283,7 +279,7 @@ Assign SCEP certificate profiles the same way you [deploy device profiles](../co
 
 - To publish a certificate to a device quickly after the device enrolls, assign the certificate profile to a user group rather than to a device group. If you assign to a device group, a full device registration is required before the device receives policies.
 
-- If you use co-management for Intune and Configuration Manager, in Configuration Manager [set the workload slider](https://docs.microsoft.com/sccm/comanage/how-to-switch-workloads) for Resource Access Policy to **Intune** or **Pilot Intune**. This setting allows Windows 10 clients to start the process of requesting the certificate.
+- If you use co-management for Intune and Configuration Manager, in Configuration Manager [set the workload slider](https://docs.microsoft.com/configmgr/comanage/how-to-switch-workloads) for Resource Access Policies to **Intune** or **Pilot Intune**. This setting allows Windows 10 clients to start the process of requesting the certificate.
 
 - Although you create and assign the trusted certificate profile and the SCEP certificate profile separately, both must be assigned. Without both installed on a device, the SCEP certificate policy fails. Ensure that any trusted root certificate profiles are also deployed to the same groups as the SCEP profile.
 
@@ -293,3 +289,5 @@ Assign SCEP certificate profiles the same way you [deploy device profiles](../co
 ## Next steps
 
 [Assign profiles](../configuration/device-profile-assign.md)
+
+[Troubleshoot deployment of SCEP certificate profiles](../protect/troubleshoot-scep-certificate-profiles.md)

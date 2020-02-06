@@ -7,7 +7,7 @@ keywords:
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 02/15/2018
+ms.date: 11/18/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: fundamentals
@@ -30,11 +30,11 @@ ms.collection: M365-identity-device-management
 
 # What to expect when your iOS app is managed by app protection policies
 
- This topic describes the user experience when using apps that have app protection policies applied. App protection policies are applied only when apps are used in the work context; for example, when the user is accessing apps with a work account or accessing files that are stored in a company OneDrive for business location.
+Intune app protection policies apply to apps that used for work or school. This means that when your employees and students use their apps in a personal context, they may notice no difference in their experience. In the work or school context, however, they might receive prompts to make account decisions, update their settings, or contact you for help. Use this article to learn what your users experience when they try to access and use Intune-protected apps.  
 
 ## Access apps
 
-If the device is **not enrolled in Intune**, the user is asked to restart the app when they first use it. A restart is required so that app protection polices can be applied to the app.
+If the device is **not enrolled in Intune**, the user is asked to restart the app when they first use it. A restart is required so that app protection policies can be applied to the app.
 
 <!--- The following screenshot from the Skype app illustrates this restart request: --->
 
@@ -44,30 +44,29 @@ For devices that are **enrolled for management in Intune**, the user sees a mess
 
 ## Use apps with multi-identity support
 
-Apps that support multi-identity let you use different accounts (work and personal) to access the same apps, while app protection policies are applied only when the apps are used in the work context.  
+Apps that support multi-identity let you use different work and personal accounts to access the same apps. App protection policies, like entering a device PIN, are activated when users access these apps in a work or school context.   
 
-For example, the user gets a PIN prompt when accessing work data. For the **Outlook app**, the user is prompted for a PIN when they launch the app. For the **OneDrive app**, the user is prompted for a pin when they type in the work account.  For Microsoft **Word**, **PowerPoint**, and **Excel**, the user is prompted for a pin when they access documents that are stored in the company OneDrive for Business location.
+Users might experience the PIN prompt differently across all of their apps, depending on how you configure the policies.  For example, you might configure your policies so that:       
+* Microsoft Outlook prompts the user for a PIN when they launch the app. 
+* OneDrive prompts the user for a pin when they sign in to their work account.  
+* Microsoft Word, PowerPoint, and Excel prompts the user for a pin when they access documents that are stored in the company OneDrive for Business location.  
 
-- Learn more about the apps that support [app protection and multi-identity](https://www.microsoft.com/cloud-platform/microsoft-intune-apps) with Intune.
+- Learn more about the apps that support [app protection and multi-identity](https://www.microsoft.com/cloud-platform/microsoft-intune-apps) with Intune.  
 
-App protection polices are only applied in the work context. Therefore, the app might behave differently depending on whether the context is work or personal.
+## Manage user accounts on the device  
 
-## Manage user accounts on the device
+Intune app protection policies limit users to one managed work or school account per app. App protection policies don't limit the number of unmanaged accounts a user can add.   
 
-Multi-identity applications allow users to add multiple accounts.  Intune APP supports only one managed account.  Intune APP does not limit the number of unmanaged accounts.
+- If a user attempts to add a second managed account, the user is asked to select which managed account to use. If the user adds the second account, the first account is removed.
+- If you add protection policies to another one of your user's accounts, the user is asked to select which managed account to use. The other account is removed. 
 
-When there is a managed account in an application:
+Some users won't get the option to switch or select between managed accounts. The option is not available on devices that are:
+* Managed by Intune  
+* Managed by third-party enterprise mobility management solutions and configured with the IntuneMAMUPN setting 
 
-- If a user attempts to add a second managed account, the user is asked to select which managed account to use.  The other account is removed.
-- If the IT admin adds policy to a second existing account, the user is asked to select which managed account to use.  The other account is removed.
+The following example scenario describes how multiple user accounts are treated:  
 
-Read the following example scenario to get a deeper understanding of how multiple user accounts are treated.
-
-User A works for two companies—**Company X** and **Company Y**. User A has a work account for each company, and both use Intune to deploy app protection policies. **Company X** deploys app protection policies **before** **Company Y**. The account that's associated with **Company X** gets the app protection policy first. If you want the user account that's associated with Company Y to be managed by the app protection policies, you must remove the user account that's associated with Company X and add the user account that's associated with Company Y.
-
-### Add a second account
-
-If you are using an iOS device, when you try to add a second work account on that device, you might see a blocking message. The accounts are displayed, and then you can choose the account you want to remove.
+User A works for two companies—**Company X** and **Company Y**. User A has a work account for each company, and both use Intune to deploy app protection policies. **Company X** deploys app protection policies **before** **Company Y**. The account that's associated with **Company X** gets the app protection policy first. If you want the user account that's associated with Company Y to be managed by the app protection policies, you must remove the user account that's associated with Company X and add the user account that's associated with Company Y.  
 
 ## Next steps
 

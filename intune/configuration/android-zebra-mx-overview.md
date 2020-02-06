@@ -30,7 +30,7 @@ ms.collection: M365-identity-device-management
 
 # Use and manage Zebra devices with Zebra Mobility Extensions in Microsoft Intune
 
-[!INCLUDE [azure_portal](../includes/azure_portal.md)]
+
 
 Intune includes a rich set of features, including managing apps and configuring device settings. These built-in features and settings manage Android devices manufactured by Zebra Technologies, also known as "Zebra devices".
 

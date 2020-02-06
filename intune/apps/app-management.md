@@ -8,7 +8,7 @@ keywords:
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 08/23/2019
+ms.date: 11/26/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: apps
@@ -80,14 +80,14 @@ Intune offers a range of capabilities to help you get the apps you need on the d
 
 ## Get started
 
-You can find most app-related information in the **Client Apps** workload, which you can access by doing the following:
+You can find most app-related information in the **Apps** workload, which you can access by doing the following:
 
-1. Sign in to [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
-3. In the **Microsoft Intune** pane, select **Client apps**.
+1. Sign in to the [Microsoft Endpoint Manager Admin Center](https://go.microsoft.com/fwlink/?linkid=2109431).
+3. Select **Apps**.
 
-    ![The "Client apps" workload pane](./media/app-management/apps-workload.png)
+    ![The Apps workload pane](./media/app-management/apps-workload.png)
 
-The next four sections describe the options available in the **Client apps** pane.
+The next four sections describe the options available in the **Apps** pane.
 
 ### Manage
 - **Apps**: Select this option to add, view, assign, and monitor the apps that your workforce uses. For more information, see:

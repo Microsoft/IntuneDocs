@@ -5,8 +5,8 @@ title: App protection policies and work profiles in Microsoft Intune - Azure | M
 description: See the differences and pros and cons when deciding to use app protection policies or work profiles for personal or BYOD Android Enterprise devices in Microsoft Intune. Compare the differences and features you get with app protection policies without enrollment (APP-WE) and Android Enterprise work profiles.
 keywords:
 
-author: MandiOhlinger
-ms.author: mandia
+author: Erikre
+ms.author: erikre
 manager: dougeby
 ms.date: 02/13/2019
 ms.topic: conceptual

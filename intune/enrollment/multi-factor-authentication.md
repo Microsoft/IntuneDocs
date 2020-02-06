@@ -55,18 +55,17 @@ To require MFA when a device is enrolled, follow these steps:
 >[!Important]
 >Do not configure **Device based access rules** for Microsoft Intune enrollment.
 
-1. Sign in to your [Microsoft Azure portal](https://portal.azure.com) with your credentials.
-2. In the portal, go to **Intune** and choose **Conditional Access**. The Conditional Access node accessed from *Intune* is the same node as accessed from *Azure AD*.
-4. Choose **New policy**.
-5. In **New** policy, type a descriptive name for the policy.
-6. In the **Assignments** section, choose **Users and groups**. 
-7. In **Users and groups**, choose **Select users or groups**, and check **Users and groups**. Then select the users and /or groups that will receive this policy, then choose **Done**.
-8. In the **Assignments** section, choose **Cloud apps**.
-9. On the **Include** tab of **Cloud apps**, choose **Select apps**, then choose **Select** > **Microsoft Intune Enrollment**, and then choose **Done**. By choosing **Microsoft Intune Enrollment**, conditional access MFA is applied only to the enrollment of the device (one-time MFA prompt).
-10. In the **Assignments** section, for **Conditions** you do not need to configure any settings for MFA.
-11. In the **Access controls** section, choose **Grant**.
-12. In **Grant**, choose **Grant access**, and then select **Require multi-factor authentication**. Do not select **Require device to be marked as compliant** because a device cannot be evaluated for compliance until it is enrolled. Then choose **Select**.
-13. In **New policy**, choose **Enable policy** > **On**, and then choose **Create**.
+1. Sign in to the [Microsoft Endpoint Manager Admin Center](https://go.microsoft.com/fwlink/?linkid=2109431), choose **Devices** > **Conditional Access**. The Conditional Access node accessed from *Intune* is the same node as accessed from *Azure AD*.
+2. Choose **New policy**.
+3. In **New** policy, type a descriptive name for the policy.
+4. In the **Assignments** section, choose **Users and groups**. 
+5. In **Users and groups**, choose **Select users or groups**, and check **Users and groups**. Then select the users and /or groups that will receive this policy, then choose **Done**.
+6. In the **Assignments** section, choose **Cloud apps**.
+7. On the **Include** tab of **Cloud apps**, choose **Select apps**, then choose **Select** > **Microsoft Intune Enrollment**, and then choose **Done**. By choosing **Microsoft Intune Enrollment**, conditional access MFA is applied only to the enrollment of the device (one-time MFA prompt).
+8. In the **Assignments** section, for **Conditions** you do not need to configure any settings for MFA.
+9. In the **Access controls** section, choose **Grant**.
+10. In **Grant**, choose **Grant access**, and then select **Require multi-factor authentication**. Do not select **Require device to be marked as compliant** because a device cannot be evaluated for compliance until it is enrolled. Then choose **Select**.
+11. In **New policy**, choose **Enable policy** > **On**, and then choose **Create**.
 
 
 

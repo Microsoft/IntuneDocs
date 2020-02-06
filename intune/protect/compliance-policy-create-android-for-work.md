@@ -7,7 +7,7 @@ keywords:
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 09/16/2019
+ms.date: 01/07/2020
 ms.topic: reference
 ms.service: microsoft-intune
 ms.subservice: protect
@@ -58,13 +58,7 @@ As an Intune administrator, use these compliance settings to help protect your o
   - **High** - This option is the least secure, as it allows all threat levels. It may be useful if you're using this solution only for reporting purposes.
   
 > [!NOTE] 
-> The following Mobile Threat Defence (MTD) providers support Android Enterprise device owner deployments using app configuration:
-> - Better Mobile 
-> - Pradeo
-> - Sophos Mobile
-> - Zimperium 
->  
->  Check with your MTD provider for the exact configuration needed to support Android Enterprise Device Owner platforms on Intune. This list is updated as MTD parters support Android Enterprise Device Owner scenarios. 
+> All the Mobile Threat Defense (MTD) providers are supported on Android Enterprise device owner deployments using app configuration. Check with your MTD provider for the exact configuration needed to support Android Enterprise Device Owner platforms on Intune.
 
 #### Google Play Protect
 

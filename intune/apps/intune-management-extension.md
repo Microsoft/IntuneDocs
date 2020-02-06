@@ -4,10 +4,10 @@
 title: Add PowerShell scripts to Windows 10 devices in Microsoft Intune - Azure | Microsoft Docs
 description: Create and run PowerShell scripts, assign the script policy to Azure Active Directory groups, use reports to monitor the scripts, and see the steps to delete scripts you add on Windows 10 devices in Microsoft Intune. Also see some common issues and resolutions. 
 keywords:
-author: MandiOhlinger
-ms.author: mandia
+author: Erikre
+ms.author: erikre
 manager: dougeby
-ms.date: 09/16/2019
+ms.date: 11/26/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: apps
@@ -66,19 +66,19 @@ The Intune management extension has the following prerequisites. Once the prereq
     
     - User signs in to the device using their Azure AD account, and then enrolls in Intune.
 
-  - Co-managed devices that use Configuration Manager and Intune. Be sure the **Client Apps** workload is set to **Pilot Intune** or **Intune**. See the following articles for guidance: 
+  - Co-managed devices that use Configuration Manager and Intune. Be sure the **Apps** workload is set to **Pilot Intune** or **Intune**. See the following articles for guidance: 
   
-    - [What is co-management](https://docs.microsoft.com/sccm/comanage/overview) 
-    - [Client apps workload](https://docs.microsoft.com/sccm/comanage/workloads#client-apps)
-    - [Switch Configuration Manager workloads to Intune](https://docs.microsoft.com/sccm/comanage/how-to-switch-workloads)
+    - [What is co-management](https://docs.microsoft.com/configmgr/comanage/overview) 
+    - [Client apps workload](https://docs.microsoft.com/configmgr/comanage/workloads#client-apps)
+    - [How to switch Configuration Manager workloads to Intune](https://docs.microsoft.com/configmgr/comanage/how-to-switch-workloads)
   
 > [!TIP]
 > Be sure devices are [joined](https://docs.microsoft.com/azure/active-directory/user-help/user-help-join-device-on-network) to Azure AD. Devices that are only [registered](https://docs.microsoft.com/azure/active-directory/user-help/user-help-register-device-on-network) in Azure AD won't receive your scripts.
 
 ## Create a script policy and assign it
 
-1. Sign in to [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
-2. Select **Device configuration** > **PowerShell scripts** > **Add**.
+1. Sign in to the [Microsoft Endpoint Manager Admin Center](https://go.microsoft.com/fwlink/?linkid=2109431).
+2. Select **Devices** > **PowerShell scripts** > **Add**.
 
     ![Add and use PowerShell scripts in Microsoft Intune](./media/intune-management-extension/mgmt-extension-add-script.png)
 
@@ -138,7 +138,7 @@ In **PowerShell scripts**, select the script to monitor, choose **Monitor**, and
 
 ## Intune management extension logs
 
-Agent logs on the client machine are typically in `\ProgramData\Microsoft\IntuneManagementExtension\Logs`. You can use [CMTrace.exe](https://docs.microsoft.com/sccm/core/support/tools) to view these log files. 
+Agent logs on the client machine are typically in `\ProgramData\Microsoft\IntuneManagementExtension\Logs`. You can use [CMTrace.exe](https://docs.microsoft.com/configmgr/core/support/cmtrace) to view these log files.
 
 ![Screenshot or sample cmtrace agent logs in Microsoft Intune](./media/apps-win32-app-management/apps-win32-app-10.png)  
 

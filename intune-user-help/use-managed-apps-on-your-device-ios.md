@@ -26,7 +26,7 @@ ms.reviewer: maxles
 ms.suite: ems
 #ms.tgt_pltfrm:
 ms.custom: intune-enduser
-ms.collection: M365-identity-device-management
+ms.collection: 
 ---
 
 # Use managed apps on your iOS device

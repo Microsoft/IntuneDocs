@@ -8,7 +8,7 @@ keywords:
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 08/28/2019
+ms.date: 01/06/2020
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: apps
@@ -97,10 +97,10 @@ You can validate the app configuration policy using the following three methods:
 
 ### iOS configuration on unmanaged devices
 
-You can validate iOS configuration with the **Intune Diagnostic Log** on unmanaged devices for managed app configuration.
+You can validate iOS configuration with the **Intune Diagnostic Log** on unmanaged devices for managed app configuration. In addition to the below steps, you can access managed app logs using Microsoft Edge. For more information, see [Use Microsoft Edge on iOS to access managed app logs](~/apps/manage-microsoft-edge.md#use-microsoft-edge-on-ios-to-access-managed-app-logs).
 
-1. If not already installed on the device, download and install the **Intune Managed Browser** from the App Store. For more information, see [Microsoft Intune protected apps](apps-supported-intune-apps.md).
-2. Launch the **Intune Managed Browser** and select **about** > **intunehelp** from the navigation bar.
+1. If not already installed on the device, download and install the **Microsoft Edge** from the App Store. For more information, see [Microsoft Intune protected apps](apps-supported-intune-apps.md).
+2. Launch the **Microsoft Edge** and select **about** > **intunehelp** from the navigation bar.
 3. Click **Get Started**.
 4. Click **Share Logs**.
 5. Use the mail app of your choice to send the log to yourself so they can be viewed on your PC. 
@@ -143,8 +143,8 @@ Your application configuration details should match the application configuratio
 
 You can validate iOS configuration with the **Intune Diagnostic Log** on managed devices for managed app configuration.
 
-1. If not already installed on the device, download and install the **Intune Managed Browser** from the App Store. For more information, see [Microsoft Intune protected apps](apps-supported-intune-apps.md).
-2. Launch the **Intune Managed Browser** and select **about** > **intunehelp** from the navigation bar.
+1. If not already installed on the device, download and install the **Microsoft Edge** from the App Store. For more information, see [Microsoft Intune protected apps](apps-supported-intune-apps.md).
+2. Launch **Microsoft Edge** and select **about** > **intunehelp** from the navigation bar.
 3. Click **Get Started**.
 4. Click **Share Logs**.
 5. Use the mail app of your choice to send the log to yourself so they can be viewed on your PC. 
@@ -166,7 +166,7 @@ To collect logs from an Android device, you or the end user must download the lo
     
 ## Graph API support for app configuration
 
-You can use Graph API to accomplish app configuration tasks. For details, see [Graph API Reference MAM Targeted Config](https://graph.microsoft.io/docs/api-reference/beta/api/intune_mam_targetedmanagedappconfiguration_create).
+You can use Graph API to accomplish app configuration tasks. For details, see [Graph API Reference MAM Targeted Config](https://docs.microsoft.com/graph/api/resources/intune-shared-targetedmanagedappconfiguration?view=graph-rest-beta). For more information about Intune and Graph, see [Working with Intune in Microsoft Graph](https://docs.microsoft.com/graph/api/resources/intune-graph-overview?view=graph-rest-beta).
 
 ## Troubleshooting
 

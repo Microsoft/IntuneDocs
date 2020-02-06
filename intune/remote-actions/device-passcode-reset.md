@@ -40,7 +40,7 @@ This document discusses both device level passcode reset and work profile passco
 | Platform | Supported? |
 | ---- | ---- |
 | Android devices on version 6.x or earlier | Yes |
-| Android enterprise devices in kiosk mode | Yes |
+| Android enterprise devices enrolled as Device Owner | Yes |
 | iOS devices | Yes |
 | iOS devices enrolled with User Enrollment | No |
 | Android devices enrolled with a work profile | No |

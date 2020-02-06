@@ -2,12 +2,12 @@
 # required metadata
 
 title: Windows Holographic Business device settings - Microsoft Intune - Azure | Microsoft Docs
-description: Read about and configure device restriction settings in Microsoft Intune for Windows Holographic for Business, including unenrollment, geolocation, passwords, install apps from app store, cookies and pop ups in Microsoft Edge, Windows Defender, search, cloud and storage, bluetooth connectivity, system time, and usage data in Azure.
+description: Read about and configure device restriction settings in Microsoft Intune for Windows Holographic for Business, including unenrollment, geolocation, passwords, install apps from app store, cookies and pop ups in Microsoft Edge, Microsoft Defender, search, cloud and storage, bluetooth connectivity, system time, and usage data in Azure.
 keywords:
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 01/22/2019
+ms.date: 11/13/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.subservice: configuration
@@ -28,7 +28,7 @@ ms.collection: M365-identity-device-management
 
 # Windows Holographic for Business device settings to allow or restrict features using Intune
 
-[!INCLUDE [azure_portal](../includes/azure_portal.md)]
+
 
 This article lists and describes the different settings you can control on Windows Holographic for Business devices, such as Microsoft Hololens. As part of your mobile device management (MDM) solution, use these settings to allow or disable features, control security, and more.
 
@@ -61,7 +61,7 @@ This article lists and describes the different settings you can control on Windo
 - **Password Manager**: Enable or disable the Microsoft Edge Password Manager feature.
 - **Send do-not-track headers**: Configures the Microsoft Edge browser to send do not track headers to websites that users visit.
 
-## Windows Defender Smart Screen
+## Microsoft Defender Smart Screen
 
 - **SmartScreen for Microsoft Edge**: Enable Microsoft Edge SmartScreen for accessing site and file downloads.
 

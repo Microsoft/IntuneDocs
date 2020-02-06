@@ -49,7 +49,7 @@ For an overview of Autopilot benefits, scenarios, and prerequisites, see [Overvi
 
 ## Prerequisites
 - [Set up Windows automatic enrollment](../quickstart-setup-auto-enrollment.md)
-- [Azure Active Directory Premium subscription](https://docs.microsoft.com/azure/active-directory/active-directory-get-started-premium) <!--&#40;[trial subscription](http://go.microsoft.com/fwlink/?LinkID=816845)&#41;-->
+- [Azure Active Directory Premium subscription](https://docs.microsoft.com/azure/active-directory/active-directory-get-started-premium) <!--&#40;[trial subscription](https://go.microsoft.com/fwlink/?LinkID=816845)&#41;-->
 
 
 ## Add devices
@@ -64,9 +64,9 @@ The first step in setting up Windows Autopilot is to add the Windows devices to 
 
 2. Save the CSV file.
 
-3. In the [Microsoft Endpoint Manager Admin Center](https://go.microsoft.com/fwlink/?linkid=2109431), choose **Device enrollment** > **Windows enrollment** > **Devices** > **Import**.
+3. In the [Microsoft Endpoint Manager Admin Center](https://go.microsoft.com/fwlink/?linkid=2109431), choose **Devices** > **Windows** > **Devices** (under **Windows Autopilot Deployment Program** > **Import**.
 
-    ![Screenshot of Windows Autopilot devices](./media/tutorial-use-autopilot-enroll-devices/autopilot-import-device.png)
+    ![Screenshot of Windows Autopilot devices](./media/enrollment-autopilot/autopilot-import-device.png)
 
 4. Under **Add Windows Autopilot devices**, browse to the CSV file you saved.
 
@@ -74,7 +74,7 @@ The first step in setting up Windows Autopilot is to add the Windows devices to 
 
 5. Choose **Import** to start importing the device information. Importing can take several minutes.
 
-4. After import is complete, choose **Device enrollment** > **Windows enrollment** > **Windows Autopilot** > **Devices** > **Sync**. A message displays that the synchronization is in progress. The process might take a few minutes to complete, depending on how many devices you're synchronizing.
+4. After import is complete, choose **Devices** > **Windows** > **Windows enrollment** > **Devices** (under **Windows Autopilot Deployment Program** > **Sync**. A message displays that the synchronization is in progress. The process might take a few minutes to complete, depending on how many devices you're synchronizing.
 
 5. Refresh the view to see the new devices.
 
@@ -94,7 +94,7 @@ Next, you'll create a device group and put the Autopilot devices you just loaded
 
 After creating a device group, you must create a deployment profile so that you can configure the Autopilot devices.
 
-1. In the [Microsoft Endpoint Manager Admin Center](https://go.microsoft.com/fwlink/?linkid=2109431), choose **Device enrollment** > **Windows enrollment** > **Deployment Profiles** > **Create Profile**.
+1. In the [Microsoft Endpoint Manager Admin Center](https://go.microsoft.com/fwlink/?linkid=2109431), choose **Devices** > **Windows** > **Windows enrollment** > **Deployment Profiles** > **Create Profile**.
 2. On the **Basics** page, tor **Name**, enter *Autopilot Profile*. For **Description**, enter *Test profile for Autopilot devices*.
 3. Set **Convert all targeted devices to Autopilot** to **Yes**. This setting makes sure that all devices in the list get registered with the Autopilot deployment service. Allow 48 hours for the registration to be processed.
 4. Select **Next**.
@@ -120,9 +120,9 @@ If you don't want to use Autopilot devices anymore, you can delete them.
 
 1. If the devices are enrolled in Intune, you must first [delete them from the Azure Active Directory portal](../remote-actions/devices-wipe.md#delete-devices-from-the-azure-active-directory-portal).
 
-2. In the [Microsoft Endpoint Manager Admin Center](https://go.microsoft.com/fwlink/?linkid=2109431), choose **Device enrollment** > **Windows enrollment** > **Devices**.
+2. In the [Microsoft Endpoint Manager Admin Center](https://go.microsoft.com/fwlink/?linkid=2109431), choose **Devices** > **Windows** > **Windows enrollment** > **Devices** (under **Windows Autopilot Deployment Program**).
 
-3. Under **Windows Autopilot devices**, choose the devices you want to delete, and then choose **Delete**.
+3. Choose the devices you want to delete, and then choose **Delete**.
 
 4. Confirm the deletion by choosing **Yes**. It can take a few minutes to delete.
 

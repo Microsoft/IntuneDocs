@@ -7,7 +7,7 @@ keywords:
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 08/05/2019
+ms.date: 12/05/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: fundamentals
@@ -30,7 +30,7 @@ ms.collection: M365-identity-device-management
 ---
 
 # Microsoft Intune licensing
-Microsoft Intune is available for different customer needs and organization sizes, from a simple-to-use management experience for schools and small businesses, to more advanced functionality required by enterprise customers. Most licenses that include Microsoft Intune also grant the rights to use System Center Configuration Manager, as long as the subscription remains active. 
+Microsoft Intune is available for different customer needs and organization sizes, from a simple-to-use management experience for schools and small businesses, to more advanced functionality required by enterprise customers. Most licenses that include Microsoft Intune also grant the rights to use Microsoft Endpoint Configuration Manager, as long as the subscription remains active. 
 
 ## Microsoft Intune
 Intune is included in the following licenses:
@@ -41,8 +41,8 @@ Intune is included in the following licenses:
 - Enterprise Mobility + Security E3
 - Microsoft 365 Business
 - Microsoft 365 F1
-
-
+- Microsoft 365 Government G5
+- Microsoft 365 Government G3
 
 ## Microsoft Intune for Education
 Intune for Education is included in the following licenses:
@@ -52,7 +52,7 @@ Intune for Education is included in the following licenses:
 
 ## Additional information
 - A Microsoft Intune user and device subscription is available as a standalone, in addition to the bundles listed above.
-- A Microsoft Intune device-only subscription is available for kiosk-type scenarios where no user-affinity features are used.
+- A Microsoft Intune device-only subscription is available to manage kiosks, dedicated devices, phone-room devices, IoT, and other single-use devices that don't require user-based security and management features.
 - The appropriate Microsoft Intune license is required if a user or device benefits directly or indirectly from the Microsoft Intune service, including access to the Microsoft Intune service through a [Microsoft API](https://docs.microsoft.com/legal/microsoft-apis/terms-of-use).
 - Intune isn't included in licenses not in the previous tables.
 

@@ -7,7 +7,7 @@ keywords:
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 09/17/2019
+ms.date: 01/02/2020
 ms.topic: reference
 ms.service: microsoft-intune
 ms.subservice: developer
@@ -469,13 +469,14 @@ IntuneMAMPolicy.h | The IntuneMAMPolicy class exposes some MAM policy settings t
 IntuneMAMFileProtectionManager.h | The IntuneMAMFileProtectionManager class exposes APIs the app can use to explicitly secure files and directories based on a supplied identity. The identity can be managed by Intune or unmanaged, and the SDK will apply the appropriate MAM policy. Using this class is optional. |
 IntuneMAMDataProtectionManager.h | The IntuneMAMDataProtectionManager class exposes APIs the app can use to secure data buffers given a supplied identity. The identity can be managed by Intune or unmanaged, and the SDK will apply encryption appropriately. |
 
-## Implement save-as controls
+## Implement save-as and open-from controls
 
-Intune lets IT admins select which storage locations a managed app can save data to. Apps can query the Intune App SDK for allowed storage locations by using the `isSaveToAllowedForLocation` API, defined in `IntuneMAMPolicy.h`.
+Intune lets IT admins select which storage locations a managed app can save data to or open data from. Apps can query the Intune MAM SDK for allowed save-to storage locations by using the `isSaveToAllowedForLocation` API, defined in `IntuneMAMPolicy.h`. Apps can also query the Intune MAM SDK for allowed open-from storage locations by using the `isOpenFromAllowedForLocation` API, defined in `IntuneMAMPolicy.h`.
 
 Before apps can save managed data to a cloud-storage or local location, they must check with the `isSaveToAllowedForLocation` API to know if the IT admin has allowed data to be saved there.
+Before opening data into an app from a cloud-storage or local location, the app must check with the `isOpenFromAllowedForLocation` API to know if the IT admin has allowed data to be opened from there.
 
-When apps use the `isSaveToAllowedForLocation` API, they must pass in the UPN for the storage location, if it is available.
+When apps use the `isSaveToAllowedForLocation` or `isOpenFromAllowedForLocation` APIs, they must pass in the UPN for the storage location, if it is available.
 
 ### Supported save locations
 
@@ -485,12 +486,46 @@ The `isSaveToAllowedForLocation` API provides constants to check whether the IT 
 * IntuneMAMSaveLocationOneDriveForBusiness
 * IntuneMAMSaveLocationSharePoint
 * IntuneMAMSaveLocationLocalDrive
+* IntuneMAMSaveLocationAccountDocument
 
 Apps should use the constants in `isSaveToAllowedForLocation` to check if data can be saved to locations considered "managed," like OneDrive for Business, or "personal." Additionally, the API should be used when the app can't check whether a location is "managed" or "personal."
 
-Locations known to be "personal" are represented by the `IntuneMAMSaveLocationOther` constant.
-
 The `IntuneMAMSaveLocationLocalDrive` constant should be used when the app is saving data to any location on the local device.
+
+If the account for the destination location is unknown, `nil` should be passed. The `IntuneMAMSaveLocationLocalDrive` location should always be paired with a `nil` account.
+
+### Supported open locations
+
+The `isOpenFromAllowedForLocation` API provides constants to check whether the IT admin permits data to be opened from the following locations defined in `IntuneMAMPolicy.h`.
+
+* IntuneMAMOpenLocationOther
+* IntuneMAMOpenLocationOneDriveForBusiness
+* IntuneMAMOpenLocationSharePoint
+* IntuneMAMOpenLocationCamera
+* IntuneMAMOpenLocationLocalStorage
+* IntuneMAMOpenLocationAccountDocument
+
+Apps should use the constants in `isOpenFromAllowedForLocation` to check if data can be opened from locations considered "managed", like OneDrive for Business, or "personal". Additionally, the API should be used when the app can't check whether a location is "managed" or "personal".
+
+The `IntuneMAMOpenLocationCamera` constant should be used when the app is opening data from the camera or photo album.
+
+The `IntuneMAMOpenLocationLocalStorage` constant should be used when the app is opening data from any location on the local device.
+
+The `IntuneMAMOpenLocationAccountDocument` constant should be used when the app is opening a document that has a managed account identity (see the "Shared data" section below)
+
+If the account for the source location is unknown, `nil` should be passed. The `IntuneMAMOpenLocationLocalStorage` and `IntuneMAMOpenLocationCamera` locations should always be paired with a `nil` account.
+
+### Unknown or unlisted locations
+
+When the desired location is not listed in the `IntuneMAMSaveLocation` or `IntuneMAMOpenLocation` enums or is unknown, one of two locations should be used.
+* If the save location is being accessed with a managed account then the `IntuneMAMSaveLocationAccountDocument` location should be used (`IntuneMAMOpenLocationAccountDocument` for open).
+* Otherwise, use the `IntuneMAMSaveLocationOther` location (`IntuneMAMOpenLocationOther` for open).
+
+It is important to make the distinction clear between the managed account and an account that shares the managed account's UPN. For example, a managed account with UPN "user@contoso.com" signed into OneDrive is not the same as an account with UPN "user@contoso.com" signed into Dropbox. If an unknown or unlisted service is accessed by signing into the managed account (e.g. "user@contoso.com" signed into OneDrive), it should be represented by the `AccountDocument` location. If the unknown or unlisted service signs in through another account (e.g. "user@contoso.com" signed into Dropbox), it is not accessing the location with a managed account and should be represented by the `Other` location.
+
+### Sharing blocked alert
+
+A UI helper function can be used when either the `isSaveToAllowedForLocation` or `isOpenFromAllowedForLocation` API is called and found to block the save/open action. If the app wants to notify the user that the action was blocked, it can call the `showSharingBlockedMessage` API defined in `IntuneMAMUIHelper.h` to present an alert view with a generic message.
 
 ## Share Data via UIActivityViewController
 
@@ -563,7 +598,7 @@ SUBQUERY (
         ANY $attachment.registeredTypeIdentifiers UTI-CONFORMS-TO "com.microsoft.intune.mam.public.url" ||
         ANY $attachment.registeredTypeIdentifiers UTI-CONFORMS-TO "com.microsoft.intune.mam.public.plain-text" ||
         ANY $attachment.registeredTypeIdentifiers UTI-CONFORMS-TO "com.microsoft.intune.mam.public.image" ||
-        ANY $attachment.registeredTypeIdentifiers UTI-CONFORMS-TO "com.microsoft.intune.mam.public.data
+        ANY $attachment.registeredTypeIdentifiers UTI-CONFORMS-TO "com.microsoft.intune.mam.public.data"
     ).@count > 0
 ).@count > 0
 ```

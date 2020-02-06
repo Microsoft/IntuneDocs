@@ -7,7 +7,7 @@ keywords:
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 10/31/2017
+ms.date: 12/12/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: fundamentals
@@ -31,19 +31,20 @@ ms.collection: M365-identity-device-management
 
 Whether you manually add users or synchronize from your on-premises Active Directory, you must first assign each user an Intune license before users can enroll their devices in Intune. For a list of licenses, see [Licenses that include Intune](../licenses.md).
 
-## Assign an Intune license in the Microsoft 365 admin center
+> [!NOTE]
+> Users assigned Intune app protection policy and not enrolling their devices into Microsoft Intune will also require an Intune license to receive policy. 
 
-You can use the [Microsoft 365 admin center](https://go.microsoft.com/fwlink/p/?LinkId=698854) to manually add cloud-based users and assign licenses to both cloud-based user accounts and accounts synchronized from your on-premises Active Directory to Azure AD.
+## Assign an Intune license Microsoft Endpoint Manager Admin Center
 
-1. Sign in to the [Microsoft 365 admin center](https://go.microsoft.com/fwlink/p/?LinkId=698854) using your tenant administrator credentials, and then choose **Users** > **Active Users**.
+You can use the [Microsoft Endpoint Manager Admin Center](https://go.microsoft.com/fwlink/?linkid=2109431) to manually add cloud-based users and assign licenses to both cloud-based user accounts and accounts synchronized from your on-premises Active Directory to Azure AD.
 
-2. Select the user account that you want to assign an Intune user license to, and then choose **Product licenses** > **Edit**.
+1. In the [Microsoft Endpoint Manager Admin Center](https://go.microsoft.com/fwlink/?linkid=2109431), select **Users** > **All Users** > choose a user > **Licenses** > **Assignments**.
 
-3. Toggle **Intune** or **Enterprise Mobility + Security** to **On**, and choose **Save**.
+2. Choose the box for **Intune** > **Save**.
 
-   ![Screenshot of the Microsoft 365 admin center Product licenses section.](./media/licenses-assign/office-assign-license.png)
+   ![Screenshot of the Microsoft 365 admin center Product licenses section.](./media/licenses-assign/mem-assign-license.png)
 
-4. The user account now has the permissions needed to use the service and enroll devices into management.
+3. The user account now has the permissions needed to use the service and enroll devices into management.
 
 > [!NOTE]
 > Users will appear in the Classic Intune portal only after they have enrolled a device using the Intune PC client. Also, you can select a group of users to edit at once,  either selecting to add or replace a license for all selected users.

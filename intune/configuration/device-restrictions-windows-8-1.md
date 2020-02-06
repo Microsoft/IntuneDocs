@@ -1,14 +1,14 @@
 ---
 # required metadata
 
-title: Microsoft Intune device restriction settings for devices running Windows 8.1
+title: Windows 8.1 device restriction settings in Microsoft Intune - Azure | Microsoft Docs
 titleSuffix:
 description: Learn the Intune settings you can use to control device settings and functionality on devices running Windows 8.1.
 keywords:
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 3/6/2018
+ms.date: 12/19/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.subservice: configuration
@@ -27,12 +27,9 @@ ms.custom: intune-azure
 ms.collection: M365-identity-device-management
 ---
 
-# Microsoft Intune Windows 8.1 and later device restriction settings
+# Microsoft Intune Windows 8.1 device restriction settings
 
-[!INCLUDE [azure_portal](../includes/azure_portal.md)]
-
-This article shows you the Microsoft Intune device restrictions settings that you can configure for devices running Windows 8.1 and later.
-
+This article shows you the Microsoft Intune device restrictions settings that you can configure for devices running Windows 8.1.
 
 ## General
 
@@ -52,8 +49,6 @@ This article shows you the Microsoft Intune device restrictions settings that yo
 If you enable this setting for Windows 8.1 devices, all users of the device must have a Microsoft account.
 For encryption to work, the device must meet the [Microsoft InstantGo](https://blogs.windows.com/windowsexperience/2014/06/19/instantgo-a-better-way-to-sleep/#IBHULcTfI4PokO8X.97) hardware certification requirements.
 When you enforce encryption on a device, the recovery key is only accessible from the user's Microsoft account, which is accessed from their OneDrive account. You cannot recover this key on behalf of a user. 
-
-
 
 ## Browser
 - **Autofill** - Enables users to change autocomplete settings in the browser.
@@ -79,3 +74,7 @@ If you select this setting, you can also specify a **Logging report location**, 
 ## Cloud and Storage
 - **Work folders URL** - Sets the URL of the work folder to allow documents to be synchronized across devices.
 - **Access to Windows Mail app without a Microsoft account** - Enables access to the Windows Mail application without a Microsoft account.
+
+## Next steps
+
+Create a device restrictions profile on [Windows 10 and newer](device-restrictions-windows-10.md).

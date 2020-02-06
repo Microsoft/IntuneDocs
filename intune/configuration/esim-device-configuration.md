@@ -7,7 +7,7 @@ keywords:
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 11/04/2019
+ms.date: 12/19/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: configuration
@@ -99,7 +99,7 @@ When working with the csv file with the activation codes, be sure you or your mo
 
         ![Mobile operator activation code sample csv file](./media/esim-device-configuration/url-activation-code-examples.png)
 
-3. The csv file name becomes the cellular subscription pool name in the Azure portal. In the previous image, the file name is `UnlimitedDataSkynet.csv`. So, Intune names the subscription pool `UnlimitedDataSkynet.csv`:
+3. The csv file name becomes the cellular subscription pool name in the Endpoint Manager admin center. In the previous image, the file name is `UnlimitedDataSkynet.csv`. So, Intune names the subscription pool `UnlimitedDataSkynet.csv`:
 
     ![Cellular subscription pool is named the activation code sample csv file name](./media/esim-device-configuration/subscription-pool-name-csv-file.png)
 

@@ -61,24 +61,22 @@ You can manually add users to your Intune subscription via the [Microsoft 365 ad
 
 ### Add Intune users in the Azure portal
 
-1. Sign in to [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
-2. Select **Users** > **All users**.
-3. In the Admin center, select **New user**.
-   ![Screenshot of add New User](./media/users-add/intune-add-user.png)
-4. Specify the following user details:
+1. In the [Microsoft Endpoint Manager Admin Center](https://go.microsoft.com/fwlink/?linkid=2109431), choose **Users** > **All users**.
+2. In the Admin center, select **New user**.
+3. Specify the following user details:
    - **Name**
    - **User name** - The new name in Azure Active Directory portal
    ![Screenshot of adding name and user name](./media/users-add/intune-add-user-info.png)
    Choose **OK** to continue.
-5. Optionally, you can specify the following user properties:
+4. Optionally, you can specify the following user properties:
    - **Profile** - Work information including **Job title** and **Department**
    - **Groups** - Select groups to add for the user
    - **Directory role** - Give the user administrative permissions including an Intune service administrator role.
 
    Select **Create** to add the new user to Intune.
-6. Select **Profile**, and then choose a **Usage location** for the new user. Usage location is required before you can assign the new user an Intune license. Choose **Save** to continue.
+5. Select **Profile**, and then choose a **Usage location** for the new user. Usage location is required before you can assign the new user an Intune license. Choose **Save** to continue.
     ![Screenshot of usage location](./media/users-add/intune-add-user-loc.png)
-7. Select **Licenses** and then choose **Assign** to assign an Intune license for this user. An Intune license is required to enroll devices or access company resources. Select **Products**, choose the license type, choose **Select**, and then choose **Assign**.
+6. Select **Licenses** and then choose **Assign** to assign an Intune license for this user. An Intune license is required to enroll devices or access company resources. Select **Products**, choose the license type, choose **Select**, and then choose **Assign**.
 
 ## Grant admin permissions
 

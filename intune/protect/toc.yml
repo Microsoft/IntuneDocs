@@ -225,6 +225,20 @@
       href: troubleshoot-conditional-access.md
     - name: Troubleshoot certificate connector
       href: troubleshoot-certificate-connector-events.md
+    - name: Troubleshoot SCEP certificate profiles
+      items:
+      - name: Troubleshoot SCEP certificate profiles
+        href: troubleshoot-scep-certificate-profiles.md
+      - name: Profile deployment to devices
+        href: troubleshoot-scep-certificate-profile-deployment.md
+      - name: Device to NDES communication
+        href: troubleshoot-scep-certificate-device-to-ndes.md	
+      - name: NDES operations
+        href: troubleshoot-scep-certificate-ndes-policy-module.md
+      - name: Certificate delivery to devices
+        href: troubleshoot-scep-certificate-delivery.md
+      - name: Reporting for certificate deployment
+        href: troubleshoot-scep-certificate-reporting.md
     - name: Troubleshoot Exchange connectors
       items:
       - name: Troubleshoot Exchange connectors

@@ -1,6 +1,11 @@
 {
     "redirections": [
         {
+            "source_path": "intune/apps/app-configuration-policies-outlook-smime.md",
+            "redirect_url": "/intune/fundamentals/whats-new#smime-support-with-microsoft-outlook-for-ios",
+            "redirect_document_id": true
+        },
+        {
             "source_path": "intune-user-help/what-happens-if-you-reset-your-device-using-the-company-portal-ios.md",
             "redirect_url": "/intune-user-help/effects-of-device-reset-company-portal-ios",
             "redirect_document_id": true
@@ -349,11 +354,6 @@
             "source_path": "intune/EndUser/reset-your-device-windows.md",
             "redirect_url": "https://docs.microsoft.com/intune-user-help/reset-erase-your-device-cpwebsite",
             "redirect_document_id": false
-        },
-        {
-            "source_path": "intune/enduser/your-device-does-not-meet-the-minimum-security-patch-android.md",
-            "redirect_url": "https://docs.microsoft.com/intune/enduser/you-need-to-update-your-device-OS-security-patch-android",
-            "redirect_document_id": true
         },
         {
             "source_path": "intune/EndUser/company-portal-frequently-asked-questions.md",
@@ -787,7 +787,7 @@
         },
         {
             "source_path": "intune/get-started/integration-with-cloud-services.md",
-            "redirect_url": "https://docs.microsoft.com/sccm/mdm/understand/choose-between-standalone-intune-and-hybrid-mobile-device-management",
+            "redirect_url": "https://docs.microsoft.com/configmgr/core/plan-design/choose-a-device-management-solution",
             "redirect_document_id": true
         },
         {
@@ -1318,7 +1318,7 @@
         {
             "source_path": "intune/ignite-intune-docs.md",
             "redirect_url": "/intune/index",
-            "redirect_document_id": true
+            "redirect_document_id": false
         },
         {
             "source_path": "intune-azure/introduction/contact-assisted-phone-support-for-microsoft-intune.md",
@@ -4163,7 +4163,7 @@
         {
             "source_path": "intune-classic/index.md",
             "redirect_url": "/intune/index",
-            "redirect_document_id": true
+            "redirect_document_id": false
         },
         {
             "source_path": "intune/plan-design/additional-resources.md",
@@ -7244,6 +7244,15 @@
 			"source_path": "get-started-evaluation.md", 
 			"redirect_url": "what-is-intune",
 			"redirect_document_id": true  
-		}
-    ]
+		},
+        {
+			"source_path": "intune/configuration/wired-network-settings-macos.md", 
+			"redirect_url": "/intune/fundamentals/what-is-intune",
+			"redirect_document_id": false  
+		},
+        {
+			"source_path": "intune/remote-actions/device-activation-lock-bypass.md", 
+			"redirect_url": "/intune/remote-actions/device-activation-lock-disable",
+			"redirect_document_id": false  
+		}    ]
 }

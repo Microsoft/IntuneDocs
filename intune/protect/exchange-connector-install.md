@@ -8,7 +8,7 @@ keywords:
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 09/28/2019
+ms.date: 01/24/2020
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: protect
@@ -30,17 +30,18 @@ ms.collection: M365-identity-device-management
 ---
 
 # Set up the on-premises Intune Exchange connector
-To help protect access to Exchange, Intune relies on an on-premises component that's known as the Microsoft Intune Exchange connector. This connector is also called the *Exchange ActiveSync on-premises connector* in some locations of the Intune console. 
 
-The information in this article can help you install and monitor the Intune Exchange connector. You can use the connector with your [conditional access policies](conditional-access-exchange-create.md) to allow or block access to your Exchange on-premises mailboxes. 
+To help protect access to Exchange, Intune relies on an on-premises component that's known as the Microsoft Intune Exchange connector. This connector is also called the *Exchange ActiveSync on-premises connector* in some locations of the Intune console.
+
+The information in this article can help you install and monitor the Intune Exchange connector. You can use the connector with your [conditional access policies](conditional-access-exchange-create.md) to allow or block access to your Exchange on-premises mailboxes.
 
 The connector is installed and runs on your on-premises hardware. It discovers devices that connect to Exchange, communicating device information to the Intune service. The connector allows or blocks devices based on whether the devices are enrolled and compliant. These communications use the HTTPS protocol.
 
-When a device tries to access your on-premises Exchange server, the Exchange connector maps Exchange ActiveSync (EAS) records in Exchange Server to Intune records to make sure the device is enrolled with Intune and complies with your device's policies. Depending on your conditional access policies, the device can be allowed or blocked. For more information, see [What are common ways to use conditional access with Intune?](conditional-access-intune-common-ways-use.md)
+When a device tries to access your on-premises Exchange server, the Exchange connector maps Exchange ActiveSync (EAS) records in Exchange Server to Intune records to make sure the device enrolls with Intune and complies with your device's policies. Depending on your conditional access policies, the device can be allowed or blocked. For more information, see [What are common ways to use conditional access with Intune?](conditional-access-intune-common-ways-use.md)
 
-Both *discovery* and *allow and block* operations are done by using standard Exchange PowerShell cmdlets. These operations use the service account that's provided when the Exchange connector is initially installed. 
+Both *discovery* and *allow and block* operations are done by using standard Exchange PowerShell cmdlets. These operations use the service account that's provided when the Exchange connector is initially installed.
 
-Intune supports the installation of multiple Intune Exchange connectors per subscription. If you have more than one on-premises Exchange organization, you can set up a separate connector for each. However, only one connector can be installed for each Exchange organization.  
+Intune supports the installation of multiple Intune Exchange connectors per subscription. If you've more than one on-premises Exchange organization, you can set up a separate connector for each. However, only one connector can be installed for each Exchange organization.  
 
 Follow these general steps to set up a connection that enables Intune to communicate with the on-premises Exchange server:
 
@@ -84,14 +85,18 @@ Create an Active Directory user account for the Intune Exchange connector. The a
 
 ## Download the installation package
 
-1. On a Windows server that can support the Intune Exchange connector, sign in to [Intune](https://go.microsoft.com/fwlink/?linkid=2090973). Use an account that's an administrator in the on-premises Exchange server and that has a license to use Exchange Server.
+On a Windows server that can support the Intune Exchange connector:
 
-2. Go to **Intune** > **Exchange access**.  
+1. Sign in to the [Microsoft Endpoint Manager Admin Center](https://go.microsoft.com/fwlink/?linkid=2109431).  Use an account that's an administrator in the on-premises Exchange server and that has a license to use Exchange Server.
+
+2. Select **Tenant administration** > **Exchange access**.
 
 3. Under **Setup**, choose **Exchange ActiveSync on-premises connector** and then select **Add**.
 
-4. On the **Add Connector** page, select **Download the on-premises connector**. The Intune Exchange connector is in a compressed (.zip) folder that can be opened or saved. In the **File Download** dialog box, choose **Save** to store the compressed folder in a secure location.
+   > [!div class="mx-imgBorder"]
+   > ![Add an Exchange ActiveSync on-premises connector](./media/exchange-connector-install/add-connector.png)
 
+4. On the **Add Connector** page, select **Download the on-premises connector**. The Intune Exchange connector is in a compressed (.zip) folder that can be opened or saved. In the **File Download** dialog box, choose **Save** to store the compressed folder in a secure location.
 
 ## Install and configure the Intune Exchange connector
 
@@ -130,9 +135,9 @@ Follow these steps to install the Intune Exchange connector. If you have multipl
 
        1. Choose **OK**.
 
-4. In the **User (domain\user)** and **Password** fields, enter credentials to connect to your Exchange server. The account you specify must have a license to use Intune. 
+4. In the **User (domain\user)** and **Password** fields, enter credentials to connect to your Exchange server. The account you specify must have a license to use Intune.
 
-5. Provide credentials to send notifications to a user's Exchange Server mailbox. This user can be dedicated to just notifications. The notifications user needs an Exchange mailbox to send notifications by email. You can configure these notifications by using conditional access policies in Intune.  
+5. Provide credentials to send notifications to a user's Exchange Server mailbox. This user can be dedicated to just notifications. The notifications user needs an Exchange mailbox to send notifications by email. You can configure these notifications by using conditional access policies in Intune.
 
    Make sure the Autodiscover service and Exchange Web Services are configured on the Exchange CAS. For more information, see [Client Access server](https://technet.microsoft.com/library/dd298114.aspx).
 
@@ -148,16 +153,14 @@ Follow these steps to install the Intune Exchange connector. If you have multipl
 
 During configuration, the Exchange connector stores your proxy settings to enable access to the internet. If your proxy settings change, reconfigure the Exchange connector to apply the updated proxy settings to the Exchange connector.
 
-After the Exchange connector sets up the connection, mobile devices that are associated with Exchange-managed users are automatically synchronized and added to the Exchange connector. This synchronization might take some time to finish.
+After the Exchange connector sets up the connection, mobile devices that are associated with Exchange-managed users are automatically synchronized and added to the Exchange connector. This synchronization might take some time to complete.
 
 > [!NOTE]
 > If you install the Intune Exchange connector and later need to delete the Exchange connection, you must uninstall the connector from the computer where it was installed.
 
-
-
 ## Install connectors for multiple Exchange organizations
 
-Intune supports multiple Intune Exchange connectors per subscription. For a tenant that has multiple Exchange organizations, you can set up only one connector for each Exchange organization. 
+Intune supports multiple Intune Exchange connectors per subscription. For a tenant that has multiple Exchange organizations, you can set up only one connector for each Exchange organization.
 
 To install connectors to connect to multiple Exchange organizations, download the .zip folder one time. Reuse that same download for each connector you install. For each additional connector, follow the steps in the previous section to extract and run the setup program on a server in the Exchange organization.
 
@@ -165,57 +168,65 @@ Each Exchange organization that connects to Intune supports high availability, m
 
 ## On-premises Intune Exchange connector high availability support  
 
-For the on-premises connector, high availability means that if the Exchange CAS that the connector uses becomes unavailable, the connector can switch to a different CAS for that Exchange organization. The Exchange connector itself doesn't support high availability. If the connector fails, there's no automatic failover. You must [install a new connector](#reinstall-the-intune-exchange-connector) to replace the failed connector. 
+For the on-premises connector, high availability means that if the Exchange CAS that the connector uses becomes unavailable, the connector can switch to a different CAS for that Exchange organization. The Exchange connector itself doesn't support high availability. If the connector fails, there's no automatic failover and you must [install a new connector](#reinstall-the-intune-exchange-connector) to replace the failed connector.
 
-To fail over, the connector uses the specified CAS to create a successful connection to Exchange. It then discovers additional CASs for that Exchange organization. This discovery enables the connector to fail over to another CAS if one is available, until the primary CAS becomes available. 
+To fail over, the connector uses the specified CAS to create a successful connection to Exchange. It then discovers additional CASs for that Exchange organization. This discovery enables the connector to fail over to another CAS if one is available, until the primary CAS becomes available.
 
-By default, discovery of additional CASs is enabled. If you need to turn off failover:  
-1. On the server where the Exchange connector is installed, go to **%*ProgramData*%\Microsoft\Windows Intune Exchange Connector**. 
+By default, discovery of additional CASs is enabled. If you need to turn off failover:
+
+1. On the server where the Exchange connector is installed, go to **%*ProgramData*%\Microsoft\Windows Intune Exchange Connector**.
+
 2. Using a text editor, open **OnPremisesExchangeConnectorServiceConfiguration.xml**.
-3. Change **\<IsCasFailoverEnabled>*true*\</IsCasFailoverEnabled>** to **\<IsCasFailoverEnabled>*false*\</IsCasFailoverEnabled>**.  
- 
+
+3. Change **\<IsCasFailoverEnabled>*true*\</IsCasFailoverEnabled>** to **\<IsCasFailoverEnabled>*false*\</IsCasFailoverEnabled>**.
+
 ## Performance-tune the Exchange connector (optional)
 
-When Exchange ActiveSync supports 5,000 or more devices, you can configure an optional setting to improve the performance of the connector. You improve performance by enabling Exchange to use multiple instances of a PowerShell command run space. 
+When Exchange ActiveSync supports 5,000 or more devices, you can configure an optional setting to improve the performance of the connector. You improve performance by enabling Exchange to use multiple instances of a PowerShell command run space.
 
-Before you make this change, ensure the account you use to run the Exchange connector isn't used for other Exchange management purposes. An Exchange account has a limited number of run spaces, and the connector will use most of them. 
+Before you make this change, ensure the account you use to run the Exchange connector isn't used for other Exchange management purposes. An Exchange account has a limited number of run spaces, and the connector will use most of them.
 
-Performance tuning isn't suitable for connectors that run on older or slower hardware.  
+Performance tuning isn't suitable for connectors that run on older or slower hardware.
 
-To improve the Exchange connector performance: 
+To improve the Exchange connector performance:
 
-1. On the server where the connector installed, open the connector's installation directory.  The default location is *C:\ProgramData\Microsoft\Windows Intune Exchange Connector*. 
+1. On the server where the connector installed, open the connector's installation directory.  The default location is *C:\ProgramData\Microsoft\Windows Intune Exchange Connector*.
+
 2. Edit the file *OnPremisesExchangeConnectorServiceConfiguration.xml*.
-3. Locate **EnableParallelCommandSupport** and set the value to **true**:  
-     
+
+3. Locate **EnableParallelCommandSupport** and set the value to **true**:
+
    \<EnableParallelCommandSupport>true\</EnableParallelCommandSupport>
+
 4. Save the file, and then restart the Microsoft Intune Exchange connector service.
 
 ## Reinstall the Intune Exchange connector
 
 You might need to reinstall an Intune Exchange connector. Because only a single connector can connect to each Exchange organization, if you install a second connector for the organization, the new connector you install replaces the original connector.
 
-1. To install the new connector, follow the steps in the [Install and configure the Exchange connector](#install-and-configure-the-intune-exchange-connector) section. 
-2. When prompted, select **Replace** to install the new connector.  
+1. To install the new connector, follow the steps in the [Install and configure the Exchange connector](#install-and-configure-the-intune-exchange-connector) section.
+
+2. When prompted, select **Replace** to install the new connector.
    ![Configuration warning to replace a connector](./media/exchange-connector-install/prompt-to-replace.png)
 
 3. Continue the steps from the [Install and configure the Intune Exchange connector](#install-and-configure-the-intune-exchange-connector) section, and sign in to Intune again.
-4. In the final window, select **Close** to finish the installation.  
-   ![Finish setup](./media/exchange-connector-install/successful-reinstall.png)
- 
+
+4. In the final window, select **Close** to complete the installation.
+   ![Complete setup](./media/exchange-connector-install/successful-reinstall.png)
 
 ## Monitor an Exchange connector
 
-After you successfully configure the Exchange connector, you can view the status of the connections and the last successful synchronization attempt. 
+After you successfully configure the Exchange connector, you can view the status of the connections and the last successful synchronization attempt:
 
-To validate the Exchange connector connection:
+1. Sign in to the [Microsoft Endpoint Manager Admin Center](https://go.microsoft.com/fwlink/?linkid=2109431).
 
-1. On the Intune dashboard, choose **Exchange access**.
-2. Select **Exchange on-premises access** to verify the connection status for each Exchange connector.
+2. Select **Tenant administration** > **Exchange access**.
 
-You can also check the time and date of the last successful synchronization attempt.
+3. Select **Exchange ActiveSync on-premises connector**, and then select the connector you want to view.
 
-Beginning with the Intune 1710 release, you can use the [System Center Operations Manager management pack for Exchange connector and Intune](https://www.microsoft.com/download/details.aspx?id=55990&751be11f-ede8-5a0c-058c-2ee190a24fa6=True&e6b34bbe-475b-1abd-2c51-b5034bcdd6d2=True&fa43d42b-25b5-4a42-fe9b-1634f450f5ee=True). The management pack offers different ways to monitor the Exchange connector when you need to troubleshoot issues.
+4. The console displays details for the connector you select, where you can view the **Status** and the date and time of the last successful synchronization.
+
+In addition to the in-console status, you can use the [System Center Operations Manager management pack for Exchange connector and Intune](https://www.microsoft.com/download/details.aspx?id=55990&751be11f-ede8-5a0c-058c-2ee190a24fa6=True&e6b34bbe-475b-1abd-2c51-b5034bcdd6d2=True&fa43d42b-25b5-4a42-fe9b-1634f450f5ee=True). The management pack offers different ways to monitor the Exchange connector when you need to troubleshoot issues.
 
 ## Manually force a quick sync or full sync
 
@@ -223,14 +234,18 @@ An Intune Exchange connector automatically synchronizes EAS and Intune device re
 
 - A **quick sync** occurs regularly, several times a day. A quick sync retrieves device information for Intune-licensed and on-premises Exchange users that are targeted for conditional access and that have changed since the last sync.
 
-- A **full sync** occurs once daily by default. A full sync retrieves device information for all Intune-licensed and on-premises Exchange users that are targeted for conditional access. A full sync also retrieves Exchange Server information and ensures that the configuration that Intune specifies in the Azure portal is updated on the Exchange server. 
-
+- A **full sync** occurs once daily by default. A full sync retrieves device information for all Intune-licensed and on-premises Exchange users that are targeted for conditional access. A full sync also retrieves Exchange Server information and ensures that the configuration that Intune specifies in the Azure portal is updated on the Exchange server.
 
 You can force a connector to run a sync by using the **Quick Sync** or **Full Sync** options on the Intune dashboard:
 
-   1. On the Intune dashboard, choose **Exchange access**.
-   2. Select **Exchange on-premises access**.
-   3. Select the connector you want to sync, and then choose **Quick Sync** or **Full Sync**.
+   1. Sign in to the [Microsoft Endpoint Manager Admin Center](https://go.microsoft.com/fwlink/?linkid=2109431).
+
+   2. Select **Tenant administration** > **Exchange access** >  **Exchange ActiveSync on-premises connector**.
+
+   3. Select the connector you want to sync, and then choose Quick Sync or Full Sync.
+
+   > [!div class="mx-imgBorder"]
+   > ![Example screenshot of connector details](./media/exchange-connector-install/connector-details.png)
 
 ## Next steps
 

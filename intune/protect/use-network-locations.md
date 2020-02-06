@@ -4,10 +4,10 @@
 title: Bind Android devices by network location in Microsoft Intune - Azure | Microsoft Docs
 description: Create or configure network locations in Microsoft Intune for Android devices. You can mark devices as noncompliant based on the device's network location. If the device goes outside the network location, you can block access to company resources.
 keywords:
-author: MandiOhlinger
-ms.author: mandia
+author: Brenduns
+ms.author: brenduns
 manager: dougeby
-ms.date: 05/21/2018
+ms.date: 11/13/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: protect
@@ -54,7 +54,7 @@ To create a location-based compliance policy:
 
 ## Create a location
 
-1. In Intune, select **Device compliance** > **Locations** > **Create**.
+1. In the [Microsoft Endpoint Manager Admin Center](https://go.microsoft.com/fwlink/?linkid=2109431), select **Devices** > **Compliance policies** > **Locations** > **Create**.
 
 2. Enter the following properties:  
 
@@ -73,8 +73,7 @@ To create a location-based compliance policy:
 
 ## Create the location compliance policy
 
-When you [create the compliance policy](create-compliance-policy.md), select **Android** for the **Platform**. In **Locations**, you can choose one or more of the network locations you added. These locations are part of the network fence you're creating for your devices. 
-
+When you [create the compliance policy](create-compliance-policy.md), select **Android** for the **Platform**. In **Locations**, you can choose one or more of the network locations you added. These locations are part of the network fence you're creating for your devices.
 
 ## Configure the actions for noncompliance
 
@@ -87,5 +86,6 @@ After the compliance policy is created, the default action for noncompliance app
 When the device is connected to your locations, the device is shown as compliant in the Company Portal app. When the device isn't connected to one of your locations, the device is shown as not-compliant.
 
 ## Next steps
+
 [Monitor device compliance policies](compliance-policy-monitor.md)  
 [Get started with compliance policies](device-compliance-get-started.md)

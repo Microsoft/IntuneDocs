@@ -8,7 +8,7 @@ keywords:
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 10/03/2019
+ms.date: 01/23/2020
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: apps
@@ -42,49 +42,52 @@ Before you begin adding Office 365 to macOS devices, understand the following de
 - Intune supports adding the Office apps that are included with Office 2016 for Mac suite only.
 - If any Office apps are open when Intune installs the app suite, users might lose data from unsaved files.
 
-## Create and configure the app suite
+## Select the Office 365 Suite app type
 
-Add Office 365 from the **Apps** pane.
-1. Sign in to [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
-3. In the **Intune** pane, select **Client apps**.
-4. In the **Client apps** workload pane, under **Manage**, select **Apps**. 
-5. Select **Add**.
-6. In the **App type** list, in the **Office 365 Suite** group, select **macOS**.
-7. To get information about the app suite, select **App Suite Information**.  
-    This information helps you to identify the app suite in Intune, and it helps users to find the app suite in the company portal.
-8. Enter the following information:
+1. Sign in to the [Microsoft Endpoint Manager Admin Center](https://go.microsoft.com/fwlink/?linkid=2109431).
+2. Select **Apps** > **All apps** > **Add**.
+3. Select **macOS** in the **Office 365 Suite** section of the **Select app type** pane.
+4. Click **Select**. The **Add Office 365 Suite** steps are displayed.
+
+## Step 1 - App suite information
+
+In this step, you provide information about the app suite. This information helps you to identify the app suite in Intune, and it helps users to find the app suite in the company portal.
+
+1. In the **App suite information** page, you can confirm or modify the default values:
     - **Suite Name**: Enter the name of the app suite as it is displayed in the company portal. Make sure that all suite names that you use are unique. If the same app suite name exists twice, only one of the apps is displayed to users in the company portal.
-    - **Suite Description**: Enter a description for the app suite.
+    - **Suite Description**: Enter a description for the app suite. For example, you could list the apps you've selected to include.
     - **Publisher**: Microsoft appears as the publisher.
-    - **Category**: Select one or more of the built-in app categories, or a category you created. This setting makes it easier for users to find the app suite when they browse the company portal.
-    - **Display this as a featured app in the Company Portal**: Select this option to display the app suite prominently on the main page of the company portal when users browse for apps.
+    - **Category**: Optionally, select one or more of the built-in app categories or a category that you created. This setting makes it easier for users to find the app suite when they browse the company portal.
+    - **Show this as a featured app in the Company Portal**: Select this option to display the app suite prominently on the main page of the company portal when users browse for apps.
     - **Information URL**: Optionally, enter the URL of a website that contains information about this app. The URL is displayed to users in the company portal.
     - **Privacy URL**: Optionally, enter the URL of a website that contains privacy information for this app. The URL is displayed to users in the company portal.
     - **Developer**: Microsoft appears as the developer.
     - **Owner**: Microsoft appears as the owner.
-    - **Notes**: Optionally, enter any notes that you want to associate with this app.
+    - **Notes**: Enter any notes that you want to associate with this app.
     - **Logo**: The Office 365 logo is displayed with the app when users browse the company portal.
-9. Select **OK**.
-10. On the **Add app** pane, select **Add**.  
-    The suite appears in the list of apps as a single entry.
+2. Click **Next** to display the **Scope tags** page.
 
-## Configure app assignments
+## Step 2 - Select scope tags (optional)
+You can use scope tags to determine who can see client app information in Intune. For full details about scope tags, see [Use role-based access control and scope tags for distributed IT](../fundamentals/scope-tags.md).
 
-In this step, configure the assignments for the app suite. 
+1. Click **Select scope tags** to optionally add scope tags for the app suite. 
+2. Click **Next** to display the **Assignments** page.
 
-1. In the list of apps, select the **Office 365** app suite to display the **Office 365** overview pane.
-2. In the **Office 365** pane, select **Assignments**.
-3. To add a group that will use the app suite, select **Add group**.  
-    The **Add group** pane is displayed.
-4. Set the **Assignment type** to **Required** or **Available**.
-5. Assign the suite to the groups that you select. For more information, see [Assign apps to groups with Microsoft Intune](apps-deploy.md).
+## Step 3 - Assignments
+
+1. Select the **Required** or **Available for enrolled devices** group assignments for the app suite. For more information, see [Add groups to organize users and devices](~/fundamentals/groups-add.md) and [Assign apps to groups with Microsoft Intune](apps-deploy.md).
 
     >[!Note]
-    > You cannot uninstall the Office 365 app suite through Intune.
+    > You cannot uninstall the Office 365 for macOS app suite through Intune.
 
-5. In the **Assign** pane, select **OK**.
-6. In the **Add group** pane, select **OK**.
-7. To commit your assignments, select **Save**.
+2. Click **Next** to display the **Review + create** page. 
+
+## Step 4 - Review + create
+
+1. Review the values and settings you entered for the app suite.
+2. When you are done, click **Create** to add the app to Intune.
+
+    The **Overview** blade of the Office 365 Window 10 app suite you've created is displayed. The suite appears in the list of apps as a single entry.
 
 ## Next steps
 

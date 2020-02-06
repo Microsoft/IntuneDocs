@@ -8,7 +8,7 @@ keywords:
 author: ErikjeMS 
 ms.author: erikje
 manager: dougeby
-ms.date: 10/28/2019
+ms.date: 02/03/2020
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: fundamentals
@@ -26,9 +26,9 @@ ms.custom: seodec18
 ms.collection: M365-identity-device-management
 ---
 
-# In development for Microsoft Intune - November 2019
+# In development for Microsoft Intune - February 2020
 
-To help in your readiness and planning, this page lists Intune UI updates and features that are in development but not yet released. In addition to the information on this page:
+To help in your readiness and planning, this page lists Intune UI updates and features that are in development but not yet released. In addition to the information on this page: 
 
 - If we anticipate that you'll need to take action before a change, we'll publish a complementary post in Office message center.
 - When a feature enters production, whether it's a preview or generally available, the feature description will move from this page to [What's new](whats-new.md).
@@ -61,148 +61,132 @@ To help in your readiness and planning, this page lists Intune UI updates and fe
 <!-- ***********************************************-->
 ## App management
 
-### S/MIME support for Microsoft Outlook Mobile <!-- 2669398  -->
-Intune will support delivering S/MIME signing and encryption certificates that can be used with Outlook Mobile on iOS and Android. For related information, see [email settings for iOS devices](~/configuration/email-settings-ios.md) and [e-mail settings for Android devices](~/configuration/email-settings-android.md).
+### Display notifications for the Company Portal app on Windows<!-- 1808082  -->
+We'll update the Company Portal app on Windows devices to display toast notifications to users, even when the application is closed. The update will show notifications for available apps only when the installation status is completed or failed. The Company Portal app won't show notifications for required applications. 
 
-### Custom settings support for macOS applications <!-- 4736278  -->
-Intune will support custom settings, allowing you to add specific keys and values to an existing preferences property list (.plist) file to configure macOS apps and the device. Not all apps support managed preferences, and in some cases only specific settings can be managed. The settings are deployed via the device channel only. You should only upload property list files or .xml files that target device channel settings.
-
-### Assignment type value in Windows Company Portal <!-- 5459950  -->
-The **Installed Apps** page of the Windows Company Portal app will be updated. The **Assignment type** column of the **Installed Apps** page has been updated to be called "Required by your organization". Possible values are **Yes** or **No** to designate required vs. available apps. This change is being made in response to some end user confusion. For more information about the Windows Company portal, see [How to configure the Microsoft Intune Company Portal app](~/apps/company-portal-app.md).
-
-### Run Win32 apps on Windows 10 S-mode devices <!-- 3747604  --> 
-You'll be able to install and run Win32 apps on devices that are managed in Windows 10 S mode. Create one or more supplemental policies for S mode by using the Windows Defender Application Control (WDAC) PowerShell tools. Use the Device Guard signing portal to sign the supplemental policies. Then upload and distribute the policies through Intune. 
-
-In Intune, you'll find this capability by selecting **Client apps** > **Windows 10 S supplemental policies**. 
-
-### Set app availability based on a date and time <!-- 3510685  -->
-As an admin, you'll be able to configure the start time and deadline for a required app. At the start time, the Intune management extension will download the app content and cache it. The app will be installed at the deadline time. For available apps, the start time will dictate when the app is visible in Company Portal. 
-
-To set app availability based on date and time:
-
-1. In Intune, select **Client apps** > **Apps**. 
-1. Select an app from the list or add a new one by selecting **Add**. 
-1. From the app blade, select **Assignments** > **Add group**. 
-1. Set the **Assignment type** to **Required** and then select **Included Groups**. 
-1. Set **Make this app required for all users** to **Yes**. 
-1. Select **Edit** to modify the **End user experience** options. 
-1. On the **End user experience** blade, set the **Software available time** as needed. 
-
-For more information, see [Add apps to Microsoft Intune](../apps/apps-add.md).
-
-### Require Win32 apps to restart <!-- 3136567  -->
-You'll be able to require a Win32 app to restart after a successful installation. You can choose the amount of time (the grace period) before the restart.
-
-### Display notifications for the Company Portal app on Windows <!-- 1808082  -->
-We'll update the Company Portal app on Windows devices to display toast notifications to users, even when the application is closed. The update will show notifications for available apps only when the installation status is completed or failed. The Company Portal app won't show notifications for required applications.
-
-### Display installation status messages for the Company Portal app <!-- 2514416  -->
+### Display installation status messages for the Company Portal app<!-- 2514416  -->
 The Company Portal app will show additional app installation status messages to end users. The following conditions will apply to new Win32 dependency features:
 - App failed to install. Dependencies defined by the admin were not met.
-- App installed successfully but requires a restart.
-- App is in the process of installing but requires a restart to continue.
 
-### Configure app notification content for organization accounts <!-- 2576686 -->
-Intune APP on Android and iOS devices will allow you to control app notification content for organization accounts. This feature will require support from applications and might not be available for all APP-enabled applications. For more information about APP, see [What are app protection policies?](../apps/app-protection-policy.md)
+### Retarget web clips to Microsoft Edge on iOS devices<!-- 5455276 -->
+Web clips, which act as pinned web apps on iOS devices, will need to be updated. Newly deployed web clips will open in Microsoft Edge instead of the Intune Managed Browser if required to open in a protected browser. You must retarget pre-existing web clips to ensure they open in Microsoft Edge instead of the Managed Browser.
 
+### macOS Company Portal user experience improvements<!-- 5568987 -->
+We are making improvements to the macOS device enrollment experience and the Company Portal app for Mac. You can expect the following:
+- A better Microsoft **AutoUpdate** experience during enrollment that will ensure your users have the latest version of the Company Portal.
+- An enhanced compliance check step during enrollment.
+- Support for copied Incident IDs, so your users can send errors from their devices to your company support team faster.
+
+For more information about enrollment and the Company Portal app for Mac, see Enroll your macOS device using the Company Portal app (https://docs.microsoft.com/intune-user-help/enroll-your-device-in-intune-macos-cp). 
+
+
+### Screen removed from Company Portal, Android work profile enrollment<!--6103987 -->
+The **What's next?** screen will be removed from the Android work profile enrollment flow in Company Portal, to streamline the user experience. Go to [Enroll with Android work profile]( https://docs.microsoft.com/intune-user-help/enroll-device-android-work-profile) to see the current Android work profile enrollment flow.
+
+### Microsoft Defender Advanced Threat Protection (ATP) app for macOS<!-- 5424518 idready -->
+Intune will provide an easy way to deploy the Microsoft Defender Advanced Threat Protection (ATP) app for macOS to managed Mac devices. For more information, see [Microsoft Defender Advanced Threat Protection for Mac](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-atp-mac). 
 
 <!-- ***********************************************-->
 ## Device configuration
 
-### Use PKCS certificates with Wi-Fi profiles on Windows 10 and later devices <!-- 3246388  -->
-Currently, you can authenticate Windows Wi-Fi profiles with SCEP certificates (**Device configuration** > **Profiles** > **Create profile** > **Windows 10 and later** for platform > **Wi-Fi** for profile type > **Enterprise** > **EAP type**). You'll be able use PKCS certificates with your Windows Wi-Fi profiles. This feature allows users to authenticate Wi-Fi profiles using new or existing PKCS certificate profiles in your tenant. 
-
-For more information on Wi-Fi profiles, see [Add Wi-Fi settings for Windows 10 and later devices in Intune](../configuration/wi-fi-settings-windows.md).
+### Wired network device configuration profiles for macOS devices<!-- 3508686  -->
+A new macOS device configuration profile will be available that configures wired networks (**Device configuration** > **Profiles** > **Create profile** > **macOS** for platform > **Wired Network** for profile type). Use this feature to create 802.1x profiles to manage wired networks, and deploy these wired networks to your macOS devices.
 
 Applies to:
-- Windows 10 and later
+- macOS
 
-### New ExchangeActiveSync settings when creating an Email device configuration profile on iOS devices <!-- 4892824  --> 
-On iOS/iPadOS devices, you can configure email connectivity in a device configuration profile (**Device configuration** > **Profiles** > **Create profile** > **iOS/iPadOS** for platform > **Email** for profile type). 
+### VPN profiles with IKEv2 VPN connections can use always on with iOS devices <!-- 1947932 idready -->
+On iOS devices, you can create a VPN profile that uses an IKEv2 connection (**Device configuration** > **Profiles** > **Create profile** > **iOS/iPadOS** for platform > **VPN** for profile type). In a future update, you can configure always-on with IKEv2. When configured, IKEv2 VPN profiles connect automatically, and stay connected (or quickly reconnect) to the VPN. It stays connected even when moving between networks or restarting devices.
 
-There will be new ExchangeActiveSync settings available, including:
-- Choose the services to sync (or block syncing), such as email, calendar, and contacts.
-- Allow (or block) users to change the sync settings for these services on their devices. 
+On iOS, always-on VPN is limited to IKEv2 profiles.
 
-To see the current settings, go to [Email profile settings for iOS devices in Intune](../configuration/email-settings-ios.md).
-
-Applies to:
-- iOS 13.0 and newer
-- iPadOS 13.0 and newer
-
-### Prevent users from adding personal Google accounts to Android Enterprise device owner and dedicated devices <!-- 5353228  -->
-You'll be able to prevent users from creating personal Google accounts on Android Enterprise device owner and dedicated devices (**Device configuration** > **Profiles** > **Create profile** > **Android Enterprise** for platform > **Device Owner Only > Device Restrictions** for profile type > **Users and Accounts settings**).
-
-To see the current settings you can configure, go to [Android Enterprise device settings to allow or restrict features using Intune](../configuration/device-restrictions-android-for-work.md).
-
-Applies to:
-- Android Enterprise device owner
-- Android Enterprise dedicated devices
-
-### Server-side logging for Siri commands setting is removed in iOS device restrictions profile <!-- 5468501  -->
-On iOS devices, you can create a device restrictions profiles that configures server-side logging for Siri commands (**Device configuration** > **Profiles** > **Create profile** > **iOS/iPadOS** for platform > **Device restrictions** for profile type > **Built-in apps**). The **Server-side logging for Siri commands** setting will be removed.
-
-This setting will be removed from the Intune admin console. This setting has no effect on the device even though existing policies that have this setting configured will continue to show the setting. If you want to remove the setting from existing policies, go to the policy, make a minor edit, save it, and the policy will be updated.
-
-To see the settings you can configure, see [iOS and iPadOS device settings to allow or restrict features using Intune](../configuration/device-restrictions-ios.md).
+To see the current IKEv2 settings you can configure, go to [Add VPN settings on iOS devices in Microsoft Intune](../configuration/vpn-settings-ios.md#ikev2-settings).
 
 Applies to:
 - iOS
+
+### Improved user interface experience when creating configuration profiles on iOS and macOS devices<!-- 5569008-5569039-5569057-5569110-5569116-5569131-5569139-5569153-5859984 idready -->
+When you create a profile for iOS or macOS devices, the experience in the Endpoint Management Admin Center will be updated. This change impacts the following device configuration profiles (**Devices** > **Configuration Profiles** > **Create profile** > **iOS** or **macOS** for platform):
+
+- Custom: iOS, macOS
+- Device features: iOS, macOS
+- Device restrictions: iOS, macOS
+- Endpoint protection: macOS
+- Extensions: macOS
+- Preference file: macOS
+
+### Improved user interface experience when creating OEMConfig configuration profiles on Android Enterprise devices<!-- 5568645 idready  -->
+When you create or edit an OEMConfig profile for Android Enterprise devices, the experience in the Endpoint Management admin center is updated. The updated experience will provide a summary of settings you've configured at a glance. This change impacts the OEMConfig device configuration profile (**Devices** > **Configuration profiles** > **Create profile** > **Android Enterprise** for platform > **OEMConfig** for profile type).
+
+This feature applies to:
+- Android Enterprise 
 
 
 <!-- ***********************************************-->
 <!--## Device enrollment-->
 
+
 <!-- ***********************************************-->
 ## Device management
 
-### Edit device name value for Autopilot devices<!-- 2640074  -->
-You'll be able to edit the Device Name value for Azure AD Joined Autopilot devices. To do so, go to **Intune** > **Device enrollment** > **Windows enrollment** > **Windows Autopilot** > **Devices** > choose the device > change the **Device Name** value in the right pane > **Save**.
+### Change Primary User for Windows devices <!-- 3794742 -->
+You'll be able to change the Primary User for Windows hybrid and Azure AD Joined devices. To do so, go to **Intune** > **Devices** > **All devices** > choose a device > **Properties** > **Primary User**. 
 
+### Serial number on the Apple MDM Push certificate page<!--5947765 -->
+The Apple MDM Push certificate page will show the serial number. The serial number is needed to regain access to the Apple MDM Push certificate if access to the Apple ID that created the certificate is lost. To see the serial number, go to **Devices** > **iOS** > **iOS enrollment** > **Apple MDM Push certificate**.
 
-### Edit the Group Tag value for Autopilot devices<!-- 4816775 -->
-You'll be able to edit the **Group Tag** value for Autopilot devices:
+### Choose which iOS/iPadOS updates to push to enrolled devices<!--5879689 -->
+You'll be able to choose a specific iOS/iPadOS update to push to devices that have enrolled by using either Apple Business Manager or Apple School Manager. Such devices must have a device configuration policy set to delay software update visibility for some number of days. To see this feature, go to MEM > **Devices** > **iOS** > **Update policies for iOS/iPadOS** > **Create profile**.
 
-1. Select **Intune** > **Device enrollment** > **Windows enrollment** > **Windows Autopilot** > **Devices**.
-1. Choose the device.
-1. In the pane on the right, change the **Group Tag** value.
-1. Select **Save**.
+### New update schedule options for pushing OS updates to enrolled iOS/iPadOS devices<!--5879689-->
+You'll be able to from the following options when scheduling operating system updates for iOS/iPadOS devices. This applies to devices that that used the Apple Business Manager or Apple School Manager enrollment types.
+- Update at next check-in
+- Update during scheduled time
+- Update outside of scheduled time
 
-### Target macOS user groups to require Jamf management <!-- 4061739 -->
-You'll be able to target specific groups of users to require their macOS devices to be managed by Jamf. This targeting will enable you to apply the Jamf compliance integration to a subset of macOS devices while other devices continue to be managed by Intune. Targeting will also let you gradually migrate users' devices from one mobile device management (MDM) system to the other.
+For the latter two options, you can create multiple time windows.
+
+To see the new options, go to MEM > **Devices** > **iOS** > **Update policies for iOS/iPadOS** > **Create profile**.
+
 
 <!-- ***********************************************-->
-## Intune apps
-
-### Improved macOS enrollment experience in Company Portal <!-- 5074349  -->
-The Company Portal for macOS enrollment experience will have a simpler enrollment process that will align more closely with the Company Portal for iOS enrollment experience. Device users will see:  
-
-* A sleeker user interface.  
-* An improved enrollment checklist.  
-* Clearer instructions about how to enroll their devices.  
-* Improved troubleshooting options.  
-
-### Improved checklist design in Company Portal app for Android<!-- 5550857  -->
-The setup checklist in the Company Portal app for Android will be updated with a lightweight design and new icons. The changes will align with the recent updates made to the Company Portal app for iOS.
+<!--## Intune apps-->
+ 
 
 <!-- ***********************************************-->
 ## Monitoring and troubleshooting
 
-### Updated support experience   <!--  5012398    -->
-As part of continuing improvements, we'll update the in-console support experience for Intune.  We'll improve the in-console search and feedback for common issues, and we'll streamline the workflow to contact support.     
+### Improved Intune reporting experience<!-- 3791418 idready -->
+Intune now provides an improved reporting experience, including new report types, better report organization, more focused views, improved report functionality, as well as more consistent and timely data. The reporting experience will move from public preview to GA (general availability). Additionally, the GA release will provide localization support, bug fixes, design improvements, and aggregate device compliance data on tiles in the [Microsoft Endpoint Manager admin center](https://go.microsoft.com/fwlink/?linkid=2109431).
+
+New report types focus on the following:
+- **Operational** - Provides fresh records with a negative health focus. 
+- **Organizational** - Provides an broader summary of the overall state.
+- **Historical** - Provides patterns and trends over a period of time.
+- **Specialist** - Allows you to use raw data to create your own custom reports.
+
+The first set of new reports focuses on device compliance. For more information, see [Blog - Microsoft Intune reporting framework](https://techcommunity.microsoft.com/t5/Intune-Customer-Success/New-Reporting-Framework-Coming-to-Intune/ba-p/1009553) and [Intune reports](~/fundamentals/reports.md).
+
+
 
 <!-- ***********************************************-->
 ## Role-based access control
 
-### Duplicate custom or built-in roles <!-- 1081938 -->
-You'll be able to copy built-in and custom roles. To do so, go to **Intune** > **Roles** > **All roles** > choose a role in the list > **Duplicate**. Make sure to enter a new Name that is unique.
+### Intune Roles user interface changes coming<!--5801612 idready-->
+The user interface for [Microsoft Endpoint Manager Admin Center](https://go.microsoft.com/fwlink/?linkid=2109431) > **Tenant administration** > **Roles** will be changing to a more user-friendly and intuitive design. This experience provides the same settings and details that you use now, however the new experience employs a wizard-like process.
+
 
 <!-- ***********************************************-->
-
 ## Security
 
-### BitLocker key rotation     <!-- 2564951      -->
-You'll be able to use Intune to rotate the BitLocker recovery keys for managed devices that run Windows version 1909 or later. 
+### Derived credentials support on Android COBO devices<!--4839592-->
+You'll be able to use derived credentials on Android Enterprise fully managed devices. Support will be included for retrieving a derived credential for Entrust Datacard, Intercede, and DISA Purebred. You'll be able to use a derived credential for app authentication, Wi-Fi, VPN, or S/MIME signing and/or encryption with apps that support it.
+
+### Use Antivirus policy to manage settings for Microsoft Defender Antivirus and the Windows Security experience<!--6131401 -->
+From the *Endpoint security* node, you’ll be able to configure settings for **Antivirus**. When you configure policy for Antivirus, you’ll define settings for your Windows 10 devices through two profile types:
+
+- Microsoft Defender Antivirus: Manage settings for cloud protection, Antivirus exclusions, remediation, scan options, and more.
+- Windows Security experience: Manage how users experience Windows Security settings on their devices. You’ll be able configure what end users can view in the Microsoft Defender Security center and the notifications they receive. 
 
 <!-- ***********************************************-->
 ## Notices
@@ -211,3 +195,5 @@ You'll be able to use Intune to rotate the BitLocker recovery keys for managed d
 
 ## See also
 For details about recent developments, see [What's new in Microsoft Intune](whats-new.md).
+
+

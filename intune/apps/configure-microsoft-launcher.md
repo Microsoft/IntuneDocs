@@ -8,7 +8,7 @@ keywords:
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 09/18/2019
+ms.date: 11/26/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: apps
@@ -37,7 +37,7 @@ On Android Enterprise fully managed devices, Launcher allows enterprise IT admin
 
 ## How to configure the Microsoft Managed Home Screen app 
 
-Navigate to the Intune console in Azure portal and go to **Client apps** > **App configuration policies**. Add a configuration policy for **Managed devices** running **Android** and choose **Microsoft Launcher** as the associated app. Click on **Configuration settings** to configure the different available Managed Home Screen settings. 
+Navigate to the [Microsoft Endpoint Manager Admin Center](https://go.microsoft.com/fwlink/?linkid=2109431) and select **Apps** > **App configuration policies**. Add a configuration policy for **Managed devices** running **Android** and choose **Microsoft Launcher** as the associated app. Click on **Configuration settings** to configure the different available Managed Home Screen settings. 
 
 ## Choosing a Configuration Settings Format 
 

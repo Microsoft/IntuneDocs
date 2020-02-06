@@ -26,7 +26,7 @@ ms.reviewer: vadona
 ms.suite: ems
 #ms.tgt_pltfrm:
 ms.custom: intune-enduser
-ms.collection: M365-identity-device-management
+ms.collection: 
 ---
 
 # You need to update your Android device to install the Outlook app

@@ -8,7 +8,7 @@ keywords:
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 10/09/2019
+ms.date: 01/21/2020
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -44,15 +44,15 @@ Before you can deploy, configure, monitor, or protect apps, you must add them to
 ## Add Microsoft Edge to Intune
 You can add Microsoft Edge version 77 and later to Intune using the following steps:
 
-1. Sign in to [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
-2. In the **Intune** pane, select **Client apps** > **Apps** > **Add**.
+1. Sign in to the [Microsoft Endpoint Manager Admin Center](https://go.microsoft.com/fwlink/?linkid=2109431).
+2. Select **Apps** > **All apps** > **Add**.
 3. In the **App type** list under the **Microsoft Edge, version 77 and later**, select **macOS**.
 
 ## Configure app information
 In this step, you provide information about this app deployment. This information helps you identify the app in Intune, and it helps users find the app in the company portal.
 
-1. Click **App information** to display the **App information** blade.
-2. In the **App information** blade, you provide information about this app deployment. This information helps you identify the app in Intune, and it helps users find the app in the company portal.
+1. Click **App information** to display the **App information** pane.
+2. In the **App information** pane, you provide information about this app deployment. This information helps you identify the app in Intune, and it helps users find the app in the company portal.
     - **Name**: Enter the name of the app as it will be displayed in the company portal. Make sure that all names are unique. If the same app name exists twice, only one of the apps is displayed to users in the company portal.
     - **Description**: Enter a description for the app. For example, you could list the targeted users in the description.
     - **Publisher**: Microsoft appears as the publisher.
@@ -68,12 +68,16 @@ In this step, you provide information about this app deployment. This informatio
 ## Configure Microsoft Edge settings
 In this step, configure installation options for the app.
 
-1. In the **Add App** blade, select **App settings**.
-2. In the **App settings** blade, the **Beta** Channel is automatically selected and cannot be changed.
-    - The **Beta** Channel is the most stable Microsoft Edge preview experience and the best choice for a full pilot within your organization. With major updates every six weeks.
+1. In the **Add App** pane, select **App settings**.
+2. In the **App settings** pane, select either **Stable**, **Beta** or **Dev** from the **Channel** list to determine which Edge Channel you will deploy the app from.
+
+    - **Stable** channel is the recommended channel for deploying broadly in Enterprise environments. It updates every six weeks, each release incorporating improvements from the Beta channel.
+    - **Beta** channel is the most stable Microsoft Edge preview experience and the best choice for a full pilot within your organization. With major updates every six weeks, each release incorporates the learnings and improvements from the Dev channel.
+    - **Dev** channel is ready for enterprise feedback on Windows, Windows Server and macOS. It updates every week and contains the latest improvements and fixes.
 
     > [!NOTE]
     > The Microsoft Edge browser logo is displayed with the app when users browse the company portal.
+
 3.	Select **OK**.
 
 ## Select scope tags (optional)
@@ -84,7 +88,7 @@ You can use scope tags to determine who can see client app information in Intune
 4.	Click **Select** > **OK**.
 
 ## Add the app
-When you've completed configuring, select **Add** from the **App app** blade. 
+When you've completed configuring, select **Add** from the **App app** pane. 
 
 The app you've created is displayed in the apps list, where you can assign it to the groups that you select. 
 

@@ -29,7 +29,7 @@ ms.collection: M365-identity-device-management
 
 # Microsoft Intune Windows Phone 8.1 device restriction settings
 
-[!INCLUDE [azure_portal](../includes/azure_portal.md)]
+
 
 This article shows you the Microsoft Intune device restrictions settings that you can configure for devices running Windows Phone 8.1.
 

@@ -35,7 +35,7 @@ These set-up steps help you enable mobile device management (MDM) by using Intun
 
 Some steps, such as setting up an Intune subscription and setting the MDM authority, are required for most scenarios. Other steps, such as configuring a custom domain or adding apps, are optional depending upon your company's needs.
 
-If you're currently using Microsoft System Center Configuration Manager to manage computers and servers, you can [cloud-attach Configuration Manager with co-management](https://docs.microsoft.com/sccm/comanage/overview).
+If you're currently using Microsoft Endpoint Configuration Manager to manage computers and servers, you can [cloud-attach Configuration Manager with co-management](https://docs.microsoft.com/configmgr/comanage/overview).
 
 >[!TIP]
 >If you purchase at least 150 licenses for Intune in an eligible plan, you can use the *FastTrack Center Benefit*. With this service, Microsoft specialists work with you to get your environment ready for Intune. See [FastTrack Center Benefit for Enterprise Mobility + Security (EMS)](https://docs.microsoft.com/enterprise-mobility-security/Solutions/enterprise-mobility-fasttrack-program).

@@ -8,7 +8,7 @@ keywords:
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 09/16/2019
+ms.date: 01/23/2020
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: apps
@@ -37,15 +37,22 @@ Before you assign an app to a device or a group of users, you must first add the
 
 You can add an Android Enterprise system app to Intune from the Azure portal by doing the following:
 
-1. Sign in to [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
-2. In the **Intune** pane, select **Client apps** > **Apps** > **Add**.
-3. In the **Add App** pane, under the available **Other** types, select **Android Enterprise system app**.
-4. To configure the app information, select **Configure**, and then provide the following information:
+1. Sign in to the [Microsoft Endpoint Manager Admin Center](https://go.microsoft.com/fwlink/?linkid=2109431).
+2. Select **Apps** > **All apps** > **Add**.
+3. In the **Select app type** pane, under the available **Other** types, select **Android Enterprise system app**.
+4. Click **Select**. The **Add app** steps are displayed.
+In the **App information** page, add the app details:
     - **App Name**: Enter the name of the app.
     - **Publisher**: Enter the name of the publisher of the app.  
     - **Package Name**: Enter a package name. Intune will validate that the package name is valid.
-5. Select **OK**.
-6. Select **Add**.
+5. Click **Next** to display the **Scope tags** page.
+8. Click **Select scope tags** to optionally add scope tags for the app. For more information, see [Use role-based access control (RBAC) and scope tags for distributed IT](~/fundamentals/scope-tags.md).
+9. Click **Next** to display the **Assignments** page.
+10. Select the group assignments for the app. For more information, see [Add groups to organize users and devices](~/fundamentals/groups-add.md). 
+11. Click **Next** to display the **Review + create** page. Review the values and settings you entered for the app.
+12. When you are done, click **Create** to add the app to Intune.
+
+The **Overview** blade of the app you've created is displayed.
 
 > [!NOTE]
 > You will need to work with the OEM of your device to find the package name of the app you would like to enable/disable.

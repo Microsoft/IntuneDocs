@@ -29,7 +29,7 @@ ms.collection: M365-identity-device-management
 
 # macOS device settings to configure and use kernel extensions in Intune
 
-[!INCLUDE [azure_portal](../includes/azure_portal.md)]
+
 
 This article lists and describes the different kernel extension settings you can control on macOS devices. As part of your mobile device management (MDM) solution, use these settings to add and manage kernel extensions on your devices.
 

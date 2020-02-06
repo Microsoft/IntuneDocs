@@ -42,6 +42,8 @@ You can modify proxy server settings on individual client computers. You can als
 
 Managed devices require configurations that let **All Users** access services through firewalls.
 
+For more information about Windows 10 auto-enrollment and device registration for US government customers, see [Set up enrollment for Windows devices](../enrollment/windows-enroll.md#windows-10-auto-enrollment-and-device-registration).
+
 The following tables list the ports and services that the Intune client accesses:
 
 |**Endpoint**|**IP address**|
@@ -61,3 +63,24 @@ The following tables list the ports and services that the Intune client accesses
 - AAD Graph: https:\//directory.microsoftazure.us and https:\//graph.microsoftazure.us
 - MS Graph: https:\//graph.microsoft.us
 - ADRS: https:\//enterpriseregistration.microsoftonline.us
+
+## Windows Push Notification Services
+On Intune-managed devices managed by using Mobile Device Management (MDM), Windows Push Notification Services (WNS) is required for device actions and other immediate activities. For more information, see [Enterprise Firewall and Proxy Configurations to Support WNS Traffic](https://docs.microsoft.com/windows/uwp/design/shell/tiles-and-notifications/firewall-allowlist-config)
+
+## Apple device network information
+
+|**Used for**|**Hostname (IP address/subnet)**|**Protocol**|**Port**|
+|------------|-----------|------------|-----------|
+|Retrieving and displaying content from Apple servers|itunes.apple.com<br>\*.itunes.apple.com<br>\*.mzstatic.com<br>\*.phobos.apple.com<br>\*.phobos.itunes-apple.com.akadns.net|HTTP|80|
+|Communication with APNS servers|#-courier.push.apple.com<br>'#' is a random number from 0 to 50.|TCP|5223 and 443|
+|Various functions including accessing the internet, iTunes store, macOS app store, iCloud, messaging, etc.|phobos.apple.com<br>ocsp.apple.com<br>ax.itunes.apple.com<br>ax.itunes.apple.com.edgesuite.net|HTTP/HTTPS|80 or 443|
+
+For more information, see:
+
+- [TCP and UDP ports used by Apple software products](https://support.apple.com/HT202944)
+- [About macOS, iOS, and iTunes server host connections and iTunes background processes](https://support.apple.com/HT201999)
+- [If your macOS and iOS clients aren't getting Apple push notifications](https://support.apple.com/HT203609)
+
+## Next steps
+[Network endpoints for Microsoft Intune](intune-endpoints.md)
+

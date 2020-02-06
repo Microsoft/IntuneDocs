@@ -8,7 +8,7 @@ keywords:
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 08/27/2019
+ms.date: 01/27/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: apps
@@ -40,6 +40,9 @@ Using a browser protected with Intune policy (Microsoft Edge or Intune Managed B
 - Single sign-on
 - Application configuration settings
 - Azure application proxy integration
+
+> [!IMPORTANT]
+> The Intune Managed Browser will be retired. Use Microsoft Edge for your protected Intune browser experience. 
 
 ## Microsoft Edge support
 
@@ -95,29 +98,28 @@ To restrict Azure AD-connected web apps to use the Intune Managed Browser on mob
 > [!TIP]  
 > Conditional Access is an Azure Active Directory (Azure AD) technology. The Conditional Access node accessed from *Intune* is the same node as accessed from *Azure AD*.  
 
-
-1. In the Intune portal, select **Conditional Access** > **New policy**. 
-2. Next, select **Grant** from the **Access controls** section of the blade. 
-3. Click **Require approved client app**. 
-4. Click **Select** on the **Grant** blade. This policy must be assigned to the cloud apps that you want to be accessible to only the Intune Managed Browser app.
-
-    ![Azure AD - Managed Browser Conditional Access policy](./media/app-configuration-managed-browser/managed-browser-conditional-access-01.png)
-
-5. In the **Assignments** section, select **Conditions** > **Client apps**. The **Client apps** blade is displayed.
-6. Click **Yes** under **Configure** to apply the policy to specific client apps.
-7. Verify that **Browser** is selected as a client app.
+1. Sign in to the [Microsoft Endpoint Manager Admin Center](https://go.microsoft.com/fwlink/?linkid=2109431).
+2. Select **Devices** > **Conditional Access** > **New policy**.
+3. Add the policy **Name**. 
+4. In the **Assignments** section, select **Conditions** > **Client apps**. The **Client apps** pane is displayed.
+5. Click **Yes** under **Configure** to apply the policy to specific client apps.
+6. Verify that **Browser** is selected as a client app.
 
     ![Azure AD - Managed Browser - Select client apps](./media/app-configuration-managed-browser/managed-browser-conditional-access-02.png)
 
     > [!NOTE]
     > If you want to restrict which native apps (non-browser apps) can access these cloud applications, you can also select **Mobile apps and desktop clients**.
 
-8. In the **Assignments** section, select **Users and groups** and then choose the users or groups you would like to assign this policy. 
+7. Click **Done** > **Done**.
+8. In the **Assignments** section, select **Users and groups** and choose the users or groups you would like to assign this policy. Click **Done** to close the pane.
+9. In the **Assignments** section, select **Cloud apps or actions** to choose which apps to protect with this policy. Click **Done** to close the pane.
+10. Select **Grant** from the **Access controls** section of the pane. 
+11. Click **Grant access** and then click **Require approved client app**. 
+12. Click **Select** on the **Grant** pane. This policy must be assigned to the cloud apps that you want to be accessible to only the Intune Managed Browser app.
 
-    > [!NOTE]
-    > Users must also be targeted with Intune App Protection policy in order to receive App Configuration policies. For more information about creating Intune App Protection policies, see [What are app protection policies?](app-protection-policy.md)
+    ![Azure AD - Managed Browser Conditional Access policy](./media/app-configuration-managed-browser/managed-browser-conditional-access-01.png)
 
-9. In the **Assignments** section, select **Cloud apps** to choose which apps to protect with this policy.
+
 
 Once the above policy is configured, users will be forced to use the Intune Managed Browser to access the Azure AD-connected web apps you have protected with this policy. If users attempt to use an unmanaged browser in this scenario, they will see a notice that the Intune Managed Browser must be used instead.
 
@@ -137,27 +139,28 @@ SSO requires your device to be registered by the Microsoft Authenticator app on 
 >[!IMPORTANT]
 >For app configurations to apply, the user's protected browser or another app on the device must already be managed by [Intune app protection policy]( ../app-protection-policy.md)
 
-1. Sign in to [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
-3. On the **Client apps** blade of the Manage list, choose **App configuration policies**.
-4. On the **App configuration policies** blade, choose **Add**.
-5. On the **Add configuration policy** blade, enter a **Name** and optional **Description** for the app configuration settings.
-6. For **Device enrollment** type, choose **Managed apps**.
-7. Choose **Select the required app** and then, on the **Targeted apps** blade, choose the **Managed Browser** and/or **Edge** for iOS, for Android, or for both.
-8. Choose **OK** to return to the **Add configuration policy** blade.
-9. Choose **Configuration settings**. On the **Configuration** blade, you define key and value pairs to supply configurations for the Managed Browser. Use the sections later in this article to learn about the different key and value pairs you can define.
-10. When you are done, choose **OK**.
-11. On the **Add configuration policy** blade, choose **Add**.
-12. The new configuration is created, and displayed on the **App configuration** blade.
+1. Sign in to the [Microsoft Endpoint Manager Admin Center](https://go.microsoft.com/fwlink/?linkid=2109431).
+2. Select **Apps** > **App configuration policies** > **Add** > **Managed apps**.
+3. On the **Basics** page of the **Create app configuration policy** pane, enter a **Name** and optional **Description** for the app configuration settings.
+4. Choose **Select the public app** and choose the **Managed Browser** and/or **Edge** for iOS, for Android, or for both.
+5. Click **Select** to return to the **Create app configuration policy** pane.
+6. Click **Next** to display the **Settings** page.
+7. On the **Settings** page you define key and value pairs to supply configurations for the app. Use the sections later in this article to learn about the different key and value pairs you can define.
+8. Click **Next** to display the **Assignment** page and then click **Select groups to include** and/or **Select groups to exclude**.
+9. Click **Next** to display the **Review + create** page.
+10. Click **Create** after you have reviewed the app configuration policy.
+
+The new configuration is created, and displayed on the **App configuration policy** pane.
 
 
 ## Assign the configuration settings you created
 
 You assign the settings to Azure AD groups of users. If that user has the targeted protected browser app installed, then the app is managed by the settings you specified.
 
-1. On the **Client apps** blade of the Intune mobile application management dashboard, choose **App configuration policies**.
+1. On the **Apps** pane of the Intune mobile application management dashboard, choose **App configuration policies**.
 2. From the list of app configurations, select the one you want to assign.
-3. On the next blade, choose **Assignments**.
-4. On the **Assignments** blade, select the Azure AD group to which you want to assign the app configuration, and then choose **OK**.
+3. On the next pane, choose **Assignments**.
+4. On the **Assignments** pane, select the Azure AD group to which you want to assign the app configuration, and then choose **OK**.
 
 ## How to set Microsoft Edge as the protected browser for your organization
 
@@ -174,7 +177,7 @@ If this setting is set to "False":
 - If your users have **either** the Managed Browser **or** Microsoft Edge downloaded, that browser app will launch. 
 - If your users do not have either browser app downloaded, they will be prompted to download the Managed Browser.
 
-Using the above procedure to create a Microsoft Edge app configuration. Supply the following key and value pair when selecting the **Configuration settings** on the **Configuration** blade (step 9):
+Using the above procedure to create a Microsoft Edge app configuration. Supply the following key and value pair when selecting the **Configuration settings** on the **Configuration** pane (step 9):
 
 | Key                              |  Value   |
 |----------------------------------|----------|
@@ -313,7 +316,7 @@ Using the procedure to create a Microsoft Edge or Managed Browser app configurat
 
 | Key                                                                | Value                                                 |
 |--------------------------------------------------------------------|-------------------------------------------------------|
-| **com.microsoft.intune.mam.managedbrowser.AllowTransitionOnBlock** | **False** blocks these soft transitions from occuring |
+| **com.microsoft.intune.mam.managedbrowser.AllowTransitionOnBlock** | **False** blocks these soft transitions from occurring |
 
 ## How to access to managed app logs using the Managed Browser on iOS
 

@@ -8,7 +8,7 @@ keywords:
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 09/09/2019
+ms.date: 11/26/2019
 ms.topic: tutorial
 ms.service: microsoft-intune
 ms.subservice: apps
@@ -52,32 +52,31 @@ You will also need a [Slack Enterprise Grid](https://get.slack.help/hc/articles/
 Turn on EMM for your Slack Enterprise Grid plan by following [Slack's instructions](https://get.slack.help/hc/articles/115002579426-Enable-Enterprise-Mobility-Management-for-your-org#step-2:-turn-on-emm) and [connect Azure Active Directory](https://docs.microsoft.com/azure/active-directory/saas-apps/slack-tutorial) as your Grid plan's identity provider (IDP).
 
 ## Sign in to Intune
-Sign in to [Intune](https://go.microsoft.com/fwlink/?linkid=2090973) as a Global Administrator or an Intune Service Administrator. If you have created an Intune Trial subscription, the account you created the subscription with is the Global administrator.
+Sign in to the [Microsoft Endpoint Manager Admin Center](https://go.microsoft.com/fwlink/?linkid=2109431) as a Global Administrator or an Intune Service Administrator. If you have created an Intune Trial subscription, the account you created the subscription with is the Global administrator.
 
 ## Set up Slack for EMM on iOS devices
 Add the iOS app Slack for EMM to your Intune tenant and create an app configuration policy to enable your organizations’ iOS users to access Slack with Intune as an EMM provider.
 
 ### Add Slack for EMM to Intune
 Add Slack for EMM as a managed iOS app in Intune and assign your Slack users. Apps are platform-specific, so you need to add a separate Intune app for your Slack users on Android devices.
-1. In Intune, select **Client apps** > **Apps** > **Add**.
-2. Under App type, select **Store app - iOS**.
-3. Select **Search the App Store**. Enter the search term "Slack for EMM" and select the app.
-4. Select **App information** and configure any changes as you see fit.
-5. Select **Add**.
-6. In the search bar, enter "Slack for EMM" and select the app you just added.
-7. From Manage, select **Assignments**.
-8. Select **Add group**. Depending on who you chose to be affected when you turned on EMM for Slack, under **Assignment type** you may wish to select:
+1. In the admin center, select **Apps** > **All apps** > **Add**.
+2. Under **App type**, select the **iOS** store app.
+3. Select **Search the App Store**. Enter the search term "Slack for EMM" and select the app. Click **Select** in the **Search the App Store** pane.
+4. Select **App information** and configure any changes as you see fit. Select **OK** to set your app information.
+5. Click **Add**.
+6. Select **Assignments**.
+7. Click **Add group**. Depending on who you chose to be affected when you turned on EMM for Slack, under **Assignment type** you may wish to select:
     - **Available for enrolled devices** if you chose "All members (including guests)" OR
     - **Available with or without enrollment** if you chose "All members (excluding guests)" or "Optional".
-9. Select **Included Groups** and under Make this app available to all users select **Yes**.
-10. Click **OK**, and then click **OK** again.
-11. Click **Save**.
+8. Select **Included Groups** and under **Make this app available to all users** select **Yes**.
+9. Click **OK**, and then click **OK** again to add the group.
+10. Click **Save**.
 
 ### Add an app configuration policy for Slack for EMM
 Add an app configuration policy for the Slack for EMM iOS. App configuration policies for managed devices are platform-specific, so you need to add a separate policy for your Slack users on Android devices.
-1. In Intune, select **Client apps** > **App configuration policies** > **Add**.
-2. In Name, enter Slack app configuration policy test.
-3. Under Device enrollment type, select **Managed devices**.
+1. In the admin center, select **Apps** > **App configuration policies** > **Add** > **Managed devices**.
+2. In Name, enter 'Slack app configuration policy test'.
+3. Under Device enrollment type, confirm **Managed devices** is set.
 4. Under Platform, select **iOS**.
 5. Select **Associated app**.
 6. In the search bar, enter "Slack for EMM" and select the app.
@@ -90,7 +89,7 @@ Add an app configuration policy for the Slack for EMM iOS. App configuration pol
 
 ### (Optional) Create an iOS device compliance policy
 Set up an Intune device compliance policy to set the conditions that a device must meet to be considered compliant. For this tutorial, we’ll create a device compliance policy for iOS devices. Compliance policies are platform-specific, so you need to create a separate policy for your Slack users on Android devices.
-1. In Intune, select **Device compliance** > **Policies** > **Create Policy**.
+1. In the admin center, select **Device compliance** > **Policies** > **Create Policy**.
 2. In Name, enter "iOS compliance policy test".
 3. In Description, enter "iOS compliance policy test".
 4. Under Platform, select **iOS**.
@@ -111,7 +110,7 @@ Add the Slack Managed Google Play app to your Intune tenant and create an app co
 
 ### Add Slack to Intune
 Add Slack as a Managed Google play app in Intune and assign your Slack users. Apps are platform-specific, so you need to add a separate Intune app for your Slack users on iOS devices.
-1. In Intune, select **Client apps** > **Apps** > **Add**.
+1. In Intune, select **Apps** > **All apps** > **Add**.
 2. Under App type, select **Store app – Managed Google Play**.
 3. Select **Managed Google Play - Approve**. Enter the search term "Slack for EMM" and select the app.
 4. Select **Approve**.
@@ -126,7 +125,7 @@ Add Slack as a Managed Google play app in Intune and assign your Slack users. Ap
 
 ### Add an app configuration policy for Slack
 Add an app configuration policy for Slack. App configuration policies for managed devices are platform-specific, so you need to add a separate policy for your Slack users on iOS devices.
-1. In Intune, select **Client apps** > **App configuration policies** > **Add**.
+1. In Intune, select **Apps** > **App configuration policies** > **Add**.
 2. In Name, enter Slack app configuration policy test.
 3. Under Device enrollment type, select **Managed devices**.
 4. Under Platform, select **Android**.

@@ -2,12 +2,12 @@
 # required metadata
 
 title: Device compliance policies in Microsoft Intune - Azure | Microsoft Docs
-description: Get started with use device compliance policies, overview of status and severity levels, using the InGracePeriod status, working with Conditional Access, handling devices without an assigned policy, and the differences in compliance in the Azure portal and classic portal in Microsoft Intune
+description: Get started with use device compliance policies, overview of status and severity levels, using the InGracePeriod status, working with Conditional Access, and handling devices without an assigned policy.
 keywords:
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 10/21/2019
+ms.date: 12/05/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: protect
@@ -97,6 +97,10 @@ Intune also includes a set of built-in compliance policy settings. The following
 
   If a device doesn't have a compliance policy assigned, then this device is considered compliant by default. If you use Conditional Access with compliance policies, we recommended you change the default setting to **Not compliant**. If an end user isn't compliant because a policy isn't assigned, then the [Company Portal app](../apps/company-portal-app.md) shows `No compliance policies have been assigned`.
 
+
+> [!NOTE]
+> Enhanced jailbreak detection for iOS devices has been temporarily disabled in Intune.
+
 - **Enhanced jailbreak detection**: When enabled, this setting causes iOS devices to check in with Intune more frequently. Enabling this property uses the device’s location services, and impacts battery usage. The user location data isn't stored by Intune.
 
   Enabling this setting requires devices to:
@@ -134,21 +138,6 @@ The following table describes how noncompliant settings are managed when a compl
 
 - If a Conditional Access policy applies to the user, the device is blocked.
 - The Company Portal app notifies the user about any compliance problems.
-
-## Azure classic portal vs. Azure portal
-
-The main difference when using device compliance policies in the Azure portal:
-
-- In the Azure portal, the compliance policies are created separately for each supported platform
-- In the Azure classic portal, one device compliance policy is common to all supported platforms
-
-<!--- - In the Azure portal, you have the ability to specify actions and notifications that are initiated when a device is determined to be noncompliant. This ability does not exist in the Intune admin console.
-
-- In the Azure portal, you can set a grace period to allow time for the end-user to get their device back to compliance status before they completely lose the ability to get company data on their device. This is not available in the Intune admin console.--->
-
-Device compliance policies created in the [classic portal](https://manage.microsoft.com) don't appear in the [Azure portal](https://portal.azure.com). However, they’re still targeted to users and manageable using the classic portal.
-
-To use the device compliance-related features in the Azure portal, you must create new device compliance policies in the Azure portal. If you assign a device compliance policy in the Azure portal to a user who is also assigned a device compliance policy from the classic portal, then the device compliance policies from the Azure portal take precedence over the policies created in the classic portal.
 
 ## Next steps
 

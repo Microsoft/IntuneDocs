@@ -7,7 +7,7 @@ keywords:
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 11/04/2019
+ms.date: 12/05/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: configuration
@@ -29,8 +29,6 @@ ms.collection: M365-identity-device-management
 ---
 
 # Create a device profile in Microsoft Intune
-
-[!INCLUDE [azure_portal](../includes/azure_portal.md)]
 
 Devices profiles allow you to add and configure settings, and then push these settings to devices in your organization. [Apply features and settings on your devices using device profiles](device-profiles.md) goes into more detail, including what you can do.
 
@@ -82,12 +80,13 @@ This article:
        - [Kiosk](kiosk-settings.md)
        - [PKCS certificate](../protect/certficates-pfx-configure.md)
        - [PKCS imported certificate](../protect/certificates-imported-pfx-configure.md)
+       - [Preference file](preference-file-settings-macos.md)
        - [SCEP certificate](../protect/certificates-scep-configure.md)
        - [Trusted certificate](../protect/certificates-configure.md)
        - [Update policies](../software-updates-ios.md)
        - [VPN](vpn-settings-configure.md)
        - [Wi-Fi](wi-fi-settings-configure.md)
-       - [Windows Defender ATP](../protect/advanced-threat-protection.md)
+       - [Microsoft Defender ATP](../protect/advanced-threat-protection.md)
        - [Windows Information Protection](../protect/windows-information-protection-configure.md)
 
      For example, if you select **iOS/iPadOS** for the platform, your profile type options look similar to the following profile:
@@ -98,7 +97,7 @@ This article:
 
 ## Scope tags
 
-After you add the settings, you can also add a scope tag to the profile. Scope tags assign and filter policies to specific groups, such as HR or All US-NC employees.
+After you add the settings, you can also add a scope tag to the profile. Scope tags filter profiles to specific IT groups, such as `US-NC IT Team` or `JohnGlenn_ITDepartment`.
 
 For more information about scope tags, and what you can do, see [Use RBAC and scope tags for distributed IT](../fundamentals/scope-tags.md).
 
@@ -164,6 +163,34 @@ When you assign the profile to the groups, the applicability rules act as a filt
 Intune uses different refresh cycles to check for updates to configuration profiles. If the device recently enrolled, the check-in runs more frequently. [Policy and profile refresh cycles](device-profile-troubleshoot.md#how-long-does-it-take-for-devices-to-get-a-policy-profile-or-app-after-they-are-assigned) lists the estimated refresh times.
 
 At any time, users can open the Company Portal app, and sync the device to immediately check for profile updates.
+
+## Recommendations
+
+When creating profiles, consider the following recommendations:
+
+- Name your policies so you know what they are, and what they do. All [compliance policies](../protect/create-compliance-policy.md) and [configuration profiles](../configuration/device-profile-create.md) have an optional **Description** property. In **Description**, be specific and include information so others know what the policy does.
+
+  Some configuration profile examples include:
+
+  **Profile name**: Admin template - OneDrive configuration profile for all Windows 10 users  
+  **Profile description**: OneDrive admin template profile that includes the minimum and base settings for all Windows 10 users. Created by user@contoso.com to prevent users from sharing organizational data to personal OneDrive accounts.
+
+  **Profile name**: VPN profile for all iOS users  
+  **Profile description**: VPN profile that includes the minimum and base settings for all iOS users to connect to Contoso VPN. Created by user@contoso.com so users automatically authenticate to VPN, instead of prompting users for their username and password.
+
+- Create your profile by its task, such as configure Microsoft Edge settings, enable Microsoft Defender anti-virus settings, block iOS jailbroken devices, and so on.
+
+- Create profiles that apply to specific groups, such as Marketing, Sales, IT Administrators, or by location or school system.
+
+- Separate user policies from device policies.
+
+  For example, [Administrative Templates in Intune](administrative-templates-windows.md) have hundreds of ADMX settings. These templates show if a settings applies to users or devices. When creating admin templates, assign your users settings to a users group, and assign your device settings to a devices group.
+
+  The following image shows an example of a setting that can apply to users and/or apply to devices:
+
+  ![Intune admin template that applies to user and devices](./media/device-profile-create/setting-applies-to-user-and-device.png)
+
+- Every time you create a restrictive policy, communicate this change to your users. For example, if you're changing the passcode requirement from 4 characters to 6 characters, let your users know before your assign the policy.
 
 ## Next steps
 

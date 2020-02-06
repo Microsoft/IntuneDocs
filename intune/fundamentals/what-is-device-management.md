@@ -6,7 +6,7 @@ description: Microsoft 365 Enterprise includes Microsoft Intune. See how Intune 
 author: MandiOhlinger 
 ms.author: mandia 
 manager: dougeby 
-ms.date: 10/14/2019
+ms.date: 11/13/2019
 ms.topic: conceptual 
 audience: microsoft-business
 ms.service: microsoft-intune
@@ -90,7 +90,7 @@ When you set up Intune, you also choose to work solely in the Azure portal to ma
 
 ## Simplify IT tasks using the Device Management admin center
 
-The [Device Management admin center](https://devicemanagement.microsoft.com/) is a one-stop shop to manage and complete tasks for your mobile devices. This workspace includes the services used for device management, including Intune and Azure Active Directory, and to also manage client apps.
+The [Microsoft Endpoint Manager Admin Center](https://go.microsoft.com/fwlink/?linkid=2109431) is a one-stop shop to manage and complete tasks for your mobile devices. This workspace includes the services used for device management, including Intune and Azure Active Directory, and to also manage client apps.
 
 On the Device Management admin center, you can:
 

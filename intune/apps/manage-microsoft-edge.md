@@ -8,7 +8,7 @@ keywords:
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 08/19/2019
+ms.date: 11/26/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: apps
@@ -63,15 +63,15 @@ If Microsoft Edge is not targeted with Intune policy, users can't use it to acce
 You can use Azure AD Conditional Access to redirect your users to access corporate content only through Microsoft Edge. This restricts mobile browser access to Azure AD-connected web apps to policy-protected Microsoft Edge. This blocks access from any other unprotected browsers, such as Safari or Chrome. You can apply Conditional Access to Azure resources like Exchange Online and SharePoint Online, the Microsoft 365 admin center, and even on-premises sites that you have exposed to external users via the [Azure AD Application Proxy](https://docs.microsoft.com/azure/active-directory/active-directory-application-proxy-get-started).
 
 To restrict Azure AD-connected web apps to use Microsoft Edge on iOS and Android:
-1. Sign in to [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
+1. Sign in to the [Microsoft Endpoint Manager Admin Center](https://go.microsoft.com/fwlink/?linkid=2109431).
 2. Under the Intune node, select **Conditional Access** > **New policy**.
-3. Select **Grant** from the **Access controls** section of the blade.
+3. Select **Grant** from the **Access controls** section of the pane.
 4. Select **Require approved client app**.
-5. Choose **Select** on the **Grant** blade. This policy must be assigned to the cloud apps that you want to be accessible to only the Intune Managed Browser app.
+5. Choose **Select** on the **Grant** pane. This policy must be assigned to the cloud apps that you want to be accessible to only the Intune Managed Browser app.
 
     ![Screenshot of Conditional Access policy - Grant](./media/manage-microsoft-edge/manage-microsoft-edge-01.png)
 
-6. In the Assignments section, select **Conditions** > **Client apps**. The **Client apps** blade appears.
+6. In the Assignments section, select **Conditions** > **Apps**. The **Apps** pane appears.
 7. Under **Configure**, select **Yes** to apply the policy to specific client apps.
 8. Verify that **Browser** is selected as a client app.
 
@@ -102,30 +102,30 @@ SSO requires your device to be registered by either the Microsoft Authenticator 
 
 To create app configuration for Microsoft Edge:
 
-1. Sign in to [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
-2. Select **Client apps** > **App configuration policies** > **Add**.
-3. On the **Add configuration policy** blade, enter a **Name** and optional **Description** for the app configuration settings.
+1. Sign in to the [Microsoft Endpoint Manager Admin Center](https://go.microsoft.com/fwlink/?linkid=2109431).
+2. Select **Apps** > **App configuration policies** > **Add**.
+3. On the **Add configuration policy** pane, enter a **Name** and optional **Description** for the app configuration settings.
 4. For **Device enrollment** type, choose **Managed apps**.
-5. Choose **Select the required app**. Then, on the **Targeted apps** blade, choose the **Managed Browser** or **Edge** for iOS, for Android, or for both.
-6. Select **OK** to return to the **Add configuration policy** blade.
-7. Select **Configuration settings**. On the **Configuration** blade, you define key and value pairs to supply configurations for Microsoft Edge. Use the sections later in this article to learn about the different key and value pairs you can define.
+5. Choose **Select the required app**. Then, on the **Targeted apps** pane, choose the **Managed Browser** or **Edge** for iOS, for Android, or for both.
+6. Select **OK** to return to the **Add configuration policy** pane.
+7. Select **Configuration settings**. On the **Configuration** pane, you define key and value pairs to supply configurations for Microsoft Edge. Use the sections later in this article to learn about the different key and value pairs you can define.
 
     > [!NOTE]
     > Microsoft Edge uses the same key and value pairs as the Managed Browser. 
     > On Android, Microsoft Edge must be targeted with app protection policies for app configuration policies to take effect.
 
 8. When you are done, select **OK**.
-9. On the **Add configuration policy** blade, choose **Add**.<br>
-    The new configuration is created and displayed on the **App configuration** blade.
+9. On the **Add configuration policy** pane, choose **Add**.<br>
+    The new configuration is created and displayed on the **App configuration** pane.
 
 ## Assign the configuration settings you created 
 
 You assign the settings to groups of users in Azure AD. If that user has the targeted protected browser app installed, then the app is managed by the settings you specified.
 
-1. On the **Client apps** blade of the Intune mobile application management dashboard, select **App configuration policies**.
+1. On the **Apps** pane of the Intune mobile application management dashboard, select **App configuration policies**.
 2. From the list of app configurations, select the one you want to assign.
-3. On the next blade, select **Assignments**.
-4. On the **Assignments** blade, select the Azure AD group to which you want to assign the app configuration, and then select **OK**.
+3. On the next pane, select **Assignments**.
+4. On the **Assignments** pane, select the Azure AD group to which you want to assign the app configuration, and then select **OK**.
 
 ## Direct users to Microsoft Edge instead of the Intune Managed Browser 
 
@@ -205,6 +205,14 @@ Next, use the following key/value pairs to pull your organizations branding into
 |    com.microsoft.intune.mam.managedbrowser.NewTabPage.BrandLogo    |    True    |
 |    com.microsoft.intune.mam.managedbrowser.NewTabPage.BrandColor    |    True    |
 
+## Display relevant industry news on New Tab Pages
+
+You can configure the New Tab Page experience within Microsoft Edge mobile to display industry news that is relevant to your organization. When you enable this feature, Microosft Edge mobile uses your organization's domain name to aggregate news from the web about your organization, organization's industry, and comeptitors, so your users can find relevant external news all from the centeralized new tab pages within Microsoft Edge. Industry News is switched off by default, and you can use to opt-into it for your organization. 
+
+|    Key    |    Value    |
+|------------------------------------------------------|----------------------------------------------------------------------------------------------------------------|
+|    com.microsoft.intune.ShowIndustryNews    |    **True** will show Industry News on the Microsoft Edge mobile New Tab Page.<p>**False** (default) will hide Industry News from the New Tab Page.    |
+
 ## Configure managed bookmarks for Microsoft Edge
 
 For ease of access, you can configure bookmarks that you’d like your users to have available when they are using Microsoft Edge. 
@@ -215,6 +223,7 @@ Here are some details:
 - These bookmarks can't be deleted or modified by users.
 - These bookmarks appear at the top of the list. Any bookmarks that users create appear below these bookmarks.
 - If you have enabled Application Proxy redirection, you can add Application Proxy web apps by using either their internal or external URL.
+- Ensure that you prefix all URLs with **http://** or **https://** when entering them into the list.
 
 Use the following key/value pair to configure managed bookmarks:
 
@@ -241,7 +250,7 @@ Use the following key/value pairs to configure either an allowed or blocked site
 
 ### URL formats for allowed and blocked site list 
 You can use various URL formats to build your allowed/blocked sites lists. These permitted patterns are detailed in the following table. Some notes before you get started: 
-- Ensure that you prefix all URLs with **http** or **https** when entering them into the list.
+- Ensure that you prefix all URLs with **http://** or **https://** when entering them into the list.
 - You can use the wildcard symbol (\*) according to the rules in the following permitted patterns list.
 - A wildcard can only match an entire component of the hostname (separated by periods) or entire parts of the path (separated by forward slashes). For example, `http://*contoso.com` is **not** supported.
 - You can specify port numbers in the address. If you do not specify a port number, the values used are:
@@ -274,7 +283,7 @@ You can use various URL formats to build your allowed/blocked sites lists. These
   - `http://www.contoso.com:*`
   - `http://www.contoso.com: /*`
 
-## Define behavior when users try to access a blocked site
+## Transition users to their personal context when trying to access a blocked site
 
 With the dual-identity model built into Microsoft Edge, you can enable a more flexible experience for your end users than was possible with the Intune Managed Browser. When users hit a blocked site in Microsoft Edge, you can prompt them to open the link in their personal context instead of their work context. This enables them to stay protected, while keeping corporate resources safe. For example, if a user is sent a link to a news article through Outlook, they can open the link in their personal context or in an InPrivate tab. Their work context doesn't allow news websites. By default, these transitions are allowed.
 
@@ -282,7 +291,16 @@ Use the following key/value pair to configure whether these soft transitions are
 
 |    Key    |    Value    |
 |----------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|    `com.microsoft.intune.mam.managedbrowser.openInPrivateIfBlock'    |    **True** will cause restricted links to open directly in InPrivate browsing.<p>**False** (default) will present users with a choice to open a restricted link with either InPrivate browsing or with their personal (MSA) account.    |
+
+## Open restricted links directly in InPrivate tab pages
+
+You can configure if restricted links should open directly in InPrivate browsing, which provides users with a more seamless browsing experience. This would save users the step of having to transition over to their personal context to view a site. InPrivate browsing is considered unmanaged, so users will not be able to access when using InPrivate browsing mode. 
+
+|    Key    |    Value    |
+|----------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 |    `com.microsoft.intune.mam.managedbrowser.AllowTransitionOnBlock`    |    **True** allows Microsoft Edge to transition users to their   personal context to open blocked sites.<p>**Block** prevents Microsoft Edge from transitioning users. Users are simply shown a message stating that the site they are trying to   access is blocked.    |
+
 
 ## Use Microsoft Edge on iOS to access managed app logs 
 

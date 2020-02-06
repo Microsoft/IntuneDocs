@@ -7,7 +7,7 @@ keywords:
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 11/07/2019
+ms.date: 01/28/2020
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: configuration
@@ -30,13 +30,13 @@ ms.collection: M365-identity-device-management
 ---
 # Use a custom device profile to create a WiFi profile with a pre-shared key in Intune
 
-[!INCLUDE [azure_portal](../includes/azure_portal.md)]
+
 
 Pre-shared keys (PSK) are typically used to authenticate users in WiFi networks, or wireless LANs. With Intune, you can create a WiFi profile using a pre-shared key. To create the profile, use the **Custom device profiles** feature within Intune. This article also includes some examples of how to create an EAP-based Wi-Fi profile.
 
 This feature supports:
 
-- Android
+- Android device administrator
 - Windows
 - EAP-based Wi-Fi
 

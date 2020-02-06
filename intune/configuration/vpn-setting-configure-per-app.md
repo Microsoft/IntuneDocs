@@ -42,6 +42,9 @@ This article shows you how to create a per-app VPN profile, and assign this prof
 
 Some VPNs allow username and password authentication with per-app VPN. Meaning, users need to enter a username and password to connect to the VPN.
 
+> [!IMPORTANT]
+> Per-app VPN is not supported for IKEv2 VPN profiles for iOS.
+
 ## Per-app VPN with Zscaler
 
 Zscaler Private Access (ZPA) integrates with Azure Active Directory (Azure AD) for authentication. When using ZPA, you don't need the [trusted certificate](#create-a-trusted-certificate-profile) or [SCEP or PKCS certificate](#create-a-scep-or-pkcs-certificate-profile) profiles (described in this article). If you have a per-app VPN profile set up for Zscaler, opening one of the associated apps doesn't automatically connect to ZPA. Instead, the user needs to sign into the Zscaler app first. Then, remote access is limited to the associated apps.

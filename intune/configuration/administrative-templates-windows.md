@@ -7,7 +7,7 @@ keywords:
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 11/04/2019
+ms.date: 01/06/2020
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: configuration
@@ -56,24 +56,26 @@ This article lists the steps to create a template for Windows 10 devices, and sh
     - **Platform**: Select **Windows 10 and later**.
     - **Profile type**: Select **Administrative Templates**.
 
-4. Select **Create**. In the new window, select **Settings**. Every setting is listed, and you can use the before and next arrows to see more settings:
+4. Select **Create**. In the new window, select the drop-down list, and select **All products**. From the list, you can also filter the settings to only show **Windows** settings, only show **Office** settings, or only show **Edge version 77 or later** settings:
 
-    ![See a sample list of settings and use previous and next buttons](./media/administrative-templates-windows/administrative-templates-sample-settings-list.png)
-
-    > [!TIP]
-    > The Windows settings in Intune correlate to the on-premises group policy path you see in Local Group Policy Editor (`gpedit`).
-
-5. In the drop-down list, select **All products**. From the list, you can also filter the settings to only show **Windows** settings, only show **Office** settings, or only show **Edge version 77 or later** settings:
-
-    ![Filter the list to show all Windows or all Office settings in administrative templates in Intune](./media/administrative-templates-windows/administrative-templates-choose-windows-office-all-products.png)
+    > [!div class="mx-imgBorder"]
+    > ![Filter the list to show all Windows or all Office settings in administrative templates in Intune](./media/administrative-templates-windows/administrative-templates-choose-windows-office-all-products.png)
 
     > [!NOTE]
     > Microsoft Edge settings apply to:
     >
-    > - Microsoft Edge version 77 and later. To configure Microsoft Edge version 45 and earlier, see [Microsoft Edge Browser device restriction settings](device-restrictions-windows-10.md#microsoft-edge-browser).
+    > - Microsoft Edge version 77 and newer. To configure Microsoft Edge version 45 and earlier, see [Microsoft Edge Browser device restriction settings](device-restrictions-windows-10.md#microsoft-edge-browser).
     > - Windows 10 RS4 and newer with [KB 4512509](https://support.microsoft.com/kb/4512509) installed
     > - Windows 10 RS5 and newer with [KB 4512534](https://support.microsoft.com/kb/4512534) installed
     > - Windows 10 19H1 and newer with [KB 4512941](https://support.microsoft.com/kb/4512941) installed
+
+5. Every setting is listed, and you can use the before and next arrows to see more settings:
+
+    > [!div class="mx-imgBorder"]
+    > ![See a sample list of settings and use previous and next buttons](./media/administrative-templates-windows/administrative-templates-sample-settings-list.png)
+
+    > [!TIP]
+    > The Windows settings in Intune correlate to the on-premises group policy path you see in Local Group Policy Editor (`gpedit`).
 
 6. Select any setting. For example, filter on **Office**, and select **Activate Restricted Browsing**. A detailed description of the setting is shown. Choose **Enabled**, **Disabled**, or leave the setting as **Not configured** (default). The detailed description also explains what happens when you choose **Enabled**, **Disabled**, or **Not configured**.
 7. Select **OK** to save your changes.
@@ -92,16 +94,22 @@ Continue to go through the list of settings, and configure the settings you want
 
 There are hundreds of settings available in these templates. To make it easier to find specific settings, use the built-in features:
 
-- In your template, select the **Settings**, **State**, **Setting type**, or **Path** columns to sort the list. For example, select the **Path** column to see all the settings in the `Microsoft Excel` path:
+- In your template, select the **Settings**, **State**, **Setting type**, or **Path** columns to sort the list. For example, select the **Path** column, and use the next arrow to see the settings in the `Microsoft Excel` path:
 
-  ![Click path to show all the settings grouped by the group policy or ADMX path in administrative templates in Intune](./media/administrative-templates-windows/path-filter-shows-excel-options.png)
+  > [!div class="mx-imgBorder"]
+  > ![Click path to show all the settings grouped by the group policy or ADMX path in administrative templates in Intune](./media/administrative-templates-windows/path-filter-shows-excel-options.png)
 
-- In your template, use the **Search** box to find specific settings. You can search by setting title, or path. For example, search for `copy`. All the settings with `copy` are shown:
+- In your template, use the **Search** box to find specific settings. You can search by setting, or path. For example, search for `copy`. All the settings with `copy` are shown:
 
-  ![Search for copy to show all the Windows and Office settings in administrative templates in Intune](./media/administrative-templates-windows/search-copy-settings.png) 
+  > [!div class="mx-imgBorder"]
+  > ![Search for copy to show all the Windows and Office settings in administrative templates in Intune](./media/administrative-templates-windows/search-copy-settings.png) 
 
   In another example, search for `microsoft word`. You see all the settings you can set for the Microsoft Word program. Search for `explorer` to see all the Internet Explorer settings you can add to your template.
 
 ## Next steps
 
 The template is created, but it's not doing anything yet. Next, [assign the template, also called a profile](device-profile-assign.md) and [monitor its status](device-profile-monitor.md).
+
+[Update Office 365 using administrative templates](administrative-templates-update-office.md).
+
+[Tutorial: Use the cloud to configure group policy on Windows 10 devices with ADMX templates and Microsoft Intune](tutorial-walkthrough-administrative-templates.md)

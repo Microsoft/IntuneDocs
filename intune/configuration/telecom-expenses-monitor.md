@@ -30,7 +30,7 @@ ms.collection: M365-identity-device-management
 
 # Set up a telecom expense management service in Intune
 
-[!INCLUDE [azure_portal](../includes/azure_portal.md)]
+
 
 Using Intune, you can manage telecom expenses from data usage on organization-owned mobile devices. Intune integrates with Saaswedo’s [Datalert telecom expense management](http://datalert.biz/get-started). Datalert is a real-time telecom expense management solution that manages telecom data usage. It can help avoid costly and unexpected data and roaming charges for your Intune-managed devices.
 

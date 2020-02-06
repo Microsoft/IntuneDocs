@@ -65,7 +65,7 @@ By default, devices for all platforms are allowed to enroll in Intune. However, 
 |**Auto-enroll** | No |Yes |No | [More information](windows-enroll.md#enable-windows-10-automatic-enrollment)|
 |**Autopilot** |Yes |Yes |No | [More information](enrollment-autopilot.md)
 |**Bulk enroll** |No |No |No | [More information](windows-bulk-enroll.md) |
-|**Co-management** |No |Yes |No | [More information](https://docs.microsoft.com/sccm/core/clients/manage/co-management-overview)
+|**Co-management** |No |Yes |No | [More information](https://docs.microsoft.com/configmgr/core/clients/manage/co-management-overview)
 |**GPO** |No |Yes |No | [More information](https://docs.microsoft.com/windows/client-management/mdm/enroll-a-windows-10-device-automatically-using-group-policy)
 
 ## Android enrollment methods

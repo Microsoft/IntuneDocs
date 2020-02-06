@@ -1,11 +1,11 @@
 ---
 title: Use private and public key certificates in Microsoft Intune - Azure | Microsoft Docs
-description: Use Public Key Cryptography Standards (PKCS) certificates with Microsoft Intune. This includes working with root certificates and certificate templates, install of the Intune Certificate Connector (NDES), and device configuration profiles for a PKCS Certificate.
+description: Use Public Key Cryptography Standards (PKCS) certificates with Microsoft Intune, work with root certificates and certificate templates, install of the Intune Certificate Connector (NDES), and use device configuration profiles for a PKCS Certificate.
 keywords:
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 11/07/2019
+ms.date: 12/12/2019
 ms.topic: conceptual 
 ms.service: microsoft-intune
 ms.subservice: protect
@@ -163,8 +163,7 @@ To authenticate a device with VPN, WiFi, or other resources, a device needs a ro
 7. **Apply** > **Close**
 8. Go back to the Intune portal (**Intune** > **Device Configuration** > **Certification Connectors**). After a few moments, a green check mark is shown, and the **Connection status** is **Active**. Your connector server can now communicate with Intune.
 9. If you have a web proxy in your networking environment, you might need additional configurations to enable the connector to work. For more information, see [Work with existing on-premises proxy servers](https://docs.microsoft.com/azure/active-directory/manage-apps/application-proxy-configure-connectors-with-proxy-servers) in the Azure Active Directory documentation.
-
-> [!NOTE]  
+<ul><li>Android Enterprise (*Work Profile*)</li><li>iOS</li><li>macOS</li><li>Windows 10 and later
 > The Microsoft Intune Certificate Connector supports TLS 1.2. If TLS 1.2 is installed on the server that hosts the Connector, the connector uses TLS 1.2. Otherwise, TLS 1.1 is used. Currently, TLS 1.1 is used for authentication between the devices and server.
 
 ## Create a trusted certificate profile
@@ -210,17 +209,17 @@ To authenticate a device with VPN, WiFi, or other resources, a device needs a ro
    
    |Setting     | Platform     | Details   |
    |------------|------------|------------|
-   |**Renewal threshold (%)**        |All         |Recommended is 20%  | 
-   |**Certificate validity period**  |All         |If you didn't change the certificate template, this option may be set to one year. |
-   |**Key storage provider (KSP)**   |Windows 10  | For Windows, select where to store the keys on the device. |
-   |**Certification authority**      |All         |Displays the internal fully qualified domain name (FQDN) of your Enterprise CA.  |
-   |**Certification authority name** |All         |Lists the name of your Enterprise CA, such as "Contoso Certification Authority". |
-   |**Certificate type**             |macOS       |Select a type: <br> **-** **User** certificates can contain both user and device attributes in the subject and SAN of the certificate. <br><br>**-** **Device** certificates can only contain device attributes in the subject and SAN of the certificate.​ Use Device for scenarios such as user-less devices, like kiosks or other shared devices.  <br><br> This selection affects the Subject name format. |
-   |**Subject name format**          |All         |For most platforms, set this option to **Common name** unless otherwise required.<br><br>For macOS, the Subject name format is determined by the certificate type. See [Subject name format for macOS](#subject-name-format-for-macos) later in this article. |
-   |**Subject alternative name**     |All         |Set this option to **User principal name (UPN)** unless otherwise required. |
-   |**Extended key usage**           |**-** Android device administrator <br>**-** Android Enterprise (*Device Owner*, *Work Profile*) <br> **-** Windows 10 |Certificates usually require *Client Authentication* so that the user or device can authenticate to a server. |
-   |**Allow all apps access to private key** |macOS  |Set to **Enable** to give apps that are configured for the associated mac device access to the PKCS certificates private key. <br><br> For more information on this setting, see *AllowAllAppsAccess* the Certificate Payload section of [Configuration Profile Reference](https://developer.apple.com/business/documentation/Configuration-Profile-Reference.pdf) in the Apple developer documentation. |
-   |**Root Certificate**             |**-** Android device administrator <br> **-** Android Enterprise (*Device Owner*, *Work Profile*) |Select a root CA certificate profile that was previously assigned. |
+   |**Renewal threshold (%)**        |<ul><li>All         |Recommended is 20%  | 
+   |**Certificate validity period**  |<ul><li>All         |If you didn't change the certificate template, this option may be set to one year. |
+   |**Key storage provider (KSP)**   |<ul><li>Windows 10  | For Windows, select where to store the keys on the device. |
+   |**Certification authority**      |<ul><li>All         |Displays the internal fully qualified domain name (FQDN) of your Enterprise CA.  |
+   |**Certification authority name** |<ul><li>All         |Lists the name of your Enterprise CA, such as "Contoso Certification Authority". |
+   |**Certificate type**             |<ul><li>Android Enterprise (*Work Profile*)</li><li>iOS</li><li>macOS</li><li>Windows 10 and later|Select a type: <ul><li> **User** certificates can contain both user and device attributes in the subject and SAN of the certificate. </il><li>**Device** certificates can only contain device attributes in the subject and SAN of the certificate.​ Use Device for scenarios such as user-less devices, like kiosks or other shared devices.  <br><br> This selection affects the Subject name format. |
+   |**Subject name format**          |<ul><li>All         |For most platforms, set this option to **Common name** unless otherwise required.<br><br>For the following platforms, the Subject name format is determined by the certificate type: <ul><li>Android Enterprise (*Work Profile*)</li><li>iOS</li><li>macOS</li><li>Windows 10 and later</li></ul>  <p> See [Subject name format](#subject-name-format) later in this article. |
+   |**Subject alternative name**     |<ul><li>All         |Set this option to **User principal name (UPN)** unless otherwise required. |
+   |**Extended key usage**           |<ul><li> Android device administrator </li><li>Android Enterprise (*Device Owner*, *Work Profile*) </li><li>Windows 10 |Certificates usually require *Client Authentication* so that the user or device can authenticate to a server. |
+   |**Allow all apps access to private key** |<ul><li>macOS  |Set to **Enable** to give apps that are configured for the associated mac device access to the PKCS certificates private key. <br><br> For more information on this setting, see *AllowAllAppsAccess* the Certificate Payload section of [Configuration Profile Reference](https://developer.apple.com/business/documentation/Configuration-Profile-Reference.pdf) in the Apple developer documentation. |
+   |**Root Certificate**             |<ul><li>Android device administrator </li><li>Android Enterprise (*Device Owner*, *Work Profile*) |Select a root CA certificate profile that was previously assigned. |
 
 5. Select **OK** > **Create** to save your profile.
 
@@ -229,11 +228,18 @@ To authenticate a device with VPN, WiFi, or other resources, a device needs a ro
    > [!NOTE]
    > On devices with an Android Enterprise profile, certificates installed using a PKCS certificate profile are not visible on the device. To confirm successful certificate deployment, check the status of the profile in the Intune console.
 
-### Subject name format for macOS
+### Subject name format
 
-When you create a macOS PKCS certificate profile, options for the subject name format depend on the Certificate type you select, either **User** or **Device**.  
+When you create a PKCS certificate profile for the following platforms, options for the subject name format depend on the Certificate type you select, either **User** or **Device**.  
 
-> [!NOTE]  
+Platforms:
+
+- Android Enterprise (*Work Profile*)
+- iOS
+- macOS
+- Windows 10 and later
+
+> [!NOTE]
 > There is a known issue for using PKCS to get certificates [which is the same issue as seen for SCEP](certificates-profile-scep.md#avoid-certificate-signing-requests-with-escaped-special-characters) when the subject name in the resulting Certificate Signing Request (CSR) includes one of the following characters as an escaped character (proceeded by a backslash \\):
 > - \+
 > - ;

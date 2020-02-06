@@ -82,14 +82,14 @@ Depending on the carrier used by the devices, not all details might be collected
 |MEID|The device's mobile equipment identifier.|Windows, iOS, Android|
 |Manufacturer|The manufacturer of the device.|Windows, iOS, Android|
 |Model|The model of the device.|Windows, iOS, Android|
-|Phone number|The phone number assigned to the device.|Windows, iOS, Android|
+|Phone number|The phone number assigned to the device.|Windows, iOS, Android*|
 |Subscribe carrier|The device's wireless carrier.|Windows, iOS, Android|
 |Cellular technology|The radio system used by the device.|Windows, iOS, Android|
 |Wi-Fi MAC|The device's Media Access Control address.|Windows, iOS, Android|
 |ICCID|The Integrated Circuit Card Identifier, which is a SIM card's unique identification number.|Windows, iOS, Android|
 |Enrolled date|The date and time that the device was enrolled in Intune.|Windows, iOS, Android|
 |Last contact|The date and time that the device last connected to Intune.|Windows, iOS, Android|
-|Activation lock bypass code|The code that can be used to bypass the activation lock.|Windows, iOS, Android|
+|Activation lock bypass code|The code that can be used to disable the activation lock.|iOS|
 |Azure AD registered|If **Yes**, the device is registered with Azure Directory.|Windows, iOS, Android|
 |Intune registered|If **Yes**, the device is registered with Intune|Windows, iOS, Android|
 |Compliance|The device's compliance state.|Windows, iOS, Android|
@@ -98,7 +98,8 @@ Depending on the carrier used by the devices, not all details might be collected
 |Supervised|If **Yes**, administrators have enhanced control over the device.|Windows, iOS, Android|
 |Encrypted|If **Yes**, the data stored on the device is encrypted.|Windows, iOS, Android|
 
-
+> [!Note]  
+> Phone number is not inventoried on Android Enterprise Dedicated or Fully Managed devices.
 
 ## Next steps
 See what else you can do to [manage your devices](device-management.md) with Intune.

@@ -8,7 +8,7 @@ keywords:
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 08/22/2019
+ms.date: 11/26/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: apps
@@ -46,7 +46,6 @@ You buy multiple licenses for iOS books through the [Apple Volume Purchase Progr
 ## Before you start
 Before you start, get a VPP token from Apple and upload it to your Intune account. Additionally:
 
-* You can associate up to 256 VPP tokens with your Intune account.
 * If you previously used a VPP token with a different product, you must generate a new one to use with Intune.
 * Each token is valid for one year.
 * By default, Intune syncs with the Apple VPP service twice a day. You can start a manual sync at any time.
@@ -62,15 +61,14 @@ Before you start, get a VPP token from Apple and upload it to your Intune accoun
 
 ## To get and upload an Apple VPP token
 
-1. Sign in to [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
-3. On the **Intune** pane, choose **Client apps**.
-1. In the **Client apps** workload, choose **Setup** > **iOS VPP Tokens**.
-2. On the list of VPP tokens pane, click **Create**.
-3. On the **New VPP Token** pane, specify the following information:
+1. Sign in to the [Microsoft Endpoint Manager Admin Center](https://go.microsoft.com/fwlink/?linkid=2109431).
+2. Select **Tenant administration** > **Connectors and tokens** > **Apple VPP tokens**.
+3. On the list of VPP tokens pane, click **Create**.
+5. On the **New VPP Token** pane, specify the following information:
     - **VPP token file** - Ensure you have signed for the Volume Purchase Program for Business or the Volume Purchase Program for Education. Then, download the Apple VPP token for your account and select it here.
     - **Apple ID** - Enter the Apple ID of the account associated with the volume-purchase program.
     - **Type of VPP account** - Choose from **Business** or **Education**.
-4. When you are done, click **Create**.
+5. When you are done, click **Create**.
 
 The token is displayed in the list of tokens pane.
 
@@ -79,8 +77,7 @@ You can synchronize the data held by Apple with Intune at any time by choosing *
 
 ## To assign a volume-purchased app
 
-3. On the **Intune** pane, choose **eBooks**.
-1. In the **eBooks** workload, choose **Manage** > **All eBooks**.
+1. Select **Apps** > **eBooks** > **All eBooks**.
 2. On the list of books pane, choose the book you want to assign, and then choose '**...**' > **Assign Groups**.
 3. On the <*book name*> - **Groups Assigned** pane, choose **Manage** > **Groups Assigned**.
 4. Choose **Assign Groups** then, on the **Select groups** pane, choose the Azure AD user groups to which you want to assign the book. Device groups are currently not supported.

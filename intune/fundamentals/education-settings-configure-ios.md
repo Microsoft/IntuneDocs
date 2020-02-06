@@ -8,7 +8,7 @@ keywords:
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 05/9/2018
+ms.date: 11/14/2019
 ms.topic: archived
 ms.service: microsoft-intune
 ms.subservice: fundamentals
@@ -32,7 +32,7 @@ ms.collection: M365-identity-device-management
 # How to configure Intune settings for the iOS Classroom app
 
 > [!NOTE]
-> Intune settings for the Classroom App are obsolete in Intune. This article is only applicable for users with existing education profiles in Intune.
+> Intune doesn't currently support configuring the Classroom app. This article is only applicable for users with existing iOS education profiles in Intune.  
 
 ## Introduction
 [Classroom](https://itunes.apple.com/app/id1085319084) is an app that helps teachers to guide learning, and control student devices in the classroom. For example, the app enables teachers to:

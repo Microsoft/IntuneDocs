@@ -7,7 +7,7 @@ keywords:
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 04/19/2019
+ms.date: 12/03/2019
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -26,7 +26,7 @@ ms.reviewer: chrisbal
 ms.suite: ems
 #ms.tgt_pltfrm:
 ms.custom: intune-enduser
-ms.collection: M365-identity-device-management
+ms.collection: 
 ---
 
 
@@ -43,9 +43,7 @@ To maximize data protection, your organization might configure several managed a
 Organizations can require you to use a managed app to do something, such as open a work file, or access a web link. If you don't have the app, you might not be able to continue your task. Some managed apps are made available for you to install, but are not required.
 
 ## How do I know I'm using a managed app?
-When you first access work or school data in a managed app, you'll receive a message similar to the example screenshot below. The message prompts you to restart the app to continue.
-
-![Screenshot of the message that appears when a user opens a managed app on their device. Message says, "Your organization is not protecting its data in this app. You need to restart the app to continue," followed by an OK button.](./media/managed-apps-message.png)
+When you try to access work or school data in a managed app, you'll receive an on-screen message that the app is protected by your organization. 
 
 ## Commonly managed apps  
 Examples of commonly required or available managed apps within schools and workplaces are:

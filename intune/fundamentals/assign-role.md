@@ -36,27 +36,23 @@ To create, edit, or assign roles, your account must have one of the following pe
 - **Global Administrator**
 - **Intune Service Administrator**
 
-1. Sign into the [Azure portal](https://portal.azure.com).
+1. In the [Microsoft Endpoint Manager Admin Center](https://go.microsoft.com/fwlink/?linkid=2109431), choose **Tenant administration** > **Roles** > **All roles**.
 
-2. Choose **All services** > **Intune**. Intune is located in the **Monitoring + Management** section.
+2. On the **Intune roles - All roles** blade, choose the built-in role you want to assign.
 
-3. On the **Intune** blade, choose **Roles** > **All roles**.
+3. On the <*role name*> - **Overview** blade, choose **Manage** > **Assignments**.
 
-4. On the **Intune roles - All roles** blade, choose the built-in role you want to assign.
+4. On the custom role blade, choose **Assign**.
 
-5. On the <*role name*> - **Overview** blade, choose **Manage** > **Assignments**.
+5. On the **Role Assignments** blade, enter an **Assignment name** and optional **Assignment description** for the assignment.
 
-6. On the custom role blade, choose **Assign**.
+6. For **Members (Groups)**, choose a group that contains the user you want to give the permissions to.
 
-7. On the **Role Assignments** blade, enter an **Assignment name** and optional **Assignment description** for the assignment.
+7. For **Scope (Groups)**, choose a group containing the users/devices that the member above will be allowed to manage.
 
-8. For **Members (Groups)**, choose a group that contains the user you want to give the permissions to.
+8. For **Scope (Tags)**, choose tags where this role assignment will be applied.
 
-9. For **Scope (Groups)**, choose a group containing the users/devices that the member above will be allowed to manage.
-
-10. For **Scope (Tags)**, choose tags where this role assignment will be applied.
-
-11. When you're done, choose **OK**. The new assignment is displayed in the list of assignments.
+9. When you're done, choose **OK**. The new assignment is displayed in the list of assignments.
 
 
 ## Next steps

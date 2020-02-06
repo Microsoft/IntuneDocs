@@ -8,7 +8,7 @@ keywords:
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 11/04/2019
+ms.date: 11/21/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: configuration
@@ -21,7 +21,7 @@ ms.assetid: d035ebf5-85f4-4001-a249-75d24325061a
 #ROBOTS:
 #audience:
 #ms.devlang:
-ms.reviewer: chrisbal
+ms.reviewer: tycast
 ms.suite: ems
 search.appverid: MET150
 #ms.tgt_pltfrm:
@@ -31,9 +31,10 @@ ms.collection: M365-identity-device-management
 
 # Use a Microsoft Intune custom profile to create a per-app VPN profile for Android devices
 
-[!INCLUDE[azure_portal](../includes/azure_portal.md)]
-
 You can create a per-app VPN profile for Android 5.0 and later devices that are managed by Intune. First, create a VPN profile that uses either the Pulse Secure or Citrix connection type. Then, create a custom configuration policy that associates the VPN profile with specific apps.
+
+> [!NOTE]
+> To use per-app VPN on Android Enterprise devices, you can also use these steps. But, it's recommended to use an [app configuration policy](../apps/app-configuration-policies-use-android.md) for your VPN client app.
 
 After you assign the policy to your Android device or user groups, users should start the Pulse Secure or Citrix VPN client. The VPN client then allows only traffic from the specified apps to use the open VPN connection.
 
@@ -52,7 +53,7 @@ After you assign the policy to your Android device or user groups, users should 
     - **Platform**: Select **Android**.
     - **Profile type**: Select **VPN**.
 
-4. Choose **Settings** > **Configure** and then configure the VPN profile as per the settings in [How to configure VPN settings](vpn-settings-configure.md) and [Intune VPN settings for Android devices](vpn-settings-android.md).
+4. Choose **Settings** > **Configure**. Then, configure the VPN profile. For more information, see [How to configure VPN settings](vpn-settings-configure.md) and [Intune VPN settings for Android devices](vpn-settings-android.md).
 
 Take note of the **Connection Name** value you specify when creating the VPN profile. This name will be needed in the next step. For example, **MyAppVpnProfile**.
 
@@ -79,7 +80,7 @@ Take note of the **Connection Name** value you specify when creating the VPN pro
 
 ### Set your app list to blacklist or whitelist (optional)
 
-You can enter a list of apps that *cannot* use the VPN connection by using the **BLACKLIST** value. All other apps connect through the VPN. Or, you can use the **WHITELIST** value to enter a list of apps that *can* use the VPN connection. Apps that aren't on the list don't connect through the VPN.
+Use the **BLACKLIST** value to enter a list of apps that *cannot* use the VPN connection. All other apps connect through the VPN. Or, use the **WHITELIST** value to enter a list of apps that *can* use the VPN connection. Apps that aren't on the list don't connect through the VPN.
 
 1. On the **Custom OMA-URI Settings** pane, choose **Add**.
 2. Enter a setting name.

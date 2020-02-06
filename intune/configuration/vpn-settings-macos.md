@@ -28,7 +28,7 @@ ms.collection: M365-identity-device-management
 
 # Add VPN settings on macOS devices in Microsoft Intune
 
-[!INCLUDE [azure_portal](../includes/azure_portal.md)]
+
 
 This article shows you the Intune settings you can use to configure VPN connections on devices running macOS.
 

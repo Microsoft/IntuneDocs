@@ -2,12 +2,12 @@
 # required metadata
 
 title: Device restriction settings for Windows 10 in Microsoft Intune - Azure | Microsoft Docs
-description: See a list of all the settings and their descriptions for creating device restrictions on Windows 10 and later devices. Use these settings in a configuration profile to control screenshots, password requirements, kiosk settings, apps in the store, Microsoft Edge browser, Windows defender, access to the cloud, start menu, and more in Microsoft Intune.
+description: See a list of all the settings and their descriptions for creating device restrictions on Windows 10 and later devices. Use these settings in a configuration profile to control screenshots, password requirements, kiosk settings, apps in the store, Microsoft Edge browser, Microsoft Defender, access to the cloud, start menu, and more in Microsoft Intune.
 keywords:
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 10/09/2019
+ms.date: 01/28/2020
 ms.topic: reference
 ms.service: microsoft-intune
 ms.subservice: configuration
@@ -43,28 +43,51 @@ These settings are added to a device configuration profile in Intune, and then a
 
 These settings use the [ApplicationManagement policy CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-applicationmanagement), which also lists the supported Windows editions.
 
-- **App store** (mobile only): **Not configured** (default) allows end users access to the app store on mobile devices. **Block** prevents using the app store.
-- **Auto-update apps from store**: **Not configured** (default) allows apps installed from the Microsoft Store to be automatically updated. **Block** prevents updates from being automatically installed.
+- **App store** (mobile only): **Block** prevents end users from accessing the app store on mobile devices. When set to **Not configured** (default), Intune doesn't change or update this setting. By default, the OS might allows end users access to the app store.
+- **Auto-update apps from store**: **Block** prevents updates from being automatically installed from the Microsoft Store. When set to **Not configured** (default), Intune doesn't change or update this setting. By default, the OS might allows apps installed from the Microsoft Store to be automatically updated.
+
+  [ApplicationManagement/AllowAppStoreAutoUpdate CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-applicationmanagement#applicationmanagement-allowappstoreautoupdate)
+
 - **Trusted app installation**: Choose if non-Microsoft Store apps can be installed, also known as sideloading. Sideloading is installing, and then running or testing an app that isn't certified by the Microsoft Store. For example, an app that is internal to your company only. Your options:
-  - **Not configured** (default): Uses the OS default.
+  - **Not configured** (default): Intune doesn't change or update this setting.
   - **Block**: Prevents sideloading. Non-Microsoft Store apps can't be installed.
   - **Allow**: Allows sideloading. Non-Microsoft Store apps can be installed.
 - **Developer unlock**: Allow Windows developer settings, such as allowing sideloaded apps to be modified by end users. Your options:
-  - **Not configured** (default): Uses the OS default.
+  - **Not configured** (default): Intune doesn't change or update this setting.
   - **Block**: Prevents developer mode and sideloading apps.
   - **Allow**: Allows developer mode and sideloading apps.
 
   [Enable your device for development](https://docs.microsoft.com/windows/uwp/get-started/enable-your-device-for-development) has more information on this feature.
+  
+  [ApplicationManagement/AllowAllTrustedApps CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-applicationmanagement#applicationmanagement-allowalltrustedapps)
 
-- **Shared user app data**: Choose **Allow** to share application data between different users on the same device and with other instances of that app. **Not configured** (default) prevents sharing data with other users and other instances of the same app.
-- **Use private store only**: **Allow** only allows apps to be downloaded from a private store, and not downloaded from the public store, including a retail catalog. **Not configured** (default) allows apps to be downloaded from a private store and a public store.
-- **Store originated app launch**: **Block** disables all apps that were pre-installed on the device, or downloaded from the Microsoft Store. **Not configured** (default) allows these apps to open.
-- **Install app data on system volume**: **Block** stops apps from storing data on the system volume of the device. **Not configured** (default) allows apps to store data on the system disk volume.
-- **Install apps on system drive**: **Block** prevents apps from installing on the system drive on the device. **Not configured** (default) allows apps to install on the system drive.
-- **Game DVR** (desktop only): **Block** disables Windows Game recording and broadcasting. **Not configured** (default) allows recording and broadcasting of games.
+- **Shared user app data**: Choose **Allow** to share application data between different users on the same device and with other instances of that app. When set to **Not configured** (default), Intune doesn't change or update this setting. By default, the OS might prevent sharing data with other users and other instances of the same app.
+
+  [ApplicationManagement/AllowSharedUserAppData CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-applicationmanagement#applicationmanagement-allowshareduserappdata)
+
+- **Use private store only**: **Allow** only allows apps to be downloaded from a private store, and not downloaded from the public store, including a retail catalog. When set to **Not configured** (default), Intune doesn't change or update this setting. By default, the OS might allows apps to be downloaded from a private store and a public store.
+
+  [ApplicationManagement/RequirePrivateStoreOnly CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-applicationmanagement#applicationmanagement-requireprivatestoreonly)
+
+- **Store originated app launch**: **Block** disables all apps that were pre-installed on the device, or downloaded from the Microsoft Store. When set to **Not configured** (default), Intune doesn't change or update this setting. By default, the OS might allows these apps to open.
+
+  [ApplicationManagement/DisableStoreOriginatedApps CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-applicationmanagement#applicationmanagement-disablestoreoriginatedapps)
+
+- **Install app data on system volume**: **Block** stops apps from storing data on the system volume of the device. When set to **Not configured** (default), Intune doesn't change or update this setting. By default, the OS might allow apps to store data on the system disk volume.
+
+  [ApplicationManagement/RestrictAppDataToSystemVolume CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-applicationmanagement#applicationmanagement-restrictappdatatosystemvolume)
+
+- **Install apps on system drive**: **Block** prevents apps from installing on the system drive on the device. When set to **Not configured** (default), Intune doesn't change or update this setting. By default, the OS might allow apps to install on the system drive.
+
+  [ApplicationManagement/RestrictAppToSystemVolume CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-applicationmanagement#applicationmanagement-restrictapptosystemvolume)
+
+- **Game DVR** (desktop only): **Block** disables Windows Game recording and broadcasting. When set to **Not configured** (default), Intune doesn't change or update this setting. By default, the OS might allow recording and broadcasting of games.
+
+  [ApplicationManagement/AllowGameDVR CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-applicationmanagement#applicationmanagement-allowgamedvr)
+
 - **Apps from store only**: This setting determines the user experience when users install apps from places other than the Microsoft Store. Your options:
 
-  - **Not configured** (default): Allows end users to install apps from places other than the Microsoft Store, including apps defined in other policy settings.  
+  - **Not configured** (default): Intune doesn't change or update this setting. By default, the OS might allow end users to install apps from places other than the Microsoft Store, including apps defined in other policy settings.  
   - **Anywhere**: Turns off app recommendations, and allows users to install apps from any location.  
   - **Store Only**: Forces end users to only install apps from the Microsoft Store.
   - **Recommendations**: When installing an app from the web that’s available in the Microsoft Store, users see a message recommending they download it from the store.  
@@ -72,11 +95,11 @@ These settings use the [ApplicationManagement policy CSP](https://docs.microsoft
 
   [SmartScreen/EnableAppInstallControl CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-smartscreen#smartscreen-enableappinstallcontrol)
 
-- **User control over installations**: When set to **Not configured** (default), Windows Installer prevent users from changing the installation options typically reserved for system administrators, such as entering the directory to install the files. **Block** allows users to change these installation options, and some of the Windows Installer security features are bypassed.
+- **User control over installations**: **Block** prevents users from changing the installation options typically reserved for system administrators, such as entering the directory to install the files. When set to **Not configured** (default), Intune doesn't change or update this setting. By default, Windows Installer might prevent users from changing these installation options, and some of the Windows Installer security features are bypassed.
 
   [ApplicationManagement/MSIAllowUserControlOverInstall CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-applicationmanagement#applicationmanagement-msiallowusercontroloverinstall)
 
-- **Install apps with elevated privileges**: When set to **Not configured** (default), the system applies the current user's permissions when it installs programs that a system administrator doesn't deploy or offer. **Block** directs Windows Installer to use elevated permissions when it installs any program on the system. These privileges are extended to all programs.
+- **Install apps with elevated privileges**: **Block** directs Windows Installer to use elevated permissions when it installs any program on the system. These privileges are extended to all programs. When set to **Not configured** (default), Intune doesn't change or update this setting. By default, the system might apply the current user's permissions when it installs programs that a system administrator doesn't deploy or offer. 
 
   [ApplicationManagement/MSIAlwaysInstallWithElevatedPrivileges CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-applicationmanagement#applicationmanagement-msialwaysinstallwithelevatedprivileges)
 
@@ -91,7 +114,7 @@ These settings use the [connectivity policy](https://docs.microsoft.com/windows/
 - [Wi-Fi policy CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-wifi)
 
 - **Cellular data channel**: Choose if end users can use data, like browsing the web, when connected to a cellular network. Your options:
-  - **Not configured** (default): Uses the OS default, which may allow the cellular data channel. End users can turn it off.
+  - **Not configured** (default): Intune doesn't change or update this setting. End users can turn it off.
   - **Block**: Don't allow the cellular data channel. End users can't turn it on.
   - **Allow (not editable)**: Allows the cellular data channel. End users can't turn it off.
 
@@ -143,24 +166,24 @@ These settings use the [EnterpriseCloudPrint policy CSP](https://docs.microsoft.
 ## Control Panel and Settings
 
 - **Settings app**: **Block** prevents end users from accessing to the Windows settings app. **Not configured** (default) allows users to open the Settings app on the device.
-  - **System**: **Block** prevents access to the System area of the Settings app. **Not configured** (default) allows access.
+  - **System**: **Block** prevents access to the System area of the Settings app. When set to **Not configured** (default), Intune doesn't change or update this setting.
     - **Power and sleep settings modification** (desktop only): **Block** prevents end users from changing the power and sleep settings on the device. **Not configured** (default) allows users to change power and sleep settings.
-  - **Devices**: **Block** prevents access to the Devices area of the Settings app on the device. **Not configured** (default) allows access.
-  - **Network Internet**: **Block** prevents access to the Network & Internet area of the Settings app on the device. **Not configured** (default) allows access.
-  - **Personalization**: **Block** prevents access to the Personalization area of the Settings app on the device. **Not configured** (default) allows access.
-  - **Apps**: **Block** prevents access to the Apps area of the Settings app on the device. **Not configured** (default) allows access.
-  - **Accounts**: **Block** prevents access to the Accounts area of the Settings app on the device. **Not configured** (default) allows access.
-  - **Time and Language**: **Block** prevents access to the Time & Language area of the Settings app on the device. **Not configured** (default) allows access.
-    - **System Time modification**: **Block** prevents end users from changing the date and time settings on the device. **Not configured** allows users to change these settings.
-    - **Region settings modification** (desktop only): **Block** prevents end users from changing the region settings on the device. **Not configured** allows users to change these settings.
-    - **Language settings modification (desktop only)**: **Block** prevents end users from changing the language settings on the device. **Not configured** allows users to change these settings.
+  - **Devices**: **Block** prevents access to the Devices area of the Settings app on the device. When set to **Not configured** (default), Intune doesn't change or update this setting.
+  - **Network Internet**: **Block** prevents access to the Network & Internet area of the Settings app on the device. When set to **Not configured** (default), Intune doesn't change or update this setting.
+  - **Personalization**: **Block** prevents access to the Personalization area of the Settings app on the device. When set to **Not configured** (default), Intune doesn't change or update this setting.
+  - **Apps**: **Block** prevents access to the Apps area of the Settings app on the device. When set to **Not configured** (default), Intune doesn't change or update this setting.
+  - **Accounts**: **Block** prevents access to the Accounts area of the Settings app on the device. When set to **Not configured** (default), Intune doesn't change or update this setting.
+  - **Time and Language**: **Block** prevents access to the Time & Language area of the Settings app on the device. When set to **Not configured** (default), Intune doesn't change or update this setting.
+    - **System Time modification**: **Block** prevents end users from changing the date and time settings on the device. When set to **Not configured** (default), Intune doesn't change or update this setting. Users can change these settings.
+    - **Region settings modification** (desktop only): **Block** prevents end users from changing the region settings on the device. When set to **Not configured** (default), Intune doesn't change or update this setting. Users can change these settings.
+    - **Language settings modification (desktop only)**: **Block** prevents end users from changing the language settings on the device. When set to **Not configured** (default), Intune doesn't change or update this setting. Users can change these settings.
 
       [Settings policy CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-settings)
 
-  - **Gaming**: **Block** prevents access to the Gaming area of the Settings app on the device. **Not configured** (default) allows access.
-  - **Ease of Access**: **Block** prevents access to the Ease of Access area of the Settings app on the device. **Not configured** (default) allows access.
-  - **Privacy**: **Block** prevents access to the Privacy area of the Settings app on the device. **Not configured** (default) allows access.
-  - **Update and Security**: **Block** prevents access to the Update & Security area of the Settings app on the device. **Not configured** (default) allows access.
+  - **Gaming**: **Block** prevents access to the Gaming area of the Settings app on the device. When set to **Not configured** (default), Intune doesn't change or update this setting.
+  - **Ease of Access**: **Block** prevents access to the Ease of Access area of the Settings app on the device. When set to **Not configured** (default), Intune doesn't change or update this setting.
+  - **Privacy**: **Block** prevents access to the Privacy area of the Settings app on the device. When set to **Not configured** (default), Intune doesn't change or update this setting.
+  - **Update and Security**: **Block** prevents access to the Update & Security area of the Settings app on the device. When set to **Not configured** (default), Intune doesn't change or update this setting.
 
 ## Display
 
@@ -182,28 +205,31 @@ You can also **Import** a .csv file with the list of apps.
 
 These settings use the [experience policy CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-experience); which also lists the supported Windows editions. 
 
-- **Screen capture** (mobile only): **Block** prevents end users from getting screenshots on the device. **Not configured** (default) allows this feature.
-- **Copy and paste (mobile only)**: **Block** prevents end users from using copy-and-paste between apps on the device. **Not configured** (default) allows this feature.
-- **Manual unenrollment**: **Block** prevents end users from deleting the workplace account using the workplace control panel on the device. **Not configured** (default) allows this feature.
+- **Screen capture** (mobile only): **Block** prevents end users from getting screenshots on the device. When set to **Not configured** (default), Intune doesn't change or update this setting.
+- **Copy and paste (mobile only)**: **Block** prevents end users from using copy-and-paste between apps on the device. When set to **Not configured** (default), Intune doesn't change or update this setting.
+- **Manual unenrollment**: **Block** prevents end users from deleting the workplace account using the workplace control panel on the device. When set to **Not configured** (default), Intune doesn't change or update this setting.
 
   This policy setting doesn't apply if the computer is Azure AD joined and auto-enrollment is enabled.
 
-- **Manual root certificate installation** (mobile only): **Block** prevents end users from manually installing root certificates, and intermediate CAP certificates. **Not configured** (default) allows this feature.
-- **Camera**: **Block** prevents end users from using the camera on the device. **Not configured** (default) allows this feature.
-- **OneDrive file sync**: **Block** prevents end users from synchronizing files to OneDrive from the device. **Not configured** (default) allows this feature.
-- **Removable storage**: **Block** prevents end users from using external storage devices, like SD cards with the device. **Not configured** (default) allows this feature.
-- **Geolocation**: **Block** prevents end users from turning on location services on the device. **Not configured** (default) allows this feature.
-- **Internet sharing**: **Block** prevents Internet connection sharing on the device. **Not configured** (default) allows this feature.
-- **Phone reset**: **Block** prevents end users from wiping or doing a factory reset on the device. **Not configured** (default) allows this feature.
-- **USB connection**: **Block** prevents access to external storage devices through a USB connection on the device. **Not configured** (default) allows this feature. USB charging isn't affected by this setting.
-- **AntiTheft mode** (mobile only): **Block** prevents end users from selecting AntiTheft mode preference on the device. **Not configured** (default) allows this feature.
+- **Manual root certificate installation** (mobile only): **Block** prevents end users from manually installing root certificates, and intermediate CAP certificates. When set to **Not configured** (default), Intune doesn't change or update this setting.
+- **Camera**: **Block** prevents end users from using the camera on the device. When set to **Not configured** (default), Intune doesn't change or update this setting.
+
+  [Camera CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-camera)
+
+- **OneDrive file sync**: **Block** prevents end users from synchronizing files to OneDrive from the device. When set to **Not configured** (default), Intune doesn't change or update this setting.
+- **Removable storage**: **Block** prevents end users from using external storage devices, like SD cards with the device. When set to **Not configured** (default), Intune doesn't change or update this setting.
+- **Geolocation**: **Block** prevents end users from turning on location services on the device. When set to **Not configured** (default), Intune doesn't change or update this setting.
+- **Internet sharing**: **Block** prevents Internet connection sharing on the device. When set to **Not configured** (default), Intune doesn't change or update this setting.
+- **Phone reset**: **Block** prevents end users from wiping or doing a factory reset on the device. When set to **Not configured** (default), Intune doesn't change or update this setting.
+- **USB connection**: **Block** prevents access to external storage devices through a USB connection on the device. When set to **Not configured** (default), Intune doesn't change or update this setting. USB charging isn't affected by this setting.
+- **AntiTheft mode** (mobile only): **Block** prevents end users from selecting AntiTheft mode preference on the device. When set to **Not configured** (default), Intune doesn't change or update this setting.
 - **Cortana**: **Block** disable the Cortana voice assistant on the device. When Cortana is off, users can still search to find items on the device. **Not configured** (default) allows Cortana.
 - **Voice recording** (mobile only): **Block** prevents end users from using the device voice recorder on the device. **Not configured** (default) allows voice recording for apps.
-- **Device name modification** (mobile only): **Block** prevents end users from changing the name of the device. **Not configured** (default) allows this feature.
-- **Add provisioning packages**: **Block** prevents the run time configuration agent that installs provisioning packages on the device. **Not configured** (default) allows this feature.
-- **Remove provisioning packages**: **Block** prevents the run time configuration agent that removes provisioning packages from the device. **Not configured** (default) allows this feature.
-- **Device discovery**: **Block** prevents the device from being discovered by other devices. **Not configured** (default) allows this feature.
-- **Task Switcher** (mobile only): **Block** prevents task switching on the device. **Not configured** (default) allows this feature.
+- **Device name modification** (mobile only): **Block** prevents end users from changing the name of the device. When set to **Not configured** (default), Intune doesn't change or update this setting.
+- **Add provisioning packages**: **Block** prevents the run time configuration agent that installs provisioning packages on the device. When set to **Not configured** (default), Intune doesn't change or update this setting.
+- **Remove provisioning packages**: **Block** prevents the run time configuration agent that removes provisioning packages from the device. When set to **Not configured** (default), Intune doesn't change or update this setting.
+- **Device discovery**: **Block** prevents the device from being discovered by other devices. When set to **Not configured** (default), Intune doesn't change or update this setting.
+- **Task Switcher** (mobile only): **Block** prevents task switching on the device. When set to **Not configured** (default), Intune doesn't change or update this setting.
 - **SIM card error dialog** (mobile only): **Block** error messages from showing on the device if no SIM card is detected. **Not configured** (default) shows the error messages.
 - **Ink Workspace**: Choose if and how user access the ink workspace. Your options:
   - **Not configured** (default): Turns on the ink workspace, and the user is allowed to use it above the lock screen.
@@ -217,9 +243,11 @@ These settings use the [experience policy CSP](https://docs.microsoft.com/window
 
   The setting becomes effective the next time the device is wiped or reset. Like any other Intune configuration, the device must be enrolled and managed by Intune to receive configuration settings. But once it's enrolled, and receiving policies, then resetting the device enforces the setting during the next Windows setup.
 
+  [TenantLockdown CSP](https://docs.microsoft.com/windows/client-management/mdm/tenantlockdown-csp)
+
 - **Direct Memory Access**: **Block** prevents direct memory access (DMA) for all hot pluggable PCI downstream ports until a user signs into Windows. **Enabled** (default) allows access to DMA, even when a user isn't signed in.
 
-  CSP: [DataProtection/AllowDirectMemoryAccess](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-dataprotection#dataprotection-allowdirectmemoryaccess)
+  [DataProtection/AllowDirectMemoryAccess CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-dataprotection#dataprotection-allowdirectmemoryaccess)
 
 - **End processes from Task Manager**: This setting determines whether non-administrators can use Task Manager to end tasks. **Block** prevents standard users (non-administrators) from using Task Manager to end a process or task on the device. **Not configured** (default) allows standard users to end a process or task using Task Manager.
 
@@ -230,6 +258,9 @@ These settings use the [experience policy CSP](https://docs.microsoft.com/window
   [AboveLock/AllowActionCenterNotifications CSP](https://msdn.microsoft.com/ie/dn904962(v=vs.94)#AboveLock_AllowActionCenterNotifications)
 
 - **Locked screen picture URL (desktop only)**: Enter the URL to a picture in JPG, JPEG, or PNG format that's used as the Windows lock screen wallpaper. For example, enter `https://contoso.com/image.png`. This setting locks the image, and can't be changed afterwards.
+
+  [Personalization/LockScreenImageUrl CSP](https://docs.microsoft.com/windows/client-management/mdm/personalization-csp)
+
 - **User configurable screen timeout (mobile only)**: **Allow** lets users configure the screen timeout. **Not configured** (default) doesn't give users this option.
 
   [DeviceLock/AllowScreenTimeoutWhileLockedUserConfig CSP](https://msdn.microsoft.com/ie/dn904962(v=vs.94)#DeviceLock_AllowScreenTimeoutWhileLockedUserConfig)
@@ -378,7 +409,7 @@ When "block and enable user override" is selected, user can override admin desig
 - **Allow JavaScript**: **Yes** (default) allows scripts, such as Javascript, to run in the Microsoft Edge browser. **No** prevents Java scripts in the browser from running.
 - **User can install extensions**: **Yes** (default) allows end users to install Microsoft Edge extensions on the device. **No** prevents the installation.
 - **Allow sideloading of developer extensions**: **Yes** (default) uses the OS default, which may allow sideloading. Sideloading installs and runs unverified extensions. **No** prevents Microsoft Edge from sideloading using the **Load extensions** feature. It doesn't prevent sideloading extensions using other ways, such as PowerShell.
-- **Required extensions**: Choose which extensions can't be turned off by end users in Microsoft Edge. Enter the package family names, and select **Add**. [Find a package family name (PFN)](https://docs.microsoft.com/sccm/protect/deploy-use/find-a-pfn-for-per-app-vpn) provides some guidance.
+- **Required extensions**: Choose which extensions can't be turned off by end users in Microsoft Edge. Enter the package family names, and select **Add**. [Find a package family name (PFN) for per app VPN](https://docs.microsoft.com/configmgr/protect/deploy-use/find-a-pfn-for-per-app-vpn) provides some guidance.
 
   You can also **Import** a CSV file that includes the package family names. Or, **Export** the package family names you enter.
 
@@ -419,21 +450,21 @@ These settings use the [DeviceLock policy CSP](https://docs.microsoft.com/window
   - **Prevent reuse of previous passwords**: Enter the number of previously used passwords that can't be used, from 1-24. For example, enter `5` so users can't set a new password to their current password or any of their previous four passwords.
   - **Require password when device returns from idle state** (Mobile and Holographic): Choose **Require** so users must enter a password to unlock the device after being idle. **Not configured** (default) doesn't require a PIN or password when the device resumes from an idle state.
   - **Simple passwords**: Set to **Block** so users can't create simple passwords, such as `1234` or `1111`. Set to **Not configured** (default) to let users create passwords like `1234` or `1111`. This setting also allows or blocks the use of Windows picture passwords.
-- **Automatic encryption during AADJ**: **Block** prevents automatic BitLocker device encryption when the device is prepared for first use, when the device is Azure AD joined. **Not configured** (default) uses the operating system default, which may enable encryption. More on [BitLocker device encryption](https://docs.microsoft.com/windows/security/information-protection/bitlocker/bitlocker-device-encryption-overview-windows-10#bitlocker-device-encryption).
+- **Automatic encryption during AADJ**: **Block** prevents automatic BitLocker device encryption when the device is prepared for first use, when the device is Azure AD joined. When set to **Not configured** (default), Intune doesn't change or update this setting. More on [BitLocker device encryption](https://docs.microsoft.com/windows/security/information-protection/bitlocker/bitlocker-device-encryption-overview-windows-10#bitlocker-device-encryption).
 
   [Security/PreventAutomaticDeviceEncryptionForAzureADJoinedDevices CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-security#security-preventautomaticdeviceencryptionforazureadjoineddevices)
 
-- **Federal Information Processing Standard (FIPS) policy**: **Allow** uses the Federal Information Processing Standard (FIPS) policy, which is a U.S. government standard for encryption, hashing, and signing. **Not configured** (default) uses the operating system default, which doesn't use FIPS.
+- **Federal Information Processing Standard (FIPS) policy**: **Allow** uses the Federal Information Processing Standard (FIPS) policy, which is a U.S. government standard for encryption, hashing, and signing. When set to **Not configured** (default), Intune doesn't change or update this setting. The operating system default may not use FIPS.
 
   [Cryptography/AllowFipsAlgorithmPolicy CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-cryptography#cryptography-allowfipsalgorithmpolicy)
 
-- **Windows Hello device authentication**: **Allow** users to use a Windows Hello companion device, such as a phone, fitness band, or IoT device, to sign in to a Windows 10 computer. **Not configured** (default) uses the operating system default, which may prevent Windows Hello companion devices from authenticating with Windows.
+- **Windows Hello device authentication**: **Allow** users to use a Windows Hello companion device, such as a phone, fitness band, or IoT device, to sign in to a Windows 10 computer. When set to **Not configured** (default), Intune doesn't change or update this setting. The operating system default may prevent Windows Hello companion devices from authenticating with Windows.
 
   [Authentication/AllowSecondaryAuthenticationDevice CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-authentication#authentication-allowsecondaryauthenticationdevice)
 
 - **Web sign-in**: Enables Windows sign in support for non-ADFS (Active Directory Federation Services) federated providers, such as Security Assertion Markup Language (SAML). SAML uses secure tokens that provide web browsers a single sign-on (SSO) experience. Your options:
 
-  - **Not configured** (default): Uses the operating system default on the device.
+  - **Not configured** (default): Intune doesn't change or update this setting.
   - **Enabled**: The Web Credential Provider is enabled for sign in.
   - **Disabled**: The Web Credential Provider is disabled for sign in.
 
@@ -490,7 +521,7 @@ These settings use the [privacy policy CSP](https://docs.microsoft.com/windows/c
 - **Input personalization**: **Block** prevents using voice for dictation and to talk to Cortana and other apps that use Microsoft cloud-based speech recognition. It's disabled and users can't enable online speech recognition using settings. **Not configured** (default) lets users choose. If you allow these services, Microsoft may collect voice data to improve the service.
 - **Automatic acceptance of the pairing and privacy user consent prompts**: Choose **Allow** so Windows can automatically accept pairing and privacy consent messages when running apps. **Not configured** (default) prevents the automatic acceptance of the pairing and privacy user consent window when opening apps.
 - **Publish user activities**: **Block** prevents shared experiences and discovery of recently used resources in the activity feed. **Not configured** (default) enables this feature so apps can publish end user activities.
-- **Local activities only**: **Block** prevents shared experiences and the discovery of recently used resources in task switcher, based only on local activity. **Not configured** (default) enables this feature.
+- **Local activities only**: **Block** prevents shared experiences and the discovery of recently used resources in task switcher, based only on local activity. When set to **Not configured** (default), Intune doesn't change or update this setting.
 
 You can configure information that all apps on the device can access. Also, define exceptions on a per-app basis using **Per-app privacy exceptions**.
 
@@ -527,7 +558,7 @@ These settings use the [WirelessDisplay policy CSP](https://docs.microsoft.com/w
 
 - **Share usage data**: Choose the level of diagnostic data that's submitted. Your options:
   - **Not configured**: No data is shared.
-  - **Security**: Information that's required to help keep Windows more secure, including data about the Connected User Experience and Telemetry component settings, the Malicious Software Removal Tool, and Windows Defender.
+  - **Security**: Information that's required to help keep Windows more secure, including data about the Connected User Experience and Telemetry component settings, the Malicious Software Removal Tool, and Microsoft Defender.
   - **Basic**: Basic device info, including quality-related data, app compatibility, app usage data, and data from the Security level.
   - **Enhanced**: Additional insights, including: how Windows, Windows Server, System Center, and apps are used, how they perform, advanced reliability data, and data from both the Basic and the Security levels.
   - **Full**: All data necessary to identify and help to fix problems, plus data from the Security, Basic, and Enhanced levels.
@@ -535,7 +566,7 @@ These settings use the [WirelessDisplay policy CSP](https://docs.microsoft.com/w
   [System/AllowTelemetry CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-system#system-allowtelemetry)
 
 - **Send Microsoft Edge browsing data to Microsoft 365 Analytics**: To use this feature, set the **Share usage data** settings to **Enhanced** or **Full**. This feature controls what data Microsoft Edge sends to Microsoft 365 Analytics for enterprise devices with a configured commercial ID. Your options:
-  - **Not configured**: Uses the OS default, which may not send any browsing history data
+  - **Not configured**: Intune doesn't change or update this setting. The operating system default may not send any browsing history data.
   - **Only send intranet data**: Allows the administrator to send intranet data history
   - **Only send internet data**: Allows the administrator to send internet data history
   - **Send intranet and internet data**: Allows the administrator to send intranet and internet data history
@@ -590,11 +621,11 @@ These settings use the [start policy CSP](https://docs.microsoft.com/windows/cli
 - **User Tile**: **Block** hides the user tile from showing in the start menu. **Not configured** (default) shows the user tile, and also sets the following settings:
   - **Lock**: **Block** hides the **Lock** option from showing in the user tile in the start menu. **Not configured** (default) shows the **Lock** option.
   - **Sign out**: **Block** hides the **Sign out** option from showing in the user tile in the start menu. **Not configured** (default) shows the **Sign out** option.
-- **Shut Down**: **Block** hides the **Update and shut down** and **Shut down** options from showing in the power button in the start menu. **Not configured** (default) shows these options.
-- **Sleep**: **Block** hides the **Sleep** option from showing in the power button in the start menu. **Not configured** (default) shows this option.
-- **Hibernate**: **Block** hides the **Hibernate** option from showing in the power button in the start menu. **Not configured** (default) shows this option.
-- **Switch Account**: **Block** hides the **Switch account** from showing in the user tile in the start menu. **Not configured** (default) shows this option.
-- **Restart Options**:  **Block** hides the **Update and restart** and **Restart** options from showing in the power button in the start menu. **Not configured** (default) shows these options.
+- **Shut Down**: **Block** hides the **Update and shut down** and **Shut down** options from showing in the power button in the start menu. When set to **Not configured** (default), Intune doesn't change or update this setting.
+- **Sleep**: **Block** hides the **Sleep** option from showing in the power button in the start menu. When set to **Not configured** (default), Intune doesn't change or update this setting.
+- **Hibernate**: **Block** hides the **Hibernate** option from showing in the power button in the start menu. When set to **Not configured** (default), Intune doesn't change or update this setting.
+- **Switch Account**: **Block** hides the **Switch account** from showing in the user tile in the start menu. When set to **Not configured** (default), Intune doesn't change or update this setting.
+- **Restart Options**:  **Block** hides the **Update and restart** and **Restart** options from showing in the power button in the start menu. When set to **Not configured** (default), Intune doesn't change or update this setting.
 - **Documents on Start**: Hide or show the Documents folder in the Windows Start menu. Your options:
   - **Not configured** (default): No setting is forced. Users choose to show or hide the shortcut.
   - **Hide**: The shortcut is hidden, and disables the setting in the Settings app.
@@ -636,19 +667,19 @@ These settings use the [start policy CSP](https://docs.microsoft.com/windows/cli
   - **Hide**: The shortcut is hidden, and disables the setting in the Settings app.
   - **Show**: The shortcut is shown, and disables the setting in the Settings app.
 
-## Windows Defender Smart Screen
+## Microsoft Defender Smart Screen
 
-- **SmartScreen for Microsoft Edge**: **Require** turns off Windows Defender SmartScreen and prevent users from turning it on. **Not configured** (default) turns on SmartScreen. Helps protect users from potential threats and prevent users from turning it off.
+- **SmartScreen for Microsoft Edge**: **Require** turns off Microsoft Defender SmartScreen and prevent users from turning it on. **Not configured** (default) turns on SmartScreen. Helps protect users from potential threats and prevent users from turning it off.
 
-  Microsoft Edge uses Windows Defender SmartScreen (turned on) to protect users from potential phishing scams and malicious software.
+  Microsoft Edge uses Microsoft Defender SmartScreen (turned on) to protect users from potential phishing scams and malicious software.
 
   [Browser/AllowSmartScreen CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-browser#browser-allowsmartscreen)
 
-- **Malicious site access**: **Block** prevents users from ignoring the Windows Defender SmartScreen Filter warnings, and blocks them from going to the site. **Not configured** (default) allows users to ignore the warnings, and continue to the site.
+- **Malicious site access**: **Block** prevents users from ignoring the Microsoft Defender SmartScreen Filter warnings, and blocks them from going to the site. **Not configured** (default) allows users to ignore the warnings, and continue to the site.
 
   [Browser/PreventSmartScreenPromptOverride CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-browser#browser-preventsmartscreenpromptoverride)
 
-- **Unverified file download**: **Block** prevents users from ignoring the Windows Defender SmartScreen Filter warnings, and block them from downloading unverified files. **Not configured** (default) allows users to ignore the warnings, and continue to download the unverified files.
+- **Unverified file download**: **Block** prevents users from ignoring the Microsoft Defender SmartScreen Filter warnings, and block them from downloading unverified files. **Not configured** (default) allows users to ignore the warnings, and continue to download the unverified files.
 
   [Browser/PreventSmartScreenPromptOverrideForFiles CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-browser#browser-preventsmartscreenpromptoverrideforfiles)
 
@@ -658,9 +689,9 @@ These settings use the [experience policy CSP](https://docs.microsoft.com/window
 
 - **Windows Spotlight**: **Block** turns off Windows spotlight on the lock screen, Windows Tips, Microsoft consumer features, and other related features. If your goal is to minimize network traffic from devices, set this to **Block**. **Not configured** (default) allows Windows spotlight features and may be controlled by end users. When enabled, you can also allow or block the following settings:
 
-  - **Windows Spotlight on lock screen**: **Block** stops Windows Spotlight from showing information on the device lock screen. **Not configured** (default) enables this feature.
+  - **Windows Spotlight on lock screen**: **Block** stops Windows Spotlight from showing information on the device lock screen. When set to **Not configured** (default), Intune doesn't change or update this setting.
   - **Third-party suggestions in Windows Spotlight**: **Block** stops Windows Spotlight from suggesting content that isn't published by Microsoft. **Not configured** (default) allows app and content suggestions from partner software publishers in Windows spotlight features, like lock screen spotlight, suggested apps in the Start menu, and Windows tips.
-  - **Consumer Features**: **Block** turns off experiences that are typically for consumers only, such as start suggestions, membership notifications, post-out of box experience app installation, and redirect tiles. **Not configured** (default) allows these features.
+  - **Consumer Features**: **Block** turns off experiences that are typically for consumers only, such as start suggestions, membership notifications, post-out of box experience app installation, and redirect tiles. When set to **Not configured** (default), Intune doesn't change or update this setting.
   - **Windows Tips**: **Block** disables pop-up Windows Tips. **Not configured** (default) allows the Windows Tips to show.
   - **Windows Spotlight in action center**: **Block** prevents Windows spotlight notifications from showing in the Action Center. **Not configured** (default) may show notifications in the Action Center that suggest apps or features to help users be more productive on Windows.
   - **Windows Spotlight personalization**: **Block** prevents Windows from using diagnostic data to provide customized experiences to the user. **Not configured** (default) allows Microsoft to use diagnostic data to provide personalized recommendations, tips, and offers to tailor Windows for the user's needs.
@@ -672,7 +703,7 @@ These settings use the [defender policy CSP](https://docs.microsoft.com/windows/
 
 - **Real-time monitoring**: **Enable** turns on real-time scanning for malware, spyware, and other unwanted software. Users can't turn it off. 
 
-  When set to **Not configured** (default), Intune doesn't touch this setting. If you enable the setting, and then change it back to **Not configured**, then Intune leaves the setting in it's previously configured state. By default, the OS turns on this feature, and allows users to change it.
+  When set to **Not configured** (default), Intune doesn't change or update this setting. If you enable the setting, and then change it back to **Not configured**, then Intune leaves the setting in it's previously configured state. By default, the OS turns on this feature, and allows users to change it.
 
   Intune doesn't turn off this feature. To disable it, use a custom URI.
 
@@ -680,7 +711,7 @@ These settings use the [defender policy CSP](https://docs.microsoft.com/windows/
 
 - **Behavior monitoring**: **Enable** turns on behavior monitoring, and checks for certain known patterns of suspicious activity on devices. Users can't turn behavior monitoring off. 
 
-  When set to **Not configured** (default), Intune doesn't touch this setting. If you enable the setting, and then change it back to **Not configured**, then Intune leaves the setting in it's previously configured state. By default, the OS turns on Behavior Monitoring, and allows users to change it.
+  When set to **Not configured** (default), Intune doesn't change or update this setting. If you enable the setting, and then change it back to **Not configured**, then Intune leaves the setting in it's previously configured state. By default, the OS turns on Behavior Monitoring, and allows users to change it.
 
   Intune doesn't turn off this feature. To disable it, use a custom URI.
 
@@ -690,7 +721,7 @@ These settings use the [defender policy CSP](https://docs.microsoft.com/windows/
 
   **Enable** turns on network protection and network blocking. Users can't turn it off. When enabled, users are blocked from connecting to known vulnerabilities.
 
-  When set to **Not configured** (default), Intune doesn't touch this setting. If you enable the setting, and then change it back to **Not configured**, then Intune leaves the setting in it's previously configured state. By default, the OS turns on NIS, and allows users to change it.
+  When set to **Not configured** (default), Intune doesn't change or update this setting. If you enable the setting, and then change it back to **Not configured**, then Intune leaves the setting in it's previously configured state. By default, the OS turns on NIS, and allows users to change it.
 
   Intune doesn't turn off this feature. To disable it, use a custom URI.
 
@@ -698,7 +729,7 @@ These settings use the [defender policy CSP](https://docs.microsoft.com/windows/
 
 - **Scan all downloads**: **Enable** turns on this setting, and Defender scans all files downloaded from the Internet. Users can't turn this setting off. 
 
-  When set to **Not configured** (default), Intune doesn't touch this setting. If you enable the setting, and then change it back to **Not configured**, then Intune leaves the setting in it's previously configured state. By default, the OS turns on this setting, and allows users to change it.
+  When set to **Not configured** (default), Intune doesn't change or update this setting. If you enable the setting, and then change it back to **Not configured**, then Intune leaves the setting in it's previously configured state. By default, the OS turns on this setting, and allows users to change it.
 
   Intune doesn't turn off this feature. To disable it, use a custom URI.
 
@@ -706,7 +737,7 @@ These settings use the [defender policy CSP](https://docs.microsoft.com/windows/
 
 - **Scan scripts loaded in Microsoft web browsers**: **Enable** allows Defender to scan scripts that are used in Internet Explorer. Users can't turn this setting off. 
 
-  When set to **Not configured** (default), Intune doesn't touch this setting. If you enable the setting, and then change it back to **Not configured**, then Intune leaves the setting in it's previously configured state. By default, the OS turns on this setting, and allows users to change it.
+  When set to **Not configured** (default), Intune doesn't change or update this setting. If you enable the setting, and then change it back to **Not configured**, then Intune leaves the setting in it's previously configured state. By default, the OS turns on this setting, and allows users to change it.
 
   Intune doesn't turn off this feature. To disable it, use a custom URI.
 
@@ -714,7 +745,7 @@ These settings use the [defender policy CSP](https://docs.microsoft.com/windows/
 
 - **End user access to Defender**: **Block** hides the Microsoft Defender user interface from end users. All Microsoft Defender notifications are also suppressed.
 
-  When set to **Not configured** (default), Intune doesn't touch this setting. If you block the setting, and then change it back to **Not configured**, then Intune leaves the setting in it's previously configured state. By default, the OS allows user access to the Microsoft Defender UI, and allows users to change it.
+  When set to **Not configured** (default), Intune doesn't change or update this setting. If you block the setting, and then change it back to **Not configured**, then Intune leaves the setting in it's previously configured state. By default, the OS allows user access to the Microsoft Defender UI, and allows users to change it.
 
   Intune doesn't turn off this feature. To disable it, use a custom URI.
 
@@ -724,7 +755,7 @@ These settings use the [defender policy CSP](https://docs.microsoft.com/windows/
 
 - **Security intelligence update interval (in hours)**: Enter the interval that Defender checks for new security intelligence, from 0-24. Your options:
 
-  - **Not configured** (default): Check for updates every 8 hours.
+  - **Not configured** (default): Intune doesn't change or update this setting. The operating system default may check for updates every 8 hours.
   - **Do not check**: Defender doesn't check for new security intelligence updates.
   - **1-24**: `1` checks every hour, `2` checks every two hours, `24` checks every day, and so on.
   
@@ -732,7 +763,7 @@ These settings use the [defender policy CSP](https://docs.microsoft.com/windows/
   
 - **Monitor file and program activity**: Allows Defender to monitor file and program activity on devices. Your options:
 
-  - **Not configured** (default): Monitors all files
+  - **Not configured** (default): Intune doesn't change or update this setting. The operating system default may monitor all files.
   - **Monitoring disabled**
   - **Monitor all files**
   - **Monitor incoming files only**
@@ -747,7 +778,7 @@ These settings use the [defender policy CSP](https://docs.microsoft.com/windows/
 - **CPU usage limit during a scan**: Limit the amount of CPU that scans are allowed to use, from `0` to `100`.
 - **Scan archive files**: **Enable** turns on Defender so it scans archive files, such as Zip or Cab files. Users can't turn this setting off.
 
-  When set to **Not configured** (default), Intune doesn't touch this setting. If you enable the setting, and then change it back to **Not configured**, then Intune leaves the setting in it's previously configured state. By default, the OS turns on this scanning, and allows users to change it.
+  When set to **Not configured** (default), Intune doesn't change or update this setting. If you enable the setting, and then change it back to **Not configured**, then Intune leaves the setting in it's previously configured state. By default, the OS turns on this scanning, and allows users to change it.
 
   Intune doesn't turn off this feature. To disable it, use a custom URI.
 
@@ -755,7 +786,7 @@ These settings use the [defender policy CSP](https://docs.microsoft.com/windows/
 
 - **Scan incoming mail messages**: **Enable** allows Defender to scan email messages as they arrive on the device. When enabled, the engine parses the mailbox and mail files to analyze the mail body and attachments. You can scan .pst (Outlook), .dbx, .mbx, MIME  (Outlook Express), and BinHex (Mac) formats.
 
-  When set to **Not configured** (default), Intune doesn't touch this setting. If you enable the setting, and then change it back to **Not configured**, then Intune leaves the setting in it's previously configured state. By default, the OS turns off this scanning, and allows users to change it.
+  When set to **Not configured** (default), Intune doesn't change or update this setting. If you enable the setting, and then change it back to **Not configured**, then Intune leaves the setting in it's previously configured state. By default, the OS turns off this scanning, and allows users to change it.
 
   Intune doesn't turn off this feature. To disable it, use a custom URI.
 
@@ -763,7 +794,7 @@ These settings use the [defender policy CSP](https://docs.microsoft.com/windows/
 
 - **Scan removable drives during a full scan**: **Enable** turns on Defender removable drive scans during a full scan. Users can't turn this setting off.
 
-  When set to **Not configured** (default), Intune doesn't touch this setting. If you enable the setting, and then change it back to **Not configured**, then Intune leaves the setting in it's previously configured state. By default, the OS lets Defender scan removable drives, such as USB sticks, and allows users to change this setting.
+  When set to **Not configured** (default), Intune doesn't change or update this setting. If you enable the setting, and then change it back to **Not configured**, then Intune leaves the setting in it's previously configured state. By default, the OS lets Defender scan removable drives, such as USB sticks, and allows users to change this setting.
 
   During a quick scan, removable drives may still be scanned.
 
@@ -773,7 +804,7 @@ These settings use the [defender policy CSP](https://docs.microsoft.com/windows/
 
 - **Scan mapped network drives during a full scan**: **Enable** has Defender scan files on mapped network drives. If the files on the drive are read-only, Defender can't remove any malware found in them. Users can't turn this setting off.
 
-  When set to **Not configured** (default), Intune doesn't touch this setting. If you enable the setting, and then change it back to **Not configured**, then Intune leaves the setting in it's previously configured state. By default, the OS turns on this feature, and allows users to change it.
+  When set to **Not configured** (default), Intune doesn't change or update this setting. If you enable the setting, and then change it back to **Not configured**, then Intune leaves the setting in it's previously configured state. By default, the OS turns on this feature, and allows users to change it.
 
   During a quick scan, mapped network drives may still be scanned.
 
@@ -783,7 +814,7 @@ These settings use the [defender policy CSP](https://docs.microsoft.com/windows/
 
 - **Scan files opened from network folders**: **Enable** has Defender scans files opened from network folders or shared network drives, such as files accessed from a UNC path. Users can't turn this setting off. If the files on the drive are read-only, Defender can't remove any malware found in them.
 
-  When set to **Not configured** (default), Intune doesn't touch this setting. If you enable the setting, and then change it back to **Not configured**, then Intune leaves the setting in it's previously configured state. By default, the OS scans files opened from network folders, and allows users to change it.
+  When set to **Not configured** (default), Intune doesn't change or update this setting. If you enable the setting, and then change it back to **Not configured**, then Intune leaves the setting in it's previously configured state. By default, the OS scans files opened from network folders, and allows users to change it.
 
   Intune doesn't turn off this feature. To disable it, use a custom URI.
 
@@ -791,7 +822,7 @@ These settings use the [defender policy CSP](https://docs.microsoft.com/windows/
 
 - **Cloud protection**: **Enable** turns on the Microsoft Active Protection Service to receive information about malware activity from devices that you manage. Users can't change this setting. 
 
-  When set to **Not configured** (default), Intune doesn't touch this setting. If you enable the setting, and then change it back to **Not configured**, then Intune leaves the setting in it's previously configured state. By default, the OS allows the Microsoft Active Protection Service to receive information, and allows users to change this setting.
+  When set to **Not configured** (default), Intune doesn't change or update this setting. If you enable the setting, and then change it back to **Not configured**, then Intune leaves the setting in it's previously configured state. By default, the OS allows the Microsoft Active Protection Service to receive information, and allows users to change this setting.
 
   Intune doesn't turn off this feature. To disable it, use a custom URI.
 
@@ -799,7 +830,7 @@ These settings use the [defender policy CSP](https://docs.microsoft.com/windows/
 
 - **Prompt users before sample submission**: Controls whether potentially malicious files that might require further analysis are automatically sent to Microsoft. Your options:
 
-  - **Not configured** (default): Send safe samples automatically.
+  - **Not configured** (default): Intune doesn't change or update this setting. The operating system default may send safe samples automatically.
   - **Always prompt**
   - **Prompt before sending personal data**
   - **Never send data**
@@ -837,13 +868,23 @@ These settings use the [defender policy CSP](https://docs.microsoft.com/windows/
   [Defender/ScheduleScanTime CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-schedulescantime)
 
 - **Detect potentially unwanted applications**: Choose the level of protection when Windows detects potentially unwanted applications. Your options:
-  - **Not configured** (default): Windows Defender potentially unwanted applications protection is disabled.
-  - **Block**: Windows Defender detects potentially unwanted applications, and detected items are blocked. These items show in history along with other threats.
-  - **Audit**: Windows Defender detects potentially unwanted applications, but takes no action. You can review information about the applications Windows Defender would take action against. For example, search for events created by Windows Defender in the Event Viewer.
+  - **Not configured** (default): Microsoft Defender potentially unwanted applications protection is disabled.
+  - **Block**: Microsoft Defender detects potentially unwanted applications, and detected items are blocked. These items show in history along with other threats.
+  - **Audit**: Microsoft Defender detects potentially unwanted applications, but takes no action. You can review information about the applications Microsoft Defender would take action against. For example, search for events created by Microsoft Defender in the Event Viewer.
 
   For more information about potentially unwanted apps, see [Detect and block potentially unwanted applications](https://docs.microsoft.com/windows/threat-protection/windows-defender-antivirus/detect-block-potentially-unwanted-apps-windows-defender-antivirus).
 
   [Defender/PUAProtection CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-puaprotection)
+
+- **Submit samples consent**: Currently, this setting has no impact. Don't use this setting. It may be removed in a future release.
+
+- **On Access Protection**: **Block** prevents scanning files that have been accessed or downloaded. Users can't turn it on.
+
+  When set to **Not configured** (default), Intune doesn't change or update this setting. If you block the setting and then change it back to **Not configured**, Intune leaves the setting in its previously OS-configured state. By default, the OS enables this feature and allows users to change it.
+
+  Intune doesn't turn on this feature. To enable it, use a custom URI.
+
+  [Defender/AllowOnAccessProtection CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-allowonaccessprotection)
 
 - **Actions on detected malware threats**: Choose how you want to handle malware threads. **Not configured** (default) lets Microsoft Defender choose the best option. When set to **Enable**, choose the actions you want Defender to take for each threat level it detects: low, moderate, high, and severe. Your options:
   
@@ -854,15 +895,97 @@ These settings use the [defender policy CSP](https://docs.microsoft.com/windows/
   - **User defined**
   - **Block**
 
-  If your action isn't possible, then Windows Defender chooses the best option to ensure the threat is remediated. 
+  If your action isn't possible, then Microsoft Defender chooses the best option to ensure the threat is remediated. 
 
   [Defender/ThreatSeverityDefaultAction CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-threatseveritydefaultaction)
 
-### Windows Defender Antivirus Exclusions
+### Microsoft Defender Antivirus Exclusions
 
 - **Files and folders to exclude from scans and real-time protection**: Adds one or more files and folders like **C:\Path** or **%ProgramFiles%\Path\filename.exe** to the exclusions list. These files and folders aren't included in any real-time or scheduled scans.
 - **File extensions to exclude from scans and real-time protection**: Add one or more file extensions like **jpg** or **txt** to the exclusions list. Any files with these extensions aren't included in any real-time or scheduled scans.
 - **Processes to exclude from scans and real-time protection**: Add one or more processes of the type **.exe**, **.com**, or **.scr** to the exclusions list. These processes aren't included in any real-time, or scheduled scans.
+
+## Power settings
+
+### Battery
+
+- **Battery level to turn Energy Saver on**: When the device is using battery power, enter the battery charge level to turn on Energy Saver from 0-100. Enter a percentage value that indicates the battery charge level. The default value is 70%. When set to 70%, Energy Saver turns on when the battery has 70% charge or less available.
+
+  [Power/EnergySaverBatteryThresholdOnBattery CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-power#power-energysaverbatterythresholdonbattery)
+
+- **Lid close (mobile only)**: When the device is using battery power, choose what happens when the lid is closed. Your options:
+
+  - **Not configured** (default): Intune doesn't change or update this setting.
+  - **No action**: The device stays on, and continues to use battery power.
+  - **Sleep**: The device goes into sleep mode and uses a small amount of battery charge. The computer is still on, and opened apps and files are stored in random access memory (RAM).
+  - **Hibernate**: The device goes into hibernate mode. Opened apps and files are stored on the hard disk, and the device turns off.
+  - **Shutdown**: The device shuts down. Opened apps and files are closed without saving.
+
+  [Power/SelectLidCloseActionOnBattery CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-power#power-selectlidcloseactiononbattery)
+
+- **Power button**: When the device is using battery power, choose what happens when the Power button is selected. Your options:
+
+  - **Not configured** (default): Intune doesn't change or update this setting.
+  - **No action**: The device stays on, and continues to use battery power.
+  - **Sleep**: The device goes into sleep mode and uses a small amount of battery charge. The computer is still on, and opened apps and files are stored in random access memory (RAM).
+  - **Hibernate**: The device goes into hibernate mode. Opened apps and files are stored on the hard disk, and the device turns off.
+  - **Shutdown**: The device shuts down. Opened apps and files are closed without saving.
+
+  [Power/SelectPowerButtonActionOnBattery CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-power#power-selectpowerbuttonactiononbattery)
+
+- **Sleep button**: When the device is using battery power, choose what happens when the Sleep button is selected. Your options:
+
+  - **Not configured** (default): Intune doesn't change or update this setting.
+  - **No action**: The device stays on, and continues to use battery power.
+  - **Sleep**: The device goes into sleep mode and uses a small amount of battery charge. The computer is still on, and opened apps and files are stored in random access memory (RAM).
+  - **Hibernate**: The device goes into hibernate mode. Opened apps and files are stored on the hard disk, and the device turns off.
+  - **Shutdown**: The device shuts down. Opened apps and files are closed without saving.
+
+  [Power/SelectSleepButtonActionOnBattery CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-power#power-selectsleepbuttonactiononbattery)
+
+- **Hybrid sleep**: When the device is using battery power, **Disable** prevents the device from going into hybrid sleep mode. When in hybrid sleep mode, opened apps and files are stored in random access memory (RAM) and on the hard disk. It uses a small amount of battery charge. When set to **Not configured** (default), Intune doesn't change or update this setting.
+
+  [Power/TurnOffHybridSleepOnBattery CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-power#power-turnoffhybridsleeponbattery)
+
+### PluggedIn
+
+- **Battery level to turn Energy Saver on**: When the device is plugged in, enter the battery charge level to turn on Energy Saver from 0-100. Enter a percentage value that indicates the battery charge level. The default value is 70%. When set to 70%, Energy Saver turns on when the battery has 70% charge or less available.
+
+  [Power/EnergySaverBatteryThresholdPluggedIn CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-power#power-energysaverbatterythresholdpluggedin)
+
+- **Lid close (mobile only)**: When the device is plugged in, choose what happens when the lid is closed. Your options:
+
+  - **Not configured** (default): Intune doesn't change or update this setting.
+  - **No action**: The device stays on.
+  - **Sleep**: The device goes into sleep mode. The computer is still on, and opened apps and files are stored in random access memory (RAM).
+  - **Hibernate**: The device goes into hibernate mode. Opened apps and files are stored on the hard disk, and the device turns off.
+  - **Shutdown**: The device shuts down. Opened apps and files are closed without saving.
+  
+    [Power/SelectLidCloseActionPluggedIn CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-power#power-selectlidcloseactionpluggedin)
+  
+- **Power button**: When the device is plugged in, choose what happens when the Power button is selected. Your options:
+
+  - **Not configured** (default): Intune doesn't change or update this setting.
+  - **No action**: The device stays on.
+  - **Sleep**: The device goes into sleep mode. The computer is still on, and opened apps and files are stored in random access memory (RAM).
+  - **Hibernate**: The device goes into hibernate mode. Opened apps and files are stored on the hard disk, and the device turns off.
+  - **Shutdown**: The device shuts down. Opened apps and files are closed without saving.
+
+  [Power/SelectPowerButtonActionPluggedIn CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-power#power-selectpowerbuttonactionpluggedin)
+
+- **Sleep button**: When the device is plugged in, choose what happens when the Sleep button is selected. Your options:
+
+  - **Not configured** (default): Intune doesn't change or update this setting.
+  - **No action**: The device stays on.
+  - **Sleep**: The device goes into sleep mode. The computer is still on, and opened apps and files are stored in random access memory (RAM).
+  - **Hibernate**: The device goes into hibernate mode. Opened apps and files are stored on the hard disk, and the device turns off.
+  - **Shutdown**: The device shuts down. Opened apps and files are closed without saving.
+
+  [Power/SelectSleepButtonActionPluggedIn CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-power#power-selectsleepbuttonactionpluggedin)
+
+- **Hybrid sleep**: When the device is plugged in, **Disable** prevents the device from going into hybrid sleep mode. When in hybrid sleep mode, opened apps and files are stored in random access memory (RAM) and on the hard disk. When set to **Not configured** (default), Intune doesn't change or update this setting.
+
+  [Power/TurnOffHybridSleepPluggedIn CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-power#power-turnoffhybridsleeppluggedin)
 
 ## Next steps
 

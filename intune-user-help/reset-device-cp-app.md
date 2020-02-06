@@ -26,7 +26,7 @@ ms.reviewer: jieyang
 ms.suite: ems
 #ms.tgt_pltfrm:
 ms.custom: intune-enduser; intune-azure
-ms.collection: M365-identity-device-management
+ms.collection: 
 ---
 
 

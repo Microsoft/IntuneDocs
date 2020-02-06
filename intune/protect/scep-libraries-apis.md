@@ -3,8 +3,8 @@ title: APIs to onboard 3rd party certificate authorities
 titleSuffix: Microsoft Intune
 description: Add or integrate the SCEP GitHub solution for third party certificate authorities (CA) to issue SCEP certificates to devices in Microsoft Intune. This solution includes Java and C# APIs that validate, send success and failure notifications to Intune, and use SSL socket factory when communicating with Intune. Also view an overview of the steps to test your SCEP CA configuration.
 keywords:
-author: MandiOhlinger
-ms.author: mandia
+author: Brenduns
+ms.author: brenduns
 manager: dougeby
 ms.date: 12/06/2018
 ms.topic: reference
@@ -204,7 +204,7 @@ Parameters:
 
     - transactionId           The SCEP Transaction Id
     - certificateRequest      DER-encoded PKCS #10 Certificate Request Base64 encoded as a string
-    - certThumprint           Thumbprint of the provisioned certificate
+    - certThumprint           SHA1 hash of the thumbprint of the provisioned certificate
     - certSerialNumber        Serial number of the provisioned certificate
     - certExpirationDate      Expiration date of the provisioned certificate. The date time string should be formatted as web UTC time (YYYY-MM-DDThh:mm:ss.sssTZD) ISO 8601.
     - certIssuingAuthority    Name of the authority that issued the certificate

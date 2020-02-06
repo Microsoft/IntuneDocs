@@ -8,7 +8,7 @@ keywords:
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 10/22/2019
+ms.date: 01/17/2020
 ms.topic: quickstart
 ms.service: microsoft-intune
 ms.subservice: fundamentals
@@ -40,22 +40,23 @@ If you don’t have an Intune subscription, [sign up for a free trial account](f
 
 ## Prerequisites
 
+- Microsoft Intune subscription - [sign up for a free trial account](../fundamentals/free-trial-sign-up.md).
 - To complete this quickstart, you must [create a user](quickstart-create-user.md).
 
-## Sign in to Intune
+## Sign in to Intune in the Microsoft Endpoint Manager
 
-Sign in to the [Intune portal](https://aka.ms/intuneportal) as a [Global administrator or an Intune Service administrator](users-add.md#types-of-administrators). If you have created an Intune Trial subscription, the account you created the subscription with is the Global administrator.
+Sign in to [Microsoft Endpoint Manager admin center](https://go.microsoft.com/fwlink/?linkid=2109431) as a [Global administrator or an Intune Service administrator](users-add.md#types-of-administrators). If you have created an Intune Trial subscription, the account you created the subscription with is the Global administrator.
 
 ## Create a group
 
 You will create a group that will be used later in this quickstart series. To create a group:
 
-1. Once you've opened the **Microsoft Intune** pane, select **Groups** > **New group**.
+1. Once you've opened the **Microsoft Endpoint Manager**, select **Groups** > **New group**.
 2. In the **Group type** dropdown box, select **Security**.
 3. In the **Group name** field, enter the name for the new group (for example, **Contoso Testers**).
-4. Add a **Description** for the group.
+4. Add a **Group description** for the group.
 5. Set the **Membership type** to **Assigned**. 
-6. Click **Members** and select one or more members for the group from the list.
+6. Under **Members**, select the link and add one or more members for the group from the list.
 
     ![Screenshot of creating a group in Microsoft Intune](./media/quickstart-create-group/quickstart-use-groups-01.png)
 

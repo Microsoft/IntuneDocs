@@ -6,7 +6,7 @@ keywords:
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 10/16/2019
+ms.date: 01/06/2020
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -42,7 +42,7 @@ Office mobile apps, as well as Microsoft Edge for Mobile, support dual identity.
 [Intune app protection policies](~/apps/app-protection-policy.md) help protect your work files on devices that are enrolled into Intune. You can also use app protection policies on employee owned devices that are not enrolled for management in Intune. In this case, even though your company doesn't manage the device, you still need to make sure that work files and resources are protected.
 
 You can use App protection policies to prevent users from saving work files in unprotected locations. You can also restrict data movement to other apps that aren't protected by App protection policies. App protection policy settings include:
-- Data relocation policies like Prevent Save As, and Restrict cut, copy, and paste.
+- Data relocation policies like **Save copies of org data**, and **Restrict cut, copy, and paste**.
 - Access policy settings to require simple PIN for access, and block managed apps from running on jailbroken or rooted devices.
 
 App-based conditional access and client app management add a security layer by making sure only client apps that support Intune app protection policies can access Exchange online and other Office 365 services.

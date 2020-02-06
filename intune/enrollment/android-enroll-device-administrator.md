@@ -41,10 +41,6 @@ For more information about Intune support for Android device administrator suppo
 
 If you still decide to have users enroll their Android devices with device administrator management, continue to the next section.  
 
-
-> [!Note]  
-> Android 10 and higher won't be supported in hybrid mobile device management (hybrid MDM; Intune managed with the System Center Configuration Manager console) because hybrid MDM is going out of service on September 1, 2019. If you're still using hybrid MDM, you should migrate to Intune standalone as soon as possible. Contact to support if you need help migrating. For more information, see [Move from Hybrid Mobile Device Management to Intune on Azure](https://aka.ms/hybrid_notification).
-
 For more information about Google's Android Enterprise features, see these articles:
 - [Google’s guidance for migration from device administrator to Android Enterprise](http://static.googleusercontent.com/media/android.com/en/enterprise/static/2016/pdfs/enterprise/Android-Enterprise-Migration-Bluebook_2019.pdf)
 - [Google’s documentation on the plan to deprecate the device administrator API](https://developers.google.com/android/work/device-admin-deprecation)
@@ -52,10 +48,8 @@ For more information about Google's Android Enterprise features, see these artic
 
 ## Set up device administrator enrollment
 
-Intune by default allows enrollment of Android devices with device administrator capabilities.
-
 1. To prepare to manage mobile devices, you must set the mobile device management (MDM) authority to **Microsoft Intune**. See [Set the MDM authority](../fundamentals/mdm-authority-set.md) for instructions. You set this item only once, when you are first setting up Intune for mobile device management.
-2. Go to **Intune** > **Device enrollment** > **Android enrollment** > **Personal and corporate-owned devices with device administration privileges** > **Use device administrator to manage devices**.
+2. Sign in to the [Microsoft Endpoint Manager Admin Center](https://go.microsoft.com/fwlink/?linkid=2109431) and choose > **Devices** > **Android** > **Android enrollment** > **Personal and corporate-owned devices with device administration privileges** > **Use device administrator to manage devices**.
 3. [Tell your users how to enroll their devices](/intune-user-help/enroll-your-device-in-intune-android).  
 
 After a user has enrolled, you can begin managing their devices in Intune, including [assigning compliance policies](../protect/compliance-policy-create-android.md), [managing apps](../apps/app-management.md), and more.

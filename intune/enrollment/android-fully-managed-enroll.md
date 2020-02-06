@@ -41,7 +41,7 @@ Intune helps you deploy apps and settings to Android Enterprise devices, includi
 
 ## Technical requirements
 
-You must have an Intune standalone tenant to manage Android Enterprise fully managed devices. Fully managed device management isn't available in either hybrid (Configuration Manager-connected) mode or in the legacy Silverlight management console.
+You must have an Intune standalone tenant to manage Android Enterprise fully managed devices. Fully managed device management isn't available in the legacy Silverlight management console.
 
 Devices must meet these requirements to be managed as an Android Enterprise fully managed device:
 
@@ -61,7 +61,7 @@ To set up Android Enterprise fully managed device management, follow these steps
 
 ### Enable corporate owned user devices
 
-1. Sign in to the [Microsoft Endpoint Manager Admin Center](https://go.microsoft.com/fwlink/?linkid=2109431) and choose **Device enrollment** > **Android enrollment** > **Corporate-owned, fully managed user devices**.
+1. Sign in to the [Microsoft Endpoint Manager Admin Center](https://go.microsoft.com/fwlink/?linkid=2109431) and choose **Devices** > **Android** > **Android enrollment**  > **Corporate-owned, fully managed user devices**.
 2. Under **Allow users to enroll corporate-owned user devices**, choose **Yes**.
 
 > [!NOTE]

@@ -245,7 +245,7 @@ At this time, all Intune permission scopes require administrator access.  This m
 
 - The following remote actions are also allowed:
   - Locate devices
-  - Bypass activation lock
+  - Disable Activation Lock
   - Request remote assistance
 
 ### <a name="rac-ro"></a>DeviceManagementRBAC.Read.All

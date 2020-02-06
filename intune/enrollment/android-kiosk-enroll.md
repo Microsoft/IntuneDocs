@@ -64,7 +64,7 @@ To set up Android Enterprise dedicated device management, follow these steps:
 
 You must create an enrollment profile so that you can enroll your dedicated devices. When the profile is created, it provides you with an enrollment token (random string) and a QR code. Depending on the Android OS and version of the device, you can use either the token or QR code to [enroll the dedicated device](#enroll-the-dedicated-devices).
 
-1. Sign in to the [Microsoft Endpoint Manager Admin Center](https://go.microsoft.com/fwlink/?linkid=2109431) and choose **Device enrollment** > **Android enrollment** > **Corporate-owned dedicated devices**.
+1. Sign in to the [Microsoft Endpoint Manager Admin Center](https://go.microsoft.com/fwlink/?linkid=2109431) and choose **Devices** > **Android** > **Android enrollment** > **Corporate-owned dedicated devices**.
 2. Choose **Create** and fill out the required fields.
     - **Name**: Type a name that you'll use when assigning the profile to the dynamic device group.
     - **Token expiration date**: The date when the token expires. Google enforces a maximum of 90 days.
@@ -97,7 +97,7 @@ You can target apps and policies to either assigned or dynamic device groups. Yo
 
 Replacing or revoking a token/QR code won't have any effect on devices that are already enrolled.
 
-1. Sign in to the [Microsoft Endpoint Manager Admin Center](https://go.microsoft.com/fwlink/?linkid=2109431) and choose **Device enrollment** > **Android enrollment** > **Coporate-owned dedicated devices**.
+1. Sign in to the [Microsoft Endpoint Manager Admin Center](https://go.microsoft.com/fwlink/?linkid=2109431) and choose **Devices** > **Android** > **Android enrollment** > **Coporate-owned dedicated devices**.
 2. Choose the profile that you want to work with.
 3. Choose **Token**.
 4. To replace the token, choose **Replace token**.
@@ -106,6 +106,9 @@ Replacing or revoking a token/QR code won't have any effect on devices that are 
 ## Enroll the dedicated devices
 
 You can now [enroll your dedicated devices](android-dedicated-devices-fully-managed-enroll.md).
+
+> [!NOTE]
+> The **Microsoft Intune** app will be automatically installed during enrollment of a dedicated device.  This app is required for enrollment and cannot be uninstalled. 
 
 ## Managing apps on Android Enterprise dedicated devices
 

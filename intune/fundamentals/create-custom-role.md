@@ -39,21 +39,30 @@ To create, edit, or assign roles, your account must have one of the following pe
 
 ## To create a custom role
 
-1. Sign into the [Azure portal](https://portal.azure.com) with your Intune credentials.
+1. In the [Microsoft Endpoint Manager Admin Center](https://go.microsoft.com/fwlink/?linkid=2109431), choose **Roles** > **All roles** > **Add**.
 
-2. Choose **All services** from the left menu, then type **Intune** in the text box filter.
+2. On the **Add Custom Role** blade, enter a name and description for the new role, then click **Permissions**.
 
-3. Choose **Intune** > **Roles** > **All roles** > **Add**.
+3. On the **Permissions** blade, choose the permissions you want to use with this role.
 
-4. On the **Add Custom Role** blade, enter a name and description for the new role, then click **Permissions**.
+4. On the **Scope (Tags)** blade, choose the tags for this role. This role can access resources that also have these tags.
 
-5. On the **Permissions** blade, choose the permissions you want to use with this role.
+5. When you're done, choose **OK**.
 
-6. On the **Scope (Tags)** blade, choose the tags for this role. This role can access resources that also have these tags.
+6. On the **Add Custom Role** blade, click **Create**. The new role is displayed in the list on the **Intune roles - All roles** blade.
 
-7. When you're done, choose **OK**.
 
-8. On the **Add Custom Role** blade, click **Create**. The new role is displayed in the list on the **Intune roles - All roles** blade.
+## Copy a role
+
+You can also copy an existing role.
+
+1. In the [Microsoft Endpoint Manager Admin Center](https://go.microsoft.com/fwlink/?linkid=2109431), choose **Roles** > **All roles** > select a role in the list > **Duplicate**.
+
+2. Under **Duplicate role**, enter a name. Make sure to use a unique name.
+
+3. All the permissions and scope tags from the original role will already be selected. You can subsequently change the duplicate role's **Name**, **Description**, **Permissions**, and **Scope (Tags)**.
+
+4. Select **Create**. 
 
 ## Next steps
 - [Assign a role to a user](assign-role.md)

@@ -8,7 +8,7 @@ keywords:
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 11/06/2019
+ms.date: 11/26/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: apps
@@ -55,7 +55,7 @@ Review the following information before you start syncing and assigning apps fro
 - To use this capability, devices must be joined to Active Directory Domain Services, or workplace-joined.
 - Enrolled devices must be using the 1511 release of Windows 10 or later.
 
-Additionally, related sets and Offline Licensed apps synced from the Microsoft Store for Business will now be consolidated into a single app entry in the UI. Any deployment details from the individual packages will be migrated over to the single entry. To view related sets in the Azure portal, select **App licenses** from the **Client apps** blade.
+Additionally, related sets and Offline Licensed apps synced from the Microsoft Store for Business will now be consolidated into a single app entry in the UI. Any deployment details from the individual packages will be migrated over to the single entry. To view related sets in the Azure portal, select **App licenses** from the **Apps** pane.
 
 ## Associate your Microsoft Store for Business account with Intune
 Before you enable synchronization in the Intune console, you must configure your store account to use Intune as a management tool:
@@ -70,17 +70,16 @@ You can now continue, and set up synchronization in the Intune console.
 
 ## Configure synchronization
 
-1. Sign in to [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
-3. On the **Intune** pane, choose **Client apps**.
-1. On the **Client apps** pane, choose **Setup** > **Microsoft Store for Business**.
-2. Click **Enable**.
-3. If you haven't already done so, click the link to sign up for the Microsoft Store for Business and associate your account as detailed previously.
+1. Sign in to the [Microsoft Endpoint Manager Admin Center](https://go.microsoft.com/fwlink/?linkid=2109431).
+2. Select **Tenant administration** > **Connectors and tokens** > **Microsoft Store for Business**.
+3. Click **Enable**.
+4. If you haven't already done so, click the link to sign up for the Microsoft Store for Business and associate your account as detailed previously.
 5. From the **Language** drop-down list, choose the language in which apps from the Microsoft Store for Business are displayed in the Azure portal. Regardless of the language in which they are displayed, they are installed in the end user's language when available.
 6. Click **Sync** to get the apps you've purchased from the Microsoft Store into Intune.
 
 ## Synchronize apps
 
-1. In the **Client apps** workload, choose **Setup** > **Microsoft Store for Business**.
+1. Select **Tenant administration** > **Connectors and tokens** > **Microsoft Store for Business**.
 2. Click **Sync** to get the apps you've purchased from the Microsoft Store into Intune.
 
 > [!NOTE]

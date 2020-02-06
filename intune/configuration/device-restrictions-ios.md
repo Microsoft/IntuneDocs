@@ -7,7 +7,7 @@ keywords:
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 11/06/2019
+ms.date: 02/04/2020
 ms.topic: reference
 ms.service: microsoft-intune
 ms.subservice: configuration
@@ -27,8 +27,6 @@ ms.collection: M365-identity-device-management
 ---
 
 # iOS and iPadOS device settings to allow or restrict features using Intune
-
-[!INCLUDE [azure_portal](../includes/azure_portal.md)]
 
 This article lists and describes the different settings you can control on iOS and iPadOS devices. As part of your mobile device management (MDM) solution, use these settings to allow or disable features, set password rules, allow or restrict specific apps, and more.
 
@@ -55,7 +53,7 @@ These settings are added to a device configuration profile in Intune, and then a
 ### Settings apply to: Device enrollment, Automated device enrollment (supervised)
 
 - **Untrusted TLS certificates**: Choose **Block** to prevent untrusted Transport Layer Security (TLS) certificates on the device. **Not configured** (default) allows TLS certificates.
-- **Allow over-the-air PKI updates**: **Allow** lets your users  receive software updates without connecting their devices to a computer.
+- **Block over-the-air PKI updates**: **Block** prevents your users from receiving software updates unless the device is connected to a computer. **Not configured** (default): allows a device to receive software updates without being connected to a computer.
 - **Limit ad tracking**: Choose **Limit** to disable the device advertising identifier. **Not configured** (default) keeps it enabled.
 
 ### Settings apply to: Automated device enrollment (supervised)
@@ -98,7 +96,7 @@ These settings are added to a device configuration profile in Intune, and then a
 - **Configuration profile changes**: **Block** prevents configuration profile changes on the device. **Not configured** (default) allows the user to install configuration profiles.
 - **Activation Lock**: Choose **Allow** to enable Activation Lock on supervised iOS devices. Activation Lock makes it harder for a lost or stolen device to be reactivated.
 - **Block app removal**: Choose **Block** to prevent users from removing apps. **Not configured** (default) allows users to remove apps from the device.
-- **Blocks USB Restricted mode**: Choose **Block** to disable USB Restricted mode on supervised devices. USB Restricted mode prevents USB accessories from exchanging data with a device that's locked for over an hour. **Not configured** (default) allows USB Restricted mode.
+- **Allow USB accessories while device is locked**: **Allow** lets USB accessories exchange data with a device that's been locked for over an hour. **Not configured** (default) doesn't update USB Restricted mode on the device, and USB accessories will be blocked from transferring data from the device if locked for over an hour.
 - **Force automatic date and time**: **Require** forces supervised devices to set the Date & Time automatically. The device's time zone is updated when the device has cellular connections or has Wi-Fi with location services enabled.
 - **Require students to request permission to leave Classroom course**: **Require** forces students enrolled in an unmanaged course using the Classroom app to request permission from the teacher to leave the course. **Not configured** (default) doesn't force the student to ask for permission.
 
@@ -133,9 +131,6 @@ These settings are added to a device configuration profile in Intune, and then a
     - iOS 11.3 and newer
 
 ## Password
-
-> [!NOTE]
-> In a future release, these password settings in the Intune UI are being updated to match the enrollment type.
 
 ### Settings apply to: All enrollment types
 
@@ -231,7 +226,7 @@ These settings are added to a device configuration profile in Intune, and then a
   This feature applies to:  
   - iOS 11.0 and newer
   
-<sup>1</sup>When you configure the **Maximum minutes of inactivity until screen locks** and **Maximum minutes after screen lock before password is required** settings, they're applied in sequence. For example, if you set the value for both settings to **5** minutes, the screen turns off automatically after five minutes, and the device is locked after an additional five minutes. However, if the user turns off the screen manually, the second setting is immediately applied. In the same example, after the user turns off the screen, the device locks five minutes later.
+<sup>1</sup> When you configure the **Maximum minutes of inactivity until screen locks** and **Maximum minutes after screen lock before password is required** settings, they're applied in sequence. For example, if you set the value for both settings to **5** minutes, the screen turns off automatically after five minutes, and the device is locked after an additional five minutes. However, if the user turns off the screen manually, the second setting is immediately applied. In the same example, after the user turns off the screen, the device locks five minutes later.
 
 ## Locked Screen Experience
 
@@ -250,6 +245,10 @@ These settings are added to a device configuration profile in Intune, and then a
 ### Settings apply to: All enrollment types
 
 - **Viewing corporate documents in unmanaged apps**: **Block** prevents viewing corporate documents in unmanaged apps. **Not configured** (default) allows corporate documents to be viewed in any app. For example, you want to prevent users from saving files from the OneDrive app to Dropbox. Configure this setting as **Block**. After the device receives the policy (for example, after a restart), it no longer allows saving.
+
+
+  > [!NOTE]
+  > When this setting is blocked, third party keyboards installed from the App Store are also blocked.
 
   - **Allow unmanaged apps to read from managed contacts accounts**: When set to **Allow**, unmanaged apps, such as the built-in iOS Contacts app, can read and access contact information from managed apps, including the Outlook mobile app. **Not configured** (default) prevents reading, including removing duplicates, from the built-in Contacts app on the device.  
   
@@ -324,16 +323,6 @@ These settings are added to a device configuration profile in Intune, and then a
 - **Safari JavaScript**: **Block** prevents Java scripts in the browser from running on the device. **Not configured** (default) allows Java scripts.
 
 - **Safari Pop-ups**: **Block** to disable the pop-up blocker in the web browser. **Not configured** (default) allows the pop-up blocker.
-
-- **Server-side logging for Siri commands**: When set to **Disable**, server-side Siri logging is turned off. It can also prevent logging user requests on Siri servers. **Not configured** (default) logs Siri commands on the server-side. This setting is not dependent on the Siri setting being blocked or not configured.
-
-  This feature applies to:  
-  - iOS 12.2 and newer
-
-  > [!NOTE]
-  > The **Server-side logging for Siri commands** setting is deprecated by Apple. In an upcoming release, this setting is removed from the Intune console.
-  >
-  > Currently, this setting has no effect on devices, even though the setting is shown in managemenet profiles. To delete this setting from any policy, open the policy, make a minor change, and then save the policy. The policy is updated, and the setting is deleted from devices.
 
 ### Settings apply to: Automated device enrollment (supervised)
 
@@ -450,11 +439,20 @@ To add apps, you can:
 
 ### Settings apply to: Device enrollment, Automated device enrollment (supervised)
 
+Note needed for Data Roaming (Tip or important note to help with customer confusion): This setting will not show up on the targeted device's management profile. That is because this setting is treated as a remote device action, and every time the state of data roaming is changed on the device, it will become blocked again by the Intune service. Even though it is not in the management profile, it is working if it showing as a success from the reporting in the admin console. 
 - **Data roaming**: Choose **Block** to prevent data roaming over the cellular network. **Not configured** (default) allows data roaming when the device is on a cellular network.
+
+  > [!IMPORTANT]
+  > This setting is treated as a remote device action. So, this setting isn't shown in the management profile on the device. Every time the data roaming status changes on the device, **Data roaming** is blocked by the Intune service. In Intune, if the reporting status shows a success, then know that it's working, even though the setting isn't shown in the management profile on the device.
+
 - **Global background fetch while roaming**: **Block** prevents using the global background fetch feature when roaming over the cellular network. **Not configured** (default) allows the device to fetch data, such as email, when it's roaming on a cellular network.
 - **Voice dialing**: Choose **Block** to prevent users from using the voice dialing feature on the device. **Not configured** (default) allows voice dialing on the device.
 - **Voice roaming**: Choose **Block** to prevent voice roaming over the cellular network. **Not configured** (default) allows voice roaming when the device is on a cellular network.
 - **Personal Hotspot**: **Block** turns off the personal hotspot on the users' device with every device sync. This setting might not be compatible with some carriers. **Not configured** (default) keeps the personal hotspot configuration as the default set by the user.
+
+  > [!IMPORTANT]
+  > This setting is treated as a remote device action. So, this setting isn't shown in the management profile on the device. Every time the personal hotspot status changes on the device, **Personal Hotspot** is blocked by the Intune service. In Intune, if the reporting status shows a success, then know that it's working, even though the setting isn't shown in the management profile on the device.
+
 - **Cellular usage rules (managed apps only)**: Define the data types that managed apps can use when on cellular networks. Your options:
   - **Block use of cellular data**: Block using cellular data for **All managed apps** or **Choose specific apps**.
   - **Block use of cellular data when roaming**: Block using cellular data when roaming for **All managed apps** or **Choose specific apps**.
@@ -475,6 +473,11 @@ To add apps, you can:
   - iOS 12.2 and newer
 
 - **Join Wi-Fi networks only using configuration profiles**: **Require** forces the device to use only Wi-Fi networks set up through Intune configuration profiles. **Not configured** (default) allows the device to use other Wi-Fi networks.
+
+  When set to **Require**, be sure the device has a Wi-Fi profile. If you don't assign a Wi-Fi profile, this setting could prevent the device from connecting to the internet. In other words, if this device restrictions profile is assigned before a Wi-Fi profile, the device might be blocked from connecting to the internet.
+  
+  If it can't connect, then unenroll the device, and re-enroll with a Wi-Fi profile. Then, set this setting to **Require** in a device restrictions profile, and assign the profile to the device.
+
 - **Wi-Fi always turned on**: When set to **Require**, Wi-Fi stays on in the Settings app. It can't be turned off in Settings or in the Control Center, even when the device is in airplane mode. **Not configured** (default) allows the user to control turning on or turning off Wi-Fi.
 
   Configuring this setting doesn't prevent users from selecting a Wi-Fi network.
@@ -559,7 +562,9 @@ To add apps, you can:
 
 ## Autonomous single app mode
 
-Use these settings to configure iOS devices to run specific apps in autonomous single app mode. When this mode is configured, and the app is run, the device is locked. It can only run that app. For example, add an app that lets users take a test on the device. When the apps actions are complete, or you remove this policy, the device returns to its normal state.
+Use these settings to configure iOS/iPadOS devices to run specific apps in autonomous single app mode. When this mode is configured, and the user starts one of the configured apps, the device is locked to that app. App/task switching is disabled until the user exits the allowed app.
+
+For example, in a school or university environment, add an app that lets users take a test on the device. Or, lock the device into the Company Portal app until the end user authenticates. When the apps actions are completed by the user, or you remove this policy, the device returns to its normal state.
 
 ### Settings apply to: Automated device enrollment (supervised)
 
@@ -636,7 +641,7 @@ iOS supervised mode can only be enabled during initial device setup through Appl
 
 - App Lock (Single App Mode) 
 - Global HTTP Proxy 
-- Activation Lock Bypass 
+- Disable Activation Lock 
 - Autonomous Single App Mode 
 - Web Content Filter 
 - Set background and lock screen 

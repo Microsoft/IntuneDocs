@@ -79,7 +79,7 @@ When your company is successfully registered, you can create your MDM profile fo
 
 ### For Android
 
-For step-by-step guidance, see the [Samsung Knox Profile Setup Wizard](https://docs.samsungknox.com/KME-Getting-Started/Content/getting-started-wizard.htm) instructions.
+For step-by-step guidance, see the [Samsung's Create Profile](https://docs.samsungknox.com/KME-Getting-Started/Content/create-profiles.htm) instructions.
 
 | MDM Profile Fields| Required? | Values |
 |-------------------|-----------|-------|

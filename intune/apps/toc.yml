@@ -46,7 +46,7 @@
           href: store-apps-ios.md
         - name: Windows Phone 8.1 store apps
           href: store-apps-windows-phone-8-1.md
-        - name: Windows apps
+        - name: Windows store apps
           href: store-apps-windows.md
         - name: Microsoft Store for Business apps
           href: windows-store-for-business.md          
@@ -188,9 +188,11 @@
     - name: Troubleshoot
       items:
       - name: Help users troubleshoot problems
-        href: ../fundamentals/help-desk-operators.md?toc=/intune/apps/toc.json&bc=/apps/breadcrumb/toc.json
+        href: ../fundamentals/help-desk-operators.md?toc=/intune/apps/toc.json&bc=/intune/apps/breadcrumb/toc.json
       - name: Troubleshoot app installation problems
-        href: troubleshoot-app-install.md         
+        href: troubleshoot-app-install.md
+      - name: App installation error reference                  
+        href: app-install-error-codes.md         
       - name: Troubleshoot mobile application management
         href: troubleshoot-mam.md            
       - name: Review app protection logs

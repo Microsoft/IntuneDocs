@@ -8,7 +8,7 @@ keywords:
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 10/18/2019
+ms.date: 11/13/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.subservice: configuration
@@ -30,9 +30,7 @@ ms.collection: M365-identity-device-management
 
 # Add Wi-Fi settings for iOS devices in Microsoft Intune
 
-[!INCLUDE [azure_portal](../includes/azure_portal.md)]
-
-You can create a profile with specific WiFi settings, and then deploy this profile to your iOS devices. Microsoft Intune offers many features, including authenticating to your network, adding a PKS or SCEP certificate, and more.
+You can create a profile with specific WiFi settings, and then deploy this profile to your iOS devices. Microsoft Intune offers many features, including authenticating to your network, adding a PKCS or SCEP certificate, and more.
 
 These Wi-Fi settings are separated in to two categories: Basic settings and Enterprise-level settings.
 
@@ -86,9 +84,9 @@ This article describes these settings.
     - **Root certificate for server validation**: Choose an existing trusted root certificate profile. This certificate allows the client to trust the wireless network access server’s certificate.
 
     - **Client Authentication** Choose an **Authentication method**. Your options:
-      
-      - **Derived credential**: If no derived credential issuer has been configured, Intune prompts you to do so.
-      
+
+      - **Derived credential**: Use a certificate that’s derived from a user’s smart card. If no derived credential issuer is configured, Intune prompts you to add one. For more information, see [Use derived credentials in Microsoft Intune](../protect/derived-credentials.md).
+
       - **Certificates**: Choose the SCEP or PKCS client certificate profile that is also deployed to the device. This certificate is the identity presented by the device to the server to authenticate the connection.
 
     - **Identity privacy (outer identity)**: Enter the text sent in the response to an EAP identity request. This text can be any value, such as `anonymous`. During authentication, this anonymous identity is initially sent, and then followed by the real identification sent in a secure tunnel.
@@ -100,8 +98,8 @@ This article describes these settings.
 
     - **Client Authentication** - Choose an **Authentication method**. Your options:
 
-      - **Derived credential**: If no derived credential issuer has been configured, Intune prompts you to do so.  
-      
+      - **Derived credential**: Use a certificate that’s derived from a user’s smart card. If no derived credential issuer is configured, Intune prompts you to add one. For more information, see [Use derived credentials in Microsoft Intune](../protect/derived-credentials.md).
+
       - **Username and Password**: Prompt the user for a user name and password to authenticate the connection. Also enter:
         - **Non-EAP method (inner identity)**: Choose how you authenticate the connection. Be sure you choose the same protocol that's configured on your Wi-Fi network.
 
@@ -120,8 +118,8 @@ This article describes these settings.
 
     - **Client Authentication** - Choose an **Authentication method**. Your options:
 
-      - **Derived credential**: If no derived credential issuer has been configured, Intune prompts you to do so.  
-      
+      - **Derived credential**: Use a certificate that’s derived from a user’s smart card. If no derived credential issuer is configured, Intune prompts you to add one. For more information, see [Use derived credentials in Microsoft Intune](../protect/derived-credentials.md).
+
       - **Username and Password**: Prompt the user for a user name and password to authenticate the connection. 
 
       - **Certificates**: Choose the SCEP or PKCS client certificate profile that is also deployed to the device. This certificate is the identity presented by the device to the server to authenticate the connection.

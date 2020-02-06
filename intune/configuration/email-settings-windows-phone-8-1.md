@@ -29,12 +29,13 @@ ms.collection: M365-identity-device-management
 
 # Email profile settings in Microsoft Intune for devices running Windows Phone 8.1
 
-[!INCLUDE [azure_portal](../includes/azure_portal.md)]
+
 
 This article shows you the email profile settings you can configure for your devices running Windows Phone 8.1.
 
+>[!IMPORTANT]
+>Windows Phone 8.1 email profiles are also applied to Windows 10 devices.
 
-- **Apply all settings to Windows Phone 8.1 only** - This is a setting you can configure in the Intune classic portal. In the Azure portal, this setting cannot be changed. If this is set to **Configured**, any setting is only applied to Windows Phone 8.1 devices. If set to **Not Configured**, these settings also apply to Windows 10 Mobile devices.
 - **Email server** - The host name of your Exchange server.
 - **Account name** - The display name for the email account as it appears to users on their devices.
 - **Username attribute from AAD** - This is the attribute in Active Directory (AD) or Azure AD, that is used to generate the username for this email profile. Select **Primary SMTP Address**, such as **user1@contoso.com** or **User Principal Name**, such as **user1** or **user1@contoso.com**.

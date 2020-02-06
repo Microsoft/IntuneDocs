@@ -52,7 +52,7 @@ By using TeamViewer, you're allowing the TeamViewer for Intune Connector to crea
 To provide remote assistance to devices, configure the Intune TeamViewer connector using the following steps:
 
 1. Sign in to the [Microsoft Endpoint Manager Admin Center](https://go.microsoft.com/fwlink/?linkid=2109431).
-2. Select **Devices** > **TeamViewer Connector**.
+2. Select **Tenant administration** > **Connectors and tokens** > **TeamViewer Connector**.
 3. Select **Connect**, and then accept the license agreement.
 4. Select **Log in to TeamViewer to authorize**.
 5. A web page opens to the TeamViewer site. Enter your TeamViewer license credentials, and then **Sign In**.
@@ -63,7 +63,7 @@ After the connector is configured, you're ready to remotely administer a device.
 
 1. In the the [Microsoft Endpoint Manager Admin Center](https://go.microsoft.com/fwlink/?linkid=2109431).
 2. Select **Devices**, and then select **All devices**.
-3. From the list, select the device that you want to remotely administer. In the device properties, select **New Remote Assistance Session**.
+3. From the list, select the device that you want to remotely administer > **...** > **New Remote Assistance Session**.
 4. After Intune connects to the TeamViewer service, you'll see some information about the device. **Connect** to start the remote session.
 
 ![Use TeamViewer to remotely administer Android device - example](./media/teamviewer-support/android-teamviewer.png)

@@ -16,6 +16,8 @@
       href: whats-new-app-ui.md
     - name: Features in development
       href: in-development.md   
+    - name: Important notices
+      href: whats-new.md#notices   
 - name: Quickstarts
   items:
   - name: Try Intune for free
@@ -29,8 +31,10 @@
     href: quickstart-create-custom-role.md
 - name: Tutorials
   items:
+  - name: Walkthrough Intune in Microsoft Endpoint Manager
+    href: tutorial-walkthrough-endpoint-manager.md 
   - name: Walkthrough Intune in the Azure portal
-    href: tutorial-walkthrough-intune-portal.md 
+    href: tutorial-walkthrough-intune-portal.md     
 - name: Concepts
   items:
   - name: What is Intune for Education?
@@ -146,6 +150,8 @@
       items:
       - name: Network configuration
         href: network-bandwidth-use.md
+      - name: Using Windows 10 VMs with Intune
+        href: windows-10-virtual-machines.md
       - name: Intune endpoints
         href: intune-endpoints.md
       - name: Intune US government endpoints
@@ -205,6 +211,10 @@
       href: use-docs.md 
     - name: Get support
       href: get-support.md
+  - name: Reports
+    items:
+    - name: Intune reports
+      href: reports.md      
 - name: Reference
   items: 
   - name: Error codes and descriptions

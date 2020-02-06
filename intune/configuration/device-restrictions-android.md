@@ -7,7 +7,7 @@ keywords:
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 11/13/2018
+ms.date: 12/19/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.subservice: configuration
@@ -83,8 +83,8 @@ This article shows you all the Microsoft Intune device restrictions settings tha
 
 If you set **Required password type** to **Numeric complex**, and then assign it to a device running a version of Android earlier than 5.0, then following behavior applies:
 
-- If the Company Portal app is running a version earlier than 1704, no PIN policy is applied to the device, and an error is shown in the Azure portal.
-- If the Company Portal app runs the 1704 version or later, only a simple PIN can be applied. Versions of Android earlier than 5.0 don't support this setting. No error is shown in the Azure portal.
+- If the Company Portal app is running a version earlier than 1704, no PIN policy is applied to the device, and an error is shown in the Microsoft Endpoint Manager admin center.
+- If the Company Portal app runs the 1704 version or later, only a simple PIN can be applied. Versions of Android earlier than 5.0 don't support this setting. No error is shown in the Microsoft Endpoint Manager admin center.
 
 ## Google Play Store
 

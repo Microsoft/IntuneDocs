@@ -5,8 +5,8 @@ title: Reduce help desk costs
 titleSuffix: Microsoft Intune
 description: Reducing help desk costs with self-service password reset 
 keywords: Azure Active Directory SSPR password reset
-author: MandiOhlinger
-ms.author: mandia
+author: ErikjeMS
+ms.author: erikje
 manager: dougeby
 ms.date: 3/6/2018
 ms.topic: archived
@@ -26,9 +26,11 @@ search.appverid: MET150
 #ms.custom:
 ms.collection: M365-identity-device-management
 ---
+
 # Reduce help desk costs with self-service password reset
 
 You can allow employees to reset work and school account passwords without help desk assistance. This type of self-service password reset is recommended in the following situations:
+
 * Your company and school uses Azure Active Directory for work and school accounts.
 * Your employees and students have internet access.
 * You want to lower help desk costs.
@@ -43,6 +45,7 @@ You can allow employees to reset work and school account passwords without help 
 ## Next steps
 
 Learn more about the following articles:
+
 * [Password best practices](https://docs.microsoft.com/azure/active-directory/active-directory-secure-passwords) 
 * [Licensing self-service password reset](https://docs.microsoft.com/azure/active-directory/active-directory-secure-passwords)
 

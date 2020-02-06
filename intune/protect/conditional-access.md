@@ -3,7 +3,7 @@
 
 title: Conditional Access with Microsoft Intune
 titleSuffix: Microsoft Intune
-description: Learn how to define the conditions users, devices, and apps must meet to access company resources in Microsoft Intune.
+description: Learn how to define the conditions that users, devices, and apps must meet to access company resources in Microsoft Intune.
 keywords:
 author: brenduns
 ms.author: brenduns
@@ -31,18 +31,16 @@ ms.collection: M365-identity-device-management
 
 # Learn about Conditional Access and Intune
 
-[!INCLUDE [azure_portal](../includes/azure_portal.md)]
+With Conditional Access, you can control the devices and apps that can connect to your email and company resources. 
 
-Conditional Access refers to ways you can control the devices and apps that are allowed to connect to your email and company resources. In this topic, learn about device-based and app-based Conditional Access, and find common scenarios for using Conditional Access with Intune.
-
-Enterprise Mobility + Security (EMS) Conditional Access is not a standalone product, it’s a solution that takes part on all services and products that are part of the EMS. It provides granular access control to keep your corporate data secure, while giving users an experience that allows them to do their best work from any device, and from any location.
+Enterprise Mobility + Security (EMS)  is not a standalone product. It's a solution that takes part on all services and products that are part of EMS. Conditional Access provides granular access control to keep your corporate data secure, while giving users an experience that allows them to do their best work from any device, and from any location.
 
 You can define conditions that gate access to your corporate data based on location, device, user state, and application sensitivity.
 
-> [!NOTE] 
+> [!NOTE]
 > Conditional Access also extends its capabilities to [Office 365 services](https://docs.microsoft.com/office365/enterprise/office-365-client-support-conditional-access).
 
-![Conditional Access architectural diagram](./media/conditional-access/ca-diagram-1.png)
+![Conditional Access diagram](./media/conditional-access/ca-diagram-1.png)
 
 ## Use Conditional Access with Intune
 

@@ -32,6 +32,9 @@ ms.collection: M365-identity-device-management
 
 Intune integrates with network access control partners to help organizations secure corporate data when devices try to access on-premises resources.
 
+>[!IMPORTANT]
+> NAC is not currently supported for Android Enterprise Fully Managed or Android Enterprise Dedicated devices.
+
 ## How do Intune and NAC solutions help protect your organization resources?
 
 NAC solutions check the device enrollment and compliance state with Intune to make access control decisions. If the device isn't enrolled, or is enrolled and not compliant with Intune device compliance policies, then the device should be redirected to Intune for enrollment, or for a device compliance check.

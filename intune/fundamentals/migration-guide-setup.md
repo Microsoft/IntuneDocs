@@ -79,9 +79,9 @@ Before you can migrate to Intune, you first need an Intune subscription.
 
 ### Task 3: Set your MDM authority to Intune
 
-Intune can be managed through the Azure portal or the Configuration Manager Current Branch console. Unless you need to integrate Intune with a Configuration Manager Current Branch deployment, we recommend that you manage Intune from the [Azure portal](https://portal.azure.com).
+We recommend that you manage Intune using the [Microsoft Endpoint Manager admin center](https://go.microsoft.com/fwlink/?linkid=2109431).
 
-Set your MDM authority to **Intune** to enable the Intune Azure portal. Using a different MDM authority allows Intune to transfer MDM management to alternate Microsoft management consoles. These cases are uncommon.
+Set your MDM authority to **Intune**. Using a different MDM authority allows Intune to transfer MDM management to alternate Microsoft management consoles. These cases are uncommon.
 
 > [!IMPORTANT]
 > If you are transferring your mobile device management to Intune for the first time, you should set the MDM authority to Intune.

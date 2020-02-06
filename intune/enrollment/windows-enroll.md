@@ -106,7 +106,7 @@ EnterpriseEnrollment-s.manage.microsoft.com is the preferred FQDN for enrollment
 Using a method other than the CNAME configuration is not supported. For example, using a proxy server to redirect enterpriseenrollment.contoso.com/EnrollmentServer/Discovery.svc to either enterpriseenrollment-s.manage.microsoft.com/EnrollmentServer/Discovery.svc or manage.microsoft.com/EnrollmentServer/Discovery.svc is not supported.
 
 **Step 2: Verify CNAME** (optional)<br>
-1. In the [Microsoft Endpoint Manager Admin Center](https://go.microsoft.com/fwlink/?linkid=2109431), choose **Device enrollment** > **Windows enrollment** > **CNAME Validation**.
+1. In the [Microsoft Endpoint Manager Admin Center](https://go.microsoft.com/fwlink/?linkid=2109431), choose **Devices** > **Windows** > **Windows enrollment** > **CNAME Validation**.
 2. In the **Domain** box, enter the company website and then choose **Test**.
 
 ## Tell users how to enroll Windows devices
@@ -121,6 +121,28 @@ For end-user enrollment instructions, see [Enroll your Windows device in Intune]
 > If you do not have Auto-MDM enrollment enabled, but you have Windows 10 devices that have been joined to Azure AD, two records will be visible in the Intune console after enrollment. You can stop this by making sure that users with Azure AD joined devices go to **Accounts** > **Access work or school** and **Connect** using the same account. 
 
 For more information about end-user tasks, see [Resources about the end-user experience with Microsoft Intune](../fundamentals/end-user-educate.md).
+
+## Registration and Enrollment CNAMEs
+Azure Active Directory has a different CNAME that it uses for device registration for iOS, Android, and Windows devices. Intune conditional access requires devices to be registered, also called "workplace joined". If you plan to use conditional access, you should also configure the EnterpriseRegistration CNAME for each company name you have.
+
+| Type | Host name | Points to | TTL |
+| --- | --- | --- | --- |
+| NAME | EnterpriseRegistration. company_domain.com | EnterpriseRegistration.windows.net | 1 hour|
+
+For more information about device registration, see
+[Manage device identities using the Azure portal](https://docs.microsoft.com/azure/active-directory/devices/device-management-azure-portal)
+
+## Windows 10 auto enrollment and device registration
+
+This section applies to US government cloud customers.
+
+Although creating CNAME DNS entries is optional, CNAME records make enrollment easier for users. If no enrollment CNAME record is found, users are prompted to manually enter the MDM server name, enrollment.manage.microsoft.us.
+
+| Type | Host name | Points to | TTL |
+| --- | --- | --- | --- |
+| CNAME | EnterpriseEnrollment.company_domain.com | EnterpriseEnrollment-s.manage.microsoft.us | 1 hour|
+|CNAME | EnterpriseRegistration.company_domain.com | EnterpriseRegistration.windows.net | 1 hour |
+
 
 ## Next steps
 

@@ -8,7 +8,7 @@ keywords:
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 10/02/2019
+ms.date: 11/18/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: protect
@@ -41,12 +41,11 @@ The procedures in this article require access to both the Intune and Jamf Pro co
 
 ## Set up device compliance policies in Intune
 
-1. Sign in to [Intune](https://go.microsoft.com/fwlink/?linkid=2090973) and go to **Device compliance** > **Policies**. 
-2. If you're using a previously created policy, select that policy in the console and then go to the next step of this procedure.  
-   
-   Select **Create Policy** and then specify details for a policy with a *Platform* of **macOS**. Configure *Settings* and *Actions for noncompliance* to meet your organizational requirements, and then select **Create** to save the policy.
+1. Sign in to the [Microsoft Endpoint Manager Admin Center](https://go.microsoft.com/fwlink/?linkid=2109431).
 
-3. On the policies *Overview* pane, select **Assignments**. Use the available options to configure which Azure Active Directory (Azure AD) users and security groups receive this policy. Jamf integration with Intune doesn’t support compliance policy that targets device groups. 
+2. Select **Devices** > **Compliance policies**. If you're using a previously created policy, select that policy in the console and then go to the next step of this procedure. To create a new policy, select **Create Policy** and then specify details for a policy with a *Platform* of **macOS**. Configure *Settings* and *Actions for noncompliance* to meet your organizational requirements, and then select **Create** to save the policy.
+
+3. On the policies *Overview* pane, select **Assignments**. Use the available options to configure which Azure Active Directory (Azure AD) users and security groups receive this policy. Jamf integration with Intune doesn’t support compliance policy that targets device groups.
 
 4. When you select **Save**, the policy deploys to the users.  
 
@@ -107,7 +106,7 @@ Device registration requires a device user to manually select the Intune Company
 
 Use the Jamf Pro console to confirm that communication between Jamf Pro and Microsoft Intune is successful. 
 
-- In Jamf Pro, go to **Settings** > **Global Management** > **Microsoft Intune Integration**, and then select **Test**. 
+- In Jamf Pro, go to **Settings** > **Global Management** > **Microsoft Intune Integration**, and then select **Test**.
 
     The console displays a message with the success or failure of the connection.  
 
@@ -116,7 +115,7 @@ Should the connection test from the Jamf Pro console fail, review the Jamf confi
 
 ## Removing a Jamf-managed device from Intune
 
-You can remove a Jamf-managed device from the Intune console by selecting **Delete** in the **All devices** view. Bulk device deletion can be enabled by selecting multiple devices and clicking **Delete**.
+To remove a Jamf-managed device, open the Microsoft Endpoint Manager Admin Center, and select **Devices** > **All devices**, select the device, and then select **Delete**.  Bulk device deletion can be enabled by selecting multiple devices and clicking **Delete**.
 
 Get information on how to [remove a Jamf-managed device in the Jamf Pro docs](https://www.jamf.com/jamf-nation/articles/80/unmanaging-computers-while-preserving-their-inventory-information). You can also file a support ticket with [Jamf support](https://www.jamf.com/support/) for additional help. 
 

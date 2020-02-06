@@ -8,7 +8,7 @@ keywords:
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 11/04/2019
+ms.date: 01/16/2020
 ms.topic: reference
 ms.service: microsoft-intune
 ms.subservice: configuration
@@ -59,7 +59,7 @@ This article shows you how to create a device configuration profile using kernel
 ## What you need to know
 
 - Unsigned legacy kernel extensions can be added.
-- Be sure to enter the correct team identifier and bundle ID of the kernel extension. Intune doesn't validate the values you enter. If you enter wrong information, the extension won't work on the device.
+- Be sure to enter the correct team identifier and bundle ID of the kernel extension. Intune doesn't validate the values you enter. If you enter wrong information, the extension won't work on the device. A team identifier is exactly 10 alphanumeric characters long. 
 
 > [!NOTE]
 > Apple released information regarding signing and notarization for all software. On macOS 10.14.5 and newer, kernel extensions deployed through Intune don't have to meet Apple's notarization policy.

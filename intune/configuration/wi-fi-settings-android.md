@@ -8,7 +8,7 @@ keywords:
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 10/08/2019
+ms.date: 01/24/2020
 ms.topic: reference
 ms.service: microsoft-intune
 ms.subservice: configuration
@@ -51,7 +51,7 @@ This article describes these settings.
 - **Wi-Fi type**: Choose **Enterprise**.
 - **SSID**: Enter the **service set identifier**, which is the real name of the wireless network that devices connect to. However, users only see the **network name** you configured when they choose the connection.
 - **Hidden network**: Choose **Enable** to hide this network from the list of available networks on the device. The SSID isn't broadcasted. Choose **Disable** to show this network in the list of available networks on the device.
-- **EAP type**: Choose the Extensible Authentication Protocol (EAP) type used to authenticate secured wireless connections. Your options: 
+- **EAP type**: Choose the Extensible Authentication Protocol (EAP) type used to authenticate secured wireless connections. Your options:
 
   - **EAP-TLS**: Also enter:
 
@@ -60,6 +60,19 @@ This article describes these settings.
     - **Client Authentication** - **Client certificate for client authentication (Identity certificate)**: Choose the SCEP or PKCS client certificate profile that is also deployed to the device. This certificate is the identity presented by the device to the server to authenticate the connection.
 
     - **Identity privacy (outer identity)**: Enter the text sent in the response to an EAP identity request. This text can be any value, such as `anonymous`. During authentication, this anonymous identity is initially sent, and then followed by the real identification sent in a secure tunnel.​
+
+    - **Proxy settings**: Specify the proxy configuration used by your organization. Your options:
+
+      - **None** - You don't use a proxy server.
+      - **Automatic** – Select this option to  make  the *Proxy server URL* setting available, which you use to specify your proxy server or a  Proxy Auto-Configuration (PAC) file that contains a list of your proxy servers.
+
+    - **Proxy server URL**: This setting is available when you set *Proxy settings* to *Automatic*. Specify one of the following options to direct devices to your proxy server:
+
+      - IP address. For example, `10.0.0.11`
+      - A URL. For example, `http://proxyserver.contoso.com`.
+      - The URL of a Proxy Auto-Configuration (PAC) file. For example: `http://proxy.contoso.com/proxy.pac`.
+
+      For more information on PAC files, see [Proxy Auto-Configuration (PAC) file](https://developer.mozilla.org/docs/Web/HTTP/Proxy_servers_and_tunneling/Proxy_Auto-Configuration_(PAC)_file) (opens a non-Microsoft site).
 
   - **EAP-TTLS**: Also enter:
 
@@ -79,6 +92,19 @@ This article describes these settings.
 
       - **Identity privacy (outer identity)**: Enter the text sent in the response to an EAP identity request. This text can be any value, such as `anonymous`. During authentication, this anonymous identity is initially sent, and then followed by the real identification sent in a secure tunnel.
 
+    - **Proxy settings**: Specify the proxy configuration used by your organization. Your options:
+
+      - **None** - You don't use a proxy server.
+      - **Automatic** – Select this option to  make  the *Proxy server URL* setting available, which you use to specify your proxy server or a  Proxy Auto-Configuration (PAC) file that contains a list of your proxy servers.
+
+    - **Proxy server URL**: This setting is available when you set *Proxy settings* to *Automatic*. Specify one of the following options to direct devices to your proxy server:
+
+      - IP address. For example, `10.0.0.11`
+      - A URL. For example, `http://proxyserver.contoso.com`.
+      - The URL of a Proxy Auto-Configuration (PAC) file. For example: `http://proxy.contoso.com/proxy.pac`.
+
+      For more information on PAC files, see [Proxy Auto-Configuration (PAC) file](https://developer.mozilla.org/docs/Web/HTTP/Proxy_servers_and_tunneling/Proxy_Auto-Configuration_(PAC)_file) (opens a non-Microsoft site).
+
   - **PEAP**: Also enter:
 
     - **Server Trust** - **Root certificate for server validation**: Choose an existing trusted root certificate profile. This certificate is presented to the server when the client connects to the network. It authenticates the connection.
@@ -94,6 +120,19 @@ This article describes these settings.
       - **Certificates**: Choose the SCEP or PKCS client certificate profile that is also deployed to the device. This certificate is the identity presented by the device to the server to authenticate the connection.
 
       - **Identity privacy (outer identity)**: Enter the text sent in the response to an EAP identity request. This text can be any value, such as `anonymous`. During authentication, this anonymous identity is initially sent, and then followed by the real identification sent in a secure tunnel.
+
+      - **Proxy settings**: Specify the proxy configuration used by your organization. Your options:
+
+        - **None** - You don't use a proxy server.
+        - **Automatic** – Select this option to  make  the *Proxy server URL* setting available, which you use to specify your proxy server or a  Proxy Auto-Configuration (PAC) file that contains a list of your proxy servers.
+
+      - **Proxy server URL**: This setting is available when you set *Proxy settings* to *Automatic*. Specify one of the following options to direct devices to your proxy server:
+
+        - IP address. For example, `10.0.0.11`
+        - A URL. For example, `http://proxyserver.contoso.com`.
+        - The URL of a Proxy Auto-Configuration (PAC) file. For example: `http://proxy.contoso.com/proxy.pac`.
+
+        For more information on PAC files, see [Proxy Auto-Configuration (PAC) file](https://developer.mozilla.org/docs/Web/HTTP/Proxy_servers_and_tunneling/Proxy_Auto-Configuration_(PAC)_file) (opens a non-Microsoft site).
 
 ## Next steps
 

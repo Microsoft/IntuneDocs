@@ -67,4 +67,4 @@ Intune has additional resources you can use to promote device enrollment with yo
 
 - [How to educate your end users about Microsoft Intune](end-user-educate.md) breaks out enrollment steps by mobile OS platform.
 - The [Intune device enrollment for IT administrators](../enrollment/device-enrollment.md) explains how to enroll Android, iOS, and Mac devices in Intune.
-- Share the [Company Portal app URL](http://go.microsoft.com/fwlink/?LinkID=396941) with your Android, iOS and Windows users. This URL redirects to the appropriate Company Portal app listing on Android, iOS and Windows devices.
+- Share the Company Portal app with your Android, iOS and Windows users.

@@ -63,15 +63,12 @@ Default restrictions are automatically provided for both device type and device 
 
 ## Create a device type restriction
 
-1. Sign in to the Azure portal.
-2. Select **More Services**, search for **Intune**, and then choose **Intune**.
-3. Select **Device enrollment** > **Enrollment restrictions** > **Create restriction** > **Device type restriction**.
-    ![Screen cap for creating a device type restriction](./media/enrollment-restrictions-set/create-device-type-restriction.png)
-4. On the **Basics** page, give the restriction a **Name** and optional **Description**.
-5. Choose **Next** to go to the **Platform settings** page.
-6. Under **Platform**, choose **Allow** for the platforms that you want this restriction to allow.
+1. Sign in to the [Microsoft Endpoint Manager Admin Center](https://go.microsoft.com/fwlink/?linkid=2109431) > **Devices** > **Enrollment restrictions** > **Create restriction** > **Device type restriction**.
+2. On the **Basics** page, give the restriction a **Name** and optional **Description**.
+3. Choose **Next** to go to the **Platform settings** page.
+4. Under **Platform**, choose **Allow** for the platforms that you want this restriction to allow.
     ![Screen cap for choosing platform settings](./media/enrollment-restrictions-set/choose-platform-settings.png)
-7. Under **Versions**, choose the minimum and maximum versions that you want the allowable platforms to support. Version restrictions only apply to devices enrolled with the Company Portal.
+5. Under **Versions**, choose the minimum and maximum versions that you want the allowable platforms to support. Version restrictions only apply to devices enrolled with the Company Portal.
      Supported version formats include:
     - Android device administrator and Android Enterprise work profile support major.minor.rev.build.
     - iOS supports major.minor.rev. Operating system versions don't apply to Apple devices that enroll with the Device Enrollment Program, Apple School Manager, or the Apple Configurator app.
@@ -80,7 +77,7 @@ Default restrictions are automatically provided for both device type and device 
     > [!IMPORTANT]
     > Android Enterprise (work profile) and Android device administrator platforms have the following behavior:
     > - If both platforms are allowed for the same group, then users will be enrolled with a work profile if their device supports it, otherwise they will enroll as DA. 
-    > - If both platforms are allowed for the group and refined for specific and non-overlapping versions, then users will recieve the enrollment flow defined for their OS version. 
+    > - If both platforms are allowed for the group and refined for specific and non-overlapping versions, then users will receive the enrollment flow defined for their OS version. 
     > - If both platforms are allowed, but blocked for the same versions, then users on devices with the blocked versions will be taken down the Android device administrator enrollment flow and then get blocked from enrollment and prompted to sign out. 
     >
     > Worth noting that neither work profile or device administrator enrollment will work unless the appropriate prequisites have been completed in Android Enrollment. 
@@ -88,31 +85,29 @@ Default restrictions are automatically provided for both device type and device 
    > [!Note]
    > Windows 10 does not provide the rev number during enrollment so for instance if you enter in 10.0.17134.100 and the device is 10.0.17134.174 it will be blocked during enrollment.
 
-8. Under **Personally owned**, choose **Allow** for the platforms that you want to permit as personally owned devices.
-9. Choose **Next** to go to the **Assignments** page.
-10. Choose **Select groups to include** and then use the search box to find groups that you want to include in this restriction. The restriction applies only to groups to which it's assigned. If you don't assign a restriction to at least one group, it won't have any effect. Then choose **Select**. 
+6. Under **Personally owned**, choose **Allow** for the platforms that you want to permit as personally owned devices.
+7. Under **Device manufacturer**, enter a comma-separated list of the manufacturers that you want to block.
+8. Choose **Next** to go to the **Assignments** page.
+9. Choose **Select groups to include** and then use the search box to find groups that you want to include in this restriction. The restriction applies only to groups to which it's assigned. If you don't assign a restriction to at least one group, it won't have any effect. Then choose **Select**. 
     ![Screen cap for choosing platform settings](./media/enrollment-restrictions-set/select-groups.png)
-11. Select **Next** to go to the **Review + create** page.
-12. Select **Create** to create the restriction.
-13. The new restriction is created with a priority just above the default. You can [change the priority](#change-enrollment-restriction-priority).
+10. Select **Next** to go to the **Review + create** page.
+11. Select **Create** to create the restriction.
+12. The new restriction is created with a priority just above the default. You can [change the priority](#change-enrollment-restriction-priority).
 
 
 ## Create a device limit restriction
 
-1. Sign in to the Azure portal.
-2. Select **More Services**, search for **Intune**, and then choose **Intune**.
-3. Select **Device enrollment** > **Enrollment restrictions** > **Create restriction** > **Device limit restriction**.
-    ![Screen cap for creating a device limit restriction](./media/enrollment-restrictions-set/create-device-limit-restriction.png)
-4. On the **Basics** page, give the restriction a **Name** and optional **Description**.
-5. Choose **Next** to go to the **Device limit** page.
-6. For **Device limit**, select the maximum number of devices that a user can enroll.
+1. Sign in to the [Microsoft Endpoint Manager Admin Center](https://go.microsoft.com/fwlink/?linkid=2109431) > **Devices** > **Enrollment restrictions** > **Create restriction** > **Device limit restriction**.
+2. On the **Basics** page, give the restriction a **Name** and optional **Description**.
+3. Choose **Next** to go to the **Device limit** page.
+4. For **Device limit**, select the maximum number of devices that a user can enroll.
     ![Screen cap for choosing device limit](./media/enrollment-restrictions-set/choose-device-limit.png)
-7. Choose **Next** to go to the **Assignments** page.
-8. Choose **Select groups to include** and then use the search box to find groups that you want to include in this restriction. The restriction applies only to groups to which it's assigned. If you don't assign a restriction to at least one group, it won't have any effect. Then choose **Select**. 
+5. Choose **Next** to go to the **Assignments** page.
+6. Choose **Select groups to include** and then use the search box to find groups that you want to include in this restriction. The restriction applies only to groups to which it's assigned. If you don't assign a restriction to at least one group, it won't have any effect. Then choose **Select**. 
     ![Screen cap for selecting groups](./media/enrollment-restrictions-set/select-groups-device-limit.png)
-11. Select **Next** to go to the **Review + create** page.
-12. Select **Create** to create the restriction.
-13. The new restriction is created with a priority just above the default. You can [change the priority](#change-enrollment-restriction-priority).
+7. Select **Next** to go to the **Review + create** page.
+8. Select **Create** to create the restriction.
+9. The new restriction is created with a priority just above the default. You can [change the priority](#change-enrollment-restriction-priority).
 
 During BYOD enrollments, users see a notification that tells them when they've met their limit of enrolled devices. For example, on iOS:
 
@@ -135,11 +130,9 @@ During BYOD enrollments, users see a notification that tells them when they've m
 
 You can change the settings for an enrollment restriction by following the steps below. These restrictions don't effect devices that have already been enrolled. Devices enrolled with [Intune PC agent](../fundamentals/manage-windows-pcs-with-microsoft-intune.md) can't be blocked with this feature.
 
-1. Sign in to the Azure portal.
-2. Select **More Services**, search for **Intune**, and then choose **Intune**.
-3. Select **Device enrollment** > **Enrollment restrictions** > choose the restriction that you want to change > **Properties**.
-4. Choose **Edit** next to the settings that you want to change.
-5. On the **Edit** page, make the changes that you want and proceed to the **Review + save** page, then choose **Save**.
+1. Sign in to the [Microsoft Endpoint Manager Admin Center](https://go.microsoft.com/fwlink/?linkid=2109431) > **Devices** > **Enrollment restrictions** > choose the restriction that you want to change > **Properties**.
+2. Choose **Edit** next to the settings that you want to change.
+3. On the **Edit** page, make the changes that you want and proceed to the **Review + save** page, then choose **Save**.
 
 
 ## Blocking personal Android devices
@@ -156,7 +149,7 @@ The following methods qualify as being authorized as a Windows corporate enrollm
 - The device is registered with Windows Autopilot but isn't an MDM enrollment only option from Windows Settings.
 - The device’s IMEI number is listed in **Device enrollment** > **[Corporate device identifiers](corporate-identifiers-add.md)**. (Not supported for Windows Phone 8.1.)
 - The device enrolls through a [bulk provisioning package](windows-bulk-enroll.md).
-- The device enrolls through GPO, or [automatic enrollment from SCCM for co-management](https://docs.microsoft.com/sccm/comanage/quickstart-paths#bkmk_path1).
+- The device enrolls through GPO, or [automatic enrollment from Configuration Manager for co-management](https://docs.microsoft.com/configmgr/comanage/quickstart-paths#bkmk_path1).
  
 The following enrollments are marked as corporate by Intune. But since they don't offer the Intune administrator per-device control, they'll be blocked:
 - [Automatic MDM enrollment](windows-enroll.md#enable-windows-10-automatic-enrollment) with [Azure Active Directory join during Windows setup](https://docs.microsoft.com/azure/active-directory/device-management-azuread-joined-devices-frx)\*.

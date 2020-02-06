@@ -8,7 +8,7 @@ keywords:
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 10/21/2019
+ms.date: 11/18/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: protect
@@ -32,10 +32,15 @@ ms.collection: M365-identity-device-management
 
 # Create Mobile Threat Defense app protection policy with Intune
 
-> [!NOTE] 
-> This article applies to all Mobile Threat Defense (MTD) partners that support app protection policies: Better Mobile (Android), Zimperium (iOS), Lookout for Work (Android/iOS).
+Intune with Mobile Threat Defense (MTD) helps you detect threats and assess risk on mobile devices. You can create an Intune app protection policy that assesses risk to determine if the device is allowed to access corporate data or not.
 
-Intune with MTD helps you detect threats and assess risk on mobile devices. You can create an Intune app protection policy that assesses risk to determine if the device is allowed access to corporate data or not. 
+
+> [!NOTE]
+> This article applies to all Mobile Threat Defense partners that support app protection policies:
+>
+> - Better Mobile (Android)
+> - Zimperium (Android, iOS)
+> - Lookout for Work (Android, iOS).
 
 ## Before you begin
 
@@ -47,38 +52,25 @@ Prerequisites for app protection policy with MTD:
 
 ## To create an MTD app protection policy
 
-1. Go to the [Azure portal](https://portal.azure.com/), and sign in with your Intune credentials.
+Use the procedure to [create an Application protection policy for either iOS/iPadOS or Android](../apps/app-protection-policies.md#app-protection-policies-for-iosipados-and-android-apps), and use the following information on the *Apps*, *Conditional launch*, and *Assignments* pages:
 
-2. On the **Azure Dashboard**, choose **All services** from the left menu, then type **Intune** in the text box filter.
+- **Apps**: Select the app for the Mobile Threat Defense partner you use.
+- **Conditional launch**:  Below *Device conditions*, use the drop-down box to select **Max allowed device threat level**.
 
-3. Choose **Intune**, the **Intune Dashboard** opens.
+  Options for the threat level **Value**:
 
-4. On the **Intune Dashboard**, choose **Client apps**, then choose **App protection policies** under the **Manage** section.
+  - **Secured**: This level is the most secure. The device can't have any threats present and still access company resources. If any threats are found, the device is evaluated as noncompliant.
+  - **Low**: The device is compliant if only low-level threats are present. Anything higher puts the device in a noncompliant status.
+  - **Medium**: The device is compliant if the threats found on the device are low or medium level. If high-level threats are detected, the device is determined as noncompliant.
+  - **High**: This level is the least secure. This allows all threat levels and uses Mobile Threat Defense for reporting purposes only. Devices are required to have the MTD app activated with this setting.
 
-5. Choose **Create policy**, enter the **Name**, **Description**, select the **Platform**. 
+  Options for **Action**:
 
-6. On the **Conditional launch** pane, under the **Device conditions** table, choose the Mobile Threat Level from the drop-down list under the **Max allowed device threat level**.
+  - **Block access**
+  - **Wipe data**
 
-    a.  **Secured**: This level is the most secure. The device cannot have any threats present and still access company resources. If any threats are found, the device is evaluated as noncompliant.
+- **Assignments**: Assign the policy to groups of users.  The devices used by the group’s members are evaluated for access to corporate data on targeted apps via Intune app protection.
 
-    b.  **Low**: The device is compliant if only low-level threats are present. Anything higher puts the device in a noncompliant status.
-
-    c.  **Medium**: The device is compliant if the threats found on the device are low or medium level. If high-level threats are detected, the device is determined as noncompliant.
-
-    d.  **High**: This level is the least secure. This allows all threat levels, and uses Mobile Threat Defense for reporting purposes only. Devices are required to have the MTD app activated with this setting.
-
-7. Click **Save** twice, then choose **Create**.
-
-## To assign an MTD app protection policy
-
-To assign a device compliance policy to users, choose a policy that you have previously configured. Existing policies can be found in the **Device compliance – policies** pane.
-
-1. Choose the policy you want to assign to users and choose **Assignments**. This action opens the pane where you can select **Azure Active Directory Security Groups** and assign them to the policy.
-
-2. Choose **Select groups to include** to open the pane that displays the Azure AD Security Groups. Choosing **Select** deploys the policy to users.
-
-> [!NOTE] 
-> You have applied the policy to users. The devices used by the users who are targeted by the policy are evaluated for access to corporate data on targeted apps via Intune app protection.
 
 ## Next steps  
 

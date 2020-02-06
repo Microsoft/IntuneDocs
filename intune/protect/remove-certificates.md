@@ -8,7 +8,7 @@ keywords:
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 06/27/2019
+ms.date: 11/21/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: protect
@@ -59,14 +59,17 @@ A SCEP certificate is revoked *and* removed when:
 - A certificate profile is removed from the group assignment.
 
 A SCEP certificate is revoked when:
+
 - An administrator changes or updates the SCEP profile.
 
 A root certificate is removed when:
+
 - A user unenrolls.
 - An administrator runs the [wipe](../remote-actions/devices-wipe.md#wipe) action.
 - An administrator runs the [retire](../remote-actions/devices-wipe.md#retire) action.
 
 SCEP certificates *stay* on the device (certificates aren't revoked or removed) when:
+
 - A user loses the Intune license.
 - An administrator withdraws the Intune license.
 - An administrator removes the user or group from Azure AD.
@@ -80,11 +83,13 @@ A PKCS certificate is revoked *and* removed when:
 - An administrator runs the [retire](../remote-actions/devices-wipe.md#retire) action.
 
 A root certificate is removed when:
+
 - A user unenrolls.
 - An administrator runs the [wipe](../remote-actions/devices-wipe.md#wipe) action.
 - An administrator runs the [retire](../remote-actions/devices-wipe.md#retire) action.
 
 PKCS certificates *stay* on the device (certificates aren't revoked or removed) when:
+
 - A user loses the Intune license.
 - An administrator withdraws the Intune license.
 - An administrator removes the user or group from Azure AD.
@@ -105,14 +110,17 @@ A SCEP certificate is revoked *and* removed when:
 - A certificate profile is removed from the group assignment.
 
 A SCEP certificate is revoked when:
+
 - An administrator changes or updates the SCEP profile.
 
 A root certificate is removed when:
+
 - A user unenrolls.
 - An administrator runs the [wipe](../remote-actions/devices-wipe.md#wipe) action.
 - An administrator runs the [retire](../remote-actions/devices-wipe.md#retire) action.
 
 SCEP certificates *stay* on the device (certificates aren't revoked or removed) when:
+
 - A user loses the Intune license.
 - An administrator withdraws the Intune license.
 - An administrator removes the user or group from Azure AD.
@@ -126,14 +134,17 @@ A PKCS certificate is revoked *and* removed when:
 - An administrator runs the [retire](../remote-actions/devices-wipe.md#retire) action.
 
 A PKCS certificate is removed when:
+
 - A certificate profile is removed from the group assignment.
 
 A root certificate is removed when:
+
 - A user unenrolls.
 - An administrator runs the [wipe](../remote-actions/devices-wipe.md#wipe) action.
 - An administrator runs the [retire](../remote-actions/devices-wipe.md#retire) action.
 
 PKCS certificates *stay* on the device (certificates aren't revoked or removed) when:
+
 - A user loses the Intune license.
 - An administrator withdraws the Intune license.
 - An administrator removes the user or group from Azure AD.
@@ -144,10 +155,12 @@ PKCS certificates *stay* on the device (certificates aren't revoked or removed) 
 ### SCEP certificates
 
 A SCEP certificate is revoked *and* removed when:
+
 - A user unenrolls.
 - An administrator runs the [wipe](../remote-actions/devices-wipe.md#wipe) action.
 
 A SCEP certificate is revoked when:
+
 - An administrator runs the [retire](../remote-actions/devices-wipe.md#retire) action.
 - The device is removed from an Azure AD group.
 - A certificate profile is removed from the group assignment.
@@ -155,11 +168,13 @@ A SCEP certificate is revoked when:
 - An administrator changes or updates the SCEP profile.
 
 A root certificate is removed when:
+
 - A user unenrolls.
 - An administrator runs the [wipe](../remote-actions/devices-wipe.md#wipe) action.
 - An administrator runs the [retire](../remote-actions/devices-wipe.md#retire) action.
 
 SCEP certificates *stay* on the device (certificates aren't revoked or removed) when:
+
 - A user loses the Intune license.
 - An administrator withdraws the Intune license.
 - An administrator removes the user or group from Azure AD.
@@ -173,12 +188,14 @@ A PKCS certificate is revoked *and* removed when:
 - An administrator runs the [retire](../remote-actions/devices-wipe.md#retire) action.
 
 A root certificate is removed when:
+
 - A user unenrolls.
 - An administrator runs the [wipe](../remote-actions/devices-wipe.md#wipe) action.
 - An administrator runs the [retire](../remote-actions/devices-wipe.md#retire) action.
 
 PKCS certificates *stay* on the device (certificates aren't revoked or removed) when:
 - A user loses the Intune license.
+
 - An administrator withdraws the Intune license.
 - An administrator removes the user or group from Azure AD.
 - An administrator changes or updates the PKCS profile.
@@ -194,15 +211,18 @@ PKCS certificates *stay* on the device (certificates aren't revoked or removed) 
 ### SCEP certificates
 
 A SCEP certificate is revoked *and* removed when:
+
 - A user unenrolls.
 - An administrator runs a [retire](../remote-actions/devices-wipe.md#retire) action.
 - The device is removed from an Azure AD group.
 - A certificate profile is removed from the group assignment.
 
 A SCEP certificate is revoked when:
+
 - An administrator changes or updates the SCEP profile.
 
 SCEP certificates *stay* on the device (certificates aren't revoked or removed) when:
+
 - A user loses the Intune license.
 - An administrator withdraws the Intune license.
 - An administrator removes the user or group from Azure AD.
@@ -214,3 +234,6 @@ SCEP certificates *stay* on the device (certificates aren't revoked or removed) 
 
 PKCS certificates aren't supported on macOS.
 
+## Next steps
+
+[Use certificates for authentication](certificates-configure.md)

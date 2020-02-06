@@ -7,7 +7,7 @@ keywords:
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 02/19/2019
+ms.date: 11/14/2019
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -26,14 +26,14 @@ ms.reviewer: scottduf
 ms.suite: ems
 #ms.tgt_pltfrm:
 ms.custom: intune-enduser
-ms.collection: M365-identity-device-management
+ms.collection: 
 ---
 
 # Enable code integrity
 
 Your organization might require your PC to be enabled with a threat protection feature called *code integrity*. Code integrity checks the drivers and system files on your device for signs of corruption or malicious software. For code integrity to work on your device, another security feature called [*Secure Boot*](https://docs.microsoft.com/windows/security/information-protection/secure-the-windows-10-boot-process#secure-boot) must also be enabled.
 
-If your PC isn't compliant because code integrity is disabled, you should contact your organization's IT support team. They'll help you enable Secure Boot, which will trigger code integrity the next time you start up your device.
+If your PC isn't compliant because code integrity is disabled, contact your organization's IT support person. Your support person will help you enable Secure Boot, which will trigger code integrity the next time you start up your device. 
 
 If you identify yourself as an advanced device user and want to try the steps on your own, see [Re-enable Secure Boot](https://docs.microsoft.com/windows-hardware/manufacture/desktop/disabling-secure-boot#re-enable-secure-boot).
 

@@ -7,7 +7,7 @@ keywords:
 author: brenduns 
 ms.author: brenduns
 manager: dougeby
-ms.date: 10/19/2019
+ms.date: 12/18/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: protect
@@ -35,12 +35,13 @@ This feature applies to:
 
 - iOS 10.3 and later (supervised)
 
-The device checks in with Intune about every 8 hours. If an update is available, the device downloads and  installs it, except during restricted times. There isn't any user interaction needed to update the device. The policy doesn't prevent a user from updating the OS manually.
+The device checks in with Intune about every 8 hours. If an update is available, the device downloads and  installs it, except during restricted times. Although the update process does not typically involve any user interaction, if the device has a passcode the user will be required to enter it in order to start a software update. This applies to iOS 10.3 and later versions. 
+The policy doesn't prevent a user from updating the OS manually.
 
 ## Configure the policy
 
-1. Sign in to [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
-2. Select **Software updates** > **Update policies for iOS** > **Create**.
+1. Sign in to the [Microsoft Endpoint Manager admin center](https://go.microsoft.com/fwlink/?linkid=2109431).
+2. Select **Devices** > **Update policies for iOS** > **Create**.
 3. On the **Basics** tab, specify a name for this policy, specify a description (optional), and then select **Next**.
 
    ![Basics tab](./media/software-updates-ios/basics-tab.png) 
@@ -84,10 +85,10 @@ For guidance from the Intune support team, see [Delay visibility of software upd
 ## Edit a policy
 You can edit an existing policy, including changing the restricted times:
 
-1. In **Software updates**, select **Update policies for iOS** and then select the policy you want to edit.
+1. Select **Devices** > **Update policies for iOS**. Select the policy you want to edit.
 
 2. While viewing the policies **Properties**, select **Edit** for the policy page you want to modify.  
-   ![Edit a policie](./media/software-updates-ios/edit-policy.png)   
+   ![Edit a policy](./media/software-updates-ios/edit-policy.png)   
 
 3. After introducing a change, select **Review + save** > **Save** to save your edits, and return to the policies *Properties*.  
  

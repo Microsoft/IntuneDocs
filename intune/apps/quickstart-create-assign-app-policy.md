@@ -8,7 +8,7 @@ keywords:
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 07/24/2019
+ms.date: 11/26/2019
 ms.topic: quickstart
 ms.service: microsoft-intune
 ms.subservice: apps
@@ -47,7 +47,7 @@ Sign in to the [Intune](https://aka.ms/intuneportal) as a [Global administrator 
 
 Use the following steps to create an app protection policy:
 
-1. In [Intune](https://aka.ms/intuneportal), select **Client apps** > **App protection policies** > **Create Policy**. 
+1. In [Intune](https://aka.ms/intuneportal), select **Apps** > **App protection policies** > **Create Policy**. 
 2. Enter the following details: 
 
     - **Name**: *Windows 10 content protection*
@@ -71,7 +71,7 @@ After you've created an app protection policy in Intune, you can assign to group
 
 Use the following steps to assign the app protection policy:
 
-1. In [Intune](https://aka.ms/intuneportal), select **Intune** > **Client apps** > **App protection policies**. 
+1. In [Intune](https://aka.ms/intuneportal), select **Intune** > **Apps** > **App protection policies**. 
 2. Select the app protection policy you created earlier. In this quickstart, the policy is **Windows 10 content protection**.
 3. Select **Assignments**.
 4. Click **Select groups to include** in the **Include** tab.

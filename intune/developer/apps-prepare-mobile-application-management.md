@@ -7,7 +7,7 @@ keywords:
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 09/09/2019
+ms.date: 01/02/2020
 ms.topic: reference
 ms.service: microsoft-intune
 ms.subservice: developer
@@ -45,7 +45,6 @@ For more information about the App Wrapping Tool for app protection policies on 
 ### Reasons to use the App Wrapping Tool
 
 * Your app does not have built-in data protection features
-* Your app is simple
 * Your app is deployed internally
 * You don't have access to the app's source code
 * You didn't develop the app
@@ -67,7 +66,6 @@ To learn more about the SDK, see the [Overview](app-sdk.md). To get started with
 ### Reasons to use the SDK
 
 * Your app does not have built-in data protection features
-* Your app is complex and contains many experiences
 * Your app is deployed on a public app store such as Google Play or Apple's App Store
 * You are an app developer and have the technical background to use the SDK
 * Your app has other SDK integrations
@@ -80,16 +78,13 @@ To learn more about the SDK, see the [Overview](app-sdk.md). To get started with
 |**iOS**|Yes – use the [Intune App SDK Xamarin Bindings](app-sdk-xamarin.md).|No|
 |**Android**| Yes - use the [Intune App SDK Xamarin Bindings](app-sdk-xamarin.md).|No|
 
-### Not using an app development platform listed above?
+## Not using an app development platform listed above?
 
 The Intune SDK development team actively tests and maintains support for apps built with the native Android, iOS (Obj-C, Swift), Xamarin, Xamarin.Forms, and Cordova platforms. While some customers have had success with Intune SDK integration with other platforms such as React Native and NativeScript, we do not provide explicit guidance or plugins for app developers using anything other than our supported platforms. 
 
 ## Feature comparison
 
-This table lists the settings that you can use for the App SDK and App Wrapping Tool.
-
-> [!NOTE]
-> The App Wrapping Tool can be used with Intune standalone or Intune with Configuration Manager.
+This table lists the settings that are enabled if an app uses the App SDK or the App Wrapping Tool. Some features require app developers to apply some logic outside of basic integration with the Intune SDK, and as such, are not enabled if the app uses the App Wrapping Tool. 
 
 |Feature|App SDK|App Wrapping Tool|
 |-----------|---------------------|-----------|
@@ -112,9 +107,9 @@ This table lists the settings that you can use for the App SDK and App Wrapping 
 |Block screen capture (Android only)|X|X|
 |Support for MAM without device enrollment|X|X|
 |Full Wipe of app data|X|X|
-|Selective Wipe of work and school data in multi-identity scenarios <br><br>**Note:** For iOS, when the management profile is removed, the app is also removed.|X||
+|Selective Wipe of work and school data in Multi-Identity scenarios <br><br>**Note:** For iOS, when the management profile is removed, the app is also removed.|X||
 |Prevent “Save as”|X||
-|Targeted Application Configuration (or app config through the "MAM channel")|X||
+|Targeted Application Configuration (or app config through the "MAM channel")|X|X|
 |Support for Multi-Identity|X||
 |Customizable Style |X|||
 |On-demand application VPN connections with Citrix mVPN|X|X| 
@@ -126,6 +121,11 @@ This table lists the settings that you can use for the App SDK and App Wrapping 
 |Require minimum Intune SDK for iOS (iOS only)|X|X|
 |SafetyNet device attestation (Android only)|X|X|
 |Threat scan on apps (Android only)|X|X|
+|Require maxmimum Mobile Threat Defense vendor device risk level|X||
+|Configure app notification content for organization accounts|X|X|
+|Require use of approved keyboards (Android only)|X|X|
+|Require app protection policy (Conditional Access)|X||
+|Require approved client app (Conditional Access)|X||
 
 ## Next steps
 

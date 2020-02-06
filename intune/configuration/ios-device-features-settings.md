@@ -7,7 +7,7 @@ keywords:
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 10/28/2019
+ms.date: 12/19/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.subservice: configuration
@@ -28,8 +28,6 @@ ms.collection: M365-identity-device-management
 ---
 
 # iOS and iPadOS device settings to use common iOS features in Intune
-
-[!INCLUDE [azure_portal](../includes/azure_portal.md)]
 
 Intune includes some built-in settings to allow iOS users to use different Apple features on their devices. For example, administrators can control how iOS users use AirPrint printers, add apps and folders to the dock and pages on the home screen, show app notifications, show asset tag details on the lock screen, use single sign-on authentication, and authenticate users with certificates.
 
@@ -95,7 +93,7 @@ You can add up to **six** items (apps and folders combined) for the device dock.
 
   - **App**: Choose this option to add apps to the dock on the screen. Enter:
 
-    - **App Name**: Enter a name for the app. This name is used for your reference in the Azure portal. It *isn't* shown on the iOS device.
+    - **App Name**: Enter a name for the app. This name is used for your reference in the Microsoft Endpoint Manager admin center. It *isn't* shown on the iOS device.
     - **App Bundle ID**: Enter the bundle ID of the app. See [Bundle IDs for built-in iOS apps](bundle-ids-built-in-ios-apps.md) for some examples.
 
   - **Folder**: Choose this option to add a folder to the dock on the screen.
@@ -105,8 +103,8 @@ You can add up to **six** items (apps and folders combined) for the device dock.
     - **Folder name**: Enter the name of the folder. This name is shown to users on their device.
     - **List of pages**: **Add** a page, and enter the following properties:
 
-      - **Page name**: Enter a name for the page. This name is used for your reference in the Azure portal. It *isn't* shown on the iOS device.
-      - **App Name**: Enter a name for the app. This name is used for your reference in the Azure portal. It *isn't* shown on the iOS device.
+      - **Page name**: Enter a name for the page. This name is used for your reference in the Microsoft Endpoint Manager admin center. It *isn't* shown on the iOS device.
+      - **App Name**: Enter a name for the app. This name is used for your reference in the Microsoft Endpoint Manager admin center. It *isn't* shown on the iOS device.
       - **App Bundle ID**: Enter the bundle ID of the app. See [Bundle IDs for built-in iOS apps](bundle-ids-built-in-ios-apps.md) for some examples.
 
       You can add up to **20** pages for the device dock.
@@ -135,7 +133,7 @@ You can add up to **40** pages on a device.
 
 - **List of pages**: **Add** a page, and enter the following properties:
 
-  - **Page name**: Enter a name for the page. This name is used for your reference in the Azure portal, and *isn't* shown on the iOS device.
+  - **Page name**: Enter a name for the page. This name is used for your reference in the Microsoft Endpoint Manager admin center, and *isn't* shown on the iOS device.
 
   You can add up to **60** items (apps and folder combined) on a device.
 
@@ -145,7 +143,7 @@ You can add up to **40** pages on a device.
 
       - **App**: Choose this option to add apps to a page on the screen. Also enter:
 
-        - **App Name**: Enter a name for the app. This name is used for your reference in the Azure portal. It *isn't* shown on the iOS device.
+        - **App Name**: Enter a name for the app. This name is used for your reference in the Microsoft Endpoint Manager admin center. It *isn't* shown on the iOS device.
         - **App Bundle ID**: Enter the bundle ID of the app. See [Bundle IDs for built-in iOS apps](bundle-ids-built-in-ios-apps.md) for some examples.
 
       - **Folder**: Choose this option to add a folder to the dock on the screen.
@@ -155,8 +153,8 @@ You can add up to **40** pages on a device.
         - **Folder name**: Enter a name for the folder. This name is shown to users on the device.
         - **Add**: Adds pages to the folder. Also enter the following properties:
 
-          - **Page name**: Enter a name for the page. This name is used for your reference in the Azure portal. It *isn't* shown on the iOS device.
-          - **App Name**: Enter a name for the app. This name is used for your reference in the Azure portal. It *isn't* shown on the iOS device.
+          - **Page name**: Enter a name for the page. This name is used for your reference in the Microsoft Endpoint Manager admin center. It *isn't* shown on the iOS device.
+          - **App Name**: Enter a name for the app. This name is used for your reference in the Microsoft Endpoint Manager admin center. It *isn't* shown on the iOS device.
           - **App Bundle ID**: Enter the bundle ID of the app. See [Bundle IDs for built-in iOS apps](bundle-ids-built-in-ios-apps.md) for some examples.
 
 #### Example
@@ -178,8 +176,8 @@ When you assign the policy to an iPhone, the page looks similar to the following
     ![Add app notification in iOS profile in Intune](./media/ios-device-features-settings/ios-macos-app-notifications.png)
 
   - **App bundle ID**: Enter the **App Bundle ID** of the app you want to add. See [Bundle IDs for built-in iOS apps](bundle-ids-built-in-ios-apps.md) for some examples.
-  - **App name**: Enter the name of the app you want to add. This name is used for your reference in the Azure portal. It *isn't* shown on the device.
-  - **Publisher**: Enter the publisher of the app you're adding. This name is used for your reference in the Azure portal. It *isn't* shown on the device.
+  - **App name**: Enter the name of the app you want to add. This name is used for your reference in the Microsoft Endpoint Manager admin center. It *isn't* shown on the device.
+  - **Publisher**: Enter the publisher of the app you're adding. This name is used for your reference in the Microsoft Endpoint Manager admin center. It *isn't* shown on the device.
   - **Notifications**: **Enable** or **Disable** the app from sending notifications to the device.
     - **Show in Notification Center**: **Enable** allows the app to show notifications in the device Notification Center. **Disable** prevents the app from showing notifications in the Notification Center.
     - **Show in Lock Screen**: Select **Enable** to see notifications from the app on the device lock screen. **Disable** prevents the app from showing notifications on the lock screen.
@@ -284,36 +282,43 @@ This feature applies to:
 
 ### Settings apply to: All enrollment types
 
-- **SSO app extension type**: Choose the type of credential SSO app extension. Your options:
+- **SSO app extension type**: Choose the type of SSO app extension. Your options:
 
-  - **Not configured**: App extensions aren't used. To disable an app extension, you can switch the SSO app extension type from **Kerberos** or **Credential** to **Not configured**.
-  - **Credential**: Use a generic, customizable credential app extension to perform SSO. Be sure you know the extension ID for your organization’s SSO app extension.
+  - **Not configured**: App extensions aren't used. To disable an app extension, you can switch the SSO app extension type to **Not configured**.
+  - **Redirect**: Use a generic, customizable redirect app extension to perform SSO with modern authentication flows. Be sure you know the extension ID for your organization’s app extension.
+  - **Credential**: Use a generic, customizable credential app extension to perform SSO with challenge-and-response authentication flows. Be sure you know the extension ID for your organization’s app extension.
   - **Kerberos**: Use Apple’s built-in Kerberos extension, which is included on iOS 13.0 (and newer) and iPadOS 13.0 (and newer). This option is a Kerberos-specific version of the **Credential** app extension.
 
   > [!TIP]
-  > With the **Credential** type, you add your own configuration values to pass through the extension. Instead, consider using built-in configuration settings provided by Apple in the **Kerberos** type.
+  > With the **Redirect** and **Credential** types, you add your own configuration values to pass through the extension. If you're using **Credential**, consider using built-in configuration settings provided by Apple in the **Kerberos** type.
 
-- **Extension ID** (Credential only): Enter the bundle identifier that identifies your SSO app extension, such as `com.apple.extensiblesso`.
-- **Team ID** (Credential only): Enter the team identifier of your SSO app extension. A team identifier is a 10-character alphanumerical (numbers and letters) string generated by Apple, such as `ABCDE12345`. The team ID isn't required.
+- **Extension ID** (Redirect and Credential): Enter the bundle identifier that identifies your SSO app extension, such as `com.apple.extensiblesso`.
+
+- **Team ID** (Redirect and Credential): Enter the team identifier of your SSO app extension. A team identifier is a 10-character alphanumerical (numbers and letters) string generated by Apple, such as `ABCDE12345`. The team ID isn't required.
 
   [Locate your Team ID](https://help.apple.com/developer-account/#/dev55c3c710c) (opens Apple’s website) has more information.
 
-- **Realm**: Enter the name of your Kerberos realm. The realm name should be capitalized, such as `CONTOSO.COM`. Typically, your realm name is the same as your DNS domain name, but in all uppercase.
+- **Realm** (Credential and Kerberos): Enter the name of your authentication realm. The realm name should be capitalized, such as `CONTOSO.COM`. Typically, your realm name is the same as your DNS domain name, but in all uppercase.
 
-- **Domains**: Enter the domain or host names of the sites that can authenticate through SSO. For example, if your website is `mysite.contoso.com`, then `mysite` is the host name, and `contoso.com` is the domain name. When users connect to any of these sites, the app extension handles the authentication challenge. This authentication allows users to use Face ID, Touch ID, or Apple pincode/passcode to sign in.
+- **Domains** (Credential and Kerberos): Enter the domain or host names of the sites that can authenticate through SSO. For example, if your website is `mysite.contoso.com`, then `mysite` is the host name, and `contoso.com` is the domain name. When users connect to any of these sites, the app extension handles the authentication challenge. This authentication allows users to use Face ID, Touch ID, or Apple pincode/passcode to sign in.
 
   - All the domains in your single sign-on app extension Intune profiles must be unique. You can't repeat a domain in any sign-on app extension profile, even if you're using different types of SSO app extensions.
   - These domains aren't case-sensitive.
 
-- **Additional configuration** (Credential only): Enter additional extension-specific data to pass to the SSO app extension:
-  - **Configuration key**: Enter the name of the item you want to add, such as `user name`.
-  - **Value type**: Enter the type of data. Your options:
+- **URLs** (Redirect only): Enter the URL prefixes of your identity providers on whose behalf the redirect app extension performs SSO. When a user is redirected to these URLs, the SSO app extension will intervene and prompt SSO.
+
+  - All the URLs in your Intune single sign-on app extension profiles must be unique. You can’t repeat a domain in any SSO app extension profile, even if you’re using different types of SSO app extensions.
+  - The URLs must begin with http:// or https://.
+
+- **Additional configuration** (Redirect and Credential): Enter additional extension-specific data to pass to the SSO app extension:
+  - **Key**: Enter the name of the item you want to add, such as `user name`.
+  - **Type**: Enter the type of data. Your options:
 
     - String
     - Boolean: In **Configuration value**, enter `True` or `False`.
     - Integer: In **Configuration value**, enter a number.
     
-  - **Configuration value**: Enter the data.
+  - **Value**: Enter the data.
 
   - **Add**: Select to add your configuration keys.
 
@@ -327,10 +332,16 @@ This feature applies to:
   > - If you only have one realm, leave it **Not configured** (default).
 
 - **Principal name** (Kerberos only): Enter the username of the Kerberos principal. You don't need to include the realm name. For example, in `user@contoso.com`, `user` is the principal name, and `contoso.com` is the realm name.
+
+  > [!TIP]
+  > - You can also use variables in the principal name by entering curly brackets `{{ }}`. For example, to show the username, enter       `Username: {{username}}`. 
+  > - However, be careful with variable substitution because variables aren't validated in the UI and they are case sensitive. Be sure to enter the correct information.
+
 - **Active Directory site code** (Kerberos only): Enter the name of the Active Directory site that the Kerberos extension should use. You may not need to change this value, as the Kerberos extension may automatically find the Active Directory site code.
 - **Cache name** (Kerberos only): Enter the Generic Security Services (GSS) name of the Kerberos cache. You most likely don't need to set this value.
 - **App bundle IDs** (Kerberos only): **Add** the app bundle identifiers that should use single sign-on on your devices. These apps are granted access to the Kerberos Ticket Granting Ticket, the authentication ticket, and authenticate users to services they’re authorized to access.
 - **Domain realm mapping** (Kerberos only): **Add** the domain DNS suffixes that should map to your realm. Use this setting when the DNS names of the hosts don’t match the realm name. You most likely don't need to create this custom domain-to-realm mapping.
+- **PKINIT certificate** (Kerberos only): **Select** the Public Key Cryptography for Initial Authentication (PKINIT) certificate that can be used for Kerberos authentication. You can choose from [PKCS](../protect/certficates-pfx-configure.md) or [SCEP](../protect/certificates-scep-configure.md) certificates that you've added in Intune. For more information about certificates, see [Use certificates for authentication in Microsoft Intune](../protect/certificates-configure.md).
 
 ## Wallpaper
 

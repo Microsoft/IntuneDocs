@@ -376,12 +376,37 @@ The Microsoft Intune Certificate Connector installs on the server that runs your
 
    2. Run the installer (**NDESConnectorSetup.exe**). The installer also installs the policy module for NDES and the IIS Certificate Registration Point (CRP) Web Service. The CRP Web Service, *CertificateRegistrationSvc*, runs as an application in IIS.
 
-      - When you install NDES for standalone Intune, the CRP service automatically installs with the Certificate Connector.
-      - When you use Intune with Configuration Manager, you install the Certificate Registration Point as a Configuration Manager site system role.
+      When you install NDES for standalone Intune, the CRP service automatically installs with the Certificate Connector.
 
 5. When prompted for the client certificate for the Certificate Connector, choose **Select**, and select the **client authentication** certificate you installed on your NDES Server during step #3 of the procedure [Install and bind certificates on the server that hosts NDES](#install-and-bind-certificates-on-the-server-that-hosts-ndes) from earlier in this article.
 
    After you select the client authentication certificate, you're returned to the **Client Certificate for Microsoft Intune Certificate Connector** surface. Although the certificate you selected isn't shown, select **Next** to view the properties of that certificate. Select **Next**, and then **Install**.
+
+> [!NOTE]
+> The following changes must be made for GCC High tenants prior to launching the Intune Certificate Connector.
+> 
+> Make edits to the two config files listed below which will update the service endpoints for the GCC High environment. Notice that these updates change the URIs from **.com** to **.us** suffixes. There are a total of three URI updates, two updates within the NDESConnectorUI.exe.config configuration file, and one update in the NDESConnector.exe.config file.
+> 
+> - File Name: <install_Path>\Microsoft Intune\NDESConnectorUI\NDESConnectorUI.exe.config
+> 
+>   Example: (%programfiles%\Microsoft Intune\NDESConnectorUI\NDESConnectorUI.exe.config)
+>   ```
+>    <appSettings>
+>        <add key="SignInURL" value="https://portal.manage.microsoft.us/Home/ClientLogon"/>
+>        <add key="LocationServiceEndpoint" value="RestUserAuthLocationService/RestUserAuthLocationService/ServiceAddresses"/>
+>        <add key="AccountPortalURL" value="https://manage.microsoft.us"/>
+>    </appSettings>
+>   ```
+> 
+> - File Name: <install_Path>\Microsoft Intune\NDESConnectorSvc\NDESConnector.exe.config
+>
+>   Example: (%programfiles%\Microsoft Intune\NDESConnectorSvc\NDESConnector.exe.config)
+>    ```
+>    <appSettings>
+>        <add key="BaseServiceAddress" value="https://manage.microsoft.us/" />
+>    ```
+>
+> If these edits are not completed, GCC High tenants will get the error: "Access Denied" "You are not authorized to view this page"
 
 6. After the wizard completes, but before closing the wizard, **Launch the Certificate Connector UI**.
 

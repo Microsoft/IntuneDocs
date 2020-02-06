@@ -7,7 +7,7 @@ keywords:
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 09/19/2018
+ms.date: 11/14/2018
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: remote-actions
@@ -66,7 +66,7 @@ The actions available depend on the device platform, and the configuration of th
   - [Wipe](devices-wipe.md#wipe)
   - [Remote lock](device-remote-lock.md)
   - [Reset passcode](device-passcode-reset.md)
-  - [Bypass Activation Lock](device-activation-lock-bypass.md) (iOS only)
+  - [Disable Activation Lock](device-activation-lock-bypass.md) (iOS only)
   - [Fresh Start](device-fresh-start.md) (Windows only)
   - [Lost mode](device-lost-mode.md) (iOS only)
   - [Locate device](device-locate.md) (iOS only)
@@ -74,7 +74,9 @@ The actions available depend on the device platform, and the configuration of th
   - [Windows 10 PIN reset](device-windows-pin-reset.md)
   - [Remote control for Android](teamviewer-support.md)
   - [Synchronize device](device-sync.md)
+  - [Rename device](device-rename.md)
   - [Send custom notification](custom-notifications.md#send-a-custom-notification-to-a-single-device) (Android, iOS)
+  - [BitLocker key rotation](../protect/encrypt-devices.md#rotate-bitlocker-recovery-keys) (Windows only)
 
 ## Next steps
 

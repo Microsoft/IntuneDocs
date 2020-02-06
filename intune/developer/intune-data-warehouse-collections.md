@@ -7,7 +7,7 @@ keywords:
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 08/22/2019
+ms.date: 12/04/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.subservice: developer
@@ -527,7 +527,7 @@ The **managementAgentType** entity represents the agents used to manage a device
 | 3                     | EasMdm                            | The   device is managed by both Exchange Active Sync and an MDM agent        |
 | 4                     | IntuneClient                      | The   device is managed by the Intune PC agent                               |
 | 5                     | EasIntuneClient                   | The   device is managed by both Exchange Active Sync and the Intune PC agent |
-| 8                     | ConfigManagerClient               | The   device is managed by the System Center Configuration Manager agent     |
+| 8                     | ConfigManagerClient               | The   device is managed by the Configuration Manager agent     |
 | 10                    | ConfigurationManagerClientMdm     | The device is managed by   Configuration Manager and MDM.                    |
 | 11                    | ConfigurationManagerCLientMdmEas  | The device is managed by   Configuration Manager, MDM and Exchange Active Sync.               |
 | 16                    | Unknown                           | Unknown   management agent type                                              |

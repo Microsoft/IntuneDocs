@@ -44,7 +44,7 @@ Complete the following steps to integrate the Symantec Endpoint Protection Mobil
 - The Azure AD account must be a global administrator account to perform the integration.
 ### Network Setup
 
-You can make sure your network is properly configured for integration with SEP Mobile setup by referring to the Symantec article [Setting up your network configuration](https://portal.skycure.com/articles/Documentation/Setting-up-your-network-configuration-26-8-2016).
+You can make sure your network is properly configured for integration with SEP Mobile setup by referring to the Symantec article [Configuring SEP Manager after installation](https://support.symantec.com/us/en/article.HOWTO80819.html).
 
 ### Full integration vs. Read-only
 

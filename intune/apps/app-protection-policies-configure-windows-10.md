@@ -8,7 +8,7 @@ keywords:
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 08/22/2019
+ms.date: 11/26/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: apps
@@ -37,13 +37,12 @@ Enable mobile application management (MAM) for Windows 10 by setting the MAM pro
 
 ## To configure the MAM provider
 
-1. Sign in to the Azure portal, and choose **Azure Active Directory.**
-
-2. Choose **Mobility (MDM and MAM)** in the **Manage** group.
-
-3. Click **Microsoft Intune**.
-
-4. Configure the settings in the  **Restore default MAM URLs** group on the **Configure** blade.
+1. Sign in to the [Microsoft Endpoint Manager Admin Center](https://go.microsoft.com/fwlink/?linkid=2109431).
+2. Select **All services** and choose **M365 Azure Active Directory** to switch dashboards.
+3. Select **Azure Active Directory**.
+4. Choose **Mobility (MDM and MAM)** in the **Manage** group.
+5. Click **Microsoft Intune**.
+6. Configure the settings in the  **Restore default MAM URLs** group on the **Configure** pane.
 
    **MAM user scope**  
    Use MAM auto-enrollment to manage enterprise data on your employees' Windows devices. MAM auto-enrollment will be configured for bring your own device scenarios.<ul><li>**None**<br>Select if no users can be enrolled in MAM.</li><li>**Some**<br>Select Azure AD groups that contain users who will be enrolled in MAM.</li><li>**All**<br>Select if all users can be enrolled in MAM.</li></ul>
@@ -57,7 +56,7 @@ Enable mobile application management (MAM) for Windows 10 by setting the MAM pro
    **MAM compliance URL**  
    The MAM compliance URL is not supported for Microsoft Intune. This input box must be left blank for protection policies to apply. 
 
-5. Click **Save**.
+7. Click **Save**.
 
 ## Next steps
 

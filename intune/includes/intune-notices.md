@@ -4,45 +4,62 @@ description: include file
 author: ErikjeMS  
 ms.service: microsoft-intune
 ms.topic: include
-ms.date: 11/4/2019
+ms.date: 11/19/2019
 ms.author: erikje
 ms.custom: include file
 ---
 
 These notices provide important information that can help you prepare for future Intune changes and features.
 
-### Plan for Change: Updated experience when enrolling Android Enterprise dedicated devices in Intune<!--5198878-->
-With the November or 1911 release to Intune, we’re adding support for SCEP device certificate deployment to Android Enterprise dedicated devices to enable certificate-based access to Wi-Fi profiles. This change also involves some minor changes the flow when enrolling Android Enterprise dedicated devices.
+### Updated support statement for 'Adobe Acrobat Reader for Intune' mobile app<!--5746776-->
+We shared in MC188653 at the end of August, that the Adobe Acrobat Reader for Intune mobile app was reaching end-of-life on December 1, 2019 and that Adobe was planning on supporting Intune’s app protection policies within their main Acrobat Reader app. Since then, we received customer feedback that we needed to provide more time to continue allowing IT admins to target, and end users to begin using Adobe Acrobat Reader for Intune. Given the high usage of Adobe Acrobat Reader for Intune on end user devices and its importance in enterprise scenarios, we want to make sure any experience meets your organization's app protection needs. 
+
+While we still recommend targeting the general Acrobat Reader mobile app in your policies since the Acrobat Reader mobile app supports App Protection Policies and has integrated the Intune SDK, the Adobe Acrobat Reader for Intune app will continue to be supported until March 31, 2020. 
 
 #### How does this affect me?
-If you manage Android Enterprise dedicated devices in your environment, you will start to see some changes roll out in November.
+You are receiving this message because our reporting indicates one or more policies in your organization are targeting the Adobe Acrobat Reader for Intune application and/or you may have received our previous EOL communication. 
 
-- For new Android Enterprise dedicated device enrollments: End users will see a different set of steps on devices during enrollment. Enrollment will still start the way it does today (with QR, NFC, Zero-touch, or device identifier) but after the November service release, there will be a mandatory app install step.
-- For existing Android devices enrolled as dedicated devices: Intune will start to automatically install the Microsoft Intune app on devices starting in early November. You don't need to take any action. The app will automatically download and install on devices. 
+#### What do I need to do to prepare for this change?
+Let your end users and helpdesk know of this change. You can use the [Company Portal's support information functionality](../apps/company-portal-app.md#support-information) to establish a channel for Intune-related questions.
 
-#### What can I do to prepare for this change?
-You should plan to update your end user guidance and let your helpdesk know of this change. Click Additional Information for more details and screenshots. We’ll update our What’s New page when this change starts to roll out.
+#### Additional Information
+https://helpx.adobe.com/acrobat/kb/intune-app-end-of-life.html
+
+
+### End Support for Windows Phone 8.1<!--3544909-->
+Microsoft mainstream support for Windows Phone 8.1 ended in July 2017, and extended support ended in June 2019. The Company Portal app for Windows Phone 8.1 has been in sustain mode since October 2017. Microsoft Intune will now end support on February 20, 2020 for Windows Phone 8.1.
+
+#### How does this affect me?
+After February 20, 2020 these devices  won't receive any security updates, and you  won't be able to enroll any new devices. Existing Windows Phone 8.1 devices will stay enrolled (policy, apps, reporting) but note any troubleshooting of an existing enrollment  won't be supported after this date, as many components, such as third-party certificates, have already ended support for the platform. Intune will stop compatibility testing with Intune and Windows Phone 8.1.
+
+#### What do I need to do to prepare for this change?
+You can check your Intune reporting to see what devices or users may be affected. Go to Devices > All devices and filter by OS. You can add in additional columns to help identify who in your organization has devices running Windows Phone 8.1. Request that your end users upgrade their devices to a supported OS version.
+
+
+### Take Action: Use Microsoft Edge for your Protected Intune Browser Experience<!--5728447-->
+As we have been sharing over the past year, Microsoft Edge mobile supports the same set of management features as the Managed Browser, while providing a much-improved end user experience. To make way for the robust experiences provided in Microsoft Edge, we will be retiring the Intune Managed Browser. Starting on January, 27, 2020, Intune will no longer support the Intune Managed Browser.  
+
+#### How does this affect me? 
+Starting on February 1, 2020, the Intune Managed Browser will no longer be available in the Google Play Store or the iOS App Store. At this point, you will still be able to target new app protection policies to the Intune Managed Browser, though new users won't be able to download the Intune Managed Browser app. In addition, on iOS, new web clips that are pushed down to MDM-enrolled device will open in Microsoft Edge instead of the Intune Managed Browser.  
+
+On March, 31 2020, the Intune Managed Browser will be removed from the Azure console. This means you will no longer be able to create new policies for the Intune Managed Browser. If you have existing Intune Managed Browser policies in place, they won't be affected. The Intune Managed Browser will show up in the console as an LOB app with no icon, and existing policies will show as targeted to the app still. At this point, we will also remove the option to redirect web content to the Intune Managed Browser within the Data Protection section of App protection policies.  
+
+#### What do I need to do to prepare for this change? 
+To ensure a smooth transition from the Intune Managed Browser to Microsoft Edge, we recommend you take the following steps proactively: 
+
+1. Target Microsoft Edge for iOS and Android with app protection policy (also referred to as MAM)  and app config settings. You can reuse your Intune Managed Browser policies for Microsoft Edge by targeting those existing policies to Microsoft Edge as well.  
+2. Ensure all MAM-protected apps in your environment have the app protection policy setting "Restrict web content transfer with other apps" set to "Policy managed browsers". 
+3. Target all the MAM-protected with the managed app configuration setting "com.microsoft.intune.useEdge" set to true. Starting next month with the release of 1911, you will be able to accomplish steps 2 and 3 simply by configuring the setting "Restrict web content transfer with other apps" to have "Microsoft Edge" selected in the Data Protection section of your app protection policies. 
+
+Support for web clips on iOS and Android is coming. When this support is released, you will need to retarget pre-existing web clips to ensure they open in Microsoft Edge instead of the Managed Browser. 
 
 #### Additional information
-[https://aka.ms/Dedicated_devices_enrollment](https://aka.ms/Dedicated_devices_enrollment)
+Visit our docs on [using Microsoft Edge with app protection policies](../apps/manage-microsoft-edge.md) for more info, or view our [support blog post](https://techcommunity.microsoft.com/t5/Intune-Customer-Success/Use-Microsoft-Edge-for-your-Protected-Intune-Browser-Experience/ba-p/1004269).
 
-### Plan for Change: The 'Server-side Logging for Siri commands' setting will be removed from the Intune console <!-- 5468501-->
-
-We plan to remove the setting “Server-side logging for Siri commands” from the Intune console with the November update to the Intune service. This change aligns with Apple already having removed the setting on their side.
-
-#### How does this affect me?
-When the November update or 1911 rolls out around mid-November, you’ll see that this setting has been removed from the Device restrictions menu (Built-in Apps) for iOS configuration profiles, in the Intune console. It may appear in your policies and the targeted device’s management profile but the setting has no effect on your device. We do not anticipate much impact to functionality since it currently doesn’t work on devices even though you see it in the management profile.
-
-You can choose one of two paths:
-- If you wish to delete this setting from your policies, you can go to the profile that has this setting, make a minor edit and save the policy. The policy will recompute in the backend and the setting will be deleted from your policy.
-- If you choose not to take this action, end users will see this setting in the management profile of their device but the setting will have no effect.
-
-#### What can I do to prepare for this change?
-You can take action according to the section above or leave your policy as is. We’ll update our What’s New page and documentation when this change rolls out.
 
 ### End of support for legacy PC management
 
-Legacy PC management is going out of support on October 15, 2020. Upgrade devices to Windows 10 and reenroll them as MDM devices to keep them managed by Intune.
+Legacy PC management is going out of support on October 15, 2020. Upgrade devices to Windows 10 and reenroll them as Mobile Device Management (MDM) devices to keep them managed by Intune.
 
 [Learn more](https://go.microsoft.com/fwlink/?linkid=2107122)
 
@@ -51,18 +68,18 @@ Android device administrator (sometimes referred to "legacy" Android management 
 
 #### How does this affect me?
 Because of these changes by Google, Intune users will be impacted in the following ways:  
-- Intune will only be able to provide support for device administrator-managed Android devices running Android 10 and later (also known as Android Q) through the summer of 2020. This date is when the next major version of Android is expected to be released.   
-- Device administrator-managed devices that are running Android 10 or later after the summer of 2020 will no longer be able to be entirely managed.       
-- Device administrator-managed Android devices that remain on Android versions below Android 10 will not be impacted and can continue to be entirely managed with device administrator.    
-- For all devices running Android 10 and later, Google has restricted the ability for device administrator management agents like Company Portal to access device identifier information. This impacts the following Intune features after a device updates to Android 10 or later:  
+- Intune will only be able to provide full support for device administrator-managed Android devices running Android 10 and later through Q2 CY2020. Device administrator-managed devices that are running Android 10 or later after this time won't be able to be entirely managed. In particular, impacted devices won’t receive new password requirements.
+    - Samsung Knox devices won't be impacted in this timeframe because extended support is provided through Intune’s integration with the Knox platform. This gives you more time to plan the transition off device admin management.    
+- Device administrator-managed Android devices that remain on Android versions below Android 10 won't be impacted and can continue to be entirely managed with device administrator.    
+- For all devices running Android 10 and later, Google has restricted the ability for device administrator management agents like Company Portal to access device identifier information. This restriction impacts the following Intune features after a device is updated to Android 10 or later:  
     - Network access control for VPN will no longer work.   
-    - Identifying devices as corporate-owned with an IMEI or serial number will not automatically mark devices as corporate-owned.  
+    - Identifying devices as corporate-owned with an IMEI or serial number won't automatically mark devices as corporate-owned.  
     - The IMEI and serial number will no longer be visible to IT admins in Intune. 
         > [!NOTE]
         > This only impacts device administrator-managed devices on Android 10 and later and does not affect devices being managed as Android Enterprise. 
 
 #### What do I need to do to prepare for this change?
-To avoid the reduction in functionality coming in the summer of 2020, we recommend the following:
+To avoid the reduction in functionality coming in Q3 CY2020, we recommend the following:
 - Don't onboard new devices into device administrator management.
 - If a device is expected to receive an update to Android 10, migrate it off of device administrator management to Android Enterprise management and/or app protection policies.
 
@@ -70,38 +87,13 @@ To avoid the reduction in functionality coming in the summer of 2020, we recomme
 - [Google's guidance for migration from device administrator to Android Enterprise](http://static.googleusercontent.com/media/android.com/en/enterprise/static/2016/pdfs/enterprise/Android-Enterprise-Migration-Bluebook_2019.pdf)
 - [Google's documentation on the plan to deprecate the device administrator API](https://developers.google.com/android/work/device-admin-deprecation)
 
-### Update your Android Company Portal app to the latest version <!--4536963-->
-Intune periodically releases updates to the Android Company Portal app. In November 2018 we released a company portal update, which included a back-end switch to prepare for Google's change from their existing notification platform to Google's Firebase Cloud Messaging (FCM). When Google retires their existing notification platform and moves to FCM, end users will need to have updated their Company Portal app to at least the November 2018 release to continue communicating with the Google Play store.
-
-#### How does this affect me?
-Our telemetry indicates you have devices with a Company Portal version earlier than 5.0.4269.0. If this version or later of the Company Portal app is not installed, IT-pro-initiated device actions like wipe, reset password, available and required app installs, and certificate enrollment may not work as expected. If your devices are MDM-enrolled in Intune, then you can see the Company Portal versions and users by going to Client apps – Discovered apps. Selecting earlier versions of the Company Portal app will allow you to see which end users have the devices that haven't updated the Company Portal app.
-
-#### What do I need to do to prepare for this change?
-Ask end users of Android devices that have not updated to update the Company Portal app through Google Play. Notify your help desk in case a user has not kept auto-updating the Company Portal app. See the link in *Additional information* for more on Google's FCM platform and change.
-
-#### Additional information
-https://firebase.google.com/docs/cloud-messaging/
-
-
-### New full-screen experience coming to Intune <!--4593669-->
-We're rolling out updated create and edit UI experiences to Intune in the Azure portal. This new experience will simplify the existing workflows by using a wizard-style format condensed within one blade. This update will do away with "blade sprawl" or any create and edit flows that require you to drill down into deep blade journeys. The create workflows will also be updated to include assignments (except for app assignment).
-
-#### How does this affect me?
-The full-screen experience will be rolled out to Intune both at portal.azure.com and devicemanagement.microsoft.com over the next few months. This update to the UI will not impact functionality of your existing policies and profiles, but you will see a slightly modified workflow. When you create new policies, for example, you will be able to set some assignments as part of this flow instead of doing so after creating the policy. See the blog post at *Additional information* for screenshots of what the new experience will look like in the console.
-
-#### What can I do to prepare for this change?
-You do not need to take any action but can consider updating your IT-pro guidance if necessary. We'll update our documentation as this experience rolls out to various blades in Intune on the Azure portal.
-
-#### Additional information 
-https://aka.ms/intune_fullscreen
-
 ### Plan for change: Intune App SDK and app protection policies for Android moving to support Android 5.0 and higher in an upcoming release <!--4911065 -->
 Intune will be moving to support Android 5.x (Lollipop) and higher in an upcoming release. Update any wrapped apps with the latest Intune App SDK and update your devices.
 
 #### How does this affect me?
-If you're not using or plan to use either the SDK or APP for Android, this change won't affect you. If you are using the Intune App SDK, be sure to update to the latest version and also update your devices to Android 5.x and higher. If you don't update, apps will not receive updates, and the quality of their experience will diminish over time.
+If you're not using or plan to use either the SDK or APP for Android, this change won't affect you. If you are using the Intune App SDK, be sure to update to the latest version and also update your devices to Android 5.x and higher. If you don't update, apps won't receive updates, and the quality of their experience will diminish over time.
 
-Below find a list of common devices enrolled in Intune that run Android version 4.x. If you have one of these devices, take the appropriate steps to make sure that this device will support Android version 5.0 or higher or that it will be replaced with a device that supports Android version 5.0 or higher. This list is not exhaustive of all devices that may need to be evaluated:
+Below find a list of common devices enrolled in Intune that run Android version 4.x. If you have one of these devices, take the appropriate steps to make sure that this device will support Android version 5.0 or higher or that it will be replaced with a device that supports Android version 5.0 or higher. This list isn't exhaustive of all devices that may need to be evaluated:
 
 - Samsung SM-T561  
 - Samsung SM-T365
@@ -129,6 +121,8 @@ We encourage your organization to immediately consider this action plan:
 - Plan and upgrade the Windows 7 fleet to Windows 10 before January 14, 2020.
 - Explore [Windows 10 deployment support](https://docs.microsoft.com/windows/deployment/) to learn more about how to upgrade your existing fleet of Windows 7 PCs to Windows 10.
 - Review the [Desktop App Assure](https://www.microsoft.com/fasttrack/microsoft-365/desktop-app-assure?rtc=1) offer through FastTrack, which will assist with the Microsoft application compatibility promise.
-- Transition existing legacy Intune software client managed devices to the Microsoft-recommended solution to manage Windows 10 using MDM management. Enroll all new Windows 10 PCs using MDM management for Intune in the Azure portal.
+- Transition existing legacy Intune software client-managed devices to the Microsoft-recommended solution to manage Windows 10 using MDM management. Enroll all new Windows 10 PCs using MDM management for Intune in the Azure portal.
 
-See the [blog post here](https://aka.ms/Windows7_Intune) for more information.
+For more information, see the [blog post here](https://aka.ms/Windows7_Intune).
+
+

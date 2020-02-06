@@ -6,7 +6,7 @@ keywords:
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 10/16/2019
+ms.date: 01/09/2020
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -29,7 +29,7 @@ Guided scenarios are not a different management space from Intune’s normal wor
 
 ## Types of guided scenarios 
 
-For the sake of simplicity, all guided scenarios omit complex scoping features such Scope Tags <link>, exclusion groups and virtual group assignments <link>. All resources created by a guided scenario will inherit every scope tag of the admin that completes the scenario. Certain scenarios offer some level of customization for common setting to cover closely related scenarios. These scenarios, support group assignment to inclusion groups only. For other guided scenarios, the entire scenario guarantees one consistent experience by offering no customization and automatically generates a new group to receive all assignments. Once the guided scenario completes, you are free to use more sophisticated assignments directly through existing policy, app and profile workloads.  
+For the sake of simplicity, all guided scenarios omit complex scoping features such Scope Tags, exclusion groups and virtual group assignments. All resources created by a guided scenario will inherit every scope tag of the admin that completes the scenario. Certain scenarios offer some level of customization for common setting to cover closely related scenarios. These scenarios, support group assignment to inclusion groups only. For other guided scenarios, the entire scenario guarantees one consistent experience by offering no customization and automatically generates a new group to receive all assignments. Once the guided scenario completes, you are free to use more sophisticated assignments directly through existing policy, app and profile workloads.  
 
 The following scenarios are guided: 
 - Deploy Microsoft Edge for mobile 

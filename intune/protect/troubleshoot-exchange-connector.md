@@ -43,7 +43,7 @@ Before you start troubleshooting an Exchange Connector issue in Intune, collect 
   - Are you setting up the connector for the first time? 
   - Did the connector work correctly and then fail?
   - If it was working, what changes occurred in the Intune environment, Exchange environment, or on the computer that runs the connector software?
-- What is the MDM authority? If it’s System Center Configuration Manager, which version of Configuration Manager do you use?
+- What is the MDM authority?
 - What version of Exchange do you use?
 
 ### Use PowerShell to get more data on Exchange Connector issues

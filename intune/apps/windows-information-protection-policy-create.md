@@ -8,7 +8,7 @@ keywords:
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 08/23/2019
+ms.date: 11/26/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: apps
@@ -75,53 +75,51 @@ After you set up Intune in your organization, you can create a WIP-specific poli
 > For related information about creating WIP policies for Intune, including available settings and how to configure them, see [Create a Windows Information Protection (WIP) policy with MAM using the Azure portal for Microsoft Intune](https://docs.microsoft.com/windows/security/information-protection/windows-information-protection/create-wip-policy-using-mam-intune-azure) in the Windows Security documentation library. 
 
 
-1. Sign in to the [Azure portal](https://portal.azure.com).
-2. Choose **All Services** > **Intune**.
-3. Select **Client apps** on the **Microsoft Intune** blade.
-4. Select **App protection policies** on the **Client apps** blade.
-5. Select **Add a policy** to display the **Add a policy** blade.
-6. Add the following values:
+1. Sign in to the [Microsoft Endpoint Manager Admin Center](https://go.microsoft.com/fwlink/?linkid=2109431).
+2. Select **Apps** > **App protection policies** > **Create policy**.
+3. Add the following values:
     - **Name:** Type a name (required) for your new policy.
     - **Description:** (Optional) Type a description.
     - **Platform:** Choose **Windows 10** as the supported platform for your app protection policy.
     - **Enrollment state:** Choose **Without enrollment** as the enrollment state for your policy.
-7. Choose **Create**. The policy is created and appears in the table on the **App protection policies** blade.
+4. Choose **Create**. The policy is created and appears in the table on the **App protection policies** pane.
 
 ## To add recommended apps to your protected apps list
 
-1. Select **Client apps** on the **Microsoft Intune** blade.
-2. Select **App protection policies** on the **Client apps** blade.
-3. On the **App protection policies** blade, choose the policy you want to modify. The **Intune App Protection** blade is displayed.
-4. Choose **Protected apps** from the **Intune App Protection** blade. The **Protected apps** blade opens showing you all apps that are already included in the list for this app protection policy.
-5. Select **Add apps**. The **Add apps** information shows you a filtered list of apps. The list at the top of the blade allows you to change the list filter.
+1. Sign in to the [Microsoft Endpoint Manager Admin Center](https://go.microsoft.com/fwlink/?linkid=2109431).
+2. Select **Apps** > **App protection policies**.
+3. On the **App protection policies** pane, choose the policy you want to modify. The **Intune App Protection** pane is displayed.
+4. Choose **Protected apps** from the **Intune App Protection** pane. The **Protected apps** pane opens showing you all apps that are already included in the list for this app protection policy.
+5. Select **Add apps**. The **Add apps** information shows you a filtered list of apps. The list at the top of the pane allows you to change the list filter.
 6. Select each app that you want to allow access your corporate data.
-7. Click **OK**. The **Protected apps** blade is updated showing all selected apps.
+7. Click **OK**. The **Protected apps** pane is updated showing all selected apps.
 8. Click **Save**.
 
 ## Add a Store app to your protected apps list
 
 **To add a Store app**
-1. Select **Client apps** on the **Microsoft Intune** blade.
-2. Select **App protection policies** on the **Client apps** blade.
-3. On the **App protection policies** blade, choose the policy you want to modify. The **Intune App Protection** blade is displayed.
-4. Choose **Protected apps** from the **Intune App Protection** blade. The **Protected apps** blade opens showing you all apps that are already included in the list for this app protection policy.
-5. Select **Add apps**. The **Add apps** information shows you a filtered list of apps. The list at the top of the blade allows you to change the list filter.
+
+1. Sign in to the [Microsoft Endpoint Manager Admin Center](https://go.microsoft.com/fwlink/?linkid=2109431).
+2. Select **Apps** > **App protection policies**.
+3. On the **App protection policies** pane, choose the policy you want to modify. The **Intune App Protection** pane is displayed.
+4. Choose **Protected apps** from the **Intune App Protection** pane. The **Protected apps** pane opens showing you all apps that are already included in the list for this app protection policy.
+5. Select **Add apps**. The **Add apps** information shows you a filtered list of apps. The list at the top of the pane allows you to change the list filter.
 6. From the list, select **Store apps**.
 7. Enter values for **Name**, **Publisher**, **Product Name**, and **Action**. Be sure to set the **Action** value to **Allow**, so that the app will have access to your corporate data.
-9. Click **OK**. The **Protected apps** blade is updated showing all selected apps.
+9. Click **OK**. The **Protected apps** pane is updated showing all selected apps.
 10. Click **Save**.
 
 ## Add a desktop app to your protected apps list
 
 **To add a desktop app**
-1. Select **Client apps** on the **Microsoft Intune** blade.
-2. Select **App protection policies** on the **Client apps** blade.
-3. On the **App protection policies** blade, choose the policy you want to modify. The **Intune App Protection** blade is displayed.
-4. Choose **Protected apps** from the **Intune App Protection** blade. The **Protected apps** blade opens showing you all apps that are already included in the list for this app protection policy.
-5. Select **Add apps**. The **Add apps** information shows you a filtered list of apps. The list at the top of the blade allows you to change the list filter.
+1. Sign in to the [Microsoft Endpoint Manager Admin Center](https://go.microsoft.com/fwlink/?linkid=2109431).
+2. Select **Apps** > **App protection policies**.
+3. On the **App protection policies** pane, choose the policy you want to modify. The **Intune App Protection** pane is displayed.
+4. Choose **Protected apps** from the **Intune App Protection** pane. The **Protected apps** pane opens showing you all apps that are already included in the list for this app protection policy.
+5. Select **Add apps**. The **Add apps** information shows you a filtered list of apps. The list at the top of the pane allows you to change the list filter.
 6. From the list, select **Desktop apps**.
 7. Enter values for **Name**, **Publisher**, **Product Name**, **File**, **Min Version**, **Max Version**, and **Action**. Be sure to set the **Action** value to **Allow**, so that the app will have access to your corporate data.
-9. Click **OK**. The **Protected apps** blade is updated showing all selected apps.
+9. Click **OK**. The **Protected apps** pane is updated showing all selected apps.
 10. Click **Save**.
 
 ## WIP Learning
@@ -154,7 +152,7 @@ After you turn off WIP, an attempt is made to decrypt any WIP-tagged files on th
 
 ### Add a protection mode
 
-1. From the **App policy** blade, choose the name of your policy, then choose **Required settings**.
+1. From the **App policy** pane, choose the name of your policy, then choose **Required settings**.
 
     ![Screenshot of the Learning Mode pane](./media/windows-information-protection-policy-create/learning-mode-sc1.png)
 
@@ -164,7 +162,7 @@ After you turn off WIP, an attempt is made to decrypt any WIP-tagged files on th
 
 1. Open the [Azure portal](https://portal.azure.com). Choose **All services**. Type **Intune** in the text box filter.
 
-3. Choose **Intune** > **Client Apps**.
+3. Choose **Intune** > **Apps**.
 
 4. Choose **App protection status** > **Reports** > **Windows Information Protection learning**.  
 
@@ -192,9 +190,9 @@ In addition to setting the **Allow Windows Search Indexer to search encrypted it
 
 After you created your WIP app protection policy, you need to deploy it to your organization using MAM.
 
-1. On the **App policy** blade, choose your newly created app protection policy, choose **User groups** > **Add user group**.
+1. On the **App policy** pane, choose your newly created app protection policy, choose **User groups** > **Add user group**.
 
-    A list of user groups, made up of all the security groups in your Azure Active Directory, opens in the **Add user group** blade.
+    A list of user groups, made up of all the security groups in your Azure Active Directory, opens in the **Add user group** pane.
 
 2. Choose the group you want your policy to apply to, then choose **Select** to deploy the policy.
 

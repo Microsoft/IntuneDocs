@@ -8,7 +8,7 @@ keywords:
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 10/08/2019
+ms.date: 01/23/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: apps
@@ -39,21 +39,43 @@ App configuration policies in Microsoft Intune supply settings to Managed Google
 > [!NOTE]  
 > Not every app supports app configuration. Check with the app developer to see if their app supports app configuration policies.
 
-1. In [Intune](https://go.microsoft.com/fwlink/?linkid=2090973), select **Client apps** > **App configuration policies** >  **Add**.
-2. Enter the following properties:
+1. Sign in to the [Microsoft Endpoint Manager admin center](https://go.microsoft.com/fwlink/?linkid=2109431).
+2. Choose the **Apps** > **App configuration policies** > **Add** > **Managed devices**. Note that you can choose between **Managed devices** and **Managed apps**. For more information see [Apps that support app configuration](~/apps/app-configuration-policies-overview.md#apps-that-support-app-configuration).
+3. On the **Basics** page, set the following details:
+    - **Name** - The name of the profile that appears in the Azure portal.
+    - **Description** - The description of the profile that appears in the Azure portal.
+    - **Device enrollment type** - This setting is set to **Managed devices**.
+4. Select **Android Enterprise** as the **Platform**.
+5. Click **Select app** next to **Targeted app**. The **Associated app** pane is displayed. 
+6. On the **Associated app** pane, choose the managed app to associate with the configuration policy and click **OK**.
+7. Click **Next** to display the **Settings** page.
+8. Click **Add** to display the **Add permissions** pane.
+9. Click the permissions that you want to override. Permissions granted will override the “Default app permissions” policy for the selected apps.
+10. Set the **Permission state** for each permission. You can choose from **Prompt**, **Auto grant**, or **Auto deny**. For more information about permissions, see [Android Enterprise settings to mark devices as compliant or not compliant using Intune](~/protect/compliance-policy-create-android-for-work.md).
+11. In the dropdown box, select the **Configuration settings format**. Select one of the following methods to add configuration information:
+    - **Use configuration designer**
+    - **Enter JSON data**<br><br>
+    For details about using the configuration designer, see [Use configuration designer](#use-the-configuration-designer). For details about entering XML data, see [Enter JSON data](#enter-json-data). 
+12. Click **Next** to display the **Assignments** page.
+13. In the dropdown box next to **Assign to**, select either **Selected groups**, **All users**, **All devices**, or **All users and all devies** to assign the app configuration policy to.
 
-    - **Name**: Enter a descriptive name for the policy. Name your policies so you can easily identify them later. For example, a good policy name is **Android Enterprise Nine Work app policy for entire company**.
-    - **Description**: Enter a description for the profile. This setting is optional, but recommended.
-    - **Device enrollment type**: Select **Managed devices**.
-    - **Platform**: Select **Android**.
+    ![Screenshot of Policy assignments Include tab](./media/app-configuration-policies-use-ios/app-config-policy01.png)
 
-3. Select **Associated App**. Choose the app you want to define an app configuration policy. Select from the list of Managed Google Play apps that you've approved and synchronized with Intune.
-4. Select **Permissions**. You can set configurations by using:
+14. Select **All users** in the dropdown box.
 
-    - [Configuration designer](#use-the-configuration-designer)
-    - [JSON editor](#enter-the-json-editor)
+    ![Screenshot of Policy assignments - All Users dropdown option](./media/app-configuration-policies-use-ios/app-config-policy02.png)
 
-5. Select **OK** > **Add**.
+15. Click **Select groups to exclude** to display the related pane.
+
+    ![Screenshot of Policy assignments - Select groups to exclude pane](./media/app-configuration-policies-use-ios/app-config-policy03.png)
+
+16. Choose the groups you want to exclude and then click **Select**.
+
+    >[!NOTE]
+    >When adding a group, if any other group has already been included for a given assignment type, it is pre-selected and unchangeable for other include assignment types. Therefore, that group that has been used, cannot be used as an excluded group.
+
+17. Click **Next** to display the **Review + create** page.
+18. Click **Create** to add the app configuration policy to Intune.
 
 ## Use the configuration designer
 
@@ -97,7 +119,7 @@ For Android devices, use the following key/value pairs:
    > You must use Outlook for Android 2.2.222 and later, Word, Excel, PowerPoint for Android 16.0.9327.1000 and later or OneDrive for Android 5.28 and later when allowing only configured organization accounts with multi-identity.<p></p>
    > As the Microsoft Intune administrator, you can control which user accounts are added to Microsoft Office applications on managed devices. You can limit access to only allowed organization user accounts and block personal accounts on enrolled devices. The supporting applications process the app configuration and remove and block unapproved accounts.<p></p>
 
-## Enter the JSON editor
+## Enter JSON data
 
 Some configuration settings on apps (such as apps with Bundle types) can't be configured with the configuration designer. Use the JSON editor for those values. Settings are supplied to apps automatically when the app is installed.
 
@@ -115,12 +137,12 @@ You can also preconfigure app permissions to access Android device features. By 
 
 For example, an app uses the device's microphone. The user is prompted to grant the app permission to use the microphone.
 
-1. In [Intune](https://go.microsoft.com/fwlink/?linkid=2090973), select **Client apps** > **App configuration policies** >  **Add**.
-2. Enter the following properties:
+1. In the [Microsoft Endpoint Manager admin center](https://go.microsoft.com/fwlink/?linkid=2109431), select **Apps** > **App configuration policies** >  **Add** > **Managed devices**.
+2. Add the following properties:
 
     - **Name**: Enter a descriptive name for the policy. Name your policies so you can easily identify them later. For example, a good policy name is **Android Enterprise prompt permissions app policy for entire company**.
     - **Description**. Enter a description for the profile. This setting is optional, but recommended.
-    - **Device enrollment type**: Select **Managed devices**.
+    - **Device enrollment type**: This setting is set to **Managed devices**.
     - **Platform**: Select **Android**.
 
 3. Select **Associated App**. Choose the app you want to define a configuration policy. Select from the list of Android work profile apps that you've approved and synchronized with Intune.

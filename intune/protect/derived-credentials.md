@@ -7,7 +7,7 @@ keywords:
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 10/31/2019
+ms.date: 12/18/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -164,28 +164,30 @@ Avoid requiring use of a derived credential to access a process that you’ll us
 
 Before you create policies that require use of a derived credential, set up a credential issuer in the Intune console. A derived credential issuer is a tenant-wide setting. Tenants support only a single issuer at a time.
 
-1. Sign in to [Intune](https://go.microsoft.com/fwlink/?linkid=2090973) and go to **Device Configuration** > **Derived Credentials**.
+1. Sign in to the [Microsoft Endpoint Manager admin center](https://go.microsoft.com/fwlink/?linkid=2109431).
+2. Select **Tenant administration** > **Connectors and tokens** > **Derived Credentials**.
 
-   ![Configure derived credentials in the console](./media/derived-credentials/configure-provider.png)
+    > [!div class="mx-imgBorder"]
+    > ![Configure derived credentials in the console](./media/derived-credentials/configure-provider.png)
 
-2. Specify a friendly **Display name** for the derived credential issuer policy.  This name isn’t shown to your device users.
+3. Specify a friendly **Display name** for the derived credential issuer policy.  This name isn’t shown to your device users.
 
-3. For **Derived credential issuer**, select the derived credential issuer that you have chosen for your tenant:
+4. For **Derived credential issuer**, select the derived credential issuer that you have chosen for your tenant:
    - DISA Purebred
    - Entrust Datacard
    - Intercede  
 
-4. Specify a **Derived credential help URL** to provide a link to a location that includes custom instructions to help users get derived credentials for your organization. The instructions should be specific to your organization and to the workflow that's necessary to get a credential from your chosen issuer. The link appears in the Company Portal app and should be accessible from the device.
+5. Specify a **Derived credential help URL** to provide a link to a location that includes custom instructions to help users get derived credentials for your organization. The instructions should be specific to your organization and to the workflow that's necessary to get a credential from your chosen issuer. The link appears in the Company Portal app and should be accessible from the device.
 
    If you don’t specify your own URL, Intune provides a link to generic details that can’t cover all scenarios. This generic guidance might not be accurate for your environment.
 
-5. Select one or more options for **Notification type**. Notification types are the methods you use to inform users about the following scenarios:
+6. Select one or more options for **Notification type**. Notification types are the methods you use to inform users about the following scenarios:
 
    - Enroll a device with an issuer to get a new derived credential.
    - Get a new derived credential when the current credential is close to expiration.
    - Use a derived credential with a policy for Wi-Fi, VPN, email, or app authentication, and for S/MIME signing and encryption.
 
-6. When ready, select **Save** to complete configuration of the derived credential issuer.
+7. When ready, select **Save** to complete configuration of the derived credential issuer.
 
 After you save the configuration, you can make changes to all fields except for the *Derived credential issuer*.  To change the issuer, see [Change the derived credential issuer](#change-the-derived-credential-issuer).
 
@@ -220,19 +222,20 @@ You can specify **Derived credential** for the following profile types and purpo
 
 ### Use derived credentials for app authentication
 
-Use derived credentials for certificate-based authentication to web sites and applications. To deliver a derived credential for app authentication, do the following steps in the Intune console:  
+Use derived credentials for certificate-based authentication to web sites and applications. To deliver a derived credential for app authentication:
 
-1. Sign in to [Intune](https://go.microsoft.com/fwlink/?linkid=2090973) and go to **Device Configuration** > **Profiles** and select **Create Profile**.
+1. Sign in to the [Microsoft Endpoint Manager admin center](https://go.microsoft.com/fwlink/?linkid=2109431).
+2. Select **Devices** > **Configuration profiles** > **Create profile**.
+3. Enter the following settings:
 
-2. Enter a friendly name for the profile under **Name**.
+    - **Name**: Enter a descriptive name for the profile. Name your profiles so you can easily identify them later. For example, a good profile name is **Derived credential for iOS devices profile**.
+    - **Description**: Enter a description that gives an overview of the setting, and any other important details.
+    - **Platform**: Select **iOS/iPadOS**.
+    - **Profile type**: Select **Derived credential**.
 
-3. For **Platform**, select **iOS**.
-
-4. For **Profile type**, select **Derived credential**.
-
-5. Select **OK** and then click **Create**.
-
-6. Select **Assignments** to choose which groups should receive the policy.
+4. Select **OK** to save your changes.
+5. When finished, select **OK** > **Create** to create the Intune profile. When complete, your profile is shown in the **Devices - Configuration profiles** list.
+6. Select your new profile > **Assignments**. Select the groups that should receive the policy.
  
 Users receive the app or email notification depending on the settings you specified when you set up the derived credential issuer. The notification informs the user to launch the Company Portal so that the derived credential policies can be processed.
 
@@ -256,11 +259,10 @@ After you change the issuer, users are prompted to get a new derived credential 
 > [!IMPORTANT]  
 > If you delete an issuer and immediately reconfigure that same issuer, you must still update profiles and devices to use derived credentials from that issuer. Derived credentials that were obtained before you delete the issuer are no longer valid.
 
-1. Sign in to [Intune](https://go.microsoft.com/fwlink/?linkid=2090973) and go to **Device Configuration** > **Derived Credentials**.
-
-2. Select **Delete** to remove the current derived credential issuer.
-
-3. Configure a new issuer.
+1. Sign in to the [Microsoft Endpoint Manager admin center](https://go.microsoft.com/fwlink/?linkid=2109431).
+2. Select **Tenant administration** > **Connectors and tokens** > **Derived Credentials**.
+3. Select **Delete** to remove the current derived credential issuer.
+4. Configure a new issuer.
 
 ### Update profiles that use derived credentials
 
@@ -272,4 +274,4 @@ After you delete an issuer and then add a new one, device users must request a n
 
 ## Next steps
 
-[Create device configuration profiles](../configuration/device-profile-create.md)
+[Create device configuration profiles](../configuration/device-profile-create.md).

@@ -7,7 +7,7 @@ keywords:
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 09/09/2019
+ms.date: 01/02/2020
 ms.topic: reference
 ms.service: microsoft-intune
 ms.subservice: developer
@@ -64,7 +64,7 @@ We will use the email addresses listed in your questionnaire response to reach o
 
 4. Finally, your app's deep link will be added to the next monthly Intune Service update. For example, if the registration information is finished in July, the deep link will be supported in mid-August.
 
-If your app's deep link changes in the future, you will need to re-register your app.
+The deep link is the link to your app's listing in the public app store. If your app's deep link changes in the future, you will need to re-register your app.
 
 > [!NOTE]
 > You must inform us if you update your app with a new version of the Intune App SDK.
@@ -168,7 +168,7 @@ After you finish the necessary steps to integrate your iOS or Android app with t
 
   * If you are testing your app on a mobile device using an end user account, ensure that you have given that account an Intune license by in the Microsoft 365 admin center website after logging in with an admin account, see [Assign Microsoft Intune license](../fundamentals/licenses-assign.md).
 
-* **Intune app protection policies**: To test your app against all the Intune app protection policies, you should know what the expected behavior is for each policy setting. See the descriptions for [iOS app protection policies](../apps/app-protection-policy-settings-ios.md) and [Android app protection policies](../apps/app-protection-policy-settings-android.md). If your app has integrated the Intune SDK, but is not listed in the Azure portal as a targeted app yet, you can target it with a policy by selecting the "+ More Apps" option and providing the bundle ID (iOS) or package name (Android) in the text box.
+* **Intune app protection policies**: To test your app against all the Intune app protection policies, you should know what the expected behavior is for each policy setting. See the descriptions for [iOS app protection policies](../apps/app-protection-policy-settings-ios.md) and [Android app protection policies](../apps/app-protection-policy-settings-android.md). If your app has integrated the Intune SDK, but is not listed in the list of targetable apps, you can specify the app's bundle ID (iOS) or package name (Android) in the text box when selecting 'Custom Apps'. 
 
 * **Troubleshoot**: If you run into any issues while manually testing your app's installation user experience, see [Troubleshoot app installation issues](../apps/troubleshoot-app-install.md). 
 
@@ -187,7 +187,7 @@ Once you have registered your app within an Azure tenant, and it is showing up u
 7. Click **Add permissions**.
 
 > [!NOTE]
-> If your app restricts you from signing in due to an error accessing this resource: https://intunemam.microsoftonline.com, you must send a note to msintuneappsdk@microsoft.com with your app's Client ID. This is a manual approval process today.
+> If your app restricts you from signing in due to an error accessing this resource: https\://intunemam.microsoftonline.com, you must send a note to msintuneappsdk@microsoft.com with your app's Client ID. This is a manual approval process today.
 
 ### Badge your app (optional)
 

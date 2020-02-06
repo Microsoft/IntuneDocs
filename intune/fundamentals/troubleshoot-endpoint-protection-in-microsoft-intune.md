@@ -2,12 +2,12 @@
 # required metadata
 
 title: Common endpoint protection messages in Microsoft Intune - Azure | Microsoft Docs
-description: See common messages and possible solution when using and troubleshooting endpoint protection and Windows Defender in Microsoft Intune.
+description: See common messages and possible solution when using and troubleshooting endpoint protection and Microsoft Defender in Microsoft Intune.
 keywords:
-author: MandiOhlinger
-ms.author: mandia
+author: Brenduns
+ms.author: brenduns
 manager: dougeby
-ms.date: 08/26/2019
+ms.date: 11/13/2019
 ms.topic: troubleshooting
 ms.service: microsoft-intune
 ms.subservice: fundamentals
@@ -32,9 +32,9 @@ ms.collection: M365-identity-device-management
 
 This article lists and describes potential causes and solutions for some errors and warnings. Use the information to help solve problems when using endpoint protection.
 
-## Windows Defender error codes
+## Microsoft Defender error codes
 
-Review event logs and error codes to [troubleshoot issues with Windows Defender AV](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-antivirus/troubleshoot-windows-defender-antivirus).
+Review event logs and error codes to [troubleshoot issues with Microsoft Defender AV](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-antivirus/troubleshoot-windows-defender-antivirus).
 
 ## Common Intune errors and possible resolutions
 
@@ -51,7 +51,7 @@ Review event logs and error codes to [troubleshoot issues with Windows Defender 
 
 ### Features are disabled
 
-You may get a message that some features are disabled. These messages can happen if Intune endpoint protection or Windows Defender is disabled by an administrator using a configuration profile. Or, it's disabled by an end user on the device. Possible messages:
+You may get a message that some features are disabled. These messages can happen if Intune endpoint protection or Microsoft Defender is disabled by an administrator using a configuration profile. Or, it's disabled by an end user on the device. Possible messages:
 
 `Endpoint Protection disabled`  
 `Real-time protection disabled`  
@@ -64,20 +64,20 @@ You may get a message that some features are disabled. These messages can happen
 **Possible solutions**: Enable these features. For guidance, see:
 
 - [Add endpoint protection settings](../protect/endpoint-protection-configure.md)
-- [Windows Defender Antivirus](../configuration/device-restrictions-windows-10.md#microsoft-defender-antivirus)
+- [Microsoft Defender Antivirus](../configuration/device-restrictions-windows-10.md#microsoft-defender-antivirus)
 - [End users: Turn on real-time protection to access company resources](/intune-user-help/turn-on-defender-windows)
 
 ### Malware definitions out of date
 
 This status shows when the malware definitions on the device are out of date by 14 days or more. For example, the message may show if the device is disconnected from the Internet, or the malware definitions are outdated.
 
-**Possible solutions**: If malware definitions are out of date, update the definitions using [Windows Defender Antivirus](../configuration/device-restrictions-windows-10.md#microsoft-defender-antivirus).
+**Possible solutions**: If malware definitions are out of date, update the definitions using [Microsoft Defender Antivirus](../configuration/device-restrictions-windows-10.md#microsoft-defender-antivirus).
 
 ### Full scan overdue or Quick scan overdue
 
 A full scan or quick scan hasn't completed for 14 days. This scenario can happen if the device restarts during a full scan.
 
-**Possible solutions**: If a scan is overdue, you can run a one-time scan or schedule recurring scans. See [Windows Defender Antivirus](../configuration/device-restrictions-windows-10.md#microsoft-defender-antivirus).
+**Possible solutions**: If a scan is overdue, you can run a one-time scan or schedule recurring scans. See [Microsoft Defender Antivirus](../configuration/device-restrictions-windows-10.md#microsoft-defender-antivirus).
 
 ### Another endpoint protection application running
 

@@ -28,9 +28,9 @@ highlightedContent:
     - title: Set up automatic enrollment for Windows 10 devices
       itemType: get-started
       url: ./enrollment/quickstart-setup-auto-enrollment.md
-    - title: Secure Windows devices with Microsoft recommended settings
-      itemType: get-started
-      url: ./protect/security-baselines.md
+    - title: Intune reports
+      itemType: overview
+      url: ./fundamentals/reports.md
 
 conceptualContent:
   items:

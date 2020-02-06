@@ -80,7 +80,7 @@ Detect threats to your network like Man-in-the-middle attacks, and prevent synch
 - Microsoft Intune subscription 
 - Sophos Mobile Threat Defense subscription
 
-For more information, see the [Sophos website](https://www.sophos.com/products/mobile-control).  
+For more information, see the [Sophos website](https://www.sophos.com/en-us/products/mobile-control.aspx).
 
 ## Next steps  
 - [Integrate Sophos with Intune](sophos-mtd-connector-integration.md)

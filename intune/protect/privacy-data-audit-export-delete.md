@@ -79,16 +79,6 @@ The **Retire** action removes Intune provisioned data like company applications,
 
 If an Intune tenant customer cancels their Intune account, all tenant data is deleted within 180 days after the customer closes the Intune account. If the AAD tenant is associated with other Microsoft enterprise subscriptions (Azure, Office 365), then only the Intune Customer Data is deleted. The AAD tenant resource is maintained for use by the other subscriptions. If the Intune account is the only subscription associated with the AAD tenant, then the tenant will be deleted and all resources and Customer Data will also be deleted.
 
-### Delete a user in a hybrid Mobile Device Management (MDM) environment
-When you have a hybrid MDM environment (Intune integrated with Configuration Manager) you must complete the following actions (in order) to fully delete a user and remove them completely from your local Active Directory, Configuration Manager, and Intune.
-
-1. Delete the user from your local Active Directory (AD). This will stop the user from being synchronized to Azure AD and also discovered by Configuration Manager discovery. 
-2. Delete the user from the Configuration Manager console to remove the user and associated data from Configuration Manager. In the console, go to **Asset and Compliance** > **Users**, right-click the user to delete, and click **Delete**.
-3. [Delete the user from AAD](https://docs.microsoft.com/azure/active-directory/fundamentals/add-users-azure-active-directory#delete-a-user), which removes the user and associated data from both Azure Active Directory and Intune at the same time. When the user is deleted from AAD (hard deleted), Intune receives the delete signal from AAD and then automatically begins purging all of that user’s personal data from the Intune service. The user’s information will be deleted from Intune service within 30 days of the removal action.
-
-> [!Important]
->Onboarding of new hybrid MDM customers has been deprecated. For more information, see the [Move from Hybrid Mobile Device Management to Intune on Azure](https://techcommunity.microsoft.com/t5/Intune-Customer-Success/Move-from-Hybrid-Mobile-Device-Management-to-Intune-on-Azure/ba-p/280150) blog post.
-
 ## Next steps
 
 Find out how to [audit, export, or delete](privacy-data-audit-export-delete.md) personal data in Intune.

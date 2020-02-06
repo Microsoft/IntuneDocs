@@ -28,13 +28,16 @@ ms.collection: M365-identity-device-management
 
 # Android Enterprise device settings to configure VPN in Intune
 
-[!INCLUDE [azure_portal](../includes/azure_portal.md)]
+
 
 This article lists and describes the different VPN connection settings you can control on Android Enterprise devices. As part of your mobile device management (MDM) solution, use these settings to create a VPN connection, choose how the VPN authenticates, select a VPN server type, and more.
 
 As an Intune administrator, you can create and assign VPN settings to Android Enterprise devices. 
 
 To learn more about VPN profiles in Intune, see [VPN profiles](vpn-settings-configure.md).
+
+> [!NOTE]
+> To configure always-on VPN, you need to create a VPN profile and also create a [device restrictions](device-restrictions-android-for-work.md#connectivity) profile with the Always-on VPN setting configured.
 
 ## Before you begin
 

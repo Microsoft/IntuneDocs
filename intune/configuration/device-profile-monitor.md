@@ -30,7 +30,7 @@ ms.collection: M365-identity-device-management
 
 # Monitor device profiles in Microsoft Intune
 
-[!INCLUDE [azure_portal](../includes/azure_portal.md)]
+
 
 Intune includes some features to help monitor and manage your device configuration profiles. For example, you can check the status of a profile, see which devices are assigned, and update the properties of a profile.
 

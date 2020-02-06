@@ -6,7 +6,7 @@ keywords:
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 09/19/2019
+ms.date: 01/15/2020
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: remote-actions
@@ -32,7 +32,26 @@ ms.collection: M365-identity-device-management
 
 Use Microsoft Intune to send custom notifications to the users of managed iOS and Android devices. These messages appear as standard push notifications from the Company Portal app and from the Microsoft Intune app on a user’s device, just as notifications from other applications on the device appear. Intune custom notifications aren’t supported by macOS and Windows devices.   
 
-Custom notification messages include a short title and a message body of 500 characters or less. These messages can be customized for any general communication purpose.
+Custom notification messages include a short title and a message body of 500 characters or fewer. These messages can be customized for any general communication purpose.
+
+### What the notification looks like on an iOS device
+
+If you have the Company Portal app open on an iOS device, the notification resembles the following screenshot:
+
+> [!div class="mx-imgBorder"]
+> ![Company Portal iOS Test notification](./media/custom-notifications/105046-1.png)
+
+If the device is locked, the notification resembles the following screenshot:
+
+> [!div class="mx-imgBorder"]
+> ![Locked Device iOS Test notification](./media/custom-notifications/105046-2.png)
+
+### What the notification looks like on an Android device
+
+If you have the Company Portal app open on an Android device, the notification resembles the following screenshot:
+
+> [!div class="mx-imgBorder"]
+> ![Android Test notification](./media/custom-notifications/105046-3.png)
 
 ## Common scenarios for sending custom notifications  
 
@@ -72,7 +91,7 @@ Custom notification messages include a short title and a message body of 500 cha
 
 ## Send a custom notification to groups  
 
-1. Sign in to the [Microsoft Endpoint Manager Admin Center](https://go.microsoft.com/fwlink/?linkid=2109431) with an account that has permissions to create and send notifications, and go to **Devices** > **Send custom notifications**.  
+1. Sign in to the [Microsoft Endpoint Manager Admin Center](https://go.microsoft.com/fwlink/?linkid=2109431) with an account that has permissions to create and send notifications, and go to **Tenant administration** > **Custom notifications**.  
 
 2. On the Basics tab, specify the following, and then select **Next** to continue.  
    - **Title** – Specify a title for this notification. Titles are limited to 50 characters.  
@@ -92,13 +111,13 @@ Intune doesn’t track the custom notifications you send, and devices don’t lo
 
 ## Send a custom notification to a single device  
 
-1. Sign in to the [Microsoft Endpoint Manager Admin Center](https://go.microsoft.com/fwlink/?linkid=2109431) with an account that has permissions to create and send notifications, and then go to **Devices** > **All devices**.  
+1. Sign in to the [Microsoft Endpoint Manager Admin Center](https://go.microsoft.com/fwlink/?linkid=2109431) with an account that has permissions to create and send notifications, and then go to **Devices** > **All devices**.
 
-2. Select the device to which you want to send a notification.  
+2. Double-click the name of the managed device to which you want to send a notification, to open that devices *Overview* page.
 
-3. On the devices **Overview** page, select the **…More** option from the upper left side of the page.  
+3. On the devices **Overview** page the **Send Custom Notification** device action to open the *Send Custom Notification* pane. If this option isn't available, select the **...** (ellipses) option from the upper right side of the page and then select **Send Custom Notification**.
 
-4. Select the **Send Custom Notification** device action to open the *Send Custom Notification* pane where you specify the following message details:  
+4. On the **Send Custom Notification** pane, specify the following message details:  
 
    - **Title** – Specify a title for this notification. Titles are limited to 50 characters.  
    - **Body** – Specify the message. Messages are limited to 500 characters.  

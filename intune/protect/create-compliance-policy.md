@@ -7,7 +7,7 @@ keywords:
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 10/21/2019
+ms.date: 11/18/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: protect
@@ -65,19 +65,15 @@ To use device compliance policies, be sure you:
 
 ## Create the policy
 
-1. Sign in to [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
-2. Select **Device compliance**. You have the following options:
+1. Sign in to the [Microsoft Endpoint Manager Admin Center](https://go.microsoft.com/fwlink/?linkid=2109431).
 
-    - **Overview**: Shows a summary and number of devices that are compliant, not evaluated, and so on. It also lists the policies and individual settings in your policies. [Monitor Intune device compliance policies](compliance-policy-monitor.md) provides some good information.
-    - **Manage**: Create device policies, send [notifications](quickstart-send-notification.md) to non-compliant devices, and enable [network fencing](use-network-locations.md).
-    - **Monitor**: Check the compliance status of your devices, and at the setting and policy level. [Monitor Intune device compliance policies](compliance-policy-monitor.md) is a good resource. Also view logs and check the threat agent status of your devices.
-    - **Setup**: Use the [built-in compliance policies](device-compliance-get-started.md#ways-to-deploy-device-compliance-policies), enable [Microsoft Defender advanced threat protection (ATP)](advanced-threat-protection.md), add a [mobile threat defense connector](mobile-threat-defense.md), and use [Jamf](conditional-access-integrate-jamf.md).
+2. Select **Devices** > **Compliance policies** > **Create Policy**.
 
-3. Select **Policies** > **Create Policy**. Enter the following properties:
+3. Specify the following properties:
 
-   - **Name**: Enter a descriptive name for the policy. Name your policies so you can easily identify them later. For example, a good policy name is **Mark iOS jailbroken devices as not compliant**.  
+   - **Name**: Enter a descriptive name for the policy. Name your policies so you can easily identify them later. For example, a good policy name is **Mark iOS jailbroken devices as not compliant**.
 
-   - **Description**: Enter a description for the policy. This setting is optional, but recommended.  
+   - **Description**: Enter a description for the policy. This setting is optional, but recommended.
 
    - **Platform**: Choose the platform of your devices. Your options:
      - **Android device administrator**
@@ -103,12 +99,12 @@ To use device compliance policies, be sure you:
    - **Locations** *(Android device administrator)*: In your policy, you can force compliance by the location of the device. Choose from existing locations. Don't have a location yet? [Use Locations (network fence)](use-network-locations.md) in Intune provides some guidance.  
 
    - **Actions for noncompliance**: For devices that don't meet your compliance policies, you can add a sequence of actions to apply automatically. You can change the schedule when the device is marked non-compliant, such as after one day. You can also configure a second action that sends an email to the user when the device isn't compliant.
-    
+
      [Add actions for noncompliant devices](actions-for-noncompliance.md) provides more information, including creating a notification email to your users.
 
      For example, you're using the Locations feature, and add a location in a compliance policy. The default action for noncompliance applies when you select at least one location. If the device isn't connected to the selected locations, it's immediately considered not compliant. You can give your users a grace period, such as one day.
 
-   - **Scope (Tags)**: Scope tags are a great way to assign and filter policies to specific groups, such as Sales, HR, All US-NC employees, and so on. After you add the settings, you can also add a scope tag to your compliance policies. [Use scope tags to filter policies](../fundamentals/scope-tags.md) is a good resource.
+   - **Scope (Tags)**: Scope tags are a great way to filter policies to specific groups, such as `US-NC IT Team` or `JohnGlenn_ITDepartment`. After you add the settings, you can also add a scope tag to your compliance policies. [Use scope tags to filter policies](../fundamentals/scope-tags.md) is a good resource.
 
 4. When finished, select **OK** > **Create** to save your changes. The policy is created, and shown in the list. Next, assign the policy to your groups.
 
@@ -116,8 +112,10 @@ To use device compliance policies, be sure you:
 
 Once a policy is created, the next step is to assign the policy to your groups:
 
-1. Choose a policy you created. Existing policies are in **Device compliance** > **Policies**.
-2. Select the policy > **Assignments**. You can include or exclude Azure Active Directory (AD) security groups.
+1. Choose a policy you created. Existing policies are in **Devices** > **Compliance policies** > **Policies**.
+
+2. Select the *policy* > **Assignments**. You can include or exclude Azure Active Directory (AD) security groups.
+
 3. Choose **Selected groups** to see your Azure AD security groups. Select the groups you want this policy to apply > Choose **Save** to deploy the policy.
 
 The users or devices targeted by your policy are evaluated for compliance when they check-in with Intune.
@@ -126,8 +124,9 @@ The users or devices targeted by your policy are evaluated for compliance when t
 
 When you assign the policy, you can also **Evaluate** how many users are affected. This feature calculates users; it doesn't calculate devices.
 
-1. In Intune, select **Device compliance** > **Policies**.
-2. Select a policy > **Assignments** > **Evaluate**. A message shows you how many users are targeted by this policy.
+1. In Intune, select **Devices** > **Compliance policies** > **Policies**.
+
+2. Select a *policy* > **Assignments** > **Evaluate**. A message shows you how many users are targeted by this policy.
 
 If the **Evaluate** button is grayed out, make sure the policy is assigned to one or more groups.
 

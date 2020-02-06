@@ -8,7 +8,7 @@ keywords:
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 10/22/2019
+ms.date: 01/23/2020
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: apps
@@ -36,6 +36,9 @@ ms.collection: M365-identity-device-management
 Use the information in this article to help you add macOS line-of-business apps to Microsoft Intune. You must download an external tool to pre-process your *.pkg* files before you can upload your line-of-business file to Microsoft Intune. The pre-processing of your *.pkg* files must take place on a macOS device.
 
 > [!NOTE]
+> Starting with the release of macOS Catalina 10.15, prior to adding your apps to Intune, check to make sure your macOS LOB apps are notarized. If the developers of your LOB apps did not notarize their apps, the apps will fail to run on your users' macOS devices. For more information about how to check if an app is notarized, visit [Notarize your macOS apps to prepare for macOS Catalina](https://techcommunity.microsoft.com/t5/Intune-Customer-Success/Support-Tip-Notarizing-your-macOS-apps-to-prepare-for-macOS/ba-p/808579).
+
+> [!NOTE]
 > While users of macOS devices can remove some of the built-in macOS apps like Stocks, and Maps, you cannot use Intune to redeploy those apps. If end users delete these apps, they must go to the app store, and manually re install them.
 
 ## Before your start
@@ -60,7 +63,9 @@ You must download an external tool, mark the downloaded tool as an executable, a
 3. Use the `IntuneAppUtil` command within the **Intune App Wrapping Tool for Mac** to wrap *.pkg* LOB app file from a *.intunemac* file.<br>
 
     Sample commands to use for the Microsoft Intune App Wrapping Tool for macOS:
-    
+    > [!IMPORTANT]
+    > Ensure that the argument `<source_file>` does not contain spaces before running the `IntuneAppUtil` commands.
+
     - `IntuneAppUtil -h`<br>
     This command will show usage information for the tool.
     
@@ -70,50 +75,63 @@ You must download an external tool, mark the downloaded tool as an executable, a
     - `IntuneAppUtil -r <filename.intunemac> [-v]`<br>
     This command will extract the detected parameters and version for the created *.intunemac* file.
 
-## Step 1 - Specify the software setup file
+## Select the app type
 
-1. Sign in to [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
-3. On the **Intune** pane, choose **Client apps**.
-4. In the **Client apps** workload, choose **Manage** > **Apps**.
-5. Above the list of apps, choose **Add**.
-6. In the **Add App** pane, choose **Line-of-business app**.
+1. Sign in to the [Microsoft Endpoint Manager Admin Center](https://go.microsoft.com/fwlink/?linkid=2109431).
+2. Select **Apps** > **All apps** > **Add**.
+3. In the **Select app type** pane, under the **Other** app types, select **Line-of-business app**.
+4. Click **Select**. The **Add app** steps are displayed.
 
-## Step 2 - Configure the app package file
+## Step 1 - App information
 
-1. On the **Add app** pane, choose **App package file**.
-2. On the **App package file** pane, choose the browse button, and select an macOS installation file with the extension *.intunemac*.
-3. When you are finished, choose **OK**.
+### Select the app package file
 
+1. In the **Add app** pane, click **Select app package file**. 
+2. In the **App package file** pane, select the browse button. Then, select an macOS installation file with the extension *.intunemac*.
+   The app details will be displayed.
+3. When you're finished, select **OK** on the **App package file** pane to add the app.
 
-## Step 3 - Configure app information
+### Set app information
 
-1. On the **Add app** pane, choose **App information**.
-2. On the **App information** pane, add the details for your app. Depending on the app you have chosen, some of the values in this pane might have been automatically filled-in:
-    - **Name** - Enter the name of the app to be displayed in the company portal. Make sure all app names that you use are unique. If the same app name exists twice, only one of the apps will be displayed to users in the company portal.
-    - **Description** - Enter a description for the app to be displayed to users in the company portal.
-    - **Publisher** - Enter the name of the publisher of the app.
-    - **Minimum Operating System** - From the list, choose the minimum operating system version on which the app can be installed. If you assign the app to a device with an earlier operating system, it will not be installed.
-    - **Category** - Select one or more of the built-in app categories, or a category you created. This makes it easier for users to find the app when they browse the company portal.
-    - **Display this as a featured app in the Company Portal** - Display the app prominently on the main page of the company portal when users browse for apps.
-    - **Information URL** - Optionally, enter the URL of a website that contains information about this app. The URL is displayed to users in the company portal.
-    - **Privacy URL** - Optionally, enter the URL of a website that contains privacy information for this app. The URL is displayed to users in the company portal.
-    - **Developer** - Optionally, enter the name of the app developer.
-    - **Owner** - Optionally, enter a name for the owner of this app, for example, **HR department**.
-    - **Notes** - Enter any notes you would like to associate with this app.
-    - **Logo** - Upload an icon that is associated with the app. This is the icon that is displayed with the app when users browse the company portal.
-3. When you are finished, choose **OK**.
+1. In the **App information** page, add the details for your app. Depending on the app that you chose, some of the values in this pane might be automatically filled in.
+    - **Name**: Enter the name of the app as it appears in the company portal. Make sure all app names that you use are unique. If the same app name exists twice, only one of the apps appears in the company portal.
+    - **Description**: Enter the description of the app. The description appears in the company portal.
+    - **Publisher**: Enter the name of the publisher of the app.
+    - **Minimum Operating System**: From the list, choose the minimum operating system version on which the app can be installed. If you assign the app to a device with an earlier operating system, it will not be installed.
+    - **Category**: Select one or more of the built-in app categories, or select a category that you created. Categories make it easier for users to find the app when they browse through the company portal.
+    - **Show this as a featured app in the Company Portal**: Display the app prominently on the main page of the company portal when users browse for apps.
+    - **Information URL**: Optionally, enter the URL of a website that contains information about this app. The URL appears in the company portal.
+    - **Privacy URL**: Optionally, enter the URL of a website that contains privacy information for this app. The URL appears in the company portal.
+    - **Developer**: Optionally, enter the name of the app developer.
+    - **Owner**: Optionally, enter a name for the owner of this app. An example is **HR department**.
+    - **Notes**: Enter any notes that you want to associate with this app.
+    - **Logo**: Upload an icon that is associated with the app. This icon is displayed with the app when users browse through the company portal.
+2. Click **Next** to display the **Scope tags** page.
 
-## Step 4 - Finish up
+## Step 2 - Select scope tags (optional)
+You can use scope tags to determine who can see client app information in Intune. For full details about scope tags, see [Use role-based access control and scope tags for distributed IT](../fundamentals/scope-tags.md).
 
-1. On the **Add app** pane, verify that the details for your app is correct.
-2. Choose **Add**, to upload the app to Intune.
+1. Click **Select scope tags** to optionally add scope tags for the app. 
+2. Click **Next** to display the **Assignments** page.
+
+## Step 3 - Assignments
+
+1. Select the **Required**, **Available for enrolled devices**, or **Uninstall** group assignments for the app. For more information, see [Add groups to organize users and devices](~/fundamentals/groups-add.md) and [Assign apps to groups with Microsoft Intune](apps-deploy.md).
+2. Click **Next** to display the **Review + create** page. 
+
+## Step 4 - Review + create
+
+1. Review the values and settings you entered for the app.
+2. When you are done, click **Create** to add the app to Intune.
+
+    The **Overview** blade for the line-of-business app is displayed.
 
 The app you have created appears in the apps list where you can assign it to the groups you choose. For help, see [How to assign apps to groups](apps-deploy.md).
 
 > [!NOTE]
 > If the *.pkg* file contains multiple apps or app installers, then Microsoft Intune will only report that the *app* is successfully installed when all installed apps are detected on the device.
 
-## Step 5 - Update a line-of-business app
+## Update a line-of-business app
 
 [!INCLUDE [shared-proc-lob-updateapp](../includes/shared-proc-lob-updateapp.md)]
 

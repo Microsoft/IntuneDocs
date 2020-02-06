@@ -54,7 +54,7 @@ Additionally, you can generate reports that show installation and license counts
 > The **Licenses** workspace is not displayed in the administrator console until you are managing at least one Windows PC with the Intune Windows PC client.
 
 ## Add Microsoft Volume Licensing agreements
-Intune Volume Licensing agreements provide license information for software that was purchased through Microsoft Volume Licensing agreements. You can add Microsoft Volume Licensing agreements to Intune by providing matched pairs of agreement numbers. The agreement or authorization numbers must be matched to the correct license or enrollment numbers. Agreement number pairs are obtained when you purchase your license agreements from the [Volume Licensing Service Center (VLSC)](http://go.microsoft.com/fwlink/?LinkID=223842).
+Intune Volume Licensing agreements provide license information for software that was purchased through Microsoft Volume Licensing agreements. You can add Microsoft Volume Licensing agreements to Intune by providing matched pairs of agreement numbers. The agreement or authorization numbers must be matched to the correct license or enrollment numbers. Agreement number pairs are obtained when you purchase your license agreements from the [Volume Licensing Service Center (VLSC)](https://go.microsoft.com/fwlink/?LinkID=223842).
 
 1. In the [Microsoft Intune administrator console](https://admin.manage.microsoft.com/), choose **Licenses**.
 
@@ -119,7 +119,7 @@ Intune Volume Licensing agreements provide license information for software that
 
 The **All Agreements** view is displayed, and Intune connects to the Microsoft VLSC to validate the agreement number pairs that you provided.
 
-To update the volume license information after you have added license agreements in Intune, in the **Licenses Overview** page, choose **Refresh Now**. This action retrieves the current license information from the [Microsoft Volume Licensing Service Center (VLSC)](http://go.microsoft.com/fwlink/?LinkId=223842).
+To update the volume license information after you have added license agreements in Intune, in the **Licenses Overview** page, choose **Refresh Now**. This action retrieves the current license information from the [Microsoft Volume Licensing Service Center (VLSC)](https://go.microsoft.com/fwlink/?LinkId=223842).
 
 > [!IMPORTANT]
 > Until you refresh the volume licensing information, you may see different information in the agreements list and the entitlement information on the **Agreements Overview** page.

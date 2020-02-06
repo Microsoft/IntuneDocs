@@ -30,7 +30,7 @@ ms.collection: M365-identity-device-management
 
 # Troubleshoot and see potential issues on Android Zebra devices in Microsoft Intune
 
-[!INCLUDE [azure_portal](../includes/azure_portal.md)]
+
 
 In Microsoft Intune, you can use [Zebra Mobility Extensions (MX) to manage Android Zebra devices](android-zebra-mx-overview.md). When using Zebra devices, you create profiles in StageNow to manage settings, and upload them to Intune. Intune uses the StageNow app to apply the settings on the devices. The StageNow app also creates a detailed log file on the device that's used to troubleshoot.
 

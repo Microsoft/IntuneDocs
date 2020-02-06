@@ -7,7 +7,7 @@ keywords:
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 10/15/2019
+ms.date: 01/28/2020
 ms.topic: troubleshooting
 ms.service: microsoft-intune
 ms.subservice: configuration
@@ -29,8 +29,6 @@ ms.collection: M365-identity-device-management
 ---
 
 # Common questions, issues, and resolutions with device policies and profiles in Microsoft Intune
-
-[!INCLUDE [azure_portal](../includes/azure_portal.md)]
 
 Get answers to common questions when working with device profiles and policies in Intune. This article also lists the check-in time intervals, provides more detains on conflicts, and more.
 
@@ -54,7 +52,9 @@ Some additional recommendations:
 
 Intune notifies the device to check in with the Intune service. The notification times vary, including immediately up to a few hours. These notification times also vary between platforms.
 
-If a device doesn't check in to get the policy or profile after the first notification, Intune makes three more attempts. An offline device, such as turned off, or not connected to a network, may not receive the notifications. In this case, the device gets the policy or profile on its next scheduled check-in with the Intune service, which is **estimated** at:
+If a device doesn't check in to get the policy or profile after the first notification, Intune makes three more attempts. An offline device, such as turned off, or not connected to a network, may not receive the notifications. In this case, the device gets the policy or profile on its next scheduled check-in with the Intune service. The same applies to checks for non-compliance, including devices that move from a compliant to a non-compliant state.
+
+**Estimated** frequencies:
 
 | Platform | Refresh cycle|
 | --- | --- |
@@ -65,7 +65,7 @@ If a device doesn't check in to get the policy or profile after the first notifi
 | Windows Phone | About every 8 hours |
 | Windows 8.1 | About every 8 hours |
 
-If the device recently enrolled, the compliance and configuration check-in runs more frequently, which is **estimated** at:
+If the device recently enrolled, the compliance, non-compliance, and configuration check-in runs more frequently, which is **estimated** at:
 
 | Platform | Frequency |
 | --- | --- |
@@ -78,10 +78,6 @@ If the device recently enrolled, the compliance and configuration check-in runs 
 
 At any time, users can open the Company Portal app, **Settings** > **Sync** to immediately check for policy or profile updates.
 
-For devices without user affinity, the sync frequency immediately following enrollment can vary from hours to a day, or more. Intune sends requests at various intervals for a device to check in with Intune. However, it's still up to the device to check in. After initial enrollment, the time it takes a device to complete the check-in is unpredictable. It also depends on the type of device enrollment, and the policies and profiles assigned to a device. After the device enrolls, and all initial policies and profiles are applied, the device checks for new policies and profiles about every 6-8 hours, based on the time the device enrolls in Intune.
-
-As a best practice, make sure your devices are online for at least eight consecutive hours to get the best results.
-
 ## What actions cause Intune to immediately send a notification to a device?
 
 There are different actions that trigger a notification, such as when a policy, profile, or app is assigned (or unassigned), updated, deleted, and so on. These action times vary between platforms.
@@ -89,6 +85,8 @@ There are different actions that trigger a notification, such as when a policy, 
 Devices check in with Intune when they receive a notification to check in, or during the scheduled check-in. When you target a device or user with an action, such as lock, passcode reset, app, profile or policy assignment, then Intune immediately notifies the device to check in to receive these updates.
 
 Other changes, such as revising the contact information in the Company Portal app, don't cause an immediate notification to devices.
+
+The settings in the policy or profile are applied at every check-in. The [Windows 10 MDM policy refresh blog post](https://www.petervanderwoude.nl/post/windows-10-mdm-policy-refresh/) may be a good resource.
 
 ## If multiple policies are assigned to the same user or device, how do I know which settings gets applied?
 

@@ -56,7 +56,7 @@ The following platforms are supported for Wandera when enrolled in Intune:
 - Android 5.0 and later  
 - iOS 10.2 and later  
 
-For more information about platform and device, see the [Wandera website](https://www.wandera.com/why-wandera/features/device-support/).
+For more information about platform and device, see the [Wandera website](https://www.wandera.com/mobile-threat-defense/).
 
 ## Prerequisites  
 

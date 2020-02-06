@@ -64,8 +64,8 @@ For more information, see [Protect apps and data with Microsoft Intune](../apps/
 ## Control Windows Hello for Business settings on Windows devices
 Intune lets you integrate with [Windows Hello for Business](windows-hello.md) which is an alternative sign-in method for Windows 10 and later that uses Active Directory, or an Azure Active Directory account to replace a password, smart card, or virtual smart card.
 
-## Bypass Activation Lock on iOS devices
-Activation Lock is a feature that help protect users' devices. The feature requires users to enter their Apple ID and password before anyone can erase or reactivate the device. However, this feature can lead to problems, for example if the user leaves the company without removing the lock. [iOS Activation Lock bypass](../remote-actions/device-activation-lock-bypass.md) can help by removing the lock from supervised iOS devices allowing you to reallocate, or erase them.
+## Disable Activation Lock on iOS devices
+Activation Lock is a feature that help protect users' devices. The feature requires users to enter their Apple ID and password before anyone can erase or reactivate the device. However, this feature can lead to problems, for example if the user leaves the company without removing the lock. [Disable iOS Activation Lock](../remote-actions/device-activation-lock-disable.md) can help by removing the lock from supervised iOS devices allowing you to reallocate, or erase them.
 
 ## Next steps
 

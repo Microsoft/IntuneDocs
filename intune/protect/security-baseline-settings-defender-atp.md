@@ -7,7 +7,7 @@ description: Security baseline settings supported by Intune for managing Microso
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 10/25/2019
+ms.date: 12/05/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.subservice: protect
@@ -96,7 +96,7 @@ For more information, see [Policy CSP - SmartScreen](https://docs.microsoft.com/
   **Default**: Block 
 
 - **Prevent credential stealing type**  
-  Set to *Enable* to [Protect derived domain credentials with Credential Guard](https://docs.microsoft.com/windows/security/identity-protection/credential-guard/credential-guard). Windows Defender Credential Guard uses virtualization-based security to isolate secrets so that only privileged system software can access them. Unauthorized access to these secrets can lead to credential theft attacks, such as Pass-the-Hash or Pass-The-Ticket. Windows Defender Credential Guard prevents these attacks by protecting NTLM password hashes, Kerberos Ticket Granting Tickets, and credentials stored by applications as domain credentials.  
+  Set to *Enable* to [Protect derived domain credentials with Credential Guard](https://docs.microsoft.com/windows/security/identity-protection/credential-guard/credential-guard). Microsoft Defender Credential Guard uses virtualization-based security to isolate secrets so that only privileged system software can access them. Unauthorized access to these secrets can lead to credential theft attacks, such as Pass-the-Hash or Pass-The-Ticket. Microsoft Defender Credential Guard prevents these attacks by protecting NTLM password hashes, Kerberos Ticket Granting Tickets, and credentials stored by applications as domain credentials.  
 
   **Default**: Enable
 
@@ -287,7 +287,7 @@ For more information, see [WindowsAdvancedThreatProtection CSP](https://docs.mic
   You can also convert and import an existing EMET configuration XML file into an exploit protection configuration XML.
 
 - **Block exploit protection override**  
-  [WindowsDefenderSecurityCenter/DisallowExploitProtectionOverride](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-windowsdefendersecuritycenter#windowsdefendersecuritycenter-disallowexploitprotectionoverride) – Set to *Yes* to prevent users from making changes to the exploit protection settings area in the Windows Defender Security Center. If you disable or don't configure this setting, local users can make changes in the exploit protection settings area.  
+  [WindowsDefenderSecurityCenter/DisallowExploitProtectionOverride](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-windowsdefendersecuritycenter#windowsdefendersecuritycenter-disallowexploitprotectionoverride) – Set to *Yes* to prevent users from making changes to the exploit protection settings area in the Microsoft Defender Security Center. If you disable or don't configure this setting, local users can make changes in the exploit protection settings area.  
   **Default**: Yes  
 
 ## Microsoft Defender Antivirus  
@@ -295,17 +295,17 @@ For more information, see [WindowsAdvancedThreatProtection CSP](https://docs.mic
 For more information, see [Policy CSP - Defender](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender) in the Windows documentation.
 
 - **Scan scripts loaded in Microsoft web browsers**  
-  [Defender/AllowScriptScanning](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-allowscriptscanning) – Set to *Yes* to allow Windows Defender Script Scanning functionality.  
+  [Defender/AllowScriptScanning](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-allowscriptscanning) – Set to *Yes* to allow Microsoft Defender Script Scanning functionality.  
 
   **Default**: Yes
 
 - **Scan incoming mail messages**  
-  [Defender/AllowEmailScanning](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-allowemailscanning) – Set to *Yes* to allow Windows Defender to scan email.  
+  [Defender/AllowEmailScanning](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-allowemailscanning) – Set to *Yes* to allow Microsoft Defender to scan email.  
 
   **Default**: Yes
 
 - **Defender sample submission consent**  
-  [Defender/SubmitSamplesConsent](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-submitsamplesconsent) - Checks for the user consent level in Windows Defender to send data. If the required consent has already been granted, Windows Defender submits them. If not (and if the user has specified never to ask), the UI is launched to ask for user consent (when *Cloud-delivered protection* is set to *Yes*) before sending data.  
+  [Defender/SubmitSamplesConsent](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-submitsamplesconsent) - Checks for the user consent level in Microsoft Defender to send data. If the required consent has already been granted, Microsoft Defender submits them. If not (and if the user has specified never to ask), the UI is launched to ask for user consent (when *Cloud-delivered protection* is set to *Yes*) before sending data.  
 
   **Default**: Send safe samples automatically
 
@@ -325,7 +325,7 @@ For more information, see [Policy CSP - Defender](https://docs.microsoft.com/win
     **Default**: Yes
 
 - **Defender block on access protection**  
-  [Defender/AllowOnAccessProtection](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-allowonaccessprotection) – When set to *Yes*, Windows Defender On Access Protection is enabled.  
+  [Defender/AllowOnAccessProtection](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-allowonaccessprotection) – When set to *Yes*, Microsoft Defender On Access Protection is enabled.  
 
   **Default**: Yes
 
@@ -352,30 +352,30 @@ For more information, see [Policy CSP - Defender](https://docs.microsoft.com/win
   **Default**: 2 AM
 
 - **Cloud-delivered protection**  
-  [Defender/AllowCloudProtection](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-allowcloudprotection) – When set to *Yes*, Windows Defender sends information to Microsoft about any problems it finds. Microsoft will analyze that information, learn more about problems affecting you and other customers, and offer improved solutions.
+  [Defender/AllowCloudProtection](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-allowcloudprotection) – When set to *Yes*, Microsoft Defender sends information to Microsoft about any problems it finds. Microsoft will analyze that information, learn more about problems affecting you and other customers, and offer improved solutions.
 
   When this policy is set to *Yes*, you can use *Defender sample submission consent type* to give users control over sending information from their device.  
 
   **Default**: Yes
 
 - **Defender potentially unwanted app action**  
-  [Defender/PUAProtection](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-puaprotection) –Windows Defender Antivirus can identify and block *potentially unwanted applications* (PUAs) from downloading and installing on endpoints in your network. 
+  [Defender/PUAProtection](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-puaprotection) – Microsoft Defender Antivirus can identify and block *potentially unwanted applications* (PUAs) from downloading and installing on endpoints in your network. 
  
-  - When set to *Block*, Windows Defender blocks PUAs, and lists them in history along with other threats.
-  - When set to *Audit*, Windows defender detects PUAs but doesn't block them. Information about the applications Windows Defender would have taken action against can be found by searching for events that were created by Windows Defender in the Event Viewer.  
+  - When set to *Block*, Microsoft Defender blocks PUAs, and lists them in history along with other threats.
+  - When set to *Audit*, Microsoft Defender detects PUAs but doesn't block them. Information about the applications Microsoft Defender would have taken action against can be found by searching for events that were created by Microsoft Defender in the Event Viewer.  
   - When set to *Device default*, PUA protection is off.  
  
   **Default**: Block
 
 - **Defender cloud extended timeout**  
-  [Defender/CloudExtendedTimeout](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-cloudextendedtimeout) - Specify the maximum amount of additional time that Windows Defender Antivirus should block a file while waiting for a result from the cloud. The base amount of time Windows Defender waits is 10 seconds. Any additional time you specify here (up to 50 seconds) is added to those 10 seconds. In most cases the scan takes less time than the maximum. Extending the time allows the cloud to thoroughly investigate suspicious files.  
+  [Defender/CloudExtendedTimeout](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-cloudextendedtimeout) - Specify the maximum amount of additional time that Microsoft Defender Antivirus should block a file while waiting for a result from the cloud. The base amount of time Microsoft Defender waits is 10 seconds. Any additional time you specify here (up to 50 seconds) is added to those 10 seconds. In most cases the scan takes less time than the maximum. Extending the time allows the cloud to thoroughly investigate suspicious files.  
 
   By default the expanded time value is 0 (disabled). Intune recommends that you enable this setting and specify at least 20 additional seconds.  
  
   **Default**: 0
 
 - **Scan archive files**  
-  [Defender/AllowArchiveScanning](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-allowarchivescanning) – Set to *Yes*  to have Windows Defender scan archive files.  
+  [Defender/AllowArchiveScanning](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-allowarchivescanning) – Set to *Yes*  to have Microsoft Defender scan archive files.  
 
   **Default**: Yes
 
@@ -387,17 +387,17 @@ For more information, see [Policy CSP - Defender](https://docs.microsoft.com/win
   **Default**: User defined
 
 - **Behavior monitoring**  
-  [Defender/AllowBehaviorMonitoring](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-allowbehaviormonitoring) – Set to *Yes* to turn on Windows Defender Behavior Monitoring functionality. Embedded in Windows 10, Windows Defender Behavior Monitoring sensors collect and process behavioral signals from the operating system and send this sensor data to your private, isolated, cloud instance of Microsoft Defender ATP.  
+  [Defender/AllowBehaviorMonitoring](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-allowbehaviormonitoring) – Set to *Yes* to turn on Microsoft Defender Behavior Monitoring functionality. Embedded in Windows 10, Microsoft Defender Behavior Monitoring sensors collect and process behavioral signals from the operating system and send this sensor data to your private, isolated, cloud instance of Microsoft Defender ATP.  
 
   **Default**: Yes
 
 - **Scan files opened from network folders**  
-  [Defender/AllowScanningNetworkFiles](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-allowscanningnetworkfiles) – Set to *Yes* to have Windows Defender scan files on the network. The user won’t be able to remove detected malware from read-only files.  
+  [Defender/AllowScanningNetworkFiles](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-allowscanningnetworkfiles) – Set to *Yes* to have Microsoft Defender scan files on the network. The user won’t be able to remove detected malware from read-only files.  
 
   **Default**: Yes
 
 - **Defender cloud block level**  
-  [Defender/CloudBlockLevel](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-cloudblocklevel) – Use this policy to determine how aggressive Windows Defender Antivirus is in blocking and scanning suspicious files. Options include:
+  [Defender/CloudBlockLevel](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-cloudblocklevel) – Use this policy to determine how aggressive Microsoft Defender Antivirus is in blocking and scanning suspicious files. Options include:
 
   - High - Aggressively block unknown files while optimizing client performance (greater chance of false positives)
   - High plus - Aggressively block unknown files and apply additional protection measures (might impact client performance)
@@ -406,24 +406,24 @@ For more information, see [Policy CSP - Defender](https://docs.microsoft.com/win
   **Default**: Not Configured
 
 - **Real-time monitoring**  
-  [Defender/AllowRealtimeMonitoring](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-allowrealtimemonitoring) – Set to *Yes* to allow Windows Defender Realtime Monitoring.  
+  [Defender/AllowRealtimeMonitoring](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-allowrealtimemonitoring) – Set to *Yes* to allow Microsoft Defender Realtime Monitoring.  
 
   **Default**: Yes
 
 - **CPU usage limit during a scan**  
-  [Defender/AvgCPULoadFactor](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-avgcpuloadfactor) – Specify the maximum average CPU % usage that Windows Defender can use during a scan.  
+  [Defender/AvgCPULoadFactor](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-avgcpuloadfactor) – Specify the maximum average CPU % usage that Microsoft Defender can use during a scan.  
 
   **Default**: 50
 
 - **Scan mapped network drives during a full scan**  
-  [Defender/AllowFullScanOnMappedNetworkDrives](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-allowfullscanonmappednetworkdrives) - Set to *Yes* to have Windows Defender scan files on the network. The user can't remove detected malware from read-only files,
+  [Defender/AllowFullScanOnMappedNetworkDrives](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-allowfullscanonmappednetworkdrives) - Set to *Yes* to have Microsoft Defender scan files on the network. The user can't remove detected malware from read-only files,
 
   Related setting in this list: *Defender/AllowScanningNetworkFiles*
 
   **Default**: Yes
 
 - **Block end-user access to Defender**  
-  [Defender/AllowUserUIAccess](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-allowuseruiaccess) – Set to *Yes* to block end-users access to the Windows Defender UI on their device.  
+  [Defender/AllowUserUIAccess](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-allowuseruiaccess) – Set to *Yes* to block end-users access to the Microsoft Defender UI on their device.  
 
   **Default**: Yes
 
@@ -432,7 +432,7 @@ For more information, see [Policy CSP - Defender](https://docs.microsoft.com/win
 
   **Default**: 2 AM
 
-## Windows Defender Firewall
+## Microsoft Defender Firewall
 For more information, see [Firewall CSP](https://docs.microsoft.com/windows/client-management/mdm/firewall-csp) in the Windows documentation.
 
 - **Security association idle time before deletion** - *MdmStore/Global/SaIdleTime*   
@@ -566,29 +566,29 @@ For more information, see [Firewall CSP](https://docs.microsoft.com/windows/clie
 ## Web & Network Protection  
 
 - **Network protection type**  
-  [Defender/EnableNetworkProtection](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-enablenetworkprotection)  - This policy allows you to turn network protection on or off in Windows Defender Exploit Guard. Network protection is a feature of Windows Defender Exploit Guard that protects employees using any app from accessing phishing scams, exploit-hosting sites, and malicious content on the Internet. This includes preventing third-party browsers from connecting to dangerous sites.  
+  [Defender/EnableNetworkProtection](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-enablenetworkprotection)  - This policy allows you to turn network protection on or off in Microsoft Defender Exploit Guard. Network protection is a feature of Microsoft Defender Exploit Guard that protects employees using any app from accessing phishing scams, exploit-hosting sites, and malicious content on the Internet. This includes preventing third-party browsers from connecting to dangerous sites.  
 
-  When set to either *Enable* or *Audit mode*, users can’t turn off network protection, and you can use the Windows Defender Security Center to view information about connection attempts.  
+  When set to either *Enable* or *Audit mode*, users can’t turn off network protection, and you can use the Microsoft Defender Security Center to view information about connection attempts.  
  
   - *Enable* will block users and apps from connecting to dangerous domains.  
   - *Audit mode* doesn’t block users and apps from connecting to dangerous domains.  
 
-  When set to *User defined*, users and apps aren’t blocked from connecting to dangerous domains, and information about connections isn’t available in Windows Defender Security Center.  
+  When set to *User defined*, users and apps aren’t blocked from connecting to dangerous domains, and information about connections isn’t available in Microsoft Defender Security Center.  
 
   **Default**: Audit mode
 
 - **Require SmartScreen for Microsoft Edge**  
-  [Browser/AllowSmartScreen](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-browser#browser-allowsmartscreen) - Microsoft Edge uses Windows Defender SmartScreen (turned on) to protect users from potential phishing scams and malicious software by default. By default, this policy is enabled (set to *Yes*), and when enabled prevents users from turning off Windows Defender SmartScreen.  When the effective policy for a device is equal to Not configured, users can turn off Windows Defender SmartScreen, which leaves the device unprotected.  
+  [Browser/AllowSmartScreen](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-browser#browser-allowsmartscreen) - Microsoft Edge uses Microsoft Defender SmartScreen (turned on) to protect users from potential phishing scams and malicious software by default. By default, this policy is enabled (set to *Yes*), and when enabled prevents users from turning off Microsoft Defender SmartScreen.  When the effective policy for a device is equal to Not configured, users can turn off Microsoft Defender SmartScreen, which leaves the device unprotected.  
 
   **Default**: Yes
   
 - **Block malicious site access**  
-  [Browser/PreventSmartScreenPromptOverride](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-browser#browser-preventsmartscreenpromptoverride) - By default, Microsoft Edge allows users to bypass (ignore) the Windows Defender SmartScreen warnings about potentially malicious sites, allowing users to continue to the site. With this policy enabled (set to *Yes*), Microsoft Edge prevents users from bypassing the warnings and blocks them from continuing to the site.  
+  [Browser/PreventSmartScreenPromptOverride](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-browser#browser-preventsmartscreenpromptoverride) - By default, Microsoft Edge allows users to bypass (ignore) the Microsoft Defender SmartScreen warnings about potentially malicious sites, allowing users to continue to the site. With this policy enabled (set to *Yes*), Microsoft Edge prevents users from bypassing the warnings and blocks them from continuing to the site.  
 
   **Default**: Yes
 
 - **Block unverified file download**  
-  [Browser/PreventSmartScreenPromptOverrideForFiles](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-browser#browser-preventsmartscreenpromptoverrideforfiles) - By default, Microsoft Edge allows users to bypass (ignore) the Windows Defender SmartScreen warnings about potentially malicious files, allowing them to continue downloading unverified files. With this policy enabled (set to *Yes*), users are prevented from bypassing the warnings and can't download unverified files.  
+  [Browser/PreventSmartScreenPromptOverrideForFiles](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-browser#browser-preventsmartscreenpromptoverrideforfiles) - By default, Microsoft Edge allows users to bypass (ignore) the Microsoft Defender SmartScreen warnings about potentially malicious files, allowing them to continue downloading unverified files. With this policy enabled (set to *Yes*), users are prevented from bypassing the warnings and can't download unverified files.  
 
   **Default**: Yes
 
@@ -599,8 +599,18 @@ For more information, see [PassportForWork CSP](https://docs.microsoft.com/windo
 - **Configure Windows Hello for Business** - *TenantId/Policies/UsePassportForWork*    
   Windows Hello for Business is an alternative method for signing into Windows by replacing passwords, Smart Cards, and Virtual Smart Cards.  
 
+
+  > [!IMPORTANT]
+  > The options for this setting are reversed from their implied meaning. While reversed, a value of *Yes* does not enable Windows Hello and instead is treated as *Not configured*. When this setting is set to *Not configured*, Windows Hello is enabled on devices that receive this baseline.
+  >
+  > The following descriptions have been revised to reflect this behavior. The reversal of settings will be fixed in a future update to this security baseline.
+
+  - When set to *Not configured*, Windows Hello is enabled, and the device provisions Windows Hello for Business.
+  - When set to *Yes*, the baseline does not affect the policy setting of the device. This means that if Windows Hello for Business is disabled on a device, it remains disabled. If it's enabled, it remains enabled.
+  <!-- expected behavior 
   - When set to *Yes*, you  enable this policy and the device provisions Windows Hello for Business.  
   - When set to *Not configured*, the baseline does not affect the policy setting of the device. This means that if Windows Hello for Business is disabled on a device, it remains disabled. If its enabled, it remains enabled. 
+  -->
 
   You cannot disable Windows Hello for Business through this baseline. You can disable Windows Hello for Business when you configure [Windows enrollment](windows-hello.md), or as part of a device configuration profile for [identity protection](identity-protection-configure.md).  
 

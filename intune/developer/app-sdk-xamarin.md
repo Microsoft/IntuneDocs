@@ -7,7 +7,7 @@ keywords: sdk, Xamarin, intune
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 08/21/2019
+ms.date: 12/04/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.subservice: developer
@@ -65,6 +65,18 @@ The Intune SDK relies on [Active Directory Authentication Library (ADAL)](https:
 
 If your application is already configured to use ADAL or MSAL, and has its own custom client ID used to authenticate with Azure Active Directory, ensure the steps to give your Xamarin app permissions to the Intune Mobile Application Management (MAM) service are followed. Use the instructions in the "[Give your app access to the Intune app protection service](app-sdk-get-started.md#give-your-app-access-to-the-intune-app-protection-service-optional)" section of the [getting started with the Intune SDK guide](app-sdk-get-started.md).
 
+## Security Considerations
+
+To prevent potential spoofing, information disclosure, and elevation of privilege attacks:
+
+* Ensure that Xamarin app development is performed on a secure work station.
+* Ensure the bindings are from a valid Microsoft source:
+  * [MS Intune App SDK NuGet Profile](https://www.nuget.org/profiles/msintuneappsdk)
+  * [Intune App SDK Xamarin GitHub Repository](https://github.com/msintuneappsdk/intune-app-sdk-xamarin)
+* Configure your NuGet config for your project to trust signed, unmodified NuGet packages.
+See [installing signed packages](https://docs.microsoft.com/nuget/consume-packages/installing-signed-packages)
+for more information.
+* Secure the output directory that contains the Xamarin app. Consider using a user-level directory for the output.
 
 
 ## Enabling Intune app protection polices in your iOS mobile app
@@ -125,7 +137,7 @@ To exclude a class from MAM-ification by the Remapper the following property can
 ```
 
 > [!NOTE]
-> At this time, an issue with the Remapper prevents debugging in Xamarin.Android apps. Manual integration is recommended to debug your application until this issue is resolved.
+> The Remapper currently prevents debugging in Xamarin.Android apps. Manual integration is recommended to debug your application.
 
 #### [Renamed Methods](app-sdk-android.md#renamed-methods)
 In many cases, a method available in the Android class has been marked as final in the MAM replacement class. In this case, the MAM replacement class provides a similarly named method (suffixed with `MAM`) that you should override instead. For example, when deriving from `MAMActivity`, instead of overriding `OnCreate()` and calling `base.OnCreate()`, `Activity` must override `OnMAMCreate()` and call `base.OnMAMCreate()`.
@@ -190,7 +202,7 @@ IMAMEnrollmentManager mgr = MAMComponents.Get<IMAMEnrollmentManager>();
 For `Xamarin.Forms` applications the `Microsoft.Intune.MAM.Remapper` package performs MAM class replacement automatically by injecting `MAM` classes into the class hierarchy of commonly used `Xamarin.Forms` classes. 
 
 > [!NOTE]
-> The Xamarin.Forms integration is to be done in addition to the Xamarin.Android integration detailed above. The Remapper behaves differently for Xamarin.Forms apps so the manual MAM replacements will still need to be done.
+> The Xamarin.Forms integration must be done in addition to the Xamarin.Android integration detailed above. The Remapper behaves differently for Xamarin.Forms apps, so the manual MAM replacements must still be done.
 
 Once the Remapper is added to your project you will need to perform the MAM equivalent replacements. For example, `FormsAppCompatActivity` and `FormsApplicationActivity` can continue to be used in your application provided overrides to `OnCreate` and `OnResume` are replaced with the MAM equivalents `OnMAMCreate` and `OnMAMResume` respectively.
 
@@ -215,7 +227,7 @@ This is expected because when the Remapper modifies the inheritance of Xamarin c
 > The Remapper re-writes a dependency that Visual Studio uses for IntelliSense auto-completion. Therefore, you may need to reload and rebuild the project when the Remapper is added for IntelliSense to correctly recognize the changes.
 
 #### Troubleshooting
-* If you are encountering a blank, white screen in your application on launch then you may need to force the navigation calls to execute on the main thread.
+* If you encounter a blank, white screen in your application on launch, then you may need to force the navigation calls to execute on the main thread.
 * The Intune SDK Xamarin Bindings do not support apps that are using a cross-platform framework such as MvvmCross due to conflicts between MvvmCross and Intune MAM classes. While some customers may have had success with integration after moving their apps to plain Xamarin.Forms, we do not provide explicit guidance or plugins for app developers using MvvmCross.
 
 ### Company Portal app

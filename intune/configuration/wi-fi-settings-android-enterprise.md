@@ -27,9 +27,9 @@ ms.custom: seodec18
 ms.collection: M365-identity-device-management
 ---
 
-# Add Wi-Fi settings for devices running Android Enterprise and Android kiosk in Microsoft Intune
+# Add Wi-Fi settings for Android Enterprise dedicated and fully managed devices in Microsoft Intune
 
-You can create a profile with specific WiFi settings, and then deploy this profile to your Android Enterprise and Android dedicated devices. Microsoft Intune offers many features, including authenticating to your network, using a pre-shared key, and more.
+You can create a profile with specific Wi-Fi settings, and then deploy this profile to your Android Enterprise fully managed and dedicated devices. Microsoft Intune offers many features, including authenticating to your network, using a pre-shared key, and more.
 
 This article describes these settings. [Use Wi-Fi on your devices](wi-fi-settings-configure.md) includes more information about the Wi-Fi feature in Microsoft Intune.
 
@@ -39,7 +39,7 @@ This article describes these settings. [Use Wi-Fi on your devices](wi-fi-setting
 
 ## Device owner only
 
-Select this option if using an Android Enterprise dedicated device as a kiosk.
+Select this option if you are deploying to an Android Enterprise dedicated or fully managed device.  Android Enterprise dedicated and fully managed devices currently support SCEP certificate deployment, but not PKCS.
 
 ### Basic
 
@@ -64,7 +64,7 @@ Select this option if using an Android Enterprise dedicated device as a kiosk.
 
     - **Server Trust** - **Root certificate for server validation**: Choose an existing trusted root certificate profile. When the client connects to the network, this certificate is presented to the server, and authenticates the connection.
 
-    - **Client Authentication** - **Client certificate for client authentication (Identity certificate)**: Choose the SCEP or PKCS client certificate profile that is also deployed to the device. This certificate is the identity presented by the device to the server to authenticate the connection.
+    - **Client Authentication** - **Client certificate for client authentication (Identity certificate)**: Choose the SCEP client certificate profile that is also deployed to the device. This certificate is the identity presented by the device to the server to authenticate the connection.
 
     - **Identity privacy (outer identity)**: Enter the text sent in the response to an EAP identity request. This text can be any value, such as `anonymous`. During authentication, this anonymous identity is initially sent, and then followed by the real identification sent in a secure tunnel.​
 
@@ -81,7 +81,7 @@ Select this option if using an Android Enterprise dedicated device as a kiosk.
           - **Microsoft CHAP (MS-CHAP)**
           - **Microsoft CHAP Version 2 (MS-CHAP v2)**
 
-      - **Certificates**: Choose the SCEP or PKCS client certificate profile that is also deployed to the device. This certificate is the identity presented by the device to the server to authenticate the connection.
+      - **Certificates**: Choose the SCEP client certificate profile that is also deployed to the device. This certificate is the identity presented by the device to the server to authenticate the connection.
 
       - **Identity privacy (outer identity)**: Enter the text sent in the response to an EAP identity request. This text can be any value, such as `anonymous`. During authentication, this anonymous identity is initially sent, and then followed by the real identification sent in a secure tunnel.
 
@@ -97,7 +97,7 @@ Select this option if using an Android Enterprise dedicated device as a kiosk.
           - **None**
           - **Microsoft CHAP Version 2 (MS-CHAP v2)**
 
-      - **Certificates**: Choose the SCEP or PKCS client certificate profile that is also deployed to the device. This certificate is the identity presented by the device to the server to authenticate the connection.
+      - **Certificates**: Choose the SCEP client certificate profile that is also deployed to the device. This certificate is the identity presented by the device to the server to authenticate the connection.
 
       - **Identity privacy (outer identity)**: Enter the text sent in the response to an EAP identity request. This text can be any value, such as `anonymous`. During authentication, this anonymous identity is initially sent, and then followed by the real identification sent in a secure tunnel.
 

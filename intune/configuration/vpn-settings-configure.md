@@ -28,7 +28,7 @@ ms.collection: M365-identity-device-management
 
 # Create VPN profiles to connect to VPN servers in Intune
 
-[!INCLUDE [azure_portal](../includes/azure_portal.md)]
+
 
 Virtual private networks (VPNs) give your users secure remote access to your organization network. Devices use a VPN connection profile to start a connection with the VPN server. **VPN profiles** in Microsoft Intune assign VPN settings to users and devices in your organization, so they can easily and securely connect to your organizational network.
 
@@ -54,7 +54,7 @@ You can create VPN profiles using the following connection types:
 |Check Point Capsule VPN|- Android<br/>- Android Enterprise work profiles<br/>- iOS<br/>- macOS<br/>- Windows 10<br/>- Windows 8.1<br/>- Windows Phone 8.1|
 |Cisco AnyConnect|- Android<br/>- Android Enterprise work profiles<br/>- Android Enterprise device owner (fully managed)<br/>- iOS<br/>- macOS|
 |Cisco (IPSec)|iOS|
-|Citrix SSO|- Android<br/>- Android Enterprise work profiles: Use [app configuration policy](../apps/app-configuration-policies-use-android.md)<br/>- iOS<br/>- Windows 10|
+|Citrix SSO|- Android<br/>- Android Enterprise work profiles: Use [app configuration policy](../apps/app-configuration-policies-use-android.md)<br/>- Android Enterprise device owner (fully managed): Use [app configuration policy](../apps/app-configuration-policies-use-android.md)<br/>- iOS<br/>- Windows 10|
 |Custom VPN|- iOS<br/>- macOS|
 |F5 Access|- Android<br/>- Android Enterprise work profiles<br/>- Android Enterprise device owner (fully managed)<br/>- iOS<br/>- macOS<br/>- Windows 10<br/>- Windows 8.1<br/>- Windows Phone 8.1|
 |IKEv2| - iOS<br/>- Windows 10|
