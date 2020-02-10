@@ -1,1 +1,0 @@
-For more information about how accessible technology for computers helps to improve the lives of people with disabilities, see the [Microsoft Accessibility website](http://go.microsoft.com/fwlink/?LinkId=8431).

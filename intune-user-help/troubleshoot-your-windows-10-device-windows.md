@@ -12,6 +12,7 @@ ms.date: 03/11/2019
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
+ms.subservice: end-user
 ms.technology:
 ms.assetid: 4ab630b6-47ff-443b-a2a5-be23388bcea7
 searchScope:
@@ -26,7 +27,7 @@ ms.reviewer: priyar
 ms.suite: ems
 #ms.tgt_pltfrm:
 ms.custom: intune-enduser
-ms.collection: M365-identity-device-management
+ms.collection: 
 ---
 
 # Troubleshoot your Windows 10 device enrollment

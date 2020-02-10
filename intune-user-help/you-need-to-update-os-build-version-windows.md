@@ -11,6 +11,7 @@ ms.date: 11/06/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
+ms.subservice: end-user
 ms.technology:
 ms.assetid: 1ed8456c-ef70-429f-9c65-081bb2dfa6ac
 
@@ -26,7 +27,7 @@ ms.reviewer: shburbid
 ms.suite: ems
 #ms.tgt_pltfrm:
 ms.custom: intune-enduser
-ms.collection: M365-identity-device-management
+ms.collection: 
 ---
 
 # Update your Windows 10 device

@@ -3,23 +3,23 @@
 Automatic enrollment lets users enroll their Windows 10 devices in Intune. To enroll, users add their work account to their personally owned devices or join corporate-owned devices to Azure Active Directory. In the background, the device registers and joins Azure Active Directory. Once registered, the device is managed with Intune.
 
 **Prerequisites**
-- Azure Active Directory Premium subscription ([trial subscription](http://go.microsoft.com/fwlink/?LinkID=816845))
-- Microsoft Intune subscription
 
+- Azure Active Directory Premium subscription ([trial subscription](https://go.microsoft.com/fwlink/?LinkID=816845))
+- Microsoft Intune subscription
 
 ### Configure automatic MDM enrollment
 
 1. Sign in to the [Azure portal](https://portal.azure.com), and select **Azure Active Directory**.
 
-   ![Screenshot of the Azure portal](../media/auto-enroll-azure-main.png)
+   ![Screenshot of the Azure portal](../enrollment/media/windows-enroll/auto-enroll-azure-main.png)
 
 2. Select **Mobility (MDM and MAM)**.
 
-   ![Screenshot of the Azure portal](../media/auto-enroll-mdm.png)
+   ![Screenshot of the Azure portal](../enrollment/media/windows-enroll/auto-enroll-mdm.png)
 
 3. Select **Microsoft Intune**.
 
-   ![Screenshot of the Azure portal](../media/auto-enroll-intune.png)
+   ![Screenshot of the Azure portal](../enrollment/media/windows-enroll/auto-enroll-intune.png)
 
 4. Configure **MDM User scope**. Specify which users’ devices should be managed by Microsoft Intune. These Windows 10 devices can automatically enroll for management with Microsoft Intune.
 
@@ -35,7 +35,7 @@ Automatic enrollment lets users enroll their Windows 10 devices in Intune. To en
    > [!NOTE]
    > MDM user scope must be set to an Azure AD group that contains user objects.
 
-   ![Screenshot of the Azure portal](../media/auto-enroll-scope.png)
+   ![Screenshot of the Azure portal](../enrollment/media/windows-enroll/auto-enroll-scope.png)
 
 5. Use the default values for the following URLs:
     - **MDM Terms of use URL**

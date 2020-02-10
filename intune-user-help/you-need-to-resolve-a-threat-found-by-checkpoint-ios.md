@@ -11,6 +11,7 @@ ms.date: 10/05/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
+ms.subservice: end-user
 ms.technology:
 ms.assetid: 5b2a69e7-cc86-4f1b-81d9-35b8b23b937b
 searchScope:
@@ -25,7 +26,7 @@ ROBOTS:
 #ms.suite: ems
 #ms.tgt_pltfrm:
 ms.custom: intune-enduser
-ms.collection: M365-identity-device-management
+ms.collection: 
 ---
 
 # Resolve a threat found by SandBlast Mobile Protect

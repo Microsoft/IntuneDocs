@@ -9,8 +9,8 @@ ms.author: lanewsad
 manager: dougeby
 ms.date: 12/06/2017
 ms.topic: article
-ms.prod:
 ms.service: microsoft-intune
+ms.subservice: end-user
 ms.technology:
 ms.assetid: 56771f9f-0583-4df8-b3e9-3f0d8edee172
 searchScope:
@@ -25,7 +25,7 @@ ms.reviewer: elocholi
 ms.suite: ems
 #ms.tgt_pltfrm:
 ms.custom: intune-enduser
-ms.collection: M365-identity-device-management
+ms.collection: 
 ---
 
 # Performing actions on a macOS device managed by Jamf

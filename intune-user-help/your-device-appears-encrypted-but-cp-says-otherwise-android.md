@@ -11,6 +11,7 @@ ms.date: 08/14/2019
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
+ms.subservice: end-user
 ms.technology:
 ms.assetid: ba593c08-1a78-4013-8525-b45a948772ec
 searchScope:
@@ -25,9 +26,8 @@ ms.reviewer: arnab
 ms.suite: ems
 #ms.tgt_pltfrm:
 ms.custom: intune-enduser
-ms.collection: M365-identity-device-management
+ms.collection: 
 ---
-
 
 # Device encrypted but apps say otherwise
 
@@ -52,16 +52,17 @@ This section only applies to the Company Portal app. If your device offers you t
 
 ## Specific manufacturer issues
 
-Some Android devices on version 7.0 and later encrypt data in ways that are inconsistent with certain Android platform standards. These encryption methods put device information at risk. As a result, these devices aren't supported. 
+Some Android devices on version 7.0 and later encrypt data in ways that are inconsistent with certain Android platform standards. These encryption methods put device information at risk. As a result, these devices aren't supported.
 
-For a non-exhaustive list of supported Android devices, see the article [Supported operating systems and browsers in Intune](https://docs.microsoft.com/intune/supported-devices-browsers#supported-samsung-knox-standard-devices). If your device isn't listed, refer to the device manufacturer or contact your support person. 
+For a non-exhaustive list of supported Android devices, see the article [Supported operating systems and browsers in Intune](https://docs.microsoft.com/intune/fundamentals/supported-devices-browsers#supported-samsung-knox-standard-devices). If your device isn't listed, refer to the device manufacturer or contact your support person.
 
 > [!Note]
-> Microsoft works with manufacturers to address any issues we find while testing or that users report to us. We update this article whenever new information is available. 
+> Microsoft works with manufacturers to address any issues we find while testing or that users report to us. We update this article whenever new information is available.
 
-## Update devices   
+## Update devices
 
 If you haven't updated your device to the most recent version of Android, go to your device's **Settings** app and select **Update**.  
 
-## Next steps   
+## Next steps
+
 Still need help? Contact your company support (check the [Company Portal website](https://go.microsoft.com/fwlink/?linkid=2010980) for contact information), or write the <a href="mailto:wintunedroidfbk@microsoft.com?subject=I'm having trouble with enrolling my Android device&body=Describe the issue you're experiencing here.">Microsoft Android team</a>.  

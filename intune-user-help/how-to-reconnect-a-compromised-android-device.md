@@ -11,6 +11,7 @@ ms.date: 03/13/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
+ms.subservice: end-user
 ms.technology:
 ms.assetid: ade7353e-7338-484d-a50f-b91146d5fc46
 searchScope:
@@ -25,7 +26,7 @@ ms.reviewer: chrisgre
 ms.suite: ems
 #ms.tgt_pltfrm:
 ms.custom: intune-enduser
-ms.collection: M365-identity-device-management
+ms.collection: 
 ---
 
 # How to reconnect a compromised Android device

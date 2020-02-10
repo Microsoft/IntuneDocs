@@ -11,6 +11,7 @@ ms.date: 02/05/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
+ms.subservice: end-user
 ms.technology:
 ms.assetid: 09e97df0-d032-48ff-ab8a-8c2c4ec29897
 searchScope:
@@ -25,7 +26,7 @@ ms.reviewer: chrisgre
 ms.suite: ems
 #ms.tgt_pltfrm:
 ms.custom: intune-enduser
-ms.collection: M365-identity-device-management
+ms.collection: 
 ---
 
 # How to reconnect a compromised iOS device

@@ -11,6 +11,7 @@ ms.date: 03/16/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
+ms.subservice: end-user
 ms.technology:
 ms.assetid: 7d9645a9-6058-4112-aa31-8cdbccdc5463
 searchScope:
@@ -25,7 +26,7 @@ ms.reviewer: priyar
 ms.suite: ems
 #ms.tgt_pltfrm:
 ms.custom: intune-enduser
-ms.collection: M365-identity-device-management
+ms.collection: 
 ---
 
 # How to encrypt your Windows device

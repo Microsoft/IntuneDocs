@@ -12,6 +12,7 @@ ms.date: 04/25/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
+ms.subservice: end-user
 ms.technology:
 ms.assetid: 5c2b65f4-0e0d-4a3c-81c2-af634718023d
 searchScope:
@@ -26,7 +27,7 @@ ms.reviewer: elocholi
 ms.suite: ems
 #ms.tgt_pltfrm:
 ms.custom: intune-enduser
-ms.collection: M365-identity-device-management
+ms.collection: 
 ---
 
 # Submit errors to the right people for your managed macOS device

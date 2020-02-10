@@ -10,8 +10,8 @@ ms.author: lanewsad
 manager: dougeby
 ms.date: 01/18/2018
 ms.topic: article
-ms.prod:
 ms.service: microsoft-intune
+ms.subservice: end-user
 ms.technology:
 ms.assetid: c8920bf0-e1bb-4601-961d-8c25290e53fb
 searchScope:
@@ -26,7 +26,7 @@ ms.reviewer: elocholi
 ms.suite: ems
 #ms.tgt_pltfrm:
 ms.custom: intune-enduser
-ms.collection: M365-identity-device-management
+ms.collection: 
 ---
 
 # The limit of devices you can register has been reached

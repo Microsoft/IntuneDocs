@@ -11,6 +11,7 @@ ms.date: 01/09/2019
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
+ms.subservice: end-user
 ms.technology:
 ms.assetid: bd428c14-7d75-42de-9322-b57323a01f06
 searchScope:
@@ -25,7 +26,7 @@ ms.reviewer: scottduf
 ms.suite: ems
 #ms.tgt_pltfrm:
 ms.custom: intune-enduser
-ms.collection: M365-identity-device-management
+ms.collection: 
 ---
 
 # Email your company support about problem from Company Portal for Windows

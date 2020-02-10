@@ -11,6 +11,7 @@ ms.date: 01/02/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
+ms.subservice: end-user
 ms.technology:
 ms.assetid: 733a590e-836f-4941-bfd9-6ae53ba25e06
 searchScope:
@@ -25,7 +26,7 @@ ms.reviewer: esmich
 ms.suite: ems
 #ms.tgt_pltfrm:
 ms.custom: intune-enduser
-ms.collection: M365-identity-device-management
+ms.collection: 
 ---
 
 # Send logs to the Company Portal developers for iOS devices

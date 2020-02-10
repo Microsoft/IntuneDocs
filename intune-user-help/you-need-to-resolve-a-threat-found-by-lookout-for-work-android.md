@@ -12,6 +12,7 @@ ms.date: 08/28/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
+ms.subservice: end-user
 ms.technology:
 ms.assetid: 5656b3e6-e812-4264-a170-b17c9c03e4d4
 
@@ -27,7 +28,7 @@ ROBOTS:
 #ms.suite: ems
 #ms.tgt_pltfrm:
 ms.custom: intune-enduser
-ms.collection: M365-identity-device-management
+ms.collection: 
 ---
 
 # Resolve a threat found by Lookout for Work  

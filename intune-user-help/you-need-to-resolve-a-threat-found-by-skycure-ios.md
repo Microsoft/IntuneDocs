@@ -12,6 +12,7 @@ ms.date: 10/05/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
+ms.subservice: end-user
 ms.technology:
 ms.assetid: b40595f0-a399-4aa1-aa6f-344c2a1cb883
 
@@ -27,7 +28,7 @@ ROBOTS:
 #ms.suite: ems
 #ms.tgt_pltfrm:
 ms.custom: intune-enduser
-ms.collection: M365-identity-device-management
+ms.collection: 
 ---
 
 # Resolve a threat found by Symantec Endpoint Protection Mobile

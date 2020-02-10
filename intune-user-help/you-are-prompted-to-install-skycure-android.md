@@ -11,6 +11,7 @@ ms.date: 09/25/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
+ms.subservice: end-user
 ms.technology:
 ms.assetid: 627cd171-6e1b-439e-809a-2e6f007c4b3d
 searchScope:
@@ -25,7 +26,7 @@ ROBOTS:
 #ms.suite: ems
 #ms.tgt_pltfrm:
 ms.custom: intune-enduser
-ms.collection: M365-identity-device-management
+ms.collection: 
 ---
 
 # Install Symantec Endpoint Protection Mobile on your Android device

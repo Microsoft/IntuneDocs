@@ -11,6 +11,7 @@ ms.date: 03/17/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
+ms.subservice: end-user
 ms.technology:
 ms.assetid: dea37b91-33fa-4d4a-ac44-560b450c02a6
 searchScope:
@@ -25,7 +26,7 @@ ms.reviewer: chrisgre
 ms.suite: ems
 #ms.tgt_pltfrm:
 ms.custom: intune-enduser
-ms.collection: M365-identity-device-management
+ms.collection: 
 ---
 
 # Your Company Portal app for Windows is out of date

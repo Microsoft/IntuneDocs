@@ -12,6 +12,7 @@ ms.date: 12/06/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
+ms.subservice: end-user
 ms.technology:
 ms.assetid: c7a10998-9aa6-4bc0-8405-27a30c61bca7
 searchScope:
@@ -26,7 +27,7 @@ ROBOTS:
 #ms.suite: ems
 #ms.tgt_pltfrm:
 ms.custom: intune-enduser; seodec18
-ms.collection: M365-identity-device-management
+ms.collection: 
 ---
 
 # You need to turn off Unknown sources

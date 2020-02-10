@@ -10,4 +10,4 @@ Requirements for accessing the Intune Data Warehouse (including the API) are:
   - Azure AD global administrator
   - An Intune service administrator
   - User with role-based access to **Intune data warehouse** resource
-  - User-less authentication using [application-only authentication](../data-warehouse-app-only-auth.md) 
+  - User-less authentication using [application-only authentication](../developer/data-warehouse-app-only-auth.md) 

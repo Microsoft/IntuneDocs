@@ -12,6 +12,7 @@ ms.date: 12/06/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
+ms.subservice: end-user
 ms.technology:
 ms.assetid: fa6b0851-6c68-4485-a371-307bd075b9be
 
@@ -27,7 +28,7 @@ ms.reviewer: elocholi
 ms.suite: ems
 #ms.tgt_pltfrm:
 ms.custom: intune-enduser
-ms.collection: M365-identity-device-management
+ms.collection: 
 ---
 
 # Your macOS device doesn't have the required minimum operating system version

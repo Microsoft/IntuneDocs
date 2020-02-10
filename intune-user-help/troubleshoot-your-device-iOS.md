@@ -11,6 +11,7 @@ ms.date: 06/02/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
+ms.subservice: end-user
 ms.technology:
 ms.assetid: 66436fd8-1582-41f5-9c3b-abd914365f2d
 searchScope:
@@ -25,7 +26,7 @@ ms.reviewer: esmich
 ms.suite: ems
 #ms.tgt_pltfrm:
 ms.custom: intune-enduser
-ms.collection: M365-identity-device-management
+ms.collection: 
 ---
 
 # Fix common issues with your iOS device

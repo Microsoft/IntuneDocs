@@ -33,7 +33,7 @@
     "template": "docs.html",
     "globalMetadata": {
       "layout": "Conceptual",
-      "breadcrumb_path": "/enterprise-mobility-security/toc.json",
+      "breadcrumb_path": "/intune/bread/toc.json",
       "product_feedback_displaytext": "Intune Feedback",
       "product_feedback_url": "https://microsoftintune.uservoice.com/",
       "feedback_system": "GitHub",

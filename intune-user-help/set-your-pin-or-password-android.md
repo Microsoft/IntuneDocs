@@ -11,6 +11,7 @@ ms.date: 02/07/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
+ms.subservice: end-user
 ms.technology:
 ms.assetid: b29ac1bb-ef57-4ef1-9ea5-191ee8694e58
 searchScope:
@@ -25,7 +26,7 @@ ms.reviewer: arnab
 ms.suite: ems
 #ms.tgt_pltfrm:
 ms.custom: intune-enduser
-ms.collection: M365-identity-device-management
+ms.collection: 
 ---
 
 # Set your PIN or password

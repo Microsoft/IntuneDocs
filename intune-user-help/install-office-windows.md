@@ -11,6 +11,7 @@ ms.date: 02/21/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
+ms.subservice: end-user
 ms.technology:
 ms.assetid: 42e26c51-5373-4c2e-9321-34d85560f3d1
 
@@ -26,7 +27,7 @@ ms.reviewer: aiwang
 ms.suite: ems
 #ms.tgt_pltfrm:
 ms.custom: intune-enduser
-ms.collection: M365-identity-device-management
+ms.collection: 
 ---
 
 # Installing Office 365 on your Windows 10 device

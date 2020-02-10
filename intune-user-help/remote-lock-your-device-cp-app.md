@@ -11,6 +11,7 @@ ms.date: 10/07/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
+ms.subservice: end-user
 ms.technology:
 searchScope:
  - User help
@@ -23,7 +24,7 @@ ms.reviewer: jieyang
 ms.suite: ems
 #ms.tgt_pltfrm:
 ms.custom: intune-enduser
-ms.collection: M365-identity-device-management
+ms.collection: 
 ---
 
 # Lock your device from the Company Portal app for Windows 10

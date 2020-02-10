@@ -11,6 +11,7 @@ ms.date: 05/21/2019
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
+ms.subservice: end-user
 ms.technology:
 ms.assetid: 812e82df-76df-402b-bfe9-29302838f40e
 searchScope:
@@ -25,7 +26,7 @@ ms.reviewer: jieyang
 ms.suite: ems
 #ms.tgt_pltfrm:
 ms.custom: intune-enduser
-ms.collection: M365-identity-device-management
+ms.collection: 
 ---
 
 # Enroll Windows 10 devices with Intune Company Portal
@@ -48,7 +49,7 @@ These steps describe how to enroll a device that runs on Windows 10, version 160
 
     ![Select Access work school account](./media/w10-enroll-rs1-connect-to-work-or-school.png)  
 
-4. Enter your work or school email address, and then select **Next**.  
+4. To get to your organization's Intune sign-in page, enter your work or school email address. Then select **Next**.  
 
 
    ![Enter your work or school-account](./media/w10-enroll-rs1-set-up-work-or-school-account.png)  

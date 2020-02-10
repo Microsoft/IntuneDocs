@@ -12,6 +12,7 @@ ms.date: 12/06/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
+ms.subservice: end-user
 ms.technology:
 ms.assetid: ab3242d9-1063-4356-a3ac-6f0d8fe379e4
 searchScope:
@@ -26,7 +27,7 @@ ms.reviewer: chrisgre
 ms.suite: ems
 #ms.tgt_pltfrm:
 ms.custom: intune-enduser; seodec18
-ms.collection: M365-identity-device-management
+ms.collection: 
 ---
 
 # Your iOS device doesn't have the required minimum operating system version

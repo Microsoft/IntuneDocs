@@ -11,6 +11,7 @@ ms.date: 12/06/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
+ms.subservice: end-user
 ms.technology:
 ms.assetid: de881f1b-7622-4ec2-8bf8-025f71ca9887
 searchScope:
@@ -25,7 +26,7 @@ ms.reviewer: chrisbal
 ms.suite: ems
 #ms.tgt_pltfrm:
 ms.custom: intune-enduser; seodec18
-ms.collection: M365-identity-device-management
+ms.collection: 
 ---
 
 

@@ -11,6 +11,7 @@ ms.date: 11/14/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
+ms.subservice: end-user
 ms.technology:
 ms.assetid: 7394ff8f-3a21-414d-be4a-4626ec370720
 searchScope:
@@ -25,7 +26,7 @@ ROBOTS:
 #ms.suite: ems
 #ms.tgt_pltfrm:
 ms.custom: intune-enduser
-ms.collection: M365-identity-device-management
+ms.collection: 
 ---
 
 # Install Symantec Endpoint Protection Mobile on your iOS device

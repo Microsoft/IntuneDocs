@@ -10,6 +10,7 @@ ms.date: 09/13/2019
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
+ms.subservice: end-user
 ms.technology:
 ms.assetid: 523caa6b-d792-4bb6-bddb-24b2479932d8
 searchScope:
@@ -24,7 +25,7 @@ ms.reviewer: esmich
 ms.suite: ems
 #ms.tgt_pltfrm:
 ms.custom: intune-enduser
-ms.collection: M365-identity-device-management
+ms.collection: 
 ---
 
 # What is device enrollment?

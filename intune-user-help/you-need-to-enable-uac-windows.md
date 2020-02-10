@@ -12,6 +12,7 @@ ms.date: 11/06/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
+ms.subservice: end-user
 ms.technology:
 ms.assetid: e3ebea03-bd06-4b5e-8709-0a504c5d7bf7
 searchScope:
@@ -26,7 +27,7 @@ ms.reviewer: shburbid
 ms.suite: ems
 #ms.tgt_pltfrm:
 ms.custom: intune-enduser
-ms.collection: M365-identity-device-management
+ms.collection: 
 ---
 
 # How to enable User Access Control

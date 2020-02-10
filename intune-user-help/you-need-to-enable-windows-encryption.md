@@ -12,6 +12,7 @@ ms.date: 12/06/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
+ms.subservice: end-user
 ms.technology:
 ms.assetid: e0c5993b-3fa5-411e-bae0-93fb66c49bea
 searchScope:
@@ -26,7 +27,7 @@ ms.reviewer: chrisgre
 ms.suite: ems
 #ms.tgt_pltfrm:
 ms.custom: intune-enduser; seodec18
-ms.collection: M365-identity-device-management
+ms.collection: 
 ---
 # You need to enable encryption
 

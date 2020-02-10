@@ -12,6 +12,7 @@ ms.date: 10/05/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
+ms.subservice: end-user
 ms.technology:
 ms.assetid: 3c95d821-7862-486a-b9dc-0ed37bc5befb
 
@@ -27,7 +28,7 @@ ROBOTS:
 #ms.suite: ems
 #ms.tgt_pltfrm:
 ms.custom: intune-enduser
-ms.collection: M365-identity-device-management
+ms.collection: 
 ---
 
 # Resolve a threat found by a Mobile Threat Defense app

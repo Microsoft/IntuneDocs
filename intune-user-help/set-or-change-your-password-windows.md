@@ -11,6 +11,7 @@ ms.date: 09/28/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
+ms.subservice: end-user
 ms.technology:
 ms.assetid: c4801a78-580e-4e3d-beca-0b09b9b2437c
 searchScope:
@@ -25,7 +26,7 @@ ROBOTS:
 #ms.suite: ems
 #ms.tgt_pltfrm:
 ms.custom: intune-enduser
-ms.collection: M365-identity-device-management
+ms.collection: 
 ---
 
 # Make your device safer with the right password

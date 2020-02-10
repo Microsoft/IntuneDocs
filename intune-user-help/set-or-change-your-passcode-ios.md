@@ -8,10 +8,11 @@ author: lenewsad
 
 ms.author: lanewsad
 manager: dougeby
-ms.date: 11/14/2017
+ms.date: 09/18/2019
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
+ms.subservice: end-user
 ms.technology:
 ms.assetid: 365f72a6-564d-4cbd-8f0a-70ec80b6e253
 searchScope:
@@ -26,16 +27,17 @@ ROBOTS:
 #ms.suite: ems
 #ms.tgt_pltfrm:
 ms.custom: intune-enduser
-ms.collection: M365-identity-device-management
+ms.collection: 
 ---
 
 # Set or change your passcode
 
-If your iOS device doesn't comply with your company support's passcode policy, a message appears that briefly describes the issue and explains what you need to do to make your passcode meet the requirements.
+Create a new passcode or change an existing one to meet your organization's requirements. The passcode will prevent unauthorized people from unlocking and using your device. 
 
-Your company support can set more than one passcode requirement. For example, the passcode might have to contain a certain number of characters, and it might need to have a mix of numbers, letters, and characters. Because more than one requirement might be set, these instructions can explain only how to set or change your passcode. They don't explain every possible combination of requirements. These passcodes are used, for example, to access your device from the lock screen.
+Your organization can set more than one passcode requirement. For a list of common password requirements, see [Device password requirements for enrolled devices](password-does-not-meet-it-administrator-requirements.md).  
 
-If you have trouble setting a passcode that meets the passcode requirements, contact your company support for help.
+If you have trouble creating or changing your passcode, contact your IT support person.  
+
 
 ## Set your passcode
 

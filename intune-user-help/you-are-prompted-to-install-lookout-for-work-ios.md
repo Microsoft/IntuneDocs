@@ -12,6 +12,7 @@ ms.date: 04/02/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
+ms.subservice: end-user
 ms.technology:
 ms.assetid: 7adab655-8317-4512-ba7d-beeaa25bbf6c
 
@@ -27,7 +28,7 @@ ROBOTS:
 #ms.suite: ems
 #ms.tgt_pltfrm:
 ms.custom: intune-enduser
-ms.collection: M365-identity-device-management
+ms.collection: 
 ---
 
 # Install Lookout for Work on your iOS device

@@ -11,6 +11,7 @@ ms.date: 10/17/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
+ms.subservice: end-user
 ms.technology:
 ms.assetid: 5b9ee20b-3c4e-4461-86d3-6fd26e7f71a6
 
@@ -26,7 +27,7 @@ ROBOTS:
 #ms.suite: ems
 #ms.tgt_pltfrm:
 ms.custom: intune-enduser
-ms.collection: M365-identity-device-management
+ms.collection: 
 ---
 
 # Install Mobile Threat Defense on your iOS device

@@ -11,6 +11,7 @@ ms.date: 08/28/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
+ms.subservice: end-user
 ms.technology:
 ms.assetid: a26d9e3c-8f58-4494-9571-fc88ba91852e
 searchScope:
@@ -25,13 +26,15 @@ ms.reviewer: jieyang
 ms.suite: ems
 #ms.tgt_pltfrm:
 ms.custom: intune-enduser
-ms.collection: M365-identity-device-management
+ms.collection: 
 ---
 
 # Using the Intune Company Portal website
-Use the [Company Portal website](https://portal.manage.microsoft.com) to view, edit, add, and remove your managed devices.
+Use the [Company Portal website](https://portal.manage.microsoft.com) to search for, install, and uninstall apps for school or work; and to view, edit, add, and remove your enrolled devices.  
 
 From the Company Portal website, you can take any of the following actions:
+
+- [Manage apps](manage-apps-cpweb.md)  
 
 - [Rename your device](rename-your-device-cpwebsite.md)
 

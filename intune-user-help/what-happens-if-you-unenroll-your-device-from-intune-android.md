@@ -12,6 +12,7 @@ ms.date: 03/13/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
+ms.subservice: end-user
 ms.technology:
 ms.assetid: 0321062d-1363-4ac3-81d4-5405f3b79481
 searchScope:
@@ -26,7 +27,7 @@ ms.reviewer: arnab
 ms.suite: ems
 #ms.tgt_pltfrm:
 ms.custom: intune-enduser
-ms.collection: M365-identity-device-management
+ms.collection: 
 ---
 
 # What happens if you unenroll your Android device from Intune?
